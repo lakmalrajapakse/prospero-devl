@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Updates the ticket to confirmed and saves the submission comment.</description>
+        <name>SK_SetTicketAsConfirmed</name>
+        <label>Set Ticket as Confirmed</label>
+        <locationX>776</locationX>
+        <locationY>1550</locationY>
+        <assignmentItems>
+            <assignToReference>SK_GetTicket.SK_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Confirmed</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SK_GetTicket.sirenum__Comments__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SK_SubmissionComment</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SK_SaveTheTicket</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Updates the ticket to submitted and saves the submission comment.</description>
+        <name>SK_SetTicketAsSubmitted</name>
+        <label>Set Ticket as Submitted</label>
+        <locationX>1040</locationX>
+        <locationY>1550</locationY>
+        <assignmentItems>
+            <assignToReference>SK_GetTicket.SK_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Submitted</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SK_GetTicket.sirenum__Comments__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SK_SubmissionComment</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SK_SaveTheTicket</targetReference>
+        </connector>
+    </assignments>
+    <constants>
+        <description>Indicates whether or not auto-confirmation is allowed.</description>
+        <name>SK_AllowAutoConfirm</name>
+        <dataType>Boolean</dataType>
+        <value>
+            <booleanValue>false</booleanValue>
+        </value>
+    </constants>
+    <decisions>
+        <description>Determines whether or not auto-confirmation is allowed.</description>
+        <name>SK_AutoConfirmAllowed</name>
+        <label>Auto-Confirm Allowed?</label>
+        <locationX>908</locationX>
+        <locationY>1430</locationY>
+        <defaultConnector>
+            <targetReference>SK_SetTicketAsSubmitted</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Cannot Auto-Confirm</defaultConnectorLabel>
+        <rules>
+            <name>SK_CanAutoConfirm</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_AllowAutoConfirm</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>SK_AttachmentIsRequired</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>SK_GetTicket.sirenum__TicketType__r.sirenum__Expires__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_SetTicketAsConfirmed</targetReference>
+            </connector>
+            <label>Can Auto-Confirm</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Chooses between the ticket having or not having any attachments.</description>
+        <name>SK_HasAttachments</name>
+        <label>Has Attachments?</label>
+        <locationX>402</locationX>
+        <locationY>638</locationY>
+        <defaultConnector>
+            <targetReference>SK_NeedsAttachments</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Attachments do NOT Exist</defaultConnectorLabel>
+        <rules>
+            <name>SK_AttachmentsExist</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_Attachment</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_IsExpiryValid</targetReference>
+            </connector>
+            <label>Attachments Exist</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Determine whether the ticket requires an attachment, or not.</description>
+        <name>SK_IsAttachmentRequired</name>
+        <label>Is Attachment Required?</label>
+        <locationX>710</locationX>
+        <locationY>398</locationY>
+        <defaultConnector>
+            <targetReference>SK_IsExpiryValid</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Attachment is NOT Required</defaultConnectorLabel>
+        <rules>
+            <name>SK_AttachmentIsRequired</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_GetTicket.sirenum__TicketType__r.sirenum__Requires_Proof__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_GetAttachments</targetReference>
+            </connector>
+            <label>Attachment is Required</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>When a ticket&apos;s competency is marked as expiring it is always necessary to provide the expiration date (valid until) for the ticket.</description>
+        <name>SK_IsExpiryValid</name>
+        <label>Is Expiry Valid?</label>
+        <locationX>710</locationX>
+        <locationY>1190</locationY>
+        <defaultConnector>
+            <targetReference>SK_GetSubmissionComments</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Expiry is Valid</defaultConnectorLabel>
+        <rules>
+            <name>SK_ExpiryIsInvalid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_GetTicket.sirenum__TicketType__r.sirenum__Expires__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>SK_GetTicket.sirenum__Valid_until__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_ExpirationIsRequired</targetReference>
+            </connector>
+            <label>Expiry is NOT Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Only unconfirmed tickets need to be approved.</description>
+        <name>SK_IsTicketConfirmed</name>
+        <label>Is Ticket Confirmed?</label>
+        <locationX>380</locationX>
+        <locationY>278</locationY>
+        <defaultConnector>
+            <targetReference>SK_IsAttachmentRequired</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Ticket was NOT Confirmed</defaultConnectorLabel>
+        <rules>
+            <name>SK_TicketWasConfirmed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_GetTicket.SK_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Confirmed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_Skipped</targetReference>
+            </connector>
+            <label>Ticket was Confirmed</label>
+        </rules>
+    </decisions>
+    <description>Allows the user to submit a ticket for approval, but once it is validated as ready for submission.</description>
+    <interviewLabel>Ticket Submit for Approval (SK) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Submit Qualification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Used to determine whether there are any attachments for the ticket.</description>
+        <name>SK_GetAttachments</name>
+        <label>Get Attachments</label>
+        <locationX>402</locationX>
+        <locationY>518</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SK_HasAttachments</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>SK_GetAttachmentsFault</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>LinkedEntityId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <object>ContentDocumentLink</object>
+        <outputReference>SK_Attachment</outputReference>
+        <queriedFields>Id</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Retrieves the record using the ID of the contextual Ticket.</description>
+        <name>SK_GetTicket</name>
+        <label>Get Ticket</label>
+        <locationX>380</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SK_IsTicketConfirmed</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>SK_GetTicketFault</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>sirenum__Ticket__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Stores the updated ticket.</description>
+        <name>SK_SaveTheTicket</name>
+        <label>Save the Ticket</label>
+        <locationX>908</locationX>
+        <locationY>1766</locationY>
+        <connector>
+            <targetReference>SK_ApprovalRequestSubmitted</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>SK_SubmitFault</targetReference>
+        </faultConnector>
+        <inputReference>SK_GetTicket</inputReference>
+    </recordUpdates>
+    <screens>
+        <description>Let the user know this ticket has been submitted for approval.</description>
+        <name>SK_ApprovalRequestSubmitted</name>
+        <label>Approval Request Submitted</label>
+        <locationX>908</locationX>
+        <locationY>1886</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_Submitted</name>
+            <fieldText>&lt;p&gt;Your qualification has been submitted for review and approval. If there&apos;s an issue with it you&apos;ll find the qualification is set Rejected and you&apos;ll have a chance to correct the details ready for re-submission.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>A screen shown when a ticket requires expiration but an expiration date (valid until) is not set.</description>
+        <name>SK_ExpirationIsRequired</name>
+        <label>Expiration is Required</label>
+        <locationX>512</locationX>
+        <locationY>1310</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_ExpirationIsRequiredInstructions</name>
+            <fieldText>&lt;p&gt;This qualification requires the valid until value to be set. Please add the expiration date and submit again.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Something went wrong trying to find attachments.</description>
+        <name>SK_GetAttachmentsFault</name>
+        <label>Get Attachments Fault</label>
+        <locationX>754</locationX>
+        <locationY>638</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_AttachmentsFaultInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, something went wrong. If this keeps happening, please contact us for help.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Allows the user to enter a submission comment, if they so choose, before the ticket is finally submitted for approval.</description>
+        <name>SK_GetSubmissionComments</name>
+        <label>Get Submission Comments</label>
+        <locationX>908</locationX>
+        <locationY>1310</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>SK_AutoConfirmAllowed</targetReference>
+        </connector>
+        <fields>
+            <name>SK_SubmissionComment</name>
+            <fieldText>You can optionally enter a comment with your submission for approval</fieldText>
+            <fieldType>LargeTextArea</fieldType>
+            <helpText>&lt;p&gt;You can add any explanation related to this qualification submission that you feel is required. For example, you might like to indicate where the expiration date can be found in your uploaded certification document.&lt;/p&gt;</helpText>
+            <isRequired>false</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Something went wrong whilst trying to get the contextual ticket.</description>
+        <name>SK_GetTicketFault</name>
+        <label>Get Ticket Fault</label>
+        <locationX>1568</locationX>
+        <locationY>278</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_TicketFaultInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, something went wrong. If this keeps happening please contact us for help.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>The user needs to add at least one attachment before the ticket can be approved.</description>
+        <name>SK_NeedsAttachments</name>
+        <label>Needs Attachments</label>
+        <locationX>490</locationX>
+        <locationY>758</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_AddAttachmentInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, this qualification cannot be approved because it requires attachment of proof. Please upload a file that provides proof that you hold this qualification.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Tell the user that approval is not required.</description>
+        <name>SK_Skipped</name>
+        <label>Skipped</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_AlreadyConfirmed</name>
+            <fieldText>&lt;p&gt;This qualification is already approved, since it has been Confirmed.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt;.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Something went wrong when trying to submit the ticket for approval.</description>
+        <name>SK_SubmitFault</name>
+        <label>Submit Fault</label>
+        <locationX>1304</locationX>
+        <locationY>1886</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_SubmitFaultInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, something went wrong and we could not submit your qualification for review. If this keeps happening please contact us for help.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SK_GetTicket</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>The ID of the contextual Ticket.</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>If there is at least one attachment for the ticket, it gets stored here.</description>
+        <name>SK_Attachment</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ContentDocumentLink</objectType>
+    </variables>
+</Flow>

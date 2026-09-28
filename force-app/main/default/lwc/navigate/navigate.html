@@ -1,0 +1,28 @@
+<!--
+ ! Copyright Sirenum (c) 2021.
+ !-->
+
+<!-- Navigate -->
+<template>
+    <div class={alignment}>
+        <template if:true={renderURL}>
+            <template if:true={button}>
+                <lightning-button label={label} onclick={navigate} variant={variant}></lightning-button>
+            </template>
+
+            <template if:false={button}>
+                <a href={renderURL}>{label}</a>
+            </template>
+        </template>
+
+        <template if:false={renderURL}>
+            <template if:true={button}>
+                <lightning-button label={label} variant={variant} disabled=true></lightning-button>
+            </template>
+
+            <template if:false={button}>
+                {label}
+            </template>
+        </template>
+    </div>
+</template>

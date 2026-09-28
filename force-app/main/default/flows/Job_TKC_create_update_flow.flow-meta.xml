@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>Job: TKC create/update flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Job: TKC create/update flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Records_1</name>
+        <label>Update Jobs</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Textkernel_Access_Roles__c</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <elementReference>Get_TKC_roles_for_Job.varAccessRoles</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Textkernel_Access_Roles__c</field>
+            <value>
+                <elementReference>Get_TKC_roles_for_Job.varAccessRoles</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_TKC_roles_for_Job</targetReference>
+        </connector>
+        <filterFormula>AND(
+NOT({!$Permission.Bypass_System_Automation}),
+BEGINS({!$Record.OwnerId}, &quot;005&quot;),
+OR( ISNEW(), ISCHANGED({!$Record.Owner:User.Id})))</filterFormula>
+        <object>TR1__Job__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Get_TKC_roles_for_Job</name>
+        <label>Get TKC roles for Job</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Records_1</targetReference>
+        </connector>
+        <flowName>Get_Textkernel</flowName>
+        <inputAssignments>
+            <name>ownerId</name>
+            <value>
+                <elementReference>$Record.Owner:User.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <variables>
+        <name>varAccessRoles</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

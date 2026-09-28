@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Ratings" icon-name="standard:rating">
+        <lightning-button
+            slot="actions"
+            label="New"
+            variant="brand"
+            onclick={handleNew}>
+        </lightning-button>
+        <lightning-datatable
+            key-field="Id"
+            data={ratings}
+            columns={columns}
+            onrowaction={handleRowAction}
+            hide-checkbox-column>
+        </lightning-datatable>
+    </lightning-card>
+</template>

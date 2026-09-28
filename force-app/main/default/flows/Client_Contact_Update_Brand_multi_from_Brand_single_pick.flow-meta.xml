@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Update_Brand</name>
+        <label>Update Brand</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.Brand__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>BrandFormula</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <environments>Default</environments>
+    <formulas>
+        <name>BrandFormula</name>
+        <dataType>String</dataType>
+        <expression>CASE( TEXT({!$Record.Brand_Single_Pick__c}),
+    &quot;Integrated&quot;, &quot;Integrated&quot;, 
+     &quot;Teaching&quot;, &quot;Teaching&quot;,
+    &quot;Health &amp; Social Care&quot;, &quot;Health &amp; Social Care&quot;,
+    &quot;Dual - Teaching AND Health &amp; Social Care&quot;, &quot;Teaching;Health &amp; Social Care&quot;,
+    &quot;&quot;
+ )</expression>
+    </formulas>
+    <interviewLabel>Client / Contact - Update Brand multi from Brand single-pick {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Client - Update Brand multi from Brand single-pick</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Brand</targetReference>
+        </connector>
+        <filterFormula>ISNEW() || ISCHANGED({!$Record.Brand_Single_Pick__c})</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

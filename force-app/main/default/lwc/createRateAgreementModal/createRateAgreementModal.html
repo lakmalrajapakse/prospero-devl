@@ -1,0 +1,99 @@
+<template>
+    <section class="slds-modal slds-fade-in-open" role="dialog" tabindex="-1">
+        <div class="slds-modal__container">
+
+            <!-- Shared header - title switches with mode -->
+            <header class="slds-modal__header">
+                <lightning-button-icon
+                    icon-name="utility:close"
+                    alternative-text="Close"
+                    variant="bare-inverse"
+                    class="slds-modal__close"
+                    onclick={handleClose}>
+                </lightning-button-icon>
+                <h2 class="slds-text-heading_medium">{modalTitle}</h2>
+            </header>
+
+            <!-- Shared body - content switches with mode -->
+            <div class="slds-modal__content slds-p-around_medium">
+
+                <!-- Create / Edit Rate Agreement -->
+                <template lwc:if={isCreateMode}>
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-size_12-of-12">
+                            <lightning-input name="name" label="Rate Agreement Name" type="text" value={name} onchange={handleFieldChange} required></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-record-picker object-api-name="Account" label="Client" placeholder="Search Clients" value={clientId} onchange={lookupChangeHandler} required></lightning-record-picker>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-combobox name="type" label="Type" value={type} options={typeOptions} onchange={handleFieldChange}></lightning-combobox>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- Add Rate Agreement Version - saving this also auto-creates its one Employer On-Cost row -->
+                <template lwc:elseif={isAddVersionMode}>
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-size_12-of-12">
+                            <lightning-input name="effectiveDate" label="Effective Date" type="date" value={effectiveDate} onchange={handleFieldChange} required></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_12-of-12 slds-m-top_small">
+                            <p class="slds-text-body_small slds-text-color_weak">
+                                A default Employer On-Cost row will be created automatically for this version.
+                            </p>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- Edit Employer On-Cost -->
+                <template lwc:elseif={isEditOnCostMode}>
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-combobox name="calcType" label="Calc Type" value={calcType} options={calcTypeOptions} onchange={handleFieldChange}></lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-combobox name="onCostType" label="On Cost Type" value={onCostType} options={onCostTypeOptions} onchange={handleFieldChange}></lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-combobox name="onCostTypeValue" label="Type" value={onCostTypeValue} options={onCostTypeValueOptions} onchange={handleFieldChange}></lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-combobox name="workerType" label="Worker Type" value={workerType} options={workerTypeOptions} onchange={handleFieldChange}></lightning-combobox>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-input name="value" label="Value" type="number" value={value} onchange={handleFieldChange}></lightning-input>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- Add Rate Agreement Scale Definition -->
+                <template lwc:elseif={isAddScaleDefinitionMode}>
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-input name="scaleDefName" label="Name" type="text" value={scaleDefName} onchange={handleFieldChange} required></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-input name="jobType" label="Job Type" type="text" value={jobType} onchange={handleFieldChange}></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_6-of-12">
+                            <lightning-input name="region" label="Region" type="text" value={region} onchange={handleFieldChange}></lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_12-of-12">
+                            <lightning-textarea name="description" label="Description" value={description} onchange={handleFieldChange}></lightning-textarea>
+                        </div>
+                    </div>
+                </template>
+
+            </div>
+
+            <!-- Shared footer -->
+            <footer class="slds-modal__footer">
+                <lightning-button label="Cancel" variant="neutral" class="slds-m-right_small" disabled={isSaving} onclick={handleClose}></lightning-button>
+                <lightning-button label="Save" variant="brand" disabled={isSaving} onclick={handleSave}></lightning-button>
+            </footer>
+
+        </div>
+    </section>
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>

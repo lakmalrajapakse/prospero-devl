@@ -1,0 +1,115 @@
+<template>
+    <section role="dialog" tabindex="-1" class={modalClass}>
+        <div class="slds-modal__container">
+            <header class="slds-modal__header">
+                <lightning-button-icon
+                    class="slds-modal__close"
+                    icon-name="utility:close"
+                    alternative-text="Close"
+                    onclick={close}>
+                </lightning-button-icon>
+                <h2 class="slds-text-heading_medium">Add Rate Agreement Version</h2>
+            </header>
+
+            <div class="slds-modal__content slds-p-around_medium">
+                <template lwc:if={isSaving}>
+                    <lightning-spinner alternative-text="Saving" size="small"></lightning-spinner>
+                </template>
+
+                <template lwc:if={isStepOne}>
+                    <template lwc:if={isLoadingDefinitions}>
+                        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                    </template>
+                    <lightning-input type="date" label="Effective Date" value={effectiveDate} onchange={handleDateChange} required> </lightning-input>
+                </template>
+
+                <template lwc:if={isStepTwo}>
+                    <template lwc:if={hasDefinitions}>
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer ra-table">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th scope="col"><div class="slds-truncate" title="Definition">Definition</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Job Type">Job Type</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Region">Region</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Description">Description</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Min Amount">Min Amount</div></th>
+                                    <th scope="col"><div class="slds-truncate" title="Max Amount">Max Amount</div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={scaleRows} for:item="row">
+                                    <tr key={row.scaleDefinitionId} class="slds-hint-parent">
+                                        <td><div class="slds-truncate" title={row.name}>{row.name}</div></td>
+                                        <td><div class="slds-truncate" title={row.jobType}>{row.jobType}</div></td>
+                                        <td><div class="slds-truncate" title={row.region}>{row.region}</div></td>
+                                        <td><div class="slds-truncate" title={row.description}>{row.description}</div></td>
+                                        <td>
+                                            <lightning-input
+                                                type="number"
+                                                variant="label-hidden"
+                                                label="Min Amount"
+                                                step="0.01"
+                                                name="minAmount"
+                                                data-id={row.scaleDefinitionId}
+                                                value={row.minAmount}
+                                                onchange={handleAmountChange}>
+                                            </lightning-input>
+                                        </td>
+                                        <td>
+                                            <lightning-input
+                                                type="number"
+                                                variant="label-hidden"
+                                                label="Max Amount"
+                                                step="0.01"
+                                                name="maxAmount"
+                                                data-id={row.scaleDefinitionId}
+                                                value={row.maxAmount}
+                                                onchange={handleAmountChange}>
+                                            </lightning-input>
+                                        </td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </template>
+
+                    <template lwc:else>
+                        <p class="slds-p-around_medium slds-text-color_weak">
+                            No Scale Definitions exist on this Rate Agreement. The version will be created without any scales.
+                        </p>
+                    </template>
+                </template>
+
+                <div class="slds-m-top_medium slds-text-align_right">
+                    <lightning-button label="Cancel" onclick={close} disabled={isSaving}></lightning-button>
+
+                    <template lwc:if={isStepTwo}>
+                        <lightning-button class="slds-m-left_small" label="Back" onclick={goBack} disabled={isSaving}></lightning-button>
+                    </template>
+
+                    <template lwc:if={isStepOne}>
+                        <lightning-button
+                            class="slds-m-left_small"
+                            label="Next"
+                            variant="brand"
+                            disabled={disableNext}
+                            onclick={goNext}>
+                        </lightning-button>
+                    </template>
+
+                    <template lwc:else>
+                        <lightning-button
+                            class="slds-m-left_small"
+                            label="Save"
+                            variant="brand"
+                            disabled={isSaving}
+                            onclick={handleSave}>
+                        </lightning-button>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="slds-backdrop slds-backdrop_open"></div>
+</template>

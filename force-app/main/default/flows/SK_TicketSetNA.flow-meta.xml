@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Updates the ticket&apos;s status to N/A now that the user has confirmed it should be.</description>
+        <name>SK_UpdateStatusToNA</name>
+        <label>Update Status to N/A</label>
+        <locationX>50</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>SK_GetTicket.SK_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>N/A</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SK_UpdateTicketToNA</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Determine whether the user did or did not confirm setting the ticket as N/A.</description>
+        <name>SK_IsNAConfirmed</name>
+        <label>Is NA Confirmed?</label>
+        <locationX>314</locationX>
+        <locationY>518</locationY>
+        <defaultConnector>
+            <targetReference>SK_Skipped</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>N/A was NOT Confirmed</defaultConnectorLabel>
+        <rules>
+            <name>SK_NAWasConfirmed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_ConfirmNA</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_UpdateStatusToNA</targetReference>
+            </connector>
+            <label>N/A was Confirmed</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Only pending tickets can be set as N/A.</description>
+        <name>SK_IsTicketPending</name>
+        <label>Is Ticket Pending?</label>
+        <locationX>578</locationX>
+        <locationY>278</locationY>
+        <defaultConnector>
+            <targetReference>SK_NotPendingInstructions</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Ticket is NOT Pending</defaultConnectorLabel>
+        <rules>
+            <name>SK_TicketIsPending</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_GetTicket.SK_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Pending</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_ConfirmTicketAsNA</targetReference>
+            </connector>
+            <label>Ticket is Pending</label>
+        </rules>
+    </decisions>
+    <description>Allows the user to set a ticket as N/A (not applicable), after they have confirmed this is really what they meant to do.</description>
+    <interviewLabel>Ticket Set N/A {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>I don&apos;t have this Qualification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <description>Retrieves the record using the ID of the contextual Ticket.</description>
+        <name>SK_GetTicket</name>
+        <label>Get Ticket</label>
+        <locationX>578</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SK_IsTicketPending</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>SK_GetTicketFault</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>sirenum__Ticket__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Writes the updated record back to the database, thus setting the ticket as N/A.</description>
+        <name>SK_UpdateTicketToNA</name>
+        <label>Update Ticket to N/A</label>
+        <locationX>50</locationX>
+        <locationY>758</locationY>
+        <connector>
+            <targetReference>SK_Thanks</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>SK_UpdateTicketToNAFault</targetReference>
+        </faultConnector>
+        <inputReference>SK_GetTicket</inputReference>
+    </recordUpdates>
+    <screens>
+        <description>Get confirmation from the worker that they want to set this ticket as N/A.</description>
+        <name>SK_ConfirmTicketAsNA</name>
+        <label>Confirm Ticket as N/A</label>
+        <locationX>314</locationX>
+        <locationY>398</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>SK_IsNAConfirmed</targetReference>
+        </connector>
+        <fields>
+            <name>SK_ConfirmInstructions</name>
+            <fieldText>&lt;p&gt;Are you sure you want to set this qualification as N/A (not applicable)? Confirm by checking the box below.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>SK_ConfirmNA</name>
+            <dataType>Boolean</dataType>
+            <defaultValue>
+                <booleanValue>false</booleanValue>
+            </defaultValue>
+            <fieldText>I want to set this qualification as N/A</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>&lt;p&gt;By checking this box you confirm that this qualification is not applicable to you.&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Something went wrong retrieving the contextual ticket record.</description>
+        <name>SK_GetTicketFault</name>
+        <label>Get Ticket Fault</label>
+        <locationX>1106</locationX>
+        <locationY>278</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_GetTicketFaultInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, something went wrong. If this keeps happening, please contact us for help.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Explain to the worker what they need to do.</description>
+        <name>SK_NotPendingInstructions</name>
+        <label>Not Pending Instructions</label>
+        <locationX>842</locationX>
+        <locationY>398</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>NotPendingInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, you can only set Pending qualifications as N/A. If you submitted a qualification in error, please get in touch with us so we can sort this out.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>A screen that lets the user know that the ticket was not set N/A</description>
+        <name>SK_Skipped</name>
+        <label>Skipped</label>
+        <locationX>578</locationX>
+        <locationY>638</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_SkippedInstructions</name>
+            <fieldText>&lt;p&gt;This qualification has been left as Pending.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Tell the user that the ticket has been set N/A.</description>
+        <name>SK_Thanks</name>
+        <label>Thanks</label>
+        <locationX>50</locationX>
+        <locationY>878</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>ThanksInstructions</name>
+            <fieldText>&lt;p&gt;This qualification has been marked as not applicable for you.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Something went wrong when trying to update the ticket&apos;s status to N/A.</description>
+        <name>SK_UpdateTicketToNAFault</name>
+        <label>Update Ticket to N/A Fault</label>
+        <locationX>314</locationX>
+        <locationY>878</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_UpdateTicketToNAFaultInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, something went wrong. If this keeps happening please contact us for help.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>452</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SK_GetTicket</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>The ID of the contextual Ticket.</description>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

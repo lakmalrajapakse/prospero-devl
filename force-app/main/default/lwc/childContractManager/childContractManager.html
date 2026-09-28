@@ -1,0 +1,162 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <div class="ccm-wrapper">
+
+        <!-- Header -->
+        <div class="slds-page-header slds-page-header_record-home slds-m-bottom_small">
+            <div class="slds-page-header__row">
+                <div class="slds-page-header__col-title">
+                    <div class="slds-media">
+                        <div class="slds-media__figure slds-media__figure_fixed-width slds-align_absolute-center">
+                            <lightning-icon icon-name="standard:contract" size="medium"></lightning-icon>
+                        </div>
+                        <div class="slds-media__body">
+                            <div class="slds-page-header__name">
+                                <div class="slds-page-header__name-title">
+                                    <h1>
+                                        <span class="slds-page-header__title">Manage Child Account Contracts</span>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="slds-page-header__name-meta">
+                                <div class="slds-truncate" title={contractName}>
+                                    <span class="slds-text-color_weak">Contract:&nbsp;</span><strong>{contractName}</strong>
+                                </div>
+                                <div class="slds-truncate" title={parentAccountName}>
+                                    <span class="slds-text-color_weak">Parent Account:&nbsp;</span><strong>{parentAccountName}</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading spinner -->
+        <template if:true={isLoading}>
+            <div class="slds-is-relative" style="height: 8rem;">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+        </template>
+
+        <template if:false={isLoading}>
+
+            <!-- Error messages -->
+            <template if:true={hasErrors}>
+                <div class="slds-notify slds-notify_alert slds-theme_alert-texture slds-theme_error slds-m-bottom_small" role="alert">
+                    <lightning-icon icon-name="utility:error" alternative-text="Error" size="x-small" class="slds-m-right_x-small"></lightning-icon>
+                    <template for:each={errorMessages} for:item="msg">
+                        <p key={msg}>{msg}</p>
+                    </template>
+                </div>
+            </template>
+
+            <!-- No child accounts found -->
+            <template if:true={hasNoChildAccounts}>
+                <div class="slds-illustration slds-illustration_small slds-p-around_large">
+                    <div class="slds-illustration__actions slds-text-align_center">
+                        <lightning-icon icon-name="utility:info" size="small" class="slds-m-right_x-small"></lightning-icon>
+                        <p class="slds-text-heading_small">There are no child accounts linked to the contract's account or the contract is linked to a parent contract.</p>
+                    </div>
+                </div>
+            </template>
+
+            <!-- Child accounts table -->
+            <template if:true={hasChildAccounts}>
+                <div class="slds-m-bottom_x-small">
+                    <p class="slds-text-body_small slds-text-color_weak">
+                        Select rows and click <strong>Submit Selected</strong> to create new linked contracts.
+                        Rows that already have a linked contract will be skipped.
+                    </p>
+                </div>
+
+                <div class="ccm-table-container">
+                    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_fixed-layout" role="grid">
+                        <thead>
+                            <tr class="slds-line-height_reset">
+                                <th scope="col" style="width: 3rem;">
+                                    <lightning-input
+                                        type="checkbox"
+                                        label="Select All"
+                                        variant="label-hidden"
+                                        onchange={handleSelectAll}
+                                    ></lightning-input>
+                                </th>
+                                <th scope="col" style="width: 80%;">
+                                    <div class="slds-truncate" title="Child Account">Child Account</div>
+                                </th>
+                                <th scope="col" style="width: 20%;">
+                                    <div class="slds-truncate slds-p-horizontal_small" title="Contract Status">Contract</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template for:each={childRows} for:item="row">
+                                <tr key={row.accountId} class={row.rowClass}>
+                                    <!-- Select checkbox -->
+                                    <td role="gridcell">
+                                        <lightning-input
+                                            type="checkbox"
+                                            label="Select"
+                                            variant="label-hidden"
+                                            checked={row.isSelected}
+                                            data-id={row.accountId}
+                                            onchange={handleRowSelect}
+                                        ></lightning-input>
+                                    </td>
+
+                                    <!-- Account name -->
+                                    <td role="gridcell">
+                                        <div class="ccm-account-name">{row.accountName}</div>
+                                    </td>
+
+                                    <!-- Linked contract indicator -->
+                                    <td role="gridcell" class="slds-p-horizontal_small">
+                                        <template if:true={row.hasLinkedContract}>
+                                            <a href={row.linkedContractUrl} target="_blank" rel="noopener noreferrer">
+                                                <lightning-badge
+                                                    label="Linked"
+                                                    class="slds-theme_success"
+                                                    icon-name="utility:check"
+                                                ></lightning-badge>
+                                            </a>
+                                        </template>
+                                        <template if:false={row.hasLinkedContract}>
+                                            <lightning-badge label="New"></lightning-badge>
+                                        </template>
+                                    </td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Footer actions -->
+                <div class="slds-m-top_medium slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+                    <div class="slds-col">
+                        <span class="slds-text-body_small slds-text-color_weak">
+                            {selectedCount} of {totalCount} row(s) selected
+                        </span>
+                    </div>
+                    <div class="slds-col slds-text-align_right">
+                        <lightning-button
+                            label="Cancel"
+                            title="Cancel"
+                            class="slds-m-right_small"
+                            onclick={handleCancel}
+                        ></lightning-button>
+                        <lightning-button
+                            variant="brand"
+                            label="Submit Selected"
+                            title="Submit Selected"
+                            onclick={handleSubmit}
+                            disabled={noRowsSelected}
+                        ></lightning-button>
+                    </div>
+                </div>
+
+            </template>
+
+        </template>
+    </div>
+</template>

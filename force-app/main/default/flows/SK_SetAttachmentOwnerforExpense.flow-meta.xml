@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Adds the updated attachment to the required collection.</description>
+        <name>AddUpdatedAttachment</name>
+        <label>Add Updated Attachment</label>
+        <locationX>264</locationX>
+        <locationY>695</locationY>
+        <assignmentItems>
+            <assignToReference>AttachmentsToUpdate</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>LoopThroughAttachments</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>LoopThroughAttachments</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Sets the owner ID of the attachment to the current user.</description>
+        <name>SetAttachmentOwner</name>
+        <label>Set Attachment Owner</label>
+        <locationX>264</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>LoopThroughAttachments.OwnerId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>AddUpdatedAttachment</targetReference>
+        </connector>
+    </assignments>
+    <description>Whenever an expense is approved, set the owner ID of all related attachments to that of the current user.</description>
+    <interviewLabel>Set Attachment Owner for Expense (SK) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Attachment Owner for Expense (SK)</label>
+    <loops>
+        <description>Loops over the attachments related to the expense.</description>
+        <name>LoopThroughAttachments</name>
+        <label>Loop Through Attachments</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <collectionReference>GetRelatedAttachments</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>SetAttachmentOwner</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>SaveUpdatedAttachments</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Gets the attachments related to the expense.</description>
+        <name>GetRelatedAttachments</name>
+        <label>Get Related Attachments</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>LoopThroughAttachments</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ParentId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Attachment</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>OwnerId</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Updates the attachments to the database.</description>
+        <name>SaveUpdatedAttachments</name>
+        <label>Save Updated Attachments</label>
+        <locationX>176</locationX>
+        <locationY>911</locationY>
+        <inputReference>AttachmentsToUpdate</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>GetRelatedAttachments</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>sirenum__Approved__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>sirenum__Approved_for_Payment__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>sirenum__Expense__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Contains the attachments that need updating.</description>
+        <name>AttachmentsToUpdate</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Attachment</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>formulaFindMasterIdOfTask</name>
+        <dataType>String</dataType>
+        <expression>IF( NOT( ISBLANK( {!$Record.TR1__Send_Out_Schedule_V2__c} ) ), {!$Record.TR1__Send_Out_Schedule_V2__c},
+   IF( NOT( ISBLANK( {!$Record.TR1__Application_V2__c} ) ), {!$Record.TR1__Application_V2__c} ,
+      IF( NOT( ISBLANK( {!$Record.Job__c} ) ), {!$Record.Job__c} ,
+         IF( NOT( ISBLANK( {!$Record.Account__c}  ) ), {!$Record.Account__c} , &apos;&apos; )
+      )
+   )
+)</expression>
+    </formulas>
+    <interviewLabel>Task - Set WhatId for PowerNotes {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task - Set WhatId for PowerNotes</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_WhatId</name>
+        <label>Update WhatId</label>
+        <locationX>176</locationX>
+        <locationY>287</locationY>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>formulaFindMasterIdOfTask</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_WhatId</targetReference>
+        </connector>
+        <filterFormula>NOT({!$Permission.Bypass_System_Automation}) 
+&amp;&amp;
+NOT( {!$Permission.Bypass_Flows} )
+&amp;&amp;
+(
+   ISBLANK( {!$Record.WhatId} )
+   ||
+   (
+      (
+         ISCHANGED( {!$Record.TR1__Send_Out_Schedule_V2__c} )
+         || ISCHANGED( {!$Record.TR1__Application_V2__c} )
+         || ISCHANGED( {!$Record.Job__c} )
+         || ISCHANGED( {!$Record.Account__c} )
+      )
+      &amp;&amp;
+      NOT( ISCHANGED( {!$Record.WhatId} ) )
+   )
+)</filterFormula>
+        <object>Task</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

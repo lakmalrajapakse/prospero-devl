@@ -1,0 +1,226 @@
+<template>
+	<lightning-card title="Rate Agreement Manager" icon-name="standard:work_type_group">
+		<div class="slds-p-horizontal_medium slds-p-top_small">
+			<div class="slds-grid slds-wrap slds-gutters">
+				<div class="slds-col slds-size_1-of-3">
+					<lightning-input name="agreementName" label="Rate Agreement Name" onchange={filterChangeHandler}></lightning-input>
+				</div>
+				<div class="slds-col slds-size_1-of-3">
+					<lightning-record-picker object-api-name="Account" label="Client" onchange={lookupChangeHandler}></lightning-record-picker>
+				</div>
+				<!-- <div class="slds-col slds-size_1-of-4"><lightning-combobox name="agreementType" label="Type" options={typeOptions} onchange={filterChangeHandler}></lightning-combobox></div> -->
+				<div class="slds-col slds-size_1-of-3 slds-align-bottom">
+					<lightning-button class="slds-button_stretch" label="Search" variant="brand" onclick={handleSearchClick}></lightning-button>
+				</div>
+			</div>
+		</div>
+		<div class="slds-grid slds-grid_align-spread slds-m-top_large slds-p-horizontal_medium slds-p-bottom_small">
+			<h2 class="slds-text-heading_small">Rate Agreements</h2>
+			<lightning-button label="Create Rate Agreement" icon-name="utility:new" variant="brand" onclick={openCreateModal}></lightning-button>
+		</div>
+		<template lwc:if={isLoading}>
+			<lightning-spinner alternative-text="Loading Rate Agreements"></lightning-spinner>
+		</template>
+		<div class="slds-grid slds-gutters slds-p-horizontal_medium slds-p-bottom_medium">
+			<section class="slds-col list-panel" style="flex: 0 0 30%; max-width: 30%;">
+				<div class="bordered-table">
+					<lightning-datatable key-field="Id" data={agreements} columns={columns} max-row-selection="1" sorted-by={sortedBy} sorted-direction={sortDirection} onsort={handleSort} onrowselection={handleRowSelection}></lightning-datatable>
+				</div>
+				<div class="slds-grid slds-grid_align-spread slds-m-top_small">
+					<lightning-button label="Previous" disabled={disablePreviousPage} onclick={handlePreviousPage}></lightning-button> <span>Page {pageNumber}</span>
+					<lightning-button label="Next" disabled={disableNextPage} onclick={handleNextPage}></lightning-button>
+				</div>
+			</section>
+			<section class="slds-col detail-panel" style="flex: 0 0 70%; max-width: 70%;">
+				<template lwc:if={hasSelectedRateAgreement}>
+					<lightning-tabset active-tab-value="details">
+						<lightning-tab label="Details" value="details">
+                            <template lwc:if={isSavingDetails}>
+                                <lightning-spinner alternative-text="Saving" size="small"></lightning-spinner>
+                            </template>
+                            <lightning-record-edit-form
+                                object-api-name="Rate_Agreements__c"
+                                record-id={selectedRateAgreementId}
+                                onsubmit={handleDetailsSubmit}
+                                onsuccess={handleDetailsSuccess}
+                                onerror={handleDetailsError}>
+                                <div class="slds-grid slds-wrap slds-gutters slds-p-around_small">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Name" onchange={handleDetailsFieldChange}></lightning-input-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input-field field-name="Account__c" onchange={handleDetailsFieldChange}></lightning-input-field>
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-grid_align-center slds-grid_vertical-align-center slds-p-horizontal_small">
+                                    <div class="slds-size_1-of-2 slds-grid slds-grid_vertical-align-center slds-gutters">
+                                        <div class="slds-col slds-size_1-of-4 slds-text-align_right">
+                                            <label class="slds-form-element__label">Type</label>
+                                        </div>
+                                        <div class="slds-col slds-size_3-of-4">
+                                            <lightning-input variant="label-hidden" value="Pay Based" disabled></lightning-input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <template lwc:if={isDetailsDirty}>
+                                    <div class="slds-p-around_small slds-text-align_right">
+                                        <lightning-button type="submit" label="Save" variant="brand"></lightning-button>
+                                    </div>
+                                </template>
+                            </lightning-record-edit-form>
+                        </lightning-tab>
+						<lightning-tab label="Contracts" value="contracts">
+							<c-ra-contract-assignment rate-agreement-id={selectedRateAgreementId}></c-ra-contract-assignment>
+						</lightning-tab>
+						<lightning-tab label="Definitions" value="definitions">
+							<div class="slds-p-around_small slds-grid slds-grid_align-end">
+								<lightning-button-icon icon-name="utility:add" variant="brand" title="Add Scale Definition" alternative-text="Add Scale Definition" onclick={openScaleDefinitionModal}></lightning-button-icon>
+							</div>
+							<template lwc:if={isDefinitionsLoading}>
+								<lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+							</template>
+							<template lwc:if={hasScaleDefinitions}>
+								<div class="bordered-table definitions-table-wrapper">
+									<template lwc:if={isReordering}>
+										<lightning-spinner alternative-text="Saving order" size="small" class="reorder-spinner"></lightning-spinner>
+									</template>
+									<p class="slds-text-body_small slds-text-color_weak slds-p-around_x-small slds-text-title_bold"> Drag a row to reorder. Rows linked to an existing Scale can't be moved or deleted.</p>
+									<table class="slds-table slds-table_bordered slds-table_cell-buffer">
+										<thead>
+											<tr class="slds-line-height_reset">
+												<th scope="col">
+													<div class="slds-truncate">Name</div>
+												</th>
+												<th scope="col">
+													<div class="slds-truncate">Job Type</div>
+												</th>
+												<th scope="col">
+													<div class="slds-truncate">Region</div>
+												</th>
+												<th scope="col">
+													<div class="slds-truncate">Description</div>
+												</th>
+												<th scope="col">
+													<div class="slds-truncate">Ranking</div>
+												</th>
+												<th style="width: 5rem;"></th>
+											</tr>
+										</thead>
+										<tbody>
+											<template for:each={scaleDefinitions} for:item="def">
+												<tr key={def.definition.Id} class={def.rowClass} draggable={def.draggable} data-id={def.definition.Id} ondragstart={handleDragStart} ondragover={handleDragOver} ondrop={handleDrop} ondragend={handleDragEnd}>
+													<td>
+														<div class="slds-truncate">{def.definition.Name}</div>
+													</td>
+													<td>
+														<div class="slds-truncate">{def.definition.Job_Type__c}</div>
+													</td>
+													<td>
+														<div class="slds-truncate">{def.definition.Region__c}</div>
+													</td>
+													<td>
+														<div class="slds-truncate">{def.definition.Description__c}</div>
+													</td>
+													<td>
+														<div class="slds-truncate">{def.definition.Ranking__c}</div>
+													</td>
+													<td>
+														<lightning-button-icon icon-name="utility:user_role" title="Manage Job Roles" alternative-text="Manage Job Roles" data-id={def.definition.Id} onclick={handleManageJobRolesClick}> </lightning-button-icon>
+														<template lwc:if={def.canDelete}>
+															<lightning-button-icon icon-name="utility:delete" title="Delete" alternative-text="Delete" data-id={def.definition.Id} onclick={handleDeleteDefinition}> </lightning-button-icon>
+														</template>
+													</td>
+												</tr>
+											</template>
+										</tbody>
+									</table>
+								</div>
+							</template>
+							<template lwc:else>
+								<p class="slds-p-around_medium slds-text-color_weak">No Scale Definitions found.</p>
+							</template>
+						</lightning-tab>
+						<lightning-tab label="Versions" value="versions">
+							<div class="slds-p-around_small slds-grid slds-grid_align-end">
+								<lightning-button-icon icon-name="utility:add" variant="brand" title="Add Version" alternative-text="Add Version" onclick={openAddVersionModal}></lightning-button-icon>
+							</div>
+							<template lwc:if={isWorkspaceLoading}>
+								<lightning-spinner alternative-text="Loading related records" size="small"></lightning-spinner>
+							</template>
+							<template for:each={versions} for:item="version">
+								<lightning-accordion key={version.Id} class={version.accordionClass} allow-multiple-sections-open>
+									<lightning-accordion-section name={version.Id} label={version.label}> <span slot="actions" class="version-actions">  
+                                            <lightning-button-icon icon-name="utility:edit" title="Edit Version" alternative-text="Edit Version" data-id={version.Id} onclick={handleEditIconClick}></lightning-button-icon>  
+                                            <lightning-button-icon icon-name="utility:copy" title="Clone Version" alternative-text="Clone Version" class="slds-m-left_xx-small" data-id={version.Id} onclick={handleCloneIconClick}></lightning-button-icon>  
+                                        </span>
+										<c-rate-agreement-version version-id={version.Id} rate-agreement-id={selectedRateAgreementId} is-current={version.isCurrent}></c-rate-agreement-version>
+									</lightning-accordion-section>
+								</lightning-accordion>
+							</template>
+							<template lwc:if={hasNoVersions}>
+								<p class="slds-p-around_medium">No Rate Agreement Versions found.</p>
+							</template>
+						</lightning-tab>
+					</lightning-tabset>
+				</template>
+				<template lwc:else>
+					<div class="slds-box slds-text-align_center slds-text-color_weak"> Select a Rate Agreement to view its Details, Definitions, and Versions. </div>
+				</template>
+			</section>
+		</div>
+	</lightning-card>
+	<template lwc:if={showCreateModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning-button-icon icon-name="utility:close" class="slds-modal__close" alternative-text="Close" onclick={closeCreateModal}> </lightning-button-icon>
+                    <h2 class="slds-text-heading_medium">Create Rate Agreement</h2> </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <template lwc:if={isCreatingAgreement}>
+                        <lightning-spinner alternative-text="Saving" size="small"> </lightning-spinner>
+                    </template>
+                    <lightning-record-edit-form object-api-name="Rate_Agreements__c" onsubmit={handleCreateSubmit} onsuccess={handleCreateSuccess} onerror={handleFormError}>
+                        <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Name"></lightning-input-field>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input-field field-name="Account__c"></lightning-input-field>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-grid_align-center slds-m-top_large">
+                            <lightning-button label="Cancel" onclick={closeCreateModal}> </lightning-button>
+                            <lightning-button class="slds-m-left_small" label="Save" variant="brand" type="submit"> </lightning-button>
+                        </div>
+                    </lightning-record-edit-form>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+	<template lwc:if={showAddVersionModal}>
+		<c-add-rate-agreement-version rate-agreement-id={selectedRateAgreementId} onclose={closeAddVersionModal} onsuccess={handleVersionSuccess}></c-add-rate-agreement-version>
+	</template>
+	<template lwc:if={showScaleDefinitionModal}>
+		<c-add-rate-agreement-scale-definition rate-agreement-id={selectedRateAgreementId} onclose={closeScaleDefinitionModal} onsuccess={handleScaleDefinitionSuccess}></c-add-rate-agreement-scale-definition>
+	</template>
+	<template lwc:if={showManageVersionModal}>
+		<c-manage-rate-agreement-version mode={manageVersionMode} version-id={manageVersionId} onclose={closeManageVersionModal} onsuccess={handleManageVersionSuccess}></c-manage-rate-agreement-version>
+	</template>
+	<template lwc:if={showJobRoleModal}>
+		<section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_medium">
+			<div class="slds-modal__container">
+				<header class="slds-modal__header">
+					<lightning-button-icon class="slds-modal__close" icon-name="utility:close" alternative-text="Close" onclick={closeJobRoleModal}></lightning-button-icon>
+					<h2 class="slds-text-heading_medium">Job Roles for {jobRoleModalDefinitionName}</h2> </header>
+				<div class="slds-modal__content slds-p-around_medium">
+					<c-job-role-scale-assignment definition-id={jobRoleModalDefinitionId} rate-agreement-id={selectedRateAgreementId}></c-job-role-scale-assignment>
+				</div>
+				<footer class="slds-modal__footer">
+					<lightning-button label="Close" onclick={closeJobRoleModal}></lightning-button>
+				</footer>
+			</div>
+		</section>
+		<div class="slds-backdrop slds-backdrop_open"></div>
+	</template>
+</template>

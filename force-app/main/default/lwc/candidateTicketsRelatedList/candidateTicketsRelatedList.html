@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Tickets" icon-name="standard:certification">
+        <lightning-datatable
+            key-field="Id"
+            data={tickets}
+            columns={columns}
+            hide-checkbox-column
+            show-row-number-column>
+        </lightning-datatable>
+    </lightning-card>
+</template>

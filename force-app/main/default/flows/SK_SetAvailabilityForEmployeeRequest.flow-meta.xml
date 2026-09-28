@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>The employee request&apos;s availability is set from that of the equivalent Request Type.</description>
+        <name>SetAvailability</name>
+        <label>Set Availability</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.sirenum__Availability__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>FindRequestType.sirenum__Available__c</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <description>Verifies that a Request Type was found</description>
+        <name>FoundRequestType</name>
+        <label>Found Request Type?</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>No Request Type Found</defaultConnectorLabel>
+        <rules>
+            <name>DidFindRequestType</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>FindRequestType.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetAvailability</targetReference>
+            </connector>
+            <label>Found Request Type</label>
+        </rules>
+    </decisions>
+    <description>Whenever the type for the Employee Request changes the Availability must be updated to reflect the Available value of the equivalent Request Type.</description>
+    <interviewLabel>Set Availability for Employee Request (SK) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Set Availability for Employee Request (SK)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Finds the Request Type record that matches the Type selected for the Employee Request</description>
+        <name>FindRequestType</name>
+        <label>Find Request Type</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>FoundRequestType</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.sirenum__Type__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>sirenum__Request_Type__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>sirenum__Available__c</queriedFields>
+        <sortField>Id</sortField>
+        <sortOrder>Asc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>FindRequestType</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>sirenum__Type__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>sirenum__Employee_Request__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

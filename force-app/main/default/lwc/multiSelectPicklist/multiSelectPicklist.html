@@ -1,0 +1,55 @@
+<template>
+
+    <div class="slds-form-element">
+
+        <!-- LABEL -->
+        <label class="slds-form-element__label"> {label} </label> 
+
+        <!-- CONTROL -->
+
+        <div class="slds-form-element__control">
+            <div class="slds-combobox_container">
+                <div class={dropdownClass}>
+                    <!-- INPUT -->
+                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right"  role="none" onclick={toggleDropdown}>
+                        <button
+                            type="button"
+                            class="slds-input_faux slds-combobox__input"
+                            onclick={toggleDropdown}>
+
+                            {displayValue}
+
+                        </button>
+                        <lightning-icon
+                            icon-name="utility:down"
+                            size="x-small"
+                            class="slds-input__icon slds-input__icon_right"
+                            onclick={toggleDropdown}>
+                        </lightning-icon>
+                    </div>
+                    <!-- DROPDOWN -->
+                    <template if:true={showDropdown}>
+
+                        <div class="slds-dropdown slds-dropdown_fluid slds-dropdown_length-5">
+                            <ul class="slds-listbox slds-listbox_vertical" role="listbox">
+                                <template for:each={filteredOptions} for:item="option">
+                                    <li key={option.value} class="slds-listbox__item">
+                                        <div  class="slds-p-horizontal_small slds-p-vertical_x-small">
+                                            <lightning-input
+                                                type="checkbox"
+                                                label={option.label}
+                                                checked={option.selected}
+                                                data-value={option.value}
+                                                onchange={handleSelect}>
+                                            </lightning-input>
+                                        </div>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

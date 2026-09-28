@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Remove_Duplicate_Multi_Select_Values</name>
+        <label>Remove Duplicate Multi-Select Values</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>CombineMultiSelectValuesAction</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Update_Client</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>values1</name>
+            <value>
+                <elementReference>collectiontype</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>values2</name>
+            <value>
+                <elementReference>Collectiondepartment</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>values3</name>
+            <value>
+                <elementReference>CollectionAgegroup</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>CombineMultiSelectValuesAction</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>AssignVariables</name>
+        <label>Assign  Variables</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>CollectionAgegroup</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Teaching_Age_Group__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>CollectionAgegroup</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Health_Social_Care_Age_Group__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Collectiondepartment</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Teaching_Department__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Collectiondepartment</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Health_Social_Care_Department__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>collectiontype</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Teaching_Type__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>collectiontype</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Health_Social_Care_Type__c</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>collectiontype</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>$Record.Integrated_Type__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Age_group_Departments_And_Type_Exist</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Age_group_Departments_And_Type_Exist</name>
+        <label>Age group , Departments And Type Exist?</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Update_Client</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>yes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Teaching_Age_Group__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Health_Social_Care_Age_Group__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Teaching_Department__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Health_Social_Care_Department__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Teaching_Type__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Health_Social_Care_Type__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Integrated_Type__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Remove_Duplicate_Multi_Select_Values</targetReference>
+            </connector>
+            <label>yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>AgeGroup</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    RIGHT({!FinalAgeGroup}, 1) = &quot;;&quot;,
+    LEFT({!FinalAgeGroup}, LEN({!FinalAgeGroup}) - 1),
+    {!FinalAgeGroup}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Department</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    RIGHT({!FinalDepartment}, 1) = &quot;;&quot;,
+    LEFT({!FinalDepartment}, LEN({!FinalDepartment}) - 1),
+    {!FinalDepartment}
+)</expression>
+    </formulas>
+    <formulas>
+        <name>FinalAgeGroup</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!VarTAG}),
+    {!VarHSAG},
+    IF(
+        ISBLANK({!VarHSAG}),
+        {!VarTAG},
+        IF(
+            {!VarTAG} = {!VarHSAG},
+            {!VarTAG},
+            {!VarTAG} &amp; &quot;;&quot; &amp; {!VarHSAG}
+        )
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>FinalDepartment</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    ISBLANK({!VarTD}),
+    {!VarHSD},
+    IF(
+        ISBLANK({!VarHSD}),
+        {!VarTD},
+        IF(
+            {!VarTD} = {!VarHSD},
+            {!VarTD},
+            {!VarTD} &amp; &quot;;&quot; &amp; {!VarHSD}
+        )
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>FinalType</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    {!VarTT} = {!VarHST},
+    IF(
+        {!VarTT} = {!VarIT},
+        {!VarTT},
+        {!VarTT} &amp;
+        IF(ISBLANK({!VarIT}), &quot;&quot;, &quot;;&quot; &amp; {!VarIT})
+    ),
+    IF(
+        {!VarTT} = {!VarIT},
+        {!VarTT} &amp;
+        IF(ISBLANK({!VarHST}), &quot;&quot;, &quot;;&quot; &amp; {!VarHST}),
+        IF(
+            {!VarHST} = {!VarIT},
+            IF(
+                ISBLANK({!VarTT}),
+                {!VarHST},
+                {!VarTT} &amp;
+                IF(ISBLANK({!VarHST}), &quot;&quot;, &quot;;&quot; &amp; {!VarHST})
+            ),
+            IF(
+                ISBLANK({!VarTT}),
+                &quot;&quot;,
+                {!VarTT} &amp;
+                IF(
+                    OR(ISBLANK({!VarHST}), {!VarHST} = {!VarTT}),
+                    &quot;&quot;,
+                    &quot;;&quot; &amp; {!VarHST}
+                ) &amp;
+                IF(
+                    OR(
+                        ISBLANK({!VarIT}),
+                        {!VarIT} = {!VarTT},
+                        {!VarIT} = {!VarHST}
+                    ),
+                    &quot;&quot;,
+                    &quot;;&quot; &amp; {!VarIT}
+                )
+            ) &amp;
+            IF(
+                AND(
+                    ISBLANK({!VarTT}),
+                    NOT(ISBLANK({!VarHST}))
+                ),
+                {!VarHST},
+                &quot;&quot;
+            )
+        )
+    )
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Type</name>
+        <dataType>String</dataType>
+        <expression>IF(
+    RIGHT({!FinalType}, 1) = &quot;;&quot;,
+    LEFT({!FinalType}, LEN({!FinalType}) - 1),
+    {!FinalType}
+)</expression>
+    </formulas>
+    <interviewLabel>Client - Consolidate Brand specific picklist values {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Client - Consolidate Brand specific picklist values</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Client</name>
+        <label>Update Client</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Age_Group__c</field>
+            <value>
+                <elementReference>Remove_Duplicate_Multi_Select_Values.result3</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Department__c</field>
+            <value>
+                <elementReference>Remove_Duplicate_Multi_Select_Values.result2</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type__c</field>
+            <value>
+                <elementReference>Remove_Duplicate_Multi_Select_Values.result1</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>AssignVariables</targetReference>
+        </connector>
+        <filterFormula>OR(
+    ISNEW(),
+    ISCHANGED({!$Record.Teaching_Age_Group__c}),
+    ISCHANGED({!$Record.Health_Social_Care_Age_Group__c}),
+    ISCHANGED({!$Record.Teaching_Department__c}),
+    ISCHANGED({!$Record.Health_Social_Care_Department__c}),
+    ISCHANGED({!$Record.Teaching_Type__c}),
+    ISCHANGED({!$Record.Health_Social_Care_Type__c}),
+    ISCHANGED({!$Record.Integrated_Type__c})
+)</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>CollectionAgegroup</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Collectiondepartment</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>collectiontype</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VarHSAG</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VarHSD</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VarHST</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VarIT</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VarTAG</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VarTD</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>VarTT</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

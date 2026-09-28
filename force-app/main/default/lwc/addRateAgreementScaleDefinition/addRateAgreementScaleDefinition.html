@@ -1,0 +1,15 @@
+<template>
+    <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open"><div class="slds-modal__container">
+        <header class="slds-modal__header"><lightning-button-icon class="slds-modal__close" icon-name="utility:close" alternative-text="Close" onclick={close}></lightning-button-icon><h2 class="slds-text-heading_medium">Add Scale Definition</h2></header>
+        <div class="slds-modal__content slds-p-around_medium">
+            <template lwc:if={isSaving}>
+                <lightning-spinner alternative-text="Saving" size="small"></lightning-spinner>
+            </template>
+            <lightning-input label="Name" value={name} onchange={handleFieldChange} data-field="name" required></lightning-input>
+            <lightning-input label="Job Type" value={jobType} onchange={handleFieldChange} data-field="jobType"></lightning-input>
+            <lightning-input label="Region" value={region} onchange={handleFieldChange} data-field="region" required></lightning-input>
+            <lightning-textarea label="Description" value={description} onchange={handleFieldChange} data-field="description" required></lightning-textarea>
+            <div class="slds-m-top_medium slds-text-align_right"><lightning-button label="Cancel" onclick={close} disabled={isSaving}></lightning-button><lightning-button class="slds-m-left_small" label="Save" variant="brand" disabled={isSaving} onclick={handleSave}></lightning-button></div>
+        </div>
+    </div></section><div class="slds-backdrop slds-backdrop_open"></div>
+</template>

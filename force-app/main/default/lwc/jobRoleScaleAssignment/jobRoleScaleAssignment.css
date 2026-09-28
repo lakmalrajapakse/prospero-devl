@@ -1,0 +1,17 @@
+.assign-panel {
+    background-color: #ffffff;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.results-table-wrapper {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.pill-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+}

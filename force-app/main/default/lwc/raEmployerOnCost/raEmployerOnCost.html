@@ -1,0 +1,115 @@
+<template>
+    <div class="eoc-wrapper">
+        <div class="slds-grid slds-grid_align-end slds-p-bottom_small">
+            <lightning-button-icon icon-name="utility:add" variant="brand" title="Add Employer On Cost" alternative-text="Add Employer On Cost" onclick={openAddModal}></lightning-button-icon>
+        </div>
+
+        <template lwc:if={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+
+        <template lwc:if={hasOnCosts}>
+            <div class="table-wrapper">
+                <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                    <thead>
+                        <tr class="slds-line-height_reset">
+                            <th scope="col"><div class="slds-truncate">On Cost Type</div></th>
+                            <th scope="col"><div class="slds-truncate">Worker Type</div></th>
+                            <th scope="col"><div class="slds-truncate">Calc Type</div></th>
+                            <th scope="col"><div class="slds-truncate">Value</div></th>
+                            <th style="width: 5rem;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template for:each={onCosts} for:item="row">
+                            <tr key={row.Id} class="slds-hint-parent">
+                                <td>
+                                    <lightning-combobox
+                                        variant="label-hidden"
+                                        value={row.On_Cost_Type__c}
+                                        options={onCostTypeOptions}
+                                        dropdown-alignment="auto"
+                                        data-id={row.Id}
+                                        data-field="On_Cost_Type__c"
+                                        onchange={handleCellChange}>
+                                    </lightning-combobox>
+                                </td>
+                                <td>
+                                    <lightning-combobox
+                                        variant="label-hidden"
+                                        value={row.Worker_Type__c}
+                                        options={workerTypeOptions}
+                                        dropdown-alignment="auto"
+                                        data-id={row.Id}
+                                        data-field="Worker_Type__c"
+                                        onchange={handleCellChange}>
+                                    </lightning-combobox>
+                                </td>
+                                <td>
+                                    <lightning-combobox
+                                        variant="label-hidden"
+                                        value={row.Calc_Type__c}
+                                        options={calcTypeOptions}
+                                        dropdown-alignment="auto"
+                                        data-id={row.Id}
+                                        data-field="Calc_Type__c"
+                                        onchange={handleCellChange}>
+                                    </lightning-combobox>
+                                </td>
+                                <td class="value-cell">
+                                    <lightning-input
+                                        type="number"
+                                        step="0.01"
+                                        variant="label-hidden"
+                                        value={row.Value__c}
+                                        data-id={row.Id}
+                                        data-field="Value__c"
+                                        onchange={handleCellChange}>
+                                    </lightning-input>
+                                </td>
+                                <td>
+                                    <template lwc:if={row.isDirty}>
+                                        <lightning-button-icon icon-name="utility:save" title="Save" alternative-text="Save" data-id={row.Id} onclick={handleSaveRow}></lightning-button-icon>
+                                        <lightning-button-icon icon-name="utility:close" title="Cancel" alternative-text="Cancel" data-id={row.Id} onclick={handleCancelRow}></lightning-button-icon>
+                                    </template>
+                                    <template lwc:else>
+                                        <lightning-button-icon icon-name="utility:delete" title="Delete" alternative-text="Delete" data-id={row.Id} onclick={handleDelete}></lightning-button-icon>
+                                    </template>
+                                </td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </template>
+        <template lwc:else>
+            <p class="slds-p-around_medium slds-text-color_weak">No Employer On Cost records found.</p>
+        </template>
+    </div>
+
+    <template lwc:if={showAddModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-fade-in-open slds-modal_small">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <lightning-button-icon class="slds-modal__close" icon-name="utility:close" alternative-text="Close" onclick={closeAddModal}></lightning-button-icon>
+                    <h2 class="slds-text-heading_medium">Add Employer On Cost</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <template lwc:if={isSaving}>
+                        <lightning-spinner alternative-text="Saving" size="small"></lightning-spinner>
+                    </template>
+                    <lightning-combobox label="On Cost Type" value={newOnCostType} options={onCostTypeOptions} onchange={handleNewFieldChange} data-field="onCostType"></lightning-combobox>
+                    <lightning-combobox label="Worker Type" value={newWorkerType} options={workerTypeOptions} onchange={handleNewFieldChange} data-field="workerType"></lightning-combobox>
+                    <lightning-combobox label="Calc Type" value={newCalcType} options={calcTypeOptions} onchange={handleNewFieldChange} data-field="calcType"></lightning-combobox>
+                    <lightning-input type="number" step="0.01" label="Value" value={newValue} onchange={handleNewFieldChange} data-field="value"></lightning-input>
+
+                    <div class="slds-m-top_medium slds-text-align_right">
+                        <lightning-button label="Cancel" onclick={closeAddModal} disabled={isSaving}></lightning-button>
+                        <lightning-button class="slds-m-left_small" label="Save" variant="brand" disabled={isSaving} onclick={handleAddSave}></lightning-button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

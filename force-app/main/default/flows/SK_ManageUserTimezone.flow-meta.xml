@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Determined whether the user changed the time zone selection.</description>
+        <name>SK_TimeZoneChanged</name>
+        <label>Time Zone Changed?</label>
+        <locationX>182</locationX>
+        <locationY>242</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>SK_TimezoneIsChanged</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_Timezone</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$User.TimeZoneSidKey</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_SetUserTimezone</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Lets the user view and update their time zone choice.</description>
+    <dynamicChoiceSets>
+        <name>SK_Timezones</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>TimeZoneSidKey</picklistField>
+        <picklistObject>User</picklistObject>
+    </dynamicChoiceSets>
+    <interviewLabel>Manage user time zone (SK) {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Manage user time zone (SK)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordUpdates>
+        <description>Saves the updated time zone for the user</description>
+        <name>SK_SetUserTimezone</name>
+        <label>Set User Time Zone</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>TimeZoneSidKey</field>
+            <value>
+                <elementReference>SK_Timezone</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User</object>
+    </recordUpdates>
+    <screens>
+        <description>Allows the user to view or update their time zone.</description>
+        <name>SK_TimezoneScreen</name>
+        <label>Time Zone</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>SK_TimeZoneChanged</targetReference>
+        </connector>
+        <fields>
+            <name>SK_Timezone</name>
+            <choiceReferences>SK_Timezones</choiceReferences>
+            <dataType>String</dataType>
+            <defaultValue>
+                <elementReference>$User.TimeZoneSidKey</elementReference>
+            </defaultValue>
+            <fieldText>Time Zone</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <helpText>&lt;p&gt;This is the time zone used to present date/time values when you access online-only pages.&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <nextOrFinishButtonLabel>Set Time Zone</nextOrFinishButtonLabel>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SK_TimezoneScreen</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+</Flow>

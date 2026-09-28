@@ -1,0 +1,709 @@
+<template>
+    <template lwc:if={showAgreementDetails}>
+        <div class="agreement-details slds-m-bottom_medium">
+            <p class="slds-text-title_caps slds-m-bottom_small">Agreement Details</p>
+            <div class="slds-grid slds-wrap slds-gutters">
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-4">
+                    <p class="detail-label">Job Role</p>
+                    <p class="detail-value">{agreementDetails.jobRoleName}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-4">
+                    <p class="detail-label">Worker</p>
+                    <p class="detail-value">{agreementDetails.workerName}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-4">
+                    <p class="detail-label">Contract</p>
+                    <p class="detail-value">{agreementDetails.contractName}</p>
+                </div>
+                <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-4">
+                    <p class="detail-label">Rate Agreement</p>
+                    <p class="detail-value">{agreementDetails.rateAgreementName}</p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- The Placement's Contract has a Rate Agreement, but the Placement can't be validated
+         against it (no Job Role Scale, or no Rate Agreement Scale Definition) -- Rate Card/Page
+         creation is already blocked at the rateManager level for a Placement/Shift with no Rate
+         Card yet; this covers the case where a Rate Card already exists, so Add Rate Line is
+         blocked here instead. -->
+    <template lwc:if={agreementBlockingError}>
+        <div class="slds-box slds-box_x-small slds-theme_alert-texture slds-theme_error slds-m-bottom_medium slds-text-align_center">
+            <p class="slds-text-heading_small">{agreementBlockingError}</p>
+        </div>
+    </template>
+
+    <template lwc:if={showRateCardPages}>
+        <template lwc:if={isLoadingPages}>
+            <div class="slds-align_absolute-center slds-p-vertical_large">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+        </template>
+
+        <template lwc:if={hasNoPages}>
+            <p class="slds-text-color_weak slds-p-around_medium">{noPagesMessage}</p>
+        </template>
+
+        <template lwc:if={shiftPageSelectionMode}>
+            <template lwc:if={pages.length}>
+                <p class="slds-text-body_small slds-text-color_weak slds-m-bottom_small">
+                    No Rate Card Page exists for this Shift yet. Pick a Placement Rate Line below and
+                    click "Create Shift Page" to create this Shift's own Page, starting from that
+                    Line's values.
+                </p>
+            </template>
+        </template>
+
+        <!-- The valid (or latest) Page, and its latest Line, start expanded -- see
+             resolveValidPageId/activeLineName. Everything else starts collapsed. -->
+        <template lwc:if={pages.length}>
+            <lightning-accordion class="page-accordion" allow-multiple-sections-open active-section-name={activePageName}>
+                <template for:each={pages} for:item="pageWithLines">
+                    <lightning-accordion-section key={pageWithLines.key} name={pageWithLines.key} label={pageWithLines.validFromLabel}>
+                    <div slot="actions" class="slds-grid page-actions">
+                        <template lwc:if={showFullPageActions}>
+                            <template lwc:if={canAddRateLine}>
+                                <lightning-button-icon
+                                    icon-name="utility:copy"
+                                    alternative-text="Clone"
+                                    title="Clone"
+                                    data-page-id={pageWithLines.page.Id}
+                                    onclick={openClonePageModal}
+                                    class="slds-m-left_x-small">
+                                </lightning-button-icon>
+                                <lightning-button-icon
+                                    icon-name="utility:edit"
+                                    alternative-text="Edit"
+                                    title="Edit"
+                                    data-page-id={pageWithLines.page.Id}
+                                    onclick={openEditPageModal}
+                                    class="slds-m-left_x-small">
+                                </lightning-button-icon>
+                            </template>
+                        </template>
+                        <template lwc:if={canAddRateLine}>
+                                <lightning-button-icon
+                                    icon-name="utility:add"
+                                    alternative-text="Add rate line"
+                                    title="Add rate line"
+                                    variant="brand"
+                                    data-page-id={pageWithLines.page.Id}
+                                    onclick={openAddLineModal}
+                                    class="slds-m-left_x-small">
+                                </lightning-button-icon>
+                        </template>
+                    </div>
+                        <template lwc:if={pageWithLines.lines.length}>
+                            <lightning-accordion class="line-accordion" allow-multiple-sections-open active-section-name={pageWithLines.activeLineName}>
+                                <template for:each={pageWithLines.lines} for:item="entry">
+                                    <lightning-accordion-section key={entry.key} name={entry.key} label={entry.summaryLabel}>
+                                        <div slot="actions" class="slds-grid">
+                                            <template lwc:if={shiftPageSelectionMode}>
+                                                <lightning-button
+                                                    label="Create Shift Page"
+                                                    variant="brand"
+                                                    icon-name="utility:add"
+                                                    data-line-id={entry.line.Id}
+                                                    onclick={handleCreateShiftPage}
+                                                    class="slds-m-right_x-small">
+                                                </lightning-button>
+                                            </template>
+                                            <lightning-button-icon
+                                                icon-name="utility:edit"
+                                                alternative-text="Edit Rate Line"
+                                                title="Edit Rate Line"
+                                                data-page-id={pageWithLines.page.Id}
+                                                data-line-id={entry.line.Id}
+                                                onclick={handleEditLine}>
+                                            </lightning-button-icon>
+                                        </div>
+                                        <div class="slds-grid slds-wrap slds-gutters">
+                                            <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
+                                                <p class="detail-label">Code</p>
+                                                <p class="detail-value">{entry.line.sirenum__Code__c}</p>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
+                                                <p class="detail-label">Standard Rate Type</p>
+                                                <p class="detail-value">{entry.line.sirenum__Standard_Rate_Type__r.Name}</p>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
+                                                <p class="detail-label">Unit</p>
+                                                <p class="detail-value">{entry.line.sirenum__Unit__c}</p>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
+                                                <p class="detail-label">Start Hour</p>
+                                                <p class="detail-value">{entry.line.sirenum__Start_Hour__c}</p>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
+                                                <p class="detail-label">End Hour</p>
+                                                <p class="detail-value">{entry.line.sirenum__End_Hour__c}</p>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
+                                                <p class="detail-label">Day Type</p>
+                                                <p class="detail-value">{entry.line.sirenum__Day_Type__c}</p>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
+                                                <p class="detail-label">Pay Rate</p>
+                                                <p class="detail-value">{entry.line.sirenum__Pay_Rate__c}</p>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
+                                                <p class="detail-label">Charge Rate</p>
+                                                <p class="detail-value">{entry.line.sirenum__Charge_Rate__c}</p>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-3">
+                                                <p class="detail-label">Margin (%)</p>
+                                                <p class="detail-value">{entry.line.Margin__c}</p>
+                                            </div>
+                                        </div>
+                                        <template lwc:if={entry.awrModifier}>
+                                            <div class="awr-box slds-m-top_small">
+                                                <p class="slds-text-title_caps slds-m-bottom_x-small">AWR</p>
+                                                <div class="slds-grid slds-wrap slds-gutters">
+                                                    <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-4">
+                                                        <p class="detail-label">Pay Rate</p>
+                                                        <p class="detail-value">{entry.awrModifier.sirenum__Pay_Rate__c}</p>
+                                                    </div>
+                                                    <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-4">
+                                                        <p class="detail-label">Charge Rate</p>
+                                                        <p class="detail-value">{entry.awrModifier.sirenum__Charge_Rate__c}</p>
+                                                    </div>
+                                                    <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-4">
+                                                        <p class="detail-label">Margin Type</p>
+                                                        <p class="detail-value">{entry.awrModifier.Margin_Type__c}</p>
+                                                    </div>
+                                                    <div class="slds-col slds-size_1-of-2 slds-medium-size_1-of-4">
+                                                        <p class="detail-label">Margin (%)</p>
+                                                        <p class="detail-value">{entry.awrModifier.Margin__c}</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </lightning-accordion-section>
+                                </template>
+                            </lightning-accordion>
+                        </template>
+                        <template lwc:else>
+                            <p class="slds-text-color_weak slds-p-around_small">{noLinesMessage}</p>
+                        </template>
+                    </lightning-accordion-section>
+                </template>
+            </lightning-accordion>
+        </template>
+    </template>
+
+    <!-- Add Rate Line modal -->
+    <template lwc:if={showAddLineModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-modal_large add-line-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header modal-header-gradient">
+                    <lightning-button-icon
+                        icon-name="utility:close"
+                        class="slds-modal__close"
+                        alternative-text="Close"
+                        onclick={closeAddLineModal}>
+                    </lightning-button-icon>
+                    <h2 class="slds-text-heading_medium">{modalTitle}</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium add-line-modal-content">
+                    <template lwc:if={isSavingLine}>
+                        <lightning-spinner alternative-text="Saving" size="small"></lightning-spinner>
+                    </template>
+
+                    <div class="slds-grid slds-wrap slds-gutters">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-record-picker
+                                class="required-field"
+                                label="Standard Rate Type"
+                                placeholder="Search Standard Rate Types..."
+                                object-api-name={standardRateTypeObjectApiName}
+                                value={selectedStandardRateTypeId}
+                                onchange={handleStandardRateTypeChange}
+                                required>
+                            </lightning-record-picker>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input
+                                label="Code"
+                                value={derivedCode}
+                                disabled
+                                field-level-help="Auto-populated from the selected Standard Rate Type.">
+                            </lightning-input>
+                        </div>
+                    </div>
+
+                                        <!-- Unit/Start/End/Day Type -->
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_small">
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-combobox
+                                class="required-field"
+                                label="Unit"
+                                options={unitOptions}
+                                value={lineUnit}
+                                onchange={handleUnitChange}
+                                required>
+                            </lightning-combobox>
+                        </div>
+                        <template lwc:if={showDayType}>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-combobox
+                                    class="required-field"
+                                    label="Day Type"
+                                    options={dayTypeOptions}
+                                    value={lineDayType}
+                                    onchange={handleDayTypeChange}
+                                    required>
+                                </lightning-combobox>
+                            </div>
+                        </template>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input
+                                class="required-field"
+                                type="text"
+                                label="Start Hour"
+                                placeholder="HH:MM"
+                                value={lineStartHour}
+                                onchange={handleStartHourChange}
+                                required>
+                            </lightning-input>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input
+                                class="required-field"
+                                type="text"
+                                label="End Hour"
+                                placeholder="HH:MM"
+                                value={lineEndHour}
+                                onchange={handleEndHourChange}
+                                required>
+                            </lightning-input>
+                        </div>
+                    </div>
+
+                    <!-- Hidden when the Placement's Contract already has its own Rate Agreement --
+                         margin validation then follows that Rate Agreement's trigger-based rules
+                         instead of this per-line lookup. -->
+                    <template lwc:if={showEmployerOnCost}>
+                        <div class="slds-grid slds-wrap slds-gutters slds-m-top_small">
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-record-picker
+                                    label="Employer On Cost"
+                                    placeholder="Search Employer On Cost..."
+                                    object-api-name={rateAgreementObjectApiName}
+                                    filter={rateAgreementFilter}
+                                    value={selectedRateAgreementId}
+                                    onchange={handleRateAgreementChange}>
+                                </lightning-record-picker>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-grid slds-grid_vertical-align-end">
+                                <lightning-button
+                                    class="slds-button_stretch"
+                                    label="Edit / New Employer On Cost"
+                                    icon-name="utility:new_window"
+                                    onclick={openEmployerOnCostModal}>
+                                </lightning-button>
+                            </div>
+                        </div>
+                    </template>
+
+                    <!-- Rate Agreement mode -- the Placement's Contract has its own Rate
+                         Agreement, so margin follows that Rate Agreement's own Rate Agreement
+                         Line rule (resolved server-side, same chain rateLineTriggerCustomHandler
+                         itself resolves) instead of a user-picked Employer On Cost. Pay Rate
+                         defaults to the Scale's Min Amount and Charge/Margin are calculated
+                         automatically as soon as this resolves (see autoCalculateRateAgreementLine)
+                         -- no button needed to kick that off. Nothing recalculates live afterwards
+                         as Pay Rate/Charge Rate/Margin are edited though -- Recalculate (or Save)
+                         is what re-runs the pipeline. -->
+                    <template lwc:if={isRateAgreementMode}>
+                        <div class="slds-m-top_small rate-agreement-info">
+                            <!-- rateAgreementLineContext only exists once its wire resolves (it's
+                                 undefined for a moment right after the modal opens) -- guard
+                                 against that before reading any of its properties below. -->
+                            <template lwc:if={rateAgreementLineContext}>
+                                <template lwc:if={rateAgreementLineContext.errorMessage}>
+                                    <p class="slds-text-color_error">{rateAgreementLineContext.errorMessage}</p>
+                                </template>
+                                <template lwc:else>
+                                    <p class="detail-label">Rate Agreement Margin Rule</p>
+                                    <p class="detail-value">{rateAgreementLineContext.calcType} — {rateAgreementLineContext.marginValue}</p>
+                                    <div class="slds-m-top_x-small">
+                                        <lightning-button
+                                            label="View Employer On Cost"
+                                            onclick={openViewEmployerOnCostModal}>
+                                        </lightning-button>
+                                    </div>
+                                    
+                                </template>
+                            </template>
+                            <template lwc:else>
+                                <p class="slds-text-color_weak">Resolving the applicable Rate Agreement Line…</p>
+                            </template>
+                        </div>
+                    </template>
+
+
+
+                    <!-- Pay/Charge/Margin Type/Margin grouped together at the end -- they react to each other.
+                         Pay Rate's range/Total Cost hints sit BELOW its input, so every field in the
+                         grid starts on the same line regardless of mode. -->
+                    <div class="slds-grid slds-wrap slds-gutters slds-m-top_small rate-group">
+                        <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
+                            <lightning-input
+                                class="required-field"
+                                type="number"
+                                step="0.01"
+                                label="Pay Rate"
+                                value={linePayRate}
+                                onchange={handlePayRateChange}
+                                required>
+                            </lightning-input>
+                            <template lwc:if={isRateAgreementMode}>
+                                <p class="field-hint">{payScaleRangeDisplay}</p>
+                            </template>
+                            <template lwc:if={showTotalCost}>
+                                <p class="field-hint total-cost-hint">
+                                    Total Cost (Pay Rate + Employer On Cost): £{totalCostDisplay}
+                                </p>
+                            </template>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
+                            <lightning-input
+                                class="required-field"
+                                type="number"
+                                step="0.01"
+                                label="Charge Rate"
+                                value={lineChargeRate}
+                                onchange={handleChargeRateChange}
+                                required>
+                            </lightning-input>
+                        </div>
+                        <template lwc:if={showEmployerOnCost}>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-combobox
+                                    class="required-field"
+                                    label="Margin Type"
+                                    options={marginTypeOptions}
+                                    value={lineMarginType}
+                                    onchange={handleMarginTypeChange}
+                                    required>
+                                </lightning-combobox>
+                            </div>
+                        </template>
+                        <template lwc:if={isRateAgreementMode}>
+                            <div class="slds-col slds-size_1-of-2">
+                                <lightning-input label="Margin Type" value={lineMarginType} disabled></lightning-input>
+                            </div>
+                        </template>
+                        <div class="slds-col slds-size_1-of-2">
+                            <lightning-input
+                                class="required-field"
+                                type="number"
+                                step="0.01"
+                                label="Margin (%)"
+                                value={lineMargin}
+                                onchange={handleMarginChange}
+                                disabled={isCurrentCalcTypeFixed}
+                                required>
+                            </lightning-input>
+                        </div>
+                    </div>
+
+                    <!-- AWR (Agency Workers Regulations) -- an optional sirenum__Rate_Modifier__c
+                         linked to the 'AWR' sirenum__Rate_Modifier_Type__c, reusing this same
+                         modal's Employer On Cost breakdown against its own Pay Rate. Only offered
+                         alongside the rest of the Employer On Cost calculation (see
+                         showAwrSection). -->
+                    <template lwc:if={showAwrSection}>
+                        <div class="slds-m-top_small">
+                            <lightning-input
+                                type="toggle"
+                                label="AWR Applies"
+                                message-toggle-active="Yes"
+                                message-toggle-inactive="No"
+                                checked={awrApplies}
+                                onchange={handleAwrAppliesChange}>
+                            </lightning-input>
+                        </div>
+                        <template lwc:if={awrApplies}>
+                            <div class="slds-grid slds-wrap slds-gutters slds-m-top_small awr-box">
+                                <div class="slds-col slds-size_1-of-1">
+                                    <p class="slds-text-title_caps slds-m-bottom_x-small">AWR</p>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
+                                    <lightning-input
+                                        class="required-field"
+                                        type="number"
+                                        step="0.01"
+                                        label="Pay Rate"
+                                        value={awrPayRate}
+                                        onchange={handleAwrPayRateChange}
+                                        required>
+                                    </lightning-input>
+                                    <template lwc:if={isRateAgreementMode}>
+                                        <p class="field-hint">{payScaleRangeDisplay}</p>
+                                    </template>
+                                    <template lwc:if={showAwrTotalCost}>
+                                        <p class="field-hint total-cost-hint">
+                                            AWR Total Cost (Pay Rate + Employer On Cost): £{awrTotalCostDisplay}
+                                        </p>
+                                    </template>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
+                                    <lightning-input
+                                        class="required-field"
+                                        type="number"
+                                        step="0.01"
+                                        label="Charge Rate"
+                                        value={awrChargeRate}
+                                        onchange={handleAwrChargeRateChange}
+                                        required>
+                                    </lightning-input>
+                                </div>
+                                <template lwc:if={showEmployerOnCost}>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-combobox
+                                            class="required-field"
+                                            label="Margin Type"
+                                            options={marginTypeOptions}
+                                            value={awrMarginType}
+                                            onchange={handleAwrMarginTypeChange}
+                                            required>
+                                        </lightning-combobox>
+                                    </div>
+                                </template>
+                                <template lwc:if={isRateAgreementMode}>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-input label="Margin Type" value={awrMarginType} disabled></lightning-input>
+                                    </div>
+                                </template>
+                                <div class="slds-col slds-size_1-of-2">
+                                    <lightning-input
+                                        class="required-field"
+                                        type="number"
+                                        step="0.01"
+                                        label="Margin (%)"
+                                        value={awrMargin}
+                                        onchange={handleAwrMarginChange}
+                                        disabled={isCurrentCalcTypeFixed}
+                                        required>
+                                    </lightning-input>
+                                </div>
+                            </div>
+                        </template>
+                    </template>
+
+                    <div class="slds-m-top_medium slds-grid slds-grid_align-spread">
+                        <template lwc:if={showEmployerOnCost}>
+                            <lightning-button label="Recalculate" onclick={handleRecalculateClick}></lightning-button>
+                        </template>
+                        <template lwc:elseif={isRateAgreementMode}>
+                            <lightning-button label="Recalculate" onclick={handleCalculateRateAgreementLine} disabled={isCalculatingLine}></lightning-button>
+                        </template>
+                        <template lwc:else>
+                            <span></span>
+                        </template>
+                        <div>
+                            <lightning-button label="Cancel" onclick={closeAddLineModal}></lightning-button>
+                            <lightning-button
+                                class="slds-m-left_x-small"
+                                label="Save"
+                                variant="brand"
+                                onclick={handleSaveLine}
+                                disabled={isSavingLine}>
+                            </lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!-- Read-only Employer On Cost table for the resolved Rate Agreement Line (Rate Agreement
+         mode only) -- every row, every field, unfiltered by Worker Type, since this is purely
+         informational (the live calculation itself already filters by Worker Type client-side --
+         see wiredRateAgreementLineContext). Reuses the same teal header as the Employer On Cost
+         management modal below -- they're never open at the same time (mutually exclusive by
+         mode) and share the same "Employer On Cost info" theme. -->
+    <template lwc:if={showViewEmployerOnCostModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-modal_medium slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header employer-on-cost-modal-header">
+                    <lightning-button-icon
+                        icon-name="utility:close"
+                        class="slds-modal__close"
+                        alternative-text="Close"
+                        onclick={closeViewEmployerOnCostModal}>
+                    </lightning-button-icon>
+                    <h2 class="slds-text-heading_medium">Employer On Cost — Rate Agreement Line</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <template lwc:if={rateAgreementLineContext}>
+                        <template lwc:if={rateAgreementLineContext.employerOnCosts.length}>
+                            <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                                <thead>
+                                    <tr class="slds-line-height_reset">
+                                        <th scope="col"><div class="slds-truncate">Calc Type</div></th>
+                                        <th scope="col"><div class="slds-truncate">Value</div></th>
+                                        <th scope="col"><div class="slds-truncate">Worker Type</div></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template for:each={rateAgreementLineContext.employerOnCosts} for:item="cost">
+                                        <tr key={cost.Id}>
+                                            <td>{cost.Calc_Type__c}</td>
+                                            <td>{cost.Value__c}</td>
+                                            <td>{cost.Worker_Type__c}</td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </template>
+                        <template lwc:else>
+                            <p class="slds-text-color_weak">No Employer On Cost rows are configured for this Rate Agreement Line.</p>
+                        </template>
+                    </template>
+                </div>
+                <footer class="slds-modal__footer employer-on-cost-modal-header">
+                    <lightning-button label="Close" onclick={closeViewEmployerOnCostModal}></lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!-- Employer On Cost management modal. Deliberately not blue like the Add/Edit Rate Line
+         modal (employer-on-cost-modal-header has its own distinct gradient) so the two are never
+         confusable even when opened one on top of the other. Title says "Manage Records" rather
+         than repeating "Employer On Cost" -- the embedded manager already shows its own
+         "Employer On Cost Manager" card title and its own "Employer On Cost" picker, so this
+         modal's role is just creating/editing; the picker above (in the Add Rate Line form) is
+         the only place that actually selects which one applies to this Rate Line. Closing
+         auto-refreshes Total Cost/Charge Rate against whatever was changed in here. -->
+    <template lwc:if={showEmployerOnCostModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-modal_large slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header employer-on-cost-modal-header">
+                    <h2 class="slds-text-heading_medium">Manage Records</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <p class="slds-text-body_small slds-text-color_weak slds-m-bottom_small">
+                        Create a new record or edit an existing one below. It won't be selected for
+                        this Rate Line automatically -- pick it from the Employer On Cost field
+                        above once you're done. Total Cost/Charge Rate refresh automatically when
+                        you close this.
+                    </p>
+                    <c-employer-on-cost-manager selected-agreement-id={selectedRateAgreementId}></c-employer-on-cost-manager>
+                </div>
+                <footer class="slds-modal__footer employer-on-cost-modal-header">
+                    <lightning-button label="Close" onclick={closeEmployerOnCostModal}></lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!-- Clone Page -- a distinct slate header (not blue/teal/purple) since this is a Page-level
+         structural action, not part of the Rate Line/Employer On Cost/AWR calculation flow. -->
+    <template lwc:if={showClonePageModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-modal_small slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header page-modal-header">
+                    <lightning-button-icon
+                        icon-name="utility:close"
+                        class="slds-modal__close"
+                        alternative-text="Close"
+                        onclick={closeClonePageModal}>
+                    </lightning-button-icon>
+                    <h2 class="slds-text-heading_medium">Clone Rate Card Page</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <p class="slds-text-body_small slds-text-color_weak slds-m-bottom_small">
+                        Creates a new Page on this Rate Card, with every Rate Line (and AWR
+                        modifier) on this Page copied onto it. This Page will be ended (its Valid
+                        Until Date set) the day before the Effective Date you enter below.
+                    </p>
+                    <lightning-input
+                        class="slds-m-bottom_small"
+                        label="New Page Name"
+                        value={clonePageName}
+                        onchange={handleClonePageNameChange}
+                        required>
+                    </lightning-input>
+                    <lightning-input
+                        type="date"
+                        label="Effective Date"
+                        field-level-help="The new Page's Valid From Date -- this Page's own Valid Until Date is set to the day before."
+                        value={clonePageEffectiveDate}
+                        onchange={handleClonePageEffectiveDateChange}
+                        required>
+                    </lightning-input>
+                </div>
+                <footer class="slds-modal__footer page-modal-header">
+                    <lightning-button label="Cancel" onclick={closeClonePageModal}></lightning-button>
+                    <lightning-button
+                        class="slds-m-left_x-small"
+                        label="Clone"
+                        variant="brand"
+                        onclick={handleConfirmClonePage}
+                        disabled={isCloningPage}>
+                    </lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+
+    <!-- Edit Page -- Name and Valid From are editable; Valid Until is read-only (it's only ever
+         set by Clone, ending a Page the day before its successor starts). -->
+    <template lwc:if={showEditPageModal}>
+        <section role="dialog" tabindex="-1" class="slds-modal slds-modal_small slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header page-modal-header">
+                    <lightning-button-icon
+                        icon-name="utility:close"
+                        class="slds-modal__close"
+                        alternative-text="Close"
+                        onclick={closeEditPageModal}>
+                    </lightning-button-icon>
+                    <h2 class="slds-text-heading_medium">Edit Rate Card Page</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <lightning-input
+                        class="slds-m-bottom_small"
+                        label="Name"
+                        value={editPageName}
+                        onchange={handleEditPageNameChange}
+                        required>
+                    </lightning-input>
+                    <lightning-input
+                        class="slds-m-bottom_small"
+                        type="date"
+                        label="Valid From Date"
+                        value={editPageValidFromDate}
+                        onchange={handleEditPageValidFromDateChange}
+                        required>
+                    </lightning-input>
+                    <lightning-input
+                        type="date"
+                        label="Valid Until Date"
+                        value={editPageValidUntilDate}
+                        disabled>
+                    </lightning-input>
+                </div>
+                <footer class="slds-modal__footer page-modal-header">
+                    <lightning-button label="Cancel" onclick={closeEditPageModal}></lightning-button>
+                    <lightning-button
+                        class="slds-m-left_x-small"
+                        label="Save"
+                        variant="brand"
+                        onclick={handleSavePageEdit}
+                        disabled={isSavingPageEdit}>
+                    </lightning-button>
+                </footer>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>

@@ -1,0 +1,92 @@
+<template>
+
+    <template if:true={filters}>
+        <!-- Accordian -->
+        <lightning-accordion class="filter-accordion" allow-multiple-sections-open>
+            <lightning-accordion-section name="A" label="Advanced Filters">
+                <!-- Additonal Filters Section -->
+                 <div class="slds-grid slds-wrap slds-gutters">
+                    <template for:each={filters} for:item="filter">
+                        <template lwc:if={filter.isVisible}>
+                            <div key={filter.fieldApiName} class={filter.cssClass}>
+                                    <!-- TEXT -->
+                                <template lwc:if={filter.isText}>
+
+                                    <lightning-input
+                                        type="text"
+                                        label={filter.label}
+                                        name={filter.fieldApiName}
+                                        placeholder={filter.placeholder}
+                                        required={filter.required}
+                                        field-level-help={filter.helpText}
+                                        onchange={changeHandler}>
+                                    </lightning-input>
+                                </template>
+
+                                <!-- NUMBER -->
+
+                                <template lwc:if={filter.isNumber}>
+                                    <lightning-input
+                                        type="number"
+                                        label={filter.label}
+                                        name={filter.fieldApiName}
+                                        required={filter.required}
+                                        field-level-help={filter.helpText}
+                                        onchange={changeHandler}>
+                                    </lightning-input>
+                                </template>
+
+                                <!-- PICKLIST -->
+
+                                <template lwc:if={filter.isPicklist}>
+                                    <lightning-combobox
+                                        label={filter.label}
+                                        name={filter.fieldApiName}
+                                        required ={filter.required}
+                                        options={filter.options}
+                                        field-level-help={filter.helpText}
+                                        onchange={changeHandler}>
+                                    </lightning-combobox>
+                                </template>
+
+                                <!-- MULTI PICKLIST -->
+                                <!-- Will return like below FieldApi Name and Values -->
+                                <!-- {"Departments__c":["Accounts/Finance","Administrative_and_Support_Services","AV Manager","CEO/Board Level"],"Roles__c":["3D Animator","Academic Advisor","Activity Coordinator","Admin/ Receptionist"]} -->
+                                <template lwc:if={filter.isMultiPicklist}>
+                                    <c-multi-select-picklist
+                                        label={filter.label}
+                                        options={filter.options}
+                                        value={filter.value}
+                                        field-api-name={filter.fieldApiName}
+                                        helptext={filter.helpText}
+                                        placeholder={filter.placeholder}
+                                        data-field={filter.fieldApiName}
+                                        onvaluechange={handleFilterChange}>
+                                    </c-multi-select-picklist>
+                                </template>
+
+                                
+                                <!-- Lookup filter -->
+                                <!-- {"AccountId":["001Pv000011RhmZIAS","001Pv000011Ua1lIAC"]} -->
+                                <template lwc:if={filter.isLookup}>
+                                <c-custom-lookup-component
+                                    field-api-name={filter.fieldApiName}
+                                    object-api-name={filter.objectApiName}
+                                    where-clause={filter.lookupClause}
+                                    fields-to-display={filter.lookupDisplayName}
+                                    label={filter.label}
+                                    placeholder={filter.placeholder}
+                                    helptext={filter.helptext}
+                                    max-selection={filter.maxSelection}
+                                    onlookupchange={handleFilterChange}>
+                                </c-custom-lookup-component>
+                                </template>
+                            </div>
+                        </template>
+                    </template>
+                </div>
+            </lightning-accordion-section>
+        </lightning-accordion>
+    </template>
+
+</template>

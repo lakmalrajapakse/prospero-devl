@@ -1,0 +1,15 @@
+.eoc-wrapper {
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background-color: #ffffff;
+    padding: 0.5rem;
+}
+
+.table-wrapper {
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+}
+
+.value-cell {
+    text-align: left;
+}

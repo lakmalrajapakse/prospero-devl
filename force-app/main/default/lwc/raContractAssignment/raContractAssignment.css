@@ -1,0 +1,11 @@
+.assign-panel {
+    background-color: #ffffff;
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+}
+
+.results-table-wrapper {
+    max-height: 240px;
+    overflow-y: auto;
+}

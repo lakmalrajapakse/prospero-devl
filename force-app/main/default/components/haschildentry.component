@@ -1,0 +1,9 @@
+<apex:component >
+    <apex:attribute name="field" type="String" description="TODO: Describe me"/>
+    <apex:attribute name="recordid" type="String" description="TODO: Describe me"/>
+    <apex:attribute name="childsectionname" type="String" description="TODO: Describe me"/>
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Component: haschildentry
+  <!-- End Default Content REMOVE THIS -->
+</apex:component>

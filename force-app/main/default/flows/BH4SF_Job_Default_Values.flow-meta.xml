@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <description>Checks the Status of the Job. If Status is Open, this Job will be upserted to Textkernel. If the Status is not Open, the Job will be removed from the TK index</description>
+        <name>Check_Job_Status</name>
+        <label>Check Job Status</label>
+        <locationX>314</locationX>
+        <locationY>287</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Status_is_Open</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.TR1__Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetIndexToTKtoTrue</targetReference>
+            </connector>
+            <label>Status is Open</label>
+        </rules>
+        <rules>
+            <name>Status_not_Open</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.TR1__Status__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>Open</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SetIndexToTKtoFalse</targetReference>
+            </connector>
+            <label>Status not Open</label>
+        </rules>
+    </decisions>
+    <description>BeforeSave flow to set the Index To Textkernel field based on the Status of the job</description>
+    <environments>Default</environments>
+    <interviewLabel>BH4SF Job Default Values {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>BH4SF Job Default Values</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>SetIndexToTKtoFalse</name>
+        <label>SetIndexToTKtoFalse</label>
+        <locationX>314</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>TKC_Index_to_Textkernel__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>SetIndexToTKtoTrue</name>
+        <label>SetIndexToTKtoTrue</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <inputAssignments>
+            <field>TKC_Index_to_Textkernel__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Job_Status</targetReference>
+        </connector>
+        <filterFormula>NOT( {!$Permission.Bypass_Flows} )
+&amp;&amp;
+( ISCHANGED({!$Record.TR1__Status__c}) || ISNEW() )</filterFormula>
+        <object>TR1__Job__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

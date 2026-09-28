@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <description>Adds the new missing ticket into the missing tickets collection.</description>
+        <name>SK_AddMissingTicket</name>
+        <label>Add Missing Ticket</label>
+        <locationX>616</locationX>
+        <locationY>1118</locationY>
+        <assignmentItems>
+            <assignToReference>SK_MissingTickets</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>SK_MissingTicket</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SK_LoopOverRequiredCompetencies</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Sets up the missing ticket ready for adding.</description>
+        <name>SK_InitializeMissingTicket</name>
+        <label>Initialize Missing Ticket</label>
+        <locationX>616</locationX>
+        <locationY>998</locationY>
+        <assignmentItems>
+            <assignToReference>SK_MissingTicket.SK_Status__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Pending</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SK_MissingTicket.sirenum__Owner__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$User.ContactId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>SK_MissingTicket.sirenum__TicketType__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SK_LoopOverRequiredCompetencies.sirenum__TicketType__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SK_AddMissingTicket</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Remembers the required competency so duplicates can be skipped.</description>
+        <name>SK_RememberRequiredCompetency</name>
+        <label>Remember Required Competency</label>
+        <locationX>528</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>SK_LastSeenCompetency</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SK_LoopOverRequiredCompetencies.sirenum__TicketType__c</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>SK_GetExistingTicketForRequiredCompetency</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Chooses between the user&apos;s contact already having the ticket for this competency, or not.</description>
+        <name>SK_HasTicketAlready</name>
+        <label>Has Ticket Already?</label>
+        <locationX>528</locationX>
+        <locationY>878</locationY>
+        <defaultConnector>
+            <targetReference>SK_InitializeMissingTicket</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Has No Ticket</defaultConnectorLabel>
+        <rules>
+            <name>SK_HasTicket</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_GetExistingTicketForRequiredCompetency.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_LoopOverRequiredCompetencies</targetReference>
+            </connector>
+            <label>Has Ticket</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Checks to see if the required competency has already been seen and, if so, skips it.</description>
+        <name>SK_IsRequiredCompetencyUnique</name>
+        <label>Is Required Competency Unique?</label>
+        <locationX>396</locationX>
+        <locationY>518</locationY>
+        <defaultConnector>
+            <targetReference>SK_RememberRequiredCompetency</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Not Seen Before</defaultConnectorLabel>
+        <rules>
+            <name>SK_SeenBefore</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SK_LoopOverRequiredCompetencies.sirenum__TicketType__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <elementReference>SK_LastSeenCompetency</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SK_LoopOverRequiredCompetencies</targetReference>
+            </connector>
+            <label>Seen Before</label>
+        </rules>
+    </decisions>
+    <description>Lets the user select a given job type then adds any missing tickets the user needs for that job type.</description>
+    <dynamicChoiceSets>
+        <description>Holds a list of all competencies with names.</description>
+        <name>SK_Competencies</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>sirenum__TicketType__c</object>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>Holds a list of all available job types.</description>
+        <name>SK_JobTypes</name>
+        <dataType>String</dataType>
+        <displayField>Name</displayField>
+        <object>sirenum__Job_Type__c</object>
+        <sortField>Name</sortField>
+        <sortOrder>Asc</sortOrder>
+        <valueField>Id</valueField>
+    </dynamicChoiceSets>
+    <interviewLabel>Add Tickets for Job Type {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Choose your Job Types</label>
+    <loops>
+        <description>Now we have the required competencies, in a list of competency conditions, we need to loop over them to add tickets based on these competencies. Note that if a competency is already covered by a ticket for the user we don&apos;t add another ticket for it.</description>
+        <name>SK_LoopOverRequiredCompetencies</name>
+        <label>Loop over Required Competencies</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <collectionReference>SK_GetRequiredCompetenciesForTheJobTypeSelection</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>SK_IsRequiredCompetencyUnique</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>SK_CreateMissingTickets</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <description>Now bulk creates the missing tickets in the collection.</description>
+        <name>SK_CreateMissingTickets</name>
+        <label>Create Missing Tickets</label>
+        <locationX>176</locationX>
+        <locationY>1526</locationY>
+        <connector>
+            <targetReference>SK_NewTickets</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>SK_CreateMissingTicketsFault</targetReference>
+        </faultConnector>
+        <inputReference>SK_MissingTickets</inputReference>
+    </recordCreates>
+    <recordLookups>
+        <description>This looks to see if a ticket already exists for the given required competency.</description>
+        <name>SK_GetExistingTicketForRequiredCompetency</name>
+        <label>Get Existing Ticket for Required Competency</label>
+        <locationX>528</locationX>
+        <locationY>758</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SK_HasTicketAlready</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>SK_GetExistingTicketFault</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>sirenum__Owner__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$User.ContactId</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>sirenum__TicketType__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SK_LoopOverRequiredCompetencies.sirenum__TicketType__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>sirenum__Ticket__c</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Given the user&apos;s job type selection, find the competency conditions directly related to that job type</description>
+        <name>SK_GetRequiredCompetenciesForTheJobTypeSelection</name>
+        <label>Get Required Competencies for the Job Type Selection</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>SK_LoopOverRequiredCompetencies</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>SK_GetRequiredCompetenciesFault</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>sirenum__Job_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>SK_JobTypeSelection</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>sirenum__Sirenum_Condition_Membership__c</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>sirenum__TicketType__c</queriedFields>
+        <sortField>sirenum__TicketType__c</sortField>
+        <sortOrder>Desc</sortOrder>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
+    <screens>
+        <description>Tells the user something went wrong and what to do next.</description>
+        <name>SK_CreateMissingTicketsFault</name>
+        <label>Create Missing Tickets Fault</label>
+        <locationX>704</locationX>
+        <locationY>1646</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_CreateMissingTicketsFaultInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, something went wrong. If this keeps happening please contact us for help.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Tells the user that something went wrong and what to do next.</description>
+        <name>SK_GetExistingTicketFault</name>
+        <label>Get Existing Ticket Fault</label>
+        <locationX>880</locationX>
+        <locationY>878</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_GetExistingTicketFaultInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, something went wrong. If this keeps happening please contact us for help.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Asks the user to select a job type from which to generate the required tickets.</description>
+        <name>SK_GetJobType</name>
+        <label>Get Job Type</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>SK_GetRequiredCompetenciesForTheJobTypeSelection</targetReference>
+        </connector>
+        <fields>
+            <name>SK_JobTypeSelectInstructions</name>
+            <fieldText>&lt;p&gt;Please tell us what type of job you are looking for and we will add the qualifications you need to your profile.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You can only select one job type right now, but if you are interested in more you can repeat this process as many times as you like, choosing a different job type each time.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;We may need you to provide evidence that you hold a given qualification though we will make that clear when you submit a qualification for our review.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <fields>
+            <name>SK_JobTypeSelection</name>
+            <choiceReferences>SK_JobTypes</choiceReferences>
+            <dataType>String</dataType>
+            <fieldText>Tell us what you want to do:</fieldText>
+            <fieldType>DropdownBox</fieldType>
+            <helpText>&lt;p&gt;This is a list of the various types of job we may have available from which you can choose.&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Lets the user know something went wrong and tells them what to do.</description>
+        <name>SK_GetRequiredCompetenciesFault</name>
+        <label>Get Required Competencies Fault</label>
+        <locationX>968</locationX>
+        <locationY>398</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_GetRequiredCompetenciesFaultInstructions</name>
+            <fieldText>&lt;p&gt;Sorry, something went wrong. If this keeps happening please contact us for help.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <description>Tells the user about their new tickets and what they should do next.</description>
+        <name>SK_NewTickets</name>
+        <label>New Tickets</label>
+        <locationX>176</locationX>
+        <locationY>1646</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>SK_NewTicketsInstructions</name>
+            <fieldText>&lt;p&gt;We have added the qualifications we think you need for {!SK_JobTypeSelection}. Once finished here please review these qualifications and let us know if you have them, and where we ask please attach documentary evidence.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Tap &lt;b&gt;Finish&lt;/b&gt; to continue.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SK_GetJobType</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Tracks the competency that was last seen during the processing of required competencies.</description>
+        <name>SK_LastSeenCompetency</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>A single missing ticket to be created.</description>
+        <name>SK_MissingTicket</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>sirenum__Ticket__c</objectType>
+    </variables>
+    <variables>
+        <description>Collects all the missing tickets for the user that are to be created.</description>
+        <name>SK_MissingTickets</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>sirenum__Ticket__c</objectType>
+    </variables>
+</Flow>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Duplicate_Count_And_Id</name>
+        <label>Assign Duplicate Count and First Record ID</label>
+        <locationX>666</locationX>
+        <locationY>503</locationY>
+        <assignmentItems>
+            <assignToReference>Var_Duplicate_Count</assignToReference>
+            <operator>AssignCount</operator>
+            <value>
+                <elementReference>Get_Existing_Multi_Client_Contracts</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Get_First_Conflicting_ID</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_First_Conflicting_ID</name>
+        <label>Assign First Conflicting ID</label>
+        <locationX>886</locationX>
+        <locationY>719</locationY>
+        <assignmentItems>
+            <assignToReference>Var_Conflicting_Record_Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_Get_First_Conflicting_ID.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Check_Duplicate_Count</targetReference>
+        </connector>
+    </assignments>
+    <customErrors>
+        <name>Error_Duplicate_Contract</name>
+        <label>Error: Duplicate Contract</label>
+        <locationX>754</locationX>
+        <locationY>935</locationY>
+        <customErrorMessages>
+            <errorMessage>There is already a Multi-Client Job Client Contract: {!Var_Conflicting_Record_Id}, this must be unset before this record can be set to True.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <customErrors>
+        <name>Error_Invalid_Account</name>
+        <label>Error: Invalid Account</label>
+        <locationX>50</locationX>
+        <locationY>395</locationY>
+        <customErrorMessages>
+            <errorMessage>You can only set the Multi-Client Job Client Contract to True if it is related to the Multi-Client Job Client.</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Check_Account_Eligibility</name>
+        <label>Check Account Eligibility</label>
+        <locationX>358</locationX>
+        <locationY>287</locationY>
+        <defaultConnector>
+            <targetReference>Get_Existing_Multi_Client_Contracts</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Account Valid</defaultConnectorLabel>
+        <rules>
+            <name>Account_Invalid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.sirenum__Client__r.Multi_Client_Job_Client__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Multi_Client_Job_Client_Contract__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Invalid_Account</targetReference>
+            </connector>
+            <label>Account Invalid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Duplicate_Count</name>
+        <label>Check Duplicate Count</label>
+        <locationX>886</locationX>
+        <locationY>827</locationY>
+        <defaultConnectorLabel>Allow Save</defaultConnectorLabel>
+        <rules>
+            <name>Duplicate_Found</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Var_Duplicate_Count</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>0.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Error_Duplicate_Contract</targetReference>
+            </connector>
+            <label>Duplicate Found</label>
+        </rules>
+    </decisions>
+    <description>Validation flow on Sirenum ProActive Contract to prevent setting multiple Multi-Client Job Client Contracts per Account or on invalid Accounts.</description>
+    <environments>Default</environments>
+    <interviewLabel>Sirenum Contract: Prevent Multi-Client Duplicates {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Prevent more than one Multi-Client Job Contract</label>
+    <loops>
+        <name>Loop_Get_First_Conflicting_ID</name>
+        <label>Loop Get First Conflicting ID</label>
+        <locationX>666</locationX>
+        <locationY>611</locationY>
+        <collectionReference>Get_Existing_Multi_Client_Contracts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_First_Conflicting_ID</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <isGoTo>true</isGoTo>
+            <targetReference>Check_Duplicate_Count</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Existing_Multi_Client_Contracts</name>
+        <label>Get Existing Multi-Client Contracts</label>
+        <locationX>666</locationX>
+        <locationY>395</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Assign_Duplicate_Count_And_Id</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Multi_Client_Job_Client_Contract__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>sirenum__Client__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.sirenum__Client__c</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>sirenum__ProActiveContract__c</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>232</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Check_Account_Eligibility</targetReference>
+        </connector>
+        <filterFormula>AND(
+    {!$Record.Multi_Client_Job_Client_Contract__c} = TRUE,
+    OR(
+        ISNEW(),
+        ISCHANGED({!$Record.Multi_Client_Job_Client_Contract__c})
+    )
+)</filterFormula>
+        <object>sirenum__ProActiveContract__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>Var_Conflicting_Record_Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>Var_Duplicate_Count</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+        <value>
+            <numberValue>0.0</numberValue>
+        </value>
+    </variables>
+</Flow>

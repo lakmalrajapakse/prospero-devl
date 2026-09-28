@@ -1,0 +1,27 @@
+/* Ensure lookup dropdowns are not clipped by table overflow */
+.ccm-table-container {
+    overflow: visible;
+}
+
+.ccm-table-container table {
+    overflow: visible;
+}
+
+.ccm-lookup-cell {
+    overflow: visible;
+    position: relative;
+}
+
+.ccm-account-name {
+    white-space: normal !important;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+/* Give the wrapper enough room for the action bar below */
+.ccm-wrapper {
+    padding: 1rem;
+    min-width: 900px;
+}

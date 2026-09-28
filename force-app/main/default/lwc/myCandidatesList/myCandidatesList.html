@@ -1,0 +1,38 @@
+<template>
+    <lightning-card title="My Candidates" icon-name="standard:contact_list">
+        <div slot="actions">
+            <lightning-button-icon
+                icon-name="utility:refresh"
+                alternative-text="Refresh"
+                title="Refresh"
+                onclick={handleRefresh}>
+            </lightning-button-icon>
+        </div>
+
+        <div class="slds-p-horizontal_medium slds-p-bottom_small">
+            <lightning-input
+                type="search"
+                variant="label-hidden"
+                label="Search candidates"
+                placeholder="Search by first name..."
+                onchange={handleSearchChange}>
+            </lightning-input>
+        </div>
+
+        <template lwc:if={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+
+        <template lwc:if={hasNoResults}>
+            <p class="slds-p-around_medium slds-text-color_weak">No candidates found.</p>
+        </template>
+
+        <lightning-datatable
+            key-field="Id"
+            data={candidates}
+            columns={columns}
+            onrowaction={handleRowAction}
+            hide-checkbox-column>
+        </lightning-datatable>
+    </lightning-card>
+</template>

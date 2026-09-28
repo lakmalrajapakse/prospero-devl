@@ -1,0 +1,98 @@
+<template>
+    <lightning-card>
+       <!-- Filters Section -->
+        <!-- Spinner -->
+        <template lwc:if={isLoading}>
+            <div>
+                <lightning-spinner alternative-text="Loading search setting" ></lightning-spinner>
+            </div>
+        </template>
+    <div class="slds-p-horizontal_medium slds-p-vertical_small">
+
+        <div class="slds-grid slds-wrap slds-gutters_small slds-grid_vertical-align-end">
+
+                <!-- Country -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4">
+
+                    <lightning-combobox
+                        name="selectedCountryCode"
+                        label="Country"
+                        value={selectedCountryCode}
+                        placeholder="Select"
+                        options={countryCodes}
+                        onchange={handleChange}
+                        required>
+                    </lightning-combobox>
+
+                </div>
+
+                <!-- Radius -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4">
+
+                    <lightning-input
+                        type="number"
+                        name="radius"
+                        label="Radius (Miles)"
+                        value={radius}
+                        onchange={handleChange}
+                        required>
+                    </lightning-input>
+
+                </div>
+
+                <!-- Postal Code -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4">
+
+                    <lightning-input
+                        type="text"
+                        name="postalCode"
+                        label="Postcode"
+                        value={postalCode}
+                        placeholder="Enter postcode"
+                        onchange={handleChange}
+                        required>
+                    </lightning-input>
+
+                </div>
+                <!-- Search Button -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_1-of-4 slds-m-top_large">
+                    <lightning-button
+                        label="Search"
+                        variant="brand"
+                        icon-name="utility:search"
+                        stretch
+                        onclick={searchHandler}>
+                    </lightning-button>
+                </div>
+            </div>
+            <!-- Dynamic Filter Component -->
+             <!-- Will recieve the filters like below -->
+              <!-- {"ownerId":["005Vh00000Ki3mfIAB"],"AccountId":["001Pv000011V8BWIA0"],"Roles__c":["3D Animator","Academic Advisor"],
+               "Departments__c":["Accounts/Finance","AV Manager"],"Brand__c":"Health & Social Care","Title":"Test"} -->
+            <template lwc:if={dynamicFilters}>
+                 <div>
+                    <c-dynamic-filters-client-search
+                        filters={dynamicFilters}
+                        onsearchfilter={handleAdditionalFilters}>
+                    </c-dynamic-filters-client-search>
+                </div>
+            </template>
+            <!-- Search results component -->
+             <template lwc:if={showResults}>
+                <div>
+                    <c-client-search-results
+                        search-result={searchResult}
+                        display-fields={displayFields}
+                        oncalllist={callListhandler}>
+                    </c-client-search-results>
+                </div>
+             </template>
+             <template lwc:if={showEmptyState}>
+                <!-- Empty State-->
+                <lightning-empty-state illustration-name="noresults:search" title="No Matching Results Found" size="large">
+                    <p slot="description">Please adjust your search filters or check the search filter again!</p>
+                </lightning-empty-state>
+             </template> 
+        </div>
+    </lightning-card>
+</template>

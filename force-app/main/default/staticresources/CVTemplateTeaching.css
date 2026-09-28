@@ -1,0 +1,243 @@
+/* Candidate Profile – Prospero Teaching
+   Written for Visualforce renderAs="pdf" (Flying Saucer, CSS 2.1):
+   no CSS variables, flex, grid, gap, calc/clamp or rem. Layout uses tables.
+
+   Palette
+     blue       #009fe3
+     ink        #1d1d1b
+     muted      #4a4a48
+     chip       #f3f4f5
+     lime       #b5d334
+     on-blue    #e0f3fb  (white at ~88% over blue)
+     redact bg  #e6e8ea / ink #55595e
+*/
+
+@page {
+  size: A4;
+  margin: 14mm 12mm;
+}
+/* First page bleeds to the edge so the blue circle can sit in the corner */
+@page :first {
+  margin: 0;
+}
+
+/* Flying Saucer doesn't know HTML5 elements; make them blocks */
+main, header, section, footer { display: block; }
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: #1d1d1b;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 9pt;
+  line-height: 1.35;
+}
+
+.page {
+  position: relative;
+  padding: 34pt 30pt 20pt;
+}
+
+/* Decorative circle, top right. It's an image (CVTemplateTeachingCircle) because
+   the PDF renderer ignores border-radius, and a negative top offset makes it fail outright.
+   The Prospero Teaching logo is part of the image. */
+.blob {
+  position: absolute;
+  top: 0; right: 0;
+  width: 243pt; height: 144pt;
+}
+
+
+/* The blob is absolutely positioned, so it doesn't push content down. min-height makes
+   the header reach the blob's bottom edge: 144pt blob - 34pt .page top padding = 110pt */
+header { position: relative; width: 58%; min-height: 110pt; }
+h1 {
+  margin: 0;
+  font-size: 24pt;
+  font-weight: normal;
+  line-height: 1.05;
+}
+h1 strong { font-weight: bold; }
+.role { font-size: 14pt; margin: 4pt 0 14pt; }
+
+/* Contact chips: rounded top and bottom cap images (CVTemplateTeachingChipTop / ChipBottom,
+   and ChipWide* for the wider email chip) with a plain rectangle between, as border-radius
+   is ignored. The caps are 8pt tall; widths match the cap images.
+   .contacts is wider than the 58% header so all three chips stay on one line; the row may
+   run into the blob, which sits below the logo text. */
+.contacts { position: relative; width: 380pt; white-space: nowrap; }
+.chip {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 100pt; height: 22pt;
+  margin: 0 5pt 5pt 0;
+  font-size: 8pt;
+  color: #4a4a48;
+}
+.chip.wide { width: 150pt; }
+.chip-top, .chip-bottom, .chip-mid {
+  position: absolute;
+  left: 0;
+  width: 100pt;
+}
+.chip.wide .chip-top, .chip.wide .chip-bottom, .chip.wide .chip-mid { width: 150pt; }
+.chip-top { top: 0; height: 8pt; }
+.chip-mid { display: block; top: 8pt; height: 6pt; background-color: #f3f4f5; }
+.chip-bottom { top: 14pt; height: 8pt; }
+/* line-height = chip height centres the text vertically. The icon is taken out of the
+   line (absolute) so it can't stretch the line box; padding-left = 3pt inset + 16pt icon + 5pt gap */
+.chip-body {
+  position: relative;
+  display: block;
+  height: 22pt;
+  line-height: 22pt;
+  padding-left: 24pt;
+}
+/* Image icons (e.g. CVTemplateTeachingIconLocation): the circle is baked in on the chip grey */
+.chip .icon-img {
+  position: absolute;
+  top: 3pt; left: 3pt;
+  width: 16pt; height: 16pt;
+}
+
+.redact {
+  background-color: #e6e8ea;
+  color: #55595e;
+  border-radius: 3pt;
+  padding: 0 3pt;
+  white-space: nowrap;
+}
+
+/* The ✓ glyph is missing from Helvetica */
+.tick { font-family: "Arial Unicode MS", sans-serif; }
+
+/* Two-column body. Widths are in pt so the panel cap images (256pt) line up exactly:
+   256 + 23 + 256 = 535pt, the page width less padding.
+   margin-top is the gap below the header and blob; the left column also sits
+   under the 14pt cap row, so its content starts 14pt further down. */
+table.layout {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 14pt;
+}
+table.layout td { vertical-align: top; padding: 0; }
+table.layout td.col { width: 256pt; }
+table.layout td.gutter { width: 23pt; }
+
+.block { margin-bottom: 14pt; }
+
+/* Pills: border-radius is ignored by the PDF renderer, so the rounded shape is an
+   image (CVTemplateTeachingPillBlue / PillWhite) sized to the pill, with the label on top. */
+.pill {
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 8.5pt;
+  margin-bottom: 7pt;
+  width: 114pt; height: 21pt;
+  line-height: 21pt;
+}
+.pill img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 114pt; height: 21pt;
+}
+.pill .label { position: relative; padding-left: 7pt; }
+.pill.white { color: #11364a; width: 118pt; height: 25pt; line-height: 25pt; }
+.pill.white img { width: 118pt; height: 25pt; }
+.pill.white .label { padding-left: 9pt; }
+.pill.white.blue-text { color: #009fe3; }
+
+h2 { font-size: 9pt; font-weight: bold; margin: 0 0 6pt; }
+p { margin: 0; }
+.profile p { color: #4a4a48; }
+
+/* Lime square bullets */
+ul.sq { list-style: none; padding: 0; margin: 0; }
+ul.sq li {
+  position: relative;
+  padding-left: 13pt;
+  margin-bottom: 5pt;
+  color: #4a4a48;
+  line-height: 1.25;
+}
+ul.sq li:before {
+  content: "";
+  position: absolute;
+  left: 0; top: 2.5pt;
+  width: 6pt; height: 6pt;
+  border-radius: 1.5pt;
+  background-color: #b5d334;
+}
+
+/* Blue panels: a plain rectangle between rounded top and bottom cap images
+   (CVTemplateTeachingPanelTop / PanelBottom), as border-radius is ignored.
+   The caps are 14pt tall, so they supply most of the vertical padding. */
+.panel {
+  background-color: #009fe3;
+  color: #e0f3fb;
+  padding: 0 16pt 2pt;
+}
+/* Experience panel is the right-hand cell itself, so it matches the left column's height;
+   its caps sit in the cap rows above and below it */
+table.layout td.panel { padding: 0 16pt 2pt; }
+/* Cell width excludes padding: 224pt + 2 x 16pt = 256pt, matching the caps */
+table.layout td.col.panel { width: 224pt; }
+
+.panel-cap, tr.cap-row td { font-size: 0; line-height: 0; }
+.panel-cap img { display: block; width: 256pt; height: 14pt; }
+
+table.checks { width: 100%; border-collapse: collapse; margin-top: 4pt; }
+table.checks td { padding: 4pt 0; vertical-align: middle; color: #e0f3fb; font-size: 9pt; }
+table.checks td.tick {
+  width: 30pt;
+  text-align: right;
+  color: #b5d334;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.experience .lead { font-weight: bold; color: #ffffff; margin: 5pt 0 12pt; line-height: 1.4; padding-bottom: 10pt}
+.experience ul { margin: 0; padding-left: 12pt;}
+.experience li { color: #e0f3fb; margin-bottom: 7pt; line-height: 1.2; }
+
+/* Footer, pinned to the bottom of the page. position: fixed is relative to the
+   page box in Flying Saucer, so it repeats on every page of a multi-page CV.
+   Needs an explicit width: left + right doesn't stretch it, and the table's
+   100% would otherwise shrink to fit. 535pt = A4 width (595pt) - 2 x 30pt. */
+.footer-wrap {
+  position: fixed;
+  bottom: 20pt;
+  left: 30pt;
+  width: 535pt;
+}
+table.footer { width: 100%; border-collapse: collapse; }
+table.footer td { vertical-align: middle; padding: 0; }
+table.footer td.icon-cell { width: 44pt; }
+table.footer td.site { text-align: right; color: #4a4a48; }
+
+/* Image icon (CVTemplateTeachingIconCV), circle baked in on white */
+.cta-icon {
+  display: block;
+  width: 36pt; height: 36pt;
+}
+.cta strong { display: block; font-size: 15pt; font-weight: bold; line-height: 1.1; }
+.cta small { font-size: 8.5pt; }
+
+/* Image icon (CVTemplateTeachingIconWebsite), rounded square baked in on white */
+.site-icon {
+  width: 22pt; height: 22pt;
+  vertical-align: middle;
+  margin-right: 6pt;
+}
+
+.note {
+  margin-top: 14pt; font-size: 7.5pt; color: #4a4a48;
+  border-top: 1px solid #f3f4f5; padding-top: 6pt;
+}
+
+@media print {
+  .note { display: none; }
+}

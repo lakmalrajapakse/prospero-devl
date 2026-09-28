@@ -1,0 +1,157 @@
+<template>
+    <lightning-card title="Margin Calculator" icon-name="utility:money">
+        <div class="slds-var-m-around_medium">
+            <p><strong>Current Record ID:</strong> {recordId}</p>
+            <p><strong>Detected Object API Name:</strong> {objectApiName}</p>
+            <p><strong>Getter Object Name:</strong> {objectName}</p>
+        </div>
+
+        <template lwc:if={isLoading}>
+            <div class="slds-align_absolute-center slds-p-vertical_large">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+        </template>
+            <!-- Job Role and Placement sections share the same resolved Rate Card / create-form markup -->
+            <template lwc:if={jobRoleRecordId}>
+                <template lwc:if={hasRateCard}>
+                    <div class="slds-p-around_medium slds-text-align_center">
+                        <p class="slds-text-heading_small">Rate Card: {RateCardId}</p>
+                    </div>
+                </template>
+                <template lwc:else>
+                    <div class="slds-box slds-box_x-small slds-theme_shade slds-m-around_medium slds-text-align_center">
+                        <p class="slds-text-heading_small slds-m-bottom_medium">
+                            No Rate Card found for this Job Role. Create one to begin.
+                        </p>
+                        <div class="slds-align_absolute-center">
+                            <div class="slds-size_1-of-1 slds-large-size_1-of-2">
+                                <lightning-record-form
+                                    object-api-name={rateCardObject}
+                                    fields={cardFields}
+                                    onsuccess={handleRateCardCreated}
+                                    onerror={handleRateCardError}
+                                ></lightning-record-form>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </template>
+
+            <!-- Placement section -->
+            <template lwc:elseif={placementRecordId}>
+                <template lwc:if={hasRateCard}>
+                    <div class="slds-p-around_medium">
+                        <c-margin-calculator-component
+                            record-id={placementRecordId}
+                            object-name={objectName}
+                            placement-id={placementRecordId}
+                            rate-card-id={RateCardId}
+                            auto-open-page-id={justCreatedPageId}
+                        ></c-margin-calculator-component>
+                    </div>
+                </template>
+                <template lwc:elseif={placementAgreementBlockingError}>
+                    <div class="slds-box slds-box_x-small slds-theme_alert-texture slds-theme_error slds-m-around_medium slds-text-align_center">
+                        <p class="slds-text-heading_small">{placementAgreementBlockingError}</p>
+                    </div>
+                </template>
+                <template lwc:else>
+                    <div class="slds-box slds-box_x-small slds-theme_shade slds-m-around_medium slds-text-align_center">
+                        <p class="slds-text-heading_small slds-m-bottom_medium">
+                            No Rate Card found for this Placement.
+                        </p>
+                        <div class="slds-align_absolute-center">
+                            <lightning-button
+                                label="Create Rate Card"
+                                variant="brand"
+                                onclick={handleCreateRateCard}
+                            ></lightning-button>
+                        </div>
+                    </div>
+                </template>
+            </template>
+            <!-- Shift section -->
+            <template lwc:elseif={shiftRecordId}>
+                <template lwc:if={shiftPlacementMissing}>
+                    <div class="slds-box slds-box_x-small slds-theme_alert-texture slds-theme_error slds-m-around_medium slds-text-align_center">
+                        <p class="slds-text-heading_small">
+                            This Shift has no Placement assigned. A Placement is required to resolve a Rate Card.
+                        </p>
+                    </div>
+                </template>
+                <template lwc:elseif={hasRateCardPage}>
+                    <!-- Genuine Shift-condition Page -- view/edit only, no Add rate line.
+                         prefill-line-id is only ever set right before THIS Page's own creation
+                         (handleCreateShiftPage) -- harmless to pass here unconditionally since it
+                         stays undefined otherwise. -->
+                    <div class="slds-p-around_medium">
+                        <c-margin-calculator-component
+                            record-id={shiftRecordId}
+                            object-name={objectName}
+                            placement-id={shiftPlacementId}
+                            rate-card-id={shiftPlacementRateCardId}
+                            rate-card-page-id={RateCardPageId}
+                            auto-open-page-id={justCreatedPageId}
+                            prefill-line-id={prefillLineId}
+                        ></c-margin-calculator-component>
+                    </div>
+                </template>
+                <template lwc:elseif={shiftPlacementAgreementBlockingError}>
+                    <div class="slds-box slds-box_x-small slds-theme_alert-texture slds-theme_error slds-m-around_medium slds-text-align_center">
+                        <p class="slds-text-heading_small">{shiftPlacementAgreementBlockingError}</p>
+                    </div>
+                </template>
+                <template lwc:elseif={shiftNeedsRateCardCreation}>
+                    <div class="slds-box slds-box_x-small slds-theme_shade slds-m-around_medium slds-text-align_center">
+                        <p class="slds-text-heading_small slds-m-bottom_medium">
+                            No Rate Card found for this Shift's Placement. Create the Placement's
+                            Rate Card to begin -- a Shift Page is then created from one of its Rate Lines.
+                        </p>
+                        <div class="slds-align_absolute-center">
+                            <lightning-button
+                                label="Create Placement Rate Card"
+                                variant="brand"
+                                onclick={handleCreateShiftPlacementRateCard}
+                            ></lightning-button>
+                        </div>
+                    </div>
+                </template>
+                <template lwc:elseif={showPlacementLineSelection}>
+                    <template lwc:if={hasPlacementLevelPage}>
+                        <!-- No Shift Page yet -- the Placement's Page valid on the Shift's date, with
+                             "Create Shift Page" on each of its Rate Lines. auto-open-page-id is only
+                             set when that Page was just created from here (still empty). -->
+                        <div class="slds-p-around_medium">
+                            <c-margin-calculator-component
+                                record-id={shiftRecordId}
+                                object-name={objectName}
+                                placement-id={shiftPlacementId}
+                                rate-card-id={shiftPlacementRateCardId}
+                                reference-date={shiftDate}
+                                auto-open-page-id={justCreatedPageId}
+                                shift-page-selection-mode
+                                oncreateshiftpage={handleCreateShiftPage}
+                            ></c-margin-calculator-component>
+                        </div>
+                    </template>
+                    <template lwc:else>
+                        <div class="slds-box slds-box_x-small slds-theme_shade slds-m-around_medium slds-text-align_center">
+                            <p class="slds-text-heading_small slds-m-bottom_medium">
+                                No Rate Card Page found on this Shift's Placement. Create the
+                                Placement's Rate Card Page to begin -- a Shift Page is then created
+                                from one of its Rate Lines.
+                            </p>
+                            <div class="slds-align_absolute-center">
+                                <lightning-button
+                                    label="Create Placement Rate Card Page"
+                                    variant="brand"
+                                    onclick={handleCreateShiftPlacementPage}
+                                ></lightning-button>
+                            </div>
+                        </div>
+                    </template>
+                </template>
+            </template>
+
+    </lightning-card>
+</template>

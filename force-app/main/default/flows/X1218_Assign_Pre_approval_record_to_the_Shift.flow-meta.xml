@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>67.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <customErrors>
+        <name>Custom_Error_Message_1</name>
+        <label>Custom Error Message 1</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <customErrorMessages>
+            <errorMessage>Cannot publish shift as there is no pre-approval record for this CYP Site</errorMessage>
+            <isFieldError>false</isFieldError>
+        </customErrorMessages>
+    </customErrors>
+    <decisions>
+        <name>Record_found</name>
+        <label>Record found</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Custom_Error_Message_1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Nothing Found</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Pre_Approval</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Shift_Pre_Approval</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>1218 - Assign Pre-approval record to the Shift {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>1218 - Assign Pre-approval record to the Shift</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Pre_Approval</name>
+        <label>Get Pre-Approval</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Record_found</targetReference>
+        </connector>
+        <filterLogic>1 AND 2 AND 3 AND (4 OR 5)</filterLogic>
+        <filters>
+            <field>Site__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.sirenum__Site__r.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operator>LessThan</operator>
+            <value>
+                <elementReference>$Record.sirenum__Scheduled_End_Time__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>End_Date__c</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <elementReference>$Record.sirenum__Scheduled_Start_Time__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Start_Date__c</field>
+            <operator>LessThanOrEqualTo</operator>
+            <value>
+                <elementReference>$Record.sirenum__Scheduled_Start_Time__c</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Available_hours__c</field>
+            <operator>GreaterThan</operator>
+            <value>
+                <numberValue>0.0</numberValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Pre_Approval__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Shift_Pre_Approval</name>
+        <label>Update Shift Pre-Approval</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>Pre_Approval__c</field>
+            <value>
+                <elementReference>Get_Pre_Approval.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Pre_Approval</targetReference>
+        </connector>
+        <filterFormula>{!$Record.sirenum__Site__r.RecordType.DeveloperName} = &apos;Child / Young Person&apos; &amp;&amp; ISCHANGED({!$Record.sirenum__Published__c}) &amp;&amp; {!$Record.sirenum__Published__c} = true</filterFormula>
+        <object>sirenum__Shift__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

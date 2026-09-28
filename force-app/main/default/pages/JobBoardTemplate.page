@@ -1,0 +1,55 @@
+<apex:page standardStyleSheets="true" showHeader="false" sidebar="false" cache="false">
+    <title>Job Board | {!$Label.CompanyName}</title>
+    <link rel="icon" type="image/png" href="{!$Resource.JobBoardFavicon}" />
+   <apex:includeScript value="{!URLFOR($Resource.TB_JS, '/jQuery-1.11.3.min.js')}" />
+    
+
+   
+    <apex:stylesheet value="{!URLFOR($Resource.JobBoardTemplate, '/css/bootstrap-theme.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.JobBoardTemplate, '/css/bootstrap-theme.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.JobBoardTemplate, '/css/bootstrap.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.JobBoardTemplate, '/css/bootstrap.min.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.JobBoardTemplate, '/css/selectone-job-board.css')}" />
+
+    <apex:includeScript value="{!URLFOR($Resource.JobBoardTemplate, '/js/bootstrap.js')}" />
+    <apex:includeScript value="{!URLFOR($Resource.JobBoardTemplate, '/js/bootstrap.min.js')}" />
+    <!--<apex:includeScript value="{!URLFOR($Resource.JobBoardTemplate, '/js/npm.js')}" />-->
+    <!-- Brandon R, provided files-->
+    <apex:stylesheet value="{!$Resource.JobBoard_CSS}" />
+
+    <!-- header -->
+    <div class="row">
+        <div class="span12">
+            <div class="fullWrap headerDD">
+                <div class="headerWrap">
+                    <div class="headerTop headerRow">
+                        <div class="innerWrap">
+                                <img src="{!$Resource.JobBoard_Client_Logo}" alt="Logo" />
+                            <!--<a id="customToggle">-->
+                            <!--    <img src="http://cdn2.hubspot.net/hub/436003/file-2570227513-png/cos-assets/job-board-assets/mobile-menu-toggle.png" alt="Display Mobile Menu" />-->
+                            <!--</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- body -->
+    <div id="BodyWrapper">
+    
+        <apex:insert name="body" />
+        </div>
+    <br/>
+
+    <!-- footer -->
+    <div class="row">
+        <div class="outerWrap simpleFooter">
+            <div class="innerWrap">
+                <center>
+                    <img src="{!$Resource.JobBoard_Client_Logo}" />
+                </center>
+                <p>&copy; {!$Label.CompanyName}. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</apex:page>

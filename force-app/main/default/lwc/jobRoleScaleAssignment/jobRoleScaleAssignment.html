@@ -1,0 +1,82 @@
+<template>
+    <template lwc:if={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </template>
+
+    <div class="slds-p-around_small">
+        <div class="slds-grid slds-grid_align-end slds-grid_vertical-align-center slds-m-bottom_small">
+            <!-- <h3 class="slds-text-heading_small">Job Roles</h3> -->
+            <lightning-button-icon icon-name="utility:add" variant="brand" title="Assign Job Roles" alternative-text="Assign Job Roles" onclick={openAssignPanel}></lightning-button-icon>
+        </div>
+
+        <template lwc:if={showAssignPanel}>
+            <div class="assign-panel slds-box slds-m-bottom_small">
+                <div class="slds-grid slds-gutters slds-m-bottom_small">
+                    <div class="slds-col slds-size_1-of-3">
+                        <lightning-input label="Job Role Name" value={nameSearchInput} onchange={handleNameSearchChange} onkeyup={handleSearchKeyUp}></lightning-input>
+                    </div>
+                    <template lwc:if={showFilterPickers}>
+                        <div class="slds-col slds-size_1-of-3">
+                            <lightning-record-picker object-api-name="sirenum__Job_Type__c" label="Job Type" onchange={handleJobTypeSearchChange}></lightning-record-picker>
+                        </div>
+                        <div class="slds-col slds-size_1-of-3">
+                            <lightning-record-picker object-api-name="Account" label="Account" onchange={handleAccountSearchChange}></lightning-record-picker>
+                        </div>
+                    </template>
+                </div>
+                <lightning-button label="Search" variant="brand" onclick={handleSearchClick}></lightning-button>
+                <lightning-button label="Clear" class="slds-m-left_x-small" onclick={handleSearchClear}></lightning-button>
+
+                <template lwc:if={isSearching}>
+                    <lightning-spinner alternative-text="Searching" size="small"></lightning-spinner>
+                </template>
+
+                <template lwc:if={hasSearched}>
+                    <div class="results-table-wrapper slds-m-vertical_small">
+                        <table class="slds-table slds-table_bordered slds-table_cell-buffer">
+                            <thead>
+                                <tr class="slds-line-height_reset">
+                                    <th style="width: 2.5rem;"></th>
+                                    <th scope="col"><div class="slds-truncate">Job Role Name</div></th>
+                                    <th scope="col"><div class="slds-truncate">Contract Name</div></th>
+                                    <th scope="col"><div class="slds-truncate">Account Name</div></th>
+                                    <th scope="col"><div class="slds-truncate">Job Type</div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template for:each={jobRoleOptions} for:item="jr">
+                                    <tr key={jr.jobRoleId} class="slds-hint-parent">
+                                        <td><lightning-input type="checkbox" variant="label-hidden" checked={jr.selected} data-id={jr.jobRoleId} onchange={handleJobRoleCheckbox}></lightning-input></td>
+                                        <td><div class="slds-truncate">{jr.jobRoleName}</div></td>
+                                        <td><div class="slds-truncate">{jr.contractName}</div></td>
+                                        <td><div class="slds-truncate">{jr.accountName}</div></td>
+                                        <td><div class="slds-truncate">{jr.jobTypeName}</div></td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                        <template lwc:if={showNoResults}>
+                            <p class="slds-text-align_center slds-text-color_weak slds-p-around_medium">No eligible Job Roles found. Job Roles must belong to a Contract assigned to this Rate Agreement.</p>
+                        </template>
+                    </div>
+                </template>
+
+                <div class="slds-grid slds-grid_align-end">
+                    <lightning-button label="Cancel" class="slds-m-right_x-small" onclick={closeAssignPanel}></lightning-button>
+                    <lightning-button variant="brand" label="Assign" disabled={disableAssignSave} onclick={handleAssignSave}></lightning-button>
+                </div>
+            </div>
+        </template>
+
+        <template lwc:if={hasAssignments}>
+            <div class="pill-group">
+                <template for:each={assignments} for:item="a">
+                    <lightning-pill key={a.Id} label={a.pillLabel} icon-name="utility:user_role" class="jr-pill" data-junction-id={a.Id} onremove={removeAssignment}></lightning-pill>
+                </template>
+            </div>
+        </template>
+        <template lwc:else>
+            <p class="slds-text-align_center slds-text-color_weak slds-p-vertical_medium">No Job Roles assigned to this Scale Definition.</p>
+        </template>
+    </div>
+</template>

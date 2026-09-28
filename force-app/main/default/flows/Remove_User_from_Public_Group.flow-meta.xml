@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <formulas>
+        <name>formula_RemoveTeam</name>
+        <dataType>String</dataType>
+        <expression>TRIM(
+    SUBSTITUTE(
+        SUBSTITUTE(
+            SUBSTITUTE(
+                {!$Record.User__r.Team__c},
+                {!$Record.Team__r.Name} &amp; &quot;, &quot;,
+                &quot;&quot;
+            ),
+            &quot;, &quot; &amp; {!$Record.Team__r.Name},
+            &quot;&quot;
+        ),
+        {!$Record.Team__r.Name},
+        &quot;&quot;
+    )
+)</expression>
+    </formulas>
+    <interviewLabel>Remove User from Public Group {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Remove User from Public Group</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Platform_Event</name>
+        <label>Create Platform Event</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_User_Remove_Team</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Group_Name__c</field>
+            <value>
+                <elementReference>$Record.Team__r.Name</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User_Id__c</field>
+            <value>
+                <elementReference>$Record.User__r.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Public_Group_Event__e</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <name>Update_User_Remove_Team</name>
+        <label>Update User - Remove Team</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.User__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Team__c</field>
+            <value>
+                <elementReference>formula_RemoveTeam</elementReference>
+            </value>
+        </inputAssignments>
+        <object>User</object>
+    </recordUpdates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Platform_Event</targetReference>
+        </connector>
+        <object>Team_User__c</object>
+        <recordTriggerType>Delete</recordTriggerType>
+        <triggerType>RecordBeforeDelete</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

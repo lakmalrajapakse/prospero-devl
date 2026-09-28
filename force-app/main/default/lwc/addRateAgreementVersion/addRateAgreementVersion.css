@@ -1,0 +1,9 @@
+.ra-table th {
+    background-color: #f3f3f3;
+    font-weight: 600;
+}
+
+.ra-table td,
+.ra-table th {
+    border: 1px solid #dddbda;
+}

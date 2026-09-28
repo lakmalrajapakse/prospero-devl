@@ -1,0 +1,172 @@
+<template>
+    <lightning-card>
+        <!-- Header -->
+        <div class="header-section">
+            <lightning-icon icon-name="standard:work_type_group" size="medium"></lightning-icon>
+            <h1 class="header-title">Rate Agreement Manager</h1>
+        </div>
+
+        <!-- Spinner -->
+        <template lwc:if={isLoading}>
+            <lightning-spinner alternative-text="Loading Rate Agreements"></lightning-spinner>
+        </template>
+
+        <template lwc:else>
+            <!-- Filters -->
+            <div class="filter-container">
+                <div class="slds-grid slds-wrap slds-gutters">
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-input
+                            name="agreementName"
+                            label="Rate Agreement Name"
+                            type="text"
+                            onchange={filterChangeHandler}>
+                        </lightning-input>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-record-picker
+                            object-api-name="Account"
+                            label="Client"
+                            placeholder="Search Clients"
+                            display-info={displayInfo}
+                            onchange={lookupChangeHandler}>
+                        </lightning-record-picker>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-5">
+                        <lightning-combobox
+                            name="status"
+                            label="Status"
+                            options={statusOptions}
+                            onchange={filterChangeHandler}>
+                        </lightning-combobox>
+                    </div>
+
+                    <div class="slds-col slds-size_1-of-5">
+                        <div class="slds-form-element">
+                            <label class="slds-form-element__label search-btn-spacer">&nbsp;</label>
+                            <div class="slds-form-element__control">
+                                <lightning-button
+                                    label="Search"
+                                    icon-name="utility:search"
+                                    variant="brand"
+                                    class="slds-button_stretch"
+                                    onclick={handleSearchClick}>
+                                </lightning-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table Header -->
+            <div class="table-header">
+                <div>
+                    <h2 class="table-title">Rate Agreements</h2>
+                </div>
+                <div class="record-count slds-grid slds-grid_align-end">
+                    <lightning-button-group>
+                        <lightning-button
+                            label="Create Rate Agreement"
+                            variant="brand"
+                            icon-name="action:clone"
+                            class="slds-m-horizontal_small"
+                            onclick={handleAgreementCreate}>
+                        </lightning-button>
+                    </lightning-button-group>
+                    <lightning-button-icon
+                        icon-name="action:reset_password"
+                        variant="brand"
+                        alternative-text="Reset"
+                        class="slds-m-left_xx-small"
+                        title="Reset"
+                        onclick={resetHandler}>
+                    </lightning-button-icon>
+                </div>
+            </div>
+
+            <!-- Show result table -->
+            <template lwc:if={showAgreements}>
+                <div class={workspaceClass}>
+                    <div class={tableSectionClass}>
+                        <div class="table-container">
+                            <lightning-datatable
+                                key-field="Id"
+                                data={filteredAgreements}
+                                columns={columns}
+                                max-row-selection="1"
+                                sorted-by={agreementSortedBy}
+                                sorted-direction={agreementSortDirection}
+                                onsort={handleAgreementSort}
+                                onrowaction={handleRowAction}
+                                onrowselection={handleRowSelection}>
+                            </lightning-datatable>
+                        </div>
+                        <!-- Pagination -->
+                        <div class="pagination-bar slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+                            <lightning-button
+                                label="Previous"
+                                icon-name="utility:chevronleft"
+                                disabled={disablePreviousPage}
+                                onclick={handlePreviousPage}>
+                            </lightning-button>
+                            <span class="pagination-page-label">Page {pageNumber}</span>
+                            <lightning-button
+                                label="Next"
+                                icon-name="utility:chevronright"
+                                icon-position="right"
+                                disabled={disableNextPage}
+                                onclick={handleNextPage}>
+                            </lightning-button>
+                        </div>
+                    </div>
+
+                    <!-- Split view: always visible for now (no hasSelectedAgreement gate) -->
+                    <div class="detail-section">
+                        <lightning-tabset active-tab-value="details">
+
+                            <!-- Rate Agreement Details -->
+                            <lightning-tab label="Rate Agreement Details" value="details">
+                                <lightning-record-edit-form
+                                    data-id="agreementForm"
+                                    object-api-name={objectApiName}
+                                    record-id={selectedAgreementId}
+                                    onsuccess={handleSuccess}
+                                    onerror={handleError}
+                                    onsubmit={submitHandler}>
+                                    <div class="slds-grid slds-wrap slds-m-top_medium">
+                                        <div class="slds-col slds-size_6-of-12">
+                                            <lightning-input-field field-name="Name"></lightning-input-field>
+                                        </div>
+                                        <div class="slds-col slds-size_6-of-12 slds-p-right_small">
+                                            <lightning-input-field field-name="Account__c"></lightning-input-field>
+                                        </div>
+                                        <div class="slds-col slds-size_6-of-12">
+                                            <lightning-input-field field-name="Status__c"></lightning-input-field>
+                                        </div>
+                                    </div>
+                                    <div class="slds-m-top_large slds-align_absolute-center">
+                                        <lightning-button type="submit" variant="brand" label="Save"></lightning-button>
+                                        <lightning-button class="slds-m-left_small" variant="neutral" label="Cancel"></lightning-button>
+                                    </div>
+                                </lightning-record-edit-form>
+                            </lightning-tab>
+
+                            <!-- Rate Agreement Version -->
+                            <lightning-tab label="Rate Agreement Version" value="version">
+                                <!-- Rate Agreement Version content goes here -->
+                            </lightning-tab>
+
+                            <!-- Rate Agreement Scale Definition -->
+                            <lightning-tab label="Rate Agreement Scale Definition" value="scale">
+                                <!-- Rate Agreement Scale Definition content goes here -->
+                            </lightning-tab>
+
+                        </lightning-tabset>
+                    </div>
+                </div>
+            </template>
+        </template>
+    </lightning-card>
+</template>

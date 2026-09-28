@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <description>Allows navigation to a URL as a link or button and permitting use of {!Community_Url} and
+        {!CurrentUser.userName} placeholders within the URL.
+    </description>
+    <isExposed>true</isExposed>
+    <masterLabel>Navigate</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="url" label="URL" type="String" required="true"/>
+            <property name="showAs" label="Show As" type="String" required="true" datasource="button,link" default="button"/>
+            <property name="label" label="Label" type="String" required="true"/>
+            <property name="alignment" label="Alignment" type="String" required="true" datasource="left,center,right" default="center"/>
+            <property name="variant" label="Variant (button only)" type="String" required="false" datasource="base,neutral,brand,brand-outline,destructive,destructive-text,inverse,success" default="neutral"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
