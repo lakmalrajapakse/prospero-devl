@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Multi-CYP Contract</label>
+    <protected>false</protected>
+    <values>
+        <field>TR1__Contact_detail_popover_Page_Layout_name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Default_View__c</field>
+        <value xsi:type="xsd:string">ATS</value>
+    </values>
+    <values>
+        <field>TR1__Enable_Current_Stage_Selection__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>TR1__Fields_to_Display__c</field>
+        <value xsi:type="xsd:string">toLabel(TR1__Stage__c), TR1__Applicant__r.Name, 
+toLabel(TR1__Ranking_Group__c), TR1__Applicant__r.Account.Name, TR1__Applicant__r.Email, TR1__Hourly_Rate_Offered__c, TR1__Job__r.Name, TR1__Reject__c</value>
+    </values>
+    <values>
+        <field>TR1__Job_List_View_Available_Fields__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Job_List_View_Default_Fields__c</field>
+        <value xsi:type="xsd:string">TR1__ATSv2_Candidate_ListView</value>
+    </values>
+    <values>
+        <field>TR1__Job_Record_Type__c</field>
+        <value xsi:type="xsd:string">Multi_Child_Young_Person_Contract</value>
+    </values>
+    <values>
+        <field>TR1__Job_Table_View_Available_Fields__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Job_Table_View_Default_Fields__c</field>
+        <value xsi:type="xsd:string">TR1__ATSv2_Default_Candidate_FieldSet</value>
+    </values>
+    <values>
+        <field>TR1__Override_Chevron_Color_Status_Order__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Table_View_Available_Fields__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

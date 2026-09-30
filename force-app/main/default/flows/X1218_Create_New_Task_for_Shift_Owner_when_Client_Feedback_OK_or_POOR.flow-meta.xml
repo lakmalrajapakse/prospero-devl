@@ -98,14 +98,10 @@
         <connector>
             <targetReference>Client_Shift_Feedback_Poor_OR_OK</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Client_Shift_Feedback__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         ISCHANGED({!$Record.Client_Shift_Feedback__c})
+)</filterFormula>
         <object>sirenum__Shift__c</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

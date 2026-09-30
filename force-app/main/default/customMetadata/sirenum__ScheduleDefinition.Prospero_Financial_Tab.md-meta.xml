@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Prospero Financial Tab</label>
+    <protected>false</protected>
+    <values>
+        <field>sirenum__Configuration__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;contextIds&quot;: {
+    &quot;selectionObjectType&quot;: &quot;User&quot;,
+    &quot;fieldPath&quot;: &quot;ContactId&quot;,
+    &quot;selectionClause&quot;: &quot;Id = :userId&quot;
+  },
+  &quot;chunkSize&quot;: 75,
+  &quot;schedulables&quot;: [
+    {
+      &quot;objectType&quot;: &quot;sirenum__Timesheet__c&quot;,
+      &quot;startFieldPath&quot;: &quot;sirenum__Week_Ending__c&quot;,
+      &quot;selectionClause&quot;: &quot;sirenum__Worker__c IN :contextIds&quot;,
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;sirenum:timesheet&quot;
+      },
+      &quot;variant&quot;: {
+        &quot;literal&quot;: &quot;#330c2f&quot;
+      },
+      &quot;tuples&quot;: [
+        {
+          &quot;name&quot;: &quot;period&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;date_input&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Week__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;total-pay&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;money&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Total Pay&quot;,
+              &quot;de&quot;: &quot;Gesamtvergütung&quot;,
+              &quot;es&quot;: &quot;Pago total&quot;,
+              &quot;nl&quot;: &quot;Totaal uitbetaald&quot;,
+              &quot;fr&quot;: &quot;Rémunération totale&quot;,
+              &quot;it&quot;: &quot;Retribuzione totale&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Worker_Bill__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;total-shift-pay&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;money&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Total Shift Pay&quot;,
+              &quot;de&quot;: &quot;Zahlung Gesamtschicht&quot;,
+              &quot;es&quot;: &quot;Pago total del turno&quot;,
+              &quot;nl&quot;: &quot;Totaal uitbetaald voor de dienst&quot;,
+              &quot;fr&quot;: &quot;Rémunération totale de la mission&quot;,
+              &quot;it&quot;: &quot;Retribuzione del turno totale&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Total_Pay__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;total-hours&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;clock&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Total_Hours__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;site&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;home&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Site__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;job-type&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;picklist&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Job_Type__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;client&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;company&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Account__r.sirenum__Client__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;taxed-expenses&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;up&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Taxed_Expenses__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;non-taxed-expenses&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;up&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Non_Taxed_Expenses__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;taxed-deductions&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;down&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Taxed_Deductions__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;non-taxed-deductions&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;down&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Non_Taxed_Deductions__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;bonus&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;topic&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Bonus__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;loan-repayment&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;down&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Loan_Repayment_Amount__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;show-breakdown&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;list&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Show Pay Details&quot;,
+              &quot;de&quot;: &quot;Zahlungsdetails anzeigen&quot;,
+              &quot;es&quot;: &quot;Mostrar detalle de pago&quot;,
+              &quot;nl&quot;: &quot;Toon de details van de uitbetaling&quot;,
+              &quot;fr&quot;: &quot;Afficher les détails de la rémunération&quot;,
+              &quot;it&quot;: &quot;Mostra dettagli pagamento&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$page:embedded/timesheet?id={0}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;whatsapp&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Timesheet_Supervisor__r.MobilePhone&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;sirenum:whatsapp&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;WhatsApp&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;https://wa.me/{0}?text=Timesheet {1}-{2} for {3}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Timesheet_Supervisor__r.MobilePhone&quot;,
+                  &quot;facet&quot;: &quot;display&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Week__r.sirenum__Start_Date__c&quot;,
+                  &quot;facet&quot;: &quot;display&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Week__r.sirenum__Week_Ending__c&quot;,
+                  &quot;facet&quot;: &quot;display&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Account__r.sirenum__Client__r.Name&quot;,
+                  &quot;facet&quot;: &quot;display&quot;
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;call&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Timesheet_Supervisor__r.Phone&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;call&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Call&quot;,
+              &quot;de&quot;: &quot;Anruf&quot;,
+              &quot;es&quot;: &quot;Llamada&quot;,
+              &quot;nl&quot;: &quot;Oproep&quot;,
+              &quot;fr&quot;: &quot;Appel&quot;,
+              &quot;it&quot;: &quot;Chiamata&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;tel:+{0}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Timesheet_Supervisor__r.Phone&quot;
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;email&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Timesheet_Supervisor__r.Email&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;email&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Email&quot;,
+              &quot;de&quot;: &quot;E-Mail&quot;,
+              &quot;es&quot;: &quot;Correo electrónico&quot;,
+              &quot;nl&quot;: &quot;E‑mail&quot;,
+              &quot;fr&quot;: &quot;Envoyer un e-mail&quot;,
+              &quot;it&quot;: &quot;E-mail&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;mailto:{0}?subject=Timesheet {1}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Timesheet_Supervisor__r.Email&quot;,
+                  &quot;facet&quot;: &quot;display&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;Name&quot;,
+                  &quot;facet&quot;: &quot;display&quot;
+                }
+              ]
+            }
+          }
+        }
+      ],
+      &quot;tileLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+          ],
+          &quot;contents&quot;: [
+            &quot;client&quot;,
+            &quot;total-pay&quot;,
+            &quot;total-hours&quot;
+          ]
+        }
+      ],
+      &quot;detailLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;whatsapp&quot;,
+            &quot;call&quot;,
+            &quot;email&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;period&quot;,
+            &quot;total-pay&quot;,
+            &quot;total-hours&quot;,
+            &quot;client&quot;,
+            &quot;site&quot;,
+            &quot;job-type&quot;,
+            &quot;total-shift-pay&quot;,
+            &quot;bonus&quot;,
+            &quot;non-taxed-expenses&quot;,
+            &quot;taxed-expenses&quot;,
+            &quot;non-taxed-deductions&quot;,
+            &quot;taxed-deductions&quot;,
+            &quot;loan-repayment&quot;,
+            &quot;show-breakdown&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;objectType&quot;: &quot;sirenum__Expense__c&quot;,
+      &quot;startFieldPath&quot;: &quot;sirenum__Date_of_expense__c&quot;,
+      &quot;selectionClause&quot;: &quot;sirenum__Contact__c IN :contextIds&quot;,
+      &quot;relatedLists&quot;: [
+        {
+          &quot;relationship&quot;: &quot;Attachments&quot;,
+          &quot;fields&quot;: [
+            {
+              &quot;path&quot;: &quot;CreatedDate&quot;
+            },
+            {
+              &quot;path&quot;: &quot;ContentType&quot;
+            },
+            {
+              &quot;path&quot;: &quot;Name&quot;
+            },
+            {
+              &quot;path&quot;: &quot;OwnerId&quot;
+            }
+          ],
+          &quot;orderByClause&quot;: &quot;CreatedDate DESC&quot;,
+          &quot;limitSize&quot;: 10
+        }
+      ],
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;sirenum:expense&quot;
+      },
+      &quot;variant&quot;: {
+        &quot;literal&quot;: &quot;#9b4258&quot;
+      },
+      &quot;tuples&quot;: [
+        {
+          &quot;name&quot;: &quot;approved&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Approved_for_Payment__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;success&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Approved&quot;,
+              &quot;de&quot;: &quot;Genehmigt&quot;,
+              &quot;es&quot;: &quot;Aprobado&quot;,
+              &quot;nl&quot;: &quot;Goedgekeurd&quot;,
+              &quot;fr&quot;: &quot;Approuvé&quot;,
+              &quot;it&quot;: &quot;Approvato&quot;
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;success&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;pending&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Approved_for_Payment__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;spinner&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Pending&quot;,
+              &quot;de&quot;: &quot;Anstehend&quot;,
+              &quot;es&quot;: &quot;Pendiente&quot;,
+              &quot;nl&quot;: &quot;In behandeling&quot;,
+              &quot;fr&quot;: &quot;En attente&quot;,
+              &quot;it&quot;: &quot;In attesa di&quot;
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;warning&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;amount&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;money&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Amount__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;category&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:category&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Type&quot;,
+              &quot;de&quot;: &quot;Typ&quot;,
+              &quot;es&quot;: &quot;Categoría&quot;,
+              &quot;nl&quot;: &quot;Type&quot;,
+              &quot;fr&quot;: &quot;Type&quot;,
+              &quot;it&quot;: &quot;Genere&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Expense_assigned_to__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;vat-included&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;price_book_entries&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__VAT_Included__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;billable&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;forward_up&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Billable&quot;,
+              &quot;de&quot;: &quot;Gebührenpflichtig&quot;,
+              &quot;es&quot;: &quot;Facturable&quot;,
+              &quot;nl&quot;: &quot;Factureerbaar&quot;,
+              &quot;fr&quot;: &quot;Facturable&quot;,
+              &quot;it&quot;: &quot;Fatturabile&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Charge_to_client__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;account&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;company&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Account__r.sirenum__Client__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;expense-date&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;date_time&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Date_of_expense__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;payment-date&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;date_time&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Date_of_payment__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;comment&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;note&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Comments__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;supplier&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;store&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Beneficiary_Name__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;expense-number&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;clock&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Expense_number__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;attach-photo&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Approved_for_Payment__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;photo&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Attach Photo&quot;,
+              &quot;de&quot;: &quot;Foto anfügen&quot;,
+              &quot;es&quot;: &quot;Adjuntar Foto&quot;,
+              &quot;nl&quot;: &quot;Foto bijvoegen&quot;,
+              &quot;fr&quot;: &quot;Joindre une photo&quot;,
+              &quot;it&quot;: &quot;Allega Foto&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$attach:photo&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;attach-image&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Approved_for_Payment__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;image&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Attach Image&quot;,
+              &quot;de&quot;: &quot;Attach Image&quot;,
+              &quot;es&quot;: &quot;Attach Image&quot;,
+              &quot;nl&quot;: &quot;Attach Image&quot;,
+              &quot;fr&quot;: &quot;Attach Image&quot;,
+              &quot;it&quot;: &quot;Attach Image&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$attach:image&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;attach-file&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Approved_for_Payment__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;share_file&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Attach File&quot;,
+              &quot;de&quot;: &quot;Attach File&quot;,
+              &quot;es&quot;: &quot;Attach File&quot;,
+              &quot;nl&quot;: &quot;Attach File&quot;,
+              &quot;fr&quot;: &quot;Attach File&quot;,
+              &quot;it&quot;: &quot;Attach File&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$attach:file&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;show-attachments&quot;,
+          &quot;selector&quot;: {
+            &quot;count&quot;: {
+              &quot;relationship&quot;: &quot;Attachments&quot;
+            },
+            &quot;operator&quot;: &quot;Greater&quot;,
+            &quot;value&quot;: &quot;0&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;file&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Show Attachments&quot;,
+              &quot;de&quot;: &quot;Show Attachments&quot;,
+              &quot;es&quot;: &quot;Show Attachments&quot;,
+              &quot;nl&quot;: &quot;Show Attachments&quot;,
+              &quot;fr&quot;: &quot;Show Attachments&quot;,
+              &quot;it&quot;: &quot;Show Attachments&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$attach:list&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;new-record&quot;,
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Expense&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$action:update?sirenum__Contact__c=&apos;{0}&apos;&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;user&quot;: &quot;contactId&quot;
+                }
+              ]
+            }
+          }
+        }
+      ],
+      &quot;tileLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;approved&quot;,
+            &quot;pending&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;supplier&quot;,
+            &quot;account&quot;,
+            &quot;amount&quot;,
+            &quot;category&quot;
+          ]
+        }
+      ],
+      &quot;detailLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;approved&quot;,
+            &quot;pending&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;supplier&quot;,
+            &quot;account&quot;,
+            &quot;amount&quot;,
+            &quot;category&quot;,
+            &quot;vat-included&quot;,
+            &quot;billable&quot;,
+            &quot;payment-date&quot;,
+            &quot;comment&quot;,
+            &quot;attach-photo&quot;,
+            &quot;attach-image&quot;,
+            &quot;attach-file&quot;,
+            &quot;show-attachments&quot;
+          ]
+        }
+      ],
+      &quot;editLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+          ],
+          &quot;contents&quot;: [
+            &quot;expense-date&quot;,
+            &quot;expense-number&quot;,
+            &quot;supplier&quot;,
+            &quot;amount&quot;,
+            &quot;category&quot;,
+            &quot;vat-included&quot;,
+            &quot;billable&quot;,
+            &quot;comment&quot;
+          ]
+        }
+      ],
+      &quot;newRecordInitializers&quot;: [
+        &quot;new-record&quot;
+      ]
+    }
+  ],
+  &quot;realTimeActions&quot;: [
+  ]
+}</value>
+    </values>
+    <values>
+        <field>sirenum__Schema__c</field>
+        <value xsi:type="xsd:string">https://sirenum.com/schema/2020/10/mobile-definition.json</value>
+    </values>
+</CustomMetadata>

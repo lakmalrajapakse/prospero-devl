@@ -60,14 +60,10 @@
         <connector>
             <targetReference>Delete_Related_CYP_to_Shift_Records</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Engagement_End_Date__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         ISCHANGED({!$Record.Engagement_End_Date__c})
+)</filterFormula>
         <object>CYP_to_Job__c</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

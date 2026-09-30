@@ -64,28 +64,10 @@
         <connector>
             <targetReference>Get_Site</targetReference>
         </connector>
-        <filterLogic>1 OR (2 AND 3)</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Id</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Child_Young_Person_Care_Package__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (ISBLANK({!$Record.Id}) || (NOT(ISBLANK({!$Record.Id})) &amp;&amp; ISCHANGED({!$Record.Child_Young_Person_Care_Package__c})))
+)</filterFormula>
         <object>TR1__Job__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

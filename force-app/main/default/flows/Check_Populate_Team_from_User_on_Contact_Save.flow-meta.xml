@@ -130,7 +130,12 @@
         <connector>
             <targetReference>Get_Team_Users</targetReference>
         </connector>
-        <filterFormula>ISBLANK({!$Record.Team__c})</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+ISBLANK({!$Record.Team__c})
+         )
+)</filterFormula>
         <object>Contact</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

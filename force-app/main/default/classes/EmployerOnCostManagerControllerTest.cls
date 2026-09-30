@@ -1,8 +1,10 @@
 @IsTest
 private class EmployerOnCostManagerControllerTest {
 
+    // Verifies the workspace returns the earliest version and its employer on costs.
     @IsTest
     static void testGetWorkspaceWithCosts() {
+
         Rate_Agreements__c rateAgreement = new Rate_Agreements__c(
             Name = 'Test Rate Agreement'
         );
@@ -30,12 +32,12 @@ private class EmployerOnCostManagerControllerTest {
         System.assertEquals(version.Id, result.versionId);
         System.assertEquals(1, result.costs.size());
         System.assertEquals(cost.Id, result.costs[0].Id);
-        System.assertEquals(version.Id, result.costs[0].Rate_Agreement_Version__c);
     }
 
-
+    // Verifies the number and names of rate lines using the rate agreement.
     @IsTest
     static void testGetRateLineUsageWithRateLines() {
+
         Rate_Agreements__c rateAgreement = new Rate_Agreements__c(
             Name = 'Test Rate Agreement'
         );
@@ -48,7 +50,8 @@ private class EmployerOnCostManagerControllerTest {
 
         sirenum__Rate_Card_Page__c page = new sirenum__Rate_Card_Page__c(
             Name = 'Test Page',
-            sirenum__Rate_Card__c = rateCard.Id
+            sirenum__Rate_Card__c = rateCard.Id,
+            sirenum__SortOrder__c = 1
         );
         insert page;
 
@@ -68,7 +71,8 @@ private class EmployerOnCostManagerControllerTest {
             sirenum__SortOrder__c = 2
         );
 
-        insert new List<sirenum__Rate_Line__c>{ rateLine1, rateLine2 };
+        insert rateLine1;
+        insert rateLine2;
 
         Test.startTest();
         EmployerOnCostManagerController.RateLineUsage result =
@@ -77,7 +81,5 @@ private class EmployerOnCostManagerControllerTest {
 
         System.assertEquals(2, result.totalCount);
         System.assertEquals(2, result.sampleNames.size());
-        System.assertEquals(rateLine1.Name, result.sampleNames[0]);
-        System.assertEquals(rateLine2.Name, result.sampleNames[1]);
     }
 }

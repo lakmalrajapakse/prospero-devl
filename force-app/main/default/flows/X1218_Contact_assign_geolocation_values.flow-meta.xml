@@ -68,28 +68,14 @@
         <connector>
             <targetReference>Update_home_cordinate</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>MailingLatitude</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>MailingLongitude</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>sirenum__Home_Coordinates__Latitude__s</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         AND(
+             NOT(ISBLANK({!$Record.MailingLatitude})),
+             NOT(ISBLANK({!$Record.MailingLongitude})),
+             ISBLANK({!$Record.sirenum__Home_Coordinates__Latitude__s})
+         )
+)</filterFormula>
         <object>Contact</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <scheduledPaths>

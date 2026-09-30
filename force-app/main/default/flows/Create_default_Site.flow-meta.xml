@@ -119,6 +119,7 @@
         <connector>
             <targetReference>Get_Site_Record_type</targetReference>
         </connector>
+        <filterFormula>NOT({!$Permission.Bypass_System_Automation})</filterFormula>
         <object>Account</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

@@ -20,11 +20,13 @@ export default class RaEmployerOnCost extends LightningElement {
     newWorkerType;
     newOnCostType;
     newCalcType;
+    newType;
     newValue;
 
     workerTypeOptions = [];
     onCostTypeOptions = [];
     calcTypeOptions = [];
+    typeOptions = [];
 
     connectedCallback() {
         this.load();
@@ -46,6 +48,7 @@ export default class RaEmployerOnCost extends LightningElement {
             this.workerTypeOptions = data.picklistFieldValues.Worker_Type__c?.values || [];
             this.onCostTypeOptions = data.picklistFieldValues.On_Cost_Type__c?.values || [];
             this.calcTypeOptions = data.picklistFieldValues.Calc_Type__c?.values || [];
+            this.typeOptions = data.picklistFieldValues.Type__c?.values || [];
         }
     }
 
@@ -92,6 +95,7 @@ export default class RaEmployerOnCost extends LightningElement {
                     workerType: row.Worker_Type__c,
                     onCostType: row.On_Cost_Type__c,
                     calcType: row.Calc_Type__c,
+                    type: row.Type__c,
                     value: row.Value__c
                 }
             });
@@ -117,6 +121,7 @@ export default class RaEmployerOnCost extends LightningElement {
         this.newWorkerType = undefined;
         this.newOnCostType = undefined;
         this.newCalcType = undefined;
+        this.newType = undefined;
         this.newValue = undefined;
         this.showAddModal = true;
     }
@@ -131,6 +136,7 @@ export default class RaEmployerOnCost extends LightningElement {
         if (field === 'workerType') this.newWorkerType = value;
         if (field === 'onCostType') this.newOnCostType = value;
         if (field === 'calcType') this.newCalcType = value;
+        if (field === 'type') this.newType = value;
         if (field === 'value') this.newValue = value;
     }
 
@@ -145,6 +151,7 @@ export default class RaEmployerOnCost extends LightningElement {
                     workerType: this.newWorkerType,
                     onCostType: this.newOnCostType,
                     calcType: this.newCalcType,
+                    type: this.newType,
                     value: this.newValue !== undefined && this.newValue !== '' ? parseFloat(this.newValue) : null
                 }
             });

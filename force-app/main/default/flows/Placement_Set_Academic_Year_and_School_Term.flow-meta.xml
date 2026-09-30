@@ -143,7 +143,12 @@
         <connector>
             <targetReference>Check_if_Start_date_is_null</targetReference>
         </connector>
-        <filterFormula>AND(ISNEW() || ISCHANGED({!$Record.TR1__Start_Date__c}),{!$Record.RecordType.DeveloperName}=&apos;Permanent&apos;)</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+AND(ISNEW() || ISCHANGED({!$Record.TR1__Start_Date__c}),{!$Record.RecordType.DeveloperName}=&apos;Permanent&apos;)
+         )
+)</filterFormula>
         <object>TR1__Closing_Report__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

@@ -3537,7 +3537,12 @@
     <start>
         <locationX>0</locationX>
         <locationY>0</locationY>
-        <filterFormula>{!$Record.User_Created__c} = True &amp;&amp; ISCHANGED({!$Record.User_Created__c} )</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+{!$Record.User_Created__c} = True &amp;&amp; ISCHANGED({!$Record.User_Created__c} )
+         )
+)</filterFormula>
         <object>Contact</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <scheduledPaths>

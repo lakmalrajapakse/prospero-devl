@@ -19,13 +19,16 @@ export default class JobRoleScaleAssignment extends LightningElement {
     jobTypeSearchId;
     accountSearchId;
     jobRoleOptions = [];
-    pickerResetKey = 0;
     showFilterPickers = true;
+
+    jobRolePageNumber = 1;
+    jobRoleHasNextPage = false;
 
     connectedCallback() {
         this.load();
     }
 
+    // Loads Job Roles already assigned to this Scale Definition.
     async load() {
         this.isLoading = true;
         try {
@@ -41,6 +44,7 @@ export default class JobRoleScaleAssignment extends LightningElement {
         }
     }
 
+    // Builds a pill label combining Job Role, Contract and Account.
     buildPillLabel(assignment) {
         const jobRoleName = assignment.Job_Role__r?.Name || '';
         const contractName = assignment.Job_Role__r?.sirenum__Account__r?.Name;
@@ -59,6 +63,14 @@ export default class JobRoleScaleAssignment extends LightningElement {
         return this.hasSearched && !this.isSearching && this.jobRoleOptions.length === 0;
     }
 
+    get disableJobRolePrevious() {
+        return this.jobRolePageNumber === 1;
+    }
+
+    get disableJobRoleNext() {
+        return !this.jobRoleHasNextPage;
+    }
+
     openAssignPanel() {
         this.showAssignPanel = true;
         this.nameSearchInput = '';
@@ -66,7 +78,13 @@ export default class JobRoleScaleAssignment extends LightningElement {
         this.accountSearchId = undefined;
         this.jobRoleOptions = [];
         this.hasSearched = false;
+        this.jobRolePageNumber = 1;
+        this.jobRoleHasNextPage = false;
         this.resetFilterPickers();
+    }
+
+    closeAssignPanel() {
+        this.showAssignPanel = false;
     }
 
     handleSearchClear() {
@@ -75,19 +93,18 @@ export default class JobRoleScaleAssignment extends LightningElement {
         this.accountSearchId = undefined;
         this.jobRoleOptions = [];
         this.hasSearched = false;
+        this.jobRolePageNumber = 1;
+        this.jobRoleHasNextPage = false;
         this.resetFilterPickers();
     }
 
+    // Briefly removes and re-adds the pickers so their internal state clears.
     resetFilterPickers() {
         this.showFilterPickers = false;
         // eslint-disable-next-line @lwc/lwc/no-async-operation
         Promise.resolve().then(() => {
             this.showFilterPickers = true;
         });
-    }
-
-    closeAssignPanel() {
-        this.showAssignPanel = false;
     }
 
     handleNameSearchChange(event) {
@@ -108,16 +125,27 @@ export default class JobRoleScaleAssignment extends LightningElement {
         }
     }
 
-    handleSearchClear() {
-        this.nameSearchInput = '';
-        this.jobTypeSearchId = undefined;
-        this.accountSearchId = undefined;
-        this.jobRoleOptions = [];
-        this.hasSearched = false;
-        this.pickerResetKey += 1;
+    // Runs a fresh search starting from page one.
+    handleSearchClick() {
+        this.jobRolePageNumber = 1;
+        this.runSearch();
     }
 
-    async handleSearchClick() {
+    handleJobRolePreviousPage() {
+        if (this.jobRolePageNumber > 1) {
+            this.jobRolePageNumber -= 1;
+            this.runSearch();
+        }
+    }
+
+    handleJobRoleNextPage() {
+        if (this.jobRoleHasNextPage) {
+            this.jobRolePageNumber += 1;
+            this.runSearch();
+        }
+    }
+
+    async runSearch() {
         if (!this.nameSearchInput && !this.jobTypeSearchId && !this.accountSearchId) {
             this.showToast('Error', 'Enter a name or select a Job Type / Account to search.', 'error');
             return;
@@ -126,16 +154,18 @@ export default class JobRoleScaleAssignment extends LightningElement {
         this.isSearching = true;
         this.hasSearched = true;
         try {
-            const results = await searchJobRoles({
+            const page = await searchJobRoles({
                 rateAgreementId: this.rateAgreementId,
                 searchText: this.nameSearchInput,
                 jobTypeId: this.jobTypeSearchId,
-                accountId: this.accountSearchId
+                accountId: this.accountSearchId,
+                pageNumber: this.jobRolePageNumber
             });
             const assignedIds = new Set(this.assignments.map(a => a.Job_Role__c));
-            this.jobRoleOptions = (results || [])
+            this.jobRoleOptions = (page.records || [])
                 .filter(jr => !assignedIds.has(jr.jobRoleId))
                 .map(jr => ({ ...jr, selected: false }));
+            this.jobRoleHasNextPage = page.hasNextPage;
         } catch (error) {
             this.showError(error);
         } finally {

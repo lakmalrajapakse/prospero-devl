@@ -99,7 +99,12 @@
         <connector>
             <targetReference>Get_Multi_client</targetReference>
         </connector>
-        <filterFormula>{!$Record.RecordType.DeveloperName} = &apos;Multi_Child_Young_Person_Contract&apos;</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+{!$Record.RecordType.DeveloperName} = &apos;Multi_Child_Young_Person_Contract&apos;
+         )
+)</filterFormula>
         <object>TR1__Job__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

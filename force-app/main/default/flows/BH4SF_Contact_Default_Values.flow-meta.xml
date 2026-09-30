@@ -246,9 +246,14 @@
         <connector>
             <targetReference>Check_Recordtype</targetReference>
         </connector>
-        <filterFormula>OR(
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+OR(
 ISCHANGED({!$Record.RecordTypeId}),
 ISNEW()
+)
+         )
 )</filterFormula>
         <object>Contact</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

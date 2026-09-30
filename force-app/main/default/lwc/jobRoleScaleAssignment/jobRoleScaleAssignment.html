@@ -5,13 +5,12 @@
 
     <div class="slds-p-around_small">
         <div class="slds-grid slds-grid_align-end slds-grid_vertical-align-center slds-m-bottom_small">
-            <!-- <h3 class="slds-text-heading_small">Job Roles</h3> -->
             <lightning-button-icon icon-name="utility:add" variant="brand" title="Assign Job Roles" alternative-text="Assign Job Roles" onclick={openAssignPanel}></lightning-button-icon>
         </div>
 
         <template lwc:if={showAssignPanel}>
             <div class="assign-panel slds-box slds-m-bottom_small">
-                <div class="slds-grid slds-gutters slds-m-bottom_small">
+                <div class="slds-grid slds-gutters_x-small slds-m-bottom_small">
                     <div class="slds-col slds-size_1-of-3">
                         <lightning-input label="Job Role Name" value={nameSearchInput} onchange={handleNameSearchChange} onkeyup={handleSearchKeyUp}></lightning-input>
                     </div>
@@ -58,6 +57,12 @@
                         <template lwc:if={showNoResults}>
                             <p class="slds-text-align_center slds-text-color_weak slds-p-around_medium">No eligible Job Roles found. Job Roles must belong to a Contract assigned to this Rate Agreement.</p>
                         </template>
+                    </div>
+
+                    <div class="slds-grid slds-grid_align-spread slds-m-vertical_small">
+                        <lightning-button label="Previous" disabled={disableJobRolePrevious} onclick={handleJobRolePreviousPage}></lightning-button>
+                        <span>Page {jobRolePageNumber}</span>
+                        <lightning-button label="Next" disabled={disableJobRoleNext} onclick={handleJobRoleNextPage}></lightning-button>
                     </div>
                 </template>
 

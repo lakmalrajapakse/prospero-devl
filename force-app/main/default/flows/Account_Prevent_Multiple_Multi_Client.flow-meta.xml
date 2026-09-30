@@ -121,9 +121,14 @@
         <connector>
             <targetReference>Check_Field_Value</targetReference>
         </connector>
-        <filterFormula>OR(
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+OR(
     ISNEW(),
     ISCHANGED({!$Record.Multi_Client_Job_Client__c})
+)
+         )
 )</filterFormula>
         <object>Account</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

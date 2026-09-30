@@ -35,6 +35,7 @@ public with sharing class RateAgreementManagerController {
         @AuraEnabled public String workerType { get; set; }
         @AuraEnabled public String onCostType { get; set; }
         @AuraEnabled public String calcType { get; set; }
+        @AuraEnabled public String type { get; set; }
         @AuraEnabled public Decimal value { get; set; }
     }
 
@@ -388,14 +389,14 @@ public with sharing class RateAgreementManagerController {
     @AuraEnabled
     public static List<Employer_On_Cost__c> getOnCosts(Id versionId, Id lineId) {
         if (versionId == null) return new List<Employer_On_Cost__c>();
-        String query = 'SELECT Id, Name, Worker_Type__c, On_Cost_Type__c, Calc_Type__c, Value__c ' +
+        String query = 'SELECT Id, Name, Worker_Type__c, On_Cost_Type__c, Calc_Type__c, Type__c, Value__c ' +
             'FROM Employer_On_Cost__c WHERE Rate_Agreement_Version__c = :versionId';
         query += lineId != null ? ' AND Rate_Agreement_Lines__c = :lineId' : ' AND Rate_Agreement_Lines__c = NULL';
         query += ' ORDER BY CreatedDate';
         return Database.query(query);
     }
 
-    // Inserts or updates one Employer On Cost.
+        // Inserts or updates one Employer On Cost.
     @AuraEnabled
     public static Id upsertOnCost(Id versionId, Id lineId, OnCostInput input) {
         if (versionId == null) throw new AuraHandledException('A Version is required.');
@@ -410,6 +411,7 @@ public with sharing class RateAgreementManagerController {
         rec.Worker_Type__c = input.workerType;
         rec.On_Cost_Type__c = input.onCostType;
         rec.Calc_Type__c = input.calcType;
+        rec.Type__c = input.type;
         rec.Value__c = input.value;
         upsert rec;
         return rec.Id;
@@ -428,7 +430,7 @@ public with sharing class RateAgreementManagerController {
         if (versionId == null || lineId == null) throw new AuraHandledException('A Version and Line are required.');
 
         List<Employer_On_Cost__c> defaults = [
-            SELECT Worker_Type__c, On_Cost_Type__c, Calc_Type__c, Value__c
+            SELECT Worker_Type__c, On_Cost_Type__c, Calc_Type__c, Value__c, Type__c
             FROM Employer_On_Cost__c
             WHERE Rate_Agreement_Version__c = :versionId AND Rate_Agreement_Lines__c = NULL
         ];
@@ -441,6 +443,7 @@ public with sharing class RateAgreementManagerController {
                 Worker_Type__c = d.Worker_Type__c,
                 On_Cost_Type__c = d.On_Cost_Type__c,
                 Calc_Type__c = d.Calc_Type__c,
+                Type__c = d.Type__c,
                 Value__c = d.Value__c
             ));
         }

@@ -87,8 +87,13 @@
             <targetReference>Get_Related_Job</targetReference>
         </connector>
         <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+AND(
     {!$Record.RecordType.DeveloperName} = &quot;Permanent&quot;,
     NOT(ISBLANK({!$Record.TR1__Job__c}))
+)
+         )
 )</filterFormula>
         <object>TR1__Closing_Report__c</object>
         <recordTriggerType>Create</recordTriggerType>

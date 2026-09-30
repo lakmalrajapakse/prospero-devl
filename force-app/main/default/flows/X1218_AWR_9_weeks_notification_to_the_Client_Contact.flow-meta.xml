@@ -98,14 +98,10 @@
         <connector>
             <targetReference>Get_AWR_Contact</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>sirenum__Weeks_Worked__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <numberValue>9.0</numberValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         {!$Record.sirenum__Weeks_Worked__c} = 9
+)</filterFormula>
         <object>sirenum__AWR__c</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

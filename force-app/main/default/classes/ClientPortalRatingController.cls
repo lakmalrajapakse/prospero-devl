@@ -1,8 +1,3 @@
-/**
- * Controller for the "Ratings" related list on the Candidate detail page.
- * Only returns Ratings where Rating.Account = current portal user's Account
- * (since all Ratings on this page are, by definition, for that Account).
- */
 public without sharing class ClientPortalRatingController {
 
     @AuraEnabled(cacheable=true)
@@ -13,7 +8,8 @@ public without sharing class ClientPortalRatingController {
         }
 
         List<sirenum__Ranking__c> results = [
-            SELECT Id, Name, sirenum__Ranked_by__c, sirenum__Ranked_By__r.Name, CreatedDate
+            SELECT Id, Name,  sirenum__Ranked_By__c,
+                   sirenum__Ranked_By__r.Name, CreatedDate
             FROM sirenum__Ranking__c
             WHERE sirenum__Contact__c = :contactId
               AND sirenum__Account__c = :currentAccountId

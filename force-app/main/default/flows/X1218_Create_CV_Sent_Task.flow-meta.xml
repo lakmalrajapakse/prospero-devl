@@ -69,14 +69,10 @@
             <targetReference>Create_CV_Sent_Task</targetReference>
         </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>TR1__Stage__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Submittal</stringValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         ISPICKVAL({!$Record.TR1__Stage__c}, &quot;Submittal&quot;)
+)</filterFormula>
         <object>TR1__Application_V2__c</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

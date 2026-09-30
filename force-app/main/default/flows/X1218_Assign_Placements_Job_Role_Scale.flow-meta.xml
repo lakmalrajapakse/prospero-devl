@@ -43,10 +43,11 @@
         <connector>
             <targetReference>Assign_Job_Role_Scale</targetReference>
         </connector>
-        <filterFormula>NOT(ISNULL({!$Record.Job__r.Job_Role_Scale__c}))</filterFormula>
+        <filterFormula>OR( NOT({!$Permission.Bypass_System_Automation}) ,
+      NOT(ISNULL({!$Record.Job__r.Job_Role_Scale__c})))</filterFormula>
         <object>sirenum__Placement__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
 </Flow>

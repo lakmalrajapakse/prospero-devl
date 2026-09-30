@@ -1,0 +1,44 @@
+:host {
+    display: block;
+}
+
+.mc-card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #d8e2f7;
+    box-shadow: 0 2px 8px rgba(54, 79, 199, 0.12);
+    background: linear-gradient(180deg, #f7f9ff 0%, #ffffff 40%);
+}
+
+/* Same blue gradient as the Add/Edit Rate Line modal header, so the panel and its modal read as
+   one component. */
+.mc-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.875rem 1rem;
+    background: linear-gradient(135deg, #4c6ef5 0%, #364fc7 100%);
+}
+
+.mc-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mc-card-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.mc-card-body {
+    padding: 0.5rem 0;
+}

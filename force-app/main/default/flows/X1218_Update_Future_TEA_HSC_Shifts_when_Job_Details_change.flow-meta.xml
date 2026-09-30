@@ -243,77 +243,10 @@
         <connector>
             <targetReference>Get_Future_Shifts_for_Job</targetReference>
         </connector>
-        <filterLogic>(1 AND 3) OR (2 AND (4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10))</filterLogic>
-        <filters>
-            <field>Brand__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Health &amp; Social Care</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Brand__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <stringValue>Teaching</stringValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Type_of_Care_Support__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Subject__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Programme__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Location_of_Delivery__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Delivery_Setting__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>SEND_Support_Type__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Who_Is_The_Support_For__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Needs_of_the_Learners__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         ((ISPICKVAL({!$Record.Brand__c}, &quot;Health &amp; Social Care&quot;) &amp;&amp; ISCHANGED({!$Record.Type_of_Care_Support__c})) || (ISPICKVAL({!$Record.Brand__c}, &quot;Teaching&quot;) &amp;&amp; (ISCHANGED({!$Record.Subject__c}) || ISCHANGED({!$Record.Programme__c}) || ISCHANGED({!$Record.Location_of_Delivery__c}) || ISCHANGED({!$Record.Delivery_Setting__c}) || ISCHANGED({!$Record.SEND_Support_Type__c}) || ISCHANGED({!$Record.Who_Is_The_Support_For__c}) || ISCHANGED({!$Record.Needs_of_the_Learners__c}))))
+)</filterFormula>
         <object>TR1__Job__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

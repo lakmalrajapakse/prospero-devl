@@ -2,9 +2,8 @@ import { LightningElement, api, wire } from 'lwc';
 import getConfirmedTickets from '@salesforce/apex/ClientPortalTicketController.getConfirmedTickets';
 
 const COLUMNS = [
-    { label: 'Ticket', fieldName: 'ticketName' },
-    { label: 'Valid From', fieldName: 'sirenum__Valid_From__c', type: 'date' },
-    { label: 'Valid Until', fieldName: 'sirenum__Valid_Until__c', type: 'date' }
+    { label: 'Valid From', fieldName: 'sirenum__Valid_From__c', type: 'date-local' },
+    { label: 'Valid Until', fieldName: 'sirenum__Valid_Until__c', type: 'date-local' }
 ];
 
 export default class CandidateTicketsRelatedList extends LightningElement {
@@ -13,12 +12,16 @@ export default class CandidateTicketsRelatedList extends LightningElement {
     tickets = [];
 
     @wire(getConfirmedTickets, { contactId: '$recordId' })
-    wiredTickets({ data }) {
+    wiredTickets({ data, error }) {
         if (data) {
-            this.tickets = data.map((t) => ({
-                ...t,
-                ticketName: t.sirenum__Ticket__r ? t.sirenum__Ticket__r.Name : ''
-            }));
+            this.tickets = data;
+        } else if (error) {
+            this.tickets = [];
+            console.error('Error loading tickets', error);
         }
+    }
+
+    get hasTickets() {
+        return this.tickets.length > 0;
     }
 }

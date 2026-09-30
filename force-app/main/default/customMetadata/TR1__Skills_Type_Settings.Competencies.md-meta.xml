@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Competencies</label>
+    <protected>false</protected>
+    <values>
+        <field>TR1__Allow_Individual_Editing__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>TR1__Default_Order__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>TR1__Disable_Manual_Assignment__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>TR1__Disabled_actions__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Fields_For_Edit__c</field>
+        <value xsi:type="xsd:string">TR1__Master_Skill__c,TR1__Start_Date__c,TR1__End_Date__c,TR1__Duration__c,TR1__Verified__c, TR1__Skill_Code__c, TR1__Type__c, TR1__Level__c, TR1__Master_Skill_Name__c</value>
+    </values>
+    <values>
+        <field>TR1__Fields__c</field>
+        <value xsi:type="xsd:string">Id, TR1__Master_Skill_Name__c, TR1__Extracted_Skill_Name__c, TR1__Source__c, TR1__Expiration_Date__c, TR1__Verified__c, TR1__Level__c</value>
+    </values>
+    <values>
+        <field>TR1__Icon_Name__c</field>
+        <value xsi:type="xsd:string">Competencies.svg</value>
+    </values>
+    <values>
+        <field>TR1__Is_Collapsed__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>TR1__Is_Hidden__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>TR1__Required_Fields__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__SObject_API_Name__c</field>
+        <value xsi:type="xsd:string">Contact</value>
+    </values>
+    <values>
+        <field>TR1__Show_Attachment__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>TR1__Skill_RecordType_DevName__c</field>
+        <value xsi:type="xsd:string">Competencies</value>
+    </values>
+    <values>
+        <field>TR1__Type_Name__c</field>
+        <value xsi:type="xsd:string">Competency</value>
+    </values>
+</CustomMetadata>

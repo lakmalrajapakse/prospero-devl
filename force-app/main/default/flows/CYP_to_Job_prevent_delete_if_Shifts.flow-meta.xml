@@ -83,6 +83,7 @@
         <connector>
             <targetReference>Get_Related_Shifts</targetReference>
         </connector>
+        <filterFormula>NOT({!$Permission.Bypass_System_Automation})</filterFormula>
         <object>CYP_to_Job__c</object>
         <recordTriggerType>Delete</recordTriggerType>
         <triggerType>RecordBeforeDelete</triggerType>

@@ -43,7 +43,7 @@ export default class CandidateRatingsRelatedList extends NavigationMixin(Lightni
             type: 'standard__recordPage',
             attributes: {
                 recordId: row.Id,
-                objectApiName: 'sirenum__Rating__c',
+                objectApiName: 'sirenum__Ranking__c',
                 actionName: 'view'
             }
         });
@@ -58,7 +58,7 @@ export default class CandidateRatingsRelatedList extends NavigationMixin(Lightni
         this[NavigationMixin.Navigate]({
             type: 'standard__objectPage',
             attributes: {
-                objectApiName: 'sirenum__Rating__c',
+                objectApiName: 'sirenum__Ranking__c',
                 actionName: 'new'
             },
             state: {

@@ -61,14 +61,10 @@
         <connector>
             <targetReference>Push_Notification_Event</targetReference>
         </connector>
-        <filterLogic>or</filterLogic>
-        <filters>
-            <field>sirenum__HasProcessingErrors__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         {!$Record.sirenum__HasProcessingErrors__c}
+)</filterFormula>
         <object>sirenum__TouchEntry__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

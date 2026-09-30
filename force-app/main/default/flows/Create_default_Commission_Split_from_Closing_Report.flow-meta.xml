@@ -81,7 +81,12 @@
         <connector>
             <targetReference>Create_Commission_Splits</targetReference>
         </connector>
-        <filterFormula>NOT(ISBLANK({!$Record.TR1__Job__r.Team__c}))</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+NOT(ISBLANK({!$Record.TR1__Job__r.Team__c}))
+         )
+)</filterFormula>
         <object>TR1__Closing_Report__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

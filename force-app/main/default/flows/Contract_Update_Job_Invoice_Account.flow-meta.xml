@@ -64,21 +64,13 @@
         <connector>
             <targetReference>Update_Records_1</targetReference>
         </connector>
-        <filterLogic>or</filterLogic>
-        <filters>
-            <field>Invoice_Account__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>Invoice_Contact__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         OR(
+             ISCHANGED({!$Record.Invoice_Account__c}),
+             ISCHANGED({!$Record.Invoice_Contact__c})
+         )
+)</filterFormula>
         <object>sirenum__ProActiveContract__c</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

@@ -43,7 +43,12 @@
         <connector>
             <targetReference>Assign_Sens_Data</targetReference>
         </connector>
-        <filterFormula>NOT(ISNULL({!$Record.s5m__BH4SFJob__r.Sensitive_Data_Record__c}))</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+NOT(ISNULL({!$Record.s5m__BH4SFJob__r.Sensitive_Data_Record__c}))
+         )
+)</filterFormula>
         <object>sirenum__Shift__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

@@ -119,12 +119,17 @@
         <connector>
             <targetReference>Get_Client_Contact</targetReference>
         </connector>
-        <filterFormula>OR(
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+OR(
   ISNEW(),
   AND(
     ISCHANGED({!$Record.Status__c}),
     ISPICKVAL({!$Record.Status__c}, &quot;Open&quot;)
   )
+)
+         )
 )</filterFormula>
         <object>Job_Requirements__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

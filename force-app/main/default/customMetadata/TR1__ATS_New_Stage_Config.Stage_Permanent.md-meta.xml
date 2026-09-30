@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Stage Permanent</label>
+    <protected>false</protected>
+    <values>
+        <field>TR1__ATS_Flow_Settings__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Action_type__c</field>
+        <value xsi:type="xsd:string">Field_Set</value>
+    </values>
+    <values>
+        <field>TR1__Application_Fields_Data__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Directions_To_Call__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__FieldSetName__c</field>
+        <value xsi:type="xsd:string">TR1__ApplicationRejectionFieldSet</value>
+    </values>
+    <values>
+        <field>TR1__StageName__c</field>
+        <value xsi:type="xsd:string">Stage Permanent</value>
+    </values>
+    <values>
+        <field>TR1__Standard_stage_for_multiple_Selection__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

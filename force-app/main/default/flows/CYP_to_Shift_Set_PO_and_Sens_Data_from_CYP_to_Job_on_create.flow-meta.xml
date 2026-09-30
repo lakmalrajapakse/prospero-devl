@@ -3,21 +3,14 @@
     <apiVersion>68.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <decisions>
-        <name>CYP_to_Job_Data_Exists</name>
-        <label>CYP to Job Data Exists</label>
+        <name>CYP_to_Job_Data_for_Purchase_Order_Number</name>
+        <label>CYP to Job Data for Purchase Order Number</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
-            <name>Yes</name>
+            <name>Purchase_Order_Number</name>
             <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>Get_CYP_to_Job.Sensitive_Data_Record__c</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
             <conditions>
                 <leftValueReference>Get_CYP_to_Job.Purchase_Order_Number__c</leftValueReference>
                 <operator>IsNull</operator>
@@ -26,9 +19,34 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>Update_PO_and_Sensitive_Data_on_CYP_to_Shift</targetReference>
+                <targetReference>Purchase_Order_Number_On_CYP_to_Shift</targetReference>
             </connector>
-            <label>Yes</label>
+            <label>Purchase Order Number</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>CYP_to_Job_Data_for_Sensitive_Data_record</name>
+        <label>CYP to Job Data for Sensitive Data record</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>CYP_to_Job_Data_for_Purchase_Order_Number</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sensitive_Data_Record</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_CYP_to_Job.Sensitive_Data_Record__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sensitive_Data_on_CYP_to_Shift</targetReference>
+            </connector>
+            <label>Sensitive Data Record</label>
         </rules>
     </decisions>
     <environments>Default</environments>
@@ -60,7 +78,7 @@
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>CYP_to_Job_Data_Exists</targetReference>
+            <targetReference>CYP_to_Job_Data_for_Sensitive_Data_record</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -75,8 +93,8 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
-        <name>Update_PO_and_Sensitive_Data_on_CYP_to_Shift</name>
-        <label>Update PO and Sensitive Data on CYP to Shift</label>
+        <name>Purchase_Order_Number_On_CYP_to_Shift</name>
+        <label>Purchase Order Number On CYP to Shift</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <inputAssignments>
@@ -85,6 +103,16 @@
                 <elementReference>Get_CYP_to_Job.Purchase_Order_Number__c</elementReference>
             </value>
         </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Sensitive_Data_on_CYP_to_Shift</name>
+        <label>Sensitive Data on CYP to Shift</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>CYP_to_Job_Data_for_Purchase_Order_Number</targetReference>
+        </connector>
         <inputAssignments>
             <field>Sensitive_Data_Record__c</field>
             <value>
@@ -99,6 +127,7 @@
         <connector>
             <targetReference>Get_CYP_to_Job</targetReference>
         </connector>
+        <filterFormula>NOT({!$Permission.Bypass_System_Automation})</filterFormula>
         <object>CYP_to_Shift__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

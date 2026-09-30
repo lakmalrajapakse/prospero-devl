@@ -48,6 +48,7 @@
         <connector>
             <targetReference>Delete_from_TK</targetReference>
         </connector>
+        <filterFormula>NOT({!$Permission.Bypass_System_Automation})</filterFormula>
         <object>Contact</object>
         <recordTriggerType>Delete</recordTriggerType>
         <triggerType>RecordBeforeDelete</triggerType>

@@ -1,0 +1,212 @@
+<apex:page applyHtmlTag="false" applyBodyTag="false" showHeader="false" standardStylesheets="false" controller="bh4fdocgen.PdfGeneratorController"
+renderAs="pdf">
+<html>
+    <head>
+        <apex:stylesheet value="{!URLFOR($Resource.CVTemplateTeaching)}" />
+    </head>
+    <body>
+        <apex:pageMessages />
+        <div class="page">
+            <img class="blob" src="{!URLFOR($Resource.CVTemplateTeachingCircle)}" alt=""/>
+            
+            <header>
+                <bh4fdocgen:hasMapEntry data="{!data['parentSections']}" section="Applicant">
+                    <apex:outputPanel >                                    
+                        <h1><strong>Hello,</strong> I'm&nbsp;
+                            <bh4fdocgen:hasMapEntry data="{!data.parentSections}" section="Applicant" field="FirstName">
+                                <bh4fdocgen:getFieldValue field="{!data['parentSections']['Applicant']['FirstName']}" />
+                            </bh4fdocgen:hasMapEntry>
+                        </h1>
+                        <!-- Where does the job title/description come from - will be on Contact -->
+                        <!-- <p class="role">Maths Teacher, Liverpool -->
+                        <bh4fdocgen:hasMapEntry data="{!data.parentSections}" section="Applicant" field="MailingCity">
+                            <p class="role">Maths Teacher,&nbsp;<bh4fdocgen:getFieldValue field="{!data['parentSections']['Applicant']['MailingCity']}" /></p>
+                        </bh4fdocgen:hasMapEntry>             
+                    </apex:outputPanel>
+                </bh4fdocgen:hasMapEntry>
+                <!-- Recruiter/User -->
+                <div class="contacts">
+                    <span class="chip">
+                        <img class="chip-top" src="{!URLFOR($Resource.CVTemplateTeachingChipTop)}" alt=""/>
+                        <span class="chip-mid"></span>
+                        <img class="chip-bottom" src="{!URLFOR($Resource.CVTemplateTeachingChipBottom)}" alt=""/>
+                        <span class="chip-body"><img class="icon-img" src="{!URLFOR($Resource.CVTemplateTeachingIconLocation)}" alt=""/>Liverpool</span>
+                    </span>
+                    <span class="chip">
+                        <img class="chip-top" src="{!URLFOR($Resource.CVTemplateTeachingChipTop)}" alt=""/>
+                        <span class="chip-mid"></span>
+                        <img class="chip-bottom" src="{!URLFOR($Resource.CVTemplateTeachingChipBottom)}" alt=""/>
+                        <span class="chip-body"><img class="icon-img" src="{!URLFOR($Resource.CVTemplateTeachingIconPhone)}" alt=""/><span class="redact">[Phone Number]</span></span>
+                    </span>
+                    <span class="chip wide">
+                        <img class="chip-top" src="{!URLFOR($Resource.CVTemplateTeachingChipWideTop)}" alt=""/>
+                        <span class="chip-mid"></span>
+                        <img class="chip-bottom" src="{!URLFOR($Resource.CVTemplateTeachingChipWideBottom)}" alt=""/>
+                        <span class="chip-body"><img class="icon-img" src="{!URLFOR($Resource.CVTemplateTeachingIconEmail)}" alt=""/><span class="redact">[Email Address]</span></span>
+                    </span>
+                </div>
+            </header>
+            
+
+            <table class="layout">
+                <!-- Experience panel top curve: its own row, as the panel cell below stretches -->
+                <tr class="cap-row">
+                    <td></td>
+                    <td></td>
+                    <td class="panel-cap"><img src="{!URLFOR($Resource.CVTemplateTeachingPanelTop)}" alt=""/></td>
+                </tr>
+                <tr>
+                    <td class="col">
+                        <section class="profile block">
+                            <span class="pill"><img src="{!URLFOR($Resource.CVTemplateTeachingPillBlue)}" alt=""/><span class="label">PROFILE</span></span>
+                            <!-- <p>I am a dynamic and dedicated Physical Education Teacher with a strong commitment to providing high-quality education that fosters academic achievement and prioritises student development. Additionally, a strength is my ability to create positive and strong rapport with students in a variety of contexts which helps with both classroom and behaviour management. My goal is to create inclusive learning environments that promote active participation, critical thinking and lifelong learning for everyone in regard to specific curriculum requirements but more importantly for a student’s individual wellbeing.</p> -->
+                            <bh4fdocgen:hasMapEntry data="{!data['parentSections']}" section="Applicant">
+                                <apex:outputPanel >
+                                    <bh4fdocgen:hasMapEntry data="{!data.parentSections}" section="Applicant" field="Description">
+                                        <p><bh4fdocgen:getFieldValue field="{!data['parentSections']['Applicant']['Description']}" /></p>
+                                    </bh4fdocgen:hasMapEntry>
+                                </apex:outputPanel>
+                            </bh4fdocgen:hasMapEntry>
+                        </section>
+
+                        <!-- Education -->
+                        <section class="block">
+                            <h2>EDUCATION</h2>
+                            <!-- <ul class="sq">
+                                <li>Bachelor of Fine Arts in Graphic Design<br/>Parsons School of Design, New York, USA. Graduated: 2012</li>
+                            </ul> -->
+                            <bh4fdocgen:hasMapEntry data="{!data['childSections']}" section="Education_History_AppV2">
+                                <bh4fdocgen:hasRecords list="{!data['childSections']}" section="Education_History_AppV2">
+                                    <ul class="sq">
+                                        <apex:repeat value="{!data.childSections['Education_History_AppV2']}" var="education">
+                                            <li>
+                                                <bh4fdocgen:hasChildEntry childSectionName="Education_History_AppV2" recordId="{!education['Id']}" field="TR1__DegreeName__c">
+                                                    <bh4fdocgen:getFieldValue field="{!education['TR1__DegreeName__c']}" />
+                                                </bh4fdocgen:hasChildEntry>
+                                                <bh4fdocgen:hasChildEntry childSectionName="Education_History_AppV2" recordId="{!education['Id']}" field="TR1__SchoolName__c">
+                                                    <br/><bh4fdocgen:getFieldValue field="{!education['TR1__SchoolName__c']}" />,
+                                                </bh4fdocgen:hasChildEntry>
+                                                <bh4fdocgen:hasChildEntry childSectionName="Education_History_AppV2" recordId="{!education['Id']}" field="TR1__City__c">
+                                                    &nbsp;<bh4fdocgen:getFieldValue field="{!education['TR1__City__c']}" />,
+                                                </bh4fdocgen:hasChildEntry>
+                                                <bh4fdocgen:hasChildEntry childSectionName="Education_History_AppV2" recordId="{!education['Id']}" field="TR1__Country__c">
+                                                    &nbsp;<bh4fdocgen:getFieldValue field="{!education['TR1__Country__c']}" />
+                                                </bh4fdocgen:hasChildEntry>
+                                                <!-- TR1__City__c, TR1__Country__c, -->
+                                            </li>
+                                        </apex:repeat>
+                                    </ul>
+                                </bh4fdocgen:hasRecords>
+                            </bh4fdocgen:hasMapEntry>
+                        </section>
+
+                        <!-- Education -->
+                        <section class="block">
+                            <h2>CERTIFICATION</h2>
+                            <ul class="sq">
+                                <li>QTS (PE) - (2026)</li>
+                                <li>Bachelor of Health Sport &amp; Physical Education (HONS) - University of Queensland (2016 - 2019)</li>
+                                <li>Major in Health, Health and Physical Education, Minor in Science</li>
+                            </ul>
+                        </section>
+                    </td>
+
+                    <!-- Gutter and Experience span this row plus the two compliance rows below,
+                         so the compliance panel stretches to meet the shared bottom cap row -->
+                    <td class="gutter" rowspan="3"></td>
+
+                    <!-- Employment History -->
+                    <td class="col panel experience" rowspan="3">
+                        <span class="pill white"><img src="{!URLFOR($Resource.CVTemplateTeachingPillWhite)}" alt=""/><span class="label">EXPERIENCE</span></span>
+                        <!-- where is this coming from (Contact) -->
+                        <!-- <p class="lead">Throughout my roles, I embedded lifelong learning approaches into lesson design, ensuring activities were fun, engaging, and meaningful to foster student motivation and personal growth.</p> -->
+                        <!-- <p class="lead"> -->
+                            <bh4fdocgen:hasMapEntry data="{!data['parentSections']}" section="Applicant">
+                                <apex:outputPanel >
+                                    <p class="lead">
+                                        <bh4fdocgen:hasMapEntry data="{!data.parentSections}" section="Applicant" field="TR1__Candidate_Highlights__c">
+                                            <bh4fdocgen:getFieldValue field="{!data['parentSections']['Applicant']['TR1__Candidate_Highlights__c']}" />
+                                        </bh4fdocgen:hasMapEntry>
+                                    </p>
+                                    
+                                </apex:outputPanel>
+                            </bh4fdocgen:hasMapEntry>
+                        <!-- </p> -->
+                        
+                        <ul>
+                            <!-- <li>Formby High School - Supply Teacher</li>
+                            <li>King David High School - Cover Teacher</li>
+                            <li>Assistant Senior AFL Coach</li> -->
+                            <bh4fdocgen:hasMapEntry data="{!data['childSections']}" section="Employment_History_AppV2">
+                                <bh4fdocgen:hasRecords list="{!data['childSections']}" section="Employment_History_AppV2">
+                                    <apex:repeat value="{!data.childSections['Employment_History_AppV2']}" var="employment">
+                                        <li>
+                                            <bh4fdocgen:hasChildEntry childSectionName="Employment_History_AppV2" recordId="{!employment['Id']}" field="TR1__OrganizationName__c">
+                                                <bh4fdocgen:getFieldValue field="{!employment['TR1__OrganizationName__c']}" />
+                                            </bh4fdocgen:hasChildEntry>
+                                            <bh4fdocgen:hasChildEntry childSectionName="Employment_History_AppV2" recordId="{!employment['Id']}" field="TR1__Title__c">
+                                                -&nbsp;
+                                                <bh4fdocgen:getFieldValue field="{!employment['TR1__Title__c']}" />
+                                            </bh4fdocgen:hasChildEntry>
+                                        </li>
+                                    </apex:repeat>
+                                </bh4fdocgen:hasRecords>
+                            </bh4fdocgen:hasMapEntry>
+                        </ul>
+                    </td>
+                </tr>
+                <!-- Skills: compliance panel top curve -->
+                <tr class="cap-row">
+                    <td class="panel-cap"><img src="{!URLFOR($Resource.CVTemplateTeachingPanelTop)}" alt=""/></td>
+                </tr>
+                <tr>
+                    <td class="col panel compliance">
+                        <span class="pill white blue-text"><img src="{!URLFOR($Resource.CVTemplateTeachingPillWhite)}" alt=""/><span class="label">Compliance check</span></span>
+                        <table class="checks">
+                            <tr><td>Child and Adult DBS</td><td class="tick">✓</td></tr>
+                            <tr><td>Right to work in UK</td><td class="tick">✓</td></tr>
+                            <tr><td>Previous experience</td><td class="tick">✓</td></tr>
+                            <tr><td>2 years of references</td><td class="tick">✓</td></tr>
+                            <tr><td>Ready to work immediately</td><td class="tick">✓</td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- Bottom curves for both panels, in one row so they always line up -->
+                <tr class="cap-row">
+                    <td class="panel-cap"><img src="{!URLFOR($Resource.CVTemplateTeachingPanelBottom)}" alt=""/></td>
+                    <td></td>
+                    <td class="panel-cap"><img src="{!URLFOR($Resource.CVTemplateTeachingPanelBottom)}" alt=""/></td>
+                </tr>
+            </table>
+
+            <div class="footer-wrap">
+            <table class="footer">
+                <tr>
+                    <td class="icon-cell"><img class="cta-icon" src="{!URLFOR($Resource.CVTemplateTeachingIconCV)}" alt=""/></td>
+                    <td class="cta">
+                        <strong>Want to learn more</strong>
+                        <!-- <small>about <span class="redact">[Candidate Name]</span>? Call <span class="redact">[Phone Number]</span></small> -->
+                        <small>about&nbsp;
+                            <bh4fdocgen:hasMapEntry data="{!data['parentSections']}" section="Applicant">
+                                <apex:outputPanel > 
+                                    <bh4fdocgen:hasMapEntry data="{!data.parentSections}" section="Applicant" field="TR1__Full_Name__c">
+                                        <bh4fdocgen:getFieldValue field="{!data['parentSections']['Applicant']['TR1__Full_Name__c']}" />?
+                                    </bh4fdocgen:hasMapEntry>
+                                    <!-- <bh4fdocgen:hasMapEntry data="{!data.parentSections}" section="Contact" field="LastName">
+                                        &nbsp;<bh4fdocgen:getFieldValue field="{!data['parentSections']['Contact']['LastName']}" />
+                                    </bh4fdocgen:hasMapEntry>              -->
+                                </apex:outputPanel>
+                            </bh4fdocgen:hasMapEntry>
+                             Call <span class="redact">[Phone Number]</span>
+                        </small>
+                    </td>
+                    <td class="site"><img class="site-icon" src="{!URLFOR($Resource.CVTemplateTeachingIconWebsite)}" alt=""/>prosperoteaching.com</td>
+                </tr>
+            </table>
+            </div>
+
+            <p class="note">Personal details (name, phone numbers, email) have been replaced with placeholders.</p>
+        </div>
+    </body>
+</html>
+</apex:page>

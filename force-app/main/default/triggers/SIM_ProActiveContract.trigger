@@ -11,6 +11,9 @@
 **/
 trigger SIM_ProActiveContract on sirenum__ProActiveContract__c (before update, after insert, after update) {
     if (Trigger.isBefore) {
+        if (Trigger.isUpdate) {
+            EvertimeSyncUtility.process(Trigger.new,Trigger.oldMap);
+        }
         SIM_ProActiveContract_Helper.validateSyncFields(Trigger.new, Trigger.oldMap);
     } else if (Trigger.isInsert) {
         SIM_ProActiveContract_Helper.cloneJobRoles(Trigger.new);

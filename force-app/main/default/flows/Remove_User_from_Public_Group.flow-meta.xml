@@ -93,6 +93,7 @@
         <connector>
             <targetReference>Create_Platform_Event</targetReference>
         </connector>
+        <filterFormula>NOT({!$Permission.Bypass_System_Automation})</filterFormula>
         <object>Team_User__c</object>
         <recordTriggerType>Delete</recordTriggerType>
         <triggerType>RecordBeforeDelete</triggerType>

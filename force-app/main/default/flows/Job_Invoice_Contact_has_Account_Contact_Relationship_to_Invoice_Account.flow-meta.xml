@@ -103,14 +103,10 @@
         <connector>
             <targetReference>Get_Invoice_Contact_Account_Relationship</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Invoice_Contact__c</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         NOT(ISBLANK({!$Record.Invoice_Contact__c}))
+)</filterFormula>
         <object>TR1__Job__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

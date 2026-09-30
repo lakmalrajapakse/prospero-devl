@@ -117,14 +117,10 @@
     <start>
         <locationX>0</locationX>
         <locationY>0</locationY>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>s5m__Auto_Generated__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         {!$Record.s5m__Auto_Generated__c}
+)</filterFormula>
         <object>sirenum__Shift__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <scheduledPaths>

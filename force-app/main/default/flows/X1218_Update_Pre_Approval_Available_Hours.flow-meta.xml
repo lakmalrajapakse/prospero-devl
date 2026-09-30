@@ -115,8 +115,13 @@
             <targetReference>Get_All_Related_Shifts</targetReference>
         </connector>
         <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+AND(
     ISCHANGED({!$Record.Pre_Approval__c}),
     NOT(ISBLANK({!$Record.Pre_Approval__r.Hours__c}))
+)
+         )
 )</filterFormula>
         <object>sirenum__Shift__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

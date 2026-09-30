@@ -43,7 +43,12 @@
         <connector>
             <targetReference>Assign_Client</targetReference>
         </connector>
-        <filterFormula>NOT(ISNULL({!$Record.CYP_to_Job__r.Client__c}))</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+NOT(ISNULL({!$Record.CYP_to_Job__r.Client__c}))
+         )
+)</filterFormula>
         <object>CYP_to_Shift__c</object>
         <recordTriggerType>Create</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

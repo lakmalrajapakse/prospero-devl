@@ -498,7 +498,7 @@
             <targetReference>Get_Job_Requirement_Record</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>recordId</name>
         <dataType>String</dataType>

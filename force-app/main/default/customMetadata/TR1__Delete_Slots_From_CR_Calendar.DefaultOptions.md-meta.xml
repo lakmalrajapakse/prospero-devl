@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>DefaultOptions</label>
+    <protected>false</protected>
+    <values>
+        <field>TR1__Candidate_Availability__c</field>
+        <value xsi:type="xsd:string">ca</value>
+    </values>
+    <values>
+        <field>TR1__Closing_Report_Schedule__c</field>
+        <value xsi:type="xsd:string">crs</value>
+    </values>
+    <values>
+        <field>TR1__Default_selected_options__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>TR1__Delete_Candidate_Availability__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>TR1__Delete_Closing_Report_Schedule__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>TR1__Delete_Vacancy_Schedule__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>TR1__Replace_All__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>TR1__Vacancy_Schedule__c</field>
+        <value xsi:type="xsd:string">vs</value>
+    </values>
+</CustomMetadata>

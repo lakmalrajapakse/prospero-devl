@@ -38,6 +38,9 @@ const SHIFT_CONDITION_OPERATOR_VALUE = 'Equal to'
 export default class RateManager extends LightningElement {
     @api recordId
     @api objectApiName
+    // Set from a Screen Flow (see rateManager.js-meta.xml) -- the flow screen already shows its
+    // own title, so this component's own title bar and card chrome are hidden to avoid two.
+    @api isCalledFromFlow = false
     isLoading = true
 
     rateCardObject = RATE_CARD_OBJECT
@@ -518,6 +521,14 @@ export default class RateManager extends LightningElement {
     }
 
     ///// Getters
+    get showCardHeader(){
+        return !this.isCalledFromFlow;
+    }
+
+    get cardClass(){
+        return this.isCalledFromFlow ? 'mc-card-flow' : 'slds-card mc-card';
+    }
+
     get objectName(){
          return this.objectApiName === JOB_ROLE_OBJECT ? 'Job Role' : this.objectApiName === SHIFT_OBJECT ? 'Shift': 'Placement'
     }

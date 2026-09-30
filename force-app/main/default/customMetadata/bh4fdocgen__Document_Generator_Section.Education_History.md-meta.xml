@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Education History</label>
+    <protected>false</protected>
+    <values>
+        <field>bh4fdocgen__Additional_Query_Criteria__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>bh4fdocgen__Additional_Settings__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>bh4fdocgen__Component_Name__c</field>
+        <value xsi:type="xsd:string">bh4fdocgen:childSection</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Custom_Label_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>bh4fdocgen__Default_Sort_Direction__c</field>
+        <value xsi:type="xsd:string">ASC</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Display_Clear_Button__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Display_Copy_button__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Display_Section_Wrapper__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Enable_Saving_to_Record__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Field_Set_Name__c</field>
+        <value xsi:type="xsd:string">bh4fdocgen__DocGenBullhorn</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Fields_Translation_Configuration__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>bh4fdocgen__Icon__c</field>
+        <value xsi:type="xsd:string">standard:problem</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Is_Active__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Is_Child__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Lookup_Field_Name__c</field>
+        <value xsi:type="xsd:string">TR1__Education_History__r</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Main_Object_Configuration__c</field>
+        <value xsi:type="xsd:string">Contact</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Main_object_relation__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>bh4fdocgen__Object_Name__c</field>
+        <value xsi:type="xsd:string">TR1__EducationHistory__c</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Order_Number__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>bh4fdocgen__Save_to_Record_Modal_Fieldset__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>bh4fdocgen__Sort_By__c</field>
+        <value xsi:type="xsd:string">TR1__StartDate__c</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Support_Read_Only_mode__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>bh4fdocgen__Type__c</field>
+        <value xsi:type="xsd:string">Object_Field_Set</value>
+    </values>
+</CustomMetadata>

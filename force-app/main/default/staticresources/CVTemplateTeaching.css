@@ -62,7 +62,8 @@ h1 strong { font-weight: bold; }
 
 /* Contact chips: rounded top and bottom cap images (CVTemplateTeachingChipTop / ChipBottom,
    and ChipWide* for the wider email chip) with a plain rectangle between, as border-radius
-   is ignored. The caps are 8pt tall; widths match the cap images.
+   is ignored. The caps are 8pt tall; widths match the cap images. Transparent pixels in the
+   caps must carry the chip grey RGB (alpha 0), not black, or scaling leaves a grey fringe.
    .contacts is wider than the 58% header so all three chips stay on one line; the row may
    run into the blob, which sits below the logo text. */
 .contacts { position: relative; width: 380pt; white-space: nowrap; }

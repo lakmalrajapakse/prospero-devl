@@ -176,11 +176,16 @@
             <targetReference>Check_Account_Eligibility</targetReference>
         </connector>
         <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+AND(
     {!$Record.Multi_Client_Job_Client_Contract__c} = TRUE,
     OR(
         ISNEW(),
         ISCHANGED({!$Record.Multi_Client_Job_Client_Contract__c})
     )
+)
+         )
 )</filterFormula>
         <object>sirenum__ProActiveContract__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

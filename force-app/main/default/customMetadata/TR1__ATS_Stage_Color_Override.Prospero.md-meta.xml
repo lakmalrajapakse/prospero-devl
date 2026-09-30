@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Prospero</label>
+    <protected>false</protected>
+    <values>
+        <field>TR1__Closed_Job__c</field>
+        <value xsi:type="xsd:string">#0f4372</value>
+    </values>
+    <values>
+        <field>TR1__Completed_Stage__c</field>
+        <value xsi:type="xsd:string">#0f4372</value>
+    </values>
+    <values>
+        <field>TR1__Completed_Stage_on_hover__c</field>
+        <value xsi:type="xsd:string">#e01b73</value>
+    </values>
+    <values>
+        <field>TR1__Current_Stage__c</field>
+        <value xsi:type="xsd:string">#f79227</value>
+    </values>
+    <values>
+        <field>TR1__Current_Stage_on_hover__c</field>
+        <value xsi:type="xsd:string">#e01b73</value>
+    </values>
+    <values>
+        <field>TR1__In_progress_Stage__c</field>
+        <value xsi:type="xsd:string">#f79227</value>
+    </values>
+    <values>
+        <field>TR1__In_progress_Stage_on_hover__c</field>
+        <value xsi:type="xsd:string">#e01b73</value>
+    </values>
+    <values>
+        <field>TR1__Not_Started_Stage__c</field>
+        <value xsi:type="xsd:string">#009fe3</value>
+    </values>
+    <values>
+        <field>TR1__Not_Started_Stage_on_hover__c</field>
+        <value xsi:type="xsd:string">#e01b73</value>
+    </values>
+    <values>
+        <field>TR1__Rejected_Stage__c</field>
+        <value xsi:type="xsd:string">#009fe3</value>
+    </values>
+    <values>
+        <field>TR1__Rejected_Stage_on_hover__c</field>
+        <value xsi:type="xsd:string">#e01b73</value>
+    </values>
+</CustomMetadata>

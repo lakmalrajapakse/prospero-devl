@@ -2,6 +2,22 @@
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>68.0</apiVersion>
     <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>Assign_Id</name>
+        <label>Assign Id</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <assignmentItems>
+            <assignToReference>recordId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>Loop_shift_Ids</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_shift_Ids</targetReference>
+        </connector>
+    </assignments>
     <customProperties>
         <name>ScreenProgressIndicator</name>
         <value>
@@ -11,6 +27,20 @@
     <environments>Default</environments>
     <interviewLabel>Margin Calculator --- Shift {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Margin Calculator --- Shift</label>
+    <loops>
+        <name>Loop_shift_Ids</name>
+        <label>Loop shift Ids</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <collectionReference>recordIds</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Assign_Id</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Margin_Calculator</targetReference>
+        </noMoreValuesConnector>
+    </loops>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -48,6 +78,12 @@
                     <elementReference>recordId</elementReference>
                 </value>
             </inputParameters>
+            <inputParameters>
+                <name>isCalledFromFlow</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
@@ -62,20 +98,34 @@
         </fields>
         <nextOrFinishButtonLabel>Close</nextOrFinishButtonLabel>
         <showFooter>true</showFooter>
-        <showHeader>true</showHeader>
+        <showHeader>false</showHeader>
     </screens>
     <start>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Margin_Calculator</targetReference>
+            <targetReference>Loop_shift_Ids</targetReference>
         </connector>
     </start>
     <status>Active</status>
     <variables>
+        <name>currentItemFromSourceCollection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
         <name>recordId</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordIds</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
     </variables>

@@ -58,6 +58,8 @@ export default class RateAgreementManager extends LightningElement {
 
     draggedDefId;
 
+    showDetailsForm = true;
+
     connectedCallback() {
         this.loadPage();
     }
@@ -229,8 +231,24 @@ export default class RateAgreementManager extends LightningElement {
         this.selectedRateAgreementId = selected?.Id;
         this.versions = [];
         this.scaleDefinitions = [];
+        this.isDetailsDirty = false;
+
+        this.showDetailsForm = false;
+        // eslint-disable-next-line @lwc/lwc/no-async-operation
+        Promise.resolve().then(() => {
+            this.showDetailsForm = true;
+        });
 
         this.loadWorkspace();
+    }
+
+    handleDetailsCancel() {
+        this.isDetailsDirty = false;
+        this.showDetailsForm = false;
+        // eslint-disable-next-line @lwc/lwc/no-async-operation
+        Promise.resolve().then(() => {
+            this.showDetailsForm = true;
+        });
     }
 
     openCreateModal() {

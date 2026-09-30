@@ -71,9 +71,14 @@
         <connector>
             <targetReference>check_Sharing_region_criteria</targetReference>
         </connector>
-        <filterFormula>OR(
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+OR(
     AND ( ISNEW(),NOT(ISBLANK({!$Record.Sharing_Regions__c}))),
     ISCHANGED({!$Record.Sharing_Regions__c})
+)
+         )
 )</filterFormula>
         <object>Account</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

@@ -2,26 +2,18 @@
 @author: Gandhi Naidu Bokam
 @Date: 01-09-2026
 @ref: https://1218globaluk.eu.teamwork.com/app/tasks/36248202
-
 */
-public class ShiftTriggerHandler {
+public without sharing class ShiftTriggerHandler {
 
     private static Set<Id> processedShiftIds = new Set<Id>();
 
-    /**
-     * Entry point for after-insert trigger context.
-     * Passes all newly inserted shifts to be related to their placements.
-     */
+    @TestVisible
+    private static final String SHIFT_TIME_ZONE = 'Europe/London';
+
     public static void handleAfterInsert(List<sirenum__Shift__c> newShifts) {
         relateShiftsToPlacements(newShifts);
     }
 
-    /**
-     * Entry point for after-update trigger context.
-     * Filters shifts to only those where the Contact, Job, or Date field has
-     * changed (all three drive Placement matching), then passes the changed
-     * shifts to be related to their placements.
-     */
     public static void handleAfterUpdate(List<sirenum__Shift__c> newShifts, Map<Id, sirenum__Shift__c> oldMap) {
         List<sirenum__Shift__c> changedShifts = new List<sirenum__Shift__c>();
 
@@ -30,7 +22,9 @@ public class ShiftTriggerHandler {
             if (oldShift == null) {
                 continue;
             }
-            if (shift.sirenum__Contact__c != oldShift.sirenum__Contact__c || shift.s5m__BH4SFJob__c != oldShift.s5m__BH4SFJob__c ) {
+            if (shift.sirenum__Contact__c != oldShift.sirenum__Contact__c
+                || shift.s5m__BH4SFJob__c != oldShift.s5m__BH4SFJob__c
+                || shift.sirenum__Date__c != oldShift.sirenum__Date__c) {
                 changedShifts.add(shift);
             }
         }
@@ -39,24 +33,36 @@ public class ShiftTriggerHandler {
     }
 
     /**
-     * Core logic that links Shift records to Placement records based on the
-     * combination of Contact, Job, and Date on each shift.
-     *
-     * For each Shift (with Contact, Job, and Date populated):
-     *   Rule 1: If a Placement exists for the same Contact/Job where the
-     *           Placement's Start Date is on/before the Shift's Date, AND
-     *           either the Placement has no End Date or the Shift's Date is
-     *           on/before the Placement's End Date -> relate the Shift to
-     *           that Placement.
-     *   Rule 2: Else, if an open-ended Placement (no End Date) exists for the
-     *           same Contact/Job whose Start Date is after the Shift's Date
-     *           -> relate the Shift to that Placement and pull the
-     *           Placement's Start Date back to the Shift's Date.
-     *   Rule 3: Else -> create a new Placement using the (earliest, if more
-     *           than one unmatched Shift shares the key) Shift Date as the
-     *           Start Date, and the Contract/Job Role from the related Job
-     *           record, then relate the Shift to it.
+     * Primary shift date (Date) in the shift time zone. Used for Start Date
+     * pull-back, new Placement Start Date and Name.
      */
+    @TestVisible
+    private static Date getShiftDate(sirenum__Shift__c shift) {
+        if (shift == null || shift.sirenum__Date__c == null) {
+            return null;
+        }
+        return Date.valueOf(shift.sirenum__Date__c.format('yyyy-MM-dd', SHIFT_TIME_ZONE));
+    }
+
+    /**
+     * All plausible calendar dates for the Shift DateTime (London, GMT and
+     * running-user time zone). Used for matching so that time-zone / DST
+     * boundaries (e.g. 00:30 on Start Date, any time on End Date) never cause
+     * a valid Placement to be missed.
+     */
+    @TestVisible
+    private static Set<Date> getCandidateDates(sirenum__Shift__c shift) {
+        Set<Date> dates = new Set<Date>();
+        if (shift == null || shift.sirenum__Date__c == null) {
+            return dates;
+        }
+        Datetime dt = shift.sirenum__Date__c;
+        dates.add(Date.valueOf(dt.format('yyyy-MM-dd', SHIFT_TIME_ZONE)));
+        dates.add(Date.valueOf(dt.format('yyyy-MM-dd', 'GMT')));
+        dates.add(dt.date());
+        return dates;
+    }
+
     public static void relateShiftsToPlacements(List<sirenum__Shift__c> shifts) {
 
         if (shifts == null || shifts.isEmpty()) {
@@ -89,13 +95,10 @@ public class ShiftTriggerHandler {
             return;
         }
 
-        Map<Id, TR1__Job__c> jobMap = new Map<Id, TR1__Job__c>([SELECT Id,Name,TR1__Contact__r.Name, s5m__Contract__c, s5m__JobRole__c
+        Map<Id, TR1__Job__c> jobMap = new Map<Id, TR1__Job__c>([SELECT Id, Name, TR1__Contact__r.Name, s5m__Contract__c, s5m__JobRole__c
                                                                 FROM TR1__Job__c
-                                                                WHERE Id IN :jobIds
-                                                             ]);
+                                                                WHERE Id IN :jobIds]);
 
-        // Existing Placements grouped by Contact/Job key. Several Placements
-        // can share the same Contact/Job (e.g. separate engagements over time).
         Map<String, List<sirenum__Placement__c>> placementsByKey = new Map<String, List<sirenum__Placement__c>>();
 
         for (sirenum__Placement__c placement : [SELECT Id, Job__c, sirenum__Contact__c, sirenum__Contract__c,
@@ -103,8 +106,7 @@ public class ShiftTriggerHandler {
                                                        sirenum__End_Date__c
                                                 FROM sirenum__Placement__c
                                                 WHERE sirenum__Contact__c IN :contactIds
-                                                AND Job__c IN :jobIds
-                                                ]) {
+                                                AND Job__c IN :jobIds]) {
             String key = buildKey(placement.sirenum__Contact__c, placement.Job__c);
             if (!placementsByKey.containsKey(key)) {
                 placementsByKey.put(key, new List<sirenum__Placement__c>());
@@ -119,10 +121,11 @@ public class ShiftTriggerHandler {
         // First pass: match against existing Placements (Rule 1 / Rule 2).
         for (sirenum__Shift__c shift : shiftsToProcess) {
 
-            if (shift.sirenum__Contact__c == null ||shift.s5m__BH4SFJob__c == null ||shift.sirenum__Date__c == null) {
+            if (shift.sirenum__Contact__c == null || shift.s5m__BH4SFJob__c == null || shift.sirenum__Date__c == null) {
                 continue;
             }
 
+            Date shiftDate = getShiftDate(shift);
             String key = buildKey(shift.sirenum__Contact__c, shift.s5m__BH4SFJob__c);
             List<sirenum__Placement__c> candidates = placementsByKey.get(key);
 
@@ -131,14 +134,19 @@ public class ShiftTriggerHandler {
             if (matched != null) {
                 placementAssignmentByShiftId.put(shift.Id, matched);
 
-                // Rule 2: extend the Placement's Start Date backwards if this
-                // Shift's Date precedes it.
-                if (matched.sirenum__Start_Date__c != null && shift.sirenum__Date__c < matched.sirenum__Start_Date__c) {
-
-                    matched.sirenum__Start_Date__c = shift.sirenum__Date__c.date();
+                // Rule 2 only: shift is before Start Date under every interpretation
+                if (!isRule1Match(shift, matched)
+                    && matched.sirenum__Start_Date__c != null
+                    && shiftDate < matched.sirenum__Start_Date__c) {
+                    matched.sirenum__Start_Date__c = shiftDate;
                     placementsToUpdate.put(matched.Id, matched);
                 }
             } else {
+                System.debug(LoggingLevel.WARN, 'ShiftTriggerHandler: no Placement match for Shift ' + shift.Id
+                    + ' | shift datetime=' + shift.sirenum__Date__c
+                    + ' | candidateDates=' + getCandidateDates(shift)
+                    + ' | existing placements for key=' + (candidates == null ? 0 : candidates.size()));
+
                 if (!unmatchedShiftsByKey.containsKey(key)) {
                     unmatchedShiftsByKey.put(key, new List<sirenum__Shift__c>());
                 }
@@ -146,9 +154,7 @@ public class ShiftTriggerHandler {
             }
         }
 
-        // Second pass (Rule 3): create one new Placement per Contact/Job key
-        // that still has unmatched Shifts, using the earliest Shift Date as
-        // the Start Date.
+        // Second pass (Rule 3): one new Placement per Contact/Job key.
         Map<String, sirenum__Placement__c> newPlacementsByKey = new Map<String, sirenum__Placement__c>();
 
         for (String key : unmatchedShiftsByKey.keySet()) {
@@ -157,8 +163,9 @@ public class ShiftTriggerHandler {
 
             Date earliestDate = null;
             for (sirenum__Shift__c shift : unmatchedShifts) {
-                if (earliestDate == null || shift.sirenum__Date__c < earliestDate) {
-                    earliestDate = shift.sirenum__Date__c.date();
+                Date d = getShiftDate(shift);
+                if (earliestDate == null || d < earliestDate) {
+                    earliestDate = d;
                 }
             }
 
@@ -168,25 +175,21 @@ public class ShiftTriggerHandler {
             if (job == null || job.s5m__Contract__c == null || job.s5m__JobRole__c == null) {
                 continue;
             }
-            
+
             sirenum__Placement__c newPlacement = new sirenum__Placement__c(
-                Name                   = (job.TR1__Contact__r.Name + ' - ' + job.Name + '- '+String.valueOf(sampleShift.sirenum__Date__c.date())).left(80),
+                Name                   = (job.TR1__Contact__r.Name + ' - ' + job.Name + '- ' + String.valueOf(earliestDate)).left(80),
                 sirenum__Contact__c    = sampleShift.sirenum__Contact__c,
                 Job__c                 = sampleShift.s5m__BH4SFJob__c,
                 sirenum__Contract__c   = job.s5m__Contract__c,
                 sirenum__Job_Role__c   = job.s5m__JobRole__c,
                 sirenum__Start_Date__c = earliestDate
             );
-            
-            
-            
 
             newPlacementsByKey.put(key, newPlacement);
         }
 
         if (!newPlacementsByKey.isEmpty()) {
-            List<sirenum__Placement__c> placementsToCreate = newPlacementsByKey.values();
-            insert placementsToCreate;
+            insert newPlacementsByKey.values();
 
             for (String key : unmatchedShiftsByKey.keySet()) {
                 sirenum__Placement__c newPlacement = newPlacementsByKey.get(key);
@@ -199,14 +202,13 @@ public class ShiftTriggerHandler {
             }
         }
 
-        // Build the final list of Shift updates.
         List<sirenum__Shift__c> shiftsToUpdate = new List<sirenum__Shift__c>();
         for (sirenum__Shift__c shift : shiftsToProcess) {
             sirenum__Placement__c placement = placementAssignmentByShiftId.get(shift.Id);
             if (placement == null || shift.sirenum__Placement__c == placement.Id) {
                 continue;
             }
-            shiftsToUpdate.add(new sirenum__Shift__c( Id = shift.Id,sirenum__Placement__c = placement.Id));
+            shiftsToUpdate.add(new sirenum__Shift__c(Id = shift.Id, sirenum__Placement__c = placement.Id));
         }
 
         if (!placementsToUpdate.isEmpty()) {
@@ -219,18 +221,38 @@ public class ShiftTriggerHandler {
     }
 
     /**
-     * Finds a Placement among the candidates that matches the Shift per the
-     * business rules:
-     *   Rule 1: Placement Start Date <= Shift Date AND
-     *           (Placement End Date is blank OR Shift Date <= Placement End Date)
-     *   Rule 2: Placement End Date is blank AND Shift Date < Placement Start Date
-     * Rule 1 matches take priority over Rule 2. If several candidates satisfy
-     * the same rule, the one with the closest Start Date is preferred.
+     * Rule 1 test: for ANY candidate date of the shift,
+     * Start <= date AND (End blank OR date <= End)  (inclusive both ends).
+     */
+    @TestVisible
+    private static Boolean isRule1Match(sirenum__Shift__c shift, sirenum__Placement__c placement) {
+        if (placement == null || placement.sirenum__Start_Date__c == null) {
+            return false;
+        }
+        for (Date d : getCandidateDates(shift)) {
+            Boolean onOrAfterStart = d >= placement.sirenum__Start_Date__c;
+            Boolean noEndDate = placement.sirenum__End_Date__c == null;
+            if (onOrAfterStart && (noEndDate || d <= placement.sirenum__End_Date__c)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Rule 1: shift falls within Placement range (see isRule1Match).
+     * Rule 2: Placement has no End Date AND shift is before Start Date.
+     * Rule 1 has priority; ties resolved by closest Start Date.
      */
     @TestVisible
     private static sirenum__Placement__c findMatchingPlacement(sirenum__Shift__c shift, List<sirenum__Placement__c> Placements) {
 
         if (Placements == null || Placements.isEmpty()) {
+            return null;
+        }
+
+        Date shiftDate = getShiftDate(shift);
+        if (shiftDate == null) {
             return null;
         }
 
@@ -243,18 +265,14 @@ public class ShiftTriggerHandler {
                 continue;
             }
 
-            Boolean onOrAfterStart = shift.sirenum__Date__c >= placement.sirenum__Start_Date__c;
-            Boolean noEndDate = placement.sirenum__End_Date__c == null;
-            Boolean onOrBeforeEnd = !noEndDate && shift.sirenum__Date__c <= placement.sirenum__End_Date__c;
-
-            if (onOrAfterStart && (noEndDate || onOrBeforeEnd)) {
+            if (isRule1Match(shift, placement)) {
                 if (rule1Match == null || placement.sirenum__Start_Date__c > rule1Match.sirenum__Start_Date__c) {
                     rule1Match = placement;
                 }
                 continue;
             }
 
-            if (noEndDate && shift.sirenum__Date__c < placement.sirenum__Start_Date__c) {
+            if (placement.sirenum__End_Date__c == null && shiftDate < placement.sirenum__Start_Date__c) {
                 if (rule2Match == null || placement.sirenum__Start_Date__c < rule2Match.sirenum__Start_Date__c) {
                     rule2Match = placement;
                 }
@@ -264,10 +282,6 @@ public class ShiftTriggerHandler {
         return rule1Match != null ? rule1Match : rule2Match;
     }
 
-    /**
-     * Builds a unique composite key from a Contact Id and Job Id,
-     * used to group Placements by Contact/Job without repeated SOQL lookups.
-     */
     private static String buildKey(Id contactId, Id jobId) {
         return contactId + '-' + jobId;
     }

@@ -59,7 +59,12 @@
         <connector>
             <targetReference>Update_User_Created</targetReference>
         </connector>
-        <filterFormula>{!$Record.sirenum__Published__c} = True &amp;&amp; {!$Record.sirenum__Contact__r.User_Created__c} = False</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+{!$Record.sirenum__Published__c} = True &amp;&amp; {!$Record.sirenum__Contact__r.User_Created__c} = False
+         )
+)</filterFormula>
         <object>sirenum__Shift__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

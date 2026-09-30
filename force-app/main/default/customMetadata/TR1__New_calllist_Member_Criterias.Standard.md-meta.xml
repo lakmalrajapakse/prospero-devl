@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Standard</label>
+    <protected>false</protected>
+    <values>
+        <field>TR1__Calllist_RecordType__c</field>
+        <value xsi:type="xsd:string">Standard</value>
+    </values>
+    <values>
+        <field>TR1__Contact_RecordType__c</field>
+        <value xsi:type="xsd:string">Candidate</value>
+    </values>
+    <values>
+        <field>TR1__Filter_Criteria__c</field>
+        <value xsi:type="xsd:string">(RecordType.Name = &apos;Candidate&apos; and CORE_Activity_Status__c = &apos;Active&apos;)</value>
+    </values>
+    <values>
+        <field>TR1__Filter_List_View__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Job_RecordType__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Target_Object__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

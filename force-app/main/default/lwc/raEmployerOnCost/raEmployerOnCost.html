@@ -16,6 +16,7 @@
                             <th scope="col"><div class="slds-truncate">On Cost Type</div></th>
                             <th scope="col"><div class="slds-truncate">Worker Type</div></th>
                             <th scope="col"><div class="slds-truncate">Calc Type</div></th>
+                            <th scope="col"><div class="slds-truncate">Type</div></th>
                             <th scope="col"><div class="slds-truncate">Value</div></th>
                             <th style="width: 5rem;"></th>
                         </tr>
@@ -24,48 +25,19 @@
                         <template for:each={onCosts} for:item="row">
                             <tr key={row.Id} class="slds-hint-parent">
                                 <td>
-                                    <lightning-combobox
-                                        variant="label-hidden"
-                                        value={row.On_Cost_Type__c}
-                                        options={onCostTypeOptions}
-                                        dropdown-alignment="auto"
-                                        data-id={row.Id}
-                                        data-field="On_Cost_Type__c"
-                                        onchange={handleCellChange}>
-                                    </lightning-combobox>
+                                    <lightning-combobox variant="label-hidden" value={row.On_Cost_Type__c} options={onCostTypeOptions} dropdown-alignment="auto" data-id={row.Id} data-field="On_Cost_Type__c" onchange={handleCellChange}></lightning-combobox>
                                 </td>
                                 <td>
-                                    <lightning-combobox
-                                        variant="label-hidden"
-                                        value={row.Worker_Type__c}
-                                        options={workerTypeOptions}
-                                        dropdown-alignment="auto"
-                                        data-id={row.Id}
-                                        data-field="Worker_Type__c"
-                                        onchange={handleCellChange}>
-                                    </lightning-combobox>
+                                    <lightning-combobox variant="label-hidden" value={row.Worker_Type__c} options={workerTypeOptions} dropdown-alignment="auto" data-id={row.Id} data-field="Worker_Type__c" onchange={handleCellChange}></lightning-combobox>
                                 </td>
                                 <td>
-                                    <lightning-combobox
-                                        variant="label-hidden"
-                                        value={row.Calc_Type__c}
-                                        options={calcTypeOptions}
-                                        dropdown-alignment="auto"
-                                        data-id={row.Id}
-                                        data-field="Calc_Type__c"
-                                        onchange={handleCellChange}>
-                                    </lightning-combobox>
+                                    <lightning-combobox variant="label-hidden" value={row.Calc_Type__c} options={calcTypeOptions} dropdown-alignment="auto" data-id={row.Id} data-field="Calc_Type__c" onchange={handleCellChange}></lightning-combobox>
+                                </td>
+                                <td>
+                                    <lightning-combobox variant="label-hidden" value={row.Type__c} options={typeOptions} dropdown-alignment="auto" data-id={row.Id} data-field="Type__c" onchange={handleCellChange}></lightning-combobox>
                                 </td>
                                 <td class="value-cell">
-                                    <lightning-input
-                                        type="number"
-                                        step="0.01"
-                                        variant="label-hidden"
-                                        value={row.Value__c}
-                                        data-id={row.Id}
-                                        data-field="Value__c"
-                                        onchange={handleCellChange}>
-                                    </lightning-input>
+                                    <lightning-input type="number" step="0.01" variant="label-hidden" value={row.Value__c} data-id={row.Id} data-field="Value__c" onchange={handleCellChange}></lightning-input>
                                 </td>
                                 <td>
                                     <template lwc:if={row.isDirty}>
@@ -101,6 +73,7 @@
                     <lightning-combobox label="On Cost Type" value={newOnCostType} options={onCostTypeOptions} onchange={handleNewFieldChange} data-field="onCostType"></lightning-combobox>
                     <lightning-combobox label="Worker Type" value={newWorkerType} options={workerTypeOptions} onchange={handleNewFieldChange} data-field="workerType"></lightning-combobox>
                     <lightning-combobox label="Calc Type" value={newCalcType} options={calcTypeOptions} onchange={handleNewFieldChange} data-field="calcType"></lightning-combobox>
+                    <lightning-combobox label="Type" value={newType} options={typeOptions} onchange={handleNewFieldChange} data-field="type"></lightning-combobox>
                     <lightning-input type="number" step="0.01" label="Value" value={newValue} onchange={handleNewFieldChange} data-field="value"></lightning-input>
 
                     <div class="slds-m-top_medium slds-text-align_right">

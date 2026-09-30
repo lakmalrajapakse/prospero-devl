@@ -53,6 +53,7 @@
         <connector>
             <targetReference>Set_Needs_Indexing_on_Contact</targetReference>
         </connector>
+        <filterFormula>NOT({!$Permission.Bypass_System_Automation})</filterFormula>
         <object>TR1__Skills__c</object>
         <recordTriggerType>Delete</recordTriggerType>
         <triggerType>RecordBeforeDelete</triggerType>

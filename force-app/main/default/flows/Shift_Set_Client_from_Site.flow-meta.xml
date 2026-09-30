@@ -65,11 +65,16 @@
             <targetReference>Get_Site</targetReference>
         </connector>
         <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+AND(
     OR(
         ISNEW(),
         ISCHANGED({!$Record.sirenum__Site__c})
     ),
     NOT(ISNULL({!$Record.sirenum__Site__c}))
+)
+         )
 )</filterFormula>
         <object>sirenum__Shift__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

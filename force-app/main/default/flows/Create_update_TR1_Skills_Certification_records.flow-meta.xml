@@ -331,6 +331,7 @@
         <connector>
             <targetReference>Check_condition_to_create_or_modify</targetReference>
         </connector>
+        <filterFormula>NOT({!$Permission.Bypass_System_Automation})</filterFormula>
         <object>b3o__Certificate__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

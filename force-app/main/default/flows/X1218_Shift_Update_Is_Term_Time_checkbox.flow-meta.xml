@@ -88,21 +88,13 @@
         <connector>
             <targetReference>Shift_Schedules_within_Term_Time</targetReference>
         </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>sirenum__Scheduled_Time__c</field>
-            <operator>IsChanged</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>sirenum__Scheduled_Time__c</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         AND(
+             ISCHANGED({!$Record.sirenum__Scheduled_Time__c}),
+             NOT(ISBLANK({!$Record.sirenum__Scheduled_Time__c}))
+         )
+)</filterFormula>
         <object>sirenum__Shift__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

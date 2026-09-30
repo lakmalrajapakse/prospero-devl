@@ -40,7 +40,12 @@
         <connector>
             <targetReference>Show_error</targetReference>
         </connector>
-        <filterFormula>{!$Record.RecordType.DeveloperName} =&apos;Certifications&apos; &amp;&amp; {!$User.Allow_Restricted_Process__c} = False</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+{!$Record.RecordType.DeveloperName} =&apos;Certifications&apos; &amp;&amp; {!$User.Allow_Restricted_Process__c} = False
+         )
+)</filterFormula>
         <object>TR1__Skills__c</object>
         <recordTriggerType>Delete</recordTriggerType>
         <triggerType>RecordBeforeDelete</triggerType>

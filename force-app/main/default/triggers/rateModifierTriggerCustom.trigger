@@ -6,4 +6,9 @@ trigger rateModifierTriggerCustom on sirenum__Rate_Modifier__c (before insert, b
         /// validation pipeline as sirenum__Rate_Line__c (see rateLineTriggerCustom.trigger).
         rateLineTriggerCustomHandler.validateRateModifier(Trigger.new);
     }
+    if (Trigger.isBefore) {
+        if (Trigger.isUpdate) {
+            EvertimeSyncUtility.process(Trigger.new,Trigger.oldMap);
+        }
+    }
 }

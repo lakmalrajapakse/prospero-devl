@@ -65,7 +65,12 @@
         <connector>
             <targetReference>Conditions_Met</targetReference>
         </connector>
-        <filterFormula>{!$Record.sirenum__Shift_Date__c} &gt;= {!$Record.sirenum__Placement__r.Mismatch_Date__c} + 7</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+{!$Record.sirenum__Shift_Date__c} &gt;= {!$Record.sirenum__Placement__r.Mismatch_Date__c} + 7
+         )
+)</filterFormula>
         <object>sirenum__Shift__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

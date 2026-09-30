@@ -3,10 +3,7 @@
 @Date: 01-09-2026
 @ref: https://1218globaluk.eu.teamwork.com/app/tasks/36248202
 */
-trigger ShiftTrigger on sirenum__Shift__c (
-    before insert, before update,
-    after insert, after update, after delete, after undelete
-) {
+trigger ShiftTrigger on sirenum__Shift__c (before insert, before update, after insert, after update, after delete, after undelete) {
     // --- BEFORE context: field assignment logic only. No DML here. ---
     if (Trigger.isBefore) {
         if (Trigger.isInsert || Trigger.isUpdate) {
@@ -14,7 +11,14 @@ trigger ShiftTrigger on sirenum__Shift__c (
                 Trigger.new,
                 Trigger.isUpdate ? Trigger.oldMap : null
             );
+            
+            EvertimeSyncUtility.process(Trigger.new,Trigger.isUpdate ? Trigger.oldMap : null);
         }
+    }
+
+    // --- Logic for Tutexa export date to null when specif shift fields of any shift field defined on CMDT is updated
+    If(Trigger.isBefore & Trigger.isUpdate){
+        tutexaFieldsUpdateHandler.checkFieldUpdate(Trigger.new, Trigger.oldMap);
     }
 
     // --- AFTER context: anything that performs DML (Placement linking,

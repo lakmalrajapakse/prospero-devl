@@ -206,7 +206,7 @@
         <allowPause>true</allowPause>
         <fields>
             <name>Done</name>
-            <fieldText>&lt;p&gt;Job Requirement converted successfully. New Job created: {!varNewJobID}&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;Job Requirement converted successfully.&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -414,6 +414,9 @@
                 </fields>
                 <fields>
                     <name>Job_Description</name>
+                    <defaultValue>
+                        <stringValue>{!Get_Job_Requirement_Record.Job_Description__c}</stringValue>
+                    </defaultValue>
                     <fieldText>Job Description</fieldText>
                     <fieldType>LargeTextArea</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -430,6 +433,9 @@
                 <fields>
                     <name>Salary</name>
                     <dataType>Currency</dataType>
+                    <defaultValue>
+                        <elementReference>Get_Job_Requirement_Record.Pay_Rate__c</elementReference>
+                    </defaultValue>
                     <fieldText>Pay Rate</fieldText>
                     <fieldType>InputField</fieldType>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Sector</label>
+    <protected>false</protected>
+    <values>
+        <field>TR1__Action__c</field>
+        <value xsi:type="xsd:string">Do Nothing</value>
+    </values>
+    <values>
+        <field>TR1__Custom_Contact_Relation_API_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Custom_Object_Name__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Default_Value__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Field_API_Name__c</field>
+        <value xsi:type="xsd:string">TR1__Sector__c</value>
+    </values>
+    <values>
+        <field>TR1__JSONNode__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__JSONPath__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Object__c</field>
+        <value xsi:type="xsd:string">Contact</value>
+    </values>
+    <values>
+        <field>TR1__XML_Node__c</field>
+        <value xsi:type="xsd:string">Sector</value>
+    </values>
+    <values>
+        <field>TR1__XPath__c</field>
+        <value xsi:type="xsd:string">Personal</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,2299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Prospero HSC Schedule Tab</label>
+    <protected>false</protected>
+    <values>
+        <field>sirenum__Configuration__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;contextIds&quot;: {
+    &quot;selectionObjectType&quot;: &quot;User&quot;,
+    &quot;fieldPath&quot;: &quot;ContactId&quot;,
+    &quot;selectionClause&quot;: &quot;Id = :userId&quot;
+  },
+  &quot;chunkSize&quot;: 75,
+  &quot;schedulables&quot;: [
+    {
+      &quot;objectType&quot;: &quot;sirenum__Shift_Invitation__c&quot;,
+      &quot;startFieldPath&quot;: &quot;Shift_Start_Time__c&quot;,
+      &quot;endFieldPath&quot;: &quot;Shift_End_Time__c&quot;,
+      &quot;selectionClause&quot;: &quot;sirenum__Contact__c IN :contextIds AND sirenum__Status__c != &apos;Complete&apos;&quot;,
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;sirenum:work_offer&quot;
+      },
+      &quot;variant&quot;: {
+        &quot;firstMatch&quot;: [
+          {
+            &quot;selector&quot;: {
+              &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+              &quot;operator&quot;: &quot;Equals&quot;,
+              &quot;value&quot;: &quot;Broadcasting&quot;
+            },
+            &quot;value&quot;: {
+              &quot;literal&quot;: &quot;#ec761c&quot;
+            }
+          },
+          {
+            &quot;selector&quot;: {
+              &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+              &quot;operator&quot;: &quot;Equals&quot;,
+              &quot;value&quot;: &quot;Accepted&quot;
+            },
+            &quot;value&quot;: {
+              &quot;literal&quot;: &quot;#ec761c&quot;
+            }
+          },
+          {
+            &quot;value&quot;: {
+              &quot;literal&quot;: &quot;alt-offline&quot;
+            }
+          }
+        ]
+      },
+      &quot;tuples&quot;: [
+        {
+          &quot;name&quot;: &quot;decline&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;s5m__BH4SFCancelled__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;Broadcasting&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;dislike&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Decline&quot;,
+              &quot;de&quot;: &quot;Ablehnen&quot;,
+              &quot;es&quot;: &quot;Rechazar&quot;,
+              &quot;nl&quot;: &quot;Afwijzen&quot;,
+              &quot;fr&quot;: &quot;Refuser&quot;,
+              &quot;it&quot;: &quot;Declino&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?sirenum__Status__c=&apos;Declined&apos;&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;accept&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;s5m__BH4SFCancelled__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+                  &quot;operator&quot;: &quot;NotEquals&quot;,
+                  &quot;value&quot;: &quot;Accepted&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+                  &quot;operator&quot;: &quot;NotEquals&quot;,
+                  &quot;value&quot;: &quot;Failed&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+                  &quot;operator&quot;: &quot;NotEquals&quot;,
+                  &quot;value&quot;: &quot;Stale&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;like&quot;
+          },
+          &quot;value&quot;: {
+            &quot;match&quot;: {
+              &quot;field&quot;: &quot;sirenum__Approval_Required__c&quot;,
+              &quot;equals&quot;: {
+                &quot;true&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Apply&quot;,
+                    &quot;de&quot;: &quot;Anwenden&quot;,
+                    &quot;es&quot;: &quot;Solicitar&quot;,
+                    &quot;nl&quot;: &quot;Toepassen&quot;,
+                    &quot;fr&quot;: &quot;Appliquer&quot;,
+                    &quot;it&quot;: &quot;Applicare&quot;
+                  }
+                }
+              },
+              &quot;otherwise&quot;: {
+                &quot;label&quot;: {
+                  &quot;default&quot;: &quot;Accept&quot;,
+                  &quot;de&quot;: &quot;Akzeptieren&quot;,
+                  &quot;es&quot;: &quot;Aceptar&quot;,
+                  &quot;nl&quot;: &quot;Accepteren&quot;,
+                  &quot;fr&quot;: &quot;Accepter&quot;,
+                  &quot;it&quot;: &quot;Accettare&quot;
+                }
+              }
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?sirenum__Status__c=&apos;Accepted&apos;&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;declined&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;Declined&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;dislike&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Status__c&quot;
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;error&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;accepted&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;Accepted&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;spinner&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Pending&quot;,
+              &quot;de&quot;: &quot;Anstehend&quot;,
+              &quot;es&quot;: &quot;Pendiente&quot;,
+              &quot;nl&quot;: &quot;In behandeling&quot;,
+              &quot;fr&quot;: &quot;En attente&quot;,
+              &quot;it&quot;: &quot;In attesa di&quot;
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;warning&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;missed&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;Stale&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;ban&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Missed&quot;,
+              &quot;de&quot;: &quot;Verpasst&quot;,
+              &quot;es&quot;: &quot;Perdido&quot;,
+              &quot;nl&quot;: &quot;Gemist&quot;,
+              &quot;fr&quot;: &quot;Manqué&quot;,
+              &quot;it&quot;: &quot;Perse&quot;
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;warning&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;failed&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;Failed&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;ban&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Status__c&quot;
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;warning&quot;
+          }
+        },
+                {
+          &quot;name&quot;: &quot;site-postal-code&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;Postcode__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;checkin&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;Postcode__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;job&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;Job_Title__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;choice&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;Job_Title__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;job-type&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;s5m__BH4SFJobTypeName__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;picklist&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;s5m__BH4SFJobTypeName__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;client&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;s5m__BH4SFClientName__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;company&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Client&quot;,
+              &quot;de&quot;: &quot;Kunde&quot;,
+              &quot;es&quot;: &quot;Cliente&quot;,
+              &quot;nl&quot;: &quot;Klant&quot;,
+              &quot;fr&quot;: &quot;Client&quot;,
+              &quot;it&quot;: &quot;Cliente&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;s5m__BH4SFClientName__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;forecast-pay&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;s5m__BH4SFForecastPay__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;money&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;s5m__BH4SFForecastPay__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;notes&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;Shift_Scheduling_Comments__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;note&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Notes&quot;,
+              &quot;de&quot;: &quot;Anmerkungen&quot;,
+              &quot;es&quot;: &quot;Notas&quot;,
+              &quot;nl&quot;: &quot;Notities&quot;,
+              &quot;fr&quot;: &quot;Notes&quot;,
+              &quot;it&quot;: &quot;Appunti&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;Shift_Scheduling_Comments__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;contract&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;contract&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Contract&quot;,
+              &quot;de&quot;: &quot;ANÜ/Zeitarbeit&quot;,
+              &quot;es&quot;: &quot;Contrato&quot;,
+              &quot;nl&quot;: &quot;Contract&quot;,
+              &quot;fr&quot;: &quot;Contrat à durée déterminée&quot;,
+              &quot;it&quot;: &quot;Contratto&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;Shift_Contract_Name__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;log&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Log__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;ban&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Log__c&quot;
+          }
+        }
+      ],
+      &quot;tileLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;accept&quot;,
+            &quot;accepted&quot;,
+            &quot;decline&quot;,
+            &quot;declined&quot;,
+            &quot;missed&quot;,
+            &quot;failed&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;job&quot;,
+            &quot;site-postal-code&quot;,
+            &quot;job-type&quot;
+         ]
+        }
+      ],
+      &quot;detailLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;accept&quot;,
+            &quot;accepted&quot;,
+            &quot;decline&quot;,
+            &quot;declined&quot;,
+            &quot;missed&quot;,
+            &quot;failed&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;job&quot;,
+            &quot;site-postal-code&quot;,
+            &quot;job-type&quot;,
+            &quot;notes&quot;
+          ]
+        }
+      ]
+    },
+    {
+      &quot;objectType&quot;: &quot;sirenum__Shift__c&quot;,
+      &quot;startFieldPath&quot;: &quot;sirenum__Absolute_Start_Time__c&quot;,
+      &quot;endFieldPath&quot;: &quot;sirenum__Absolute_End_Time__c&quot;,
+      &quot;selectionClause&quot;: &quot;sirenum__Contact__c IN :contextIds AND sirenum__Published__c = TRUE&quot;,
+      &quot;relatedLists&quot;: [
+        {
+          &quot;relationship&quot;: &quot;Attachments&quot;,
+          &quot;fields&quot;: [
+            {
+              &quot;path&quot;: &quot;CreatedDate&quot;
+            },
+            {
+              &quot;path&quot;: &quot;ContentType&quot;
+            },
+            {
+              &quot;path&quot;: &quot;Name&quot;
+            },
+            {
+              &quot;path&quot;: &quot;OwnerId&quot;
+            }
+          ],
+          &quot;orderByClause&quot;: &quot;CreatedDate DESC&quot;,
+          &quot;limitSize&quot;: 10
+        }
+      ],
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;standard:shift&quot;
+      },
+      &quot;variant&quot;: {
+        &quot;literal&quot;: &quot;success&quot;
+      },
+      &quot;tuples&quot;: [
+        {
+          &quot;name&quot;: &quot;is-cancelled&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Cancelled__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;ban&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__CancellationReason__c&quot;
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;error&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;feedback-poor&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;sentiment_negative&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Poor&quot;,
+              &quot;de&quot;: &quot;Schlecht&quot;,
+              &quot;es&quot;: &quot;Mal&quot;,
+              &quot;nl&quot;: &quot;Arm&quot;,
+              &quot;fr&quot;: &quot;Mauvais&quot;,
+              &quot;it&quot;: &quot;Pessima&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?SK_Feedback__c=&apos;Poor&apos;&quot;
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;error&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;feedback-ok&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;sentiment_neutral&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;OK&quot;,
+              &quot;de&quot;: &quot;OK&quot;,
+              &quot;es&quot;: &quot;OK&quot;,
+              &quot;nl&quot;: &quot;OK&quot;,
+              &quot;fr&quot;: &quot;OK&quot;,
+              &quot;it&quot;: &quot;Okay&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?SK_Feedback__c=&apos;OK&apos;&quot;
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;#acac00&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;feedback-good&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;emoji&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Good&quot;,
+              &quot;de&quot;: &quot;Gut&quot;,
+              &quot;es&quot;: &quot;Bien&quot;,
+              &quot;nl&quot;: &quot;Goed&quot;,
+              &quot;fr&quot;: &quot;Bon&quot;,
+              &quot;it&quot;: &quot;Buono&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?SK_Feedback__c=&apos;Good&apos;&quot;
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;alt-success&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;feedback-great&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;smiley_and_people&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Great&quot;,
+              &quot;de&quot;: &quot;Großartig&quot;,
+              &quot;es&quot;: &quot;Excelente&quot;,
+              &quot;nl&quot;: &quot;Super goed&quot;,
+              &quot;fr&quot;: &quot;Excellent&quot;,
+              &quot;it&quot;: &quot;Eccellente&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?SK_Feedback__c=&apos;Great&apos;&quot;
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;success&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;request-feedback&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;question&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;How was your shift?&quot;,
+              &quot;de&quot;: &quot;Wie war Ihre Schicht?&quot;,
+              &quot;es&quot;: &quot;¿Cómo estuvo tu turno?&quot;,
+              &quot;nl&quot;: &quot;Hoe was je dienst?&quot;,
+              &quot;fr&quot;: &quot;Qu’avez-vous pensé de votre mission ?&quot;,
+              &quot;it&quot;: &quot;Come è andato il tuo turno?&quot;
+            }
+          },
+          &quot;hides&quot;: [
+            &quot;client&quot;,
+            &quot;site&quot;,
+            &quot;site-address&quot;,
+            &quot;location&quot;,
+            &quot;job-type&quot;,
+            &quot;forecast-pay&quot;,
+            &quot;contract&quot;,
+            &quot;notes&quot;,
+            &quot;scheduled-interval&quot;,
+            &quot;actual-interval&quot;,
+            &quot;sign&quot;,
+            &quot;attach-photo&quot;,
+            &quot;attach-image&quot;,
+            &quot;show-attachments&quot;,
+            &quot;job&quot;
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;accept&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Cancelled__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Confirmed_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;some&quot;: {
+                    &quot;operands&quot;: [
+                      {
+                        &quot;field&quot;: &quot;sirenum__Accepted__c&quot;,
+                        &quot;operator&quot;: &quot;IsNull&quot;,
+                        &quot;value&quot;: &quot;true&quot;
+                      },
+                      {
+                        &quot;field&quot;: &quot;sirenum__Accepted__c&quot;,
+                        &quot;operator&quot;: &quot;Equals&quot;,
+                        &quot;value&quot;: &quot;0&quot;
+                      }
+                    ]
+                  },
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;like&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Confirm&quot;,
+              &quot;de&quot;: &quot;Bestätigen&quot;,
+              &quot;es&quot;: &quot;Confirmar&quot;,
+              &quot;nl&quot;: &quot;Bevestigen&quot;,
+              &quot;fr&quot;: &quot;Confirmer&quot;,
+              &quot;it&quot;: &quot;Confermare&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?sirenum__Accepted__c=1&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;accepted&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Accepted__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;1&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;like&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Confirmed&quot;,
+              &quot;de&quot;: &quot;Bestätigt&quot;,
+              &quot;es&quot;: &quot;Confirmado&quot;,
+              &quot;nl&quot;: &quot;Bevestigd&quot;,
+              &quot;fr&quot;: &quot;Confirmations&quot;,
+              &quot;it&quot;: &quot;Confermato&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Confirmed_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;$action:update?sirenum__Accepted__c=0&quot;
+                }
+              }
+            ]
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;success&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;rejected&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Accepted__c&quot;,
+            &quot;operator&quot;: &quot;Less&quot;,
+            &quot;value&quot;: &quot;0&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;dislike&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Rejected&quot;,
+              &quot;de&quot;: &quot;Abgelehnt&quot;,
+              &quot;es&quot;: &quot;Rechazado&quot;,
+              &quot;nl&quot;: &quot;Afgewezen&quot;,
+              &quot;fr&quot;: &quot;Rejets&quot;,
+              &quot;it&quot;: &quot;Respinto&quot;
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;error&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;feedback-finished&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;match&quot;: {
+              &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+              &quot;equals&quot;: {
+                &quot;Poor&quot;: {
+                  &quot;literal&quot;: &quot;sentiment_negative&quot;
+                },
+                &quot;OK&quot;: {
+                  &quot;literal&quot;: &quot;sentiment_neutral&quot;
+                },
+                &quot;Good&quot;: {
+                  &quot;literal&quot;: &quot;emoji&quot;
+                },
+                &quot;Great&quot;: {
+                  &quot;literal&quot;: &quot;smiley_and_people&quot;
+                }
+              }
+            }
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Finished&quot;,
+              &quot;de&quot;: &quot;Beendet&quot;,
+              &quot;es&quot;: &quot;Terminado&quot;,
+              &quot;nl&quot;: &quot;Afgewerkt&quot;,
+              &quot;fr&quot;: &quot;Terminé&quot;,
+              &quot;it&quot;: &quot;Finito&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?SK_Feedback__c=null&quot;
+          },
+          &quot;variant&quot;: {
+            &quot;match&quot;: {
+              &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+              &quot;equals&quot;: {
+                &quot;Poor&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                },
+                &quot;OK&quot;: {
+                  &quot;literal&quot;: &quot;#acac00&quot;
+                },
+                &quot;Good&quot;: {
+                  &quot;literal&quot;: &quot;alt-success&quot;
+                },
+                &quot;Great&quot;: {
+                  &quot;literal&quot;: &quot;success&quot;
+                }
+              }
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;finished&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;match&quot;: {
+              &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+              &quot;equals&quot;: {
+                &quot;Poor&quot;: {
+                  &quot;literal&quot;: &quot;sentiment_negative&quot;
+                },
+                &quot;OK&quot;: {
+                  &quot;literal&quot;: &quot;sentiment_neutral&quot;
+                },
+                &quot;Good&quot;: {
+                  &quot;literal&quot;: &quot;emoji&quot;
+                },
+                &quot;Great&quot;: {
+                  &quot;literal&quot;: &quot;smiley_and_people&quot;
+                }
+              },
+              &quot;otherwise&quot;: {
+                &quot;literal&quot;: &quot;success&quot;
+              }
+            }
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Finished&quot;,
+              &quot;de&quot;: &quot;Beendet&quot;,
+              &quot;es&quot;: &quot;Terminado&quot;,
+              &quot;nl&quot;: &quot;Afgewerkt&quot;,
+              &quot;fr&quot;: &quot;Terminé&quot;,
+              &quot;it&quot;: &quot;Finito&quot;
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;match&quot;: {
+              &quot;field&quot;: &quot;SK_Feedback__c&quot;,
+              &quot;equals&quot;: {
+                &quot;Poor&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                },
+                &quot;OK&quot;: {
+                  &quot;literal&quot;: &quot;#acac00&quot;
+                },
+                &quot;Good&quot;: {
+                  &quot;literal&quot;: &quot;alt-success&quot;
+                },
+                &quot;Great&quot;: {
+                  &quot;literal&quot;: &quot;success&quot;
+                }
+              },
+              &quot;otherwise&quot;: {
+                &quot;literal&quot;: &quot;success&quot;
+              }
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;start-shift&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Cancelled__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;datetime&quot;,
+                  &quot;operator&quot;: &quot;GreaterOrEquals&quot;,
+                  &quot;compare&quot;: {
+                    &quot;arithmetic&quot;: {
+                      &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;,
+                      &quot;operator&quot;: &quot;-&quot;,
+                      &quot;value&quot;: {
+                        &quot;literal&quot;: &quot;PT120M&quot;
+                      }
+                    }
+                  }
+                },
+                {
+                  &quot;device&quot;: &quot;datetime&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;compare&quot;: {
+                    &quot;arithmetic&quot;: {
+                      &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;,
+                      &quot;operator&quot;: &quot;+&quot;,
+                      &quot;value&quot;: {
+                        &quot;literal&quot;: &quot;PT120M&quot;
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;sirenum:action_play&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Start Now&quot;,
+              &quot;de&quot;: &quot;Jetzt beginnen&quot;,
+              &quot;es&quot;: &quot;Empezar Ahora&quot;,
+              &quot;nl&quot;: &quot;Begin nu&quot;,
+              &quot;fr&quot;: &quot;Commencer maintenant&quot;,
+              &quot;it&quot;: &quot;Parti Ora&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$action:create/sirenum__TouchEntry__c?sirenum__Contact_Touched__c=&apos;{0}&apos;&amp;sirenum__Action__c=&apos;Start Shift&apos;&amp;sirenum__Suggested_Shift__c=&apos;{1}&apos;&amp;sirenum__Device_IMEI__c=&apos;{2}&apos;&amp;sirenum__GeoTag__Latitude__s=${GPS.lat}&amp;sirenum__GeoTag__Longitude__s=${GPS.long}&amp;sirenum__GPS_Accuracy__c=${GPS.acc}&amp;sirenum__TouchTime_GPS__c=&apos;${GPS.time}&apos;&amp;sirenum__TouchTime__c=&apos;${Datetime.now}&apos;&amp;context:sirenum__Actual_Start_Time__c=&apos;${Datetime.now}&apos;&amp;context:sirenum__Absolute_Start_Time__c=&apos;${Datetime.now}&apos;&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;firstDefined&quot;: [
+                    {
+                      &quot;field&quot;: &quot;sirenum__Contact__c&quot;
+                    },
+                    {
+                      &quot;user&quot;: &quot;contactId&quot;
+                    }
+                  ]
+                },
+                {
+                  &quot;field&quot;: &quot;Id&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;uid&quot;
+                }
+              ]
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;success&quot;
+          },
+          &quot;hides&quot;: [
+            &quot;ask-for-work&quot;,
+            &quot;start-break&quot;,
+            &quot;end-break&quot;
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;end-shift&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;datetime&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;compare&quot;: {
+                    &quot;arithmetic&quot;: {
+                      &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                      &quot;operator&quot;: &quot;+&quot;,
+                      &quot;value&quot;: {
+                        &quot;literal&quot;: &quot;PT24H&quot;
+                      }
+                    }
+                  }
+                },
+                {
+                  &quot;some&quot;: {
+                    &quot;operands&quot;: [
+                      {
+                        &quot;field&quot;: &quot;sirenum__Scheduled_End_Time__c&quot;,
+                        &quot;operator&quot;: &quot;IsNull&quot;,
+                        &quot;value&quot;: &quot;true&quot;
+                      },
+                      {
+                        &quot;device&quot;: &quot;datetime&quot;,
+                        &quot;operator&quot;: &quot;Less&quot;,
+                        &quot;compare&quot;: {
+                          &quot;arithmetic&quot;: {
+                            &quot;field&quot;: &quot;sirenum__Scheduled_End_Time__c&quot;,
+                            &quot;operator&quot;: &quot;+&quot;,
+                            &quot;value&quot;: {
+                              &quot;literal&quot;: &quot;PT120M&quot;
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;sirenum:action_stop&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Finish Now&quot;,
+              &quot;de&quot;: &quot;Jetzt beenden&quot;,
+              &quot;es&quot;: &quot;Termina Ahora&quot;,
+              &quot;nl&quot;: &quot;Nu voltooien&quot;,
+              &quot;fr&quot;: &quot;Terminer maintenant&quot;,
+              &quot;it&quot;: &quot;Finisci Ora&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$action:create/sirenum__TouchEntry__c?sirenum__Contact_Touched__c=&apos;{0}&apos;&amp;sirenum__Action__c=&apos;End Shift&apos;&amp;sirenum__Suggested_Shift__c=&apos;{1}&apos;&amp;sirenum__Device_IMEI__c=&apos;{2}&apos;&amp;sirenum__GeoTag__Latitude__s=${GPS.lat}&amp;sirenum__GeoTag__Longitude__s=${GPS.long}&amp;sirenum__GPS_Accuracy__c=${GPS.acc}&amp;sirenum__TouchTime_GPS__c=&apos;${GPS.time}&apos;&amp;sirenum__TouchTime__c=&apos;${Datetime.now}&apos;&amp;context:sirenum__Actual_End_Time__c=&apos;${Datetime.now}&apos;&amp;context:sirenum__Absolute_End_Time__c=&apos;${Datetime.now}&apos;&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;firstDefined&quot;: [
+                    {
+                      &quot;field&quot;: &quot;sirenum__Contact__c&quot;
+                    },
+                    {
+                      &quot;user&quot;: &quot;contactId&quot;
+                    }
+                  ]
+                },
+                {
+                  &quot;field&quot;: &quot;Id&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;uid&quot;
+                }
+              ]
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;alt-info&quot;
+          },
+          &quot;hides&quot;: [
+            &quot;start-shift&quot;,
+            &quot;ask-for-work&quot;
+          ]
+        },
+        {
+          &quot;name&quot;: &quot;will-be-there&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Cancelled__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Confirmed_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;datetime&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;compare&quot;: {
+                    &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;
+                  }
+                },
+                {
+                  &quot;device&quot;: &quot;datetime&quot;,
+                  &quot;operator&quot;: &quot;GreaterOrEquals&quot;,
+                  &quot;compare&quot;: {
+                    &quot;firstDefined&quot;: [
+                      {
+                        &quot;field&quot;: &quot;sirenum__Confirmation_Reminder_Time__c&quot;
+                      },
+                      {
+                        &quot;arithmetic&quot;: {
+                          &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;,
+                          &quot;operator&quot;: &quot;-&quot;,
+                          &quot;value&quot;: {
+                            &quot;literal&quot;: &quot;PT2H&quot;
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;trail&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;I&apos;ll be there&quot;,
+              &quot;de&quot;: &quot;Ich werde dort sein&quot;,
+              &quot;es&quot;: &quot;Estaré allí&quot;,
+              &quot;nl&quot;: &quot;Ik zal er zijn&quot;,
+              &quot;fr&quot;: &quot;J’y serai&quot;,
+              &quot;it&quot;: &quot;Sarò lì&quot;
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;alt-inverse&quot;
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?sirenum__Confirmed_Time__c=&apos;${Datetime.now}&apos;&amp;sirenum__Accepted__c=1&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;start-break&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__OngoingBreaks__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;0&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;pause&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Start Break&quot;,
+              &quot;de&quot;: &quot;Pause beginnen&quot;,
+              &quot;es&quot;: &quot;Empezar Descanso&quot;,
+              &quot;nl&quot;: &quot;Start pauze&quot;,
+              &quot;fr&quot;: &quot;Commencer la pause&quot;,
+              &quot;it&quot;: &quot;Inizio Pausa&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$action:create/sirenum__TouchEntry__c?sirenum__Contact_Touched__c=&apos;{0}&apos;&amp;sirenum__Action__c=&apos;Start Break&apos;&amp;sirenum__Suggested_Shift__c=&apos;{1}&apos;&amp;sirenum__Device_IMEI__c=&apos;{2}&apos;&amp;sirenum__GeoTag__Latitude__s=${GPS.lat}&amp;sirenum__GeoTag__Longitude__s=${GPS.long}&amp;sirenum__GPS_Accuracy__c=${GPS.acc}&amp;sirenum__TouchTime_GPS__c=&apos;${GPS.time}&apos;&amp;sirenum__TouchTime__c=&apos;${Datetime.now}&apos;&amp;context:sirenum__OngoingBreaks__c=1&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;firstDefined&quot;: [
+                    {
+                      &quot;field&quot;: &quot;sirenum__Contact__c&quot;
+                    },
+                    {
+                      &quot;user&quot;: &quot;contactId&quot;
+                    }
+                  ]
+                },
+                {
+                  &quot;field&quot;: &quot;Id&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;uid&quot;
+                }
+              ]
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;alt-shade&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;end-break&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__OngoingBreaks__c&quot;,
+                  &quot;operator&quot;: &quot;NotEquals&quot;,
+                  &quot;value&quot;: &quot;0&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;play&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;End Break&quot;,
+              &quot;de&quot;: &quot;Pause beenden&quot;,
+              &quot;es&quot;: &quot;Fin de Descanso&quot;,
+              &quot;nl&quot;: &quot;Einde pauze&quot;,
+              &quot;fr&quot;: &quot;Terminer la pause&quot;,
+              &quot;it&quot;: &quot;Fine Pausa&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$action:create/sirenum__TouchEntry__c?sirenum__Contact_Touched__c=&apos;{0}&apos;&amp;sirenum__Action__c=&apos;End Break&apos;&amp;sirenum__Suggested_Shift__c=&apos;{1}&apos;&amp;sirenum__Device_IMEI__c=&apos;{2}&apos;&amp;sirenum__GeoTag__Latitude__s=${GPS.lat}&amp;sirenum__GeoTag__Longitude__s=${GPS.long}&amp;sirenum__GPS_Accuracy__c=${GPS.acc}&amp;sirenum__TouchTime_GPS__c=&apos;${GPS.time}&apos;&amp;sirenum__TouchTime__c=&apos;${Datetime.now}&apos;&amp;context:sirenum__OngoingBreaks__c=0&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;firstDefined&quot;: [
+                    {
+                      &quot;field&quot;: &quot;sirenum__Contact__c&quot;
+                    },
+                    {
+                      &quot;user&quot;: &quot;contactId&quot;
+                    }
+                  ]
+                },
+                {
+                  &quot;field&quot;: &quot;Id&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;uid&quot;
+                }
+              ]
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;alt-shade&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;email&quot;,
+          &quot;selector&quot;: {
+            &quot;connection&quot;: &quot;email&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;email&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Email&quot;,
+              &quot;de&quot;: &quot;E-Mail&quot;,
+              &quot;es&quot;: &quot;Correo electrónico&quot;,
+              &quot;nl&quot;: &quot;E‑mail&quot;,
+              &quot;fr&quot;: &quot;Envoyer un e-mail&quot;,
+              &quot;it&quot;: &quot;E-mail&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;mailto:{0}?subject=Shift {1} {2}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;connection&quot;: &quot;email&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;Name&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Absolute_Start_Time__c&quot;,
+                  &quot;facet&quot;: &quot;display&quot;
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;call&quot;,
+          &quot;selector&quot;: {
+            &quot;connection&quot;: &quot;phone&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;call&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Call&quot;,
+              &quot;de&quot;: &quot;Anruf&quot;,
+              &quot;es&quot;: &quot;Llamada&quot;,
+              &quot;nl&quot;: &quot;Oproep&quot;,
+              &quot;fr&quot;: &quot;Appel&quot;,
+              &quot;it&quot;: &quot;Chiamata&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;tel:+{0}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;connection&quot;: &quot;phone&quot;
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;sign&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:record_signature_task&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Add Electronic Signature&quot;,
+              &quot;de&quot;: &quot;Elektronische Unterschrift hinzufügen&quot;,
+              &quot;es&quot;: &quot;Agregar firma electrónica&quot;,
+              &quot;nl&quot;: &quot;Elektronische handtekening toevoegen&quot;,
+              &quot;fr&quot;: &quot;Ajouter une signature électronique&quot;,
+              &quot;it&quot;: &quot;Aggiungi Firma Elettronica&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$attach:esign&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;attach-photo&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;photo&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Attach Photo&quot;,
+              &quot;de&quot;: &quot;Foto anfügen&quot;,
+              &quot;es&quot;: &quot;Adjuntar Foto&quot;,
+              &quot;nl&quot;: &quot;Foto bijvoegen&quot;,
+              &quot;fr&quot;: &quot;Joindre une photo&quot;,
+              &quot;it&quot;: &quot;Allega Foto&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$attach:photo&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;attach-image&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;image&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Attach Image&quot;,
+              &quot;de&quot;: &quot;Attach Image&quot;,
+              &quot;es&quot;: &quot;Attach Image&quot;,
+              &quot;nl&quot;: &quot;Attach Image&quot;,
+              &quot;fr&quot;: &quot;Attach Image&quot;,
+              &quot;it&quot;: &quot;Attach Image&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$attach:image&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;show-attachments&quot;,
+          &quot;selector&quot;: {
+            &quot;count&quot;: {
+              &quot;relationship&quot;: &quot;Attachments&quot;
+            },
+            &quot;operator&quot;: &quot;Greater&quot;,
+            &quot;value&quot;: &quot;0&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;file&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Show Attachments&quot;,
+              &quot;de&quot;: &quot;Show Attachments&quot;,
+              &quot;es&quot;: &quot;Show Attachments&quot;,
+              &quot;nl&quot;: &quot;Show Attachments&quot;,
+              &quot;fr&quot;: &quot;Show Attachments&quot;,
+              &quot;it&quot;: &quot;Show Attachments&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$attach:list&quot;
+          }
+        },
+{
+          &quot;name&quot;: &quot;site&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;checkin&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;Site_App__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;site-address&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;checkin&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Site Address&quot;,
+              &quot;de&quot;: &quot;Standort-Adresse&quot;,
+              &quot;es&quot;: &quot;Dirección del Sitio&quot;,
+              &quot;nl&quot;: &quot;Site-adres&quot;,
+              &quot;fr&quot;: &quot;Adresse du site&quot;,
+              &quot;it&quot;: &quot;Indirizzo del Sito&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;{0}, {1}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;Street_Address_App__c&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;City_App__c&quot;
+                }
+              ]
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;https://www.google.com/maps/search/?api=1&amp;query={0},{1}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;Latitude_App__c&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;Longitude_App__c&quot;
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;location&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;checkin&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Location__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;job-type&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Job_Type__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;picklist&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Job_Type__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;client&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Account__r.sirenum__Client__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;company&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Client&quot;,
+              &quot;de&quot;: &quot;Kunde&quot;,
+              &quot;es&quot;: &quot;Cliente&quot;,
+              &quot;nl&quot;: &quot;Klant&quot;,
+              &quot;fr&quot;: &quot;Client&quot;,
+              &quot;it&quot;: &quot;Cliente&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Account__r.sirenum__Client__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;forecast-pay&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Forecast_Pay__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;money&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Forecast_Pay__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;notes&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Scheduling_Comments__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;note&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Notes&quot;,
+              &quot;de&quot;: &quot;Anmerkungen&quot;,
+              &quot;es&quot;: &quot;Notas&quot;,
+              &quot;nl&quot;: &quot;Notities&quot;,
+              &quot;fr&quot;: &quot;Notes&quot;,
+              &quot;it&quot;: &quot;Appunti&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Scheduling_Comments__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;contract&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;contract&quot;
+          },
+          &quot;value&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Contract__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Contract__c&quot;
+                }
+              },
+              {
+                &quot;value&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Team__r.sirenum__Account__c&quot;
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;job&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;Job_Title_App__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;choice&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;Job_Title_App__c&quot;
+          }
+        },
+         {
+          &quot;name&quot;: &quot;type-care&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;Type_of_Care_App__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;classic_interface&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;Type_of_Care_App__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;scheduled-interval&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;date_time&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Scheduled&quot;,
+              &quot;de&quot;: &quot;Geplant&quot;,
+              &quot;es&quot;: &quot;Programado&quot;,
+              &quot;nl&quot;: &quot;Gepland&quot;,
+              &quot;fr&quot;: &quot;Planifié&quot;,
+              &quot;it&quot;: &quot;Programmato&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;interval&quot;: {
+              &quot;startFieldPath&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;,
+              &quot;endFieldPath&quot;: &quot;sirenum__Scheduled_End_Time__c&quot;,
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;{0} - {1}&quot;
+              }
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;actual-interval&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;date_time&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Actual&quot;,
+              &quot;de&quot;: &quot;Ist&quot;,
+              &quot;es&quot;: &quot;Real&quot;,
+              &quot;nl&quot;: &quot;Werkelijke&quot;,
+              &quot;fr&quot;: &quot;Actuel&quot;,
+              &quot;it&quot;: &quot;Effettivo&quot;
+            }
+          },
+          &quot;value&quot;: {
+            &quot;interval&quot;: {
+              &quot;startFieldPath&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+              &quot;endFieldPath&quot;: &quot;sirenum__Actual_End_Time__c&quot;,
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;{0} - {1}&quot;
+              }
+            }
+          }
+        }
+      ],
+      &quot;realTimeLayouts&quot;: [
+        {
+          &quot;contents&quot;: [
+            &quot;start-shift&quot;,
+            &quot;end-shift&quot;,
+            &quot;will-be-there&quot;
+          ]
+        }
+      ],
+      &quot;tileLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;accept&quot;,
+            &quot;accepted&quot;,
+            &quot;rejected&quot;,
+            &quot;is-cancelled&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;job&quot;,
+            &quot;job-type&quot;,
+            &quot;site&quot;
+          ]
+        }
+      ],
+      &quot;detailLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;accept&quot;,
+            &quot;accepted&quot;,
+            &quot;rejected&quot;,
+            &quot;finished&quot;,
+            &quot;is-cancelled&quot;,
+            &quot;email&quot;,
+            &quot;call&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;job&quot;,
+            &quot;site&quot;,
+            &quot;site-address&quot;,
+            &quot;type-care&quot;,
+            &quot;forecast-pay&quot;,
+            &quot;scheduled-interval&quot;,
+            &quot;actual-interval&quot;,
+            &quot;notes&quot;,
+            &quot;sign&quot;,
+            &quot;attach-photo&quot;,
+            &quot;attach-image&quot;,
+            &quot;show-attachments&quot;
+          ]
+        }
+      ],
+      &quot;editLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+          ],
+          &quot;contents&quot;: [
+          ]
+        }
+      ]
+    },
+    {
+      &quot;objectType&quot;: &quot;sirenum__Employee_Request__c&quot;,
+      &quot;startFieldPath&quot;: &quot;sirenum__Start_Time__c&quot;,
+      &quot;endFieldPath&quot;: &quot;sirenum__End_Time__c&quot;,
+      &quot;selectionClause&quot;: &quot;sirenum__Contact__c IN :contextIds&quot;,
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;standard:case&quot;
+      },
+      &quot;variant&quot;: {
+        &quot;literal&quot;: &quot;alt-inverse&quot;
+      },
+      &quot;tuples&quot;: [
+        {
+          &quot;name&quot;: &quot;pending&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Rejected__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;spinner&quot;
+          },
+          &quot;value&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Unapproved&quot;,
+              &quot;de&quot;: &quot;Nicht genehmigt&quot;,
+              &quot;es&quot;: &quot;No Aprobado&quot;,
+              &quot;nl&quot;: &quot;Niet goedgekeurd&quot;,
+              &quot;fr&quot;: &quot;Non approuvé&quot;,
+              &quot;it&quot;: &quot;Non Approvato&quot;
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;warning&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;approval&quot;,
+          &quot;icon&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;success&quot;
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Rejected__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                }
+              }
+            ]
+          },
+          &quot;value&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Approved&quot;,
+                    &quot;de&quot;: &quot;Genehmigt&quot;,
+                    &quot;es&quot;: &quot;Aprobado&quot;,
+                    &quot;nl&quot;: &quot;Goedgekeurd&quot;,
+                    &quot;fr&quot;: &quot;Approuvé&quot;,
+                    &quot;it&quot;: &quot;Approvato&quot;
+                  }
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Rejected__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Rejected&quot;,
+                    &quot;de&quot;: &quot;Abgelehnt&quot;,
+                    &quot;es&quot;: &quot;Rechazado&quot;,
+                    &quot;nl&quot;: &quot;Afgewezen&quot;,
+                    &quot;fr&quot;: &quot;Rejets&quot;,
+                    &quot;it&quot;: &quot;Respinto&quot;
+                  }
+                }
+              }
+            ]
+          },
+          &quot;variant&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;success&quot;
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Rejected__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;availability&quot;,
+          &quot;icon&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Availability__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;resource_absence&quot;
+                }
+              }
+            ]
+          },
+          &quot;value&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Availability__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;Unavailable&quot;
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;type&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;work_order_type&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Type__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;description&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;description&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Description__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;interval&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;clock&quot;
+          },
+          &quot;value&quot;: {
+            &quot;interval&quot;: {
+              &quot;startFieldPath&quot;: &quot;sirenum__Start_Time__c&quot;,
+              &quot;endFieldPath&quot;: &quot;sirenum__End_Time__c&quot;,
+              &quot;allDayFieldPath&quot;: &quot;sirenum__All_Day__c&quot;,
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;{0} - {1}&quot;
+              }
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;new-record&quot;,
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Employee Request&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$action:update?sirenum__Contact__c=&apos;{0}&apos;&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;user&quot;: &quot;contactId&quot;
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;manage-availability&quot;,
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Manage Availability&quot;,
+              &quot;de&quot;: &quot;Manage Availability&quot;,
+              &quot;es&quot;: &quot;Manage Availability&quot;,
+              &quot;nl&quot;: &quot;Manage Availability&quot;,
+              &quot;fr&quot;: &quot;Manage Availability&quot;,
+              &quot;it&quot;: &quot;Manage Availability&quot;
+            }
+          },
+           &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$action:update?sirenum__Type__c=&apos;Unavailable&apos;&amp;sirenum__All_Day__c=true&amp;sirenum__Contact__c=&apos;{0}&apos;&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;user&quot;: &quot;contactId&quot;
+                }
+              ]
+            }
+          }
+        }
+      ],
+      &quot;tileLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;pending&quot;,
+            &quot;approval&quot;,
+            &quot;availability&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;type&quot;,
+            &quot;description&quot;
+          ]
+        }
+      ],
+      &quot;detailLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;pending&quot;,
+            &quot;approval&quot;,
+            &quot;availability&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;type&quot;,
+            &quot;description&quot;
+          ]
+        }
+      ],
+      &quot;editLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+          ],
+          &quot;contents&quot;: [
+            &quot;description&quot;,
+            &quot;type&quot;,
+            &quot;interval&quot;
+          ]
+        }
+      ],
+      &quot;bulkEditLayouts&quot;:[
+        {
+          &quot;contents&quot;: [
+            &quot;type&quot;,
+            &quot;interval&quot;
+          ]
+        }
+      ],
+      &quot;newRecordInitializers&quot;: [
+        &quot;new-record&quot;
+      ],
+      &quot;bulkRecordInitializers&quot;: [
+        &quot;manage-availability&quot;
+      ]
+    }
+  ],
+  &quot;realTimeActions&quot;: [
+    {
+      &quot;name&quot;: &quot;start-shift&quot;,
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;sirenum:action_play&quot;
+      },
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Start Unplanned Shift&quot;,
+          &quot;de&quot;: &quot;Ungeplante Schicht beginnen&quot;,
+          &quot;es&quot;: &quot;Iniciar Turno no Planificado&quot;,
+          &quot;nl&quot;: &quot;Ongeplande dienst starten&quot;,
+          &quot;fr&quot;: &quot;Commencer une mission non prévue&quot;,
+          &quot;it&quot;: &quot;Avvia Turno non Pianificato&quot;
+        }
+      },
+      &quot;uri&quot;: {
+        &quot;pattern&quot;: {
+          &quot;format&quot;: {
+            &quot;default&quot;: &quot;$action:create/sirenum__TouchEntry__c?sirenum__Contact_Touched__c=&apos;{0}&apos;&amp;sirenum__Action__c=&apos;Start Shift&apos;&amp;sirenum__Device_IMEI__c=&apos;{1}&apos;&amp;sirenum__GeoTag__Latitude__s=${GPS.lat}&amp;sirenum__GeoTag__Longitude__s=${GPS.long}&amp;sirenum__GPS_Accuracy__c=${GPS.acc}&amp;sirenum__TouchTime_GPS__c=&apos;${GPS.time}&apos;&amp;sirenum__TouchTime__c=&apos;${Datetime.now}&apos;&amp;context:sirenum__Actual_Start_Time__c=&apos;${Datetime.now}&apos;&amp;context:sirenum__Absolute_Start_Time__c=&apos;${Datetime.now}&apos;&quot;
+          },
+          &quot;values&quot;: [
+            {
+              &quot;user&quot;: &quot;contactId&quot;
+            },
+            {
+              &quot;device&quot;: &quot;uid&quot;
+            }
+          ]
+        }
+      },
+      &quot;variant&quot;: {
+        &quot;literal&quot;: &quot;alt-success&quot;
+      }
+    },
+    {
+      &quot;name&quot;: &quot;find-work&quot;,
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;standard:case&quot;
+      },
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Find Work&quot;
+        }
+      },
+      &quot;uri&quot;: {
+        &quot;pattern&quot;: {
+          &quot;format&quot;: {
+            &quot;default&quot;: &quot;$page:embedded/find-work?contactId={0}&quot;
+          },
+          &quot;values&quot;: [
+            {
+              &quot;user&quot;: &quot;contactId&quot;
+            }
+          ]
+        }
+      },
+      &quot;variant&quot;: {
+        &quot;literal&quot;: &quot;alt-info&quot;
+      }
+    }
+  ],
+  &quot;filters&quot;: [
+    {
+      &quot;name&quot;: &quot;all-shifts&quot;,
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Shifts&quot;
+        }
+      },
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;standard:shift&quot;
+      },
+      &quot;schedulables&quot;: [
+        {
+          &quot;objectType&quot;: &quot;sirenum__Shift__c&quot;,
+          &quot;selector&quot;: {
+            &quot;literal&quot;: &quot;true&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          }
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;unconfirmed-shifts&quot;,
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Unconfirmed Shifts&quot;
+        }
+      },
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;standard:shift&quot;
+      },
+      &quot;schedulables&quot;: [
+        {
+          &quot;objectType&quot;: &quot;sirenum__Shift__c&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Accepted__c&quot;,
+            &quot;operator&quot;: &quot;NotEquals&quot;,
+            &quot;value&quot;: &quot;1&quot;
+          }
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;all-offers&quot;,
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Job Offers&quot;
+        }
+      },
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;sirenum:work_offer&quot;
+      },
+      &quot;schedulables&quot;: [
+        {
+          &quot;objectType&quot;: &quot;sirenum__Shift_Invitation__c&quot;,
+          &quot;selector&quot;: {
+            &quot;literal&quot;: &quot;true&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          }
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;pending-offers&quot;,
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Pending Job Offers&quot;
+        }
+      },
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;sirenum:work_offer&quot;
+      },
+      &quot;schedulables&quot;: [
+        {
+          &quot;objectType&quot;: &quot;sirenum__Shift_Invitation__c&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Status__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;Broadcasting&quot;
+          }
+        }
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;all-requests&quot;,
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Requests&quot;
+        }
+      },
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;standard:case&quot;
+      },
+      &quot;schedulables&quot;: [
+        {
+          &quot;objectType&quot;: &quot;sirenum__Employee_Request__c&quot;,
+          &quot;selector&quot;: {
+            &quot;literal&quot;: &quot;true&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          }
+        }
+      ]
+    }
+  ]
+}</value>
+    </values>
+    <values>
+        <field>sirenum__Schema__c</field>
+        <value xsi:type="xsd:string">https://sirenum.com/schema/2020/10/mobile-definition.json</value>
+    </values>
+</CustomMetadata>

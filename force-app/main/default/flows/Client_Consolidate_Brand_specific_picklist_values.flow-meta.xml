@@ -328,7 +328,10 @@
         <connector>
             <targetReference>AssignVariables</targetReference>
         </connector>
-        <filterFormula>OR(
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+OR(
     ISNEW(),
     ISCHANGED({!$Record.Teaching_Age_Group__c}),
     ISCHANGED({!$Record.Health_Social_Care_Age_Group__c}),
@@ -337,6 +340,8 @@
     ISCHANGED({!$Record.Teaching_Type__c}),
     ISCHANGED({!$Record.Health_Social_Care_Type__c}),
     ISCHANGED({!$Record.Integrated_Type__c})
+)
+         )
 )</filterFormula>
         <object>Account</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

@@ -95,9 +95,14 @@
         <connector>
             <targetReference>Check_Job_Status</targetReference>
         </connector>
-        <filterFormula>NOT( {!$Permission.Bypass_Flows} )
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+NOT( {!$Permission.Bypass_Flows} )
 &amp;&amp;
-( ISCHANGED({!$Record.TR1__Status__c}) || ISNEW() )</filterFormula>
+( ISCHANGED({!$Record.TR1__Status__c}) || ISNEW() )
+         )
+)</filterFormula>
         <object>TR1__Job__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

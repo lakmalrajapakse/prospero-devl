@@ -1,11 +1,18 @@
 <template>
-    <lightning-card title="Margin Calculator" icon-name="utility:money">
-        <div class="slds-var-m-around_medium">
-            <p><strong>Current Record ID:</strong> {recordId}</p>
-            <p><strong>Detected Object API Name:</strong> {objectApiName}</p>
-            <p><strong>Getter Object Name:</strong> {objectName}</p>
-        </div>
-
+    <!-- Plain SLDS card rather than lightning-card -- its built-in header can't be centered or
+         given a gradient from outside its own shadow DOM. -->
+    <!-- Inside a Screen Flow (isCalledFromFlow) the flow screen already has its own title, so the
+         title bar and card border/shadow are dropped -- see showCardHeader/cardClass. -->
+    <article class={cardClass}>
+        <template lwc:if={showCardHeader}>
+            <header class="mc-card-header">
+                <span class="mc-card-icon">
+                    <lightning-icon icon-name="utility:money" size="small" variant="inverse" alternative-text="Margin Calculator"></lightning-icon>
+                </span>
+                <h2 class="mc-card-title">Margin Calculator</h2>
+            </header>
+        </template>
+        <div class="mc-card-body">
         <template lwc:if={isLoading}>
             <div class="slds-align_absolute-center slds-p-vertical_large">
                 <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
@@ -153,5 +160,6 @@
                 </template>
             </template>
 
-    </lightning-card>
+        </div>
+    </article>
 </template>

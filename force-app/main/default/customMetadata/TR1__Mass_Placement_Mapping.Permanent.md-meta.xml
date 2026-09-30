@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Permanent</label>
+    <protected>false</protected>
+    <values>
+        <field>TR1__FieldSetName__c</field>
+        <value xsi:type="xsd:string">TR1__Permanent_Mass_Placement</value>
+    </values>
+    <values>
+        <field>TR1__Job_Field_Set_Name__c</field>
+        <value xsi:type="xsd:string">TEMP_ATS_Mass_Placement_Job_Info</value>
+    </values>
+    <values>
+        <field>TR1__Job_Record_Type_Name__c</field>
+        <value xsi:type="xsd:string">Permanent</value>
+    </values>
+</CustomMetadata>

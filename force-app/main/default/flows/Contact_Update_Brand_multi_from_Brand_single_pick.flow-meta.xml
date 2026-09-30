@@ -54,7 +54,12 @@
         <connector>
             <targetReference>Assign_Brand</targetReference>
         </connector>
-        <filterFormula>ISNEW() || ISCHANGED({!$Record.Brand_Single_Pick__c})</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+ISNEW() || ISCHANGED({!$Record.Brand_Single_Pick__c})
+         )
+)</filterFormula>
         <object>Contact</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>

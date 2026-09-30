@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>LinkedIn</label>
+    <protected>false</protected>
+    <values>
+        <field>TR1__Active__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>TR1__Additional_Data__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__ComponentName__c</field>
+        <value xsi:type="xsd:string">BHLI_CandidateProfile</value>
+    </values>
+    <values>
+        <field>TR1__Generic_Browse_Supported_Object__c</field>
+        <value xsi:type="xsd:string">TR1__Application_V2</value>
+    </values>
+    <values>
+        <field>TR1__Layout__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Lookup__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
+        <field>TR1__Panel__c</field>
+        <value xsi:type="xsd:string">left</value>
+    </values>
+    <values>
+        <field>TR1__Position__c</field>
+        <value xsi:type="xsd:double">2.0</value>
+    </values>
+    <values>
+        <field>TR1__TabType__c</field>
+        <value xsi:type="xsd:string">Component</value>
+    </values>
+    <values>
+        <field>TR1__Tab_label__c</field>
+        <value xsi:nil="true"/>
+    </values>
+</CustomMetadata>

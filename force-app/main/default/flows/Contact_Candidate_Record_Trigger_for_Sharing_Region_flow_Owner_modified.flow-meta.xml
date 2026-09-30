@@ -32,8 +32,13 @@
     <start>
         <locationX>0</locationX>
         <locationY>0</locationY>
-        <filterFormula>
-    ISCHANGED({!$Record.OwnerId})</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+
+    ISCHANGED({!$Record.OwnerId})
+         )
+)</filterFormula>
         <object>Contact</object>
         <recordTriggerType>Update</recordTriggerType>
         <scheduledPaths>

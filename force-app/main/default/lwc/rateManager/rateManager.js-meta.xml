@@ -12,6 +12,8 @@
      <targetConfigs>
         <targetConfig targets="lightning__FlowScreen">
             <property name="recordId" type="String" label="Record ID" />
+            <property name="isCalledFromFlow" type="Boolean" label="Called From Flow" role="inputOnly" default="false"
+                description="Set to true when the flow screen already shows its own title -- hides this component's own Margin Calculator title bar." />
         </targetConfig>
     </targetConfigs>
 </LightningComponentBundle>

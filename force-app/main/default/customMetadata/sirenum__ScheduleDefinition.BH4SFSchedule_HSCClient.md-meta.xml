@@ -1,0 +1,2776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>BH4SFSchedule_HSCClient</label>
+    <protected>false</protected>
+    <values>
+        <field>sirenum__Configuration__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;schedulables&quot;: [
+    {
+      &quot;objectType&quot;: &quot;sirenum__Shift__c&quot;,
+      &quot;startFieldPath&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;,
+      &quot;endFieldPath&quot;: &quot;sirenum__Scheduled_End_Time__c&quot;,
+      &quot;selectionClause&quot;: &quot;unfiltered&quot;,
+      &quot;renderIndex&quot;: 2,
+      &quot;relatedLists&quot;: [
+        {
+          &quot;relationship&quot;: &quot;sirenum__Alerts__r&quot;,
+          &quot;fields&quot;: [
+            {
+              &quot;path&quot;: &quot;sirenum__SeverityIndex__c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;sirenum__RuleMessage__c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;sirenum__ConstraintType__c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;sirenum__RuleValue0__c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;sirenum__RuleValue1__c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;sirenum__RuleValue2__c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;sirenum__RuleValue3__c&quot;
+            },
+            {
+              &quot;path&quot;: &quot;sirenum__RuleValue4__c&quot;
+            }
+          ],
+          &quot;orderByClause&quot;: &quot;sirenum__SeverityIndex__c DESC&quot;,
+          &quot;limitSize&quot;: 6
+        }
+      ],
+      &quot;tuples&quot;: [
+        {
+          &quot;name&quot;: &quot;find-work&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;search&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Find Work&quot;,
+              &quot;nl_NL&quot;: &quot;Werk zoeken&quot;,
+              &quot;fr&quot;: &quot;Trouver du travail&quot;,
+              &quot;de&quot;: &quot;Arbeit finden&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Find a (currently unfilled) Shift for the worker that starts on the selected date&quot;,
+              &quot;nl_NL&quot;: &quot;Vind een (momenteel niet ingevulde) dienst voor de werknemer die begint op de geselecteerde datum&quot;,
+              &quot;fr&quot;: &quot;Trouver une mission (actuellement vacante) pour le travailleur débutant à la date sélectionnée&quot;,
+              &quot;de&quot;: &quot;Suche einer (aktuell unbesetzten) Schicht für den Mitarbeiter, beginnend am ausgewählten Datum&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:flow/sirenum__ILSFindWork/large?selections=${selection.cells}&quot;
+          },
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;selection&quot;: &quot;cellCount&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;1&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;date&quot;,
+                  &quot;operator&quot;: &quot;LessOrEquals&quot;,
+                  &quot;compare&quot;: {
+                    &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;
+                  }
+                },
+                {
+                  &quot;createPermission&quot;: [
+                    &quot;sirenum__Contact__c&quot;
+                  ],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;new-record&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;selection&quot;: &quot;cellCount&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;1&quot;
+                },
+                {
+                  &quot;createPermission&quot;: [],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;date&quot;,
+                  &quot;operator&quot;: &quot;LessOrEquals&quot;,
+                  &quot;compare&quot;: {
+                    &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;
+                  }
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;custom:custom95&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;New Shift&quot;,
+              &quot;nl_NL&quot;: &quot;Nieuwe dienst&quot;,
+              &quot;fr&quot;: &quot;Nouvelle mission&quot;,
+              &quot;de&quot;: &quot;Neue Schicht&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Create a new Shift or Shift Demand&quot;,
+              &quot;nl_NL&quot;: &quot;Een nieuwe dienst of dienstaanvraag maken&quot;,
+              &quot;fr&quot;: &quot;Créer une nouvelle mission ou demande de mission&quot;,
+              &quot;de&quot;: &quot;Erstellen einer neuen Schicht oder Schichtbedarfs&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$action:create/sirenum__Shift__c/interactive?sirenum__Scheduled_Start_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;sirenum__Scheduled_End_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;${Selection.resourceLookup}=&apos;${Selection.resource}&apos;&amp;sirenum__Site__c=&apos;{0}&apos;&quot;,
+                &quot;nl_NL&quot;: &quot;$action:create/sirenum__Shift__c/interactive?sirenum__Scheduled_Start_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;sirenum__Scheduled_End_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;${Selection.resourceLookup}=&apos;${Selection.resource}&apos;&amp;sirenum__Site__c=&apos;{0}&apos;&quot;,
+                &quot;fr&quot;: &quot;$action:create/sirenum__Shift__c/interactive?sirenum__Scheduled_Start_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;sirenum__Scheduled_End_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;${Selection.resourceLookup}=&apos;${Selection.resource}&apos;&amp;sirenum__Site__c=&apos;{0}&apos;&quot;,
+                &quot;de&quot;: &quot;$action:create/sirenum__Shift__c/interactive?sirenum__Scheduled_Start_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;sirenum__Scheduled_End_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;${Selection.resourceLookup}=&apos;${Selection.resource}&apos;&amp;sirenum__Site__c=&apos;{0}&apos;&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;context&quot;: {
+                    &quot;record&quot;: &quot;id&quot;
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;delete&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;deletePermission&quot;: true,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;delete&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Delete&quot;,
+              &quot;nl_NL&quot;: &quot;Verwijderen&quot;,
+              &quot;fr&quot;: &quot;Supprimer&quot;,
+              &quot;de&quot;: &quot;Löschen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Delete the selected Shifts&quot;,
+              &quot;nl_NL&quot;: &quot;Geselecteerde diensten verwijderen&quot;,
+              &quot;fr&quot;: &quot;Supprimer les missions sélectionnées&quot;,
+              &quot;de&quot;: &quot;Löschen der ausgewählten Schichten&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:delete&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;edit-record&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;editPermission&quot;: [],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;edit_form&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Edit&quot;,
+              &quot;nl_NL&quot;: &quot;Bewerken&quot;,
+              &quot;fr&quot;: &quot;Modifier&quot;,
+              &quot;de&quot;: &quot;Bearbeiten&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__IsShiftDemand__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Quick edit the selected Shift Demand(s) together&quot;,
+                    &quot;nl_NL&quot;: &quot;Geselecteerde dienstaanvragen bewerken&quot;,
+                    &quot;fr&quot;: &quot;Modifier la demandes de mission sélectionnée&quot;,
+                    &quot;de&quot;: &quot;Bearbeiten der ausgewählten Schichtbedarfe&quot;
+                  }
+                }
+              },
+              {
+                &quot;value&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Quick edit the selected Shift(s) together&quot;,
+                    &quot;nl_NL&quot;: &quot;Geselecteerde dienst bewerken&quot;,
+                    &quot;fr&quot;: &quot;Modifier la mission sélectionnée&quot;,
+                    &quot;de&quot;: &quot;Bearbeiten der ausgewählten Schicht&quot;
+                  }
+                }
+              }
+            ]
+          },
+          &quot;uri&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__IsShiftDemand__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;$action:update/interactive/Shift_Demand&quot;
+                }
+              },
+              {
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;$action:update/interactive/Shift&quot;
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;cut&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;clipboardPermission&quot;: &quot;cut&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;cut&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Cut&quot;,
+              &quot;nl_NL&quot;: &quot;Knippen&quot;,
+              &quot;fr&quot;: &quot;Couper&quot;,
+              &quot;de&quot;: &quot;Ausschneiden&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Allows the selected records to be moved to another date and/or resource&quot;,
+              &quot;nl_NL&quot;: &quot;Zorgt ervoor dat de geselecteerde records naar een andere datum en/of bron verplaatst kunnen worden&quot;,
+              &quot;fr&quot;: &quot;Permet de déplacer les enregistrements sélectionnés vers une autre date et/ou ressource&quot;,
+              &quot;de&quot;: &quot;Ermöglicht das Verschieben der ausgewählten Datensätze auf ein anderes Datum und/oder eine andere Ressource&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$clipboard:cut&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;copy&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;clipboardPermission&quot;: &quot;copy&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;copy_to_clipboard&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Copy&quot;,
+              &quot;nl_NL&quot;: &quot;Kopiëren&quot;,
+              &quot;fr&quot;: &quot;Copier&quot;,
+              &quot;de&quot;: &quot;Kopieren&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Allows the selected records to be copied to another date and/or resource&quot;,
+              &quot;nl_NL&quot;: &quot;Zorgt ervoor dat de geselecteerde records naar een andere datum en/of bron gekopieerd kunnen worden&quot;,
+              &quot;fr&quot;: &quot;Permet de copier les enregistrements sélectionnés vers une autre date et/ou ressource&quot;,
+              &quot;de&quot;: &quot;Ermöglicht das Kopieren der ausgewählten Datensätze auf ein anderes Datum und/oder eine andere Ressource&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$clipboard:copy&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;paste&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;clipboardPermission&quot;: &quot;paste&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;selection&quot;: &quot;cellCount&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;1&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;paste&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Paste&quot;,
+              &quot;nl_NL&quot;: &quot;Plakken&quot;,
+              &quot;fr&quot;: &quot;Coller&quot;,
+              &quot;de&quot;: &quot;Einfügen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Moves or copies the selections to an alternative date and/or resource&quot;,
+              &quot;nl_NL&quot;: &quot;Verplaatst of kopieert de selecties naar een alternatieve datum en/of bron&quot;,
+              &quot;fr&quot;: &quot;Déplace et copie les sélections vers une autre date et/ou ressource&quot;,
+              &quot;de&quot;: &quot;Ermöglicht das Verschieben oder Kopieren der Auswahl auf ein anderes Datum und/oder Ressource&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$clipboard:paste&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;publish-shifts&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Contact__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Scheduled_End_Time__c&quot;,
+                  &quot;operator&quot;: &quot;Greater&quot;,
+                  &quot;compare&quot;: {
+                    &quot;device&quot;: &quot;datetime&quot;
+                  }
+                },
+                {
+                  &quot;editPermission&quot;: [
+                    &quot;sirenum__Published__c&quot;
+                  ],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Published__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;push&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Publish&quot;,
+              &quot;nl_NL&quot;: &quot;Publiceren&quot;,
+              &quot;fr&quot;: &quot;Publier&quot;,
+              &quot;de&quot;: &quot;Veröffentlichen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Publish the selected Shifts&quot;,
+              &quot;nl_NL&quot;: &quot;Geselecteerde diensten publiceren&quot;,
+              &quot;fr&quot;: &quot;Publier les missions sélectionnées&quot;,
+              &quot;de&quot;: &quot;Veröffentlichen Sie die ausgewählten Schichten&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?sirenum__Published__c=true&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;auto-assign&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Cancelled__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;datetime&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;compare&quot;: {
+                    &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;
+                  }
+                },
+                {
+                  &quot;some&quot;: {
+                    &quot;operands&quot;: [
+                      {
+                        &quot;every&quot;: {
+                          &quot;operands&quot;: [
+                            {
+                              &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;,
+                              &quot;operator&quot;: &quot;IsNull&quot;,
+                              &quot;value&quot;: &quot;false&quot;
+                            },
+                            {
+                              &quot;some&quot;: {
+                                &quot;operands&quot;: [
+                                  {
+                                    &quot;field&quot;: &quot;sirenum__AssignedShifts__c&quot;,
+                                    &quot;operator&quot;: &quot;Less&quot;,
+                                    &quot;compare&quot;: {
+                                      &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;field&quot;: &quot;sirenum__AssignedShifts__c&quot;,
+                                    &quot;operator&quot;: &quot;IsNull&quot;,
+                                    &quot;value&quot;: &quot;true&quot;
+                                  }
+                                ]
+                              },
+                              &quot;operator&quot;: &quot;Equals&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            },
+                            {
+                              &quot;createPermission&quot;: [
+                                &quot;sirenum__Contact__c&quot;
+                              ],
+                              &quot;operator&quot;: &quot;Equals&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            }
+                          ]
+                        },
+                        &quot;operator&quot;: &quot;Equals&quot;,
+                        &quot;value&quot;: &quot;true&quot;
+                      },
+                      {
+                        &quot;every&quot;: {
+                          &quot;operands&quot;: [
+                            {
+                              &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;,
+                              &quot;operator&quot;: &quot;IsNull&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            },
+                            {
+                              &quot;editPermission&quot;: [
+                                &quot;sirenum__Contact__c&quot;
+                              ],
+                              &quot;operator&quot;: &quot;Equals&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            }
+                          ]
+                        },
+                        &quot;operator&quot;: &quot;Equals&quot;,
+                        &quot;value&quot;: &quot;true&quot;
+                      }
+                    ]
+                  },
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;resource_capacity&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Auto Assign&quot;,
+              &quot;nl_NL&quot;: &quot;Automatisch toewijzen&quot;,
+              &quot;fr&quot;: &quot;Attribution automatique&quot;,
+              &quot;de&quot;: &quot;Auto-Zuweisung&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Find and assign the most appropriate workers for your selection&quot;,
+              &quot;nl_NL&quot;: &quot;De meest geschikte werknemers voor uw selectie zoeken en toewijzen&quot;,
+              &quot;fr&quot;: &quot;Trouver et attribuer les travailleurs les plus adéquats pour votre sélection&quot;,
+              &quot;de&quot;: &quot;Suchen und Zuweisen der für Ihre Auswahl am besten geeigneten Mitarbeiter&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:flow/sirenum__ILSAutoAssignShifts/large?demandIds=${Selection.recordIds}&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;manage-invitations&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;datetime&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;compare&quot;: {
+                    &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;
+                  }
+                },
+                {
+                  &quot;some&quot;: {
+                    &quot;operands&quot;: [
+                      {
+                        &quot;every&quot;: {
+                          &quot;operands&quot;: [
+                            {
+                              &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;,
+                              &quot;operator&quot;: &quot;IsNull&quot;,
+                              &quot;value&quot;: &quot;false&quot;
+                            },
+                            {
+                              &quot;some&quot;: {
+                                &quot;operands&quot;: [
+                                  {
+                                    &quot;field&quot;: &quot;sirenum__AssignedShifts__c&quot;,
+                                    &quot;operator&quot;: &quot;Less&quot;,
+                                    &quot;compare&quot;: {
+                                      &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;field&quot;: &quot;sirenum__AssignedShifts__c&quot;,
+                                    &quot;operator&quot;: &quot;IsNull&quot;,
+                                    &quot;value&quot;: &quot;true&quot;
+                                  }
+                                ]
+                              },
+                              &quot;operator&quot;: &quot;Equals&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            }
+                          ]
+                        },
+                        &quot;operator&quot;: &quot;Equals&quot;,
+                        &quot;value&quot;: &quot;true&quot;
+                      },
+                      {
+                        &quot;every&quot;: {
+                          &quot;operands&quot;: [
+                            {
+                              &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;,
+                              &quot;operator&quot;: &quot;IsNull&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            },
+                            {
+                              &quot;field&quot;: &quot;sirenum__Contact__c&quot;,
+                              &quot;operator&quot;: &quot;IsNull&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            }
+                          ]
+                        },
+                        &quot;operator&quot;: &quot;Equals&quot;,
+                        &quot;value&quot;: &quot;true&quot;
+                      }
+                    ]
+                  },
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;resource_capacity&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Manage Invitations&quot;,
+              &quot;nl_NL&quot;: &quot;Uitnodigingen beheren&quot;,
+              &quot;fr&quot;: &quot;Gérer les invitations&quot;,
+              &quot;de&quot;: &quot;Einladungen verwalten&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Manage invitations to the selected Shifts&quot;,
+              &quot;nl_NL&quot;: &quot;Uitnodigingen voor de geselecteerde diensten beheren&quot;,
+              &quot;fr&quot;: &quot;Gérer les invitations aux missions sélectionnées&quot;,
+              &quot;de&quot;: &quot;Einladungen für die ausgewählten Schichten verwalten&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:flow/sirenum__InviteWorkers/large?demandIds=${Selection.recordIds}&amp;screenWidth=large&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;find-workers&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Cancelled__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;datetime&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;compare&quot;: {
+                    &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;
+                  }
+                },
+                {
+                  &quot;some&quot;: {
+                    &quot;operands&quot;: [
+                      {
+                        &quot;every&quot;: {
+                          &quot;operands&quot;: [
+                            {
+                              &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;,
+                              &quot;operator&quot;: &quot;IsNull&quot;,
+                              &quot;value&quot;: &quot;false&quot;
+                            },
+                            {
+                              &quot;some&quot;: {
+                                &quot;operands&quot;: [
+                                  {
+                                    &quot;field&quot;: &quot;sirenum__AssignedShifts__c&quot;,
+                                    &quot;operator&quot;: &quot;Less&quot;,
+                                    &quot;compare&quot;: {
+                                      &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;
+                                    }
+                                  },
+                                  {
+                                    &quot;field&quot;: &quot;sirenum__AssignedShifts__c&quot;,
+                                    &quot;operator&quot;: &quot;IsNull&quot;,
+                                    &quot;value&quot;: &quot;true&quot;
+                                  }
+                                ]
+                              },
+                              &quot;operator&quot;: &quot;Equals&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            },
+                            {
+                              &quot;createPermission&quot;: [
+                                &quot;sirenum__Contact__c&quot;
+                              ],
+                              &quot;operator&quot;: &quot;Equals&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            }
+                          ]
+                        },
+                        &quot;operator&quot;: &quot;Equals&quot;,
+                        &quot;value&quot;: &quot;true&quot;
+                      },
+                      {
+                        &quot;every&quot;: {
+                          &quot;operands&quot;: [
+                            {
+                              &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;,
+                              &quot;operator&quot;: &quot;IsNull&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            },
+                            {
+                              &quot;editPermission&quot;: [
+                                &quot;sirenum__Contact__c&quot;
+                              ],
+                              &quot;operator&quot;: &quot;Equals&quot;,
+                              &quot;value&quot;: &quot;true&quot;
+                            }
+                          ]
+                        },
+                        &quot;operator&quot;: &quot;Equals&quot;,
+                        &quot;value&quot;: &quot;true&quot;
+                      }
+                    ]
+                  },
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;resource_territory&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Find Workers&quot;,
+              &quot;nl_NL&quot;: &quot;Werknemers zoeken&quot;,
+              &quot;fr&quot;: &quot;Trouver des travailleurs&quot;,
+              &quot;de&quot;: &quot;Mitarbeiter suchen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Find additional or alternative workers for your selection&quot;,
+              &quot;nl_NL&quot;: &quot;Aanvullende of alternatieve werknemers voor uw selectie zoeken&quot;,
+              &quot;fr&quot;: &quot;Trouver des travailleurs supplémentaires ou de remplacement pour votre sélection&quot;,
+              &quot;de&quot;: &quot;Zusätzliche oder alternative Mitarbeiter für Ihre Auswahl suchen&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:flow/sirenum__ILSFindWorkersForShifts/large?demandIds=${Selection.recordIds}&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;find-workers-for-job&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Cancelled__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;device&quot;: &quot;datetime&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;compare&quot;: {
+                    &quot;field&quot;: &quot;sirenum__Scheduled_Start_Time__c&quot;
+                  }
+                },
+                {
+                  &quot;createPermission&quot;: [
+                    &quot;sirenum__Contact__c&quot;
+                  ],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;selection&quot;: &quot;cellCount&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;1&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;s5m__BH4SFJob__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;s5m__BH4SFJob__r.s5m__BH4SFFillRateByClosingReports__c&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;value&quot;: &quot;100&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;resource_territory&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Find Workers For Job&quot;,
+              &quot;nl_NL&quot;: &quot;Werknemers zoeken&quot;,
+              &quot;fr&quot;: &quot;Trouver des travailleurs&quot;,
+              &quot;de&quot;: &quot;Mitarbeiter suchen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Find Workers for Job&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;$action:flow/s5m__BH4SFFindWorkersForJob/large?recordId={0}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;s5m__BH4SFJob__c&quot;
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;hours-coverage&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;chart&quot;
+          },
+          &quot;value&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;{0}%&quot;,
+                &quot;nl_NL&quot;: &quot;{0}%&quot;,
+                &quot;fr&quot;: &quot;{0} %&quot;,
+                &quot;de&quot;: &quot;{0} %&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__FillRateByHours__c&quot;
+                }
+              ]
+            }
+          },
+          &quot;title&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;{0}% {1}/{2} hours&quot;,
+                &quot;nl_NL&quot;: &quot;{0}% {1}/{2} uren&quot;,
+                &quot;fr&quot;: &quot;{0} % {1}/{2} heures&quot;,
+                &quot;de&quot;: &quot;{0} % {1}/{2} Stunden&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__FillRateByHours__c&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__TotalAssignedHours__c&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__TotalRequiredHours__c&quot;
+                }
+              ]
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__FillRateByHours__c&quot;,
+                  &quot;operator&quot;: &quot;LessOrEquals&quot;,
+                  &quot;value&quot;: &quot;70&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__FillRateByHours__c&quot;,
+                  &quot;operator&quot;: &quot;GreaterOrEquals&quot;,
+                  &quot;value&quot;: &quot;100&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;success&quot;
+                }
+              },
+              {
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;warning&quot;
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;shifts-coverage&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;chart&quot;
+          },
+          &quot;value&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;{0}/{1}&quot;,
+                &quot;nl_NL&quot;: &quot;{0}/{1}&quot;,
+                &quot;fr&quot;: &quot;{0}/{1}&quot;,
+                &quot;de&quot;: &quot;{0}/{1}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__AssignedShifts__c&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;
+                }
+              ]
+            }
+          },
+          &quot;title&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;{0}% {1}/{2} shifts&quot;,
+                &quot;nl_NL&quot;: &quot;{0}% {1}/{2} diensten&quot;,
+                &quot;fr&quot;: &quot;{0} % {1}/{2} missions&quot;,
+                &quot;de&quot;: &quot;{0} % {1}/{2} Schichten&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__FillRateByCount__c&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__AssignedShifts__c&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;
+                }
+              ]
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__FillRateByCount__c&quot;,
+                  &quot;operator&quot;: &quot;LessOrEquals&quot;,
+                  &quot;value&quot;: &quot;70&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__FillRateByCount__c&quot;,
+                  &quot;operator&quot;: &quot;GreaterOrEquals&quot;,
+                  &quot;value&quot;: &quot;100&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;success&quot;
+                }
+              },
+              {
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;warning&quot;
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;pending-invites&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Pending_Invitation_Count__c&quot;,
+            &quot;operator&quot;: &quot;Greater&quot;,
+            &quot;value&quot;: &quot;0&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;email&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Pending_Invitation_Count__c&quot;
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Pending Job Offers&quot;,
+              &quot;nl_NL&quot;: &quot;Functies in behandeling&quot;,
+              &quot;fr&quot;: &quot;Offres d’emploi en attente&quot;,
+              &quot;de&quot;: &quot;Offene Stellenangebote&quot;
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;is-cancelled&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Cancelled__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;ban&quot;
+          },
+          &quot;title&quot;: {
+            &quot;field&quot;: &quot;sirenum__CancellationReason__c&quot;
+          },
+          &quot;variant&quot;: {
+            &quot;literal&quot;: &quot;error&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;has-shift-demand&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__ShiftDemand__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;link&quot;
+          },
+          &quot;title&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;For Shift Demand {0}&quot;,
+                &quot;nl_NL&quot;: &quot;Voor dienstaanvraag {0}&quot;,
+                &quot;fr&quot;: &quot;Pour la demande de mission {0}&quot;,
+                &quot;de&quot;: &quot;Für Schichtbedarf {0}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__ShiftDemand__r.Name&quot;
+                }
+              ]
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;is-not-published&quot;,
+          &quot;selector&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Contact__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;true&quot;
+                }
+              },
+              {
+                &quot;value&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Published__c&quot;
+                }
+              }
+            ],
+            &quot;operator&quot;: &quot;NotEquals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;hide_mobile&quot;
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Not Published&quot;,
+              &quot;nl_NL&quot;: &quot;Niet gepubliceerd&quot;,
+              &quot;fr&quot;: &quot;Non publié&quot;,
+              &quot;de&quot;: &quot;Nicht veröffentlicht&quot;
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;cancel-shifts&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Timesheet_summaries__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;editPermission&quot;: [
+                    &quot;sirenum__Cancelled__c&quot;,
+                    &quot;sirenum__CancellationReason__c&quot;
+                  ],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Cancelled__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;ban&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Cancel&quot;,
+              &quot;nl_NL&quot;: &quot;Annuleren&quot;,
+              &quot;fr&quot;: &quot;Annuler&quot;,
+              &quot;de&quot;: &quot;Abbrechen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Cancel the selected Shifts and/or Shift Demands&quot;,
+              &quot;nl_NL&quot;: &quot;Geselecteerde diensten en/of dienstaanvragen annuleren&quot;,
+              &quot;fr&quot;: &quot;Annuler les missions et/ou demandes de mission sélectionnées&quot;,
+              &quot;de&quot;: &quot;Abbrechen der ausgewählten Schichten und/oder Schichtbedarfe&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:flow/sirenum__ILSCancelShifts?demandIds=${Selection.recordIds}&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;acceptance&quot;,
+          &quot;icon&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Accepted__c&quot;,
+                  &quot;operator&quot;: &quot;Greater&quot;,
+                  &quot;value&quot;: &quot;0&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;like&quot;
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Accepted__c&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;value&quot;: &quot;0&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;dislike&quot;
+                }
+              }
+            ]
+          },
+          &quot;title&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Accepted__c&quot;,
+                  &quot;operator&quot;: &quot;Greater&quot;,
+                  &quot;value&quot;: &quot;0&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Accepted&quot;,
+                    &quot;nl_NL&quot;: &quot;Geaccepteerd&quot;,
+                    &quot;fr&quot;: &quot;Accepté&quot;,
+                    &quot;de&quot;: &quot;Angenommen/Akzeptiert&quot;
+                  }
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Accepted__c&quot;,
+                  &quot;operator&quot;: &quot;Less&quot;,
+                  &quot;value&quot;: &quot;0&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Declined&quot;,
+                    &quot;nl_NL&quot;: &quot;Afgewezen&quot;,
+                    &quot;fr&quot;: &quot;Refusé&quot;,
+                    &quot;de&quot;: &quot;Abgelehnt&quot;
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;status&quot;,
+          &quot;value&quot;: {
+            &quot;match&quot;: {
+              &quot;field&quot;: &quot;sirenum__Shift_Status__c&quot;,
+              &quot;equals&quot;: {
+                &quot;Stale&quot;: {
+                  &quot;literal&quot;: &quot;X&quot;
+                },
+                &quot;No-Show&quot;: {
+                  &quot;literal&quot;: &quot;N&quot;
+                },
+                &quot;Late&quot;: {
+                  &quot;literal&quot;: &quot;L&quot;
+                },
+                &quot;At-Risk&quot;: {
+                  &quot;literal&quot;: &quot;A&quot;
+                },
+                &quot;Ongoing&quot;: {
+                  &quot;literal&quot;: &quot;O&quot;
+                }
+              }
+            }
+          },
+          &quot;title&quot;: {
+            &quot;match&quot;: {
+              &quot;field&quot;: &quot;sirenum__Shift_Status__c&quot;,
+              &quot;equals&quot;: {
+                &quot;Stale&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Stale&quot;,
+                    &quot;nl_NL&quot;: &quot;Verlopen&quot;,
+                    &quot;fr&quot;: &quot;Obsolète&quot;,
+                    &quot;de&quot;: &quot;Abgelaufen&quot;
+                  }
+                },
+                &quot;No-Show&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;No-Show&quot;,
+                    &quot;nl_NL&quot;: &quot;No-show&quot;,
+                    &quot;fr&quot;: &quot;Ne s’est pas présenté&quot;,
+                    &quot;de&quot;: &quot;Nichterscheinen&quot;
+                  }
+                },
+                &quot;Late&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Late&quot;,
+                    &quot;nl_NL&quot;: &quot;Te laat&quot;,
+                    &quot;fr&quot;: &quot;En retard&quot;,
+                    &quot;de&quot;: &quot;Spät&quot;
+                  }
+                },
+                &quot;At-Risk&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;At-Risk&quot;,
+                    &quot;nl_NL&quot;: &quot;In gevaar&quot;,
+                    &quot;fr&quot;: &quot;À risque&quot;,
+                    &quot;de&quot;: &quot;Gefährdet&quot;
+                  }
+                },
+                &quot;Ongoing&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Ongoing&quot;,
+                    &quot;nl_NL&quot;: &quot;Lopend&quot;,
+                    &quot;fr&quot;: &quot;En cours&quot;,
+                    &quot;de&quot;: &quot;Laufend&quot;
+                  }
+                }
+              }
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;match&quot;: {
+              &quot;field&quot;: &quot;sirenum__Shift_Status__c&quot;,
+              &quot;equals&quot;: {
+                &quot;Stale&quot;: {
+                  &quot;literal&quot;: &quot;warning&quot;
+                },
+                &quot;No-Show&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                },
+                &quot;Late&quot;: {
+                  &quot;literal&quot;: &quot;warning&quot;
+                },
+                &quot;At-Risk&quot;: {
+                  &quot;literal&quot;: &quot;warning&quot;
+                },
+                &quot;Ongoing&quot;: {
+                  &quot;literal&quot;: &quot;info&quot;
+                }
+              }
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;alerts&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__AlertCount__c&quot;,
+            &quot;operator&quot;: &quot;Greater&quot;,
+            &quot;value&quot;: &quot;0&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;alert&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__AlertCount__c&quot;
+          },
+          &quot;title&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;{0} alert(s):\n{1}&quot;,
+                &quot;nl_NL&quot;: &quot;{0} waarschuwing(en):\n{1}&quot;,
+                &quot;fr&quot;: &quot;{0} alerte(s) :\n{1}&quot;,
+                &quot;de&quot;: &quot;{0} Alarm(e):\n{1}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__AlertCount__c&quot;
+                },
+                {
+                  &quot;concat&quot;: {
+                    &quot;relationship&quot;: &quot;sirenum__Alerts__r&quot;,
+                    &quot;item&quot;: {
+                      &quot;pattern&quot;: {
+                        &quot;format&quot;: {
+                          &quot;default&quot;: &quot;{0} ({1})&quot;,
+                          &quot;nl_NL&quot;: &quot;{0} ({1})&quot;,
+                          &quot;fr&quot;: &quot;{0} ({1})&quot;,
+                          &quot;de&quot;: &quot;{0} ({1})&quot;
+                        },
+                        &quot;values&quot;: [
+                          {
+                            &quot;firstMatch&quot;: [
+                              {
+                                &quot;selector&quot;: {
+                                  &quot;field&quot;: &quot;sirenum__RuleMessage__c&quot;,
+                                  &quot;operator&quot;: &quot;IsNull&quot;,
+                                  &quot;value&quot;: &quot;false&quot;
+                                },
+                                &quot;value&quot;: {
+                                  &quot;field&quot;: &quot;sirenum__RuleMessage__c&quot;
+                                }
+                              },
+                              {
+                                &quot;value&quot;: {
+                                  &quot;pattern&quot;: {
+                                    &quot;formatter&quot;: {
+                                      &quot;field&quot;: &quot;sirenum__ConstraintType__c&quot;,
+                                      &quot;facet&quot;: &quot;display&quot;
+                                    },
+                                    &quot;values&quot;: [
+                                      {
+                                        &quot;field&quot;: &quot;sirenum__RuleValue0__c&quot;
+                                      },
+                                      {
+                                        &quot;field&quot;: &quot;sirenum__RuleValue1__c&quot;
+                                      },
+                                      {
+                                        &quot;field&quot;: &quot;sirenum__RuleValue2__c&quot;
+                                      },
+                                      {
+                                        &quot;field&quot;: &quot;sirenum__RuleValue3__c&quot;
+                                      },
+                                      {
+                                        &quot;field&quot;: &quot;sirenum__RuleValue4__c&quot;
+                                      }
+                                    ]
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            &quot;match&quot;: {
+                              &quot;field&quot;: &quot;sirenum__SeverityIndex__c&quot;,
+                              &quot;equals&quot;: {
+                                &quot;4&quot;: {
+                                  &quot;label&quot;: {
+                                    &quot;default&quot;: &quot;Fatal&quot;,
+                                    &quot;nl_NL&quot;: &quot;Fataal&quot;,
+                                    &quot;fr&quot;: &quot;Grave&quot;,
+                                    &quot;de&quot;: &quot;Fatal&quot;
+                                  }
+                                },
+                                &quot;3&quot;: {
+                                  &quot;label&quot;: {
+                                    &quot;default&quot;: &quot;High&quot;,
+                                    &quot;nl_NL&quot;: &quot;Hoog&quot;,
+                                    &quot;fr&quot;: &quot;Élevée&quot;,
+                                    &quot;de&quot;: &quot;Hoch&quot;
+                                  }
+                                },
+                                &quot;2&quot;: {
+                                  &quot;label&quot;: {
+                                    &quot;default&quot;: &quot;Medium&quot;,
+                                    &quot;nl_NL&quot;: &quot;Midden&quot;,
+                                    &quot;fr&quot;: &quot;Moyenne&quot;,
+                                    &quot;de&quot;: &quot;Mittel&quot;
+                                  }
+                                }
+                              },
+                              &quot;otherwise&quot;: {
+                                &quot;label&quot;: {
+                                  &quot;default&quot;: &quot;Low&quot;,
+                                  &quot;nl_NL&quot;: &quot;Laag&quot;,
+                                  &quot;fr&quot;: &quot;Basse&quot;,
+                                  &quot;de&quot;: &quot;Niedrig&quot;
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    &quot;separator&quot;: {
+                      &quot;default&quot;: &quot;\n&quot;
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          &quot;variant&quot;: {
+            &quot;match&quot;: {
+              &quot;field&quot;: &quot;sirenum__AlertHighestSeverity__c&quot;,
+              &quot;equals&quot;: {
+                &quot;4&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                },
+                &quot;3&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                },
+                &quot;2&quot;: {
+                  &quot;literal&quot;: &quot;warning&quot;
+                }
+              },
+              &quot;otherwise&quot;: {
+                &quot;literal&quot;: &quot;success&quot;
+              }
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;job-order&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;custom:custom45&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__JobOrder__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;job-role&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;custom:custom57&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Team__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;site&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;checkin&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Site__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;location&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;location&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Location__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;rota&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;macros&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Rota__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;contact&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:contact&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Contact__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;scheduling-comments&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;note&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Scheduling_Comments__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;absolute-local-times&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Absolute_Local_Start_Date__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Absolute_Local_Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Site__r.sirenum__Timezone__c&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Site__r.sirenum__Timezone__c&quot;,
+                  &quot;operator&quot;: &quot;NotEquals&quot;,
+                  &quot;compare&quot;: {
+                    &quot;user&quot;: &quot;timezone&quot;
+                  }
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:business_hours&quot;
+          },
+          &quot;title&quot;: {
+            &quot;pattern&quot;: {
+              &quot;format&quot;: {
+                &quot;default&quot;: &quot;Local times in {0}&quot;
+              },
+              &quot;values&quot;: [
+                {
+                  &quot;field&quot;: &quot;sirenum__Site__r.sirenum__Timezone__c&quot;
+                }
+              ]
+            }
+          },
+          &quot;value&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Absolute_Local_Start_Date__c&quot;,
+                  &quot;operator&quot;: &quot;NotEquals&quot;,
+                  &quot;compare&quot;: {
+                    &quot;field&quot;: &quot;sirenum__Shift_Date__c&quot;
+                  }
+                },
+                &quot;value&quot;: {
+                  &quot;pattern&quot;: {
+                    &quot;format&quot;: {
+                      &quot;default&quot;: &quot;{0}, {1} - {2} ({3})&quot;
+                    },
+                    &quot;values&quot;: [
+                      {
+                        &quot;field&quot;: &quot;sirenum__Absolute_Local_Start_Date__c&quot;
+                      },
+                      {
+                        &quot;field&quot;: &quot;sirenum__Absolute_Local_Start_Time__c&quot;
+                      },
+                      {
+                        &quot;firstDefined&quot;: [
+                          {
+                            &quot;field&quot;: &quot;sirenum__Absolute_Local_End_Time__c&quot;
+                          },
+                          {
+                            &quot;literal&quot;: &quot;&quot;
+                          }
+                        ]
+                      },
+                      {
+                        &quot;field&quot;: &quot;sirenum__Site__r.sirenum__Timezone__c&quot;
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                &quot;value&quot;: {
+                  &quot;pattern&quot;: {
+                    &quot;format&quot;: {
+                      &quot;default&quot;: &quot;{0} - {1} ({2})&quot;
+                    },
+                    &quot;values&quot;: [
+                      {
+                        &quot;field&quot;: &quot;sirenum__Absolute_Local_Start_Time__c&quot;
+                      },
+                      {
+                        &quot;firstDefined&quot;: [
+                          {
+                            &quot;field&quot;: &quot;sirenum__Absolute_Local_End_Time__c&quot;
+                          },
+                          {
+                            &quot;literal&quot;: &quot;&quot;
+                          }
+                        ]
+                      },
+                      {
+                        &quot;field&quot;: &quot;sirenum__Site__r.sirenum__Timezone__c&quot;
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;actual-times&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:operating_hours&quot;
+          },
+          &quot;value&quot;: {
+            &quot;interval&quot;: {
+              &quot;startFieldPath&quot;: &quot;sirenum__Actual_Start_Time__c&quot;,
+              &quot;endFieldPath&quot;: &quot;sirenum__Actual_End_Time__c&quot;
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;is-auto-fulfil&quot;,
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;s5m__BH4SFAutoFulfil__c&quot;,
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;fulfillment_order&quot;
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Auto-fulfil&quot;,
+              &quot;nl_NL&quot;: &quot;Auto-fulfil&quot;,
+              &quot;fr&quot;: &quot;Auto-fulfil&quot;,
+              &quot;de&quot;: &quot;Auto-fulfil&quot;
+            }
+          }
+        },
+        {
+          &quot;name&quot;: &quot;job&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:job_profile&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;s5m__BH4SFJob__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;closing-report&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:job_position&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;s5m__BH4SFClosingReport__c&quot;
+          }
+        },
+         {
+          &quot;name&quot;: &quot;first-name-sensitive&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:person_account&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;Sensitive_Data_First_Name__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;last-name-sensitive&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:person_account&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;Sensitive_Data_Last_Name__c&quot;
+          }
+        }
+      ],
+      &quot;tileLayouts&quot;: [
+        {
+          &quot;selector&quot;: {
+            &quot;field&quot;: &quot;sirenum__Broadcasts__c&quot;,
+            &quot;operator&quot;: &quot;IsNull&quot;,
+            &quot;value&quot;: &quot;false&quot;
+          },
+          &quot;decorations&quot;: [
+            &quot;hours-coverage&quot;,
+            &quot;shifts-coverage&quot;,
+            &quot;pending-invites&quot;,
+            &quot;is-auto-fulfil&quot;,
+            &quot;is-cancelled&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;absolute-local-times&quot;,
+            &quot;first-name-sensitive&quot;,
+            &quot;last-name-sensitive&quot;,
+            &quot;contact&quot;,
+            &quot;job&quot;
+          ]
+        },
+        {
+          &quot;decorations&quot;: [
+            &quot;has-shift-demand&quot;,
+            &quot;acceptance&quot;,
+            &quot;is-not-published&quot;,
+            &quot;status&quot;,
+            &quot;alerts&quot;,
+            &quot;pending-invites&quot;,
+            &quot;is-cancelled&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;absolute-local-times&quot;,
+            &quot;first-name-sensitive&quot;,
+            &quot;last-name-sensitive&quot;,
+            &quot;contact&quot;,
+            &quot;job&quot;
+          ]
+        }
+      ],
+      &quot;actions&quot;: [
+      ]
+    },
+    {
+      &quot;objectType&quot;: &quot;sirenum__Employee_Request__c&quot;,
+      &quot;startFieldPath&quot;: &quot;sirenum__Start_Time__c&quot;,
+      &quot;endFieldPath&quot;: &quot;sirenum__End_Time__c&quot;,
+      &quot;selectionClause&quot;: &quot;unfiltered&quot;,
+      &quot;renderIndex&quot;: 6,
+      &quot;tuples&quot;: [
+        {
+          &quot;name&quot;: &quot;approve-request&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;Greater&quot;,
+                  &quot;compare&quot;: {
+                    &quot;device&quot;: &quot;datetime&quot;
+                  }
+                },
+                {
+                  &quot;editPermission&quot;: [
+                    &quot;sirenum__Approved__c&quot;,
+                    &quot;sirenum__Rejected__c&quot;
+                  ],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;success&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Approve&quot;,
+              &quot;nl_NL&quot;: &quot;Goedkeuren&quot;,
+              &quot;fr&quot;: &quot;Approuver&quot;,
+              &quot;de&quot;: &quot;Genehmigen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Approve the selected Employee Requests&quot;,
+              &quot;nl_NL&quot;: &quot;De geselecteerde verzoeken van werknemers goedkeuren&quot;,
+              &quot;fr&quot;: &quot;Approuver les demandes d&apos;employé sélectionnées&quot;,
+              &quot;de&quot;: &quot;Genehmigen der ausgewählten Mitarbeiteranfragen&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?sirenum__Approved__c=true&amp;sirenum__Rejected__c=false&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;reject-request&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Start_Time__c&quot;,
+                  &quot;operator&quot;: &quot;Greater&quot;,
+                  &quot;compare&quot;: {
+                    &quot;device&quot;: &quot;datetime&quot;
+                  }
+                },
+                {
+                  &quot;editPermission&quot;: [
+                    &quot;sirenum__Approved__c&quot;,
+                    &quot;sirenum__Rejected__c&quot;
+                  ],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;field&quot;: &quot;sirenum__Rejected__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;error&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Reject&quot;,
+              &quot;nl_NL&quot;: &quot;Afwijzen&quot;,
+              &quot;fr&quot;: &quot;Rejeter&quot;,
+              &quot;de&quot;: &quot;Ablehnen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Reject the selected Employee Requests&quot;,
+              &quot;nl_NL&quot;: &quot;De geselecteerde verzoeken van werknemers afwijzen&quot;,
+              &quot;fr&quot;: &quot;Refuser les demandes d&apos;employé sélectionnées&quot;,
+              &quot;de&quot;: &quot;Ablehnen der ausgewählten Mitarbeiteranfragen&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update?sirenum__Approved__c=false&amp;sirenum__Rejected__c=true&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;new-record&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;createPermission&quot;: [],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;selection&quot;: &quot;cellCount&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;1&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;custom:custom82&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;New Request&quot;,
+              &quot;nl_NL&quot;: &quot;Nieuw verzoek&quot;,
+              &quot;fr&quot;: &quot;Nouvelle demande&quot;,
+              &quot;de&quot;: &quot;Neue Anfrage&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Create a new Employee Request&quot;,
+              &quot;nl_NL&quot;: &quot;Een nieuw verzoek van werknemer maken&quot;,
+              &quot;fr&quot;: &quot;Créer une demande d&apos;employé&quot;,
+              &quot;de&quot;: &quot;Erstellen einer neuen Mitarbeiteranfrage&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:create/sirenum__Employee_Request__c/interactive?sirenum__Start_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;sirenum__End_Time__c=&apos;${Selection.date}T12:00:00Z&apos;&amp;${Selection.resourceLookup}=&apos;${Selection.resource}&apos;&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;delete&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;deletePermission&quot;: true,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;delete&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Delete&quot;,
+              &quot;nl_NL&quot;: &quot;Verwijderen&quot;,
+              &quot;fr&quot;: &quot;Supprimer&quot;,
+              &quot;de&quot;: &quot;Löschen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Delete the selected Requests&quot;,
+              &quot;nl_NL&quot;: &quot;Geselecteerde verzoeken verwijderen&quot;,
+              &quot;fr&quot;: &quot;Supprimer les demandes sélectionnées&quot;,
+              &quot;de&quot;: &quot;Löschen der ausgewählten Anfragen&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:delete&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;edit-record&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;editPermission&quot;: [],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;edit_form&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Edit&quot;,
+              &quot;nl_NL&quot;: &quot;Bewerken&quot;,
+              &quot;fr&quot;: &quot;Modifier&quot;,
+              &quot;de&quot;: &quot;Bearbeiten&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Quick edit the selected Request(s) together&quot;,
+              &quot;nl_NL&quot;: &quot;Geselecteerd verzoek bewerken&quot;,
+              &quot;fr&quot;: &quot;Modifier la demande sélectionnée&quot;,
+              &quot;de&quot;: &quot;Bearbeiten der ausgewählten Anfrage&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$action:update/interactive/Employee_Request&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;cut&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;clipboardPermission&quot;: &quot;cut&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;cut&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Cut&quot;,
+              &quot;nl_NL&quot;: &quot;Knippen&quot;,
+              &quot;fr&quot;: &quot;Couper&quot;,
+              &quot;de&quot;: &quot;Ausschneiden&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Allows the selected records to be moved to another date and/or resource&quot;,
+              &quot;nl_NL&quot;: &quot;Zorgt ervoor dat de geselecteerde records naar een andere datum en/of bron verplaatst kunnen worden&quot;,
+              &quot;fr&quot;: &quot;Permet de déplacer les enregistrements sélectionnés vers une autre date et/ou ressource&quot;,
+              &quot;de&quot;: &quot;Ermöglicht das Verschieben der ausgewählten Datensätze auf ein anderes Datum und/oder eine andere Ressource&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$clipboard:cut&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;copy&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                {
+                  &quot;clipboardPermission&quot;: &quot;copy&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;copy_to_clipboard&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Copy&quot;,
+              &quot;nl_NL&quot;: &quot;Kopiëren&quot;,
+              &quot;fr&quot;: &quot;Copier&quot;,
+              &quot;de&quot;: &quot;Kopieren&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Allows the selected records to be copied to another date and/or resource&quot;,
+              &quot;nl_NL&quot;: &quot;Zorgt ervoor dat de geselecteerde records naar een andere datum en/of bron gekopieerd kunnen worden&quot;,
+              &quot;fr&quot;: &quot;Permet de copier les enregistrements sélectionnés vers une autre date et/ou ressource&quot;,
+              &quot;de&quot;: &quot;Ermöglicht das Kopieren der ausgewählten Datensätze auf ein anderes Datum und/oder eine andere Ressource&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$clipboard:copy&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;paste&quot;,
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;clipboardPermission&quot;: &quot;paste&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;selection&quot;: &quot;cellCount&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;1&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;paste&quot;
+          },
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Paste&quot;,
+              &quot;nl_NL&quot;: &quot;Plakken&quot;,
+              &quot;fr&quot;: &quot;Coller&quot;,
+              &quot;de&quot;: &quot;Einfügen&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Moves or copies the selections to an alternative date and/or resource&quot;,
+              &quot;nl_NL&quot;: &quot;Verplaatst of kopieert de selecties naar een alternatieve datum en/of bron&quot;,
+              &quot;fr&quot;: &quot;Déplace et copie les sélections vers une autre date et/ou ressource&quot;,
+              &quot;de&quot;: &quot;Ermöglicht das Verschieben oder Kopieren der Auswahl auf ein anderes Datum und/oder Ressource&quot;
+            }
+          },
+          &quot;uri&quot;: {
+            &quot;literal&quot;: &quot;$clipboard:paste&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;approval&quot;,
+          &quot;icon&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;success&quot;
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Rejected__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                }
+              }
+            ]
+          },
+          &quot;title&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Approved&quot;,
+                    &quot;nl_NL&quot;: &quot;Goedgekeurd&quot;,
+                    &quot;fr&quot;: &quot;Approuvé&quot;,
+                    &quot;de&quot;: &quot;Genehmigt&quot;
+                  }
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Rejected__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Rejected&quot;,
+                    &quot;nl_NL&quot;: &quot;Afgewezen&quot;,
+                    &quot;fr&quot;: &quot;Rejets&quot;,
+                    &quot;de&quot;: &quot;Abgelehnt&quot;
+                  }
+                }
+              }
+            ]
+          },
+          &quot;variant&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Approved__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;success&quot;
+                }
+              },
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Rejected__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;error&quot;
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;availability&quot;,
+          &quot;icon&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Availability__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;literal&quot;: &quot;resource_absence&quot;
+                }
+              }
+            ]
+          },
+          &quot;title&quot;: {
+            &quot;firstMatch&quot;: [
+              {
+                &quot;selector&quot;: {
+                  &quot;field&quot;: &quot;sirenum__Availability__c&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;false&quot;
+                },
+                &quot;value&quot;: {
+                  &quot;label&quot;: {
+                    &quot;default&quot;: &quot;Unavailable&quot;,
+                    &quot;nl_NL&quot;: &quot;Niet beschikbaar&quot;,
+                    &quot;fr&quot;: &quot;Non disponible&quot;,
+                    &quot;de&quot;: &quot;Nicht verfügbar&quot;
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          &quot;name&quot;: &quot;contact&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;contact&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Contact__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;type&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;work_order_type&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Type__c&quot;
+          }
+        },
+        {
+          &quot;name&quot;: &quot;description&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;description&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Description__c&quot;
+          }
+        }
+      ],
+      &quot;tileLayouts&quot;: [
+        {
+          &quot;decorations&quot;: [
+            &quot;approval&quot;,
+            &quot;availability&quot;
+          ],
+          &quot;contents&quot;: [
+            &quot;contact&quot;,
+            &quot;type&quot;,
+            &quot;description&quot;
+          ]
+        }
+      ],
+      &quot;actions&quot;: [
+      ]
+    },
+    {
+      &quot;objectType&quot;: &quot;TR1__Closing_Report__c&quot;,
+      &quot;startFieldPath&quot;: &quot;TR1__Start_Date__c&quot;,
+      &quot;endFieldPath&quot;: &quot;TR1__End_Date__c&quot;,
+      &quot;tuples&quot;: [
+        {
+          &quot;name&quot;: &quot;find-work&quot;,
+          &quot;label&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Find Work&quot;,
+              &quot;nl_NL&quot;: &quot;Werk zoeken&quot;,
+              &quot;fr&quot;: &quot;Trouver du travail&quot;,
+              &quot;de&quot;: &quot;Arbeit finden&quot;
+            }
+          },
+          &quot;title&quot;: {
+            &quot;label&quot;: {
+              &quot;default&quot;: &quot;Find a (currently unfilled) Job for the worker that starts close to the selected date&quot;,
+              &quot;nl_NL&quot;: &quot;Find a (currently unfilled) Job for the worker that starts close to the selected date&quot;,
+              &quot;fr&quot;: &quot;Find a (currently unfilled) Job for the worker that starts close to the selected date&quot;,
+              &quot;de&quot;: &quot;Find a (currently unfilled) Job for the worker that starts close to the selected date&quot;
+            }
+          },
+          &quot;selector&quot;: {
+            &quot;every&quot;: {
+              &quot;operands&quot;: [
+                {
+                  &quot;field&quot;: &quot;Id&quot;,
+                  &quot;operator&quot;: &quot;IsNull&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                },
+                {
+                  &quot;selection&quot;: &quot;cellCount&quot;,
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;1&quot;
+                },
+                {
+                  &quot;createPermission&quot;: [],
+                  &quot;operator&quot;: &quot;Equals&quot;,
+                  &quot;value&quot;: &quot;true&quot;
+                }
+              ]
+            },
+            &quot;operator&quot;: &quot;Equals&quot;,
+            &quot;value&quot;: &quot;true&quot;
+          },
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;search&quot;
+          },
+          &quot;uri&quot;: {
+            &quot;pattern&quot;: {
+             &quot;format&quot;: {
+              &quot;default&quot;: &quot;$action:flow/s5m__BH4SFFindJob/large?selections=${selection.cells}&amp;recordId={0}&quot;
+             },
+             &quot;values&quot;: [
+              {
+                &quot;context&quot;: {
+                  &quot;record&quot;: &quot;id&quot;
+                }
+              }
+            ]
+            }
+          }
+        }
+      ],
+      &quot;tileLayouts&quot;: [{}],
+      &quot;actions&quot;: [
+      ]
+    },
+    {
+      &quot;objectType&quot;: &quot;sirenum__Special_Date__c&quot;,
+      &quot;selectionClause&quot;: &quot;unfiltered&quot;,
+      &quot;startFieldPath&quot;: &quot;sirenum__Date__c&quot;,
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;none&quot;
+      },
+      &quot;variant&quot;: {
+        &quot;literal&quot;: &quot;warning&quot;
+      },
+      &quot;tuples&quot;: [
+        {
+          &quot;name&quot;: &quot;category&quot;,
+          &quot;icon&quot;: {
+            &quot;literal&quot;: &quot;standard:category&quot;
+          },
+          &quot;value&quot;: {
+            &quot;field&quot;: &quot;sirenum__Category__c&quot;
+          }
+        }
+      ],
+      &quot;tileLayouts&quot;: [
+        {
+          &quot;contents&quot;: [
+            &quot;category&quot;
+          ]
+        }
+      ]
+    }
+  ],
+  &quot;views&quot;: [
+    {
+      &quot;type&quot;: &quot;Day&quot;,
+      &quot;name&quot;: &quot;Day&quot;,
+      &quot;label&quot;: {
+        &quot;default&quot;: &quot;Day&quot;,
+        &quot;nl_NL&quot;: &quot;Dag&quot;,
+        &quot;fr&quot;: &quot;Jour&quot;,
+        &quot;de&quot;: &quot;Tag&quot;
+      },
+      &quot;cellChunkSize&quot;: 6
+    },
+    {
+      &quot;type&quot;: &quot;Week&quot;,
+      &quot;name&quot;: &quot;Week&quot;,
+      &quot;label&quot;: {
+        &quot;default&quot;: &quot;Week&quot;,
+        &quot;nl_NL&quot;: &quot;Week&quot;,
+        &quot;fr&quot;: &quot;Semaine&quot;,
+        &quot;de&quot;: &quot;Woche&quot;
+      },
+      &quot;cellChunkSize&quot;: 6
+    },
+    {
+      &quot;type&quot;: &quot;Month&quot;,
+      &quot;name&quot;: &quot;Month&quot;,
+      &quot;label&quot;: {
+        &quot;default&quot;: &quot;Month&quot;,
+        &quot;nl_NL&quot;: &quot;Maand&quot;,
+        &quot;fr&quot;: &quot;Mois&quot;,
+        &quot;de&quot;: &quot;Monat&quot;
+      },
+      &quot;cellChunkSize&quot;: 6
+    },
+    {
+      &quot;type&quot;: &quot;Grid&quot;,
+      &quot;name&quot;: &quot;By Job&quot;,
+      &quot;label&quot;: {
+        &quot;nl_NL&quot;: &quot;By Job&quot;,
+        &quot;fr&quot;: &quot;By Job&quot;,
+        &quot;de&quot;: &quot;By Job&quot;
+      },
+      &quot;cellChunkSize&quot;: 6,
+      &quot;resource&quot;: {
+        &quot;objectType&quot;: &quot;TR1__Job__c&quot;,
+        &quot;relationships&quot;: [
+          {
+            &quot;schedulableObjectType&quot;: &quot;sirenum__Shift__c&quot;,
+            &quot;resourceLookupFieldPath&quot;: &quot;s5m__BH4SFJob__c&quot;
+          },
+          {
+            &quot;schedulableObjectType&quot;: &quot;TR1__Closing_Report__c&quot;,
+            &quot;hidden&quot;: true
+          }
+        ],
+        &quot;tuples&quot;: [
+          {
+            &quot;name&quot;: &quot;is-cancelled&quot;,
+            &quot;selector&quot;: {
+              &quot;field&quot;: &quot;s5m__Cancelled__c&quot;,
+              &quot;operator&quot;: &quot;Equals&quot;,
+              &quot;value&quot;: &quot;true&quot;
+            },
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;ban&quot;
+            },
+            &quot;title&quot;: {
+              &quot;field&quot;: &quot;TR1__Closed_Reason__c&quot;
+            },
+            &quot;variant&quot;: {
+              &quot;literal&quot;: &quot;error&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;has-error&quot;,
+            &quot;selector&quot;: {
+              &quot;field&quot;: &quot;s5m__GenerationLastError__c&quot;,
+              &quot;operator&quot;: &quot;IsNull&quot;,
+              &quot;value&quot;: &quot;false&quot;
+            },
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;error&quot;
+            },
+            &quot;title&quot;: {
+              &quot;field&quot;: &quot;s5m__GenerationLastError__c&quot;
+            },
+            &quot;variant&quot;: {
+              &quot;literal&quot;: &quot;error&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;is-auto-fulfil&quot;,
+            &quot;selector&quot;: {
+              &quot;field&quot;: &quot;s5m__AutoFulfil__c&quot;,
+              &quot;operator&quot;: &quot;Equals&quot;,
+              &quot;value&quot;: &quot;true&quot;
+            },
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;fulfillment_order&quot;
+            },
+            &quot;title&quot;: {
+              &quot;label&quot;: {
+                &quot;default&quot;: &quot;Auto-fulfil&quot;,
+                &quot;nl_NL&quot;: &quot;Auto-fulfil&quot;,
+                &quot;fr&quot;: &quot;Auto-fulfil&quot;,
+                &quot;de&quot;: &quot;Auto-fulfil&quot;
+              }
+            }
+          },
+          {
+            &quot;name&quot;: &quot;number-of-openings&quot;,
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;TR1__Number_of_Openings__c&quot;
+            },
+            &quot;title&quot;: {
+              &quot;label&quot;: {
+                &quot;default&quot;: &quot;Openings&quot;,
+                &quot;nl_NL&quot;: &quot;Openings&quot;,
+                &quot;fr&quot;: &quot;Openings&quot;,
+                &quot;de&quot;: &quot;Openings&quot;
+              }
+            }
+          },
+          {
+            &quot;name&quot;: &quot;account&quot;,
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;standard:account&quot;
+            },
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;TR1__Account__c&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;job-type&quot;,
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;work_order_type&quot;
+            },
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;s5m__JobType__c&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;status&quot;,
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;tracker&quot;
+            },
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;TR1__Status__c&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;work-schedule&quot;,
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;standard:timeslot&quot;
+            },
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;s5m__WorkSchedule__c&quot;
+            }
+          }
+        ],
+        &quot;tileLayouts&quot;: [
+          {
+            &quot;decorations&quot;: [
+              &quot;number-of-openings&quot;,
+              &quot;is-auto-fulfil&quot;,
+              &quot;is-cancelled&quot;,
+              &quot;has-error&quot;
+            ],
+            &quot;contents&quot;: [
+              &quot;account&quot;,
+              &quot;job-type&quot;,
+              &quot;status&quot;,
+              &quot;work-schedule&quot;
+            ]
+          }
+        ],
+        &quot;chunkSize&quot;: 10
+      }
+    },
+    {
+      &quot;type&quot;: &quot;Grid&quot;,
+      &quot;name&quot;: &quot;By Site&quot;,
+      &quot;label&quot;: {
+        &quot;default&quot;: &quot;By Site&quot;,
+        &quot;nl_NL&quot;: &quot;Op plaats&quot;,
+        &quot;fr&quot;: &quot;Par site&quot;,
+        &quot;de&quot;: &quot;Von Standort&quot;
+      },
+      &quot;cellChunkSize&quot;: 6,
+      &quot;resource&quot;: {
+        &quot;objectType&quot;: &quot;sirenum__Site__c&quot;,
+        &quot;filterSelectionClause&quot;: &quot;$Filter.Sites&quot;,
+        &quot;relationships&quot;: [
+          {
+            &quot;schedulableObjectType&quot;: &quot;sirenum__Shift__c&quot;,
+            &quot;resourceLookupFieldPath&quot;: &quot;sirenum__Site__c&quot;
+          },
+          {
+            &quot;schedulableObjectType&quot;: &quot;sirenum__Employee_Request__c&quot;,
+            &quot;hidden&quot;: true
+          },
+          {
+            &quot;schedulableObjectType&quot;: &quot;TR1__Closing_Report__c&quot;,
+            &quot;hidden&quot;: true
+          }
+        ],
+        &quot;tuples&quot;: [
+          {
+            &quot;name&quot;: &quot;is-inactive&quot;,
+            &quot;selector&quot;: {
+              &quot;field&quot;: &quot;sirenum__Inactive__c&quot;,
+              &quot;operator&quot;: &quot;Equals&quot;,
+              &quot;value&quot;: &quot;true&quot;
+            },
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;routing_offline&quot;
+            },
+            &quot;title&quot;: {
+              &quot;label&quot;: {
+                &quot;default&quot;: &quot;Inactive&quot;,
+                &quot;nl_NL&quot;: &quot;Inactief&quot;,
+                &quot;fr&quot;: &quot;Inactif&quot;,
+                &quot;de&quot;: &quot;Inaktiv&quot;
+              }
+            },
+            &quot;variant&quot;: {
+              &quot;literal&quot;: &quot;warning&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;manager&quot;,
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;standard:person_account&quot;
+            },
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;sirenum__Manager__c&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;street-address&quot;,
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;sirenum__Street_Address__c&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;city&quot;,
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;sirenum__City__c&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;county&quot;,
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;sirenum__County__c&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;country&quot;,
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;sirenum__Country__c&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;postal-code&quot;,
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;sirenum__Postal_Code__c&quot;
+            }
+          },
+          {
+            &quot;name&quot;: &quot;comments&quot;,
+            &quot;icon&quot;: {
+              &quot;literal&quot;: &quot;comments&quot;
+            },
+            &quot;value&quot;: {
+              &quot;field&quot;: &quot;sirenum__Comments__c&quot;
+            }
+          }
+        ],
+        &quot;tileLayouts&quot;: [
+          {
+            &quot;decorations&quot;: [
+              &quot;is-inactive&quot;
+            ],
+            &quot;contents&quot;: [
+              &quot;manager&quot;,
+              &quot;street-address&quot;,
+              &quot;city&quot;,
+              &quot;county&quot;,
+              &quot;country&quot;,
+              &quot;postal-code&quot;,
+              &quot;comments&quot;
+            ]
+          }
+        ],
+        &quot;chunkSize&quot;: 10
+      }
+    }
+  ]
+}</value>
+    </values>
+    <values>
+        <field>sirenum__Schema__c</field>
+        <value xsi:type="xsd:string">https://sirenum.com/schema/2022/04/schedule-definition.json</value>
+    </values>
+</CustomMetadata>

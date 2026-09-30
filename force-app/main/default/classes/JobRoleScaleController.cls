@@ -8,16 +8,25 @@ public with sharing class JobRoleScaleController {
         @AuraEnabled public String accountName;
     }
 
+    public class JobRoleSearchPage {
+        @AuraEnabled public List<JobRoleSearchResult> records;
+        @AuraEnabled public Boolean hasNextPage;
+    }
+
     // Searches Job Roles whose Contract belongs to the Rate Agreement; needs at least one filter.
     @AuraEnabled
-    public static List<JobRoleSearchResult> searchJobRoles(
-        Id rateAgreementId, String searchText, Id jobTypeId, Id accountId
+    public static JobRoleSearchPage searchJobRoles(
+        Id rateAgreementId, String searchText, Id jobTypeId, Id accountId, Integer pageNumber
     ) {
-        if (rateAgreementId == null) return new List<JobRoleSearchResult>();
+        JobRoleSearchPage page = new JobRoleSearchPage();
+        page.records = new List<JobRoleSearchResult>();
+        page.hasNextPage = false;
+
+        if (rateAgreementId == null) return page;
 
         Boolean hasAnyFilter = !String.isBlank(searchText) || jobTypeId != null || accountId != null;
         if (!hasAnyFilter) {
-            return new List<JobRoleSearchResult>();
+            return page;
         }
 
         Map<Id, sirenum__ProActiveContract__c> eligibleContracts = new Map<Id, sirenum__ProActiveContract__c>([
@@ -27,7 +36,7 @@ public with sharing class JobRoleScaleController {
         ]);
 
         if (eligibleContracts.isEmpty()) {
-            return new List<JobRoleSearchResult>();
+            return page;
         }
 
         Set<Id> eligibleContractIds = eligibleContracts.keySet();
@@ -41,7 +50,7 @@ public with sharing class JobRoleScaleController {
             }
             eligibleContractIds = narrowed;
             if (eligibleContractIds.isEmpty()) {
-                return new List<JobRoleSearchResult>();
+                return page;
             }
         }
 
@@ -52,12 +61,21 @@ public with sharing class JobRoleScaleController {
         if (term != null) filters.add('Name LIKE :term');
         if (jobTypeId != null) filters.add('sirenum__Job_Type__c = :jobTypeId');
 
+        Integer safePage = pageNumber == null || pageNumber < 1 ? 1 : pageNumber;
+        Integer pageSize = 50;
+        Integer recordOffset = (safePage - 1) * pageSize;
+        Integer queryLimit = pageSize + 1;
+
         String query = 'SELECT Id, Name, sirenum__Account__c, sirenum__Job_Type__r.Name ' +
             'FROM sirenum__Team__c WHERE ' + String.join(filters, ' AND ') +
-            ' ORDER BY Name LIMIT 50';
+            ' ORDER BY Name LIMIT :queryLimit OFFSET :recordOffset';
 
-        List<JobRoleSearchResult> results = new List<JobRoleSearchResult>();
-        for (sirenum__Team__c jr : (List<sirenum__Team__c>) Database.query(query)) {
+        List<sirenum__Team__c> rows = (List<sirenum__Team__c>) Database.query(query);
+
+        page.hasNextPage = rows.size() > pageSize;
+        if (page.hasNextPage) rows.remove(rows.size() - 1);
+
+        for (sirenum__Team__c jr : rows) {
             sirenum__ProActiveContract__c contract = eligibleContracts.get(jr.sirenum__Account__c);
 
             JobRoleSearchResult r = new JobRoleSearchResult();
@@ -66,9 +84,9 @@ public with sharing class JobRoleScaleController {
             r.jobTypeName = jr.sirenum__Job_Type__r?.Name;
             r.contractName = contract?.Name;
             r.accountName = contract?.sirenum__Client__r?.Name;
-            results.add(r);
+            page.records.add(r);
         }
-        return results;
+        return page;
     }
 
     // Returns the Job Roles assigned to a Scale Definition, with their Contract and Account.

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Prospero Menu Tab</label>
+    <protected>false</protected>
+    <values>
+        <field>sirenum__Configuration__c</field>
+        <value xsi:type="xsd:string">{
+  &quot;realTimeActions&quot;: [
+    {
+      &quot;name&quot;: &quot;profile&quot;,
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;user&quot;
+      },
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Profile&quot;,
+          &quot;de&quot;: &quot;Profil&quot;,
+          &quot;es&quot;: &quot;Perfil&quot;,
+          &quot;nl&quot;: &quot;Profiel&quot;,
+          &quot;fr&quot;: &quot;Profil&quot;,
+          &quot;it&quot;: &quot;Profilo&quot;
+        }
+      },
+      &quot;uri&quot;: {
+        &quot;pattern&quot;: {
+          &quot;format&quot;: {
+            &quot;default&quot;: &quot;$page:embedded/profile?id={0}&quot;
+          },
+          &quot;values&quot;: [
+            {
+              &quot;user&quot;: &quot;contactId&quot;
+            }
+          ]
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;call-us&quot;,
+      &quot;selector&quot;: {
+        &quot;connection&quot;: &quot;phone&quot;,
+        &quot;operator&quot;: &quot;IsNull&quot;,
+        &quot;value&quot;: &quot;false&quot;
+      },
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;call&quot;
+      },
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Call Us&quot;,
+          &quot;de&quot;: &quot;Rufen Sie uns an&quot;,
+          &quot;es&quot;: &quot;Llámanos&quot;,
+          &quot;nl&quot;: &quot;Bel ons&quot;,
+          &quot;fr&quot;: &quot;Téléphonez-nous&quot;,
+          &quot;it&quot;: &quot;Chiamaci&quot;
+        }
+      },
+      &quot;uri&quot;: {
+        &quot;pattern&quot;: {
+          &quot;format&quot;: {
+            &quot;default&quot;: &quot;tel:+{0}&quot;
+          },
+          &quot;values&quot;: [
+            {
+              &quot;connection&quot;: &quot;phone&quot;
+            }
+          ]
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;email-us&quot;,
+      &quot;selector&quot;: {
+        &quot;connection&quot;: &quot;email&quot;,
+        &quot;operator&quot;: &quot;IsNull&quot;,
+        &quot;value&quot;: &quot;false&quot;
+      },
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;email&quot;
+      },
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;Email Us&quot;,
+          &quot;de&quot;: &quot;Senden Sie uns eine E-Mail&quot;,
+          &quot;es&quot;: &quot;Envíanos un Correo Electrónico&quot;,
+          &quot;nl&quot;: &quot;E-mail ons&quot;,
+          &quot;fr&quot;: &quot;Contactez-nous par e-mail&quot;,
+          &quot;it&quot;: &quot;Mandaci una E-mail&quot;
+        }
+      },
+      &quot;uri&quot;: {
+        &quot;pattern&quot;: {
+          &quot;format&quot;: {
+            &quot;default&quot;: &quot;mailto:{0}&quot;
+          },
+          &quot;values&quot;: [
+            {
+              &quot;connection&quot;: &quot;email&quot;
+            }
+          ]
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;faq&quot;,
+      &quot;icon&quot;: {
+        &quot;literal&quot;: &quot;info&quot;
+      },
+      &quot;label&quot;: {
+        &quot;label&quot;: {
+          &quot;default&quot;: &quot;FAQ&quot;
+        }
+      },
+      &quot;uri&quot;: {
+        &quot;literal&quot;: &quot;$page:embedded/faq&quot;
+      }
+    }
+  ]
+}</value>
+    </values>
+    <values>
+        <field>sirenum__Schema__c</field>
+        <value xsi:type="xsd:string">https://sirenum.com/schema/2020/10/mobile-definition.json</value>
+    </values>
+</CustomMetadata>

@@ -84,21 +84,13 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>User_Deactivation_Time__c</field>
-            <operator>IsNull</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>User_Created__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>false</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         AND(
+             NOT(ISBLANK({!$Record.User_Deactivation_Time__c})),
+             NOT({!$Record.User_Created__c})
+         )
+)</filterFormula>
         <object>Contact</object>
         <recordTriggerType>Update</recordTriggerType>
         <scheduledPaths>

@@ -43,6 +43,7 @@
         <connector>
             <targetReference>Update_Contact_with_Term_Break</targetReference>
         </connector>
+        <filterFormula>NOT({!$Permission.Bypass_System_Automation})</filterFormula>
         <object>Term_Break__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

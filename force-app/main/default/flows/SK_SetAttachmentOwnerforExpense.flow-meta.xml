@@ -112,21 +112,13 @@
             <targetReference>GetRelatedAttachments</targetReference>
         </connector>
         <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
-        <filterLogic>or</filterLogic>
-        <filters>
-            <field>sirenum__Approved__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <filters>
-            <field>sirenum__Approved_for_Payment__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         OR(
+             {!$Record.sirenum__Approved__c},
+             {!$Record.sirenum__Approved_for_Payment__c}
+         )
+)</filterFormula>
         <object>sirenum__Expense__c</object>
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

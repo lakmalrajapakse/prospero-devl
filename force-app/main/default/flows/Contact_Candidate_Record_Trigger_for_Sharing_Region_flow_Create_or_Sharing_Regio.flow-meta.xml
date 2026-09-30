@@ -71,9 +71,14 @@
         <connector>
             <targetReference>Is_Owner_not_Modified</targetReference>
         </connector>
-        <filterFormula>OR(
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+OR(
     AND ( ISNEW(),NOT(ISBLANK({!$Record.Sharing_Regions__c}))),
     ISCHANGED({!$Record.Sharing_Regions__c})
+)
+         )
 )</filterFormula>
         <object>Contact</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>

@@ -4,7 +4,7 @@
 @description: Class to create and delete the sharing for Sensitive Data records
 @ref: https://1218globaluk.eu.teamwork.com/app/tasks/36112755
 */
-trigger UserTriggerCustom on User (After Update) {
+trigger UserTriggerCustom on User (After Update, before update) {
     Set<Id> changedUsers = new Set<Id>();
     Boolean bypassAutomation = FeatureManagement.checkPermission('Bypass_System_Automation');
     if(Trigger.isAfter && !bypassAutomation){
@@ -16,9 +16,15 @@ trigger UserTriggerCustom on User (After Update) {
             }
         }
     }
-
+    
+    if (Trigger.isBefore) {
+        if (Trigger.isUpdate) {
+            EvertimeSyncUtility.process(Trigger.new,Trigger.oldMap);
+        }
+    }
+    
     if(!changedUsers.isEmpty()){
         Database.ExecuteBatch(new UpdateSensitiveDataSharingBatch(changedUsers));
     }
-
+    
 }

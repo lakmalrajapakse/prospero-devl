@@ -219,13 +219,18 @@
         <connector>
             <targetReference>Assign_Role_Values</targetReference>
         </connector>
-        <filterFormula>ISNEW() ||
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+ISNEW() ||
 ISCHANGED({!$Record.Teaching_Role__c}) ||
 ISCHANGED({!$Record.Health_Social_Care_Role__c}) ||
 ISCHANGED({!$Record.Integrated_Role__c}) ||
 ISCHANGED({!$Record.Teaching_Department__c}) ||
 ISCHANGED({!$Record.Health_Social_Care_Department__c}) ||
-ISCHANGED({!$Record.Integrated_Department__c})</filterFormula>
+ISCHANGED({!$Record.Integrated_Department__c})
+         )
+)</filterFormula>
         <object>Contact</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>

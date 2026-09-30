@@ -50,7 +50,12 @@
         <connector>
             <targetReference>Assign_Invoice_Account</targetReference>
         </connector>
-        <filterFormula>AND(OR(ISNEW(), ISCHANGED({!$Record.s5m__Contract__c})) ,NOT(ISBLANK({!$Record.s5m__Contract__c})))</filterFormula>
+        <filterFormula>AND(
+         NOT({!$Permission.Bypass_System_Automation}),
+         (
+AND(OR(ISNEW(), ISCHANGED({!$Record.s5m__Contract__c})) ,NOT(ISBLANK({!$Record.s5m__Contract__c})))
+         )
+)</filterFormula>
         <object>TR1__Job__c</object>
         <recordTriggerType>CreateAndUpdate</recordTriggerType>
         <triggerType>RecordBeforeSave</triggerType>
