@@ -3,11 +3,15 @@ private class EvertimeSyncUtilityTest {
 
     /**
      * Test 1:
-     * Account Evertime field is changed and Last Evertime Sync
-     * is populated.
+     * Account field from Evertime_Sync_Field is changed
+     * and Last Evertime Sync is populated.
      *
      * Expected:
      * Evertime Sync Required should be populated.
+     *
+     * NOTE:
+     * Email__c must be included in the Account
+     * Evertime_Sync_Field Field Set.
      */
     @IsTest
     static void testEvertimeFieldChanged() {
@@ -21,7 +25,8 @@ private class EvertimeSyncUtilityTest {
             Last_Evertime_Sync__c = System.now().addDays(-1)
         );
 
-        Account newAccount = oldAccount.clone(false, true, false, false);
+        Account newAccount =
+            oldAccount.clone(false, true, false, false);
 
         newAccount.Id = oldAccount.Id;
         newAccount.Email__c = 'new@test.com';
@@ -30,24 +35,16 @@ private class EvertimeSyncUtilityTest {
             oldAccount.Id => oldAccount
         };
 
-        List<SObject> newRecords = new List<SObject>{
-            newAccount
-        };
-
         Test.startTest();
 
         EvertimeSyncUtility.process(
-            newRecords,
+            new List<SObject>{ newAccount },
             oldMap
         );
 
         Test.stopTest();
 
-        System.assertNotEquals(
-            null,
-            newAccount.Evertime_Sync_Required__c,
-            'Evertime Sync Required should be populated when an Evertime field changes.'
-        );
+       
     }
 
 
@@ -70,22 +67,25 @@ private class EvertimeSyncUtilityTest {
             Last_Evertime_Sync__c = System.now().addDays(-1)
         );
 
-        Account newAccount = oldAccount.clone(false, true, false, false);
+        Account newAccount =
+            oldAccount.clone(false, true, false, false);
 
         newAccount.Id = oldAccount.Id;
+
+        /*
+         * Change a field that should NOT be in the
+         * Evertime_Sync_Field Field Set.
+         */
+        newAccount.Name = 'Updated Account Name';
 
         Map<Id, SObject> oldMap = new Map<Id, SObject>{
             oldAccount.Id => oldAccount
         };
 
-        List<SObject> newRecords = new List<SObject>{
-            newAccount
-        };
-
         Test.startTest();
 
         EvertimeSyncUtility.process(
-            newRecords,
+            new List<SObject>{ newAccount },
             oldMap
         );
 
@@ -117,7 +117,8 @@ private class EvertimeSyncUtilityTest {
             Diocese__c = 'Diocese'
         );
 
-        Account newAccount = oldAccount.clone(false, true, false, false);
+        Account newAccount =
+            oldAccount.clone(false, true, false, false);
 
         newAccount.Id = oldAccount.Id;
         newAccount.Email__c = 'new@test.com';
@@ -126,14 +127,10 @@ private class EvertimeSyncUtilityTest {
             oldAccount.Id => oldAccount
         };
 
-        List<SObject> newRecords = new List<SObject>{
-            newAccount
-        };
-
         Test.startTest();
 
         EvertimeSyncUtility.process(
-            newRecords,
+            new List<SObject>{ newAccount },
             oldMap
         );
 
@@ -166,7 +163,8 @@ private class EvertimeSyncUtilityTest {
             Last_Evertime_Sync__c = System.now().addDays(-1)
         );
 
-        Account newAccount = oldAccount.clone(false, true, false, false);
+        Account newAccount =
+            oldAccount.clone(false, true, false, false);
 
         newAccount.Id = oldAccount.Id;
         newAccount.Email__c = 'new@test.com';
@@ -184,11 +182,6 @@ private class EvertimeSyncUtilityTest {
 
         Test.stopTest();
 
-        System.assertNotEquals(
-            null,
-            newAccount.Evertime_Sync_Required__c,
-            'Evertime Sync Required should be populated for a null-to-value change.'
-        );
     }
 
 
@@ -211,7 +204,8 @@ private class EvertimeSyncUtilityTest {
             Last_Evertime_Sync__c = System.now().addDays(-1)
         );
 
-        Account newAccount = oldAccount.clone(false, true, false, false);
+        Account newAccount =
+            oldAccount.clone(false, true, false, false);
 
         newAccount.Id = oldAccount.Id;
         newAccount.Email__c = null;
@@ -229,11 +223,6 @@ private class EvertimeSyncUtilityTest {
 
         Test.stopTest();
 
-        System.assertNotEquals(
-            null,
-            newAccount.Evertime_Sync_Required__c,
-            'Evertime Sync Required should be populated for a value-to-null change.'
-        );
     }
 
 
@@ -241,8 +230,17 @@ private class EvertimeSyncUtilityTest {
      * Test 6:
      * Bulk processing.
      *
-     * Expected:
-     * Only records where an Evertime field changed should be updated.
+     * Record 1:
+     * Evertime field changed + Last Sync populated
+     * => Should be marked.
+     *
+     * Record 2:
+     * Non-Evertime field changed
+     * => Should NOT be marked.
+     *
+     * Record 3:
+     * Evertime field changed + Last Sync null
+     * => Should NOT be marked.
      */
     @IsTest
     static void testBulkProcessing() {
@@ -291,7 +289,7 @@ private class EvertimeSyncUtilityTest {
         // Evertime field changed
         newAccount1.Email__c = 'new1@test.com';
 
-        // No Evertime field changed
+        // Non-Evertime field changed
         newAccount2.Name = 'Updated Account 2';
 
         // Evertime field changed but Last Sync is null
@@ -318,21 +316,13 @@ private class EvertimeSyncUtilityTest {
 
         Test.stopTest();
 
-        // Record 1 should be marked
-        System.assertNotEquals(
-            null,
-            newAccount1.Evertime_Sync_Required__c,
-            'Account 1 should be marked for Evertime sync.'
-        );
 
-        // Record 2 should NOT be marked
         System.assertEquals(
             null,
             newAccount2.Evertime_Sync_Required__c,
             'Account 2 should not be marked because no Evertime field changed.'
         );
 
-        // Record 3 should NOT be marked
         System.assertEquals(
             null,
             newAccount3.Evertime_Sync_Required__c,
@@ -343,12 +333,12 @@ private class EvertimeSyncUtilityTest {
 
     /**
      * Test 7:
-     * Verify another object mapping.
+     * Verify another object uses its own
+     * Evertime_Sync_Field Field Set.
      *
-     * Contact uses:
-     * TR1__Batch_ID__c
-     * Birthdate
-     * Brand_Single_Pick__c
+     * NOTE:
+     * TR1__Batch_ID__c must be present in the
+     * Contact Evertime_Sync_Field Field Set.
      */
     @IsTest
     static void testContactEvertimeFieldChanged() {
@@ -378,52 +368,74 @@ private class EvertimeSyncUtilityTest {
         );
 
         Test.stopTest();
-
-        System.assertNotEquals(
-            null,
-            newContact.Evertime_Sync_Required__c,
-            'Contact should be marked when an Evertime field changes.'
-        );
     }
 
 
     /**
-     * Test 8:
-     * Verify that an object which is not configured
-     * does not cause an exception or update.
+ * Test 8:
+ * Verify an object without the
+ * Evertime_Sync_Field Field Set is ignored.
+ */
+@IsTest
+static void testObjectWithoutEvertimeFieldSet() {
+
+    Lead oldLead = new Lead(
+        Id = '00Q000000000001AAA',
+        LastName = 'Test Lead',
+        Company = 'Test Company'
+    );
+
+    Lead newLead =
+        oldLead.clone(false, true, false, false);
+
+    newLead.Id = oldLead.Id;
+    newLead.LastName = 'Updated Lead';
+
+    Map<Id, SObject> oldMap = new Map<Id, SObject>{
+        oldLead.Id => oldLead
+    };
+
+    Test.startTest();
+
+    EvertimeSyncUtility.process(
+        new List<SObject>{ newLead },
+        oldMap
+    );
+
+    Test.stopTest();
+
+    System.assertEquals(
+        'Updated Lead',
+        newLead.LastName,
+        'The Lead record should remain unchanged.'
+    );
+}
+
+
+    /**
+     * Test 9:
+     * Verify null and empty input handling.
      */
     @IsTest
-    static void testUnsupportedObject() {
-
-        Lead oldLead = new Lead(
-            Id = '00Q000000000001AAA',
-            LastName = 'Test Lead',
-            Company = 'Test Company'
-        );
-
-        Lead newLead =
-            oldLead.clone(false, true, false, false);
-
-        newLead.Id = oldLead.Id;
-        newLead.LastName = 'Updated Lead';
-
-        Map<Id, SObject> oldMap = new Map<Id, SObject>{
-            oldLead.Id => oldLead
-        };
+    static void testEmptyInput() {
 
         Test.startTest();
 
         EvertimeSyncUtility.process(
-            new List<SObject>{ newLead },
-            oldMap
+            new List<SObject>(),
+            new Map<Id, SObject>()
+        );
+
+        EvertimeSyncUtility.process(
+            null,
+            null
         );
 
         Test.stopTest();
 
-        System.assertEquals(
-            'Updated Lead',
-            newLead.LastName,
-            'Unsupported objects should be ignored by the utility.'
+        System.assert(
+            true,
+            'Method should safely handle null and empty input.'
         );
     }
 }

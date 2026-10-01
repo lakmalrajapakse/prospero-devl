@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TSO_Job_Stage__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+SUBSTITUTE( SUBSTITUTE( TR1__Most_Advanced_Stage__c , &quot;ATSv2_&quot; , &quot;&quot; ) , &quot;TR1__&quot; , &quot;&quot; ) ,
+&quot;&quot; , &quot;No Candidates&quot; ,
+&quot;Application&quot; , &quot;Application&quot; ,
+&quot;Submittal&quot; , &quot;Submittal&quot; ,
+&quot;SendOut&quot;, &quot;Client Interview&quot;,
+&quot;Offer&quot;, &quot;Offer&quot;,
+&quot;ClosingReport&quot;, &quot;Placement&quot;,
+&quot;InternalInterview&quot;, &quot;Internal Interview&quot;,
+SUBSTITUTE( SUBSTITUTE( TR1__Most_Advanced_Stage__c , &quot;ATSv2_&quot; , &quot;&quot; ) , &quot;TR1__&quot; , &quot;&quot; )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Job Stage</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

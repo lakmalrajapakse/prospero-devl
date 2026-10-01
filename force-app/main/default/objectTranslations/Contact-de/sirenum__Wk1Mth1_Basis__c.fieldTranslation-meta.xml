@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Geben Sie „0“ ein, wenn für den Arbeitnehmer kein Woche1/Monat1-Steuerschlüssel gilt, und geben Sie „1“ ein, wenn für den Arbeitnehmer ein Woche1/Monat1-Steuerschlüssel gilt.</help>
+    <label><!-- Week1/Month1 Basis --></label>
+    <name>sirenum__Wk1Mth1_Basis__c</name>
+</CustomFieldTranslation>

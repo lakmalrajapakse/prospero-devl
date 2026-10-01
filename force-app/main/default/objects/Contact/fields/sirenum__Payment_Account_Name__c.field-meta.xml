@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Payment_Account_Name__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Name of Account Holder. TODO: I should set up a validation rule to take the payment account name for  LIMITED COMPANY PAYEES from the payment company</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Name of Account Holder. BACS Standard allows up to 18 Characters</inlineHelpText>
+    <label>BACS Bank Account Name</label>
+    <length>150</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

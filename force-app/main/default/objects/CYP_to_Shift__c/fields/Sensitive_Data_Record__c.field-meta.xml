@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sensitive_Data_Record__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Sensitive Data Record</label>
+    <referenceTo>Sensitive_Data__c</referenceTo>
+    <relationshipLabel>CYP to Shifts</relationshipLabel>
+    <relationshipName>CYP_to_Shifts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

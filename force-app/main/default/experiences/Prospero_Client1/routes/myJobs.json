@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "54d7aaa2-e099-4dd5-b0fe-b8559440b862",
+  "appPageId" : "8c871e13-6d08-4440-b759-c322ea3acaef",
+  "configurationTags" : [ ],
+  "devName" : "MyJobs__c",
+  "id" : "96fb97f4-9804-4bcd-83a6-811005cbdf19",
+  "label" : "My Jobs",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-my-jobs",
+  "type" : "route",
+  "urlPrefix" : "my-jobs"
+}

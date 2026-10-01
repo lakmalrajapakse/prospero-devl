@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Timezone__c</fullName>
+    <deprecated>false</deprecated>
+    <description>The time zone SID identifying the time zone for this Contact. This should match one of the picklist API names from the standard User object’s TimeZoneSidKey field. If unspecified the org&apos;s time zone is used. If unrecognized, UTC is used instead.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The time zone SID identifying the time zone for this Contact. This should match one of the picklist API names from the standard User object’s TimeZoneSidKey field. If unspecified the org&apos;s time zone is used. If unrecognized, UTC is used instead.</inlineHelpText>
+    <label>Timezone</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

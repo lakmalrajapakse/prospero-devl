@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Student Loan --></label>
+    <name>Student_Loan__c</name>
+    <picklistValues>
+        <masterLabel>Plan 1</masterLabel>
+        <translation><!-- Plan 1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plan 2</masterLabel>
+        <translation><!-- Plan 2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Plan 4</masterLabel>
+        <translation><!-- Plan 4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Postgraduate Loan</masterLabel>
+        <translation><!-- Postgraduate Loan --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

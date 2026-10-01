@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SEN Skills, Quals and Training --></label>
+    <name>TR1__SEN_Additional_Experience__c</name>
+    <picklistValues>
+        <masterLabel>ADHD Awareness</masterLabel>
+        <translation><!-- ADHD Awareness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Art Therapy</masterLabel>
+        <translation><!-- Art Therapy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autism Awareness</masterLabel>
+        <translation><!-- Autism Awareness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BSL Level 1-3</masterLabel>
+        <translation><!-- BSL Level 1-3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Behaviour Mentor and Tuition training</masterLabel>
+        <translation><!-- Behaviour Mentor and Tuition training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bullying Support Training</masterLabel>
+        <translation><!-- Bullying Support Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disability Sports Coaching Award</masterLabel>
+        <translation><!-- Disability Sports Coaching Award --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drug awareness training</masterLabel>
+        <translation><!-- Drug awareness training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dyslexia Support Training</masterLabel>
+        <translation><!-- Dyslexia Support Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAL specialist</masterLabel>
+        <translation><!-- EAL specialist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eating Disorder Awareness</masterLabel>
+        <translation><!-- Eating Disorder Awareness --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency First Aid</masterLabel>
+        <translation><!-- Emergency First Aid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Epilepsy Training</masterLabel>
+        <translation><!-- Epilepsy Training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jolly Phonics</masterLabel>
+        <translation><!-- Jolly Phonics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Makaton</masterLabel>
+        <translation><!-- Makaton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mappa</masterLabel>
+        <translation><!-- Mappa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moving and Handling</masterLabel>
+        <translation><!-- Moving and Handling --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Music Therapy</masterLabel>
+        <translation><!-- Music Therapy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phonics trained</masterLabel>
+        <translation><!-- Phonics trained --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Disabilities</masterLabel>
+        <translation><!-- Physical Disabilities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safe Handling and Administration of Medicine</masterLabel>
+        <translation><!-- Safe Handling and Administration of Medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safeguarding</masterLabel>
+        <translation><!-- Safeguarding --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech and Language Trained</masterLabel>
+        <translation><!-- Speech and Language Trained --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspected Physical and Mental Abuse awareness training</masterLabel>
+        <translation><!-- Suspected Physical and Mental Abuse awareness training --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team Teach</masterLabel>
+        <translation><!-- Team Teach --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

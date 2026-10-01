@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Rol van team op locatie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Rollen van team op locaties</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam rol van team op locatie</nameFieldLabel>
+</CustomObjectTranslation>

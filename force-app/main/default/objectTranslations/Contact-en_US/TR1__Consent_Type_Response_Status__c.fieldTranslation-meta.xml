@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Consent Type - Response Status --></label>
+    <name>TR1__Consent_Type_Response_Status__c</name>
+    <picklistValues>
+        <masterLabel>Consent Type1</masterLabel>
+        <translation><!-- Consent Type1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ConsentType1 - I Consent</masterLabel>
+        <translation><!-- ConsentType1 - I Consent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

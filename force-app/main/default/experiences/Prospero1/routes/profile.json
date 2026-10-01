@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "b91c3125-b2fa-4654-ad18-e575e6e2b1d4",
+  "appPageId" : "d9ce9f69-0e14-4b11-9233-6c5ce091d546",
+  "configurationTags" : [ ],
+  "devName" : "Profile__c",
+  "id" : "52fe8857-c13e-41b8-8b28-fae007f6c97e",
+  "label" : "Profile",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-profile",
+  "type" : "route",
+  "urlPrefix" : "profile"
+}

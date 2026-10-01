@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Council --></label>
+    <name>Council__c</name>
+    <picklistValues>
+        <masterLabel>County Council</masterLabel>
+        <translation><!-- County Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>District Council</masterLabel>
+        <translation><!-- District Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>London Borough</masterLabel>
+        <translation><!-- London Borough --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Metropolitan District</masterLabel>
+        <translation><!-- Metropolitan District --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unitary Authority</masterLabel>
+        <translation><!-- Unitary Authority --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

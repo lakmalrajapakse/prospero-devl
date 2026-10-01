@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Showing regions other than the Owner&apos;s region that this record is shared with --></help>
+    <label><!-- Additional Sharing Regions --></label>
+    <name>Sharing_Regions__c</name>
+</CustomFieldTranslation>

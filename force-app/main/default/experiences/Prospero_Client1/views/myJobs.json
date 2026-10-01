@@ -1,0 +1,61 @@
+{
+  "appPageId" : "8c871e13-6d08-4440-b759-c322ea3acaef",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "54d7aaa2-e099-4dd5-b0fe-b8559440b862",
+  "label" : "My Jobs",
+  "regions" : [ {
+    "id" : "db1a67a5-c580-455e-9aaf-8c54296b6dc5",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "All_Jobs",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "TR1__Job__c",
+        "showActionBar" : true,
+        "showChartsPanel" : false,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : false,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "5e874e37-3d0c-4cb4-a0d3-8576190ad070",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1fa30e80-7af7-45ce-9abc-ec01ab2c681d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "c13eaefa-6167-43ce-9276-471caa06f7f1",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "My Jobs"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cd9549cc-7d76-4966-ba5a-3578631a02ca",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "8fb86dc4-d4c6-48d5-8295-5d27725c2d12",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-jobs"
+}

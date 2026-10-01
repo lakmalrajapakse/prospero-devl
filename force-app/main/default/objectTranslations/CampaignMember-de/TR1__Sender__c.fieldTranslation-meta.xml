@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Lookup zum Benutzerdatensatz, der für die SFMC/Digital Engagement-Integration verwendet wird, um Informationen über den Absender der Nachricht bereitzustellen (z. B. Name, E-Mail)</help>
+    <label><!-- Sender --></label>
+    <name>TR1__Sender__c</name>
+    <relationshipLabel><!-- Campaign Members --></relationshipLabel>
+</CustomFieldTranslation>

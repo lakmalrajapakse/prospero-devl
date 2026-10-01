@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Speciality 2 --></label>
+    <name>TR1__Speciality_z__c</name>
+    <picklistValues>
+        <masterLabel>Addiction medicine</masterLabel>
+        <translation><!-- Addiction medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anaesthetics</masterLabel>
+        <translation><!-- Anaesthetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cardiology</masterLabel>
+        <translation><!-- Cardiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical genetics</masterLabel>
+        <translation><!-- Clinical genetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical pharmacology</masterLabel>
+        <translation><!-- Clinical pharmacology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dermatology</masterLabel>
+        <translation><!-- Dermatology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency medicine</masterLabel>
+        <translation><!-- Emergency medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endocrinology</masterLabel>
+        <translation><!-- Endocrinology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gastroenterology and hepatology</masterLabel>
+        <translation><!-- Gastroenterology and hepatology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General medicine/physician</masterLabel>
+        <translation><!-- General medicine/physician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice</masterLabel>
+        <translation><!-- General practice --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - GP / family medicine</masterLabel>
+        <translation><!-- General practice - GP / family medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - aged care</masterLabel>
+        <translation><!-- General practice - aged care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - anaesthetics</masterLabel>
+        <translation><!-- General practice - anaesthetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - correctional / judicial health</masterLabel>
+        <translation><!-- General practice - correctional / judicial health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - cosmetics</masterLabel>
+        <translation><!-- General practice - cosmetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - emergency medicine</masterLabel>
+        <translation><!-- General practice - emergency medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - indigenous health</masterLabel>
+        <translation><!-- General practice - indigenous health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - obstetrics and gynaecology</masterLabel>
+        <translation><!-- General practice - obstetrics and gynaecology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - occupational medicine</masterLabel>
+        <translation><!-- General practice - occupational medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - rural and remote</masterLabel>
+        <translation><!-- General practice - rural and remote --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - skin cancer medicine</masterLabel>
+        <translation><!-- General practice - skin cancer medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - sports medicine / nutrition</masterLabel>
+        <translation><!-- General practice - sports medicine / nutrition --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geriatric medicine</masterLabel>
+        <translation><!-- Geriatric medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haematology</masterLabel>
+        <translation><!-- Haematology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Immunology and allergy</masterLabel>
+        <translation><!-- Immunology and allergy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infectious diseases</masterLabel>
+        <translation><!-- Infectious diseases --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intensive care medicine</masterLabel>
+        <translation><!-- Intensive care medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal medicine / Physician</masterLabel>
+        <translation><!-- Internal medicine / Physician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical administration</masterLabel>
+        <translation><!-- Medical administration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical oncology</masterLabel>
+        <translation><!-- Medical oncology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nephrology</masterLabel>
+        <translation><!-- Nephrology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurology</masterLabel>
+        <translation><!-- Neurology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nuclear medicine</masterLabel>
+        <translation><!-- Nuclear medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Gynaecological oncology</masterLabel>
+        <translation><!-- O &amp; G - Gynaecological oncology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Maternal–fetal medicine</masterLabel>
+        <translation><!-- O &amp; G - Maternal–fetal medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Obstetrics and gynaecological ultrasound</masterLabel>
+        <translation><!-- O &amp; G - Obstetrics and gynaecological ultrasound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Obstetrics and gynaecology</masterLabel>
+        <translation><!-- O &amp; G - Obstetrics and gynaecology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Reproductive endocrinology and infertility</masterLabel>
+        <translation><!-- O &amp; G - Reproductive endocrinology and infertility --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Urogynaecology</masterLabel>
+        <translation><!-- O &amp; G - Urogynaecology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obstetrics and gynaecology</masterLabel>
+        <translation><!-- Obstetrics and gynaecology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Occupational and environmental medicine</masterLabel>
+        <translation><!-- Occupational and environmental medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ophthalmology</masterLabel>
+        <translation><!-- Ophthalmology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - cardiology</masterLabel>
+        <translation><!-- Paediatrics - cardiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - clinical genetics</masterLabel>
+        <translation><!-- Paediatrics - clinical genetics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - clinical pharmacology</masterLabel>
+        <translation><!-- Paediatrics - clinical pharmacology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - community child health</masterLabel>
+        <translation><!-- Paediatrics - community child health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - emergency medicine</masterLabel>
+        <translation><!-- Paediatrics - emergency medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - endocrinology</masterLabel>
+        <translation><!-- Paediatrics - endocrinology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - gastroenterology and hepatology</masterLabel>
+        <translation><!-- Paediatrics - gastroenterology and hepatology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - general</masterLabel>
+        <translation><!-- Paediatrics - general --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - haematology</masterLabel>
+        <translation><!-- Paediatrics - haematology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - immunology and allergy</masterLabel>
+        <translation><!-- Paediatrics - immunology and allergy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - infectious diseases</masterLabel>
+        <translation><!-- Paediatrics - infectious diseases --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - intensive care medicine</masterLabel>
+        <translation><!-- Paediatrics - intensive care medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - medical oncology</masterLabel>
+        <translation><!-- Paediatrics - medical oncology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - neonatal and perinatal medicine</masterLabel>
+        <translation><!-- Paediatrics - neonatal and perinatal medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - nephrology</masterLabel>
+        <translation><!-- Paediatrics - nephrology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - neurology</masterLabel>
+        <translation><!-- Paediatrics - neurology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - nuclear medicine</masterLabel>
+        <translation><!-- Paediatrics - nuclear medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - palliative medicine</masterLabel>
+        <translation><!-- Paediatrics - palliative medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - rehabilitation medicine</masterLabel>
+        <translation><!-- Paediatrics - rehabilitation medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - respiratory and sleep medicine</masterLabel>
+        <translation><!-- Paediatrics - respiratory and sleep medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - rheumatology</masterLabel>
+        <translation><!-- Paediatrics - rheumatology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics and child health</masterLabel>
+        <translation><!-- Paediatrics and child health --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pain medicine</masterLabel>
+        <translation><!-- Pain medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palliative medicine</masterLabel>
+        <translation><!-- Palliative medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology</masterLabel>
+        <translation><!-- Pathology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - anatomical (including cytopathology)</masterLabel>
+        <translation><!-- Pathology - anatomical (including cytopathology) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - chemical</masterLabel>
+        <translation><!-- Pathology - chemical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - forensic</masterLabel>
+        <translation><!-- Pathology - forensic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - general</masterLabel>
+        <translation><!-- Pathology - general --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - haematology</masterLabel>
+        <translation><!-- Pathology - haematology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - immunology</masterLabel>
+        <translation><!-- Pathology - immunology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - microbiology</masterLabel>
+        <translation><!-- Pathology - microbiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Psychiatry</masterLabel>
+        <translation><!-- Psychiatry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public health medicine</masterLabel>
+        <translation><!-- Public health medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiation oncology</masterLabel>
+        <translation><!-- Radiation oncology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology</masterLabel>
+        <translation><!-- Radiology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology - diagnostic</masterLabel>
+        <translation><!-- Radiology - diagnostic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology - diagnostic ultrasound</masterLabel>
+        <translation><!-- Radiology - diagnostic ultrasound --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rehabilitation medicine</masterLabel>
+        <translation><!-- Rehabilitation medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Respiratory and sleep medicine</masterLabel>
+        <translation><!-- Respiratory and sleep medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rheumatology</masterLabel>
+        <translation><!-- Rheumatology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sexual health medicine</masterLabel>
+        <translation><!-- Sexual health medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports and exercise medicine</masterLabel>
+        <translation><!-- Sports and exercise medicine --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation><!-- Surgery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - cardiothoracic</masterLabel>
+        <translation><!-- Surgery - cardiothoracic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - general</masterLabel>
+        <translation><!-- Surgery - general --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - neurosurgery</masterLabel>
+        <translation><!-- Surgery - neurosurgery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - oral and maxillofacial</masterLabel>
+        <translation><!-- Surgery - oral and maxillofacial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - orthopaedic</masterLabel>
+        <translation><!-- Surgery - orthopaedic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - otolaryngology</masterLabel>
+        <translation><!-- Surgery - otolaryngology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - paediatric</masterLabel>
+        <translation><!-- Surgery - paediatric --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - plastic</masterLabel>
+        <translation><!-- Surgery - plastic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - urology</masterLabel>
+        <translation><!-- Surgery - urology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - vascular</masterLabel>
+        <translation><!-- Surgery - vascular --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

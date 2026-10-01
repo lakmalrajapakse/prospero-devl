@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Speichert den Code der zuletzt ausgeübten Stellenbezeichnungskompetenz (geparst von TK).</help>
+    <label><!-- Last Job Title Code --></label>
+    <name>TR1__Last_Job_Title_Code__c</name>
+</CustomFieldTranslation>

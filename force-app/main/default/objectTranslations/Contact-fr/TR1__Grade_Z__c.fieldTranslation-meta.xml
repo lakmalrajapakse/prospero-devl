@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Grade 2 --></label>
+    <name>TR1__Grade_Z__c</name>
+    <picklistValues>
+        <masterLabel>Clinical Director</masterLabel>
+        <translation>Directeur de clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director of Medical Services</masterLabel>
+        <translation>Directeur des services médicaux</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Student</masterLabel>
+        <translation>Étudiant en médecine</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registrar</masterLabel>
+        <translation>Chef de clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resident Medical Officer</masterLabel>
+        <translation>Médecin interne</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMO/MOSS</masterLabel>
+        <translation><!-- SMO/MOSS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialist Consultant</masterLabel>
+        <translation>Consultant spécialiste</translation>
+    </picklistValues>
+</CustomFieldTranslation>

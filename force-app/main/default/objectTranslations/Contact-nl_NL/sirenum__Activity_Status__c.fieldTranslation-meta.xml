@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Een tijdelijke werknemer is actief als zijn/haar laatste urenstaat niet ouder is dan 90 dagen.
+
+IF( (TODAY()-Last_Timesheet__c )&lt;21,”Actief&quot;,
+    IF (((TODAY()-Last_Timesheet__c )&gt;7)||(TODAY()-  DATEVALUE(CreatedDate) )&gt;30,”Inactief&quot;, &quot;In_Progress&quot;
+    )
+)</help>
+    <label><!-- Activity Status --></label>
+    <name>sirenum__Activity_Status__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Stay_On_September_2014__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>IS THE CANDIDATE CONTINUING THEIR CONTRACT IN SEPTEMBER 2014?</inlineHelpText>
+    <label>Stay On September 2014?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Yes - Available</fullName>
+                <default>false</default>
+                <label>Yes - Available</label>
+            </value>
+            <value>
+                <fullName>Yes - Placed - Current School</fullName>
+                <default>false</default>
+                <label>Yes - Placed - Current School</label>
+            </value>
+            <value>
+                <fullName>Yes - Placed - New School</fullName>
+                <default>false</default>
+                <label>Yes - Placed - New School</label>
+            </value>
+            <value>
+                <fullName>No - No Longer Interested in UK</fullName>
+                <default>false</default>
+                <label>No - No Longer Interested in UK</label>
+            </value>
+            <value>
+                <fullName>No - No Longer in the UK</fullName>
+                <default>false</default>
+                <label>No - No Longer in the UK</label>
+            </value>
+            <value>
+                <fullName>No - Not as Expected by EP</fullName>
+                <default>false</default>
+                <label>No - Not as Expected by EP</label>
+            </value>
+            <value>
+                <fullName>No - Not Eligible for Visa</fullName>
+                <default>false</default>
+                <label>No - Not Eligible for Visa</label>
+            </value>
+            <value>
+                <fullName>No - Placed by Another Agency Contract</fullName>
+                <default>false</default>
+                <label>No - Placed by Another Agency Contract</label>
+            </value>
+            <value>
+                <fullName>No - Placed by Another Agency Perm</fullName>
+                <default>false</default>
+                <label>No - Placed by Another Agency Perm</label>
+            </value>
+            <value>
+                <fullName>No - Placed in Home Country</fullName>
+                <default>false</default>
+                <label>No - Placed in Home Country</label>
+            </value>
+            <value>
+                <fullName>No - Retired</fullName>
+                <default>false</default>
+                <label>No - Retired</label>
+            </value>
+            <value>
+                <fullName>Perm 0%</fullName>
+                <default>false</default>
+                <label>Perm 0%</label>
+            </value>
+            <value>
+                <fullName>Perm - Engage Fee</fullName>
+                <default>false</default>
+                <label>Perm - Engage Fee</label>
+            </value>
+            <value>
+                <fullName>New Candidate</fullName>
+                <default>false</default>
+                <label>New Candidate</label>
+            </value>
+            <value>
+                <fullName>Maybe</fullName>
+                <default>false</default>
+                <label>Maybe</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

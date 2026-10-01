@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Teaching_Roles_requiring_Subject_Special</fullName>
+    <active>true</active>
+    <description>Require Subject Specialisms for certain Teaching Roles: Originally for Client Contacts: https://1218globaluk.eu.teamwork.com/app/tasks/36131938
+Then extended out to Candidates as well https://1218globaluk.eu.teamwork.com/app/tasks/36171306</description>
+    <errorConditionFormula>AND(
+				NOT($Permission.Bypass_System_Automation),
+    ISBLANK(Subject_Specialisms__c),
+    OR(
+        INCLUDES(Roles__c, &quot;Head of Subject/ Department&quot;),
+        INCLUDES(Roles__c, &quot;Overseas Secondary Teacher&quot;),
+        INCLUDES(Roles__c, &quot;Secondary Teacher&quot;),
+        INCLUDES(Roles__c, &quot;FE Lecturer/Teacher (Further Education)&quot;),
+        INCLUDES(Roles__c, &quot;HE Lecturer (Higher Education)&quot;),
+        INCLUDES(Roles__c, &quot;Deputy Headteacher&quot;),
+        INCLUDES(Roles__c, &quot;Assistant Headteacher&quot;)
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Subject_Specialisms__c</errorDisplayField>
+    <errorMessage>You must add a Subject Specialism if Roles contains: Secondary Teacher, Overseas Secondary Teacher, Head of Subject/Department, HE/FE Lecturer, Deputy Headteacher, or Assistant Headteacher.</errorMessage>
+</ValidationRule>

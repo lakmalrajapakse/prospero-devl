@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Short / Long Term --></label>
+    <name>Short_Long_Term__c</name>
+    <picklistValues>
+        <masterLabel>Long Term</masterLabel>
+        <translation><!-- Long Term --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Short Term</masterLabel>
+        <translation><!-- Short Term --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

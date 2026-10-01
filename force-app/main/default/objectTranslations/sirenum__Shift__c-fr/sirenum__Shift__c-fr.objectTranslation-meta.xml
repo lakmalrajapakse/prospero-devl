@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Équipe</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Équipes</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Connect Shift Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Shift HSC Layout</layout>
+        <sections>
+            <label><!-- Job Details --></label>
+            <section>Job Details</section>
+        </sections>
+        <sections>
+            <label><!-- Payroll --></label>
+            <section>Payroll</section>
+        </sections>
+        <sections>
+            <label><!-- Shift Times --></label>
+            <section>Shift Times</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- Time and Attendance --></label>
+            <section>Time and Attendance</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Shift TEA Layout</layout>
+        <sections>
+            <label><!-- Job Details --></label>
+            <section>Job Details</section>
+        </sections>
+        <sections>
+            <label><!-- Payroll --></label>
+            <section>Payroll</section>
+        </sections>
+        <sections>
+            <label><!-- Shift Times --></label>
+            <section>Shift Times</section>
+        </sections>
+        <sections>
+            <label><!-- Status --></label>
+            <section>Status</section>
+        </sections>
+        <sections>
+            <label><!-- Time and Attendance --></label>
+            <section>Time and Attendance</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de l’équipe</nameFieldLabel>
+    <quickActions>
+        <label><!-- Convert Ad-hoc Shift --></label>
+        <name>Convert_Ad_hoc_Shift</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Margin Calculator --></label>
+        <name>Margin_Calculator</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot assign Candidates that have the ‘Hubspot Candidate’ status to Shifts --></errorMessage>
+        <name>Block_move_to_Hubspot_Candidate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot modify payrolled Shifts --></errorMessage>
+        <name>Prevent_Payrolled_Shift_edit</name>
+    </validationRules>
+</CustomObjectTranslation>

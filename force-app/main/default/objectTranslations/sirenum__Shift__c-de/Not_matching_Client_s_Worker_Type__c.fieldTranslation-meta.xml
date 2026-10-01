@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Not matching Client&apos;s Worker Type --></label>
+    <name>Not_matching_Client_s_Worker_Type__c</name>
+</CustomFieldTranslation>

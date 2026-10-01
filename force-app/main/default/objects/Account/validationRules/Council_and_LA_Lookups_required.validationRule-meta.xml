@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Council_and_LA_Lookups_required</fullName>
+    <active>true</active>
+    <description>For the Prospero_Client record type, if the selected type is not Local Authority, Council, or Private Client, then either Council_Lookup__c OR Local_Authority__c must be populated.</description>
+    <errorConditionFormula>AND(
+    $RecordType.DeveloperName = &quot;Prospero_Client&quot;,
+
+    NOT(
+        OR(
+            ISPICKVAL(Health_Social_Care_Type__c, &quot;Local Authority&quot;),
+            ISPICKVAL(Health_Social_Care_Type__c, &quot;Council&quot;),
+            ISPICKVAL(
+                Health_Social_Care_Type__c,
+                &quot;Private Client (Individual Adult, Directed Family)&quot;
+            ),
+            ISPICKVAL(Teaching_Type__c, &quot;Local Authority&quot;),
+            ISPICKVAL(Teaching_Type__c, &quot;Council&quot;),
+            ISPICKVAL(
+                Teaching_Type__c,
+                &quot;Private Client&quot;
+            )
+        )
+    ),
+
+    AND(
+        ISBLANK(Council_Lookup__c),
+        ISBLANK(Local_Authority__c)
+    )
+)</errorConditionFormula>
+    <errorMessage>You must add the Local Authority and a Council for this Type of Client</errorMessage>
+</ValidationRule>

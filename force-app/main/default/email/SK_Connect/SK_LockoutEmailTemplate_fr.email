@@ -1,0 +1,13 @@
+Bonjour {!Receiving_User.FirstName},
+
+Nous avons reçu votre demande de réinitialisation de votre mot de passe {!Community_Name}. Nous ne pouvons pas réinitialiser votre mot de passe pour le moment. Votre compte est bloqué après trop de tentatives de connexion.
+
+{!CASE(1,
+IF(VALUE(PASSWORD_LOCK_TIME) > 0, 1, 0), "Réessayez dans " + PASSWORD_LOCK_TIME + " minutes.",
+IF(VALUE(PASSWORD_LOCK_TIME) < 0, 1, 0), "Contactez votre administrateur " + Community_Name + " pour déverrouiller votre compte.",
+"")}
+
+Si vous n'avez pas demandé de réinitialisation de mot de passe ou si vous n'avez pas essayé de vous connecter à votre compte récemment, contactez votre administrateur {!Community_Name} ou répondez à cet e-mail.
+
+Merci,
+{!Community_Name}

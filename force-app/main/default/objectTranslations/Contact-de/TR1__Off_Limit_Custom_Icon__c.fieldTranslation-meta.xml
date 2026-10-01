@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Benutzerdefiniertes Symbol, um das verpackte Off-Limit-Symbol zu ersetzen. Wenn dieses Feld ausgefüllt ist, wird das benutzerdefinierte Symbol überall angezeigt, wenn der Kontakt off-limit ist. Der unterstützte Wert ist eine relative URL zu einer Salesforce-Bildressource, vorzugsweise ein SVG. Zum Beispiel /resource/TR1__Lock_icon_svg</help>
+    <label><!-- Off Limit Custom Icon --></label>
+    <name>TR1__Off_Limit_Custom_Icon__c</name>
+</CustomFieldTranslation>

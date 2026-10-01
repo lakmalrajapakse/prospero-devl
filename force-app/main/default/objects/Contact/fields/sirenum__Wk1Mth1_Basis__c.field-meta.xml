@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Wk1Mth1_Basis__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>Enter &quot;0&quot; if the employee is is not on a Wk1/Mth1 Tax Code or &quot;1&quot; if they are on a Wk1/Mth1 Tax Code.</inlineHelpText>
+    <label>Week1/Month1 Basis</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

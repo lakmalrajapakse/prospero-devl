@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SEN Skills, Quals and Training --></label>
+    <name>TR1__SEN_Additional_Experience__c</name>
+    <picklistValues>
+        <masterLabel>ADHD Awareness</masterLabel>
+        <translation>ADHD-bewustzijn</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Art Therapy</masterLabel>
+        <translation>Kunsttherapie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autism Awareness</masterLabel>
+        <translation>Autismebewustzijn</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BSL Level 1-3</masterLabel>
+        <translation>BSL, niveau 1-3</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Behaviour Mentor and Tuition training</masterLabel>
+        <translation>Gedragsmentor en bijjles</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bullying Support Training</masterLabel>
+        <translation>Training omgaan met pesterijen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disability Sports Coaching Award</masterLabel>
+        <translation>Coachprijs gehandicaptensport</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drug awareness training</masterLabel>
+        <translation>Training drugsbewustzijn</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dyslexia Support Training</masterLabel>
+        <translation>Training omgaan met dyslexie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAL specialist</masterLabel>
+        <translation>EAL-specialist</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eating Disorder Awareness</masterLabel>
+        <translation>Bewustzijn eetstoornis</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency First Aid</masterLabel>
+        <translation>Eerste hulp</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Epilepsy Training</masterLabel>
+        <translation>Epilepsietraining</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jolly Phonics</masterLabel>
+        <translation>Letters leren met klanken</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Makaton</masterLabel>
+        <translation><!-- Makaton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mappa</masterLabel>
+        <translation><!-- Mappa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moving and Handling</masterLabel>
+        <translation>Verplaatsing en verwerking</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Music Therapy</masterLabel>
+        <translation>Muziektherapie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phonics trained</masterLabel>
+        <translation>Getraind in vonetische lesmethode</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Disabilities</masterLabel>
+        <translation>Fysieke beperkingen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safe Handling and Administration of Medicine</masterLabel>
+        <translation>Veilige verwerking en beheer van medicijnen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safeguarding</masterLabel>
+        <translation>Veiligheid verbeteren</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech and Language Trained</masterLabel>
+        <translation>Getraind in spraak en taal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspected Physical and Mental Abuse awareness training</masterLabel>
+        <translation>Bewustzijntraining bij vermoedelijke fysieke en mentale mishandeling</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team Teach</masterLabel>
+        <translation>Teamtraining</translation>
+    </picklistValues>
+</CustomFieldTranslation>

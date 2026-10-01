@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Accept_conditions_alert</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Accept conditions alert</shortDescription>
+        <value>You did not agree on the Terms &amp; Conditions.&lt;br/&gt;Please accept these if you would like to proceed with your application.</value>
+    </labels>
+    <labels>
+        <fullName>Alert</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Alert</shortDescription>
+        <value>Alert</value>
+    </labels>
+    <labels>
+        <fullName>Apply_With_CV_Button</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Apply With CV Button</shortDescription>
+        <value>Apply with Resume</value>
+    </labels>
+    <labels>
+        <fullName>Apply_Without_CV_Button</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Apply Without CV Button</shortDescription>
+        <value>Apply without Resume</value>
+    </labels>
+    <labels>
+        <fullName>Apply_through_Linkedin_Button</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Apply through Linkedin Button</shortDescription>
+        <value>Apply with LinkedIn</value>
+    </labels>
+    <labels>
+        <fullName>Attachment_Error_Alert</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Attachment Error Alert</shortDescription>
+        <value>Please note that this document format is not supported. &lt;br/&gt;Please provide one of the following formats: pdf, doc, docx, txt, rtf.</value>
+    </labels>
+    <labels>
+        <fullName>CV_Upload_Status_Msg</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CV Upload Status Msg</shortDescription>
+        <value>We have uploaded your CV!</value>
+    </labels>
+    <labels>
+        <fullName>Cancel_Button_JR</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel Button JR</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_City</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate City</shortDescription>
+        <value>City</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Consent_Source_Value</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Consent Source Value</shortDescription>
+        <value>Job Board</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Consent_Status</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Consent Status</shortDescription>
+        <value>Notice Sent</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Country</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Country</shortDescription>
+        <value>Country</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Email</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Last_Name</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Last Name</shortDescription>
+        <value>Last Name</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Name</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Phone</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Phone</shortDescription>
+        <value>Telephone</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Postal_Code</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Postal Code</shortDescription>
+        <value>Postal Code</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_State</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate State</shortDescription>
+        <value>State</value>
+    </labels>
+    <labels>
+        <fullName>Candidate_Street</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Candidate Street</shortDescription>
+        <value>Street</value>
+    </labels>
+    <labels>
+        <fullName>Community_LanguageCode</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community_LanguageCode</shortDescription>
+        <value>en</value>
+    </labels>
+    <labels>
+        <fullName>CompanyName</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CompanyName</shortDescription>
+        <value>Adecco</value>
+    </labels>
+    <labels>
+        <fullName>Confirm_Personal_Info_Header</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirm Personal Info Header</shortDescription>
+        <value>Confirm personal information</value>
+    </labels>
+    <labels>
+        <fullName>Confirm_and_Apply_Job_Button</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirm and Apply Job Button</shortDescription>
+        <value>Confirm and Apply Job</value>
+    </labels>
+    <labels>
+        <fullName>Confirm_and_Send_Button</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirm and Send Button</shortDescription>
+        <value>Confirm and Send</value>
+    </labels>
+    <labels>
+        <fullName>Confirm_more_documents_label</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirm more documents label</shortDescription>
+        <value>Do you have more documents that you would like to include? If yes, select the number of documents.</value>
+    </labels>
+    <labels>
+        <fullName>CountryCode</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CountryCode</shortDescription>
+        <value>Spain</value>
+    </labels>
+    <labels>
+        <fullName>Enter_email_address</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Enter email address</shortDescription>
+        <value>Please enter an email address.</value>
+    </labels>
+    <labels>
+        <fullName>Error_Already_applied</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Already applied</shortDescription>
+        <value>We have detected that you have already applied for this process. Thank you very much for your interest.</value>
+    </labels>
+    <labels>
+        <fullName>Error_for_Pass_record_Id</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error for Pass record Id</shortDescription>
+        <value>No record is associated. Please pass record Id in parameter.</value>
+    </labels>
+    <labels>
+        <fullName>Error_in_reading_file_alert</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error in reading file alert</shortDescription>
+        <value>There was an error reading the file. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>Error_loading_job_details</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error loading job details</shortDescription>
+        <value>Error loading job details, job ID was not found.</value>
+    </labels>
+    <labels>
+        <fullName>Error_uploading_CV</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error uploading CV</shortDescription>
+        <value>Problem in uploading CV.Ensure below mandatory fields are present in CV.&lt;br/&gt;First Name&lt;br/&gt;Last Name&lt;br/&gt;Email&lt;br/&gt;Phone&lt;br/&gt;</value>
+    </labels>
+    <labels>
+        <fullName>Explicit_Candidate_Consent_Status</fullName>
+        <categories>jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Explicit Candidate Consent Status</shortDescription>
+        <value>I Consent</value>
+    </labels>
+    <labels>
+        <fullName>Explicit_Consent_Type_Label</fullName>
+        <categories>jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Explicit Consent Type Label</shortDescription>
+        <value>Explicit</value>
+    </labels>
+    <labels>
+        <fullName>File_Size_Error_alert</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File Size Error alert</shortDescription>
+        <value>Base 64 Encoded file is too large.  Maximum size &amp; your file size values are:</value>
+    </labels>
+    <labels>
+        <fullName>File_Size_alert</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File Size alert</shortDescription>
+        <value>File must be under 4.3 MB in size. Your file is too large. Resume will not be parsed. Please try again with document size less than 4.3 MB</value>
+    </labels>
+    <labels>
+        <fullName>File_upload_successful</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>File upload successful</shortDescription>
+        <value>file(s) are uploaded successfully</value>
+    </labels>
+    <labels>
+        <fullName>First</fullName>
+        <categories>Job Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>First</shortDescription>
+        <value>First</value>
+    </labels>
+    <labels>
+        <fullName>FunctionalArea</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FunctionalArea</shortDescription>
+        <value>Functional Area</value>
+    </labels>
+    <labels>
+        <fullName>Implicit_Consent_Type_Label</fullName>
+        <categories>jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Implicit Consent Type Label</shortDescription>
+        <value>Implicit</value>
+    </labels>
+    <labels>
+        <fullName>JobBoardCancelMessage</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobBoardCancelMessage</shortDescription>
+        <value>You have cancelled your application process.&lt;br/&gt;The data you have just entered will not be stored in any Adecco database.</value>
+    </labels>
+    <labels>
+        <fullName>JobBoardThankYouPageUrl</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobBoardThankYouPageUrl</shortDescription>
+        <value>You have applied correctly to the position. Thanks for your interest. We will contact you in the event that your CV fits in the position that you have registered.</value>
+    </labels>
+    <labels>
+        <fullName>JobBoard_Account_DeveloperRecordType_Pool</fullName>
+        <categories>Used in quick apply JobRegisterController</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobBoard_Account_DeveloperRecordType_Pool</shortDescription>
+        <value>Candidate_Pool</value>
+    </labels>
+    <labels>
+        <fullName>JobBoard_DefaultJobBoardName</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobBoard_DefaultJobBoardName</shortDescription>
+        <value>Spain</value>
+    </labels>
+    <labels>
+        <fullName>JobBoard_Default_Account_Id</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobBoard_Default_Account_Id</shortDescription>
+        <value>001QH000020sRzz</value>
+    </labels>
+    <labels>
+        <fullName>JobBoard_Required</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobBoard_Required</shortDescription>
+        <value>Required</value>
+    </labels>
+    <labels>
+        <fullName>Job_Description</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Job Description</shortDescription>
+        <value>Job Description</value>
+    </labels>
+    <labels>
+        <fullName>Job_Open_Date</fullName>
+        <categories>Job Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Job Open Date</shortDescription>
+        <value>Open Date</value>
+    </labels>
+    <labels>
+        <fullName>Job_Position</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Job Position</shortDescription>
+        <value>Job Position</value>
+    </labels>
+    <labels>
+        <fullName>Job_Reference</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Job Reference</shortDescription>
+        <value>Job Reference</value>
+    </labels>
+    <labels>
+        <fullName>Job_Register_Note</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Job Register Note</shortDescription>
+        <value>Please keep in mind that when you apply for an offer, your CV is saved in our database, so we can find your CV for other similar positions. Your data is safe. We will not share it with anyone. We will contact you in case we find an interesting opportunity for your career. You can delete your profile from our database at any time.</value>
+    </labels>
+    <labels>
+        <fullName>Job_Title</fullName>
+        <categories>Job Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Job Title</shortDescription>
+        <value>Job Title</value>
+    </labels>
+    <labels>
+        <fullName>JobboardDefaultAccountID</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobboardDefaultAccountID</shortDescription>
+        <value>001QH000020sS00</value>
+    </labels>
+    <labels>
+        <fullName>JobboardSearchstring</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobboardSearchstring</shortDescription>
+        <value>TR1__Job_Title__c</value>
+    </labels>
+    <labels>
+        <fullName>Jobboard_Enable_SubmitWithoutResume</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Jobboard_Enable_SubmitWithoutResume</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
+        <fullName>JobsFeeds_JobBaseURL</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobsFeeds_JobBaseURL</shortDescription>
+        <value>http://fospainiat-foiberia--fospainiat.cs88.force.com/CandidateRegistration?jobId=</value>
+    </labels>
+    <labels>
+        <fullName>JobsFeeds_JobDomainURL</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobsFeeds_JobDomainURL</shortDescription>
+        <value>http://fospainiat-foiberia--fospainiat.cs88.force.com/jobboard/</value>
+    </labels>
+    <labels>
+        <fullName>JobsFeeds_Publisher</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobsFeeds_Publisher</shortDescription>
+        <value>Spain</value>
+    </labels>
+    <labels>
+        <fullName>JobsFeeds_PublisherURL</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>JobsFeeds_PublisherURL</shortDescription>
+        <value>http://www.springspain.com/es-es/</value>
+    </labels>
+    <labels>
+        <fullName>Last</fullName>
+        <categories>Job Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Last</shortDescription>
+        <value>Last</value>
+    </labels>
+    <labels>
+        <fullName>Mandatory_fields</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mandatory fields</shortDescription>
+        <value>Below mandatory fields cant be blank&lt;br/&gt;First Name&lt;br/&gt;Last Name&lt;br/&gt;Email&lt;br/&gt;Phone</value>
+    </labels>
+    <labels>
+        <fullName>Marketing_Consent</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Consent Details</shortDescription>
+        <value>Consent Details</value>
+    </labels>
+    <labels>
+        <fullName>Mkt_Comm_Checkbox_Note</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Mkt Comm Checkbox Note</shortDescription>
+        <value>I agree to receive Marketing Communications.</value>
+    </labels>
+    <labels>
+        <fullName>Next</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Next</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>No_Contact_found_JR</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Contact found JR</shortDescription>
+        <value>No Contact found to update. Please try again.</value>
+    </labels>
+    <labels>
+        <fullName>No_Matching_Jobs_message</fullName>
+        <categories>Job Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Matching Jobs message</shortDescription>
+        <value>We could not find jobs matching your search criteria.</value>
+    </labels>
+    <labels>
+        <fullName>Personal_Information_Header</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Personal Information Header</shortDescription>
+        <value>Please update your personal information</value>
+    </labels>
+    <labels>
+        <fullName>Personal_Information_Header_Linkedin</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Personal Information Header Linkedin</shortDescription>
+        <value>Next we indicate the data belonging to your Linkedin profile that we will incorporate into our database</value>
+    </labels>
+    <labels>
+        <fullName>Phone_Error_Message</fullName>
+        <categories>Job Register</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Phone Error Message</shortDescription>
+        <value>Phone number can contain digits 0-9 and some special characters like &apos;+&apos;,&apos;-&apos;,&apos;(&apos;,&apos;)&apos;,&apos;/&apos; or space</value>
+    </labels>
+    <labels>
+        <fullName>Phone_Validation_Error</fullName>
+        <categories>Job Register</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Phone Validation Error</shortDescription>
+        <value>The field can contain only numerical characters and following special characters: space, &apos;-&apos;, &apos;+&apos; ,&apos;(&apos; ,&apos;)&apos; ,&apos;/&apos;</value>
+    </labels>
+    <labels>
+        <fullName>Picklist_Label</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Picklist Label</shortDescription>
+        <value>--Any--</value>
+    </labels>
+    <labels>
+        <fullName>Prevent_deletion_of_Vacancy_records</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Prevent deletion of Vacancy records</shortDescription>
+        <value>You can\&apos;t delete this record</value>
+    </labels>
+    <labels>
+        <fullName>Previous</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Previous</shortDescription>
+        <value>Previous</value>
+    </labels>
+    <labels>
+        <fullName>Primary_Background</fullName>
+        <categories>Job Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Primary Background</shortDescription>
+        <value>Primary Background</value>
+    </labels>
+    <labels>
+        <fullName>Regional_Area</fullName>
+        <categories>Job Search</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Regional Area</shortDescription>
+        <value>Regional Area</value>
+    </labels>
+    <labels>
+        <fullName>ResumeParserDuplicateCheckFor</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ResumeParserDuplicateCheckFor</shortDescription>
+        <value>FirstName&amp;Email</value>
+    </labels>
+    <labels>
+        <fullName>SalesforceOrgDomain</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SalesforceOrgDomain</shortDescription>
+        <value>https://focore--devv20.cs85.my.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>Select_File_Alert</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select File Alert</shortDescription>
+        <value>Please select a file.</value>
+    </labels>
+    <labels>
+        <fullName>Select_File_Button</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select File Button</shortDescription>
+        <value>Select file</value>
+    </labels>
+    <labels>
+        <fullName>Sign_Up_Button</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sign Up Button</shortDescription>
+        <value>Sign Up</value>
+    </labels>
+    <labels>
+        <fullName>StateArea</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>StateArea</shortDescription>
+        <value>State/Area</value>
+    </labels>
+    <labels>
+        <fullName>Submit_Button</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Submit Button</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>TCK_CandidatesAddedToCallListTitle</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TKC_CandidatesAddedToCallListTitle</shortDescription>
+        <value>Candidates Added to Call List</value>
+    </labels>
+    <labels>
+        <fullName>TC_Checkbox_Note</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TC Checkbox Note</shortDescription>
+        <value>To continue, please read and accept the conditions of use.</value>
+    </labels>
+    <labels>
+        <fullName>TC_Checkbox_Note_Link</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TC Checkbox Note Link</shortDescription>
+        <value>Please, read more here</value>
+    </labels>
+    <labels>
+        <fullName>TKC_AddCandidateToJobActionComplete</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_AddCandidateToJobActionComplete</shortDescription>
+        <value>Action completed - Add to Job</value>
+    </labels>
+    <labels>
+        <fullName>TKC_AddCandidateToLongListComplete</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_AddCandidateToLongListComplete</shortDescription>
+        <value>Action completed - Add to Long List</value>
+    </labels>
+    <labels>
+        <fullName>TKC_AddToCallListComplete</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_AddToCallListComplete</shortDescription>
+        <value>Action completed - Add to Call List</value>
+    </labels>
+    <labels>
+        <fullName>TKC_AddedTo</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_AddedTo</shortDescription>
+        <value>added to</value>
+    </labels>
+    <labels>
+        <fullName>TKC_CandidateNotAddedToCallList</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_CandidateNotAddedToCallList</shortDescription>
+        <value>The following candidate(s) already existed on today&apos;s Call List and were not added again:</value>
+    </labels>
+    <labels>
+        <fullName>TKC_CandidatesAddedToCallList</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_CandidatesAddedToCallList</shortDescription>
+        <value>candidate(s) added to today&apos;s Call List</value>
+    </labels>
+    <labels>
+        <fullName>TKC_CandidatesAddedToJob</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_CandidatesAddedToJob</shortDescription>
+        <value>candidate(s) added to</value>
+    </labels>
+    <labels>
+        <fullName>TKC_CandidatesAddedToLongList</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_CandidatesAddedToLongList</shortDescription>
+        <value>candidate(s) added to the Long List of</value>
+    </labels>
+    <labels>
+        <fullName>TKC_CandidatesNotAddedtoJob</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_CandidatesNotAddedtoJob</shortDescription>
+        <value>The following candidate(s) were already added to this Job before and therefore not added again:</value>
+    </labels>
+    <labels>
+        <fullName>TKC_CandidatesNotAddedtoLongList</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_CandidatesNotAddedtoLongList</shortDescription>
+        <value>The following candidate(s) were already added to the Long List of this Job before and were therefore not added again:</value>
+    </labels>
+    <labels>
+        <fullName>TKC_ErrorMessage</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_ErrorMessage</shortDescription>
+        <value>An error has occurred, please contact your System Administrator for support.</value>
+    </labels>
+    <labels>
+        <fullName>TKC_Jobs</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>TKC_Jobs</shortDescription>
+        <value>Job(s)</value>
+    </labels>
+    <labels>
+        <fullName>TKC_JobsNotAddedToCandidate</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_JobsNotAddedToCandidate</shortDescription>
+        <value>Candidate was already added to the following job(s) before and therefore not added again:</value>
+    </labels>
+    <labels>
+        <fullName>TKC_JobsNotAddedtoLongList</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_JobsNotAddedtoLongList</shortDescription>
+        <value>was already added to the Long List of the following Job(s) before and therefore not added again:</value>
+    </labels>
+    <labels>
+        <fullName>TKC_LongLists</fullName>
+        <categories>TKC</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TKC_LongLists</shortDescription>
+        <value>Long List(s)</value>
+    </labels>
+    <labels>
+        <fullName>Terms_of_Use</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Terms of Use</shortDescription>
+        <value>Terms of Use</value>
+    </labels>
+    <labels>
+        <fullName>Upload_File_Button</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Upload File Button</shortDescription>
+        <value>Upload File</value>
+    </labels>
+    <labels>
+        <fullName>Uploading</fullName>
+        <categories>Jobboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Uploading</shortDescription>
+        <value>Uploading</value>
+    </labels>
+</CustomLabels>

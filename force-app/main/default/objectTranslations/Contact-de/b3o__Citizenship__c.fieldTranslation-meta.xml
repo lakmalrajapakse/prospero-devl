@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Citizenship --></label>
+    <name>b3o__Citizenship__c</name>
+    <picklistValues>
+        <masterLabel>A citizen of the United States</masterLabel>
+        <translation><!-- A citizen of the United States --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A lawful permanent resident</masterLabel>
+        <translation><!-- A lawful permanent resident --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A noncitizen authorized to work</masterLabel>
+        <translation><!-- A noncitizen authorized to work --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A noncitizen national of the United States</masterLabel>
+        <translation><!-- A noncitizen national of the United States --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

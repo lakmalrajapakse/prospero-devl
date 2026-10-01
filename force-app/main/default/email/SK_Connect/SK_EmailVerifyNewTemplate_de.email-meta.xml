@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Die E-Mail, die die Benutzer bei einer Änderung ihrer E-Mail-Adresse an ihre neue E-Mail-Adresse erhalten</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Connect: New Email - Change Email Verification de</name>
+    <style>none</style>
+    <subject>Schließen Sie die Änderung der E-Mail-Adresse für Ihr {!Community_Name} Konto ab.</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

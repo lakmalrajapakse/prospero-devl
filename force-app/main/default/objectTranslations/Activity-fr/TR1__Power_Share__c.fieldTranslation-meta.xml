@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Rechercher sur Power Share</help>
+    <label><!-- Power Share --></label>
+    <name>TR1__Power_Share__c</name>
+    <relationshipLabel><!-- Activities --></relationshipLabel>
+</CustomFieldTranslation>

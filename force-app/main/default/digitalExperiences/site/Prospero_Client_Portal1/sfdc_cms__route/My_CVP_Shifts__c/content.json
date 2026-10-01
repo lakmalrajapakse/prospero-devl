@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "My CYP Shifts",
+  "contentBody" : {
+    "activeViewId" : "My_CVP_Shifts",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-my-cvp-shifts",
+    "urlPrefix" : "my-cvp-shifts"
+  },
+  "urlName" : "my-cvp-shifts"
+}

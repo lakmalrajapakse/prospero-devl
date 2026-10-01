@@ -19,21 +19,31 @@ public without sharing class ClientPortalCandidateControllers {
             String.isBlank(searchTerm) ? '' : searchTerm
         ) + '%';
 
-        List<Contact> results = [
-            SELECT Id, FirstName,Gender__c
-            FROM Contact
-            WHERE RecordTypeId = :candidateRtId
-              AND FirstName LIKE :likeTerm
-              AND Id IN (
-                    SELECT sirenum__Contact__c
-                    FROM sirenum__Shift__c
-                    WHERE sirenum__Site__r.sirenum__Operating_Company__c = :currentAccountId
-                      AND sirenum__Scheduled_Start_Time__c >= :oneYearAgo
-                      AND sirenum__Contact__c != null
-              )
-            ORDER BY FirstName ASC
-            LIMIT 200
-        ];
+        
+        Set<Id> siteIds = new Map<Id, sirenum__Site__c>([
+            SELECT Id
+            FROM sirenum__Site__c
+            WHERE sirenum__Operating_Company__c = :currentAccountId
+        ]).keySet();
+
+        if (siteIds.isEmpty()) {
+            return new List<Contact>();
+        }
+
+        List<Contact> results = [SELECT Id, FirstName, Gender__c
+                                 FROM Contact
+                                 WHERE RecordTypeId = :candidateRtId
+                                AND FirstName LIKE :likeTerm
+                                AND Id IN (
+                                SELECT sirenum__Contact__c
+                                FROM sirenum__Shift__c
+                                WHERE sirenum__Site__c IN :siteIds
+                                AND sirenum__Date__c >= :oneYearAgo
+                                AND sirenum__Contact__c != null
+                                )
+                               ORDER BY FirstName ASC
+                               LIMIT 200
+                               ];
 
         SObjectAccessDecision decision = Security.stripInaccessible(
             AccessType.READABLE, results

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Élément statistiques du candidat contenant des informations sur le candidat. Si la fonctionnalité statistiques du candidat est activée, les informations sont mises à jour automatiquement.</help>
+    <label><!-- Candidate Statistics --></label>
+    <name>TR1__Candidate_Statistics__c</name>
+    <relationshipLabel><!-- Contacts --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Détails du rendez-vous V2</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Détails des rendez-vous V2</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom des détails du rendez-vous V2</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

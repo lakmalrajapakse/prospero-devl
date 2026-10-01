@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The latest updated application stage. This field will be updated if the &quot;Update Latest Stage on Contact&quot; setting in TalentRover Properties is checked. --></help>
+    <label><!-- Latest Stage Picklist --></label>
+    <name>TR1__Latest_Stage_Picklist__c</name>
+    <picklistValues>
+        <masterLabel>Application</masterLabel>
+        <translation><!-- Application --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing Report</masterLabel>
+        <translation><!-- Closing Report --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Interview</masterLabel>
+        <translation><!-- Internal Interview --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offer</masterLabel>
+        <translation><!-- Offer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send Out</masterLabel>
+        <translation><!-- Send Out --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submittal</masterLabel>
+        <translation><!-- Submittal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

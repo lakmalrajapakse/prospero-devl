@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Health_Social_Care_Department__c</fullName>
+    <label>Health &amp; Social Care Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Commissioning Department within LA</fullName>
+                <default>false</default>
+                <label>Commissioning Department within LA</label>
+            </value>
+            <value>
+                <fullName>Disabilities Department within LA</fullName>
+                <default>false</default>
+                <label>Disabilities Department within LA</label>
+            </value>
+            <value>
+                <fullName>Permanence (Placements) Department within LA</fullName>
+                <default>false</default>
+                <label>Permanence (Placements) Department within LA</label>
+            </value>
+            <value>
+                <fullName>Safeguarding Department within LA</fullName>
+                <default>false</default>
+                <label>Safeguarding Department within LA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

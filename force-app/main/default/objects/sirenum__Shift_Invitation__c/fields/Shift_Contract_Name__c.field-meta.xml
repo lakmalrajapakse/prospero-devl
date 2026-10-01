@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shift_Contract_Name__c</fullName>
+    <description>The related Shift’s Contract name, if any.</description>
+    <externalId>false</externalId>
+    <formula>IF(sirenum__Shift__r.sirenum__Contract__c != NULL,
+        sirenum__Shift__r.sirenum__Contract__r.Name,
+        sirenum__Shift__r.sirenum__Team__r.sirenum__Account__r.Name)</formula>
+    <inlineHelpText>The related Shift’s Contract name, if any.</inlineHelpText>
+    <label>Contract</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

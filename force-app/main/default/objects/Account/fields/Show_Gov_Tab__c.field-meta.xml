@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Show_Gov_Tab__c</fullName>
+    <description>Checkbox is selected if Type is Academies, Colleges, Free Schools etc, this then controls visibility of Government Identifiers Tab</description>
+    <formula>OR(
+    Establishment_Type_Group__c = &quot;Local authority maintained schools&quot;,
+    Establishment_Type_Group__c = &quot;Independent schools&quot;,
+    Establishment_Type_Group__c = &quot;Special schools&quot;,
+    Establishment_Type_Group__c = &quot;Academies&quot;,
+    Establishment_Type_Group__c = &quot;Other types&quot;,
+    Establishment_Type_Group__c = &quot;Colleges&quot;,
+    Establishment_Type_Group__c = &quot;Universities&quot;,
+    Establishment_Type_Group__c = &quot;Free Schools&quot;,
+    Establishment_Type_Group__c = &quot;Online provider&quot;,
+    Establishment_Type_Group__c = &quot;Welsh schools&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Show Gov Tab</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

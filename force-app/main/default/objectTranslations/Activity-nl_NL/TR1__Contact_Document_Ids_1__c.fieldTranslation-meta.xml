@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Shared Resumes 1 --></label>
+    <name>TR1__Contact_Document_Ids_1__c</name>
+</CustomFieldTranslation>

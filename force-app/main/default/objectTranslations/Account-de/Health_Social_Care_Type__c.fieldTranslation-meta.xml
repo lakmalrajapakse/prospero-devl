@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Health &amp; Social Care Type --></label>
+    <name>Health_Social_Care_Type__c</name>
+    <picklistValues>
+        <masterLabel>Case Management Company</masterLabel>
+        <translation><!-- Case Management Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Council</masterLabel>
+        <translation><!-- Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Department</masterLabel>
+        <translation><!-- Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Board</masterLabel>
+        <translation><!-- Health Board --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local Authority</masterLabel>
+        <translation><!-- Local Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NHS Organisation</masterLabel>
+        <translation><!-- NHS Organisation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Care Organisation</masterLabel>
+        <translation><!-- Private Care Organisation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Client</masterLabel>
+        <translation><!-- Private Client --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

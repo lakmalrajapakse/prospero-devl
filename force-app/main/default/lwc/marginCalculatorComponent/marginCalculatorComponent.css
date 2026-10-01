@@ -105,6 +105,25 @@
     overflow-y: auto;
 }
 
+/* Inline calculation/validation/save error -- sits directly above the Pay/Charge Rate group (or
+   inside the AWR box) in place of an error toast. */
+.calc-error-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.375rem;
+    background: #fef1ee;
+    border: 1px solid #f9c4b9;
+    border-left: 4px solid #ba0517;
+    color: #8e030f;
+    font-weight: 600;
+}
+
+.calc-error-messages p + p {
+    margin-top: 0.25rem;
+}
+
 /* Small helper text directly under an input (Pay Rate's allowed range / Total Cost). */
 .field-hint {
     font-size: 0.75rem;

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Site</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sites</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du site</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Adult --></label>
+        <name>Care_Package_Adult</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Child / Young Person --></label>
+        <name>Child_Young_Person</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Site --></label>
+        <name>Site</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

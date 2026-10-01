@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wird von der Planungs-App verwendet, um die Position dieses Arbeitnehmers innerhalb des Teams zu bestimmen.</help>
+    <label><!-- Scheduling Group --></label>
+    <name>sirenum__Scheduling_Group__c</name>
+</CustomFieldTranslation>

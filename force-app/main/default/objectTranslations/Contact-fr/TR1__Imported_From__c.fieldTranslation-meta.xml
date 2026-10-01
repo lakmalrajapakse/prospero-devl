@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Source des données du candidat. Par exemple, pour un candidat importé via TK Source!, ce champ contiendra la clé TK Source! du prestataire externe chargé des recherches.</help>
+    <label><!-- Imported From --></label>
+    <name>TR1__Imported_From__c</name>
+</CustomFieldTranslation>

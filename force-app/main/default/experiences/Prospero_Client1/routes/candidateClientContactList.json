@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "94d90675-b619-454e-9317-e3b3d3785fd8",
+  "appPageId" : "8c871e13-6d08-4440-b759-c322ea3acaef",
+  "configurationTags" : [ ],
+  "devName" : "Candidate_Client_Contact_List__c",
+  "id" : "0642e9cc-1660-42ff-9523-ddafa89006b9",
+  "label" : "Candidate  Client Contact List",
+  "routeType" : "list-003",
+  "type" : "route",
+  "urlPrefix" : "contact"
+}

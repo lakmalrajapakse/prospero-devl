@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Subject__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Subject</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accountancy</fullName>
+                <default>false</default>
+                <label>Accountancy</label>
+            </value>
+            <value>
+                <fullName>Art</fullName>
+                <default>false</default>
+                <label>Art</label>
+            </value>
+            <value>
+                <fullName>Art and Design</fullName>
+                <default>false</default>
+                <label>Art and Design</label>
+            </value>
+            <value>
+                <fullName>Basic Skills Tutor</fullName>
+                <default>false</default>
+                <label>Basic Skills Tutor</label>
+            </value>
+            <value>
+                <fullName>Business Studies</fullName>
+                <default>false</default>
+                <label>Business Studies</label>
+            </value>
+            <value>
+                <fullName>Careers Education</fullName>
+                <default>false</default>
+                <label>Careers Education</label>
+            </value>
+            <value>
+                <fullName>Citizenship</fullName>
+                <default>false</default>
+                <label>Citizenship</label>
+            </value>
+            <value>
+                <fullName>CL - Greek</fullName>
+                <default>false</default>
+                <label>CL - Greek</label>
+            </value>
+            <value>
+                <fullName>CL - Latin</fullName>
+                <default>false</default>
+                <label>CL - Latin</label>
+            </value>
+            <value>
+                <fullName>Classics</fullName>
+                <default>false</default>
+                <label>Classics</label>
+            </value>
+            <value>
+                <fullName>Communications Technology</fullName>
+                <default>false</default>
+                <label>Communications Technology</label>
+            </value>
+            <value>
+                <fullName>Dance</fullName>
+                <default>false</default>
+                <label>Dance</label>
+            </value>
+            <value>
+                <fullName>Drama</fullName>
+                <default>false</default>
+                <label>Drama</label>
+            </value>
+            <value>
+                <fullName>DT - Electronics</fullName>
+                <default>false</default>
+                <label>DT - Electronics</label>
+            </value>
+            <value>
+                <fullName>DT - Graphics</fullName>
+                <default>false</default>
+                <label>DT - Graphics</label>
+            </value>
+            <value>
+                <fullName>DT - Textiles</fullName>
+                <default>false</default>
+                <label>DT - Textiles</label>
+            </value>
+            <value>
+                <fullName>DT Non-resistant Material</fullName>
+                <default>false</default>
+                <label>DT Non-resistant Material</label>
+            </value>
+            <value>
+                <fullName>DT Resistant Material</fullName>
+                <default>false</default>
+                <label>DT Resistant Material</label>
+            </value>
+            <value>
+                <fullName>E2E Tutor</fullName>
+                <default>false</default>
+                <label>E2E Tutor</label>
+            </value>
+            <value>
+                <fullName>Economics</fullName>
+                <default>false</default>
+                <label>Economics</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>Employability Tutor</fullName>
+                <default>false</default>
+                <label>Employability Tutor</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>English</fullName>
+                <default>false</default>
+                <label>English</label>
+            </value>
+            <value>
+                <fullName>English - General</fullName>
+                <default>false</default>
+                <label>English - General</label>
+            </value>
+            <value>
+                <fullName>English - Language</fullName>
+                <default>false</default>
+                <label>English - Language</label>
+            </value>
+            <value>
+                <fullName>English - Literature</fullName>
+                <default>false</default>
+                <label>English - Literature</label>
+            </value>
+            <value>
+                <fullName>Environmental Studies</fullName>
+                <default>false</default>
+                <label>Environmental Studies</label>
+            </value>
+            <value>
+                <fullName>Fashion</fullName>
+                <default>false</default>
+                <label>Fashion</label>
+            </value>
+            <value>
+                <fullName>Film</fullName>
+                <default>false</default>
+                <label>Film</label>
+            </value>
+            <value>
+                <fullName>Food Technology</fullName>
+                <default>false</default>
+                <label>Food Technology</label>
+            </value>
+            <value>
+                <fullName>General Cover</fullName>
+                <default>false</default>
+                <label>General Cover</label>
+            </value>
+            <value>
+                <fullName>General Studies</fullName>
+                <default>false</default>
+                <label>General Studies</label>
+            </value>
+            <value>
+                <fullName>Geography</fullName>
+                <default>false</default>
+                <label>Geography</label>
+            </value>
+            <value>
+                <fullName>Geology</fullName>
+                <default>false</default>
+                <label>Geology</label>
+            </value>
+            <value>
+                <fullName>Graphic Design</fullName>
+                <default>false</default>
+                <label>Graphic Design</label>
+            </value>
+            <value>
+                <fullName>Health and Social Care</fullName>
+                <default>false</default>
+                <label>Health and Social Care</label>
+            </value>
+            <value>
+                <fullName>History</fullName>
+                <default>false</default>
+                <label>History</label>
+            </value>
+            <value>
+                <fullName>Humanities</fullName>
+                <default>false</default>
+                <label>Humanities</label>
+            </value>
+            <value>
+                <fullName>ICT</fullName>
+                <default>false</default>
+                <label>ICT</label>
+            </value>
+            <value>
+                <fullName>Job Search Tutor</fullName>
+                <default>false</default>
+                <label>Job Search Tutor</label>
+            </value>
+            <value>
+                <fullName>Law</fullName>
+                <default>false</default>
+                <label>Law</label>
+            </value>
+            <value>
+                <fullName>Leisure and Tourism</fullName>
+                <default>false</default>
+                <label>Leisure and Tourism</label>
+            </value>
+            <value>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+                <label>Marketing</label>
+            </value>
+            <value>
+                <fullName>Maths</fullName>
+                <default>false</default>
+                <label>Maths</label>
+            </value>
+            <value>
+                <fullName>Media Studies</fullName>
+                <default>false</default>
+                <label>Media Studies</label>
+            </value>
+            <value>
+                <fullName>MFL</fullName>
+                <default>false</default>
+                <label>MFL</label>
+            </value>
+            <value>
+                <fullName>MFL - Danish</fullName>
+                <default>false</default>
+                <label>MFL - Danish</label>
+            </value>
+            <value>
+                <fullName>MFL - Dutch</fullName>
+                <default>false</default>
+                <label>MFL - Dutch</label>
+            </value>
+            <value>
+                <fullName>MFL - French</fullName>
+                <default>false</default>
+                <label>MFL - French</label>
+            </value>
+            <value>
+                <fullName>MFL - German</fullName>
+                <default>false</default>
+                <label>MFL - German</label>
+            </value>
+            <value>
+                <fullName>MFL - Gujarati</fullName>
+                <default>false</default>
+                <label>MFL - Gujarati</label>
+            </value>
+            <value>
+                <fullName>MFL - Italian</fullName>
+                <default>false</default>
+                <label>MFL - Italian</label>
+            </value>
+            <value>
+                <fullName>MFL - Punjabi</fullName>
+                <default>false</default>
+                <label>MFL - Punjabi</label>
+            </value>
+            <value>
+                <fullName>MFL - Russian</fullName>
+                <default>false</default>
+                <label>MFL - Russian</label>
+            </value>
+            <value>
+                <fullName>MFL - Spanish</fullName>
+                <default>false</default>
+                <label>MFL - Spanish</label>
+            </value>
+            <value>
+                <fullName>MFL - Turkish</fullName>
+                <default>false</default>
+                <label>MFL - Turkish</label>
+            </value>
+            <value>
+                <fullName>MFL - Urdu</fullName>
+                <default>false</default>
+                <label>MFL - Urdu</label>
+            </value>
+            <value>
+                <fullName>MFL- Japanese</fullName>
+                <default>false</default>
+                <label>MFL- Japanese</label>
+            </value>
+            <value>
+                <fullName>MFL-Mandarin</fullName>
+                <default>false</default>
+                <label>MFL-Mandarin</label>
+            </value>
+            <value>
+                <fullName>Music</fullName>
+                <default>false</default>
+                <label>Music</label>
+            </value>
+            <value>
+                <fullName>PE</fullName>
+                <default>false</default>
+                <label>PE</label>
+            </value>
+            <value>
+                <fullName>Philosophy</fullName>
+                <default>false</default>
+                <label>Philosophy</label>
+            </value>
+            <value>
+                <fullName>Photography</fullName>
+                <default>false</default>
+                <label>Photography</label>
+            </value>
+            <value>
+                <fullName>PHSE</fullName>
+                <default>false</default>
+                <label>PHSE</label>
+            </value>
+            <value>
+                <fullName>Politics</fullName>
+                <default>false</default>
+                <label>Politics</label>
+            </value>
+            <value>
+                <fullName>Psychology</fullName>
+                <default>false</default>
+                <label>Psychology</label>
+            </value>
+            <value>
+                <fullName>RE</fullName>
+                <default>false</default>
+                <label>RE</label>
+            </value>
+            <value>
+                <fullName>Science - Biology</fullName>
+                <default>false</default>
+                <label>Science - Biology</label>
+            </value>
+            <value>
+                <fullName>Science - Chemistry</fullName>
+                <default>false</default>
+                <label>Science - Chemistry</label>
+            </value>
+            <value>
+                <fullName>Science - General</fullName>
+                <default>false</default>
+                <label>Science - General</label>
+            </value>
+            <value>
+                <fullName>Science - Physics</fullName>
+                <default>false</default>
+                <label>Science - Physics</label>
+            </value>
+            <value>
+                <fullName>Social Studies</fullName>
+                <default>false</default>
+                <label>Social Studies</label>
+            </value>
+            <value>
+                <fullName>Sociology</fullName>
+                <default>false</default>
+                <label>Sociology</label>
+            </value>
+            <value>
+                <fullName>Sports Science</fullName>
+                <default>false</default>
+                <label>Sports Science</label>
+            </value>
+            <value>
+                <fullName>Sports Studies</fullName>
+                <default>false</default>
+                <label>Sports Studies</label>
+            </value>
+            <value>
+                <fullName>Performing Arts</fullName>
+                <default>false</default>
+                <label>Performing Arts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

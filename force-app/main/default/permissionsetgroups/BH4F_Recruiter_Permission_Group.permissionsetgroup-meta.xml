@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This contains all the needed permissions for an OOTB recruiter profile</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>BH4F Recruiter Permission Group</label>
+    <mutingPermissionSets>BH4F_Recruiter_Permission_Group_Muted</mutingPermissionSets>
+    <permissionSets>BH4SF_Additional</permissionSets>
+    <permissionSets>BHB__BroadBean_Admin</permissionSets>
+    <permissionSets>BHB__BroadBean_User</permissionSets>
+    <permissionSets>Sirenum_Scheduler</permissionSets>
+    <permissionSets>TR1__ATS_High_Volume</permissionSets>
+    <permissionSets>TR1__ATSv2</permissionSets>
+    <permissionSets>TR1__Account_Pool_v2_User</permissionSets>
+    <permissionSets>TR1__BH4Force_Basic</permissionSets>
+    <permissionSets>TR1__BHLO_User_Permissions</permissionSets>
+    <permissionSets>TR1__BHTK_User_Permissions</permissionSets>
+    <permissionSets>TR1__Browse_User</permissionSets>
+    <permissionSets>TR1__Candidate_Statistics</permissionSets>
+    <permissionSets>TR1__Email_Activity_Configuration</permissionSets>
+    <permissionSets>TR1__Email_Editor_2020_User</permissionSets>
+    <permissionSets>TR1__Email_Editor_Signature_User</permissionSets>
+    <permissionSets>TR1__Email_OptOut</permissionSets>
+    <permissionSets>TR1__GenericLookup_User</permissionSets>
+    <permissionSets>TR1__Off_Limit_User</permissionSets>
+    <permissionSets>TR1__Power_Notes_User</permissionSets>
+    <permissionSets>TR1__Resume_Manager</permissionSets>
+    <permissionSets>TR1__Textkernel_Iframe_Portal_User</permissionSets>
+    <permissionSets>bh4fdocgen__Document_Generator_Talent_Rover_Integration</permissionSets>
+    <permissionSets>bh4fdocgen__Document_generator_User</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

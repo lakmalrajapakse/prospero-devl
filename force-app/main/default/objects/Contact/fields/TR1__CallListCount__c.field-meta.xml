@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__CallListCount__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Number of Call lists the contact is added to(from Candidate Statistics record)</description>
+    <externalId>false</externalId>
+    <formula>TR1__Candidate_Statistics__r.TR1__CallListCount__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Number of Call lists the contact is added to(from Candidate Statistics record)</inlineHelpText>
+    <label>Call List Count</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>To automate the setting of the School Term and Academic Year picklists on Shifts and Perm Placements</description>
+    <label>Prospero School Term</label>
+    <pluralLabel>Prospero School Terms</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

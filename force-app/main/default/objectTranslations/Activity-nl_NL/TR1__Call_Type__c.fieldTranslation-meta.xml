@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Call Type --></label>
+    <name>TR1__Call_Type__c</name>
+    <picklistValues>
+        <masterLabel>Business Development Call</masterLabel>
+        <translation>Oproep over bedrijfsontwikkeling</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Call</masterLabel>
+        <translation>Andere oproep</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recruiting Call</masterLabel>
+        <translation>Oproep voor werving</translation>
+    </picklistValues>
+</CustomFieldTranslation>

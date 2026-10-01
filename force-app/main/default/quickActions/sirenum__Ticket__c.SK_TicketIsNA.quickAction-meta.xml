@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows the user to indicate that this ticket is not something they have.</description>
+    <flowDefinition>SK_TicketSetNA</flowDefinition>
+    <label>I don&apos;t have this (N/A)</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

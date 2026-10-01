@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Nearest Station --></label>
+    <name>TR1__Nearest_Station__c</name>
+    <picklistValues>
+        <masterLabel>Bath Spa</masterLabel>
+        <translation><!-- Bath Spa --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

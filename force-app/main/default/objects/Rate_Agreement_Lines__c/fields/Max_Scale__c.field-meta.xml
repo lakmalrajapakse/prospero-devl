@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Scale__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Max Scale</label>
+    <referenceTo>Rate_Agreement_Scale__c</referenceTo>
+    <relationshipLabel>Rate Agreement Lines (Max Scale)</relationshipLabel>
+    <relationshipName>Rate_Agreement_Lines</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Calc_Type__c</fullName>
+    <label>Calc Type</label>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Fixed Margin Amount</fullName>
+                <default>false</default>
+                <label>Fixed Margin Amount</label>
+            </value>
+            <value>
+                <fullName>Fixed Margin %</fullName>
+                <default>false</default>
+                <label>Fixed Margin %</label>
+            </value>
+            <value>
+                <fullName>Max Margin %</fullName>
+                <default>false</default>
+                <label>Max Margin %</label>
+            </value>
+            <value>
+                <fullName>Max Margin Amount</fullName>
+                <default>false</default>
+                <label>Max Margin Amount</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Client_Access__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Client Access</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Assign Tags</fullName>
+                <default>false</default>
+                <label>Assign Tags</label>
+            </value>
+            <value>
+                <fullName>See Logs</fullName>
+                <default>false</default>
+                <label>See Logs</label>
+            </value>
+            <value>
+                <fullName>See Shifts</fullName>
+                <default>false</default>
+                <label>See Shifts</label>
+            </value>
+            <value>
+                <fullName>Start Shifts</fullName>
+                <default>false</default>
+                <label>Start Shifts</label>
+            </value>
+            <value>
+                <fullName>Manager Mode</fullName>
+                <default>false</default>
+                <label>Manager Mode</label>
+            </value>
+            <value>
+                <fullName>Trade Shifts</fullName>
+                <default>false</default>
+                <label>Trade Shifts</label>
+            </value>
+            <value>
+                <fullName>Scan Card</fullName>
+                <default>false</default>
+                <label>Scan Card</label>
+            </value>
+            <value>
+                <fullName>View All Shifts</fullName>
+                <default>false</default>
+                <label>View All Shifts</label>
+            </value>
+            <value>
+                <fullName>Create Shift</fullName>
+                <default>false</default>
+                <label>Create Shift</label>
+            </value>
+            <value>
+                <fullName>Edit Shift</fullName>
+                <default>false</default>
+                <label>Edit Shift</label>
+            </value>
+            <value>
+                <fullName>Access Matched Shifts</fullName>
+                <default>false</default>
+                <label>Access Matched Shifts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

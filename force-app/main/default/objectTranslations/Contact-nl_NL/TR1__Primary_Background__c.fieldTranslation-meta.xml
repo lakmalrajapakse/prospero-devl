@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Primary Background --></label>
+    <name>TR1__Primary_Background__c</name>
+    <picklistValues>
+        <masterLabel>AR/Bill/Collect - Finance</masterLabel>
+        <translation>Debiteurenadministratie/facturatie/betalingen - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Executive - Sales</masterLabel>
+        <translation>Accountmanager - verkoop</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Management - Client Services</masterLabel>
+        <translation>Accountmanagement - klantenservice</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Management - Sales</masterLabel>
+        <translation>Accountmanagement - verkoop</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accounts Payable - Finance</masterLabel>
+        <translation>Crediteurenadministratie - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administration - HR</masterLabel>
+        <translation>Administratie - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical Chem - Scientific</masterLabel>
+        <translation>Analytische scheikunde - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications - BI/DW/ETL - Technology</masterLabel>
+        <translation>Applicaties - BI/DW/ETL - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications - CRM - Technology</masterLabel>
+        <translation>Applicaties - CRM - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications - ERP - Technology</masterLabel>
+        <translation>Applicaties - ERP - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications - Other - Technology</masterLabel>
+        <translation>Applicaties - Overige - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architect - Technology</masterLabel>
+        <translation>Architect - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auditor - Engineering</masterLabel>
+        <translation>Auditor - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Benefits - HR</masterLabel>
+        <translation>Secundaire arbeidsvoorwaarden - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bioanalytical - Scientific</masterLabel>
+        <translation>Bioanalyse - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bioassay - Scientific</masterLabel>
+        <translation>Bioassay - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biostatistics - Clinical</masterLabel>
+        <translation>Biostatistiek - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BiotechOps - Clinical</masterLabel>
+        <translation>BiotechOps - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Branding - Marketing</masterLabel>
+        <translation>Merken - marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Analyst - Engineering</masterLabel>
+        <translation>Bedrijfsanalist - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Partner - HR</masterLabel>
+        <translation>Bedrijfspartner - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAO/VP Human Resources - HR</masterLabel>
+        <translation>CAO/VP personeel en organisatie - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEO/Chairman/President - Executive</masterLabel>
+        <translation>CEO/voorzitter/president - leidinggevende</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CFO/VP Finance - Finance</masterLabel>
+        <translation>CFO/VP financiën - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CMO/VP Marketing - Marketing</masterLabel>
+        <translation>CMO/VP marketing - marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COO/VP Operations - Operations</masterLabel>
+        <translation>COO/VP operationele zaken - operationele zaken</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPA w/ Industry - Finance</masterLabel>
+        <translation>CPA in industrie - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTA - Clinical</masterLabel>
+        <translation>CTA - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTO/CIO - Technology</masterLabel>
+        <translation>CTO/CIO - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Campaign - Marketing</masterLabel>
+        <translation>Campagne - marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cell Based Assay - Scientific</masterLabel>
+        <translation>Celgebaseerde assay - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cell Culture - Scientific</masterLabel>
+        <translation>Celcultuur - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Account - Sales</masterLabel>
+        <translation>Kanaalaccount - verkoop</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Client Services Management - Client Services</masterLabel>
+        <translation>Management klantenservice - klantenservice</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical DBA - Clinical</masterLabel>
+        <translation>Medische DBA - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Operations - Clinical</masterLabel>
+        <translation>Medische operationele zaken - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Outsourcing - Clinical</masterLabel>
+        <translation>Medische uitbesteding - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Project Management - Clinical</masterLabel>
+        <translation>Medisch projectmanagement - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Scientist - Clinical</masterLabel>
+        <translation>Medisch wetenschapper - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compensation - HR</masterLabel>
+        <translation>Vergoeding - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance Specialist - Engineering</masterLabel>
+        <translation>Nalevings-specialist - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance/Governance - Technology</masterLabel>
+        <translation>Naleving/bestuur - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computer System Validation - Engineering</masterLabel>
+        <translation>Validatie computersystemen - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consolidations - Finance</masterLabel>
+        <translation>Consolidaties - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Monitor - Clinical</masterLabel>
+        <translation>Contracttoezicht - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Controller - Finance</masterLabel>
+        <translation>Controller - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coordinator - Clinical</masterLabel>
+        <translation>Coördinator - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cost Accounting - Finance</masterLabel>
+        <translation>Kostenboekhouding - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Success - Client Services</masterLabel>
+        <translation>Klanttevredenheid - klantenservice</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Support - Client Services</masterLabel>
+        <translation>Klantenondersteuning - klantenservice</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMPK - Scientific</masterLabel>
+        <translation>DMPK - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Management - Clinical</masterLabel>
+        <translation>Databeheer - Mmedisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand Generation - Marketing</masterLabel>
+        <translation>Vraag stimuleren - marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital - Marketing</masterLabel>
+        <translation>Digitaal - marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation - Scientific</masterLabel>
+        <translation>Documentatie - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drug Safety - Clinical</masterLabel>
+        <translation>Medicijnenveiligheid - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Relations - HR</masterLabel>
+        <translation>Werknemerrelaties - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise Account Executive - Sales</masterLabel>
+        <translation>Leidinggevende zakelijke accounts - verkoop</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise Sales - Sales</masterLabel>
+        <translation>Verkoop aan bedrijven - verkoop</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FACS - Scientific</masterLabel>
+        <translation>FACS - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP&amp;A - Finance</masterLabel>
+        <translation>FP&amp;A - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facilities - Scientific</masterLabel>
+        <translation>Faciliteiten - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fermentation - Scientific</masterLabel>
+        <translation>Fermentatie - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Ledger - Finance</masterLabel>
+        <translation>Grootboek - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generalist - HR</masterLabel>
+        <translation>Generalist - P&amp;O</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Systems - HR</masterLabel>
+        <translation>HR-systemen - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Histology - Scientific</masterLabel>
+        <translation>Histologie - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Immunology - Scientific</masterLabel>
+        <translation>Immunologie - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Vivo - Scientific</masterLabel>
+        <translation>In vivo - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-house CRA - Clinical</masterLabel>
+        <translation>Interne CRA - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Contract Monitoring - Clinical</masterLabel>
+        <translation>Onafhankelijke contractbewaking - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Project Management - Clinical</masterLabel>
+        <translation>Onafhankelijk projectmanagement - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Data Center - Technology</masterLabel>
+        <translation>Infrastructuur - datacenter - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Database - Technology</masterLabel>
+        <translation>Infrastructuur - database - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Help Desk - Technology</masterLabel>
+        <translation>Infrastructuur - helpdesk - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Network/Security - Technology</masterLabel>
+        <translation>Infrastructuur - netwerk/beveiliging - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Sys/Storage - Technology</masterLabel>
+        <translation>Infrastructuur - systeem/opslag - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inside Sales - Sales</masterLabel>
+        <translation>Interne verkoop - verkoop</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instrumentation/Calibration - Scientific</masterLabel>
+        <translation>Instrumenten/kalibratie - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal</masterLabel>
+        <translation>Intern</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Audit/IT - Finance</masterLabel>
+        <translation>Interne audit/IT - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Audit/SOX - Finance</masterLabel>
+        <translation>Interne audit/SOX - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investor Relations - Finance</masterLabel>
+        <translation>Beleggerrelaties - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laboratory - Scientific</masterLabel>
+        <translation>Laboratorium - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning &amp; Development - HR</masterLabel>
+        <translation>Leren en ontwikkeling - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M&amp;A - Finance</masterLabel>
+        <translation>M&amp;A - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing - Engineering</masterLabel>
+        <translation>Productie - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing - Scientific</masterLabel>
+        <translation>Productie - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Management - Marketing</masterLabel>
+        <translation>Marketingmanagement - marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material Science - Scientific</masterLabel>
+        <translation>Materiaalwetenschap - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Med Chem - Scientific</masterLabel>
+        <translation>Medische chemie - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media Management - Client Services</masterLabel>
+        <translation>Mediamanagement - Kklantenservice</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media Planner/Buyer - Client Services</masterLabel>
+        <translation>Mediaplanner/-inkoper - klantenservice</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Doctor Clinical - Clinical</masterLabel>
+        <translation>Klinisch arts - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Doctor Safety - Clinical</masterLabel>
+        <translation>Medische veiligheid, arts - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mergers &amp; Acquisitions - HR</masterLabel>
+        <translation>Fusies en overnames - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Molecular Biology - Scientific</masterLabel>
+        <translation>Moleculaire biologie - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mutual Funds - Finance</masterLabel>
+        <translation>Beleggingsfonds - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nanotechnology - Scientific</masterLabel>
+        <translation>Nanotechnologie - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operations - Scientific</masterLabel>
+        <translation>Operationele zaken - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Organizational Development - HR</masterLabel>
+        <translation>Organisatieontwikkeling - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Overig</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKPD - Scientific</masterLabel>
+        <translation>PKPD - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Business Analyst - Technology</masterLabel>
+        <translation>PM - bedrijfsanalist - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Business Systems Analyst - Technology</masterLabel>
+        <translation>PM - analist bedrijfssystemen - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Program Manager - Technology</masterLabel>
+        <translation>PM - programmamanager - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Project Manager - Business - Technology</masterLabel>
+        <translation>PM - projectmanager - bedrijfsvoering - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Project Manager - Functional - Technology</masterLabel>
+        <translation>PM - projectmanager - functioneel - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Project Manager - Technical - Technology</masterLabel>
+        <translation>PM - projectmanager - technisch - technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payroll/Stock Admin - Finance</masterLabel>
+        <translation>Salarisadministratie/voorraadbeheer - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Performance Management - HR</masterLabel>
+        <translation>Prestatiebeheer - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process - Engineering</masterLabel>
+        <translation>Processen - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Dev - Scientific</masterLabel>
+        <translation>Procesontwikkeling - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product - Marketing</masterLabel>
+        <translation>Product - marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Quality - Engineering</masterLabel>
+        <translation>Productkwaliteit - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Management - Engineering</masterLabel>
+        <translation>Projectmanagement - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Management - Scientific</masterLabel>
+        <translation>Projectmanagement - Wwetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Accounting - Finance</masterLabel>
+        <translation>Overheidsfinanciën - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Publisher - Client Services</masterLabel>
+        <translation>Uitgever - klantenservice</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purification - Scientific</masterLabel>
+        <translation>Zuivering - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC - Scientific</masterLabel>
+        <translation>KC - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Chemist - Scientific</masterLabel>
+        <translation>KC-chemicus - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Micro - Scientific</masterLabel>
+        <translation>Micro KC - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality Assurance - Engineering</masterLabel>
+        <translation>Kwaliteitscontrole - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality Assurance - Scientific</masterLabel>
+        <translation>Kwaliteitscontrole - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regional CRA - Clinical</masterLabel>
+        <translation>Regionale CRA - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regional Operations - Clinical</masterLabel>
+        <translation>Regionale activiteiten - medisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regulatory - Scientific</masterLabel>
+        <translation>Wetgeving - wetenschappelijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regulatory Affairs - Engineering</masterLabel>
+        <translation>Regelgeving - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenue/Rev Recognition - Finance</masterLabel>
+        <translation>Inkomsten/inkomstenverantwoording - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk Management - Finance</masterLabel>
+        <translation>Risicobeheer - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEC/Regulatory Rptg - Finance</masterLabel>
+        <translation>SEC/nalevingsrapportage - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Development - Sales</masterLabel>
+        <translation>Verkoopontwikkeling - verkoop</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Engineering - Sales</masterLabel>
+        <translation>Technische verkoop - verkoop</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Management - Sales</masterLabel>
+        <translation>Verkoopmanagement - verkoop</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Search - Marketing</masterLabel>
+        <translation>Zoeken - marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shared Services - HR</masterLabel>
+        <translation>Gedeelde diensten - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Media - Marketing</masterLabel>
+        <translation>Sociale media - marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Quality - Engineering</masterLabel>
+        <translation>Softwarekwaliteit - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Systems Analyst - Finance</masterLabel>
+        <translation>Systeemanalist - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Talent Management - HR</masterLabel>
+        <translation>Talentmanagement - HR</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax - Finance</masterLabel>
+        <translation>Belastingen - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Writing - Engineering</masterLabel>
+        <translation>Technisch schrijven - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treasury - Finance</masterLabel>
+        <translation>Kasbeheer - financiën</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Validation - Engineering</masterLabel>
+        <translation>Validatie - techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virology - Scientific</masterLabel>
+        <translation>Virologie - wetenschap</translation>
+    </picklistValues>
+</CustomFieldTranslation>

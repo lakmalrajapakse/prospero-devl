@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Site__c</fullName>
+    <label>Site</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>sirenum__Site__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Child / Young Person</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>sirenum__Site__c</referenceTo>
+    <relationshipLabel>Pre-Approvals</relationshipLabel>
+    <relationshipName>Pre_Approvals</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

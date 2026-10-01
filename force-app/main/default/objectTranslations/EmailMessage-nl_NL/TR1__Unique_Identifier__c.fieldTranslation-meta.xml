@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indien van toepassing wordt hiermee een unieke identificator opgeslagen die in plaats van de sjabloon-id wordt gebruikt.</help>
+    <label><!-- Unique Identifier --></label>
+    <name>TR1__Unique_Identifier__c</name>
+</CustomFieldTranslation>

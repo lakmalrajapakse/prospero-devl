@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Skills Training Experience --></label>
+    <name>TR1__Skills_Training_Experience__c</name>
+    <picklistValues>
+        <masterLabel>BSL</masterLabel>
+        <translation><!-- BSL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Careers Advisor</masterLabel>
+        <translation>Loopbaanadviseur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAL specialist</masterLabel>
+        <translation>EAL-specialist</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Aid</masterLabel>
+        <translation>Eerste hulp</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invigilator</masterLabel>
+        <translation>Surveillant</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Literacy specialist</masterLabel>
+        <translation>Specialist in lees- en schrijfvaardigheid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Makaton</masterLabel>
+        <translation><!-- Makaton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moving and Handling</masterLabel>
+        <translation>Verplaatsing en verwerking</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Musician</masterLabel>
+        <translation>Muzikant</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Numeracy specialist</masterLabel>
+        <translation>Specialist in rekenvaardigheid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phonics</masterLabel>
+        <translation>Lezen met klanken</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reading Recovery</masterLabel>
+        <translation>Leesondersteuning</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Smart/Whiteboard</masterLabel>
+        <translation>Smartboard/whiteboard</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports Coach</masterLabel>
+        <translation>Sportcoach</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team Teach</masterLabel>
+        <translation>Teamtraining</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Welsh Medium</masterLabel>
+        <translation>Onderwijs in Welsh</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_Status__c</fullName>
+    <label>Compliance Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pre-Registration</fullName>
+                <default>false</default>
+                <label>Pre-Registration</label>
+            </value>
+            <value>
+                <fullName>Compliance In Progress</fullName>
+                <default>false</default>
+                <label>Compliance In Progress</label>
+            </value>
+            <value>
+                <fullName>Compliant</fullName>
+                <default>false</default>
+                <label>Compliant</label>
+            </value>
+            <value>
+                <fullName>Compliant (Client Notification Required)</fullName>
+                <default>false</default>
+                <label>Compliant (Client Notification Required)</label>
+            </value>
+            <value>
+                <fullName>Lapsed Compliance</fullName>
+                <default>false</default>
+                <label>Lapsed Compliance</label>
+            </value>
+            <value>
+                <fullName>Compliance Review Required</fullName>
+                <default>false</default>
+                <label>Compliance Review Required</label>
+            </value>
+            <value>
+                <fullName>Re-Registration Required</fullName>
+                <default>false</default>
+                <label>Re-Registration Required</label>
+            </value>
+            <value>
+                <fullName>Failed compliance</fullName>
+                <default>false</default>
+                <label>Failed compliance</label>
+            </value>
+            <value>
+                <fullName>Safeguarding Hold</fullName>
+                <default>false</default>
+                <label>Safeguarding Hold</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

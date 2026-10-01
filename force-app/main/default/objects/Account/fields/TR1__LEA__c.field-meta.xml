@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__LEA__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>North East</fullName>
+                <default>false</default>
+                <label>North East</label>
+            </value>
+            <value>
+                <fullName>Yorkshire &amp; Humberside</fullName>
+                <default>false</default>
+                <label>Yorkshire &amp; Humberside</label>
+            </value>
+            <value>
+                <fullName>North West</fullName>
+                <default>false</default>
+                <label>North West</label>
+            </value>
+            <value>
+                <fullName>West Midlands</fullName>
+                <default>false</default>
+                <label>West Midlands</label>
+            </value>
+            <value>
+                <fullName>East Midlands</fullName>
+                <default>false</default>
+                <label>East Midlands</label>
+            </value>
+            <value>
+                <fullName>Eastern England</fullName>
+                <default>false</default>
+                <label>Eastern England</label>
+            </value>
+            <value>
+                <fullName>Greater London</fullName>
+                <default>false</default>
+                <label>Greater London</label>
+            </value>
+            <value>
+                <fullName>South East England</fullName>
+                <default>false</default>
+                <label>South East England</label>
+            </value>
+            <value>
+                <fullName>South West England</fullName>
+                <default>false</default>
+                <label>South West England</label>
+            </value>
+            <value>
+                <fullName>Wales</fullName>
+                <default>false</default>
+                <label>Wales</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

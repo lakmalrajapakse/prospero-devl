@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>b3d__Category__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Category</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>b3d__Class__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>b3d__File_Category</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>MQSA</controllingFieldValue>
+            <valueName>Complete Packets</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MQSA</controllingFieldValue>
+            <valueName>Section G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Other</controllingFieldValue>
+            <valueName>Provider Submitted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Submittal</controllingFieldValue>
+            <valueName>Client Required Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Submittal</controllingFieldValue>
+            <valueName>CV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Submittal</controllingFieldValue>
+            <valueName>Eligibility Questionnaire for IMLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Submittal</controllingFieldValue>
+            <valueName>IPA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Submittal</controllingFieldValue>
+            <valueName>Modality Checklist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Submittal</controllingFieldValue>
+            <valueName>Questionnaire</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pre-Submittal</controllingFieldValue>
+            <valueName>Release</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procedure Logs</controllingFieldValue>
+            <valueName>Case Logs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Procedure Logs</controllingFieldValue>
+            <valueName>Competency Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Provider Onboarding</controllingFieldValue>
+            <valueName>ACH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Provider Onboarding</controllingFieldValue>
+            <valueName>Orientation Template</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Provider Onboarding</controllingFieldValue>
+            <valueName>W9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Sales Other</controllingFieldValue>
+            <controllingFieldValue>Agreements</controllingFieldValue>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Administrative</controllingFieldValue>
+            <valueName>Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agreements</controllingFieldValue>
+            <valueName>Addendum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Agreements</controllingFieldValue>
+            <valueName>Schedule A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Additional Forms</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Billing Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Client Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>DOP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Hospital Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Licensing Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Pre-Application</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Request Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>State Specific</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Application</controllingFieldValue>
+            <valueName>Work History</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Background</controllingFieldValue>
+            <valueName>Background Check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Background</controllingFieldValue>
+            <valueName>PA Clearance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Certifications</controllingFieldValue>
+            <valueName>Additional Certifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Certifications</controllingFieldValue>
+            <valueName>Board Certifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Certifications</controllingFieldValue>
+            <valueName>Life Certifications</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Certifications</controllingFieldValue>
+            <valueName>NY Infection Control</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>CME</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Diploma(s)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>ECFMG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>FCVS Verification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Fellowship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Internship</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Residency</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Education</controllingFieldValue>
+            <valueName>Transcripts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Verification</controllingFieldValue>
+            <valueName>Annual TB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Verification</controllingFieldValue>
+            <valueName>Drug Screen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Verification</controllingFieldValue>
+            <valueName>Immunizations</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Verification</controllingFieldValue>
+            <valueName>OHS Clearance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Verification</controllingFieldValue>
+            <valueName>Physical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health Verification</controllingFieldValue>
+            <valueName>Respiratory Fit Test</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Birth Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Color Photo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Divorce Decree</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Driver&apos;s License</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>EAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Green Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>H1B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>J1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Marriage Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Military</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Naturalization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>NPI Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>Passport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Identification</controllingFieldValue>
+            <valueName>SS Card</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Licenses</controllingFieldValue>
+            <valueName>CSR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Licenses</controllingFieldValue>
+            <valueName>DEA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Licenses</controllingFieldValue>
+            <valueName>IMLC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Licenses</controllingFieldValue>
+            <valueName>IMLC-LOQ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Licenses</controllingFieldValue>
+            <valueName>State Medical License</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MedMal, Red Flags, Insurance</controllingFieldValue>
+            <valueName>Claims History</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MedMal, Red Flags, Insurance</controllingFieldValue>
+            <valueName>Client Documentation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MedMal, Red Flags, Insurance</controllingFieldValue>
+            <valueName>COI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MedMal, Red Flags, Insurance</controllingFieldValue>
+            <valueName>NPDB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MedMal, Red Flags, Insurance</controllingFieldValue>
+            <valueName>Other (Court Records, Personal Explanation, etc)</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

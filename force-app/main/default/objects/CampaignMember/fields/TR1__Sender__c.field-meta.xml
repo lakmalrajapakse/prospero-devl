@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Sender__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to the User record used for the SFMC/Digital Engagement integration to provide information about the message sender(eg Name, Email)</description>
+    <inlineHelpText>Lookup to the User record used for the SFMC/Digital Engagement integration to provide information about the message sender(eg Name, Email)</inlineHelpText>
+    <label>Sender</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Campaign_Members</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

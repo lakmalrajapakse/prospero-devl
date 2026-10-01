@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Certifications --></label>
+    <name>TR1__Certifications__c</name>
+    <picklistValues>
+        <masterLabel>ASCP</masterLabel>
+        <translation><!-- ASCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agile</masterLabel>
+        <translation><!-- Agile --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CBP</masterLabel>
+        <translation><!-- CBP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCIE</masterLabel>
+        <translation><!-- CCIE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCNA</masterLabel>
+        <translation><!-- CCNA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCNP</masterLabel>
+        <translation><!-- CCNP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCP</masterLabel>
+        <translation><!-- CCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CIA</masterLabel>
+        <translation><!-- CIA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISA</masterLabel>
+        <translation><!-- CISA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISM</masterLabel>
+        <translation><!-- CISM --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CISSP</masterLabel>
+        <translation><!-- CISSP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLS</masterLabel>
+        <translation><!-- CLS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPA</masterLabel>
+        <translation><!-- CPA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CQE</masterLabel>
+        <translation><!-- CQE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GPHR</masterLabel>
+        <translation><!-- GPHR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HT</masterLabel>
+        <translation><!-- HT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ITIL</masterLabel>
+        <translation><!-- ITIL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MBA</masterLabel>
+        <translation><!-- MBA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCA - Architects</masterLabel>
+        <translation>MCA – Architects</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCITP</masterLabel>
+        <translation><!-- MCITP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MCSE</masterLabel>
+        <translation><!-- MCSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MT</masterLabel>
+        <translation><!-- MT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OCA</masterLabel>
+        <translation><!-- OCA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OCP</masterLabel>
+        <translation><!-- OCP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PHR</masterLabel>
+        <translation><!-- PHR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMI-ACP</masterLabel>
+        <translation><!-- PMI-ACP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMP</masterLabel>
+        <translation><!-- PMP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAC</masterLabel>
+        <translation><!-- RAC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RHCE - Red Hat</masterLabel>
+        <translation>RHCE – Red Hat</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SPHR</masterLabel>
+        <translation><!-- SPHR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scrum Master</masterLabel>
+        <translation><!-- Scrum Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VCDX</masterLabel>
+        <translation><!-- VCDX --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

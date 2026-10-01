@@ -1,0 +1,8 @@
+Hallo {!Receiving_User.FirstName},
+
+willkommen bei {!Community_Name} Die ersten Schritte finden Sie unter {!Community_Url}
+
+Benutzername: {!Receiving_User.Username}
+
+Vielen Dank,
+{!Organization.Name}

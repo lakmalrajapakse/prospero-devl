@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Integrated Type --></label>
+    <name>Integrated_Type__c</name>
+    <picklistValues>
+        <masterLabel>AV Live Events</masterLabel>
+        <translation><!-- AV Live Events --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Broadcast</masterLabel>
+        <translation><!-- Broadcast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultancy</masterLabel>
+        <translation><!-- Consultancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Distributor</masterLabel>
+        <translation><!-- Distributor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fire and Security</masterLabel>
+        <translation><!-- Fire and Security --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Home Automation</masterLabel>
+        <translation><!-- Home Automation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT (Information Technology)</masterLabel>
+        <translation><!-- IT (Information Technology) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing</masterLabel>
+        <translation><!-- Manufacturing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production</masterLabel>
+        <translation><!-- Production --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Systems Integrator</masterLabel>
+        <translation><!-- Systems Integrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecomms</masterLabel>
+        <translation><!-- Telecomms --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unified Comms</masterLabel>
+        <translation><!-- Unified Comms --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

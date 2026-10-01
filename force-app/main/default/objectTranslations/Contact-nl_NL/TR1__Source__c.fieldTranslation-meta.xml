@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Source --></label>
+    <name>TR1__Source__c</name>
+    <picklistValues>
+        <masterLabel>CV Library</masterLabel>
+        <translation><!-- CV Library --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indeed</masterLabel>
+        <translation><!-- Indeed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Fair</masterLabel>
+        <translation><!-- Job Fair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LinkedIn</masterLabel>
+        <translation><!-- LinkedIn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid social media (META)</masterLabel>
+        <translation><!-- Paid social media (META) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospero Learning Health &amp; Social Care</masterLabel>
+        <translation><!-- Prospero Learning Health &amp; Social Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospero Learning Teaching</masterLabel>
+        <translation><!-- Prospero Learning Teaching --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospero Website</masterLabel>
+        <translation><!-- Prospero Website --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reed</masterLabel>
+        <translation><!-- Reed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Referred by a friend</masterLabel>
+        <translation><!-- Referred by a friend --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENploy</masterLabel>
+        <translation><!-- SENploy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University Fair</masterLabel>
+        <translation><!-- University Fair --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

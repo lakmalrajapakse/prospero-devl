@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Détermine si un message doit aussi être envoyé par WhatsApp</help>
+    <label><!-- WhatsApp --></label>
+    <name>TR1__WhatsApp__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Health &amp; Social Care</fullName>
+        <default>false</default>
+        <label>Health &amp; Social Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrated</fullName>
+        <default>false</default>
+        <label>Integrated</label>
+    </customValue>
+    <customValue>
+        <fullName>Teaching</fullName>
+        <default>false</default>
+        <label>Teaching</label>
+    </customValue>
+    <masterLabel>Brand</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

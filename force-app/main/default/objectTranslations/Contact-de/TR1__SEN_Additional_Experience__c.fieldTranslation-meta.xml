@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SEN Skills, Quals and Training --></label>
+    <name>TR1__SEN_Additional_Experience__c</name>
+    <picklistValues>
+        <masterLabel>ADHD Awareness</masterLabel>
+        <translation>ADHD-Bewusstsein</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Art Therapy</masterLabel>
+        <translation>Kunsttherapie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Autism Awareness</masterLabel>
+        <translation>Autismus-Bewusstsein</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BSL Level 1-3</masterLabel>
+        <translation><!-- BSL Level 1-3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Behaviour Mentor and Tuition training</masterLabel>
+        <translation>Verhaltens-, Mentor- und Unterrichtstraining</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bullying Support Training</masterLabel>
+        <translation>Training zur Unterstützung bei Mobbing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disability Sports Coaching Award</masterLabel>
+        <translation>Auszeichnung als Trainer für Behindertensport</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drug awareness training</masterLabel>
+        <translation>Training zur Sensibilisierung bei Drogenproblemen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dyslexia Support Training</masterLabel>
+        <translation>Training zur Unterstützung bei Legasthenie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAL specialist</masterLabel>
+        <translation>EAL-Spezialist</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eating Disorder Awareness</masterLabel>
+        <translation>Bewusstsein für Essstörungen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency First Aid</masterLabel>
+        <translation>Erste Hilfe</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Epilepsy Training</masterLabel>
+        <translation>Epilepsietraining</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jolly Phonics</masterLabel>
+        <translation><!-- Jolly Phonics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Makaton</masterLabel>
+        <translation><!-- Makaton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mappa</masterLabel>
+        <translation><!-- Mappa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Moving and Handling</masterLabel>
+        <translation>Bewegen und Handhaben</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Music Therapy</masterLabel>
+        <translation>Musiktherapie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phonics trained</masterLabel>
+        <translation>Phonik trainiert</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Physical Disabilities</masterLabel>
+        <translation>Körperbehinderungen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safe Handling and Administration of Medicine</masterLabel>
+        <translation>Sicherer Umgang mit und Verabreichung von Medikamenten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safeguarding</masterLabel>
+        <translation>Sicherung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech and Language Trained</masterLabel>
+        <translation>Logopädie trainiert</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Suspected Physical and Mental Abuse awareness training</masterLabel>
+        <translation>Bewusstseinstraining bei Verdacht auf körperliche und seelische Misshandlung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team Teach</masterLabel>
+        <translation>Gruppenschulung</translation>
+    </picklistValues>
+</CustomFieldTranslation>

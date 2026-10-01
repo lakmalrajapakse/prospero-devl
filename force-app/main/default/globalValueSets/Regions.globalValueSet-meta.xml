@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HSC Birmingham</fullName>
+        <default>false</default>
+        <label>HSC Birmingham</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC Bristol</fullName>
+        <default>false</default>
+        <label>HSC Bristol</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC Cardiff</fullName>
+        <default>false</default>
+        <label>HSC Cardiff</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC Chelmsford</fullName>
+        <default>false</default>
+        <label>HSC Chelmsford</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC Glasgow</fullName>
+        <default>false</default>
+        <label>HSC Glasgow</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC Leeds</fullName>
+        <default>false</default>
+        <label>HSC Leeds</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC Liverpool</fullName>
+        <default>false</default>
+        <label>HSC Liverpool</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC London</fullName>
+        <default>false</default>
+        <label>HSC London</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC Manchester</fullName>
+        <default>false</default>
+        <label>HSC Manchester</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC Newcastle</fullName>
+        <default>false</default>
+        <label>HSC Newcastle</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC Southampton</fullName>
+        <default>false</default>
+        <label>HSC Southampton</label>
+    </customValue>
+    <customValue>
+        <fullName>INT London</fullName>
+        <default>false</default>
+        <label>INT London</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Birmingham</fullName>
+        <default>false</default>
+        <label>TEA Birmingham</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Bristol</fullName>
+        <default>false</default>
+        <label>TEA Bristol</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Cardiff</fullName>
+        <default>false</default>
+        <label>TEA Cardiff</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Chelmsford</fullName>
+        <default>false</default>
+        <label>TEA Chelmsford</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Leeds</fullName>
+        <default>false</default>
+        <label>TEA Leeds</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Liverpool</fullName>
+        <default>false</default>
+        <label>TEA Liverpool</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA London</fullName>
+        <default>false</default>
+        <label>TEA London</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Manchester</fullName>
+        <default>false</default>
+        <label>TEA Manchester</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Newcastle</fullName>
+        <default>false</default>
+        <label>TEA Newcastle</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Southampton</fullName>
+        <default>false</default>
+        <label>TEA Southampton</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA Swansea</fullName>
+        <default>false</default>
+        <label>TEA Swansea</label>
+    </customValue>
+    <masterLabel>Regions</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

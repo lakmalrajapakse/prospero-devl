@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <defaultLandingTab>standard-home</defaultLandingTab>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <tabs>standard-Chatter</tabs>
+    <tabs>standard-UserProfile</tabs>
+    <tabs>standard-CollaborationGroup</tabs>
+    <tabs>standard-File</tabs>
+    <tabs>standard-Account</tabs>
+    <tabs>standard-Contact</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <tabs>TR1__Consent_Type__c</tabs>
+    <tabs>TR1__Application_V2__c</tabs>
+    <tabs>TR1__Application_History__c</tabs>
+    <tabs>TR1__Send_Out_Schedule_V2__c</tabs>
+    <tabs>Team__c</tabs>
+    <tabs>Consultant__c</tabs>
+    <tabs>Team_User__c</tabs>
+    <tabs>CYP_to_Job__c</tabs>
+    <tabs>CYP_to_Shift__c</tabs>
+    <tabs>sirenum__AWR__c</tabs>
+    <tabs>sirenum__AWR_Break__c</tabs>
+    <tabs>sirenum__AWR_Contributor__c</tabs>
+    <tabs>Pre_Approval__c</tabs>
+</CustomApplication>

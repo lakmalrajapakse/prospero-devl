@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Le site est le champ indiquant sur quel site telle ou telle personne travaillerait.</help>
+    <label><!-- Default Work Site --></label>
+    <name>sirenum__Default_Site__c</name>
+    <relationshipLabel><!-- Contacts --></relationshipLabel>
+</CustomFieldTranslation>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Titles --></label>
+    <name>TR1__Job_Titles__c</name>
+    <picklistValues>
+        <masterLabel>1-2-1 Tutor (Primary)</masterLabel>
+        <translation>1-op-1-leraar (basis)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1-2-1 Tutor (Secondary)</masterLabel>
+        <translation>1-op-1-leraar (voortgezet)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Assistant Head Teacher</masterLabel>
+        <translation>Waarnemend assistent-directeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Assistant Principle</masterLabel>
+        <translation>Waarnemend assistent-schoolhoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Deputy Head Teacher</masterLabel>
+        <translation>Waarnemend adjunct-directeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Head Teacher</masterLabel>
+        <translation>Waarnemend directeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Head of Department</masterLabel>
+        <translation>Waarnemend afdelingshoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Head of Faculty</masterLabel>
+        <translation>Waarnemend faculteitshoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Principal</masterLabel>
+        <translation>Waarnemend schoolhoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Vice Principal</masterLabel>
+        <translation>Waarnemend adjunct-schoolhoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Assistant</masterLabel>
+        <translation>Assistent-beheerder</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Faculty Leader</masterLabel>
+        <translation>Assistent-faculteitshoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Head Teacher</masterLabel>
+        <translation>Assistent-directeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Principal</masterLabel>
+        <translation>Assistent-schoolhoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Vice Principal</masterLabel>
+        <translation>Assistent-adjunct-schoolhoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attendance &amp; Welfare Officer</masterLabel>
+        <translation>Leerplicht- en welzijnsambtenaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Manager</masterLabel>
+        <translation>Bedrijfsmanager</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Careers Co-coordinator</masterLabel>
+        <translation>Loopbaancoördinator</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chair of Governors</masterLabel>
+        <translation>Bestuursvoorzitter</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover Manager</masterLabel>
+        <translation>Manager invaldocenten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover Supervisor</masterLabel>
+        <translation>Supervisor invaldocenten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Head Teacher</masterLabel>
+        <translation>Adjunct-directeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Principal</masterLabel>
+        <translation>Waarnemend schoolhoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESOL/EAL Tutor</masterLabel>
+        <translation>ESOL-/EAL-leerkracht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Examinations Officer</masterLabel>
+        <translation>Verantwoordelijke voor examens</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive Head</masterLabel>
+        <translation>Uitvoerend hoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive Principal</masterLabel>
+        <translation>Uitvoerend schoolhoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extended Schools &amp; Extra Curricular Co-ordinator</masterLabel>
+        <translation>Coördinator brede scholen en buitenschoolse activiteiten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS Teacher</masterLabel>
+        <translation>Leerkracht propedeutische fase</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faculty Leader</masterLabel>
+        <translation>Faculteitshoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance Manager</masterLabel>
+        <translation>Financieel manager</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foundation Leader</masterLabel>
+        <translation>Hoofd basisfase</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Governor</masterLabel>
+        <translation>Bestuurder</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HLTA</masterLabel>
+        <translation>HLTA (onderwijsassistent hoger niveau)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Assistant</masterLabel>
+        <translation>HR-assistent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Manager</masterLabel>
+        <translation>HR-manager</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head Teacher</masterLabel>
+        <translation>Hoofddocent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of 6th Form</masterLabel>
+        <translation>Hoofd 6th Form (bovenbouw middelbare school)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Department</masterLabel>
+        <translation>Afdelingshoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Faculty</masterLabel>
+        <translation>Faculteitshoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Year</masterLabel>
+        <translation>Hoofd van jaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head&apos;s PA</masterLabel>
+        <translation>PA van hoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inclusion Manager</masterLabel>
+        <translation>Inclusiviteitsmanager</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instructor</masterLabel>
+        <translation>Instructeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intervention Teacher</masterLabel>
+        <translation>Leerkracht interventies</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS1 Intervention Co-ordinator</masterLabel>
+        <translation>Coördinator interventies KS1 (onderbouw basisschool)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS2 Intervention Co-ordinator</masterLabel>
+        <translation>Coördinator interventies KS2 (bovenbouw basisschool)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS3 Intervention Co-ordinator</masterLabel>
+        <translation>Coördinator interventies KS3 (onderbouw middelbare school)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS4 Intervention Co-ordinator</masterLabel>
+        <translation>Coördinator interventies KS4 (bovenbouw middelbare school)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 1 Leader</masterLabel>
+        <translation>Leidinggevende Key Stage 1 (onderbouw basisschool)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 2 Leader</masterLabel>
+        <translation>Leidinggevende Key Stage 2 (onderbouw basisschool)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 3 Leader</masterLabel>
+        <translation>Leidinggevende Key Stage 3 (onderbouw basisschool)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 4 Leader</masterLabel>
+        <translation>Leidinggevende Key Stage 4 (onderbouw basisschool)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSA</masterLabel>
+        <translation>Assistent leerondersteuning</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Cover Supervisor</masterLabel>
+        <translation>Hoofdsupervisor invaldocenten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Practitioner</masterLabel>
+        <translation>Leidinggevende van leerkrachten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Resources Centre Manager</masterLabel>
+        <translation>Manager leermiddelencentrum</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Support Co-ordinator</masterLabel>
+        <translation>Coördinator leerondersteuning</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursery Nurse</masterLabel>
+        <translation>Verzorger kinderdagverblijf</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA to SLT</masterLabel>
+        <translation>PA voor directie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pastoral Support Worker/Mentor</masterLabel>
+        <translation>Ondersteunend pastoraal werker/mentor</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Play Therapist</masterLabel>
+        <translation>Speltherapeut</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Principal</masterLabel>
+        <translation>Schoolhoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Principal&apos;s PA</masterLabel>
+        <translation>PA van schoolhoofd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receptionist</masterLabel>
+        <translation><!-- Receptionist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEN TA</masterLabel>
+        <translation>Onderwijsassistent speciaal onderwijs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEN Teacher</masterLabel>
+        <translation>Leerkracht speciaal onderwijs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENco/ SENDco</masterLabel>
+        <translation>Coördinator speciaal onderwijs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary</masterLabel>
+        <translation>Secretaris</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech and Language Therapist</masterLabel>
+        <translation>Logopedist</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teacher</masterLabel>
+        <translation>Leerkracht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teaching &amp; Learning Coach</masterLabel>
+        <translation>Coach onderwijs en leren</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teaching Assistant</masterLabel>
+        <translation>Onderwijsassistent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technician</masterLabel>
+        <translation>Technicus</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice Head Teacher</masterLabel>
+        <translation>Onderdirecteur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice Principal</masterLabel>
+        <translation>Adjunct-schoolhoofd</translation>
+    </picklistValues>
+</CustomFieldTranslation>

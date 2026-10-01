@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_PayBill_Rate_Rule_Prospero</fullName>
+    <active>true</active>
+    <description>Duplicating the BH Man Package val rule but with exception for Multi-Client CYP Jobs: https://1218globaluk.eu.teamwork.com/app/tasks/36162794</description>
+    <errorConditionFormula>AND(RecordType.DeveloperName &lt;&gt; &quot;Multi_Child_Young_Person_Contract&quot;,
+OR(
+AND(
+!ISNULL(TR1__Maximum_Pay_Rate__c),
+!ISNULL(TR1__Maximum_Bill_Rate__c),
+TR1__Maximum_Pay_Rate__c &gt; TR1__Maximum_Bill_Rate__c
+),
+AND(
+!ISNULL(TR1__Maximum_Pay_Rate__c),
+ISNULL(TR1__Maximum_Bill_Rate__c)
+),
+AND(
+ISNULL(TR1__Maximum_Pay_Rate__c),
+!ISNULL(TR1__Maximum_Bill_Rate__c)
+)
+)
+
+)</errorConditionFormula>
+    <errorMessage>Maximum Pay Rate should not be greater then Maximum Bill Rate or any one of the rate should not be blank</errorMessage>
+</ValidationRule>

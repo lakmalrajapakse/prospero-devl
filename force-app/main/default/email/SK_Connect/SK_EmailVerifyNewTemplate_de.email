@@ -1,0 +1,9 @@
+Hallo {!User.FirstName},
+
+wir haben eine Anfrage zur Änderung der E-Mail-Adresse für den Benutzernamen {!User.Username} erhalten. Stellen Sie bitte sicher, dass die folgenden Änderungen korrekt sind:
+
+Vorherige E-Mail-Adresse: {!ChgEmailVer.OldEmail}
+Neue E-Mail-Adresse: {!ChgEmailVer.NewEmail}
+
+Um das Ändern Ihrer E-Mail-Adresse abzuschließen, klicken Sie auf den folgenden Link. Dieser Link läuft in 72 Stunden ab.
+ {!ChgEmailVer.Url}

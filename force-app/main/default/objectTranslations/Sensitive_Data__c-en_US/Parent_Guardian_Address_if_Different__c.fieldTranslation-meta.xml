@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please provide the Parent / Guardian&apos;s Address if this is different to the Child / Young Person --></help>
+    <label><!-- Parent / Guardian Address if Different --></label>
+    <name>Parent_Guardian_Address_if_Different__c</name>
+</CustomFieldTranslation>

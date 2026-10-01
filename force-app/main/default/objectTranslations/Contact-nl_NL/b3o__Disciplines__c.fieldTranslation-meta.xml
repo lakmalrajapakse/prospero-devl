@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Disciplines --></label>
+    <name>b3o__Disciplines__c</name>
+    <picklistValues>
+        <masterLabel>ANX (Anesthesia)</masterLabel>
+        <translation><!-- ANX (Anesthesia) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCE (Critical Care)</masterLabel>
+        <translation><!-- CCE (Critical Care) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CNA (Certified Nurse Anesthetists)</masterLabel>
+        <translation><!-- CNA (Certified Nurse Anesthetists) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ERM (Emergency Medicine)</masterLabel>
+        <translation><!-- ERM (Emergency Medicine) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FAM (Family Medicine)</masterLabel>
+        <translation><!-- FAM (Family Medicine) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GST (Gastroenterology)</masterLabel>
+        <translation><!-- GST (Gastroenterology) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HOS (Hospital Medicine)</masterLabel>
+        <translation><!-- HOS (Hospital Medicine) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INT (Internal Medicine)</masterLabel>
+        <translation><!-- INT (Internal Medicine) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INV (Intensive Medicine)</masterLabel>
+        <translation><!-- INV (Intensive Medicine) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PSY (Psychiatry)</masterLabel>
+        <translation><!-- PSY (Psychiatry) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RAD (Radiology)</masterLabel>
+        <translation><!-- RAD (Radiology) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SGL (Surgical Services)</masterLabel>
+        <translation><!-- SGL (Surgical Services) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SUR (Surgery)</masterLabel>
+        <translation><!-- SUR (Surgery) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TRA (Trauma)</masterLabel>
+        <translation><!-- TRA (Trauma) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WAC (Women &amp; Children)</masterLabel>
+        <translation><!-- WAC (Women &amp; Children) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

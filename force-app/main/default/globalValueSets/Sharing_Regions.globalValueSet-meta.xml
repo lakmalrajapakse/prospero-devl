@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>HSC - London and South East</fullName>
+        <default>false</default>
+        <label>HSC - London and South East</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC - Midlands</fullName>
+        <default>false</default>
+        <label>HSC - Midlands</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC - North East</fullName>
+        <default>false</default>
+        <label>HSC - North East</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC - North West</fullName>
+        <default>false</default>
+        <label>HSC - North West</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC - South Coast</fullName>
+        <default>false</default>
+        <label>HSC - South Coast</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC - Wales and South West</fullName>
+        <default>false</default>
+        <label>HSC - Wales and South West</label>
+    </customValue>
+    <customValue>
+        <fullName>HSC - Yorkshire</fullName>
+        <default>false</default>
+        <label>HSC - Yorkshire</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA - Canada</fullName>
+        <default>false</default>
+        <label>TEA - Canada</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA - London and South East</fullName>
+        <default>false</default>
+        <label>TEA - London and South East</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA - Midlands</fullName>
+        <default>false</default>
+        <label>TEA - Midlands</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA - North East</fullName>
+        <default>false</default>
+        <label>TEA - North East</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA - North West</fullName>
+        <default>false</default>
+        <label>TEA - North West</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA - South Coast</fullName>
+        <default>false</default>
+        <label>TEA - South Coast</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA - Wales and South West</fullName>
+        <default>false</default>
+        <label>TEA - Wales and South West</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA - Yorkshire</fullName>
+        <default>false</default>
+        <label>TEA - Yorkshire</label>
+    </customValue>
+    <masterLabel>Sharing Regions</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

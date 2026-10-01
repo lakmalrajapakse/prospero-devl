@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Worker Type/ Payroll Provider --></label>
+    <name>Worker_Type_Payroll_Provider__c</name>
+    <picklistValues>
+        <masterLabel>Generate FS</masterLabel>
+        <translation><!-- Generate FS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generate FS (PAYE) option only</masterLabel>
+        <translation><!-- Generate FS (PAYE) option only --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Limited Company</masterLabel>
+        <translation><!-- Limited Company --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mainpay</masterLabel>
+        <translation><!-- Mainpay --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pay As You Earn</masterLabel>
+        <translation><!-- Pay As You Earn --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unregistered</masterLabel>
+        <translation><!-- Unregistered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workwell (JSA)</masterLabel>
+        <translation><!-- Workwell (JSA) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- This indicates how the user felt over-all about their shift. --></help>
+    <label><!-- Feedback --></label>
+    <name>SK_Feedback__c</name>
+    <picklistValues>
+        <masterLabel>Good</masterLabel>
+        <translation><!-- Good --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Great</masterLabel>
+        <translation><!-- Great --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OK</masterLabel>
+        <translation><!-- OK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poor</masterLabel>
+        <translation><!-- Poor --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

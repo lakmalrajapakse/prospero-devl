@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shift_Site_Latitude__c</fullName>
+    <description>The related Shift’s Site’s latitude, if any.</description>
+    <externalId>false</externalId>
+    <formula>sirenum__Shift__r.sirenum__Site__r.sirenum__Coordinates__Latitude__s</formula>
+    <inlineHelpText>The related Shift’s Site’s latitude, if any.</inlineHelpText>
+    <label>Latitude</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>9</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

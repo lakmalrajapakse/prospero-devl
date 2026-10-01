@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Verlengt de kandidaat het contract in september 2014?</help>
+    <label><!-- Stay On September 2014? --></label>
+    <name>TR1__Stay_On_September_2014__c</name>
+    <picklistValues>
+        <masterLabel>Maybe</masterLabel>
+        <translation>Misschien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Candidate</masterLabel>
+        <translation>Nieuwe kandidaat</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - No Longer Interested in UK</masterLabel>
+        <translation>Nee - niet langer geïnteresseerd in het VK</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - No Longer in the UK</masterLabel>
+        <translation>Nee - niet langer in het VK</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Not Eligible for Visa</masterLabel>
+        <translation>Nee - komt niet in aanmerking voor een visum</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Not as Expected by EP</masterLabel>
+        <translation>Nee - voldoet niet aan de verwachtingen van EP</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed by Another Agency Contract</masterLabel>
+        <translation>Nee - geplaatst met een contract van een andere agent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed by Another Agency Perm</masterLabel>
+        <translation>Nee - geplaatst met een perm van een andere agent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed in Home Country</masterLabel>
+        <translation>Nee - geplaatst in het thuisland</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Retired</masterLabel>
+        <translation>Nee - met pensioen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm - Engage Fee</masterLabel>
+        <translation>Perm - kosten voor werving</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm 0%</masterLabel>
+        <translation>Perm 0 %</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Available</masterLabel>
+        <translation>Ja - beschikbaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Placed - Current School</masterLabel>
+        <translation>Ja - geplaatst - huidige school</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Placed - New School</masterLabel>
+        <translation>Ja - geplaatst - nieuwe school</translation>
+    </picklistValues>
+</CustomFieldTranslation>

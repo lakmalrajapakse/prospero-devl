@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>b3d__Subcategory__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Subcategory</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>b3d__Category__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>b3d__File_Subcategory</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>AHA - ACLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>AHA - ATLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>AHA - BLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>AHA - NRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>AHA - PALS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>Non AHA - ACLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>Non AHA - ATLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>Non AHA - BLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>Non AHA - NRP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Life Certifications</controllingFieldValue>
+            <valueName>Non AHA - PALS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PA Clearance</controllingFieldValue>
+            <valueName>Child Abuse Prevention</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PA Clearance</controllingFieldValue>
+            <valueName>FBI Fingerprints</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PA Clearance</controllingFieldValue>
+            <valueName>Patch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CME</controllingFieldValue>
+            <valueName>Certificate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CME</controllingFieldValue>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CME</controllingFieldValue>
+            <valueName>Transcript</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Additional Certifications</controllingFieldValue>
+            <controllingFieldValue>Board Certifications</controllingFieldValue>
+            <valueName>Hardcopy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Additional Certifications</controllingFieldValue>
+            <controllingFieldValue>Board Certifications</controllingFieldValue>
+            <valueName>Online Verification</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Board Certifications</controllingFieldValue>
+            <valueName>Eligibility Letter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CV</controllingFieldValue>
+            <valueName>Formatted</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CV</controllingFieldValue>
+            <valueName>Original</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schedule A</controllingFieldValue>
+            <valueName>Client</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schedule A</controllingFieldValue>
+            <valueName>Provider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>APP (Advanced Practitioner)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>CRNA (Certified Nurse Anesthesia)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>Full Physician License</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>Locum or Temp License</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>PA (Physician Assistant)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>Prescriptive Authority</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>RN (Multi-State)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>RN (Registered Nurse)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>State Medical License</controllingFieldValue>
+            <valueName>Telemedicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Invoice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Invoice Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>InvoiceGenerator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Payroll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Payroll Credit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Preview</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Finance</controllingFieldValue>
+            <valueName>Timesheet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Covid Vaccination</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Declination Form</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Flu Shot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Hep B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Mumps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Rubella</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Rubeola</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>T-dap</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Titers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Vaccination Record</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Immunizations</controllingFieldValue>
+            <valueName>Varicella</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

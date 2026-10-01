@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn die Sozialversicherungsnummer nicht den Vorschriften entspricht (und Sie einen Fehler sehen), markieren Sie dieses Kontrollkästchen.</help>
+    <label><!-- Invalid NIC --></label>
+    <name>sirenum__Manual_NIC__c</name>
+</CustomFieldTranslation>

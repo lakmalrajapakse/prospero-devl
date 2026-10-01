@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Client Search Filter</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Client Search Filters</value>
+    </caseValues>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- For lookup, Please fill the Lookup Where Clause and Look up display fields --></errorMessage>
+        <name>Lookup_required_Fields</name>
+    </validationRules>
+</CustomObjectTranslation>

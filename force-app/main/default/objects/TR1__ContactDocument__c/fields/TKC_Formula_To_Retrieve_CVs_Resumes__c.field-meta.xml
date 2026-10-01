@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TKC_Formula_To_Retrieve_CVs_Resumes__c</fullName>
+    <description>Contains the location of the CV hosted on external services so it can be retrieved in Textkernel</description>
+    <externalId>false</externalId>
+    <formula>&quot;/services/apexrest/TR1/api/v1/contact-documents/&quot;&amp;Id&amp;&quot;/public-url&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Formula To Retrieve CVs/Resumes</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

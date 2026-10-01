@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Functie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Functies</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Job Role Clone Fields --></label>
+        <name>Job_Role_Clone_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Job Role Sync Fields --></label>
+        <name>Job_Role_Sync_Fields</name>
+    </fieldSets>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Functie</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TKC_Is_Job_Professional_Skill__c</fullName>
+    <formula>RecordType.DeveloperName = &apos;Job_Professional&apos;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Job Professional Skill</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

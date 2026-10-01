@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Send_Out_Banquo_rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out Banquo rule</label>
+        <sharedTo>
+            <role>Banquo</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Banquo</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_HSC_London_and_South_East</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out HSC - London and South East</label>
+        <sharedTo>
+            <role>HSC_London_and_South_East</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>HSC_London_and_South_East</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_HSC_Midlands</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out HSC - Midlands</label>
+        <sharedTo>
+            <role>HSC_Midlands</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>HSC_Midlands</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_HSC_North_East</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out HSC - North East</label>
+        <sharedTo>
+            <role>HSC_North_East</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>HSC_North_East</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_HSC_North_West</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out HSC - North West</label>
+        <sharedTo>
+            <role>HSC_North_West</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>HSC_North_West</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_HSC_South_Coast</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out HSC - South Coast</label>
+        <sharedTo>
+            <role>HSC_South_Coast</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>HSC_South_Coast</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_HSC_Wales_and_South_West</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out HSC - Wales and South West</label>
+        <sharedTo>
+            <role>HSC_Wales_and_South_West</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>HSC_Wales_and_South_West</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_HSC_Yorkshire</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out HSC - Yorkshire</label>
+        <sharedTo>
+            <role>HSC_Yorkshire</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>HSC_Yorkshire</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_HSC_role_rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out HSC role rule</label>
+        <sharedTo>
+            <role>Prospero_Health_Social_Care</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Prospero_Health_Social_Care</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_Integrated_rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out Integrated rule</label>
+        <sharedTo>
+            <role>Prospero_Integrated</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Prospero_Integrated</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_Prospero_Group</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out Prospero Group</label>
+        <sharedTo>
+            <role>Prospero_Group</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Prospero_Group</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_TEA_Canada</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out TEA - Canada</label>
+        <sharedTo>
+            <role>TEA_Canada</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TEA_Canada</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_TEA_London_and_South_East</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out TEA - London and South East</label>
+        <sharedTo>
+            <role>TEA_London_and_South_East</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TEA_London_and_South_East</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_TEA_Midlands</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out TEA - Midlands</label>
+        <sharedTo>
+            <role>TEA_Midlands</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TEA_Midlands</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_TEA_North_East</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out TEA - North East</label>
+        <sharedTo>
+            <role>TEA_North_East</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TEA_North_East</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_TEA_North_West</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out TEA - North West</label>
+        <sharedTo>
+            <role>TEA_North_West</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TEA_North_West</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_TEA_South_Coast</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out TEA - South Coast</label>
+        <sharedTo>
+            <role>TEA_South_Coast</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TEA_South_Coast</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_TEA_Wales_and_South_West</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out TEA - Wales and South West</label>
+        <sharedTo>
+            <role>TEA_Wales_and_South_West</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TEA_Wales_and_South_West</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_TEA_Yorkshire</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out TEA - Yorkshire</label>
+        <sharedTo>
+            <role>TEA_Yorkshire</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>TEA_Yorkshire</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Send_Out_Teaching_role_rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Send Out Teaching role rule</label>
+        <sharedTo>
+            <role>Prospero_Teaching</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Prospero_Teaching</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AQA Unit Award Scheme</fullName>
+        <default>false</default>
+        <label>AQA Unit Award Scheme</label>
+    </customValue>
+    <customValue>
+        <fullName>Art Therapy</fullName>
+        <default>false</default>
+        <label>Art Therapy</label>
+    </customValue>
+    <customValue>
+        <fullName>Boost </fullName>
+        <default>false</default>
+        <label>Boost </label>
+    </customValue>
+    <customValue>
+        <fullName>EAL</fullName>
+        <default>false</default>
+        <label>EAL</label>
+    </customValue>
+    <customValue>
+        <fullName>Exam Skills</fullName>
+        <default>false</default>
+        <label>Exam Skills</label>
+    </customValue>
+    <customValue>
+        <fullName>GCSE </fullName>
+        <default>false</default>
+        <label>GCSE </label>
+    </customValue>
+    <customValue>
+        <fullName>Intervention </fullName>
+        <default>false</default>
+        <label>Intervention </label>
+    </customValue>
+    <customValue>
+        <fullName>KS2 Transition programme</fullName>
+        <default>false</default>
+        <label>KS2 Transition programme</label>
+    </customValue>
+    <customValue>
+        <fullName>KS4 Transition programme</fullName>
+        <default>false</default>
+        <label>KS4 Transition programme</label>
+    </customValue>
+    <customValue>
+        <fullName>NEET </fullName>
+        <default>false</default>
+        <label>NEET </label>
+    </customValue>
+    <customValue>
+        <fullName>Numeracy Intervention</fullName>
+        <default>false</default>
+        <label>Numeracy Intervention</label>
+    </customValue>
+    <customValue>
+        <fullName>Reading Intervention</fullName>
+        <default>false</default>
+        <label>Reading Intervention</label>
+    </customValue>
+    <customValue>
+        <fullName>Scholar&apos;s</fullName>
+        <default>false</default>
+        <label>Scholar&apos;s</label>
+    </customValue>
+    <customValue>
+        <fullName>SEMH Intervention</fullName>
+        <default>false</default>
+        <label>SEMH Intervention</label>
+    </customValue>
+    <masterLabel>Programme</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

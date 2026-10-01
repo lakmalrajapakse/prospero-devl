@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>E-mail die gebruikers ontvangen met hun verificatiecode.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Connect: One-Time Password Email nl</name>
+    <style>none</style>
+    <subject>Verifieer uw identiteit in {!Community_Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

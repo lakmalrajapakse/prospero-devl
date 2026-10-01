@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__SGP_Team__c</fullName>
+    <deprecated>false</deprecated>
+    <label>SGP Team</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bedfordshire</fullName>
+                <default>false</default>
+                <label>Bedfordshire</label>
+            </value>
+            <value>
+                <fullName>East Anglia</fullName>
+                <default>false</default>
+                <label>East Anglia</label>
+            </value>
+            <value>
+                <fullName>East Midlands</fullName>
+                <default>false</default>
+                <label>East Midlands</label>
+            </value>
+            <value>
+                <fullName>Leeds</fullName>
+                <default>false</default>
+                <label>Leeds</label>
+            </value>
+            <value>
+                <fullName>North East</fullName>
+                <default>false</default>
+                <label>North East</label>
+            </value>
+            <value>
+                <fullName>North West</fullName>
+                <default>false</default>
+                <label>North West</label>
+            </value>
+            <value>
+                <fullName>SEN Leeds</fullName>
+                <default>false</default>
+                <label>SEN Leeds</label>
+            </value>
+            <value>
+                <fullName>SEN Watford</fullName>
+                <default>false</default>
+                <label>SEN Watford</label>
+            </value>
+            <value>
+                <fullName>Slough</fullName>
+                <default>false</default>
+                <label>Slough</label>
+            </value>
+            <value>
+                <fullName>South East</fullName>
+                <default>false</default>
+                <label>South East</label>
+            </value>
+            <value>
+                <fullName>South West</fullName>
+                <default>false</default>
+                <label>South West</label>
+            </value>
+            <value>
+                <fullName>Sue Baigent</fullName>
+                <default>false</default>
+                <label>Sue Baigent</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

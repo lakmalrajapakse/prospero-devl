@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <recordTypes>
+        <label><!-- Adult --></label>
+        <name>Care_Package_Adult</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Child / Young Person --></label>
+        <name>Child_Young_Person</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Site --></label>
+        <name>Site</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Compliance Status --></label>
+    <name>Compliance_Status__c</name>
+    <picklistValues>
+        <masterLabel>Compliance In Progress</masterLabel>
+        <translation><!-- Compliance In Progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance Review Required</masterLabel>
+        <translation><!-- Compliance Review Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliant</masterLabel>
+        <translation><!-- Compliant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliant (Client Notification Required)</masterLabel>
+        <translation><!-- Compliant (Client Notification Required) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Failed compliance</masterLabel>
+        <translation><!-- Failed compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lapsed Compliance</masterLabel>
+        <translation><!-- Lapsed Compliance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Registration</masterLabel>
+        <translation><!-- Pre-Registration --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re-Registration Required</masterLabel>
+        <translation><!-- Re-Registration Required --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safeguarding Hold</masterLabel>
+        <translation><!-- Safeguarding Hold --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

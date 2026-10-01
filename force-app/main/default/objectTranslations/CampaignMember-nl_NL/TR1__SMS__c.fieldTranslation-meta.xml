@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Bepaalt of een bericht ook via sms moet worden verzonden</help>
+    <label><!-- SMS --></label>
+    <name>TR1__SMS__c</name>
+</CustomFieldTranslation>

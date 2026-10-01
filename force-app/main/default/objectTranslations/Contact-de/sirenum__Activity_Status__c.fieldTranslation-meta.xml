@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Ein Zeitarbeiter ist aktiv, wenn seine letzte Zeiterfassung innerhalb der letzten 90 Tage liegt.
+
+IF( (TODAY()-Last_Timesheet__c )&lt;21,&quot;aktiv&quot;,
+    IF (((TODAY()-Last_Timesheet__c )&gt;7)||(TODAY()-  DATEVALUE(CreatedDate) )&gt;30,&quot;inaktiv&quot;, &quot;In_Progress&quot;
+    )
+)</help>
+    <label><!-- Activity Status --></label>
+    <name>sirenum__Activity_Status__c</name>
+</CustomFieldTranslation>

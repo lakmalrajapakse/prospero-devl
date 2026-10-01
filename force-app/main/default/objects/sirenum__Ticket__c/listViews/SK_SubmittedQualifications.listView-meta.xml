@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SK_SubmittedQualifications</fullName>
+    <columns>NAME</columns>
+    <columns>sirenum__TicketType__c</columns>
+    <columns>sirenum__Owner__c</columns>
+    <columns>sirenum__Comments__c</columns>
+    <columns>sirenum__Valid_from__c</columns>
+    <columns>sirenum__Valid_until__c</columns>
+    <columns>SK_RequiresEvidence__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>SK_Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <label>Submitted Qualifications</label>
+</ListView>

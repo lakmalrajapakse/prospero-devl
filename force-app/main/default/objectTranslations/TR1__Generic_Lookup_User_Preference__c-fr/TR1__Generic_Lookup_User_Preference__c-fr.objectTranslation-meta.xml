@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Recherche générique - Préférence utilisateur</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Recherche générique - Préférences utilisateur</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Recherche générique - Nom de préférence</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

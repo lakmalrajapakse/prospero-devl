@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Industry Experience --></label>
+    <name>TR1__Industry_Experience__c</name>
+    <picklistValues>
+        <masterLabel>Accounting</masterLabel>
+        <translation>Boekhouding</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Advertising</masterLabel>
+        <translation>Reclame</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Agriculture</masterLabel>
+        <translation>Landbouw</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Airlines/Aviation</masterLabel>
+        <translation>Luchtvaartmaatschappijen/luchtvaart</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Animation</masterLabel>
+        <translation>Animatie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Apparel</masterLabel>
+        <translation>Kleding</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biotechnology</masterLabel>
+        <translation>Biotechnologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chemicals</masterLabel>
+        <translation>Chemie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communications</masterLabel>
+        <translation>Communicatie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computer Games</masterLabel>
+        <translation>Computergames</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Construction</masterLabel>
+        <translation>Bouw</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consulting</masterLabel>
+        <translation>Consultancy</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consumer Product</masterLabel>
+        <translation>Consumentenproducten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cosmetic</masterLabel>
+        <translation>Cosmetica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Education</masterLabel>
+        <translation>Opleiding</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronics</masterLabel>
+        <translation>Elektronica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Energy</masterLabel>
+        <translation>Energie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering</masterLabel>
+        <translation>Techniek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Entertainment</masterLabel>
+        <translation><!-- Entertainment --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental</masterLabel>
+        <translation>Milieu</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Financial Services</masterLabel>
+        <translation>Financiële diensten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food &amp; Beverage</masterLabel>
+        <translation>Levensmiddelen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Government</masterLabel>
+        <translation>Overheid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hardware</masterLabel>
+        <translation><!-- Hardware --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Healthcare</masterLabel>
+        <translation>Gezondheidszorg</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hospitality</masterLabel>
+        <translation>Horeca</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insurance</masterLabel>
+        <translation>Verzekeringen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internet</masterLabel>
+        <translation><!-- Internet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal</masterLabel>
+        <translation>Juridisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Machinery</masterLabel>
+        <translation>Machines</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing</masterLabel>
+        <translation>Productie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media</masterLabel>
+        <translation><!-- Media --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Devices</masterLabel>
+        <translation>Medische apparaten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not For Profit</masterLabel>
+        <translation>Non-profit</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Overig</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pharmaceuticals</masterLabel>
+        <translation>Farmacie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Real Estate</masterLabel>
+        <translation>Vastgoed</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Recreation</masterLabel>
+        <translation>Recreatie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retail</masterLabel>
+        <translation>Detailhandel</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Semiconductor</masterLabel>
+        <translation>Halfgeleiders</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipping</masterLabel>
+        <translation>Transport</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Media</masterLabel>
+        <translation>Sociale media</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software</masterLabel>
+        <translation><!-- Software --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Staffing</masterLabel>
+        <translation>Werving</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technology</masterLabel>
+        <translation>Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Telecommunications</masterLabel>
+        <translation>Telecommunicatie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Transportation</masterLabel>
+        <translation>Transport</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utilities</masterLabel>
+        <translation>Nutsbedrijf</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>eCommerce</masterLabel>
+        <translation><!-- eCommerce --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

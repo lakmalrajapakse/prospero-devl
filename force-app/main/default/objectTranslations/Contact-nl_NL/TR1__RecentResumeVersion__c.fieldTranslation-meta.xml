@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Aantal contactpersoondocumenten van type cv die zijn gekoppeld aan de contactpersoon (uit dossier met kandidaatstatistieken)</help>
+    <label><!-- Recent Resume Version --></label>
+    <name>TR1__RecentResumeVersion__c</name>
+</CustomFieldTranslation>

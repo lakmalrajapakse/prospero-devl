@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Payroll Frequency --></label>
+    <name>Payroll_Frequency__c</name>
+    <picklistValues>
+        <masterLabel>Four-Weekly</masterLabel>
+        <translation><!-- Four-Weekly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monthly</masterLabel>
+        <translation><!-- Monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two-Weekly</masterLabel>
+        <translation><!-- Two-Weekly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekly</masterLabel>
+        <translation><!-- Weekly --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

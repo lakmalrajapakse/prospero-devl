@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Frais</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Frais</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Connect Expense Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This Expense has been processed, and it can&apos;t be edited. --></errorMessage>
+        <name>Block_edit_an_Expense_Processed</name>
+    </validationRules>
+</CustomObjectTranslation>

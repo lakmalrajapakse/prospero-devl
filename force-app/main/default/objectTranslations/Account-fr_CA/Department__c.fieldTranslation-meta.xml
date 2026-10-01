@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Department --></label>
+    <name>Department__c</name>
+    <picklistValues>
+        <masterLabel>Commissioning Department within LA</masterLabel>
+        <translation><!-- Commissioning Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Disabilities Department within LA</masterLabel>
+        <translation><!-- Disabilities Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA</masterLabel>
+        <translation><!-- Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaving Care Department within LA</masterLabel>
+        <translation><!-- Leaving Care Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permanence (Placements) Department within LA</masterLabel>
+        <translation><!-- Permanence (Placements) Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEND Team (any Child with an EHCP) within LA</masterLabel>
+        <translation><!-- SEND Team (any Child with an EHCP) within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safeguarding Department within LA</masterLabel>
+        <translation><!-- Safeguarding Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Section 19 Team Department within LA</masterLabel>
+        <translation><!-- Section 19 Team Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Care Department within LA</masterLabel>
+        <translation><!-- Social Care Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual School within LA</masterLabel>
+        <translation><!-- Virtual School within LA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

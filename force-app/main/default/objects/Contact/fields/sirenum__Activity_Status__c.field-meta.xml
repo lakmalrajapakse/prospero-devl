@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Activity_Status__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Old rule:IF( ((TODAY()-Last_Timesheet__c )&lt;21)|| Recently_Active__c =True,&quot;Active&quot;,&quot;Inactive&quot;)
+
+Now that the rule reflects the direct status of the checkbox, this field may be eliminated, provided that all reports and views that filter based on this are instead based on the checkbox.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK(sirenum__Last_Timesheet__c ) &amp;&amp;  (TODAY()-  DATEVALUE(CreatedDate) )&lt;30,
+   &quot;In_Progress&quot;,
+    IF((TODAY()-sirenum__Last_Timesheet__c )&lt;21,&quot;Active&quot;,&quot;Inactive&quot;)
+)</formula>
+    <inlineHelpText>An temporal is active if his last Timesheet was in the past 90 days.
+
+IF( (TODAY()-Last_Timesheet__c )&lt;21,&quot;Active&quot;,
+    IF (((TODAY()-Last_Timesheet__c )&gt;7)||(TODAY()-  DATEVALUE(CreatedDate) )&gt;30,&quot;Inactive&quot;, &quot;In_Progress&quot;
+    )
+)</inlineHelpText>
+    <label>Activity Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

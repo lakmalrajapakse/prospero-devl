@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Candidate_Mailing_Address_required</fullName>
+    <active>true</active>
+    <description>https://1218globaluk.eu.teamwork.com/app/tasks/36171523</description>
+    <errorConditionFormula>AND(
+				NOT($Permission.Bypass_System_Automation), 
+    RecordType.DeveloperName = &quot;Candidate&quot;,
+    TR1__TimesParsed__c &gt; 0,
+    OR(
+        ISBLANK(MailingStreet),
+        ISBLANK(MailingCity),
+        ISBLANK(MailingCountry),
+        ISBLANK(MailingPostalCode)
+    )
+)</errorConditionFormula>
+    <errorMessage>You must add a Street, City, Country and Postcode to the Address.</errorMessage>
+</ValidationRule>

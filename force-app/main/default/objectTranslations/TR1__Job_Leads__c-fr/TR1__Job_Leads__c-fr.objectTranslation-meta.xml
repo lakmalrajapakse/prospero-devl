@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Offre d&apos;emploi</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Offres d&apos;emploi</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom de pistes d&apos;emploi</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

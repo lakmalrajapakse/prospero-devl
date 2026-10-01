@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Dieses Feld wird in der Feldgruppe TR1__Power_Notes_Tabellenansicht als Hinweis verwendet, damit die PowerNotes-Tabellenansicht-Komponente die Bezugsdatensätze anzeigen kann, wenn das Feld im Abschnitt für angezeigte Felder enthalten ist.</help>
+    <label><!-- Related To --></label>
+    <name>TR1__Related_Records__c</name>
+</CustomFieldTranslation>

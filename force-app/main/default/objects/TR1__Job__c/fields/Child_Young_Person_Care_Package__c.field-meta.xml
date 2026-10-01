@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Child_Young_Person_Care_Package__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Child / Young Person / Care Package</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>sirenum__Site__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Care Package - Adult, Care Package - Child, Child / Young Person</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>sirenum__Site__c</referenceTo>
+    <relationshipLabel>Jobs (Child / Young Person / Care Package  Nam)</relationshipLabel>
+    <relationshipName>Jobs</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The user who initiated the import of the Candidate. --></help>
+    <label><!-- Import User --></label>
+    <name>TR1__Imported_By__c</name>
+    <relationshipLabel><!-- Candidates / Client Contacts (Import User) --></relationshipLabel>
+</CustomFieldTranslation>

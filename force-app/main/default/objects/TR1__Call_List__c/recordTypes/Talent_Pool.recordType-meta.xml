@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Talent_Pool</fullName>
+    <active>true</active>
+    <compactLayoutAssignment>TR1__Talent_Rover_Standard</compactLayoutAssignment>
+    <label>Talent Pool</label>
+</RecordType>

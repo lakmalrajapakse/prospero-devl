@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Jeu de colonnes de l&apos;ATS</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Jeux de colonnes de l&apos;ATS</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du jeu de colonnes de l&apos;ATS</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

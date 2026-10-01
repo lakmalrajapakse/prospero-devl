@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Payrolled_Shift_edit</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    OR(
+        ISPICKVAL(Invoice_Status__c, &quot;Approved for Pay &amp; Bill&quot;),
+        ISPICKVAL(Invoice_Status__c, &quot;Billed but Not Paid&quot;),
+        ISPICKVAL(Invoice_Status__c, &quot;Paid but Not Billed&quot;),
+        ISPICKVAL(Invoice_Status__c, &quot;Paid &amp; Billed&quot;)
+    ),
+    NOT($Permission.Modify_Payrolled_Shifts)
+)</errorConditionFormula>
+    <errorMessage>You cannot modify payrolled Shifts</errorMessage>
+</ValidationRule>

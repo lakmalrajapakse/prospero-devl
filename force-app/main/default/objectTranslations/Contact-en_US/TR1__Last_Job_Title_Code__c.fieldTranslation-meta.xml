@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Stores the code of the Most Recent Job Title skill (parsed from TK). --></help>
+    <label><!-- Last Job Title Code --></label>
+    <name>TR1__Last_Job_Title_Code__c</name>
+</CustomFieldTranslation>

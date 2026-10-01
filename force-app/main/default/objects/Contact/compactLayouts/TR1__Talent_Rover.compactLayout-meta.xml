@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Talent_Rover</fullName>
+    <fields>Name</fields>
+    <fields>Title</fields>
+    <fields>AccountId</fields>
+    <fields>Phone</fields>
+    <fields>MobilePhone</fields>
+    <fields>Email</fields>
+    <fields>OwnerId</fields>
+    <label>Talent Rover</label>
+</CompactLayout>

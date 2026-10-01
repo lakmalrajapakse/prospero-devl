@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Als dit is ingeschakeld, ontvangt de persoon wekelijkse loonspecificaties met informatie over het brutoloon</help>
+    <label><!-- Send Pay Advice --></label>
+    <name>sirenum__Send_Breakdown__c</name>
+</CustomFieldTranslation>

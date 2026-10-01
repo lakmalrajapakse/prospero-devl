@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Benachrichtigung, dass ein Benutzer zu einem Standort hinzugefügt wurde.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Connect: New Member Welcome Email de</name>
+    <style>none</style>
+    <subject>Willkommen bei {!Community_Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

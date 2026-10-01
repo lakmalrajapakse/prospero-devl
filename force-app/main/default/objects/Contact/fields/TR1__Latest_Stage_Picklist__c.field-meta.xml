@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Latest_Stage_Picklist__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This is a picklist field with values of the latest updated application stage. To make this field updatable the &quot;Update Latest Stage on Contact&quot; setting in TalentRover Properties should be checked.</description>
+    <inlineHelpText>The latest updated application stage. This field will be updated if the &quot;Update Latest Stage on Contact&quot; setting in TalentRover Properties is checked.</inlineHelpText>
+    <label>Latest Stage Picklist</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Application</fullName>
+                <default>false</default>
+                <label>Application</label>
+            </value>
+            <value>
+                <fullName>Internal Interview</fullName>
+                <default>false</default>
+                <label>Internal Interview</label>
+            </value>
+            <value>
+                <fullName>Submittal</fullName>
+                <default>false</default>
+                <label>Submittal</label>
+            </value>
+            <value>
+                <fullName>Send Out</fullName>
+                <default>false</default>
+                <label>Send Out</label>
+            </value>
+            <value>
+                <fullName>Offer</fullName>
+                <default>false</default>
+                <label>Offer</label>
+            </value>
+            <value>
+                <fullName>Closing Report</fullName>
+                <default>false</default>
+                <label>Closing Report</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

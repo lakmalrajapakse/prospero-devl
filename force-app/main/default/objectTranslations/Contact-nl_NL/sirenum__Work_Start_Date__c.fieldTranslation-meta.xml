@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Voer de datum in waarop de werknemer in dienst trad</help>
+    <label><!-- Work Start Date --></label>
+    <name>sirenum__Work_Start_Date__c</name>
+</CustomFieldTranslation>

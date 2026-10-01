@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Dossier met kandidaatstatistieken die kandidaatinformatie bevat. Als de functie Kandidaatstatistieken is ingeschakeld, wordt de informatie automatisch bijgewerkt.</help>
+    <label><!-- Candidate Statistics --></label>
+    <name>TR1__Candidate_Statistics__c</name>
+    <relationshipLabel><!-- Contacts --></relationshipLabel>
+</CustomFieldTranslation>

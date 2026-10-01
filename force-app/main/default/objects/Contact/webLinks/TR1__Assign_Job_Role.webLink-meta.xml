@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Assign_Job_Role</fullName>
+    <availability>online</availability>
+    <description>Assign a Job Role to a list of Contacts.</description>
+    <displayType>massActionButton</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Assign Job Role</masterLabel>
+    <openType>sidebar</openType>
+    <page>TR1__AssignContactsJobRole</page>
+    <protected>false</protected>
+    <requireRowSelection>true</requireRowSelection>
+</WebLink>

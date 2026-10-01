@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to grant access to the managed Textkernel connected &quot;Portal&quot; app.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Textkernel1__IndexingStatus__c.TKC_Contact__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Textkernel1__IndexingStatus__c.TKC_Job__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>User.Team__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Textkernel - Portal access</label>
+    <tabSettings>
+        <tab>Textkernel1__TextkernelPortal</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

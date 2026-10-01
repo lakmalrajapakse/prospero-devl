@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand__c</fullName>
+    <defaultValue>CASE($Profile.Name, 
+  &quot;Prospero Health &amp; Social Care User&quot;, &quot;Health &amp; Social Care&quot;, 
+  &quot;Prospero Teaching User&quot;, &quot;Teaching&quot;, 
+  &quot;Prospero Integrated User&quot;, &quot;Integrated&quot;, 
+  &quot;&quot;
+)</defaultValue>
+    <description>Contacts - Limit picklist values by Brand: https://1218globaluk.eu.teamwork.com/app/tasks/36116437</description>
+    <inlineHelpText>Select the Brand to show brand specific fields and to change the values of some of the picklists.</inlineHelpText>
+    <label>Brand</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Brand</valueSetName>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

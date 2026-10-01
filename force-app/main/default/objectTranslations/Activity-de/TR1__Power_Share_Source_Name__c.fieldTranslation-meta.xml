@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Dieses Feld wird im Feldsatz „TR1__Power_Notes_Tabellenansicht“ als Hinweis verwendet, damit die PowerNotes-Tabellenansicht-Komponente die Quelle anzeigen kann, wenn sich das Feld im Bereich der angezeigten Felder befindet.</help>
+    <label><!-- Source --></label>
+    <name>TR1__Power_Share_Source_Name__c</name>
+</CustomFieldTranslation>

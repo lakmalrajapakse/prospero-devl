@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__SEN_Additional_Experience__c</fullName>
+    <deprecated>false</deprecated>
+    <label>SEN Skills, Quals and Training</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ADHD Awareness</fullName>
+                <default>false</default>
+                <label>ADHD Awareness</label>
+            </value>
+            <value>
+                <fullName>Art Therapy</fullName>
+                <default>false</default>
+                <label>Art Therapy</label>
+            </value>
+            <value>
+                <fullName>Autism Awareness</fullName>
+                <default>false</default>
+                <label>Autism Awareness</label>
+            </value>
+            <value>
+                <fullName>Behaviour Mentor and Tuition training</fullName>
+                <default>false</default>
+                <label>Behaviour Mentor and Tuition training</label>
+            </value>
+            <value>
+                <fullName>BSL Level 1-3</fullName>
+                <default>false</default>
+                <label>BSL Level 1-3</label>
+            </value>
+            <value>
+                <fullName>Bullying Support Training</fullName>
+                <default>false</default>
+                <label>Bullying Support Training</label>
+            </value>
+            <value>
+                <fullName>Disability Sports Coaching Award</fullName>
+                <default>false</default>
+                <label>Disability Sports Coaching Award</label>
+            </value>
+            <value>
+                <fullName>Drug awareness training</fullName>
+                <default>false</default>
+                <label>Drug awareness training</label>
+            </value>
+            <value>
+                <fullName>Dyslexia Support Training</fullName>
+                <default>false</default>
+                <label>Dyslexia Support Training</label>
+            </value>
+            <value>
+                <fullName>EAL specialist</fullName>
+                <default>false</default>
+                <label>EAL specialist</label>
+            </value>
+            <value>
+                <fullName>Eating Disorder Awareness</fullName>
+                <default>false</default>
+                <label>Eating Disorder Awareness</label>
+            </value>
+            <value>
+                <fullName>Emergency First Aid</fullName>
+                <default>false</default>
+                <label>Emergency First Aid</label>
+            </value>
+            <value>
+                <fullName>Epilepsy Training</fullName>
+                <default>false</default>
+                <label>Epilepsy Training</label>
+            </value>
+            <value>
+                <fullName>Jolly Phonics</fullName>
+                <default>false</default>
+                <label>Jolly Phonics</label>
+            </value>
+            <value>
+                <fullName>Makaton</fullName>
+                <default>false</default>
+                <label>Makaton</label>
+            </value>
+            <value>
+                <fullName>Mappa</fullName>
+                <default>false</default>
+                <label>Mappa</label>
+            </value>
+            <value>
+                <fullName>Moving and Handling</fullName>
+                <default>false</default>
+                <label>Moving and Handling</label>
+            </value>
+            <value>
+                <fullName>Music Therapy</fullName>
+                <default>false</default>
+                <label>Music Therapy</label>
+            </value>
+            <value>
+                <fullName>Phonics trained</fullName>
+                <default>false</default>
+                <label>Phonics trained</label>
+            </value>
+            <value>
+                <fullName>Physical Disabilities</fullName>
+                <default>false</default>
+                <label>Physical Disabilities</label>
+            </value>
+            <value>
+                <fullName>Safeguarding</fullName>
+                <default>false</default>
+                <label>Safeguarding</label>
+            </value>
+            <value>
+                <fullName>Safe Handling and Administration of Medicine</fullName>
+                <default>false</default>
+                <label>Safe Handling and Administration of Medicine</label>
+            </value>
+            <value>
+                <fullName>Speech and Language Trained</fullName>
+                <default>false</default>
+                <label>Speech and Language Trained</label>
+            </value>
+            <value>
+                <fullName>Suspected Physical and Mental Abuse awareness training</fullName>
+                <default>false</default>
+                <label>Suspected Physical and Mental Abuse awareness training</label>
+            </value>
+            <value>
+                <fullName>Team Teach</fullName>
+                <default>false</default>
+                <label>Team Teach</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

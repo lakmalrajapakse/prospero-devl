@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn die Inhaltsversion mit einem ,Versand-Zeitplan V2`-Datensatz verknüpft ist, speichert sie den Wert für ,Datum u. Uhrzeit Vorstellungsgespräch` dieses Datensatzes. Dieses Feld kann in der Logik des Löschens von ICS-Dateien verwendet werden.</help>
+    <label><!-- Interview Expiration Date --></label>
+    <name>TR1__Interview_Expiration_Date__c</name>
+</CustomFieldTranslation>

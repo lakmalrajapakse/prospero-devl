@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Systems Experience --></label>
+    <name>TR1__Systems_Experience__c</name>
+    <picklistValues>
+        <masterLabel>ADP</masterLabel>
+        <translation><!-- ADP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADP 2001</masterLabel>
+        <translation><!-- ADP 2001 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ADP HRB</masterLabel>
+        <translation><!-- ADP HRB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AERS</masterLabel>
+        <translation><!-- AERS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ARISg</masterLabel>
+        <translation><!-- ARISg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AS400</masterLabel>
+        <translation><!-- AS400 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Argus</masterLabel>
+        <translation><!-- Argus --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTI</masterLabel>
+        <translation><!-- CTI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTMS</masterLabel>
+        <translation><!-- CTMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clintrace</masterLabel>
+        <translation><!-- Clintrace --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clintrial</masterLabel>
+        <translation><!-- Clintrial --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cognos</masterLabel>
+        <translation><!-- Cognos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EDC</masterLabel>
+        <translation><!-- EDC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Epicor</masterLabel>
+        <translation><!-- Epicor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FAST</masterLabel>
+        <translation><!-- FAST --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fourthshift</masterLabel>
+        <translation><!-- Fourthshift --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Great Plains</masterLabel>
+        <translation><!-- Great Plains --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hyperion</masterLabel>
+        <translation><!-- Hyperion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IFS</masterLabel>
+        <translation><!-- IFS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-house</masterLabel>
+        <translation><!-- In-house --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>InForm</masterLabel>
+        <translation><!-- InForm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JD Edwards</masterLabel>
+        <translation><!-- JD Edwards --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lawson</masterLabel>
+        <translation><!-- Lawson --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAS 200</masterLabel>
+        <translation><!-- MAS 200 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAS 90</masterLabel>
+        <translation><!-- MAS 90 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MAS Sage</masterLabel>
+        <translation><!-- MAS Sage --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI</masterLabel>
+        <translation><!-- MRI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI-Skyline</masterLabel>
+        <translation><!-- MRI-Skyline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MRI-Yardi</masterLabel>
+        <translation><!-- MRI-Yardi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MS Dynamics</masterLabel>
+        <translation><!-- MS Dynamics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MYOB</masterLabel>
+        <translation><!-- MYOB --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Macola</masterLabel>
+        <translation><!-- Macola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maypics</masterLabel>
+        <translation><!-- Maypics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Navision</masterLabel>
+        <translation><!-- Navision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Netsuite</masterLabel>
+        <translation><!-- Netsuite --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nvision</masterLabel>
+        <translation><!-- Nvision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O/C RDC</masterLabel>
+        <translation><!-- O/C RDC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oracle</masterLabel>
+        <translation><!-- Oracle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oracle Clinical</masterLabel>
+        <translation><!-- Oracle Clinical --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peachtree</masterLabel>
+        <translation><!-- Peachtree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PeopleSoft</masterLabel>
+        <translation><!-- PeopleSoft --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Platinum</masterLabel>
+        <translation>Platin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QAD</masterLabel>
+        <translation><!-- QAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quickbooks</masterLabel>
+        <translation><!-- Quickbooks --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rave</masterLabel>
+        <translation><!-- Rave --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAGE</masterLabel>
+        <translation><!-- SAGE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SAP</masterLabel>
+        <translation><!-- SAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SQL</masterLabel>
+        <translation><!-- SQL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salesforce</masterLabel>
+        <translation><!-- Salesforce --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Softrax</masterLabel>
+        <translation><!-- Softrax --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Solomon</masterLabel>
+        <translation><!-- Solomon --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Summitt</masterLabel>
+        <translation><!-- Summitt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Taleo</masterLabel>
+        <translation><!-- Taleo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timbeline</masterLabel>
+        <translation><!-- Timbeline --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ultipro</masterLabel>
+        <translation><!-- Ultipro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Viewpoint</masterLabel>
+        <translation><!-- Viewpoint --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Workday</masterLabel>
+        <translation><!-- Workday --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

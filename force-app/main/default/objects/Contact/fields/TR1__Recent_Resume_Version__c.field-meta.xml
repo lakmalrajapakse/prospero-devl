@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Recent_Resume_Version__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Recent Resume Version</label>
+    <summaryFilterItems>
+        <field>TR1__ContactDocument__c.TR1__Type__c</field>
+        <operation>equals</operation>
+        <value>Resume</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TR1__ContactDocument__c.TR1__Contact__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

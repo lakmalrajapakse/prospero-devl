@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Status --></label>
+    <name>TR1__Status__c</name>
+    <picklistValues>
+        <masterLabel>Active</masterLabel>
+        <translation><!-- Active --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation>Fermé</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developing</masterLabel>
+        <translation><!-- Developing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dormant</masterLabel>
+        <translation><!-- Dormant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lapsed</masterLabel>
+        <translation>Expiré</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospecting</masterLabel>
+        <translation><!-- Prospecting --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terms &amp; Conditions Agreed</masterLabel>
+        <translation><!-- Terms &amp; Conditions Agreed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

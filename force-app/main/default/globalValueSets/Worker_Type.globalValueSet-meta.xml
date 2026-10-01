@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Generate FS</fullName>
+        <default>false</default>
+        <label>Generate FS</label>
+    </customValue>
+    <customValue>
+        <fullName>Generate FS (PAYE) option only</fullName>
+        <default>false</default>
+        <label>Generate FS (PAYE) option only</label>
+    </customValue>
+    <customValue>
+        <fullName>Workwell (JSA)</fullName>
+        <default>false</default>
+        <label>Workwell (JSA)</label>
+    </customValue>
+    <customValue>
+        <fullName>Limited Company</fullName>
+        <default>false</default>
+        <label>Limited Company</label>
+    </customValue>
+    <customValue>
+        <fullName>Mainpay</fullName>
+        <default>false</default>
+        <label>Mainpay</label>
+    </customValue>
+    <customValue>
+        <fullName>Pay As You Earn</fullName>
+        <default>false</default>
+        <label>Pay As You Earn</label>
+    </customValue>
+    <customValue>
+        <fullName>Unregistered</fullName>
+        <default>false</default>
+        <label>Unregistered</label>
+    </customValue>
+    <description>Payroll providers the worker may be enrolled with</description>
+    <masterLabel>Worker Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Afsluitend rapport</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Afsluitende rapporten</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Contract</layout>
+        <sections>
+            <label>Factuur-/betaalinformatie</label>
+            <section>Billing/Collection Information</section>
+        </sections>
+        <sections>
+            <label>Factuur-/betaalinformatie 2</label>
+            <section>Billing/Collection Information 2</section>
+        </sections>
+        <sections>
+            <label>Informatie sluiten</label>
+            <section>Close Information</section>
+        </sections>
+        <sections>
+            <label>Informatie winstverdeling</label>
+            <section>Profit Split Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Multi-Child/Young Person Contract</layout>
+        <sections>
+            <label>Afsluitingsdetails</label>
+            <section>Close Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nummer afsluitend rapport</nameFieldLabel>
+    <quickActions>
+        <label><!-- Commission Splits --></label>
+        <name>Commission_Splits</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Ad-Hoc --></label>
+        <name>Ad_Hoc</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Set Start and End Dates --></description>
+        <label><!-- Contract --></label>
+        <name>Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Multi-Child/Young Person --></label>
+        <name>Multi_Child_Young_Person_Contract</name>
+    </recordTypes>
+</CustomObjectTranslation>

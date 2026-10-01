@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Payment_BACS_Account_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>BACS Account Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bank Account</fullName>
+                <default>true</default>
+                <label>Bank Account</label>
+            </value>
+            <value>
+                <fullName>Building Society</fullName>
+                <default>false</default>
+                <label>Building Society</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

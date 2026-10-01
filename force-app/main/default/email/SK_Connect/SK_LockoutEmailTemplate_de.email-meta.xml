@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>E-Mail, die ein Benutzer beim Zurücksetzen seines Passworts erhält, wenn er aufgrund zu vieler fehlgeschlagener Anmeldeversuche ausgesperrt wurde.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Connect: User Lockout Email de</name>
+    <style>none</style>
+    <subject>Sie wurden aus {!Community_Name} ausgesperrt</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

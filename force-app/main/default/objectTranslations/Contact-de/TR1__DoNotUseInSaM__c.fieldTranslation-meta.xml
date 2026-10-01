@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn aktiviert, wird das Feld nicht mit dem Lebenslaufsuch-Provider synchr. und ist nicht in den SAM-Suchergebnissen verfügbar.</help>
+    <label><!-- DoNotUseInSaM --></label>
+    <name>TR1__DoNotUseInSaM__c</name>
+</CustomFieldTranslation>

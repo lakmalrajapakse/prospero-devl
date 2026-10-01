@@ -1,0 +1,13 @@
+Hallo {!Receiving_User.FirstName},
+
+wir haben Ihre Anfrage erhalten, Ihr {!Community_Name} Passwort zurückzusetzen. Wir können Ihr Passwort momentan nicht zurücksetzen. Ihr Konto ist nach zu vielen Anmeldeversuchen gesperrt.
+
+{!CASE(1,
+IF(VALUE(PASSWORD_LOCK_TIME) > 0, 1, 0), "Versuchen Sie es in " + PASSWORD_LOCK_TIME + " Minuten nochmal.",
+IF(VALUE(PASSWORD_LOCK_TIME) < 0, 1, 0), "Kontaktieren Sie Ihren " + Community_Name + " Administrator, um Ihr Konto freizuschalten.",
+"")}
+
+Falls Sie diese Passwort-Zurücksetzung nicht beantragt haben, oder sich in letzter Zeit nicht in angemeldet haben, wenden Sie sich an Ihren {!Community_Name} Administrator oder antworten Sie auf diese E-Mail.
+
+Vielen Dank,
+{!Community_Name}

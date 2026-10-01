@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Activity Coordination (recreational, cognitive, physical)</fullName>
+        <default>false</default>
+        <label>Activity Coordination (recreational, cognitive, physical)</label>
+    </customValue>
+    <customValue>
+        <fullName>Appointment Supervision (medical)</fullName>
+        <default>false</default>
+        <label>Appointment Supervision (medical)</label>
+    </customValue>
+    <customValue>
+        <fullName>Contact Supervision</fullName>
+        <default>false</default>
+        <label>Contact Supervision</label>
+    </customValue>
+    <customValue>
+        <fullName>Crisis Care</fullName>
+        <default>false</default>
+        <label>Crisis Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Daily Living Support (meal prep, cleaning, home routines)</fullName>
+        <default>false</default>
+        <label>Daily Living Support (meal prep, cleaning, home routines)</label>
+    </customValue>
+    <customValue>
+        <fullName>Day Service Support (structured daytime programmes)</fullName>
+        <default>false</default>
+        <label>Day Service Support (structured daytime programmes)</label>
+    </customValue>
+    <customValue>
+        <fullName>Driver (Transport)</fullName>
+        <default>false</default>
+        <label>Driver (Transport)</label>
+    </customValue>
+    <customValue>
+        <fullName>Homelessness Outreach (navigation, safety, safeguarding)</fullName>
+        <default>false</default>
+        <label>Homelessness Outreach (navigation, safety, safeguarding)</label>
+    </customValue>
+    <customValue>
+        <fullName>Immediate Safeguarding Intervention</fullName>
+        <default>false</default>
+        <label>Immediate Safeguarding Intervention</label>
+    </customValue>
+    <customValue>
+        <fullName>Independence Support / Life Skills Coaching (reablement, send, supported living, youth services)</fullName>
+        <default>false</default>
+        <label>Independence Support / Life Skills Coaching (reablement, send, supported living, youth services)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mother and Baby Support</fullName>
+        <default>false</default>
+        <label>Mother and Baby Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Overnight / Sleep‑in Support</fullName>
+        <default>false</default>
+        <label>Overnight / Sleep‑in Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Parental_Family_Support</fullName>
+        <default>false</default>
+        <label>Parental / Family Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Relationship based Support-  Companionship, Social/Emotional Support</fullName>
+        <default>false</default>
+        <label>Relationship based Support-  Companionship, Social/Emotional Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety &amp; Welfare Check Support</fullName>
+        <default>false</default>
+        <label>Safety &amp; Welfare Check Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Short‑Term Mental Health Support</fullName>
+        <default>false</default>
+        <label>Short‑Term Mental Health Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Supervision</fullName>
+        <default>false</default>
+        <label>Supervision</label>
+    </customValue>
+    <customValue>
+        <fullName>Transport Supervision (not driver)</fullName>
+        <default>false</default>
+        <label>Transport Supervision (not driver)</label>
+    </customValue>
+    <customValue>
+        <fullName>Waking Night</fullName>
+        <default>false</default>
+        <label>Waking Night</label>
+    </customValue>
+    <customValue>
+        <fullName>Rehabilitation &amp; Physical Recovery Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Rehabilitation &amp; Physical Recovery Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Safeguarding Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Safeguarding Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Safety Monitoring &amp; Observation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Safety Monitoring &amp; Observation</label>
+    </customValue>
+    <customValue>
+        <fullName>Behavioural &amp; Educational Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Behavioural &amp; Educational Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Street Outreach Support (wellbeing checks, essential support)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Street Outreach Support (wellbeing checks, essential support)</label>
+    </customValue>
+    <customValue>
+        <fullName>Welfare &amp; Benefit Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Welfare &amp; Benefit Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Inclusion Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Social Inclusion Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Behavioural Risk Management</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Behavioural Risk Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Behaviour Analysis</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Behaviour Analysis</label>
+    </customValue>
+    <customValue>
+        <fullName>Case management and service navigation (Case worker)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Case management and service navigation (Case worker)</label>
+    </customValue>
+    <customValue>
+        <fullName>Classroom or Learning Environment Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Classroom or Learning Environment Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Clinical Mental Health Interventions</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Clinical Mental Health Interventions</label>
+    </customValue>
+    <customValue>
+        <fullName>Complex Needs Support Worker (PEG, Catheter, S&amp;L)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Complex Needs Support Worker (PEG, Catheter, S&amp;L)</label>
+    </customValue>
+    <customValue>
+        <fullName>Coordination and continuity (Key worker)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Coordination and continuity (Key worker)</label>
+    </customValue>
+    <customValue>
+        <fullName>Crisis Stabilisation (non-clinical)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Crisis Stabilisation (non-clinical)</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergency Shelter Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Emergency Shelter Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Long‑Term Mental Health Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Long‑Term Mental Health Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Long‑Term Physical Disability Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Long‑Term Physical Disability Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Maternity Support (non‑midwifery)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Maternity Support (non‑midwifery)</label>
+    </customValue>
+    <customValue>
+        <fullName>Medication Support (administration or prompting depending on regulation)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Medication Support (administration or prompting depending on regulation)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mental Health Crisis Response</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mental Health Crisis Response</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile Health Outreach (clinics, screenings)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Mobile Health Outreach (clinics, screenings)</label>
+    </customValue>
+    <customValue>
+        <fullName>Personal Care (washing, dressing, toileting, hygiene)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Personal Care (washing, dressing, toileting, hygiene)</label>
+    </customValue>
+    <customValue>
+        <fullName>Positive Behaviour Support</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Positive Behaviour Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Rapid Risk Assessment</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Rapid Risk Assessment</label>
+    </customValue>
+    <masterLabel>Types of Care</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Type de diplôme par pays qui consiste en un code de pays, un trait de soulignement et un chiffre</help>
+    <label><!-- Highest Education Local Level Code --></label>
+    <name>TR1__Highest_Education_Local_Level_Code__c</name>
+</CustomFieldTranslation>

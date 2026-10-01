@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Language__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Stores the language which the user selected from the language dropdown on the BH4SF Email Editor.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Stores the language which the user selected from the language dropdown on the BH4SF Email Editor.</inlineHelpText>
+    <label>Language</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

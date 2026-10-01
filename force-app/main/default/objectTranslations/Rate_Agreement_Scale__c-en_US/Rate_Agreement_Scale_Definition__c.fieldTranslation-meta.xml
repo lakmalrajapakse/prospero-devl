@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rate Agreement Scale Definition --></label>
+    <name>Rate_Agreement_Scale_Definition__c</name>
+    <relationshipLabel><!-- Rate Agreement Scales --></relationshipLabel>
+</CustomFieldTranslation>

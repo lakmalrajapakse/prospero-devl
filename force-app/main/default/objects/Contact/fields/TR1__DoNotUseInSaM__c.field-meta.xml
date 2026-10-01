@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__DoNotUseInSaM__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>If checked the field will not be synced to Resume Search Provider and will not be available in the SaM Search Results.</description>
+    <inlineHelpText>If checked the field will not be synced to Resume Search Provider and will not be available in the SaM Search Results.</inlineHelpText>
+    <label>DoNotUseInSaM</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

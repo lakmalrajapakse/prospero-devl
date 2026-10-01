@@ -1,0 +1,8 @@
+Bonjour {!User.FirstName},
+
+Nous avons reçu une demande de changement d'adresse e-mail pour le nom d'utilisateur {!User.Username}. Veuillez vous assurer que les modifications suivantes sont correctes :
+
+Adresse e-mail précédente : {!ChgEmailVer.OldEmail}
+Nouvelle adresse e-mail : {!ChgEmailVer.NewEmail}
+
+Si vous n'avez pas demandé cette modification, contactez votre administrateur {!Community_Name} ou répondez à cet e-mail.

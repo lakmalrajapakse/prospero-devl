@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Language Spoken / Forms of Communication --></label>
+    <name>Language_Spoken_Forms_of_Communication__c</name>
+</CustomFieldTranslation>

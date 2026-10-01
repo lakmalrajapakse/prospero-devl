@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Le dernier stade de candidature mis à jour. Ce champ sera mis à jour si le paramètre « Mettre à jour le dernier stade du contact » est coché dans les propriétés de TalentRover.</help>
+    <label><!-- Latest Stage Picklist --></label>
+    <name>TR1__Latest_Stage_Picklist__c</name>
+    <picklistValues>
+        <masterLabel>Application</masterLabel>
+        <translation>Candidature</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing Report</masterLabel>
+        <translation>Délégation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Interview</masterLabel>
+        <translation>Entretien interne</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offer</masterLabel>
+        <translation>Promesse d&apos;embauche</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send Out</masterLabel>
+        <translation>Entretien client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submittal</masterLabel>
+        <translation>Présentation du candidat au client</translation>
+    </picklistValues>
+</CustomFieldTranslation>

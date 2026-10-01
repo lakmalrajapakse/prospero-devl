@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Either_End_Date_or_Hours_must_be_filled</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(End_Date__c) || ISBLANK(Hours__c)</errorConditionFormula>
+    <errorMessage>Either End Date or Hours must be filled in</errorMessage>
+</ValidationRule>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Stocke la valeur de la clé externe pour WhatsApp si l&apos;option « Utiliser la source externe pour les modèles » est activée.</help>
+    <label><!-- External Template for WhatsApp --></label>
+    <name>TR1__External_Template_for_WhatsApp__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Si le champ est coché, il ne sera pas synchronisé au champ Fournisseur Recherche de CV et n&apos;apparaîtra pas dans les résultats de recherche SAM.</help>
+    <label><!-- DoNotUseInSaM --></label>
+    <name>TR1__DoNotUseInSaM__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Si l&apos;employé vous a remis un formulaire P46, utilisez les informations fournies dans la section 1 de ce dernier pour vous aider à sélectionner la bonne option 
+
+Options :
+0 =Sans objet
+1 =A seulement
+2 =A et B
+3 =B seulement
+4 =B et C
+5 =C seulement
+6 =A et C
+7 =Aucun</help>
+    <label><!-- P46 Statement --></label>
+    <name>sirenum__P46_Statement__c</name>
+</CustomFieldTranslation>

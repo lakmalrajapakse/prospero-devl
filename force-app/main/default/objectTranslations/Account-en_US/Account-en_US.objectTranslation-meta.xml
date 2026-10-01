@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Client</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Clients</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- AccountWithAlias --></label>
+        <name>TR1__AccountWithAlias</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Child Account --></label>
+        <name>TR1__Child_Account_Fieldset</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Power Notes Lookups --></label>
+        <name>TR1__Power_Notes_Lookups</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Power Notes Search List --></label>
+        <name>TR1__Power_Notes_Search_List</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- DocGenUnitTests --></label>
+        <name>bh4fdocgen__DocGenUnitTests</name>
+    </fieldSets>
+    <layouts>
+        <layout>Connect Account Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Add Care Package --></label>
+        <name>Add_Care_Package</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Add Child / Young Person --></label>
+        <name>Add_Child_Young_Person</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Site --></label>
+        <name>New_Site</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Test --></label>
+        <name>Test</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Candidate Pool --></label>
+        <name>Candidate_Pool</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Client --></label>
+        <name>Client</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Prospero Client --></label>
+        <name>Prospero_Client</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Self Bill --></label>
+        <name>Self_Bill</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Umbrella --></label>
+        <name>Umbrella</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Address Street, City, Postal Code and Country are required --></errorMessage>
+        <name>Address_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot create or edit Umbrella companies, please contact the Finance team --></errorMessage>
+        <name>Block_Umbrella_create_edit_if_not_Financ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must add the Local Authority that this Council is under --></errorMessage>
+        <name>Council_Requires_Local_Authority</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must add the Local Authority and a Council for this Type of Client --></errorMessage>
+        <name>Council_and_LA_Lookups_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add a Local Authority --></errorMessage>
+        <name>Require_Local_Authority_if_Parent_is_not</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- test --></errorMessage>
+        <name>test</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_Target_Account --></label>
+        <name>TR1__Add_Target_Account</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Add_To_Account_List --></label>
+        <name>TR1__Add_To_Account_List</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- DocuSign --></label>
+        <name>TR1__DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Google_Finance --></label>
+        <name>TR1__Google_Finance</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Google_Maps --></label>
+        <name>TR1__Google_Maps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Google_News --></label>
+        <name>TR1__Google_News</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Rate --></label>
+        <name>TR1__New_Rate</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

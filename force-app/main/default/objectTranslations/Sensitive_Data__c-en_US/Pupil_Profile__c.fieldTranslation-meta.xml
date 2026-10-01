@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pupil Profile --></label>
+    <name>Pupil_Profile__c</name>
+    <picklistValues>
+        <masterLabel>Child In Need</masterLabel>
+        <translation><!-- Child In Need --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child Looked After</masterLabel>
+        <translation><!-- Child Looked After --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Child Protection Plan</masterLabel>
+        <translation><!-- Child Protection Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court Care Plan</masterLabel>
+        <translation><!-- Court Care Plan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DoLS</masterLabel>
+        <translation><!-- DoLS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAL (English as an Additional Language)</masterLabel>
+        <translation><!-- EAL (English as an Additional Language) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EHCP (Educational Health Care Plan)</masterLabel>
+        <translation><!-- EHCP (Educational Health Care Plan) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEET (Not In Education Employment or Training)</masterLabel>
+        <translation><!-- NEET (Not In Education Employment or Training) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEN (no EHCP)</masterLabel>
+        <translation><!-- SEN (no EHCP) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

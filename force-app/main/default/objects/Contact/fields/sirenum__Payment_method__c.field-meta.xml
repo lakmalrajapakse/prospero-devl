@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Payment_method__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Payment method</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BACS</fullName>
+                <default>true</default>
+                <label>BACS</label>
+            </value>
+            <value>
+                <fullName>Limited Company</fullName>
+                <default>false</default>
+                <label>Limited Company</label>
+            </value>
+            <value>
+                <fullName>Cheque</fullName>
+                <default>false</default>
+                <label>Cheque</label>
+            </value>
+            <value>
+                <fullName>Credit Transfer</fullName>
+                <default>false</default>
+                <label>Credit Transfer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

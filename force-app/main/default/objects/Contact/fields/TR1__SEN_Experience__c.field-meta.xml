@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__SEN_Experience__c</fullName>
+    <deprecated>false</deprecated>
+    <label>SEN Experience</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ADHD</fullName>
+                <default>false</default>
+                <label>ADHD</label>
+            </value>
+            <value>
+                <fullName>Aspergers</fullName>
+                <default>false</default>
+                <label>Aspergers</label>
+            </value>
+            <value>
+                <fullName>Dyslexia</fullName>
+                <default>false</default>
+                <label>Dyslexia</label>
+            </value>
+            <value>
+                <fullName>EBD</fullName>
+                <default>false</default>
+                <label>EBD</label>
+            </value>
+            <value>
+                <fullName>Gifted &amp;Talented (G&amp;T)</fullName>
+                <default>false</default>
+                <label>Gifted &amp;Talented (G&amp;T)</label>
+            </value>
+            <value>
+                <fullName>HI</fullName>
+                <default>false</default>
+                <label>HI</label>
+            </value>
+            <value>
+                <fullName>MLD</fullName>
+                <default>false</default>
+                <label>MLD</label>
+            </value>
+            <value>
+                <fullName>PMLD</fullName>
+                <default>false</default>
+                <label>PMLD</label>
+            </value>
+            <value>
+                <fullName>SENCO</fullName>
+                <default>false</default>
+                <label>SENCO</label>
+            </value>
+            <value>
+                <fullName>SLD</fullName>
+                <default>false</default>
+                <label>SLD</label>
+            </value>
+            <value>
+                <fullName>VI</fullName>
+                <default>false</default>
+                <label>VI</label>
+            </value>
+            <value>
+                <fullName>Mainstream</fullName>
+                <default>false</default>
+                <label>Mainstream</label>
+            </value>
+            <value>
+                <fullName>Sign Language Experience</fullName>
+                <default>false</default>
+                <label>Sign Language Experience</label>
+            </value>
+            <value>
+                <fullName>Downs Syndrome Experience</fullName>
+                <default>false</default>
+                <label>Downs Syndrome Experience</label>
+            </value>
+            <value>
+                <fullName>Speech and Language</fullName>
+                <default>false</default>
+                <label>Speech and Language</label>
+            </value>
+            <value>
+                <fullName>ASD</fullName>
+                <default>false</default>
+                <label>ASD</label>
+            </value>
+            <value>
+                <fullName>EAL/ EFL</fullName>
+                <default>false</default>
+                <label>EAL/ EFL</label>
+            </value>
+            <value>
+                <fullName>HAPS</fullName>
+                <default>false</default>
+                <label>HAPS</label>
+            </value>
+            <value>
+                <fullName>PRU/Centre of Education</fullName>
+                <default>false</default>
+                <label>PRU/Centre of Education</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

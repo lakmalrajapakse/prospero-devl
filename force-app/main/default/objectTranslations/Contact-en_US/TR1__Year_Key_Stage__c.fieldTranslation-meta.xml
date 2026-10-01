@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Year/Key Stage --></label>
+    <name>TR1__Year_Key_Stage__c</name>
+    <picklistValues>
+        <masterLabel>Foundation Stage 3-5yrs</masterLabel>
+        <translation><!-- Foundation Stage 3-5yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS1</masterLabel>
+        <translation><!-- KS1 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS2</masterLabel>
+        <translation><!-- KS2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS3-5</masterLabel>
+        <translation><!-- KS3-5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS3/4</masterLabel>
+        <translation><!-- KS3/4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursery 0-5yrs</masterLabel>
+        <translation><!-- Nursery 0-5yrs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post-16</masterLabel>
+        <translation><!-- Post-16 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y1(KS1)</masterLabel>
+        <translation><!-- Y1(KS1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y10(KS4)</masterLabel>
+        <translation><!-- Y10(KS4) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y11(KS4)</masterLabel>
+        <translation><!-- Y11(KS4) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y12(KS5)</masterLabel>
+        <translation><!-- Y12(KS5) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y13(KS5)</masterLabel>
+        <translation><!-- Y13(KS5) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y2(KS1)</masterLabel>
+        <translation><!-- Y2(KS1) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y3(KS2)</masterLabel>
+        <translation><!-- Y3(KS2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y4(KS2)</masterLabel>
+        <translation><!-- Y4(KS2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y5(KS2)</masterLabel>
+        <translation><!-- Y5(KS2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y6(KS2)</masterLabel>
+        <translation><!-- Y6(KS2) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y7(KS3)</masterLabel>
+        <translation><!-- Y7(KS3) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y8(KS3)</masterLabel>
+        <translation><!-- Y8(KS3) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y9(KS3)</masterLabel>
+        <translation><!-- Y9(KS3) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

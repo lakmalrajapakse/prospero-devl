@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>School__c</fullName>
+    <label>School</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Academy</fullName>
+                <default>false</default>
+                <label>Academy</label>
+            </value>
+            <value>
+                <fullName>College</fullName>
+                <default>false</default>
+                <label>College</label>
+            </value>
+            <value>
+                <fullName>Free School</fullName>
+                <default>false</default>
+                <label>Free School</label>
+            </value>
+            <value>
+                <fullName>Independent School</fullName>
+                <default>false</default>
+                <label>Independent School</label>
+            </value>
+            <value>
+                <fullName>Local Authority Maintained School</fullName>
+                <default>false</default>
+                <label>Local Authority Maintained School</label>
+            </value>
+            <value>
+                <fullName>Online Provider</fullName>
+                <default>false</default>
+                <label>Online Provider</label>
+            </value>
+            <value>
+                <fullName>Other Type</fullName>
+                <default>false</default>
+                <label>Other Type</label>
+            </value>
+            <value>
+                <fullName>Special School</fullName>
+                <default>false</default>
+                <label>Special School</label>
+            </value>
+            <value>
+                <fullName>University</fullName>
+                <default>false</default>
+                <label>University</label>
+            </value>
+            <value>
+                <fullName>Welsh School</fullName>
+                <default>false</default>
+                <label>Welsh School</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

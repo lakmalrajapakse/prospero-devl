@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Care Home (Staffed)</fullName>
+        <default>false</default>
+        <label>Care Home (Staffed)</label>
+    </customValue>
+    <customValue>
+        <fullName>Child or Young Persons Home</fullName>
+        <default>false</default>
+        <label>Child or Young Persons Home</label>
+    </customValue>
+    <customValue>
+        <fullName>Community (within the Public)</fullName>
+        <default>false</default>
+        <label>Community (within the Public)</label>
+    </customValue>
+    <customValue>
+        <fullName>Community Venue (Private Space)</fullName>
+        <default>false</default>
+        <label>Community Venue (Private Space)</label>
+    </customValue>
+    <customValue>
+        <fullName>Library</fullName>
+        <default>false</default>
+        <label>Library</label>
+    </customValue>
+    <customValue>
+        <fullName>Online</fullName>
+        <default>false</default>
+        <label>Online</label>
+    </customValue>
+    <customValue>
+        <fullName>School Site</fullName>
+        <default>false</default>
+        <label>School Site</label>
+    </customValue>
+    <masterLabel>Location of Delivery</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

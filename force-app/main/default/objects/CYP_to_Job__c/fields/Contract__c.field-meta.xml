@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contract__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <inlineHelpText>&quot;This will only show Contracts for Multi-CYP Jobs related to the chosen Client, so the Client must be populated first&quot;</inlineHelpText>
+    <label>Contract</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Client__c</field>
+            <operation>equals</operation>
+            <valueField>sirenum__ProActiveContract__c.sirenum__Client__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>sirenum__ProActiveContract__c.Is_Multi_CYP_Contract__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>sirenum__ProActiveContract__c</referenceTo>
+    <relationshipLabel>CYP to Jobs</relationshipLabel>
+    <relationshipName>CYP_to_Jobs</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

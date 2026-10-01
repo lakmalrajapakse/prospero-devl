@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Identifiant unique de campagne utilisé pour le mappage du modèle de campagne de l&apos;intégration SFMC</help>
+    <label><!-- Campaign Unique Name --></label>
+    <name>TR1__Unique_Name__c</name>
+</CustomFieldTranslation>

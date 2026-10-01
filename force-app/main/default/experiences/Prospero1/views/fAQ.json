@@ -1,0 +1,70 @@
+{
+  "appPageId" : "d9ce9f69-0e14-4b11-9233-6c5ce091d546",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "c25d49a5-676a-4e25-ba96-a33124d858a6",
+  "label" : "FAQ",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "fb9dca48-520e-4248-81c1-d9650604fd28",
+          "columns" : [ {
+            "UUID" : "62208237-fc79-40fd-801c-f32098513c2a",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "fb9dca48-520e-4248-81c1-d9650604fd28",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1 id=\"faq\">FAQ</h1>\n\n<ol>\n    <li style=\"padding-top: 1em\"><a href=\"#why-profile\">Why do I need a profile?</a></li>\n    <li style=\"padding-top: 1em\"><a href=\"#how-profile\">How do I see my profile?</a></li>\n    <li style=\"padding-top: 1em\"><a href=\"#how-work\">How do I get work?</a></li>\n    <li style=\"padding-top: 1em\"><a href=\"#what-qualifications\">What are qualifications?</a></li>\n    <li style=\"padding-top: 1em\"><a href=\"#how-qualifications\">How do I set my qualifications?</a></li>\n    <li style=\"padding-top: 1em\"><a href=\"#need-qualifications\">Do I need to submit my qualifications?</a></li>\n    <li style=\"padding-top: 1em\"><a href=\"#time-zone\">Should I set a Time Zone?</a></li>\n</ol>\n\n<h2 style=\"padding-top: 1em\" id=\"why-profile\">Why do I need a profile?</h2>\n\n<div class=\"slds-text-body_regular\">We use the details from your profile to contact you, to offer appropriate work to you and, more importantly,\n    pay you for the work you do. If you don't set this up, we may not be able to offer you as much work as you want and won't be able to pay\n    you.</div>\n\n<div class=\"slds-text-body_small\"><a href=\"#faq\">Back to Top</a></div>\n\n<h2 style=\"padding-top: 1em\" id=\"how-profile\">How do I see my profile?</h2>\n\n<div class=\"slds-text-body_regular\">Use the Connect menu to access your profile using the \"Profile\" item. Here you can view and edit your\n    details.</div>\n\n<div class=\"slds-text-body_small\"><a href=\"#faq\">Back to Top</a></div>\n\n<h2 style=\"padding-top: 1em\" id=\"how-work\">How do I get work?</h2>\n\n<div class=\"slds-text-body_regular\">When you first sign up, right after you complete your profile, you need to confirm your qualifications. Once\n    we've reviewed and confirmed your submitted qualifications, we'll be able to start offering you work where these qualifications are\n    required.</div>\n\n<div class=\"slds-text-body_small\"><a href=\"#faq\">Back to Top</a></div>\n\n<h2 style=\"padding-top: 1em\" id=\"what-qualifications\">What are qualifications?</h2>\n\n<div class=\"slds-text-body_regular\">Different types of job often require different skills, accreditations, licenses, certifications or have other\n    prerequisites. We call all these things \"competencies\". We know you have a given \"competency\", perhaps lasting until a specific date, when you\n    have a confirmed \"qualification\" for it. The qualification optionally records when the \"competency\" is valid and may also require you to\n    provide evidence that we can check.</div>\n\n<div class=\"slds-text-body_small\"><a href=\"#faq\">Back to Top</a></div>\n\n<h2 style=\"padding-top: 1em\" id=\"how-qualifications\">How do I set my qualifications?</h2>\n\n<div class=\"slds-text-body_regular\">Use the Connect menu to access your list using the \"Qualifications\" item. If the qualification list is empty, scroll\n    down and select the type of job you're interested in and we will add the qualifications related to that job type. You can do this for each\n    job type of interest. It's then down to you to complete the details of each qualification before submitting for confirmation, or to tell us you\n    don't have a given qualification.</div>\n\n<div class=\"slds-text-body_small\"><a href=\"#faq\">Back to Top</a></div>\n\n<h2 style=\"padding-top: 1em\" id=\"need-qualifications\">Do I need to submit my qualifications?</h2>\n\n<div class=\"slds-text-body_regular\">Yes, make sure to add expiration dates or documentary evidence for those that need it, and submit each one to us\n    in turn. If you don't have a given qualification, just tell us - not all qualifications will always be needed for every job we have.</div>\n\n<div class=\"slds-text-body_small\"><a href=\"#faq\">Back to Top</a></div>\n\n<h2 style=\"padding-top: 1em\" id=\"time-zone\">Should I set a Time Zone?</h2>\n\n<div class=\"slds-text-body_regular\">If the Time Zone you see in the Profile page isn't right, it's worth changing it to reflect the time zone where\n    you normally live and work. If you don't, this won't cause issues in the main screens of the app which use your device's time zone\n    automatically, but could mean you see incorrect date/time values in some online-only screens.</div>\n\n<div class=\"slds-text-body_small\"><a href=\"#faq\">Back to Top</a></div>"
+          },
+          "componentName" : "forceCommunity:htmlBlock",
+          "id" : "4079c49f-b8cc-46d7-a2d3-b94ba09ef8ee",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "62208237-fc79-40fd-801c-f32098513c2a",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "81326724-d4a7-4d62-8ee0-98ed11b8459f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "FAQ"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "65fbf765-1d11-47da-8192-27b86a3faaa7",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d632b768-7a71-45fb-a6b8-be849475707b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-faq"
+}

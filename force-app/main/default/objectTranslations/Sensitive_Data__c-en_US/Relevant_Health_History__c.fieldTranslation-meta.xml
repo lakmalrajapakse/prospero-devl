@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Health issues, disability, allergies, medication etc. Please specify how medication is administered, strength, how often this should be taken etc. --></help>
+    <label><!-- Relevant Health History --></label>
+    <name>Relevant_Health_History__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DoLs_in_Place_Deprivation_of_Liberty__c</fullName>
+    <defaultValue>false</defaultValue>
+    <label>DoLs in Place? (Deprivation of Liberty)</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

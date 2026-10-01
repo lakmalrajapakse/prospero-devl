@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>WFM-contract</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>WFM-contracten</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Contract Clone Fields --></label>
+        <name>Contract_Clone_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Contract Sync Fields --></label>
+        <name>Contract_Sync_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam Sirenum-contract</nameFieldLabel>
+    <quickActions>
+        <label><!-- Manage Child Contracts --></label>
+        <name>Manage_Child_Contracts</name>
+    </quickActions>
+</CustomObjectTranslation>

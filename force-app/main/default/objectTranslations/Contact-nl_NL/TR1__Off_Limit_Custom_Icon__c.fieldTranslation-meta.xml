@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Aangepast pictogram dat het verpakte off limit-pictogram moet vervangen. Als dit veld wordt ingevuld, wordt het aangepaste pictogram overal weergegeven als de contactpersoon off limit is. De ondersteunde waarde is relatieve webadres naar een Salesforce-afbeeldingsbron, bij voorkeur een SVG zoals  /resource/TR1__Lock_icon_svg</help>
+    <label><!-- Off Limit Custom Icon --></label>
+    <name>TR1__Off_Limit_Custom_Icon__c</name>
+</CustomFieldTranslation>

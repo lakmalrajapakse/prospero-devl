@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- For WFM users interfacing with Cyborg, defines whether employees belonging to this account will be exported for payroll. --></help>
+    <label><!-- Payroll Eligible --></label>
+    <name>sirenum__Payroll_Eligible__c</name>
+</CustomFieldTranslation>

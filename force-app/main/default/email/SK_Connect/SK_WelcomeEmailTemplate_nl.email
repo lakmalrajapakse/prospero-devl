@@ -1,0 +1,8 @@
+Beste {!Receiving_User.FirstName},
+
+Welkom bij {!Community_Name}! Om te beginnen, gaat u naar {!Community_Url}
+
+Gebruikersnaam: {!Receiving_User.Username}
+
+Bedankt,
+{!Organization.Name}

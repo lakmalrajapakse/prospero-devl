@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Indien ingeschakeld wordt het veld niet gesynchroniseerd met de aanbieder voor cv-zoekopdrachten en is het niet beschikbaar in de SaM-zoekresultaten.</help>
+    <label><!-- DoNotUseInSaM --></label>
+    <name>TR1__DoNotUseInSaM__c</name>
+</CustomFieldTranslation>

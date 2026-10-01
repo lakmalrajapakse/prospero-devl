@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Holiday Pay Rule --></label>
+    <name>Holiday_Pay_Rule__c</name>
+    <picklistValues>
+        <masterLabel>Pay Holiday</masterLabel>
+        <translation><!-- Pay Holiday --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Retain Holiday</masterLabel>
+        <translation><!-- Retain Holiday --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

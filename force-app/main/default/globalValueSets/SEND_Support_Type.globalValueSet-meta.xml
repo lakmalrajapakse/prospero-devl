@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>1:1 Support</fullName>
+        <default>false</default>
+        <label>1:1 Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Small Group Support</fullName>
+        <default>false</default>
+        <label>Small Group Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Whole‑Class / General Support</fullName>
+        <default>false</default>
+        <label>Whole‑Class / General Support</label>
+    </customValue>
+    <masterLabel>SEND Support Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

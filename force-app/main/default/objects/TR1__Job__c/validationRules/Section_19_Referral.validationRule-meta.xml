@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Section_19_Referral</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				NOT($Permission.Bypass_System_Automation),
+    ISPICKVAL(Brand__c, &quot;Teaching&quot;),
+    Is_this_a_CYP_Service__c = True,
+    INCLUDES(Reason_for_Referral__c, &quot;Section 19 - Please Specify&quot;),
+    ISBLANK(Reason_for_Referral_Description__c)
+)</errorConditionFormula>
+    <errorDisplayField>Reason_for_Referral_Description__c</errorDisplayField>
+    <errorMessage>If Reason for Referral is Section 19 you must add details in the Reason for Referral Description</errorMessage>
+</ValidationRule>

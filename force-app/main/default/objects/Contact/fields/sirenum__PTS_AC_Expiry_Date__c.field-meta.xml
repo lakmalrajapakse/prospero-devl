@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__PTS_AC_Expiry_Date__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Updated by the ticket trigger</description>
+    <label>PTS AC Expiry Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

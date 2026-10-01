@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Job_Requirements__c.Job__c</field>
+    </columns>
+    <columns>
+        <field>Job_Requirements__c.Estimated_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Job_Requirements__c.Estimated_End_Date__c</field>
+    </columns>
+    <columns>
+        <field>Job_Requirements__c.Status__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Open Job Requirements</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Job_Requirements__c</reportType>
+    <scope>team</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Job_Requirements__c.Estimated_End_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

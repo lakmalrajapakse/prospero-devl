@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CYP_to_Job__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>CYP to Job</label>
+    <referenceTo>CYP_to_Job__c</referenceTo>
+    <relationshipLabel>CYP to Shifts</relationshipLabel>
+    <relationshipName>CYP_to_Shifts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

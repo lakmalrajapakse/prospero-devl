@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Dit veld wordt gebruikt in de veldenreeks TR1__Power_Notes_Tableview als een aanwijzing om ervoor te zorgen dat de component van de tabelweergave van PowerNotes de gerelateerde records kan weergegeven als het veld in de sectie van weergegeven velden staat.</help>
+    <label><!-- Related To --></label>
+    <name>TR1__Related_Records__c</name>
+</CustomFieldTranslation>

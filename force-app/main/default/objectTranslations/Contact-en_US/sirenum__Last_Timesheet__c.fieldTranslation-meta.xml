@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The week ending date of this employee&apos;s most recent timesheet --></help>
+    <label><!-- Last Timesheet --></label>
+    <name>sirenum__Last_Timesheet__c</name>
+</CustomFieldTranslation>

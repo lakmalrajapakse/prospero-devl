@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Push notification informing candidate of a cancelled shift</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Push Notify Shift Cancelled</name>
+    <style>none</style>
+    <subject>Your shift has been cancelled</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

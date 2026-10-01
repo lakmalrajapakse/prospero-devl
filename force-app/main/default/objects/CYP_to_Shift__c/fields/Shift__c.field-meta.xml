@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shift__c</fullName>
+    <label>Shift</label>
+    <referenceTo>sirenum__Shift__c</referenceTo>
+    <relationshipLabel>Children / Young People</relationshipLabel>
+    <relationshipName>CYP_to_Shifts</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

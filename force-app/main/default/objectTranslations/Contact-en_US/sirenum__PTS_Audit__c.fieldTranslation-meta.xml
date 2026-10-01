@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If person has no card will show &quot;N/A&quot;. IF card expired will show &quot;Invalid&quot;. otherwise shows Says the name of the card and &quot;Valid&quot; --></help>
+    <label><!-- PTS Audit --></label>
+    <name>sirenum__PTS_Audit__c</name>
+</CustomFieldTranslation>

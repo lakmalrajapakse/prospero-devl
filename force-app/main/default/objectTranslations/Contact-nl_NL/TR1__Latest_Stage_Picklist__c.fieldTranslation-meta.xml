@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>De laatst bijgewerkte sollicitatiefase. Dit veld wordt bijgewerkt als de instelling &apos;Laatste fase bij contactpersoon bijwerken&apos; in TalentRover-eigenschappen aangevinkt is.</help>
+    <label><!-- Latest Stage Picklist --></label>
+    <name>TR1__Latest_Stage_Picklist__c</name>
+    <picklistValues>
+        <masterLabel>Application</masterLabel>
+        <translation>Sollicitatie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing Report</masterLabel>
+        <translation>Afsluitend rapport</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Interview</masterLabel>
+        <translation>Intern gesprek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offer</masterLabel>
+        <translation>Aanbod</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send Out</masterLabel>
+        <translation>Gesprek plannen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submittal</masterLabel>
+        <translation>Voordracht</translation>
+    </picklistValues>
+</CustomFieldTranslation>

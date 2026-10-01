@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Local_Authority_if_Parent_is_not</fullName>
+    <active>false</active>
+    <description>If the Parent&apos;s Type is not Local Authority then require the Local Authority lookup to be populated
+
+https://1218globaluk.eu.teamwork.com/app/tasks/36021971</description>
+    <errorConditionFormula>AND(
+				NOT($Permission.Bypass_System_Automation),
+				OR(
+								CONTAINS(Brand_Formula__c, &quot;Teaching&quot;),
+        CONTAINS(Brand_Formula__c, &quot;Health &amp; Social Care&quot;)
+    ),
+				NOT(ISPICKVAL(Type, &quot;Local Authority&quot;)),
+    NOT(ISPICKVAL(Parent.Type, &quot;Local Authority&quot;)),
+    ISBLANK(Local_Authority__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Local_Authority__c</errorDisplayField>
+    <errorMessage>Please add a Local Authority</errorMessage>
+</ValidationRule>

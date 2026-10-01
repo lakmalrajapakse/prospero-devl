@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Name of School --></label>
+    <name>Name_of_School__c</name>
+    <relationshipLabel><!-- Sensitive Data --></relationshipLabel>
+</CustomFieldTranslation>

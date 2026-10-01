@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Hiermee wordt de naam van de vaardigheid Meest recente functietitel opgeslagen (geparseerd van TK). Alleen Engels wordt door TK ondersteund.</help>
+    <label><!-- Last Job Title Description --></label>
+    <name>TR1__Last_Job_Title_Description__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Speciality 2 --></label>
+    <name>TR1__Speciality_z__c</name>
+    <picklistValues>
+        <masterLabel>Addiction medicine</masterLabel>
+        <translation>Suchtmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anaesthetics</masterLabel>
+        <translation>Anästhesie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cardiology</masterLabel>
+        <translation>Kardiologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical genetics</masterLabel>
+        <translation>Klinische Genetik</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical pharmacology</masterLabel>
+        <translation>Klinische Pharmakologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dermatology</masterLabel>
+        <translation>Dermatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency medicine</masterLabel>
+        <translation>Notfallmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endocrinology</masterLabel>
+        <translation>Endokrinologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gastroenterology and hepatology</masterLabel>
+        <translation>Gastroenterologie und Hepatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General medicine/physician</masterLabel>
+        <translation>Allgemeinmedizin/-mediziner</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice</masterLabel>
+        <translation>Allgemeinmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - GP / family medicine</masterLabel>
+        <translation>Allgemeinmedizin - Prakt. Arzt/Hausarzt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - aged care</masterLabel>
+        <translation>Allgemeinmedizin - Altenpflege</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - anaesthetics</masterLabel>
+        <translation>Allgemeinmedizin - Anästhesie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - correctional / judicial health</masterLabel>
+        <translation>Allgemeinmedizin - Heim-/Gefänginisarzt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - cosmetics</masterLabel>
+        <translation>Allgemeinmedizin - Kosmetik</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - emergency medicine</masterLabel>
+        <translation>Allgemeinmedizin - Notfallmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - indigenous health</masterLabel>
+        <translation>Allgemeinmedizin - Gesundheit indigener Völker</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - obstetrics and gynaecology</masterLabel>
+        <translation>Allgemeinmedizin - Geburtshilfe und Gynäkologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - occupational medicine</masterLabel>
+        <translation>Allgemeinmedizin - Arbeitsmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - rural and remote</masterLabel>
+        <translation>Allgemeinmedizin - ländliche und abgeschiedene Gebiete</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - skin cancer medicine</masterLabel>
+        <translation>Allgemeinmedizin - Hautkrebsmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - sports medicine / nutrition</masterLabel>
+        <translation>Allgemeinmedizin - Sportmedizin/Ernährung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geriatric medicine</masterLabel>
+        <translation>Geriatrie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haematology</masterLabel>
+        <translation>Hämatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Immunology and allergy</masterLabel>
+        <translation>Immunologie und Allergien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infectious diseases</masterLabel>
+        <translation>Infektionskrankheiten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intensive care medicine</masterLabel>
+        <translation>Intensivmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal medicine / Physician</masterLabel>
+        <translation>Innere Medizin/Internist</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical administration</masterLabel>
+        <translation>Medizinische Verwaltung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical oncology</masterLabel>
+        <translation>Medizinische Onkologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nephrology</masterLabel>
+        <translation>Nephrologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurology</masterLabel>
+        <translation>Neurologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nuclear medicine</masterLabel>
+        <translation>Nuklearmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Gynaecological oncology</masterLabel>
+        <translation>Geburtshilfe und Gynäkologie - Gynakol. Onkologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Maternal–fetal medicine</masterLabel>
+        <translation>Geburtshilfe und Gynäkologie - Perinatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Obstetrics and gynaecological ultrasound</masterLabel>
+        <translation>Geburtshilfe und Gynäkologie - Ultraschalluntersuchungen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Obstetrics and gynaecology</masterLabel>
+        <translation>Geburtshilfe und Gynäkologie - Geburtshilfe und Gynäkologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Reproductive endocrinology and infertility</masterLabel>
+        <translation>Geburtshilfe und Gynäkologie - Reproduktionsendokrinologie und Infertilität</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Urogynaecology</masterLabel>
+        <translation>Geburtshilfe und Gynäkologie - Urogynäkologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obstetrics and gynaecology</masterLabel>
+        <translation>Geburtshilfe und Gynäkologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Occupational and environmental medicine</masterLabel>
+        <translation>Arbeits- und Umweltmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ophthalmology</masterLabel>
+        <translation>Ophthalmologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - cardiology</masterLabel>
+        <translation>Pädiatrie - Kardiologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - clinical genetics</masterLabel>
+        <translation>Pädiatrie - Klinische Genetik</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - clinical pharmacology</masterLabel>
+        <translation>Pädiatrie - Klinische Pharmakologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - community child health</masterLabel>
+        <translation>Pädiatrie - Gesundheitsvorsorge</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - emergency medicine</masterLabel>
+        <translation>Pädiatrie - Notfallmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - endocrinology</masterLabel>
+        <translation>Pädiatrie - Endokrinologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - gastroenterology and hepatology</masterLabel>
+        <translation>Pädiatrie - Gastroenterologie und Hepatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - general</masterLabel>
+        <translation>Pädiatrie - Allgemein</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - haematology</masterLabel>
+        <translation>Pädiatrie - Hämatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - immunology and allergy</masterLabel>
+        <translation>Pädiatrie - Immunologie und Allergien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - infectious diseases</masterLabel>
+        <translation>Pädiatrie - Infektionskrankheiten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - intensive care medicine</masterLabel>
+        <translation>Pädiatrie - Intensivmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - medical oncology</masterLabel>
+        <translation>Pädiatrie - Medizinische Onkologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - neonatal and perinatal medicine</masterLabel>
+        <translation>Pädiatrie - Neonatal- und Perinatalmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - nephrology</masterLabel>
+        <translation>Pädiatrie - Nephrologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - neurology</masterLabel>
+        <translation>Pädiatrie - Neurologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - nuclear medicine</masterLabel>
+        <translation>Pädiatrie - Nuklearmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - palliative medicine</masterLabel>
+        <translation>Pädiatrie - Palliativmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - rehabilitation medicine</masterLabel>
+        <translation>Pädiatrie - Rehabilitationsmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - respiratory and sleep medicine</masterLabel>
+        <translation>Pädiatrie - Beatmungs- und Schlafmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - rheumatology</masterLabel>
+        <translation>Pädiatrie - Rheumatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics and child health</masterLabel>
+        <translation>Pädiatrie und Kindergesundheit</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pain medicine</masterLabel>
+        <translation>Schmerzmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palliative medicine</masterLabel>
+        <translation>Palliativmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology</masterLabel>
+        <translation>Pathologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - anatomical (including cytopathology)</masterLabel>
+        <translation>Pathologie - Anatomie (einschl. Zytopathologie)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - chemical</masterLabel>
+        <translation>Pathologie - Chemisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - forensic</masterLabel>
+        <translation>Pathologie - Forensisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - general</masterLabel>
+        <translation>Pathologie - Allgemein</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - haematology</masterLabel>
+        <translation>Pathologie - Hämatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - immunology</masterLabel>
+        <translation>Pathologie - Immunologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - microbiology</masterLabel>
+        <translation>Pathologie - Mikrobiologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Psychiatry</masterLabel>
+        <translation>Psychiatrie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public health medicine</masterLabel>
+        <translation>Volksgesundheit</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiation oncology</masterLabel>
+        <translation>Radioonkologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology</masterLabel>
+        <translation>Radiologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology - diagnostic</masterLabel>
+        <translation>Radiologie - Diagnostik</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology - diagnostic ultrasound</masterLabel>
+        <translation>Radiologie - Diganost. Ultraschall</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rehabilitation medicine</masterLabel>
+        <translation>Rehabilitationsmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Respiratory and sleep medicine</masterLabel>
+        <translation>Beatmungs- und Schlafmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rheumatology</masterLabel>
+        <translation>Rheumatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sexual health medicine</masterLabel>
+        <translation>Sexuelle Gesundheit</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports and exercise medicine</masterLabel>
+        <translation>Sport- und Bewegungsmedizin</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation>Chirurgie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - cardiothoracic</masterLabel>
+        <translation>Chirurgie - Herz-Thorax</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - general</masterLabel>
+        <translation>Chirurgie - Allgemein</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - neurosurgery</masterLabel>
+        <translation>Chirurgie - Neurochirurgie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - oral and maxillofacial</masterLabel>
+        <translation>Chirurgie - Kiefer und Gesicht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - orthopaedic</masterLabel>
+        <translation>Chirurgie - Orthopädisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - otolaryngology</masterLabel>
+        <translation>Chirurgie - Otolaryngologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - paediatric</masterLabel>
+        <translation>Chirurgie - Pädiatrie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - plastic</masterLabel>
+        <translation>Chirurgie - Plastisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - urology</masterLabel>
+        <translation>Chirurgie - Urologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - vascular</masterLabel>
+        <translation>Chirurgie - Gefäßchirurgie</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Voer 0 in als voor de werknemer geen Wk1/Mth1-belastingcode wordt gebruikt en voer 1 in als dit wel het geval is.</help>
+    <label><!-- Week1/Month1 Basis --></label>
+    <name>sirenum__Wk1Mth1_Basis__c</name>
+</CustomFieldTranslation>

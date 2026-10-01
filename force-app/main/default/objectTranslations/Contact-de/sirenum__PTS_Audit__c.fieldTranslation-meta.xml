@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn die Person keine Karte hat, wird „nicht zutreffend“ angezeigt. Wenn die Karte abgelaufen ist, wird „Ungültig“ angezeigt. Anderenfalls wird der Name der Karte zusammen mit „Gültig“ angezeigt.</help>
+    <label><!-- PTS Audit --></label>
+    <name>sirenum__PTS_Audit__c</name>
+</CustomFieldTranslation>

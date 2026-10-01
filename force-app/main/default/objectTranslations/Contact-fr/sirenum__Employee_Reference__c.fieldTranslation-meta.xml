@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Le numéro de référence de l&apos;élément de paie ouvert le plus récent pour l&apos;employé.</help>
+    <label><!-- Employee Reference --></label>
+    <name>sirenum__Employee_Reference__c</name>
+</CustomFieldTranslation>

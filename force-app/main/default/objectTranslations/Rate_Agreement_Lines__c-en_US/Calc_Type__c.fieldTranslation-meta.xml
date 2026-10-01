@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Calc Type --></label>
+    <name>Calc_Type__c</name>
+    <picklistValues>
+        <masterLabel>Fixed Margin %</masterLabel>
+        <translation><!-- Fixed Margin % --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fixed Margin Amount</masterLabel>
+        <translation><!-- Fixed Margin Amount --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Max Margin %</masterLabel>
+        <translation><!-- Max Margin % --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Max Margin Amount</masterLabel>
+        <translation><!-- Max Margin Amount --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

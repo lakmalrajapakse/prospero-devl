@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please specify who holds Parental Responsibility, for example Parent, Grandparent, Aunt/Uncle, Foster Carer etc. --></help>
+    <label><!-- Parental Responsibility --></label>
+    <name>Parental_Responsibility__c</name>
+    <picklistValues>
+        <masterLabel>Adoptive Parent(s)</masterLabel>
+        <translation><!-- Adoptive Parent(s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Both Parents</masterLabel>
+        <translation><!-- Both Parents --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Court‑Appointed Guardian</masterLabel>
+        <translation><!-- Court‑Appointed Guardian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Father</masterLabel>
+        <translation><!-- Father --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foster Carer(s)</masterLabel>
+        <translation><!-- Foster Carer(s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Guardian</masterLabel>
+        <translation><!-- Legal Guardian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local Authority</masterLabel>
+        <translation><!-- Local Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mother</masterLabel>
+        <translation><!-- Mother --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other (please specify)</masterLabel>
+        <translation><!-- Other (please specify) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Guardian(s)</masterLabel>
+        <translation><!-- Special Guardian(s) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Step‑Parent with PR</masterLabel>
+        <translation><!-- Step‑Parent with PR --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Unknown</masterLabel>
+        <translation><!-- Unknown --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

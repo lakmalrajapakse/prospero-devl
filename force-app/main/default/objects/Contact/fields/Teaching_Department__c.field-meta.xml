@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Teaching_Department__c</fullName>
+    <label>Teaching Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Administrative_and_Support_Services</fullName>
+                <default>false</default>
+                <label>Administrative and Support Services</label>
+            </value>
+            <value>
+                <fullName>Facilities and Operations</fullName>
+                <default>false</default>
+                <label>Facilities and Operations</label>
+            </value>
+            <value>
+                <fullName>Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA</fullName>
+                <default>false</default>
+                <label>Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA</label>
+            </value>
+            <value>
+                <fullName>IT and Technical Services</fullName>
+                <default>false</default>
+                <label>IT and Technical Services</label>
+            </value>
+            <value>
+                <fullName>Leadership and Management</fullName>
+                <default>false</default>
+                <label>Leadership and Management</label>
+            </value>
+            <value>
+                <fullName>Leaving Care Department within LA</fullName>
+                <default>false</default>
+                <label>Leaving Care Department within LA</label>
+            </value>
+            <value>
+                <fullName>Nursery</fullName>
+                <default>false</default>
+                <label>Nursery</label>
+            </value>
+            <value>
+                <fullName>Pastoral and Student Support</fullName>
+                <default>false</default>
+                <label>Pastoral and Student Support</label>
+            </value>
+            <value>
+                <fullName>Regional/Trust</fullName>
+                <default>false</default>
+                <label>Regional/Trust</label>
+            </value>
+            <value>
+                <fullName>Section 19 Team Department within LA</fullName>
+                <default>false</default>
+                <label>Section 19 Team Department within LA</label>
+            </value>
+            <value>
+                <fullName>SEND Team (any Child with an EHCP) within LA</fullName>
+                <default>false</default>
+                <label>SEND Team (any Child with an EHCP) within LA</label>
+            </value>
+            <value>
+                <fullName>Social Care Department within LA</fullName>
+                <default>false</default>
+                <label>Social Care Department within LA</label>
+            </value>
+            <value>
+                <fullName>Teaching and Learning</fullName>
+                <default>false</default>
+                <label>Teaching and Learning</label>
+            </value>
+            <value>
+                <fullName>UASC Unaccompanied Asylum Seeking Child</fullName>
+                <default>false</default>
+                <label>UASC Unaccompanied Asylum Seeking Child</label>
+            </value>
+            <value>
+                <fullName>Virtual School within LA</fullName>
+                <default>false</default>
+                <label>Virtual School within LA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

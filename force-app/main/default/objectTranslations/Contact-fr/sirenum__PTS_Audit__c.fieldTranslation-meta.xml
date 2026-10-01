@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Si la personne n&apos;a pas de fiche, « N/A » s&apos;affiche. Si la fiche est arrivée à expiration, « invalide » s&apos;affiche. Sinon, le nom de la fiche et la mention « valide » apparaissent.</help>
+    <label><!-- PTS Audit --></label>
+    <name>sirenum__PTS_Audit__c</name>
+</CustomFieldTranslation>

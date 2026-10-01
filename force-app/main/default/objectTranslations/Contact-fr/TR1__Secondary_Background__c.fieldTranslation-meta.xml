@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Secondary Background --></label>
+    <name>TR1__Secondary_Background__c</name>
+    <picklistValues>
+        <masterLabel>AR/Bill/Collect - Finance</masterLabel>
+        <translation>AR/Facture/Recouvr - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Executive - Sales</masterLabel>
+        <translation>Chargé de compte - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Management - Client Services</masterLabel>
+        <translation>Gestion de comptes - Services client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Account Management - Sales</masterLabel>
+        <translation>Gestion de comptes - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Accounts Payable - Finance</masterLabel>
+        <translation>Comptabilité fournisseurs - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administration - HR</masterLabel>
+        <translation>Administration - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analytical Chem - Scientific</masterLabel>
+        <translation>Chimie analytique - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications - BI/DW/ETL - Technology</masterLabel>
+        <translation>Candidatures - BI/DW/ETL - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications - CRM - Technology</masterLabel>
+        <translation>Candidatures - CRM - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications - ERP - Technology</masterLabel>
+        <translation>Candidatures - ERP - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Applications - Other - Technology</masterLabel>
+        <translation>Candidatures - Autre - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architect - Technology</masterLabel>
+        <translation>Architecte - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auditor - Engineering</masterLabel>
+        <translation>Auditeur - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Benefits - HR</masterLabel>
+        <translation>Avantages sociaux - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bioanalytical - Scientific</masterLabel>
+        <translation>Bioanalytique - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bioassay - Scientific</masterLabel>
+        <translation>Bioessai - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Biostatistics - Clinical</masterLabel>
+        <translation>Biostatistiques - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BiotechOps - Clinical</masterLabel>
+        <translation>BiotechOps - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Branding - Marketing</masterLabel>
+        <translation>Marque - Marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Analyst - Engineering</masterLabel>
+        <translation>Analyse d&apos;entreprise - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Partner - HR</masterLabel>
+        <translation>Partenaire commercial - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAO/VP Human Resources - HR</masterLabel>
+        <translation>CAO/VP Ressources humaines - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEO/Chairman/President - Executive</masterLabel>
+        <translation>PDG/Président/Directeur - Exécutif</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CFO/VP Finance - Finance</masterLabel>
+        <translation><!-- CFO/VP Finance - Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CMO/VP Marketing - Marketing</masterLabel>
+        <translation><!-- CMO/VP Marketing - Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>COO/VP Operations - Operations</masterLabel>
+        <translation>COO/VP Opérations - Opérations</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CPA w/ Industry - Finance</masterLabel>
+        <translation>CAP avec industrie - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTA - Clinical</masterLabel>
+        <translation>CTA - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CTO/CIO - Technology</masterLabel>
+        <translation>CTO/CIO - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Campaign - Marketing</masterLabel>
+        <translation>Campagne - Marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cell Based Assay - Scientific</masterLabel>
+        <translation>Essai sur cellules - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cell Culture - Scientific</masterLabel>
+        <translation>Culture de cellules - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Channel Account - Sales</masterLabel>
+        <translation>Compte de canal - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Client Services Management - Client Services</masterLabel>
+        <translation>Gestion des services client - Services client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical DBA - Clinical</masterLabel>
+        <translation>Clinique DBA - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Operations - Clinical</masterLabel>
+        <translation>Opérations cliniques - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Outsourcing - Clinical</masterLabel>
+        <translation>Externalisation clinique - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Project Management - Clinical</masterLabel>
+        <translation>Gestion de projet clinique - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Scientist - Clinical</masterLabel>
+        <translation>Scientifique clinique - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compensation - HR</masterLabel>
+        <translation>Rémunération - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance Specialist - Engineering</masterLabel>
+        <translation>Spécialiste conformité - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance/Governance - Technology</masterLabel>
+        <translation>Conformité/Gouvernance - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Computer System Validation - Engineering</masterLabel>
+        <translation>Validation du système informatique - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consolidations - Finance</masterLabel>
+        <translation><!-- Consolidations - Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract Monitor - Clinical</masterLabel>
+        <translation>Surveillance des contrats - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Controller - Finance</masterLabel>
+        <translation>Contrôleur - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coordinator - Clinical</masterLabel>
+        <translation>Coordinateur - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cost Accounting - Finance</masterLabel>
+        <translation>Comptabilité analytique - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Success - Client Services</masterLabel>
+        <translation>Succès client - Services client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Customer Support - Client Services</masterLabel>
+        <translation>Support client - Services client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DMPK - Scientific</masterLabel>
+        <translation>DMPK - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Data Management - Clinical</masterLabel>
+        <translation>Gestion des données - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Demand Generation - Marketing</masterLabel>
+        <translation>Génération de la demande - Marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Digital - Marketing</masterLabel>
+        <translation><!-- Digital - Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Documentation - Scientific</masterLabel>
+        <translation>Documentation - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drug Safety - Clinical</masterLabel>
+        <translation>Sécurité des médicaments - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employee Relations - HR</masterLabel>
+        <translation>Relations employés - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise Account Executive - Sales</masterLabel>
+        <translation>Chargé de compte d&apos;entreprise - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enterprise Sales - Sales</masterLabel>
+        <translation>Ventes d&apos;entreprise - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FACS - Scientific</masterLabel>
+        <translation>FACS - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FP&amp;A - Finance</masterLabel>
+        <translation><!-- FP&amp;A - Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facilities - Scientific</masterLabel>
+        <translation>Installations - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fermentation - Scientific</masterLabel>
+        <translation>Fermentation - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Ledger - Finance</masterLabel>
+        <translation>Grand livre général - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Generalist - HR</masterLabel>
+        <translation>Généraliste - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Systems - HR</masterLabel>
+        <translation>Systèmes RH - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Histology - Scientific</masterLabel>
+        <translation>Histologie - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Immunology - Scientific</masterLabel>
+        <translation>Immunologie - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Vivo - Scientific</masterLabel>
+        <translation>In vivo - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In-house CRA - Clinical</masterLabel>
+        <translation>CRA interne - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Contract Monitoring - Clinical</masterLabel>
+        <translation>Surveillance des contrats indépendants - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent Project Management - Clinical</masterLabel>
+        <translation>Gestion de projet indépendante - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Data Center - Technology</masterLabel>
+        <translation>Infrastructure - Data Center - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Database - Technology</masterLabel>
+        <translation>Infrastructure - Base de données - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Help Desk - Technology</masterLabel>
+        <translation>Infrastructure - Help Desk - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Network/Security - Technology</masterLabel>
+        <translation>Infrastructure - Réseau/sécurité - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure - Sys/Storage - Technology</masterLabel>
+        <translation>Infrastructure - Sys/Stockage - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inside Sales - Sales</masterLabel>
+        <translation>Ventes internes - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instrumentation/Calibration - Scientific</masterLabel>
+        <translation>Instrumentation/Calibrage - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal</masterLabel>
+        <translation>Interne</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Audit/IT - Finance</masterLabel>
+        <translation>Audit interne/IT - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Audit/SOX - Finance</masterLabel>
+        <translation>Audit interne/SOX - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Investor Relations - Finance</masterLabel>
+        <translation>Relations investisseurs - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laboratory - Scientific</masterLabel>
+        <translation>Laboratoire - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning &amp; Development - HR</masterLabel>
+        <translation>Formation et développement - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>M&amp;A - Finance</masterLabel>
+        <translation>Fusions et acquisitions - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing - Engineering</masterLabel>
+        <translation>Fabrication - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manufacturing - Scientific</masterLabel>
+        <translation>Fabrication - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing Management - Marketing</masterLabel>
+        <translation>Gestion Marketing - Marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Material Science - Scientific</masterLabel>
+        <translation>Science des matériaux - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Med Chem - Scientific</masterLabel>
+        <translation>Chimie médicale - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media Management - Client Services</masterLabel>
+        <translation>Gestion média - Services client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media Planner/Buyer - Client Services</masterLabel>
+        <translation>Planificateur/Acheteur média - Services client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Doctor Clinical - Clinical</masterLabel>
+        <translation>Médecin clinicien - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Doctor Safety - Clinical</masterLabel>
+        <translation>Sécurité des médecins - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mergers &amp; Acquisitions - HR</masterLabel>
+        <translation>Fusions et acquisitions - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Molecular Biology - Scientific</masterLabel>
+        <translation>Biologie moléculaire - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mutual Funds - Finance</masterLabel>
+        <translation>Fonds mutuels - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nanotechnology - Scientific</masterLabel>
+        <translation>Nanotechnologie - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operations - Scientific</masterLabel>
+        <translation>Opérations - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Organizational Development - HR</masterLabel>
+        <translation>Développement organisationnel - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Autre</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PKPD - Scientific</masterLabel>
+        <translation>PKPD - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Business Analyst - Technology</masterLabel>
+        <translation>PM - Analyste d&apos;entreprise - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Business Systems Analyst - Technology</masterLabel>
+        <translation>PM - Analyste de système d&apos;entreprise - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Program Manager - Technology</masterLabel>
+        <translation>PM - Gestionnaire de programme - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Project Manager - Business - Technology</masterLabel>
+        <translation>PM - Gestionnaire de projet - Métier - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Project Manager - Functional - Technology</masterLabel>
+        <translation>PM- Gestionnaire de projet- Fonctionnel- Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM - Project Manager - Technical - Technology</masterLabel>
+        <translation>PM - Gestionnaire de projet - Technique - Technologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Payroll/Stock Admin - Finance</masterLabel>
+        <translation>Paie/Admin du stock - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Performance Management - HR</masterLabel>
+        <translation>Gestion de la performance - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process - Engineering</masterLabel>
+        <translation>Processus - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process Dev - Scientific</masterLabel>
+        <translation>Développement de processus - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product - Marketing</masterLabel>
+        <translation>Produit - Marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Quality - Engineering</masterLabel>
+        <translation>Qualité produit - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Management - Engineering</masterLabel>
+        <translation>Gestion de projet - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Management - Scientific</masterLabel>
+        <translation>Gestion de projet - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Accounting - Finance</masterLabel>
+        <translation>Comptabilité publique - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Publisher - Client Services</masterLabel>
+        <translation>Éditeur - Services client</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Purification - Scientific</masterLabel>
+        <translation>Purification - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC - Scientific</masterLabel>
+        <translation>QC - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Chemist - Scientific</masterLabel>
+        <translation>Chimiste QC - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>QC Micro - Scientific</masterLabel>
+        <translation>Micro QC - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality Assurance - Engineering</masterLabel>
+        <translation>Assurance qualité - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality Assurance - Scientific</masterLabel>
+        <translation>Assurance qualité - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regional CRA - Clinical</masterLabel>
+        <translation>CRA Régional - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regional Operations - Clinical</masterLabel>
+        <translation>Opérations régionales - Clinique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regulatory - Scientific</masterLabel>
+        <translation>Réglementation - Scientifique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regulatory Affairs - Engineering</masterLabel>
+        <translation>Affaires réglementaires - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Revenue/Rev Recognition - Finance</masterLabel>
+        <translation>Comptabilisation des revenus et des révisions - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Risk Management - Finance</masterLabel>
+        <translation>Gestion du risque - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEC/Regulatory Rptg - Finance</masterLabel>
+        <translation>SEC/Aperçu de réglementation - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Development - Sales</masterLabel>
+        <translation>Développement des ventes - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Engineering - Sales</masterLabel>
+        <translation>Ingénierie des ventes - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales Management - Sales</masterLabel>
+        <translation>Gestion des ventes - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Search - Marketing</masterLabel>
+        <translation>Recherche - Marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shared Services - HR</masterLabel>
+        <translation>Services partagés - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Media - Marketing</masterLabel>
+        <translation>Média social - Marketing</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Software Quality - Engineering</masterLabel>
+        <translation>Qualité de logiciel - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Systems Analyst - Finance</masterLabel>
+        <translation>Analyste systèmes - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Talent Management - HR</masterLabel>
+        <translation>Gestion de talents - RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tax - Finance</masterLabel>
+        <translation>Taxe- Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Writing - Engineering</masterLabel>
+        <translation>Rédaction technique - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Treasury - Finance</masterLabel>
+        <translation>Trésorerie - Finance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VP Sales - Sales</masterLabel>
+        <translation>VP des ventes - Ventes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Validation - Engineering</masterLabel>
+        <translation>Validation - Ingénierie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virology - Scientific</masterLabel>
+        <translation>Virologie - Scientifique</translation>
+    </picklistValues>
+</CustomFieldTranslation>

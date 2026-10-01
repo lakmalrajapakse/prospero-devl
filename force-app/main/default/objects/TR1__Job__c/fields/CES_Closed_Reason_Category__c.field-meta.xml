@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CES_Closed_Reason_Category__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    TEXT(CES_Closed_Reason__c),
+
+    &quot;Reintegration to School&quot;, &quot;Successful Outcome&quot;,
+    &quot;Post-16 Pathway Secured&quot;, &quot;Successful Outcome&quot;,
+    &quot;Employment Secured&quot;, &quot;Successful Outcome&quot;,
+    &quot;Planned Tuition Completed Successfully&quot;, &quot;Successful Outcome&quot;,
+
+    &quot;Tutor Unsuitable&quot;, &quot;Unsuccessful Outcome&quot;,
+    &quot;Provision Unsuitable for Student&quot;, &quot;Unsuccessful Outcome&quot;,
+    &quot;Tutor Ended &amp; No Replacement Available&quot;, &quot;Unsuccessful Outcome&quot;,
+    &quot;Non-Engagement / Persistent Absence&quot;, &quot;Unsuccessful Outcome&quot;,
+    &quot;Parent/Carer Withdrawal&quot;, &quot;Unsuccessful Outcome&quot;,
+    &quot;Commissioner Withdrawal&quot;, &quot;Unsuccessful Outcome&quot;,
+
+    &quot;Health‑Related End&quot;, &quot;External Factors Outside of Control&quot;,
+    &quot;Student Moved Out of Area&quot;, &quot;External Factors Outside of Control&quot;,
+    &quot;Funding Ended&quot;, &quot;External Factors Outside of Control&quot;,
+    &quot;Safeguarding End&quot;, &quot;External Factors Outside of Control&quot;,
+    &quot;Other External Reason&quot;, &quot;External Factors Outside of Control&quot;,
+
+    &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CES Closed Reason Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

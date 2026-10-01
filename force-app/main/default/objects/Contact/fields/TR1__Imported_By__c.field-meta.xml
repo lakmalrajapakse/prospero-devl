@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Imported_By__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>The user who initiated the import of the Candidate.</description>
+    <inlineHelpText>The user who initiated the import of the Candidate.</inlineHelpText>
+    <label>Import User</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Imported_Candidates</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

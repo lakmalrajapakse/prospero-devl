@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Speciality 2 --></label>
+    <name>TR1__Speciality_z__c</name>
+    <picklistValues>
+        <masterLabel>Addiction medicine</masterLabel>
+        <translation>Verslavingsgeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anaesthetics</masterLabel>
+        <translation>Anesthesie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cardiology</masterLabel>
+        <translation>Cardiologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical genetics</masterLabel>
+        <translation>Klinische genetica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical pharmacology</masterLabel>
+        <translation>Klinische farmacologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dermatology</masterLabel>
+        <translation>Dermatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Emergency medicine</masterLabel>
+        <translation>Spoedeisende geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Endocrinology</masterLabel>
+        <translation>Endocrinologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gastroenterology and hepatology</masterLabel>
+        <translation>Gastro-enterologie en hepatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General medicine/physician</masterLabel>
+        <translation>Algemene geneeskunde/arts</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice</masterLabel>
+        <translation>Huisartsenpraktijk</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - GP / family medicine</masterLabel>
+        <translation>Huisartsenpraktijk - huisarts/huisartsgeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - aged care</masterLabel>
+        <translation>Huisartsenpraktijk - bejaardenzorg</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - anaesthetics</masterLabel>
+        <translation>Huisartsenpraktijk - anesthesie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - correctional / judicial health</masterLabel>
+        <translation>Huisartsenpraktijk - gezondheidszorg voor gestraften</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - cosmetics</masterLabel>
+        <translation>Huisartsenpraktijk - cosmetica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - emergency medicine</masterLabel>
+        <translation>Huisartsenpraktijk - spoedeisende geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - indigenous health</masterLabel>
+        <translation>Huisartsenpraktijk - inheemse gezondheidszorg</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - obstetrics and gynaecology</masterLabel>
+        <translation>Huisartsenpraktijk - verloskunde en gynaecologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - occupational medicine</masterLabel>
+        <translation>Huisartsenpraktijk - arbeidsgeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - rural and remote</masterLabel>
+        <translation>Huisartsenpraktijk - landelijke en afgelegen gebieden</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - skin cancer medicine</masterLabel>
+        <translation>Huisartsenpraktijk - huidkankergeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General practice - sports medicine / nutrition</masterLabel>
+        <translation>Huisartsenpraktijk - sportgeneeskunde/voedingsleer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geriatric medicine</masterLabel>
+        <translation>Geriatrische geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Haematology</masterLabel>
+        <translation>Hematologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Immunology and allergy</masterLabel>
+        <translation>Immunologie en allergie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infectious diseases</masterLabel>
+        <translation>Besmettelijke ziekten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intensive care medicine</masterLabel>
+        <translation>Intensieve zorg</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal medicine / Physician</masterLabel>
+        <translation>Interne geneeskunde / arts</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical administration</masterLabel>
+        <translation>Medische administratie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical oncology</masterLabel>
+        <translation>Medische oncologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nephrology</masterLabel>
+        <translation>Nefrologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Neurology</masterLabel>
+        <translation>Neurologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nuclear medicine</masterLabel>
+        <translation>Nucleaire geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Gynaecological oncology</masterLabel>
+        <translation>V &amp; G - gynaecologische oncologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Maternal–fetal medicine</masterLabel>
+        <translation>V &amp; G - maternale-foetale geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Obstetrics and gynaecological ultrasound</masterLabel>
+        <translation>V &amp; G - verloskundige en gynaecologische echografie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Obstetrics and gynaecology</masterLabel>
+        <translation>V &amp; G - verloskunde en gynaecologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Reproductive endocrinology and infertility</masterLabel>
+        <translation>V &amp; G - reproductieve endocrinologie en onvruchtbaarheid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>O &amp; G - Urogynaecology</masterLabel>
+        <translation>V &amp; G - urogynaecologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Obstetrics and gynaecology</masterLabel>
+        <translation>Verloskunde en gynaecologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Occupational and environmental medicine</masterLabel>
+        <translation>Arbeids- en milieugeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ophthalmology</masterLabel>
+        <translation>Oftalmologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - cardiology</masterLabel>
+        <translation>Pediatrie - cardiologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - clinical genetics</masterLabel>
+        <translation>Pediatrie - klinische genetica</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - clinical pharmacology</masterLabel>
+        <translation>Pediatrie - klinische farmacologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - community child health</masterLabel>
+        <translation>Pediatrie - kinderwijkverpleegkunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - emergency medicine</masterLabel>
+        <translation>Pediatrie - spoedgeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - endocrinology</masterLabel>
+        <translation>Pediatrie - endocrinologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - gastroenterology and hepatology</masterLabel>
+        <translation>Pediatrie - gastro-enterologie en hepatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - general</masterLabel>
+        <translation>Pediatrie - algemeen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - haematology</masterLabel>
+        <translation>Pediatrie - hematologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - immunology and allergy</masterLabel>
+        <translation>Pediatrie - immunologie en allergie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - infectious diseases</masterLabel>
+        <translation>Pediatrie - infectieziekten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - intensive care medicine</masterLabel>
+        <translation>Pediatrie - intensieve zorgen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - medical oncology</masterLabel>
+        <translation>Pediatrie - medische oncologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - neonatal and perinatal medicine</masterLabel>
+        <translation>Pediatrie - neonatale en perinatale geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - nephrology</masterLabel>
+        <translation>Pediatrie - nefrologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - neurology</masterLabel>
+        <translation>Pediatrie - neurologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - nuclear medicine</masterLabel>
+        <translation>Pediatrie - nucleaire geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - palliative medicine</masterLabel>
+        <translation>Pediatrie - palliatieve geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - rehabilitation medicine</masterLabel>
+        <translation>Pediatrie - revalidatiegeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - respiratory and sleep medicine</masterLabel>
+        <translation>Pediatrie - ademhalings- en slaapgeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics - rheumatology</masterLabel>
+        <translation>Pediatrie - reumatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paediatrics and child health</masterLabel>
+        <translation>Pediatrie en gezondheid van kinderen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pain medicine</masterLabel>
+        <translation>Pijngeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palliative medicine</masterLabel>
+        <translation>Palliatieve geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology</masterLabel>
+        <translation>Pathologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - anatomical (including cytopathology)</masterLabel>
+        <translation>Pathologie - anatomisch (inclusief cytopathologie)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - chemical</masterLabel>
+        <translation>Pathologie - chemisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - forensic</masterLabel>
+        <translation>Pathologie - forensisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - general</masterLabel>
+        <translation>Pathologie - algemeen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - haematology</masterLabel>
+        <translation>Pathologie - hematologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - immunology</masterLabel>
+        <translation>Pathologie - immunologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pathology - microbiology</masterLabel>
+        <translation>Pathologie - microbiologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Psychiatry</masterLabel>
+        <translation>Psychiatrie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public health medicine</masterLabel>
+        <translation>Volksgezondheid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiation oncology</masterLabel>
+        <translation>Stralingsoncologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology</masterLabel>
+        <translation>Radiologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology - diagnostic</masterLabel>
+        <translation>Radiologie - diagnostiek</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Radiology - diagnostic ultrasound</masterLabel>
+        <translation>Radiologie - diagnostiek ultrageluid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rehabilitation medicine</masterLabel>
+        <translation>Revalidatiegeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Respiratory and sleep medicine</masterLabel>
+        <translation>Ademhalings-en slaapgeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rheumatology</masterLabel>
+        <translation>Reumatologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sexual health medicine</masterLabel>
+        <translation>Seksuele gezondheidszorg</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports and exercise medicine</masterLabel>
+        <translation>Sport- en bewegingsgeneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery</masterLabel>
+        <translation>Chirurgie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - cardiothoracic</masterLabel>
+        <translation>Chirurgie - cardiothoracaal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - general</masterLabel>
+        <translation>Chirurgie - algemeen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - neurosurgery</masterLabel>
+        <translation>Chirurgie - neurochirurgie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - oral and maxillofacial</masterLabel>
+        <translation>Chirurgie - oraal en maxillofaciaal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - orthopaedic</masterLabel>
+        <translation>Chirurgie - orthopedisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - otolaryngology</masterLabel>
+        <translation>Chirurgie - keel-neus-oorkunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - paediatric</masterLabel>
+        <translation>Chirurgie - pediatrie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - plastic</masterLabel>
+        <translation>Chirurgie - plastisch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - urology</masterLabel>
+        <translation>Chirurgie - urologie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Surgery - vascular</masterLabel>
+        <translation>Chirurgie - vasculair</translation>
+    </picklistValues>
+</CustomFieldTranslation>

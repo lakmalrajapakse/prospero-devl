@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>b3o__Citizenship__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Citizenship</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A citizen of the United States</fullName>
+                <default>false</default>
+                <label>A citizen of the United States</label>
+            </value>
+            <value>
+                <fullName>A noncitizen national of the United States</fullName>
+                <default>false</default>
+                <label>A noncitizen national of the United States</label>
+            </value>
+            <value>
+                <fullName>A lawful permanent resident</fullName>
+                <default>false</default>
+                <label>A lawful permanent resident</label>
+            </value>
+            <value>
+                <fullName>A noncitizen authorized to work</fullName>
+                <default>false</default>
+                <label>A noncitizen authorized to work</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

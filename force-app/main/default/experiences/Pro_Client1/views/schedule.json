@@ -1,0 +1,65 @@
+{
+  "appPageId" : "21254a37-ad20-42cc-aa09-74b0a3a07763",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "44558a41-4e05-4865-a507-a21cc2d0f877",
+  "label" : "Schedule",
+  "regions" : [ {
+    "id" : "1efb0131-d214-47a9-ab52-53aa313a67e8",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "All your worker schedules in one place!",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Schedule",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "2049caf0-87ad-450e-b5d2-8ac170a4d564",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "definitionName" : "BH4SFSchedule_Full",
+        "minimumHeight" : "50em",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "sirenum:schedule",
+      "id" : "dc2d23c2-dbb2-443c-99c7-f4cfbe0fc15c",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c7228dc7-dbac-4008-adf7-2e9569a6d385",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "55e70189-5e67-411c-b735-eaff1eafa7ea",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Schedule"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "e5fdf327-d52c-4750-ac92-63b23ecc64e4",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4e834131-ff3c-46c2-a046-4e7d1e46d213",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-schedule"
+}

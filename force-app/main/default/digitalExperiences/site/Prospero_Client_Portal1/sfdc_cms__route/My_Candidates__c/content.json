@@ -1,0 +1,12 @@
+{
+  "type" : "sfdc_cms__route",
+  "title" : "My Candidates",
+  "contentBody" : {
+    "activeViewId" : "My_Candidates",
+    "configurationTags" : [ ],
+    "pageAccess" : "UseParent",
+    "routeType" : "custom-my-candidates",
+    "urlPrefix" : "my-candidates"
+  },
+  "urlName" : "my-candidates"
+}

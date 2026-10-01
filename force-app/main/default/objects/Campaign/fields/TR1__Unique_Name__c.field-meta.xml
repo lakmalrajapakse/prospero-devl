@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Unique_Name__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <deprecated>false</deprecated>
+    <description>Unique campaign identifier used for SFMC integration campaign template mapping</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Unique campaign identifier used for SFMC integration campaign template mapping</inlineHelpText>
+    <label>Campaign Unique Name</label>
+    <length>255</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

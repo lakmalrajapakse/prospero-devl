@@ -1,0 +1,80 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Schedule",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"27203c55-7022-447a-9a86-af680d49c77e\",\"columns\":[{\"UUID\":\"6379a828-9d57-4c4f-b5f7-463dda59d084\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "definitionName" : "BH4SFSchedule_Full",
+                "minimumHeight" : "50em",
+                "recordId" : "{!recordId}"
+              },
+              "definition" : "sirenum:schedule",
+              "id" : "a5929897-37b9-420c-8464-08c2e10c903b",
+              "type" : "component"
+            }, {
+              "attributes" : {
+                "definitionName" : "BH4SFSchedule_HSCClient",
+                "minimumHeight" : "50em",
+                "recordId" : "{!recordId}"
+              },
+              "definition" : "sirenum:schedule",
+              "id" : "d016176d-7e3f-49cb-a0cb-d527e5cb2864",
+              "type" : "component"
+            } ],
+            "id" : "6379a828-9d57-4c4f-b5f7-463dda59d084",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "27203c55-7022-447a-9a86-af680d49c77e",
+          "type" : "component"
+        } ],
+        "id" : "450daf98-8702-45d1-8baa-e281e14ce958",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Schedule",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "ee6d7e8f-6345-4649-812d-87650c6f3fd0",
+          "type" : "component"
+        } ],
+        "id" : "4168f155-c650-4311-8272-d9c83ee9d925",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "1befb488-b5f7-4379-bfbf-ba948acf5b64",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "custom-schedule"
+  },
+  "urlName" : "schedule"
+}

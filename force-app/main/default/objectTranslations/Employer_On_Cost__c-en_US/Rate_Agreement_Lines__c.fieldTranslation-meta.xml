@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Rate Agreement Lines --></label>
+    <name>Rate_Agreement_Lines__c</name>
+    <relationshipLabel><!-- Employers On Cost --></relationshipLabel>
+</CustomFieldTranslation>

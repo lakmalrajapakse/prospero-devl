@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Used to stop the process that shares the sensitive data associated with a Care Package or Child / Young Person up through the Manager hierarchy from the record owner --></help>
+    <label><!-- Stop Sensitive Data Share Process --></label>
+    <name>Stop_Sensitive_Data_Share_Process__c</name>
+</CustomFieldTranslation>

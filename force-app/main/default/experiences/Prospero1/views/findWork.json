@@ -1,0 +1,49 @@
+{
+  "appPageId" : "d9ce9f69-0e14-4b11-9233-6c5ce091d546",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "32b7d7c4-97eb-4f42-8cbc-d901d39c9527",
+  "label" : "Find Work",
+  "regions" : [ {
+    "id" : "4398cf50-f305-4218-ae02-774bd5850295",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "flowArguments" : "[{\"label\":\"recordId\",\"dataType\":\"String\",\"supportsRecordId\":false,\"value\":\"{!contactId}\"}]",
+        "flowName" : "sirenum__FindWorkForWorker"
+      },
+      "componentName" : "forceCommunity:flowCommunity",
+      "id" : "56bd4077-a502-44d9-bcfe-a1cb1570119a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b60a30a0-1109-4d24-a5e5-a3b20110f562",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "00a03fc6-123b-48f9-a998-7985ac7d7931",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Find Work"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "1a42a721-fd45-4fac-b4da-0152d66b5167",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "549aae62-83d9-4b34-b731-a0758d85a05a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-find-work"
+}

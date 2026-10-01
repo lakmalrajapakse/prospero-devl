@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Childrens home (residential care setting)</fullName>
+        <default>false</default>
+        <label>Childrens home (residential care setting)</label>
+    </customValue>
+    <customValue>
+        <fullName>Childs house (Private domestic home)</fullName>
+        <default>false</default>
+        <label>Childs house (Private domestic home)</label>
+    </customValue>
+    <customValue>
+        <fullName>Community Centre/Space (Public Use)</fullName>
+        <default>false</default>
+        <label>Community Centre/Space (Public Use)</label>
+    </customValue>
+    <customValue>
+        <fullName>Community Clinic (Stable care: Health checks/Physical therapy/Mental Health therapy)</fullName>
+        <default>false</default>
+        <label>Community Clinic (Stable care: Health checks/Physical therapy/Mental Health therapy)</label>
+    </customValue>
+    <customValue>
+        <fullName>Contact centre (supervised visits)</fullName>
+        <default>false</default>
+        <label>Contact centre (supervised visits)</label>
+    </customValue>
+    <customValue>
+        <fullName>Crisis Assessment Room (Mental health crisis)</fullName>
+        <default>false</default>
+        <label>Crisis Assessment Room (Mental health crisis)</label>
+    </customValue>
+    <customValue>
+        <fullName>Day service room (specialist support for those with care needs)</fullName>
+        <default>false</default>
+        <label>Day service room (specialist support for those with care needs)</label>
+    </customValue>
+    <customValue>
+        <fullName>Dental Clinic</fullName>
+        <default>false</default>
+        <label>Dental Clinic</label>
+    </customValue>
+    <customValue>
+        <fullName>Educational setting</fullName>
+        <default>false</default>
+        <label>Educational setting</label>
+    </customValue>
+    <customValue>
+        <fullName>Family house</fullName>
+        <default>false</default>
+        <label>Family house</label>
+    </customValue>
+    <customValue>
+        <fullName>Food bank</fullName>
+        <default>false</default>
+        <label>Food bank</label>
+    </customValue>
+    <customValue>
+        <fullName>Fostering/Adoption location (Children)</fullName>
+        <default>false</default>
+        <label>Fostering/Adoption location (Children)</label>
+    </customValue>
+    <customValue>
+        <fullName>GP</fullName>
+        <default>false</default>
+        <label>GP</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital Emergency or Ward</fullName>
+        <default>false</default>
+        <label>Hospital Emergency or Ward</label>
+    </customValue>
+    <customValue>
+        <fullName>Hospital Maternity</fullName>
+        <default>false</default>
+        <label>Hospital Maternity</label>
+    </customValue>
+    <customValue>
+        <fullName>Hostels/Temporary Accommodation with on-site support (Adults and Families)</fullName>
+        <default>false</default>
+        <label>Hostels/Temporary Accommodation with on-site support (Adults and Families)</label>
+    </customValue>
+    <customValue>
+        <fullName>Mobile clinic vehicle</fullName>
+        <default>false</default>
+        <label>Mobile clinic vehicle</label>
+    </customValue>
+    <customValue>
+        <fullName>Office (admin based support)</fullName>
+        <default>false</default>
+        <label>Office (admin based support)</label>
+    </customValue>
+    <customValue>
+        <fullName>Private home/ Supported living (Elderly)</fullName>
+        <default>false</default>
+        <label>Private home/ Supported living (Elderly)</label>
+    </customValue>
+    <customValue>
+        <fullName>Public safety locations (offenders- custody cell, probabtion room, courtroom)</fullName>
+        <default>false</default>
+        <label>Public safety locations (offenders- custody cell, probabtion room, courtroom)</label>
+    </customValue>
+    <customValue>
+        <fullName>Residential home (with clinical staff on-site)</fullName>
+        <default>false</default>
+        <label>Residential home (with clinical staff on-site)</label>
+    </customValue>
+    <customValue>
+        <fullName>Residential home (without clinical staff on-site)</fullName>
+        <default>false</default>
+        <label>Residential home (without clinical staff on-site)</label>
+    </customValue>
+    <customValue>
+        <fullName>Temporary Accommodation no on-site support (Adults and Families)</fullName>
+        <default>false</default>
+        <label>Temporary Accommodation no on-site support (Adults and Families)</label>
+    </customValue>
+    <customValue>
+        <fullName>Transport</fullName>
+        <default>false</default>
+        <label>Transport</label>
+    </customValue>
+    <customValue>
+        <fullName>Secure Unit</fullName>
+        <default>false</default>
+        <label>Secure Unit</label>
+    </customValue>
+    <customValue>
+        <fullName>Extended Holiday</fullName>
+        <default>false</default>
+        <label>Extended Holiday</label>
+    </customValue>
+    <masterLabel>Location of Care/Support</masterLabel>
+    <sorted>true</sorted>
+</GlobalValueSet>

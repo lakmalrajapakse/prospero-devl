@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Prospero - Compliance Managers</label>
+    <permissionSets>ATSv2_Unpackaged</permissionSets>
+    <permissionSets>BH4Force_Basic_Unpackaged</permissionSets>
+    <permissionSets>Brand_Banquo_Permission</permissionSets>
+    <permissionSets>Brand_Prospero_Health_Social_Care_Permission</permissionSets>
+    <permissionSets>Brand_Prospero_Integrated_Permission</permissionSets>
+    <permissionSets>Brand_Prospero_Teaching_Permission</permissionSets>
+    <permissionSets>Prospero_Compliance_Manager_Permission</permissionSets>
+    <permissionSets>Prospero_Operations_Permission</permissionSets>
+    <permissionSets>Prospero_Teaching_CES_Permission</permissionSets>
+    <permissionSets>Prospero_Universal_Field_Access</permissionSets>
+    <permissionSets>TR1__ATSv2</permissionSets>
+    <permissionSets>TR1__BH4Force_Basic</permissionSets>
+    <permissionSets>Textkernel1__textkernelRecruiterAccess</permissionSets>
+    <permissionSets>Textkernel_Portal_access</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

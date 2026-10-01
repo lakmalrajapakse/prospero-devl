@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Die zuletzt aktualisierte Bewerbungsphase. Dieses Feld wird aktualisiert, wenn die Einstellung „Letztes Kontakt-Stadium aktualisieren“ in den TalentRover-Eigenschaften aktiviert ist.</help>
+    <label><!-- Latest Stage Picklist --></label>
+    <name>TR1__Latest_Stage_Picklist__c</name>
+    <picklistValues>
+        <masterLabel>Application</masterLabel>
+        <translation>Bewerbung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing Report</masterLabel>
+        <translation>Abschlussbericht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Internal Interview</masterLabel>
+        <translation>Internes Vorstellungsgespräch</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Offer</masterLabel>
+        <translation>Angebot</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Send Out</masterLabel>
+        <translation>Versand</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Submittal</masterLabel>
+        <translation>Übergabe</translation>
+    </picklistValues>
+</CustomFieldTranslation>

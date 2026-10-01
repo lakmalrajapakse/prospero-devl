@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Compliance Owner --></label>
+    <name>TR1__Compliance_Owner__c</name>
+    <relationshipLabel><!-- Candidates / Client Contacts (Compliance Owner) --></relationshipLabel>
+</CustomFieldTranslation>

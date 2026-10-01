@@ -1,0 +1,5 @@
+{
+  "apiName" : "My_CVP_Shifts",
+  "type" : "sfdc_cms__view",
+  "path" : "views"
+}

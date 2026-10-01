@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Screening_HSC_rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Screening HSC rule</label>
+        <sharedTo>
+            <role>Prospero_Health_Social_Care</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Prospero_Health_Social_Care</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Screening_Integrated_rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Screening Integrated rule</label>
+        <sharedTo>
+            <role>Prospero_Integrated</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Prospero_Integrated</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Screening_Teaching_role_rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Screening Teaching role rule</label>
+        <sharedTo>
+            <role>Prospero_Teaching</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Prospero_Teaching</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

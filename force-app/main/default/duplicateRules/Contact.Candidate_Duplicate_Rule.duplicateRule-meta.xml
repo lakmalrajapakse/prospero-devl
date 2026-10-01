@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Block</actionOnInsert>
+    <actionOnUpdate>Block</actionOnUpdate>
+    <alertText>Possible duplicates found. If you do not see any records below it means you don&apos;t have record access on duplicates - to find the owner of the record please contact your IT team and provide the details of the Contact</alertText>
+    <description>Applies only to Candidate Record Type - to handle the field variations between Contacts and Candidates, namely Mobile Phone</description>
+    <duplicateRuleFilter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <duplicateRuleFilterItems>
+            <field>Record_Type_Name__c</field>
+            <operation>equals</operation>
+            <value>Candidate</value>
+            <sortOrder>1</sortOrder>
+            <table>Contact</table>
+        </duplicateRuleFilterItems>
+        <duplicateRuleFilterItems>
+            <field>Bypass_System_Automation__c</field>
+            <operation>equals</operation>
+            <value>false</value>
+            <sortOrder>2</sortOrder>
+            <table>User</table>
+        </duplicateRuleFilterItems>
+    </duplicateRuleFilter>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>Contact</matchRuleSObjectType>
+        <matchingRule>Prospero_Candidate_Matching_Rule</matchingRule>
+        <objectMapping xsi:nil="true"/>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>Prospero Candidate Duplicate Rule</masterLabel>
+    <securityOption>EnforceSharingRules</securityOption>
+    <sortOrder>2</sortOrder>
+</DuplicateRule>

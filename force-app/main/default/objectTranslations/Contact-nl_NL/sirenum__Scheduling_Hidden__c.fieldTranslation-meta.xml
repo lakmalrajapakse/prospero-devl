@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Als dit is ingeschakeld, wordt de contactpersoon verborgen in de lijst in Plannen</help>
+    <label><!-- Scheduling Hidden --></label>
+    <name>sirenum__Scheduling_Hidden__c</name>
+</CustomFieldTranslation>

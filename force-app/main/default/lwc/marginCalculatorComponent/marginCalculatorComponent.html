@@ -347,6 +347,18 @@
                     <!-- Pay/Charge/Margin Type/Margin grouped together at the end -- they react to each other.
                          Pay Rate's range/Total Cost hints sit BELOW its input, so every field in the
                          grid starts on the same line regardless of mode. -->
+                    <!-- Calculation/validation/save errors -- inline instead of toasts; each
+                         disappears as soon as the JS clears it (see lineErrors). -->
+                    <template lwc:if={hasLineErrors}>
+                        <div class="slds-m-top_small calc-error-block" role="alert">
+                            <lightning-icon icon-name="utility:error" size="x-small" variant="error" alternative-text="Error"></lightning-icon>
+                            <div class="calc-error-messages">
+                                <template for:each={lineErrors} for:item="message">
+                                    <p key={message}>{message}</p>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
                     <div class="slds-grid slds-wrap slds-gutters slds-m-top_small rate-group">
                         <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
                             <lightning-input
@@ -430,6 +442,14 @@
                                 <div class="slds-col slds-size_1-of-1">
                                     <p class="slds-text-title_caps slds-m-bottom_x-small">AWR</p>
                                 </div>
+                                <template lwc:if={awrErrorMessage}>
+                                    <div class="slds-col slds-size_1-of-1 slds-m-bottom_small">
+                                        <div class="calc-error-block" role="alert">
+                                            <lightning-icon icon-name="utility:error" size="x-small" variant="error" alternative-text="Error"></lightning-icon>
+                                            <p class="calc-error-messages">{awrErrorMessage}</p>
+                                        </div>
+                                    </div>
+                                </template>
                                 <div class="slds-col slds-size_1-of-2 slds-m-bottom_small">
                                     <lightning-input
                                         class="required-field"

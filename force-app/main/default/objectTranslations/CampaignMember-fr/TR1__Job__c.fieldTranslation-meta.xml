@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Recherche de l&apos;objet Emploi utilisé pour l&apos;intégration SFMC/Digital Engagement.</help>
+    <label><!-- Job --></label>
+    <name>TR1__Job__c</name>
+    <relationshipLabel><!-- Campaign Members --></relationshipLabel>
+</CustomFieldTranslation>

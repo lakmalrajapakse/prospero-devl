@@ -1,0 +1,70 @@
+{
+  "type" : "sfdc_cms__view",
+  "title" : "Home",
+  "contentBody" : {
+    "component" : {
+      "children" : [ {
+        "children" : [ {
+          "attributes" : {
+            "backgroundImageConfig" : "",
+            "backgroundImageOverlay" : "rgba(0,0,0,0)",
+            "componentSpacerSize" : "",
+            "layoutDirectionDesktop" : "row",
+            "layoutDirectionMobile" : "column",
+            "layoutDirectionTablet" : "column",
+            "maxContentWidth" : "",
+            "sectionColumnGutterWidth" : "",
+            "sectionConfig" : "{\"UUID\":\"a1c65529-5016-4802-81de-288887f40271\",\"columns\":[{\"UUID\":\"d7d44875-9d5b-4d63-9299-c4b72e73238c\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}",
+            "sectionMinHeight" : "",
+            "sectionVerticalAlign" : "flex-start"
+          },
+          "children" : [ {
+            "children" : [ {
+              "attributes" : {
+                "imageInfos" : "",
+                "richTextValue" : "<div style=\"display:flex;justify-content:center;align-items:center;padding:80px 0;text-align:center;\"><h1 style=\"font-size:64px;font-weight:800;color:#1B4F72;margin:0;line-height:1.1;\">PROSPERO<br/>GROUP</h1></div>"
+              },
+              "definition" : "community_builder:htmlEditor",
+              "id" : "90aeffae-1d8b-4019-99de-106dd72065d3",
+              "type" : "component"
+            } ],
+            "id" : "d7d44875-9d5b-4d63-9299-c4b72e73238c",
+            "name" : "col1",
+            "title" : "Column 1",
+            "type" : "region"
+          } ],
+          "definition" : "community_layout:section",
+          "id" : "a1c65529-5016-4802-81de-288887f40271",
+          "type" : "component"
+        } ],
+        "id" : "006717fc-8ac4-4328-8966-305f5ce4431d",
+        "name" : "content",
+        "title" : "Content",
+        "type" : "region"
+      }, {
+        "children" : [ {
+          "attributes" : {
+            "customHeadTags" : "",
+            "description" : "",
+            "pageTitle" : "Home",
+            "recordId" : "{!recordId}"
+          },
+          "definition" : "community_builder:seoAssistant",
+          "id" : "2875ecc0-2406-4247-834a-0a765b3b09b9",
+          "type" : "component"
+        } ],
+        "id" : "8cf8dadb-4a66-4cbc-8a36-3fab92d7ccd1",
+        "name" : "sfdcHiddenRegion",
+        "title" : "sfdcHiddenRegion",
+        "type" : "region"
+      } ],
+      "definition" : "community_layout:sldsFlexibleLayout",
+      "id" : "c9becc8d-5515-4b00-aaf2-fe6693394def",
+      "type" : "component"
+    },
+    "dataProviders" : [ ],
+    "themeLayoutType" : "Inner",
+    "viewType" : "home"
+  },
+  "urlName" : "home"
+}

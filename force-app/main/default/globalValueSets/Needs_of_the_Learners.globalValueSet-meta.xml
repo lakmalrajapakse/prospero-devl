@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ADHD</fullName>
+        <default>false</default>
+        <label>ADHD</label>
+    </customValue>
+    <customValue>
+        <fullName>Autism</fullName>
+        <default>false</default>
+        <label>Autism</label>
+    </customValue>
+    <customValue>
+        <fullName>Behaviour</fullName>
+        <default>false</default>
+        <label>Behaviour</label>
+    </customValue>
+    <customValue>
+        <fullName>Dyslexia</fullName>
+        <default>false</default>
+        <label>Dyslexia</label>
+    </customValue>
+    <customValue>
+        <fullName>Social &amp; Emotional</fullName>
+        <default>false</default>
+        <label>Social &amp; Emotional</label>
+    </customValue>
+    <masterLabel>Needs of the Learners</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

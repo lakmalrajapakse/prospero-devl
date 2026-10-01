@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Textkernel Access Roles --></label>
+    <name>Textkernel_Access_Roles__c</name>
+    <picklistValues>
+        <masterLabel>All</masterLabel>
+        <translation><!-- All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Banquo</masterLabel>
+        <translation><!-- Banquo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSC - London and South East</masterLabel>
+        <translation><!-- HSC - London and South East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSC - Midlands</masterLabel>
+        <translation><!-- HSC - Midlands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSC - North East</masterLabel>
+        <translation><!-- HSC - North East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSC - North West</masterLabel>
+        <translation><!-- HSC - North West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSC - South Coast</masterLabel>
+        <translation><!-- HSC - South Coast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSC - Wales and South West</masterLabel>
+        <translation><!-- HSC - Wales and South West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSC - Yorkshire</masterLabel>
+        <translation><!-- HSC - Yorkshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospero Group</masterLabel>
+        <translation><!-- Prospero Group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospero Health &amp; Social Care</masterLabel>
+        <translation><!-- Prospero Health &amp; Social Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospero Integrated</masterLabel>
+        <translation><!-- Prospero Integrated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prospero Teaching</masterLabel>
+        <translation><!-- Prospero Teaching --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEA - Canada</masterLabel>
+        <translation><!-- TEA - Canada --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEA - London and South East</masterLabel>
+        <translation><!-- TEA - London and South East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEA - Midlands</masterLabel>
+        <translation><!-- TEA - Midlands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEA - North East</masterLabel>
+        <translation><!-- TEA - North East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEA - North West</masterLabel>
+        <translation><!-- TEA - North West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEA - South Coast</masterLabel>
+        <translation><!-- TEA - South Coast --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEA - Wales and South West</masterLabel>
+        <translation><!-- TEA - Wales and South West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TEA - Yorkshire</masterLabel>
+        <translation><!-- TEA - Yorkshire --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

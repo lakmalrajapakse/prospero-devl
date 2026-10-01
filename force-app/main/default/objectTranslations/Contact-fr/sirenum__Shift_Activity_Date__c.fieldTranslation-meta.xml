@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Lorsqu&apos;une mission a été attribuée pour la dernière fois au contact ou lorsqu&apos;un poste attribué a été quelque peu modifié</help>
+    <label><!-- Shift Activity Date --></label>
+    <name>sirenum__Shift_Activity_Date__c</name>
+</CustomFieldTranslation>

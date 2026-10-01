@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Conserve la langue que l&apos;utilisateur a sélectionnée dans la liste déroulante des langues de l&apos;éditeur d&apos;e-mails BH4SF.</help>
+    <label><!-- Language --></label>
+    <name>TR1__Language__c</name>
+</CustomFieldTranslation>

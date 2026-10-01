@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Mainstream – In‑class</fullName>
+        <default>false</default>
+        <label>Mainstream – In‑class</label>
+    </customValue>
+    <customValue>
+        <fullName>Mainstream – Out‑of‑class</fullName>
+        <default>false</default>
+        <label>Mainstream – Out‑of‑class</label>
+    </customValue>
+    <customValue>
+        <fullName>SEND School – In‑class</fullName>
+        <default>false</default>
+        <label>SEND School – In‑class</label>
+    </customValue>
+    <customValue>
+        <fullName>SEND School – Out‑of‑class</fullName>
+        <default>false</default>
+        <label>SEND School – Out‑of‑class</label>
+    </customValue>
+    <customValue>
+        <fullName>SEND School – Physical Care / Physical Support</fullName>
+        <default>false</default>
+        <label>SEND School – Physical Care / Physical Support</label>
+    </customValue>
+    <masterLabel>Delivery Setting</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

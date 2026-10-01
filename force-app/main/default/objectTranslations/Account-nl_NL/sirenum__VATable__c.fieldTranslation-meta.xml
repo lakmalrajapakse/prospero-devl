@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Geef voor overkoepelende bedrijven aan of btw moet worden toegevoegd</help>
+    <label><!-- VATable --></label>
+    <name>sirenum__VATable__c</name>
+</CustomFieldTranslation>

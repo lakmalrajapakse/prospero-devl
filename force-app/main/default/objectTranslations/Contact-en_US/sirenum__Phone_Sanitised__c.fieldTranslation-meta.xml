@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Deprecated. Use the Phone field instead --></help>
+    <label><!-- Phone Sanitised (Deprecated) --></label>
+    <name>sirenum__Phone_Sanitised__c</name>
+</CustomFieldTranslation>

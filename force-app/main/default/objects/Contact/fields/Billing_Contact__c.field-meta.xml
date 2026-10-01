@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Contact__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>Tick to make this Contact selectable as the Invoice Contact on WFM Contracts and Jobs.</inlineHelpText>
+    <label>Invoice Contact</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

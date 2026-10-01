@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Experience Level --></label>
+    <name>TR1__Experience_Level__c</name>
+    <picklistValues>
+        <masterLabel>Director</masterLabel>
+        <translation>Direktor</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive</masterLabel>
+        <translation>Führungskraft</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager</masterLabel>
+        <translation><!-- Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Staff</masterLabel>
+        <translation>Personal</translation>
+    </picklistValues>
+</CustomFieldTranslation>

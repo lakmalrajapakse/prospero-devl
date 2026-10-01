@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Slaat de naam van de persoon op die een e-mail heeft verzonden.</help>
+    <label><!-- Sender Name --></label>
+    <name>TR1__Sender_Name__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Council_Lookup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Council Lookup</label>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Clients (Council Lookup)</relationshipLabel>
+    <relationshipName>Clients1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

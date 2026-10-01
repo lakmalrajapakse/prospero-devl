@@ -1,0 +1,80 @@
+{
+  "appPageId" : "d9ce9f69-0e14-4b11-9233-6c5ce091d546",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "592ccfe8-bce6-4467-9a5e-e6bf3863f903",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.Icon.1}\" style=\"width: 966.484px; height: 373.703px;\"></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "dacfafd1-fb83-4193-8a8f-b44886ab3981",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6e6552ec-6c80-4c71-8743-2fa50705830e",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1 style=\"text-align: center;\">Welcome</h1>\n<p style=\"text-align: center;\"><br></p>\n<p style=\"text-align: center;\">If you don't have the <strong>MyProspero </strong>app, now is the time to download it.</p>\n<p style=\"text-align: center;\"><br></p>\n<p style=\"text-align: center;\"><a href=\"https://play.google.com/store/apps/details?id=com.sirenum.mobile\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.sk_getitongoogleplay.1}\" style=\"width: 159.406px; height: 47.625px;\"></a></p>\n<p style=\"text-align: center;\"><br></p>\n<p style=\"text-align: center;\"><a href=\"https://apps.apple.com/app/id1561470106\" rel=\"noopener noreferrer\" target=\"_blank\"><img class=\"sfdcCbImage\" alt=\"\" src=\"{!contentAsset.sk_availableonappstore.1}\" style=\"width: 163.312px; height: 48.4844px;\"></a></p>\n<p style=\"text-align: center;\"><br></p>\n<p style=\"text-align: center;\">You're ready to add this Work Relationship to MyProspero.</p>\n<p style=\"text-align: center;\">Just tap the button, below, from your mobile or open the app and get started!</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "9c311732-f3b0-4068-b3f8-b20a7c0926ae",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "alignment" : "center",
+        "label" : "Add to MyProspero",
+        "showAs" : "button",
+        "url" : "https://sirenum.com/mobile/register/?url=((CommunityURL))&username={!CurrentUser.userName}",
+        "variant" : "brand"
+      },
+      "componentName" : "c:navigate",
+      "id" : "9e791a13-c99c-4bc8-bd94-06e7de0a8cc5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\">Need more help?</p><p style=\"text-align: center;\">Contact your agency, check out <a href=\"https://www.sirenum.com/\" rel=\"noopener noreferrer\" target=\"_blank\">www.sirenum.com</a></p><p style=\"text-align: center;\">or drop a line to <a href=\"mailto:sir-support@bullhorn.com?subject=Bullhorn%20Connect%20for%20Salesforce%20help\" rel=\"noopener noreferrer\" target=\"_blank\">sir-support@bullhorn.com</a></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "6d8c59e7-e42d-497b-bd3a-b492dbdee51d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9020a47c-9159-46c4-8a8e-ec9896a9e9ff",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "830ee7b7-f895-4182-a8fa-03d368134414",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "08fefb7c-d4d0-4537-97e3-9794e3210dac",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "72f82531-d023-4e0e-8d02-9149e95e3eb9",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

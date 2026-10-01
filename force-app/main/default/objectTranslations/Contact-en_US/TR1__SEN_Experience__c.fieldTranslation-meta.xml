@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SEN Experience --></label>
+    <name>TR1__SEN_Experience__c</name>
+    <picklistValues>
+        <masterLabel>ADHD</masterLabel>
+        <translation><!-- ADHD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ASD</masterLabel>
+        <translation><!-- ASD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Aspergers</masterLabel>
+        <translation><!-- Aspergers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Downs Syndrome Experience</masterLabel>
+        <translation><!-- Downs Syndrome Experience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dyslexia</masterLabel>
+        <translation><!-- Dyslexia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EAL/ EFL</masterLabel>
+        <translation><!-- EAL/ EFL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>EBD</masterLabel>
+        <translation><!-- EBD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gifted &amp;Talented (G&amp;T)</masterLabel>
+        <translation><!-- Gifted &amp;Talented (G&amp;T) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HAPS</masterLabel>
+        <translation><!-- HAPS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HI</masterLabel>
+        <translation><!-- HI --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MLD</masterLabel>
+        <translation><!-- MLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mainstream</masterLabel>
+        <translation><!-- Mainstream --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PMLD</masterLabel>
+        <translation><!-- PMLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRU/Centre of Education</masterLabel>
+        <translation><!-- PRU/Centre of Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENCO</masterLabel>
+        <translation><!-- SENCO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SLD</masterLabel>
+        <translation><!-- SLD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sign Language Experience</masterLabel>
+        <translation><!-- Sign Language Experience --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech and Language</masterLabel>
+        <translation><!-- Speech and Language --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VI</masterLabel>
+        <translation><!-- VI --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

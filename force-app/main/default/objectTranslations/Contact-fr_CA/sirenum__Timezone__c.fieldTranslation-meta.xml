@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The time zone SID identifying the time zone for this Contact. This should match one of the picklist API names from the standard User object’s TimeZoneSidKey field. If unspecified the org&apos;s time zone is used. If unrecognized, UTC is used instead. --></help>
+    <label><!-- Timezone --></label>
+    <name>sirenum__Timezone__c</name>
+</CustomFieldTranslation>

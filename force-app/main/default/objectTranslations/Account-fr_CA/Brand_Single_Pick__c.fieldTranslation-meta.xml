@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Brand --></label>
+    <name>Brand_Single_Pick__c</name>
+    <picklistValues>
+        <masterLabel>Dual - Teaching AND Health &amp; Social Care</masterLabel>
+        <translation><!-- Dual - Teaching AND Health &amp; Social Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health &amp; Social Care</masterLabel>
+        <translation><!-- Health &amp; Social Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Integrated</masterLabel>
+        <translation><!-- Integrated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teaching</masterLabel>
+        <translation><!-- Teaching --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

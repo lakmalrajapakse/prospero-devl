@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Off_Limit_Custom_Icon__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Custom Icon to replace the packaged Off Limit Icon. If this field is populated, the custom icon will be shown everywhere if the Contact is Off Limit. The supported value is relative url to a Salesforce image resource preferably a SVG e.g.  /resource/TR1__Lock_icon_svg</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Custom Icon to replace the packaged Off Limit Icon. If this field is populated, the custom icon will be shown everywhere if the Contact is Off Limit. The supported value is relative url to a Salesforce image resource preferably a SVG e.g.  /resource/TR1__Lock_icon_svg</inlineHelpText>
+    <label>Off Limit Custom Icon</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

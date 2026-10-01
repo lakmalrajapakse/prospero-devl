@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Die IDs der Benutzer, die als Veranstaltungsteilnehmer aufgelistet werden.</help>
+    <label><!-- Attendees --></label>
+    <name>TR1__Attendees__c</name>
+</CustomFieldTranslation>

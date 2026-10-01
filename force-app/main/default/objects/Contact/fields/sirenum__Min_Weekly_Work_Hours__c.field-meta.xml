@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Min_Weekly_Work_Hours__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Minimum weekly work hours, used by Candidate Search</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If the employee has a set minimum hours they should be working, enter it here. It will be reflected when finding candidates in Scheduling.</inlineHelpText>
+    <label>Min Weekly Work Hours</label>
+    <precision>5</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

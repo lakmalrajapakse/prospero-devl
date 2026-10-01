@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "d0b069c6-383a-4531-9081-f2077e7180f0",
+  "appPageId" : "d9ce9f69-0e14-4b11-9233-6c5ce091d546",
+  "configurationTags" : [ ],
+  "devName" : "Qualifications__c",
+  "id" : "49dd47fe-ee28-48f2-951a-5e6a4613e44f",
+  "label" : "Qualifications",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-qualifications",
+  "type" : "route",
+  "urlPrefix" : "qualifications"
+}

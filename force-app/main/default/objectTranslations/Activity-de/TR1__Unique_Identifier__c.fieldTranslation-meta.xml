@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn anwendbar wird eine eindeutige Kennung gespeichert, die statt der Vorlagen-ID verwendet wird.</help>
+    <label><!-- Unique Identifier --></label>
+    <name>TR1__Unique_Identifier__c</name>
+</CustomFieldTranslation>

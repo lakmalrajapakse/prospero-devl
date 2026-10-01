@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shift_Scheduling_Comments__c</fullName>
+    <description>The related Shift’s scheduling comments, if any.</description>
+    <externalId>false</externalId>
+    <formula>sirenum__Shift__r.sirenum__Scheduling_Comments__c</formula>
+    <inlineHelpText>The related Shift’s scheduling comments, if any.</inlineHelpText>
+    <label>Scheduling Comments</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

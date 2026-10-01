@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Contact_Mobility_FieldSet</fullName>
+    <description>Fields to be displayed On Mobility Section on Candidate Preferences Tab</description>
+    <displayedFields>
+        <field>TR1__Distance_willing_to_travel__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <displayedFields>
+        <field>TR1__Distance_Type__c</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>Contact Mobility Section FieldSet</label>
+</FieldSet>

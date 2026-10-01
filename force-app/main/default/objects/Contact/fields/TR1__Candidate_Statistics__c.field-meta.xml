@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Candidate_Statistics__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Candidate Statistics record containing candidate information. If the Candidate Statistics feature is enabled, the information is updated automatically.</description>
+    <inlineHelpText>Candidate Statistics record containing candidate information. If the Candidate Statistics feature is enabled, the information is updated automatically.</inlineHelpText>
+    <label>Candidate Statistics</label>
+    <referenceTo>TR1__Candidate_Summary__c</referenceTo>
+    <relationshipLabel>Contacts</relationshipLabel>
+    <relationshipName>Candidate_Statistics</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

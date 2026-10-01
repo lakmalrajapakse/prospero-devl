@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Titles --></label>
+    <name>TR1__Job_Titles__c</name>
+    <picklistValues>
+        <masterLabel>1-2-1 Tutor (Primary)</masterLabel>
+        <translation><!-- 1-2-1 Tutor (Primary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1-2-1 Tutor (Secondary)</masterLabel>
+        <translation><!-- 1-2-1 Tutor (Secondary) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Assistant Head Teacher</masterLabel>
+        <translation><!-- Acting Assistant Head Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Assistant Principle</masterLabel>
+        <translation><!-- Acting Assistant Principle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Deputy Head Teacher</masterLabel>
+        <translation><!-- Acting Deputy Head Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Head Teacher</masterLabel>
+        <translation><!-- Acting Head Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Head of Department</masterLabel>
+        <translation><!-- Acting Head of Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Head of Faculty</masterLabel>
+        <translation><!-- Acting Head of Faculty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Principal</masterLabel>
+        <translation><!-- Acting Principal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Vice Principal</masterLabel>
+        <translation><!-- Acting Vice Principal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Assistant</masterLabel>
+        <translation><!-- Admin Assistant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Faculty Leader</masterLabel>
+        <translation><!-- Assistant Faculty Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Head Teacher</masterLabel>
+        <translation><!-- Assistant Head Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Principal</masterLabel>
+        <translation><!-- Assistant Principal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Vice Principal</masterLabel>
+        <translation><!-- Assistant Vice Principal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attendance &amp; Welfare Officer</masterLabel>
+        <translation><!-- Attendance &amp; Welfare Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Manager</masterLabel>
+        <translation><!-- Business Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Careers Co-coordinator</masterLabel>
+        <translation><!-- Careers Co-coordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chair of Governors</masterLabel>
+        <translation><!-- Chair of Governors --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover Manager</masterLabel>
+        <translation><!-- Cover Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover Supervisor</masterLabel>
+        <translation><!-- Cover Supervisor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Head Teacher</masterLabel>
+        <translation><!-- Deputy Head Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Principal</masterLabel>
+        <translation><!-- Deputy Principal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESOL/EAL Tutor</masterLabel>
+        <translation><!-- ESOL/EAL Tutor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Examinations Officer</masterLabel>
+        <translation><!-- Examinations Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive Head</masterLabel>
+        <translation><!-- Executive Head --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive Principal</masterLabel>
+        <translation><!-- Executive Principal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extended Schools &amp; Extra Curricular Co-ordinator</masterLabel>
+        <translation><!-- Extended Schools &amp; Extra Curricular Co-ordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS Teacher</masterLabel>
+        <translation><!-- FS Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faculty Leader</masterLabel>
+        <translation><!-- Faculty Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance Manager</masterLabel>
+        <translation><!-- Finance Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foundation Leader</masterLabel>
+        <translation><!-- Foundation Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Governor</masterLabel>
+        <translation><!-- Governor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HLTA</masterLabel>
+        <translation><!-- HLTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Assistant</masterLabel>
+        <translation><!-- HR Assistant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Manager</masterLabel>
+        <translation><!-- HR Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head Teacher</masterLabel>
+        <translation><!-- Head Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of 6th Form</masterLabel>
+        <translation><!-- Head of 6th Form --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Department</masterLabel>
+        <translation><!-- Head of Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Faculty</masterLabel>
+        <translation><!-- Head of Faculty --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Year</masterLabel>
+        <translation><!-- Head of Year --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head&apos;s PA</masterLabel>
+        <translation><!-- Head&apos;s PA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inclusion Manager</masterLabel>
+        <translation><!-- Inclusion Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instructor</masterLabel>
+        <translation><!-- Instructor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intervention Teacher</masterLabel>
+        <translation><!-- Intervention Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS1 Intervention Co-ordinator</masterLabel>
+        <translation><!-- KS1 Intervention Co-ordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS2 Intervention Co-ordinator</masterLabel>
+        <translation><!-- KS2 Intervention Co-ordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS3 Intervention Co-ordinator</masterLabel>
+        <translation><!-- KS3 Intervention Co-ordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS4 Intervention Co-ordinator</masterLabel>
+        <translation><!-- KS4 Intervention Co-ordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 1 Leader</masterLabel>
+        <translation><!-- Key Stage 1 Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 2 Leader</masterLabel>
+        <translation><!-- Key Stage 2 Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 3 Leader</masterLabel>
+        <translation><!-- Key Stage 3 Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 4 Leader</masterLabel>
+        <translation><!-- Key Stage 4 Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSA</masterLabel>
+        <translation><!-- LSA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Cover Supervisor</masterLabel>
+        <translation><!-- Lead Cover Supervisor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Practitioner</masterLabel>
+        <translation><!-- Lead Practitioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Resources Centre Manager</masterLabel>
+        <translation><!-- Learning Resources Centre Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Support Co-ordinator</masterLabel>
+        <translation><!-- Learning Support Co-ordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursery Nurse</masterLabel>
+        <translation><!-- Nursery Nurse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA to SLT</masterLabel>
+        <translation><!-- PA to SLT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pastoral Support Worker/Mentor</masterLabel>
+        <translation><!-- Pastoral Support Worker/Mentor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Play Therapist</masterLabel>
+        <translation><!-- Play Therapist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Principal</masterLabel>
+        <translation><!-- Principal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Principal&apos;s PA</masterLabel>
+        <translation><!-- Principal&apos;s PA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receptionist</masterLabel>
+        <translation><!-- Receptionist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEN TA</masterLabel>
+        <translation><!-- SEN TA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEN Teacher</masterLabel>
+        <translation><!-- SEN Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENco/ SENDco</masterLabel>
+        <translation><!-- SENco/ SENDco --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary</masterLabel>
+        <translation><!-- Secretary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech and Language Therapist</masterLabel>
+        <translation><!-- Speech and Language Therapist --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teacher</masterLabel>
+        <translation><!-- Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teaching &amp; Learning Coach</masterLabel>
+        <translation><!-- Teaching &amp; Learning Coach --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teaching Assistant</masterLabel>
+        <translation><!-- Teaching Assistant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technician</masterLabel>
+        <translation><!-- Technician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice Head Teacher</masterLabel>
+        <translation><!-- Vice Head Teacher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice Principal</masterLabel>
+        <translation><!-- Vice Principal --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

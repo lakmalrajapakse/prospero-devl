@@ -1,0 +1,76 @@
+{
+  "appPageId" : "d9ce9f69-0e14-4b11-9233-6c5ce091d546",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "96b35fcd-4ed9-4f09-966b-5f2768515540",
+  "label" : "Pay Details",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "ffc72ef8-6165-4eaa-ad36-37ec963f83c5",
+          "columns" : [ {
+            "UUID" : "3a6d3097-d39b-458f-a86b-8e1e91deb2d2",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "ffc72ef8-6165-4eaa-ad36-37ec963f83c5",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "customTitle" : "",
+            "parentRecordId" : "{!id}",
+            "relatedListName" : "sirenum__Timesheet_Lines__r",
+            "showBreadCrumbs" : false,
+            "showCustomTitle" : false,
+            "showManualRefreshButton" : true,
+            "showRowNumbers" : false
+          },
+          "componentName" : "forceCommunity:relatedList",
+          "id" : "935c8b11-49c0-4653-b382-0883460338c0",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3a6d3097-d39b-458f-a86b-8e1e91deb2d2",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "4f69513f-cfdb-4ec4-8537-62d59c75baad",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Pay Details"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ecec305a-49aa-421b-b95c-5c190fe7c19b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5eae6cbc-d346-4b6d-8b5d-3625bab4b3ff",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-timesheet"
+}

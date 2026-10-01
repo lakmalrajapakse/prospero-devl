@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "02b50111-fa97-404e-ada6-9e8f578a6028",
+    "propertyOverrides" : {
+      "activeViewId" : "9cf4bfd8-9036-4357-9d7f-88c601a12b36"
+    },
+    "targetId" : "93e292e7-4afc-4def-adca-d932b1394113",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Schedule_INT_Schedule_Page",
+  "id" : "bae94ee9-2488-4fb3-8263-61e671c79903",
+  "type" : "experienceVariation"
+}

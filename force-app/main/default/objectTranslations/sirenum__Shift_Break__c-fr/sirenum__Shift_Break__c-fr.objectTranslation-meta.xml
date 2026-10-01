@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Pause de l’équipe</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Pauses de l’équipe</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom de la pause de l’équipe</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

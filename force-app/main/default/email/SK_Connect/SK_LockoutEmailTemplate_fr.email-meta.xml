@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>E-mail qu&apos;un utilisateur reçoit lorsqu&apos;il tente de réinitialiser son mot de passe, mais que celui-ci a été verrouillé en raison d&apos;un trop grand nombre de tentatives de connexion infructueuses.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Connect: User Lockout Email fr</name>
+    <style>none</style>
+    <subject>Vous avez été bloqué sur {!Community_Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>E-mail die gebruikers ontvangen op hun oude e-mailadres wanneer hun e-mailadres is gewijzigd</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Connect: Old Email - Change Email Verification nl</name>
+    <style>none</style>
+    <subject>Het e-mailadres van uw {!Community_Name}-account is gewijzigd</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

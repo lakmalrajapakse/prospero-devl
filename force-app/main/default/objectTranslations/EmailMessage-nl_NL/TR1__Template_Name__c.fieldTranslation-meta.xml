@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Slaat de naam van de Salesforce e-mailsjabloon op (in de indeling &lt;Naam map&gt;: &lt;Naam e-mailsjabloon&gt;)</help>
+    <label><!-- Template Name --></label>
+    <name>TR1__Template_Name__c</name>
+</CustomFieldTranslation>

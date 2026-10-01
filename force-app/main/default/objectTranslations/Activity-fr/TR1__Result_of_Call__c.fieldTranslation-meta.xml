@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Result of Call --></label>
+    <name>TR1__Result_of_Call__c</name>
+    <picklistValues>
+        <masterLabel>Left Message</masterLabel>
+        <translation>Laissé un message</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Live</masterLabel>
+        <translation>Direct</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No Answer</masterLabel>
+        <translation>Aucune réponse</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wrong/Disconnect Number</masterLabel>
+        <translation>Faux numéro/numéro désactivé</translation>
+    </picklistValues>
+</CustomFieldTranslation>

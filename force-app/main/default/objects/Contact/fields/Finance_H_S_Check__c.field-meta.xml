@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Finance_H_S_Check__c</fullName>
+    <formula>AND(
+    NOT(ISBLANK(FirstName)),
+    NOT(ISBLANK(LastName)),
+    NOT(ISPICKVAL(Gender__c, &quot;&quot;)),
+    NOT(ISBLANK(MailingStreet)),
+    NOT(ISBLANK(MailingCity)),
+    NOT(ISBLANK(MailingPostalCode)),
+    NOT(ISBLANK(MailingCountry)),
+    NOT(ISBLANK(Birthdate)),
+    NOT(ISBLANK(Email)),
+    NOT(ISBLANK(MobilePhone)),
+    NOT(ISPICKVAL(Evertime_Communication_Method__c, &quot;&quot;)),
+    NOT(ISPICKVAL(Worker_Type_Payroll_Provider__c, &quot;&quot;)),
+    OR(
+        AND(
+            ISPICKVAL(Pay_Type__c, &quot;PAYE&quot;),
+            NOT(ISPICKVAL(PAYE_Declaration__c, &quot;&quot;)),
+            NOT(ISPICKVAL(Student_Loan__c, &quot;&quot;)),
+            NOT(ISPICKVAL(Holiday_Pay_Rule__c, &quot;&quot;)),
+            NOT(ISPICKVAL(Holiday_Pay_Rate__c, &quot;&quot;))
+        ),
+        AND(
+            ISPICKVAL(Pay_Type__c, &quot;UMB&quot;),
+            NOT(ISBLANK(Umbrella_Company__c))
+        ),
+        AND(
+            ISPICKVAL(Pay_Type__c, &quot;LTD&quot;),
+            NOT(ISBLANK(LTD_Company_Name__c)),
+            NOT(ISBLANK(LTD_Company_Number__c)),
+            NOT(ISBLANK(LTD_Address__c)),
+            NOT(ISBLANK(LTD_Email_Address__c)),
+            NOT(ISPICKVAL(LTD_Communication_Method__c, &quot;&quot;))
+)
+))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Finance H&amp;S Check</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

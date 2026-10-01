@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Terminvereinbarung-V2-Objekt nachschlagen, das für die SFMC-/Digital Engagement-Integration verwendet wurde.</help>
+    <label><!-- Send Out Schedule V2 --></label>
+    <name>TR1__Send_Out_Schedule_V2__c</name>
+    <relationshipLabel><!-- Campaign Members --></relationshipLabel>
+</CustomFieldTranslation>

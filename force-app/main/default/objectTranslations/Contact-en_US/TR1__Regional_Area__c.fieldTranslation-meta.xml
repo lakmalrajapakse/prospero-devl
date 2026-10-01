@@ -1,0 +1,1773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Regional Area --></label>
+    <name>TR1__Regional_Area__c</name>
+    <picklistValues>
+        <masterLabel>Abilene Metro Area</masterLabel>
+        <translation><!-- Abilene Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Akron Metro Area</masterLabel>
+        <translation><!-- Akron Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alabama All</masterLabel>
+        <translation><!-- Alabama All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alaska All</masterLabel>
+        <translation><!-- Alaska All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Albany Metro Area</masterLabel>
+        <translation><!-- Albany Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Albany-Schenectady-Troy Metro Area</masterLabel>
+        <translation><!-- Albany-Schenectady-Troy Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Albuquerque Metro Area</masterLabel>
+        <translation><!-- Albuquerque Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Alexandria Metro Area</masterLabel>
+        <translation><!-- Alexandria Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Allentown-Bethlehem-Easton Metro Area</masterLabel>
+        <translation><!-- Allentown-Bethlehem-Easton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Altoona Metro Area</masterLabel>
+        <translation><!-- Altoona Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Amarillo Metro Area</masterLabel>
+        <translation><!-- Amarillo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ames Metro Area</masterLabel>
+        <translation><!-- Ames Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anchorage Metro Area</masterLabel>
+        <translation><!-- Anchorage Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anderson (IN) Metro Area</masterLabel>
+        <translation><!-- Anderson (IN) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anderson (SC) Metro Area</masterLabel>
+        <translation><!-- Anderson (SC) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ann Arbor Metro Area</masterLabel>
+        <translation><!-- Ann Arbor Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Anniston-Oxford Metro Area</masterLabel>
+        <translation><!-- Anniston-Oxford Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Appleton Metro Area</masterLabel>
+        <translation><!-- Appleton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arizona All</masterLabel>
+        <translation><!-- Arizona All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arkansas All</masterLabel>
+        <translation><!-- Arkansas All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asheville Metro Area</masterLabel>
+        <translation><!-- Asheville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Athens-Clarke County Metro Area</masterLabel>
+        <translation><!-- Athens-Clarke County Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atlanta Metro Area</masterLabel>
+        <translation><!-- Atlanta Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Atlantic City Metro Area</masterLabel>
+        <translation><!-- Atlantic City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Auburn-Opelika Metro Area</masterLabel>
+        <translation><!-- Auburn-Opelika Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Augusta-Richmond County Metro Area</masterLabel>
+        <translation><!-- Augusta-Richmond County Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Austin-Round Rock-San Marcos Metro Area</masterLabel>
+        <translation><!-- Austin-Round Rock-San Marcos Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bakersfield Metro Area</masterLabel>
+        <translation><!-- Bakersfield Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baltimore Metro Area</masterLabel>
+        <translation><!-- Baltimore Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bangor Metro Area</masterLabel>
+        <translation><!-- Bangor Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Barnstable Town Metro Area</masterLabel>
+        <translation><!-- Barnstable Town Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Baton Rouge Metro Area</masterLabel>
+        <translation><!-- Baton Rouge Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Battle Creek Metro Area</masterLabel>
+        <translation><!-- Battle Creek Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bay City Metro Area</masterLabel>
+        <translation><!-- Bay City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Beaumont-Port Arthur Metro Area</masterLabel>
+        <translation><!-- Beaumont-Port Arthur Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bellingham Metro Area</masterLabel>
+        <translation><!-- Bellingham Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bend Metro Area</masterLabel>
+        <translation><!-- Bend Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bethesda Metro Area</masterLabel>
+        <translation><!-- Bethesda Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billings Metro Area</masterLabel>
+        <translation><!-- Billings Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Binghamton Metro Area</masterLabel>
+        <translation><!-- Binghamton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Birmingham Metro Area</masterLabel>
+        <translation><!-- Birmingham Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bismarck Metro Area</masterLabel>
+        <translation><!-- Bismarck Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Blacksburg-Christiansburg-Radford Metro Area</masterLabel>
+        <translation><!-- Blacksburg-Christiansburg-Radford Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bloomington Metro Area</masterLabel>
+        <translation><!-- Bloomington Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boise City Metro Area</masterLabel>
+        <translation><!-- Boise City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boston Metro Area</masterLabel>
+        <translation><!-- Boston Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Boulder Metro Area</masterLabel>
+        <translation><!-- Boulder Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bowling Green Metro Area</masterLabel>
+        <translation><!-- Bowling Green Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bremerton-Silverdale Metro Area</masterLabel>
+        <translation><!-- Bremerton-Silverdale Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bridgeport-Stamford-Norwalk Metro Area</masterLabel>
+        <translation><!-- Bridgeport-Stamford-Norwalk Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brownsville-Harlingen Metro Area</masterLabel>
+        <translation><!-- Brownsville-Harlingen Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brunswick Metro Area</masterLabel>
+        <translation><!-- Brunswick Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Buffalo-Niagra Falls Metro Area</masterLabel>
+        <translation><!-- Buffalo-Niagra Falls Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burlington Metro Area</masterLabel>
+        <translation><!-- Burlington Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Burlington-South Burlington Metro Area</masterLabel>
+        <translation><!-- Burlington-South Burlington Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>California All</masterLabel>
+        <translation><!-- California All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cambridge Metro Area</masterLabel>
+        <translation><!-- Cambridge Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Camden Metro Area</masterLabel>
+        <translation><!-- Camden Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada All</masterLabel>
+        <translation><!-- Canada All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canton-Massillon Metro Area</masterLabel>
+        <translation><!-- Canton-Massillon Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cape Coral-Fort Myers Metro Area</masterLabel>
+        <translation><!-- Cape Coral-Fort Myers Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cape Girardeau-Jackson Metro Area</masterLabel>
+        <translation><!-- Cape Girardeau-Jackson Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Carson City Metro Area</masterLabel>
+        <translation><!-- Carson City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Casper Metro Area</masterLabel>
+        <translation><!-- Casper Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cedar Rapids Metro Area</masterLabel>
+        <translation><!-- Cedar Rapids Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Champaign-Urbana Metro Area</masterLabel>
+        <translation><!-- Champaign-Urbana Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charleston Metro Area</masterLabel>
+        <translation><!-- Charleston Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charleston-North Charleston-Summerville Metro Area</masterLabel>
+        <translation><!-- Charleston-North Charleston-Summerville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charlotte-Gastonia-Rock Hill Metro Area</masterLabel>
+        <translation><!-- Charlotte-Gastonia-Rock Hill Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Charlottesville Metro Area</masterLabel>
+        <translation><!-- Charlottesville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chattanooga Metro Area</masterLabel>
+        <translation><!-- Chattanooga Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cheyenne Metro Area</masterLabel>
+        <translation><!-- Cheyenne Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chicago Metro Area</masterLabel>
+        <translation><!-- Chicago Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chico Metro Area</masterLabel>
+        <translation><!-- Chico Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cincinnati Metro Area</masterLabel>
+        <translation><!-- Cincinnati Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clarksville Metro Area</masterLabel>
+        <translation><!-- Clarksville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleveland Metro Area</masterLabel>
+        <translation><!-- Cleveland Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleveland-Elyria-Mentor Metro Area</masterLabel>
+        <translation><!-- Cleveland-Elyria-Mentor Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Coeur d&apos;Alene Metro Area</masterLabel>
+        <translation><!-- Coeur d&apos;Alene Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>College Station Metro Area</masterLabel>
+        <translation><!-- College Station Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colorado All</masterLabel>
+        <translation><!-- Colorado All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Colorado Springs Metro Area</masterLabel>
+        <translation><!-- Colorado Springs Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Columbia (MO) Metro Area</masterLabel>
+        <translation><!-- Columbia (MO) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Columbia (SC) Metro Area</masterLabel>
+        <translation><!-- Columbia (SC) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Columbus (GA/AL) Metro Area</masterLabel>
+        <translation><!-- Columbus (GA/AL) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Columbus (IN) Metro Area</masterLabel>
+        <translation><!-- Columbus (IN) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Columbus (OH) Metro Area</masterLabel>
+        <translation><!-- Columbus (OH) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Connecticut All</masterLabel>
+        <translation><!-- Connecticut All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corpus Christi Metro Area</masterLabel>
+        <translation><!-- Corpus Christi Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Corvallis Metro Area</masterLabel>
+        <translation><!-- Corvallis Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Crestview-Fort Walton-Destin Metro Area</masterLabel>
+        <translation><!-- Crestview-Fort Walton-Destin Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cumberland Metro Area</masterLabel>
+        <translation><!-- Cumberland Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dallas Metro Area</masterLabel>
+        <translation><!-- Dallas Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dalton Metro Area</masterLabel>
+        <translation><!-- Dalton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Danville (IL) Metro Area</masterLabel>
+        <translation><!-- Danville (IL) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Danville (VA) Metro Area</masterLabel>
+        <translation><!-- Danville (VA) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Davenport-Moline-Rock Island Metro Area</masterLabel>
+        <translation><!-- Davenport-Moline-Rock Island Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dayton Metro Area</masterLabel>
+        <translation><!-- Dayton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decatur (AL) Metro Area</masterLabel>
+        <translation><!-- Decatur (AL) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Decatur (IL) Metro Area</masterLabel>
+        <translation><!-- Decatur (IL) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Delaware All</masterLabel>
+        <translation><!-- Delaware All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deltona-Daytona Beach-Ormond Beach Metro Area</masterLabel>
+        <translation><!-- Deltona-Daytona Beach-Ormond Beach Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denver Metro Area</masterLabel>
+        <translation><!-- Denver Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Des Moines Metro Area</masterLabel>
+        <translation><!-- Des Moines Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Detroit Metro Area</masterLabel>
+        <translation><!-- Detroit Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>District of Columbia All</masterLabel>
+        <translation><!-- District of Columbia All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dothan Metro Area</masterLabel>
+        <translation><!-- Dothan Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dover Metro Area</masterLabel>
+        <translation><!-- Dover Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dubuque Metro Area</masterLabel>
+        <translation><!-- Dubuque Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duluth Metro Area</masterLabel>
+        <translation><!-- Duluth Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Durham-Chapel Hill Metro Area</masterLabel>
+        <translation><!-- Durham-Chapel Hill Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eau Claire Metro Area</masterLabel>
+        <translation><!-- Eau Claire Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edison-New Brunswick Metro Area</masterLabel>
+        <translation><!-- Edison-New Brunswick Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>El Centro Metro Area</masterLabel>
+        <translation><!-- El Centro Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>El Paso Metro Area</masterLabel>
+        <translation><!-- El Paso Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elizabethtown Metro Area</masterLabel>
+        <translation><!-- Elizabethtown Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elkhart Metro Area</masterLabel>
+        <translation><!-- Elkhart Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Elmira Metro Area</masterLabel>
+        <translation><!-- Elmira Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Erie Metro Area</masterLabel>
+        <translation><!-- Erie Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eugene Metro Area</masterLabel>
+        <translation><!-- Eugene Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evansville Metro Area</masterLabel>
+        <translation><!-- Evansville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fairbanks Metro Area</masterLabel>
+        <translation><!-- Fairbanks Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fargo Metro Area</masterLabel>
+        <translation><!-- Fargo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Farmington Metro Area</masterLabel>
+        <translation><!-- Farmington Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fayetteville Metro Area</masterLabel>
+        <translation><!-- Fayetteville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flagstaff Metro Area</masterLabel>
+        <translation><!-- Flagstaff Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Flint Metro Area</masterLabel>
+        <translation><!-- Flint Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Florence Metro Area</masterLabel>
+        <translation><!-- Florence Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Florence-Muscle Shoals Metro Area</masterLabel>
+        <translation><!-- Florence-Muscle Shoals Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Florida All</masterLabel>
+        <translation><!-- Florida All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fond du Lac Metro Area</masterLabel>
+        <translation><!-- Fond du Lac Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fort Collins Metro Area</masterLabel>
+        <translation><!-- Fort Collins Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fort Lauderdale Metro Area</masterLabel>
+        <translation><!-- Fort Lauderdale Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fort Smith Metro Area</masterLabel>
+        <translation><!-- Fort Smith Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fort Wayne Metro Area</masterLabel>
+        <translation><!-- Fort Wayne Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fort Worth Metro Area</masterLabel>
+        <translation><!-- Fort Worth Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fresno Metro Area</masterLabel>
+        <translation><!-- Fresno Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gadsden Metro Area</masterLabel>
+        <translation><!-- Gadsden Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gainesville (FL) Metro Area</masterLabel>
+        <translation><!-- Gainesville (FL) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gainesville (GA) Metro Area</masterLabel>
+        <translation><!-- Gainesville (GA) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gary Metro Area</masterLabel>
+        <translation><!-- Gary Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Georgia All</masterLabel>
+        <translation><!-- Georgia All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Glens Falls Metro Area</masterLabel>
+        <translation><!-- Glens Falls Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Goldsboro Metro Area</masterLabel>
+        <translation><!-- Goldsboro Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grand Forks Metro Area</masterLabel>
+        <translation><!-- Grand Forks Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grand Junction Metro Area</masterLabel>
+        <translation><!-- Grand Junction Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Grand Rapids Metro Area</masterLabel>
+        <translation><!-- Grand Rapids Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Great Falls Metro Area</masterLabel>
+        <translation><!-- Great Falls Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greeley Metro Area</masterLabel>
+        <translation><!-- Greeley Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Green Bay Metro Area</masterLabel>
+        <translation><!-- Green Bay Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greensboro Metro Area</masterLabel>
+        <translation><!-- Greensboro Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greenville Metro Area</masterLabel>
+        <translation><!-- Greenville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greenville-Mauldin-Easley Metro Area</masterLabel>
+        <translation><!-- Greenville-Mauldin-Easley Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Gulfport-Biloxi Metro Area</masterLabel>
+        <translation><!-- Gulfport-Biloxi Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hagerstown-Martinsburg Metro Area</masterLabel>
+        <translation><!-- Hagerstown-Martinsburg Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hanford-Corcoran Metro Area</masterLabel>
+        <translation><!-- Hanford-Corcoran Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Harrisburg-Carlisle Metro Area</masterLabel>
+        <translation><!-- Harrisburg-Carlisle Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hartford Metro Area</masterLabel>
+        <translation><!-- Hartford Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hattiesburg Metro Area</masterLabel>
+        <translation><!-- Hattiesburg Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hawaii All</masterLabel>
+        <translation><!-- Hawaii All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hickory-Lenoir-Morganton Metro Area</masterLabel>
+        <translation><!-- Hickory-Lenoir-Morganton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hinesville-Fort Stewart Metro Area</masterLabel>
+        <translation><!-- Hinesville-Fort Stewart Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Holland-Grand Haven Metro Area</masterLabel>
+        <translation><!-- Holland-Grand Haven Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Honolulu Metro Area</masterLabel>
+        <translation><!-- Honolulu Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hot Springs Metro Area</masterLabel>
+        <translation><!-- Hot Springs Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Houma-Bayou Cane-Thibodaux Metro Area</masterLabel>
+        <translation><!-- Houma-Bayou Cane-Thibodaux Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Houston Metro Area</masterLabel>
+        <translation><!-- Houston Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Huntington Metro Area</masterLabel>
+        <translation><!-- Huntington Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Huntsville Metro Area</masterLabel>
+        <translation><!-- Huntsville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Idaho All</masterLabel>
+        <translation><!-- Idaho All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Idaho Falls Metro Area</masterLabel>
+        <translation><!-- Idaho Falls Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Illinois All</masterLabel>
+        <translation><!-- Illinois All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indiana All</masterLabel>
+        <translation><!-- Indiana All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Indianapolis Metro Area</masterLabel>
+        <translation><!-- Indianapolis Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>International All</masterLabel>
+        <translation><!-- International All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iowa All</masterLabel>
+        <translation><!-- Iowa All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Iowa City Metro Area</masterLabel>
+        <translation><!-- Iowa City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ithaca Metro Area</masterLabel>
+        <translation><!-- Ithaca Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jackson (MI) Metro Area</masterLabel>
+        <translation><!-- Jackson (MI) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jackson (MS) Metro Area</masterLabel>
+        <translation><!-- Jackson (MS) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jackson (TN) Metro Area</masterLabel>
+        <translation><!-- Jackson (TN) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jacksonville (FL) Metro Area</masterLabel>
+        <translation><!-- Jacksonville (FL) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jacksonville (NC) Metro Area</masterLabel>
+        <translation><!-- Jacksonville (NC) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Janesville Metro Area</masterLabel>
+        <translation><!-- Janesville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jefferson City Metro Area</masterLabel>
+        <translation><!-- Jefferson City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Johnson City Metro Area</masterLabel>
+        <translation><!-- Johnson City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Johnstown Metro Area</masterLabel>
+        <translation><!-- Johnstown Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Jonesboro Metro Area</masterLabel>
+        <translation><!-- Jonesboro Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Joplin Metro Area</masterLabel>
+        <translation><!-- Joplin Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Juneau Metro Area</masterLabel>
+        <translation><!-- Juneau Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kalamazoo Metro Area</masterLabel>
+        <translation><!-- Kalamazoo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kankakee Metro Area</masterLabel>
+        <translation><!-- Kankakee Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kansas All</masterLabel>
+        <translation><!-- Kansas All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kansas City Metro Area</masterLabel>
+        <translation><!-- Kansas City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kennewick-Pasco-Richland Metro Area</masterLabel>
+        <translation><!-- Kennewick-Pasco-Richland Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kentucky All</masterLabel>
+        <translation><!-- Kentucky All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Killeen-Temple-Fort Hood Metro Area</masterLabel>
+        <translation><!-- Killeen-Temple-Fort Hood Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kingsport-Bristol Metro Area</masterLabel>
+        <translation><!-- Kingsport-Bristol Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kingston Metro Area</masterLabel>
+        <translation><!-- Kingston Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Knoxville Metro Area</masterLabel>
+        <translation><!-- Knoxville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Kokomo Metro Area</masterLabel>
+        <translation><!-- Kokomo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>La Crosse Metro Area</masterLabel>
+        <translation><!-- La Crosse Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lafayette (IN) Metro Area</masterLabel>
+        <translation><!-- Lafayette (IN) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lafayette (LA) Metro Area</masterLabel>
+        <translation><!-- Lafayette (LA) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lake Charles Metro Area</masterLabel>
+        <translation><!-- Lake Charles Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lake County-Kenosha County Metro Area</masterLabel>
+        <translation><!-- Lake County-Kenosha County Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lake Havasu City-Kingman Metro Area</masterLabel>
+        <translation><!-- Lake Havasu City-Kingman Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lakeland-Winter Haven Metro Area</masterLabel>
+        <translation><!-- Lakeland-Winter Haven Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lancaster Metro Area</masterLabel>
+        <translation><!-- Lancaster Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lansing Metro Area</masterLabel>
+        <translation><!-- Lansing Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Laredo Metro Area</masterLabel>
+        <translation><!-- Laredo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Las Cruces Metro Area</masterLabel>
+        <translation><!-- Las Cruces Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Las Vegas Metro Area</masterLabel>
+        <translation><!-- Las Vegas Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lawrence Metro Area</masterLabel>
+        <translation><!-- Lawrence Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lawton Metro Area</masterLabel>
+        <translation><!-- Lawton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lebanon Metro Area</masterLabel>
+        <translation><!-- Lebanon Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lewiston Metro Area</masterLabel>
+        <translation><!-- Lewiston Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lexington Metro Area</masterLabel>
+        <translation><!-- Lexington Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lima Metro Area</masterLabel>
+        <translation><!-- Lima Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lincoln Metro Area</masterLabel>
+        <translation><!-- Lincoln Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Little Rock Metro Area</masterLabel>
+        <translation><!-- Little Rock Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Logan Metro Area</masterLabel>
+        <translation><!-- Logan Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Longview (TX) Metro Area</masterLabel>
+        <translation><!-- Longview (TX) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Longview (WA) Metro Area</masterLabel>
+        <translation><!-- Longview (WA) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Los Angeles Metro Area</masterLabel>
+        <translation><!-- Los Angeles Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Louisiana All</masterLabel>
+        <translation><!-- Louisiana All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Louisville Metro Area</masterLabel>
+        <translation><!-- Louisville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lubbock Metro Area</masterLabel>
+        <translation><!-- Lubbock Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lynchburg Metro Area</masterLabel>
+        <translation><!-- Lynchburg Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Macon Metro Area</masterLabel>
+        <translation><!-- Macon Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Madera Metro Area</masterLabel>
+        <translation><!-- Madera Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Madison Metro Area</masterLabel>
+        <translation><!-- Madison Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maine All</masterLabel>
+        <translation><!-- Maine All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manchester-Nashua Metro Area</masterLabel>
+        <translation><!-- Manchester-Nashua Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manhattan (KS) Metro Area</masterLabel>
+        <translation><!-- Manhattan (KS) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mankato Metro Area</masterLabel>
+        <translation><!-- Mankato Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mansfield Metro Area</masterLabel>
+        <translation><!-- Mansfield Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marin Metro Area</masterLabel>
+        <translation><!-- Marin Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maryland All</masterLabel>
+        <translation><!-- Maryland All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Massachusetts All</masterLabel>
+        <translation><!-- Massachusetts All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>McAllen-Edingburg-Mission Metro Area</masterLabel>
+        <translation><!-- McAllen-Edingburg-Mission Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medford Metro Area</masterLabel>
+        <translation><!-- Medford Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Memphis Metro Area</masterLabel>
+        <translation><!-- Memphis Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Merced Metro Area</masterLabel>
+        <translation><!-- Merced Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Miami Metro Area</masterLabel>
+        <translation><!-- Miami Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michigan All</masterLabel>
+        <translation><!-- Michigan All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Michigan City Metro Area</masterLabel>
+        <translation><!-- Michigan City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Midland Metro Area</masterLabel>
+        <translation><!-- Midland Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Milwaukee Metro Area</masterLabel>
+        <translation><!-- Milwaukee Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minneapolis Metro Area</masterLabel>
+        <translation><!-- Minneapolis Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Minnesota All</masterLabel>
+        <translation><!-- Minnesota All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mississippi All</masterLabel>
+        <translation><!-- Mississippi All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missoula Metro Area</masterLabel>
+        <translation><!-- Missoula Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Missouri All</masterLabel>
+        <translation><!-- Missouri All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mobile Metro Area</masterLabel>
+        <translation><!-- Mobile Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Modesto Metro Area</masterLabel>
+        <translation><!-- Modesto Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monroe (LA) Metro Area</masterLabel>
+        <translation><!-- Monroe (LA) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Monroe (MI) Metro Area</masterLabel>
+        <translation><!-- Monroe (MI) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Montana All</masterLabel>
+        <translation><!-- Montana All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Montgomery Metro Area</masterLabel>
+        <translation><!-- Montgomery Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morgantown Metro Area</masterLabel>
+        <translation><!-- Morgantown Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Morristown Metro Area</masterLabel>
+        <translation><!-- Morristown Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Mount Vernon Metro Area</masterLabel>
+        <translation><!-- Mount Vernon Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Muncie Metro Area</masterLabel>
+        <translation><!-- Muncie Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Muskegon Metro Area</masterLabel>
+        <translation><!-- Muskegon Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Myrtle Beach Metro Area</masterLabel>
+        <translation><!-- Myrtle Beach Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Napa Metro Area</masterLabel>
+        <translation><!-- Napa Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Naples Metro Area</masterLabel>
+        <translation><!-- Naples Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nashville Metro Area</masterLabel>
+        <translation><!-- Nashville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nassau-Suffolk Metro Area</masterLabel>
+        <translation><!-- Nassau-Suffolk Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nebraska All</masterLabel>
+        <translation><!-- Nebraska All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nevada All</masterLabel>
+        <translation><!-- Nevada All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Hampshire All</masterLabel>
+        <translation><!-- New Hampshire All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Haven Metro Area</masterLabel>
+        <translation><!-- New Haven Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Jersey All</masterLabel>
+        <translation><!-- New Jersey All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Mexico All</masterLabel>
+        <translation><!-- New Mexico All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Orleans Metro Area</masterLabel>
+        <translation><!-- New Orleans Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New York All</masterLabel>
+        <translation><!-- New York All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New York City Metro Area</masterLabel>
+        <translation><!-- New York City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Newark Metro Area</masterLabel>
+        <translation><!-- Newark Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Niles-Benton Metro Area</masterLabel>
+        <translation><!-- Niles-Benton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Carolina All</masterLabel>
+        <translation><!-- North Carolina All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North Dakota All</masterLabel>
+        <translation><!-- North Dakota All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Northern California</masterLabel>
+        <translation><!-- Northern California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norwich-New London Metro Area</masterLabel>
+        <translation><!-- Norwich-New London Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oakland-Fremont-Pleasanton Metro Area</masterLabel>
+        <translation><!-- Oakland-Fremont-Pleasanton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ocala Metro Area</masterLabel>
+        <translation><!-- Ocala Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ocean City Metro Area</masterLabel>
+        <translation><!-- Ocean City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Odessa Metro Area</masterLabel>
+        <translation><!-- Odessa Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ogden Metro Area</masterLabel>
+        <translation><!-- Ogden Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ohio All</masterLabel>
+        <translation><!-- Ohio All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oklahoma All</masterLabel>
+        <translation><!-- Oklahoma All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oklahoma City Metro Area</masterLabel>
+        <translation><!-- Oklahoma City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Olympia Metro Area</masterLabel>
+        <translation><!-- Olympia Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Omaha Metro Area</masterLabel>
+        <translation><!-- Omaha Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orange County Metro Area</masterLabel>
+        <translation><!-- Orange County Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oregon All</masterLabel>
+        <translation><!-- Oregon All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Orlando Metro Area</masterLabel>
+        <translation><!-- Orlando Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Oshkosh-Neenah Metro Area</masterLabel>
+        <translation><!-- Oshkosh-Neenah Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation><!-- Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Owensboro Metro Area</masterLabel>
+        <translation><!-- Owensboro Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palm Bay Metro Area</masterLabel>
+        <translation><!-- Palm Bay Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Palm Coast Metro Area</masterLabel>
+        <translation><!-- Palm Coast Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Panama City Metro Area</masterLabel>
+        <translation><!-- Panama City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parkersburg-Marietta Metro Area</masterLabel>
+        <translation><!-- Parkersburg-Marietta Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pascagoula Metro Area</masterLabel>
+        <translation><!-- Pascagoula Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peabody Metro Area</masterLabel>
+        <translation><!-- Peabody Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pennsylvania All</masterLabel>
+        <translation><!-- Pennsylvania All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pensacola Metro Area</masterLabel>
+        <translation><!-- Pensacola Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Peoria Metro Area</masterLabel>
+        <translation><!-- Peoria Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Philadelphia Metro Area</masterLabel>
+        <translation><!-- Philadelphia Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Phoenix Metro Area</masterLabel>
+        <translation><!-- Phoenix Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pine Bluff Metro</masterLabel>
+        <translation><!-- Pine Bluff Metro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pittsburgh Metro Area</masterLabel>
+        <translation><!-- Pittsburgh Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pittsfield Metro Area</masterLabel>
+        <translation><!-- Pittsfield Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pocatello Metro Area</masterLabel>
+        <translation><!-- Pocatello Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Port St. Luice Metro Area</masterLabel>
+        <translation><!-- Port St. Luice Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portland Metro Area</masterLabel>
+        <translation><!-- Portland Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portland-Biddeford Metro Area</masterLabel>
+        <translation><!-- Portland-Biddeford Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poughkeepsie Metro Area</masterLabel>
+        <translation><!-- Poughkeepsie Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Prescott Metro Area</masterLabel>
+        <translation><!-- Prescott Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Providence Metro Area</masterLabel>
+        <translation><!-- Providence Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provo Metro Area</masterLabel>
+        <translation><!-- Provo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pueblo Metro Area</masterLabel>
+        <translation><!-- Pueblo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Punta Gorda Metro Area</masterLabel>
+        <translation><!-- Punta Gorda Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Racine Metro Area</masterLabel>
+        <translation><!-- Racine Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Raleigh Metro Area</masterLabel>
+        <translation><!-- Raleigh Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rapid City Metro Area</masterLabel>
+        <translation><!-- Rapid City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reading Metro Area</masterLabel>
+        <translation><!-- Reading Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Redding Metro Area</masterLabel>
+        <translation><!-- Redding Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reno Metro Area</masterLabel>
+        <translation><!-- Reno Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Research Triangle Park Metro Area</masterLabel>
+        <translation><!-- Research Triangle Park Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rhode Island All</masterLabel>
+        <translation><!-- Rhode Island All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Richmond Metro Area</masterLabel>
+        <translation><!-- Richmond Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Roanoke Metro Area</masterLabel>
+        <translation><!-- Roanoke Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rochester Metro Area</masterLabel>
+        <translation><!-- Rochester Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rockford Metro Area</masterLabel>
+        <translation><!-- Rockford Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rockingham Metro Area</masterLabel>
+        <translation><!-- Rockingham Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rocky Mount Metro Area</masterLabel>
+        <translation><!-- Rocky Mount Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rome Metro Area</masterLabel>
+        <translation><!-- Rome Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sacramento Metro Area</masterLabel>
+        <translation><!-- Sacramento Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Saginaw Metro Area</masterLabel>
+        <translation><!-- Saginaw Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salem Metro Area</masterLabel>
+        <translation><!-- Salem Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salinas Metro Area</masterLabel>
+        <translation><!-- Salinas Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salisbury Metro Area</masterLabel>
+        <translation><!-- Salisbury Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Salt Lake City Metro Area</masterLabel>
+        <translation><!-- Salt Lake City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Angelo Merto Area</masterLabel>
+        <translation><!-- San Angelo Merto Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Antonio Metro Area</masterLabel>
+        <translation><!-- San Antonio Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Bernardino Metro Area</masterLabel>
+        <translation><!-- San Bernardino Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Diego Metro Area</masterLabel>
+        <translation><!-- San Diego Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Francisco Metro Area</masterLabel>
+        <translation><!-- San Francisco Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Jose Metro Area</masterLabel>
+        <translation><!-- San Jose Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Luis Obispo Metro Area</masterLabel>
+        <translation><!-- San Luis Obispo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>San Mateo Metro Area</masterLabel>
+        <translation><!-- San Mateo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sandusky Metro Area</masterLabel>
+        <translation><!-- Sandusky Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Barbara Metro Area</masterLabel>
+        <translation><!-- Santa Barbara Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Cruz Metro Area</masterLabel>
+        <translation><!-- Santa Cruz Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Fe Metro Area</masterLabel>
+        <translation><!-- Santa Fe Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Santa Rosa-Petaluma Metro Area</masterLabel>
+        <translation><!-- Santa Rosa-Petaluma Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sarasota Metro Area</masterLabel>
+        <translation><!-- Sarasota Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Savannah Metro Area</masterLabel>
+        <translation><!-- Savannah Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scranton Metro Area</masterLabel>
+        <translation><!-- Scranton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Seattle-Bellevue Metro Area</masterLabel>
+        <translation><!-- Seattle-Bellevue Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sebastian Metro Area</masterLabel>
+        <translation><!-- Sebastian Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sheboygan Metro Area</masterLabel>
+        <translation><!-- Sheboygan Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sherman-Denison Metro Area</masterLabel>
+        <translation><!-- Sherman-Denison Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shreveport Metro Area</masterLabel>
+        <translation><!-- Shreveport Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sioux City Metro Area</masterLabel>
+        <translation><!-- Sioux City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sioux Falls Metro Area</masterLabel>
+        <translation><!-- Sioux Falls Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Bend Metro Area</masterLabel>
+        <translation><!-- South Bend Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Carolina All</masterLabel>
+        <translation><!-- South Carolina All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South Dakota All</masterLabel>
+        <translation><!-- South Dakota All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Southern California</masterLabel>
+        <translation><!-- Southern California --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spartanburg Metro Area</masterLabel>
+        <translation><!-- Spartanburg Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spokane Metro Area</masterLabel>
+        <translation><!-- Spokane Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Springdale Metro Area</masterLabel>
+        <translation><!-- Springdale Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Springfield (IL) Metro Area</masterLabel>
+        <translation><!-- Springfield (IL) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Springfield (MA) Metro Area</masterLabel>
+        <translation><!-- Springfield (MA) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Springfield (MO) Metro Area</masterLabel>
+        <translation><!-- Springfield (MO) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Springfield (OH) Metro Area</masterLabel>
+        <translation><!-- Springfield (OH) Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St. Cloud Metro Area</masterLabel>
+        <translation><!-- St. Cloud Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St. George Metro Area</masterLabel>
+        <translation><!-- St. George Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St. Joseph Metro Area</masterLabel>
+        <translation><!-- St. Joseph Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>St. Louis Metro Area</masterLabel>
+        <translation><!-- St. Louis Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>State College Metro Area</masterLabel>
+        <translation><!-- State College Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Steubenville Metro Area</masterLabel>
+        <translation><!-- Steubenville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stockton Metro Area</masterLabel>
+        <translation><!-- Stockton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sumter Metro Area</masterLabel>
+        <translation><!-- Sumter Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Syracuse Metro Area</masterLabel>
+        <translation><!-- Syracuse Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tacoma Metro Area</masterLabel>
+        <translation><!-- Tacoma Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tallahassee Metro Area</masterLabel>
+        <translation><!-- Tallahassee Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tampa Metro Area</masterLabel>
+        <translation><!-- Tampa Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tennessee All</masterLabel>
+        <translation><!-- Tennessee All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Terre Haute Metro Area</masterLabel>
+        <translation><!-- Terre Haute Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Texarkana Metro Area</masterLabel>
+        <translation><!-- Texarkana Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Texas All</masterLabel>
+        <translation><!-- Texas All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Thousand Oaks Metro Area</masterLabel>
+        <translation><!-- Thousand Oaks Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Toledo Metro Area</masterLabel>
+        <translation><!-- Toledo Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Topeka Metro Area</masterLabel>
+        <translation><!-- Topeka Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trenton Metro Area</masterLabel>
+        <translation><!-- Trenton Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Troy Metro Area</masterLabel>
+        <translation><!-- Troy Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tucson Metro Area</masterLabel>
+        <translation><!-- Tucson Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tulsa Metro Area</masterLabel>
+        <translation><!-- Tulsa Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tuscaloosa Metro Area</masterLabel>
+        <translation><!-- Tuscaloosa Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tyler Metro Area</masterLabel>
+        <translation><!-- Tyler Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utah All</masterLabel>
+        <translation><!-- Utah All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Utica Metro Area</masterLabel>
+        <translation><!-- Utica Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Valdosta Metro Area</masterLabel>
+        <translation><!-- Valdosta Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vallejo-Fairfield Metro Area</masterLabel>
+        <translation><!-- Vallejo-Fairfield Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vancouver Metro Area</masterLabel>
+        <translation><!-- Vancouver Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vermont All</masterLabel>
+        <translation><!-- Vermont All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Victoria Metro Area</masterLabel>
+        <translation><!-- Victoria Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vineland-Millville Metro Area</masterLabel>
+        <translation><!-- Vineland-Millville Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virginia All</masterLabel>
+        <translation><!-- Virginia All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virginia Beach Metro Area</masterLabel>
+        <translation><!-- Virginia Beach Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Visalia Metro Area</masterLabel>
+        <translation><!-- Visalia Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waco Metro Area</masterLabel>
+        <translation><!-- Waco Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warner Robins Metro Area</masterLabel>
+        <translation><!-- Warner Robins Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Washington All</masterLabel>
+        <translation><!-- Washington All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Washington-Arlington-Alexandria Metro Area</masterLabel>
+        <translation><!-- Washington-Arlington-Alexandria Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Waterloo-Cedar Falls Metro Area</masterLabel>
+        <translation><!-- Waterloo-Cedar Falls Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wausau Metro Area</masterLabel>
+        <translation><!-- Wausau Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wayne Metro Area</masterLabel>
+        <translation><!-- Wayne Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wenatchee Metro Area</masterLabel>
+        <translation><!-- Wenatchee Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Palm Beach Metro Area</masterLabel>
+        <translation><!-- West Palm Beach Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Virginia All</masterLabel>
+        <translation><!-- West Virginia All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wheeling Metro Area</masterLabel>
+        <translation><!-- Wheeling Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White Plains Metro Area</masterLabel>
+        <translation><!-- White Plains Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wichita Falls Metro Area</masterLabel>
+        <translation><!-- Wichita Falls Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wichita Metro Area</masterLabel>
+        <translation><!-- Wichita Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Williamsport Metro Area</masterLabel>
+        <translation><!-- Williamsport Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wilmington Metro Area</masterLabel>
+        <translation><!-- Wilmington Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Winchester Metro Area</masterLabel>
+        <translation><!-- Winchester Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Winston-Salem Metro Area</masterLabel>
+        <translation><!-- Winston-Salem Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wisconsin All</masterLabel>
+        <translation><!-- Wisconsin All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Worcester Metro Area</masterLabel>
+        <translation><!-- Worcester Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wyoming All</masterLabel>
+        <translation><!-- Wyoming All --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yakima Metro Area</masterLabel>
+        <translation><!-- Yakima Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>York Metro Area</masterLabel>
+        <translation><!-- York Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Youngstown Metro Area</masterLabel>
+        <translation><!-- Youngstown Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yuba City Metro Area</masterLabel>
+        <translation><!-- Yuba City Metro Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yuma Metro Area</masterLabel>
+        <translation><!-- Yuma Metro Area --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

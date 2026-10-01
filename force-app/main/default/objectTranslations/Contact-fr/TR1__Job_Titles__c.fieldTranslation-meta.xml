@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Job Titles --></label>
+    <name>TR1__Job_Titles__c</name>
+    <picklistValues>
+        <masterLabel>1-2-1 Tutor (Primary)</masterLabel>
+        <translation>1-2-1 Professeur (primaire)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>1-2-1 Tutor (Secondary)</masterLabel>
+        <translation>1-2-1 Professeur (secondaire)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Assistant Head Teacher</masterLabel>
+        <translation>Directeur adjoint par intérim</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Assistant Principle</masterLabel>
+        <translation>Proviseur adjoint par intérim</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Deputy Head Teacher</masterLabel>
+        <translation>Directeur remplaçant par intérim</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Head Teacher</masterLabel>
+        <translation>Directeur par intérim</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Head of Department</masterLabel>
+        <translation>Chef de service par intérim</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Head of Faculty</masterLabel>
+        <translation>Directeur de faculté par intérim</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Principal</masterLabel>
+        <translation>Proviseur par intérim</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Acting Vice Principal</masterLabel>
+        <translation>Directeur adjoint par intérim</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Assistant</masterLabel>
+        <translation>Assistant administratif</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Faculty Leader</masterLabel>
+        <translation>Directeur adjoint de faculté</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Head Teacher</masterLabel>
+        <translation>Directeur adjoint</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Principal</masterLabel>
+        <translation>Proviseur adjoint</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assistant Vice Principal</masterLabel>
+        <translation>Assistant du proviseur adjoint</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Attendance &amp; Welfare Officer</masterLabel>
+        <translation>Conseiller principal d&apos;éducation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Manager</masterLabel>
+        <translation>Responsable commercial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Careers Co-coordinator</masterLabel>
+        <translation>Conseiller d&apos;orientation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chair of Governors</masterLabel>
+        <translation>Conseil d&apos;administration</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover Manager</masterLabel>
+        <translation>Responsable suppléant</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cover Supervisor</masterLabel>
+        <translation>Superviseur suppléant</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Head Teacher</masterLabel>
+        <translation>Directeur adjoint</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Principal</masterLabel>
+        <translation>Proviseur adjoint</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ESOL/EAL Tutor</masterLabel>
+        <translation>Professeur ESOL/EAL</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Examinations Officer</masterLabel>
+        <translation>Chargé d&apos;examens</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive Head</masterLabel>
+        <translation>Chef exécutif</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Executive Principal</masterLabel>
+        <translation>Proviseur exécutif</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Extended Schools &amp; Extra Curricular Co-ordinator</masterLabel>
+        <translation>Coordonnateur des écoles à horaires prolongés (« extended schools ») et des activités extrascolaires</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FS Teacher</masterLabel>
+        <translation>Enseignant compétences fonctionnelles (« FS »)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Faculty Leader</masterLabel>
+        <translation>Directeur de faculté</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance Manager</masterLabel>
+        <translation>Responsable financier</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Foundation Leader</masterLabel>
+        <translation>Responsable de fondation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Governor</masterLabel>
+        <translation>Directeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HLTA</masterLabel>
+        <translation><!-- HLTA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Assistant</masterLabel>
+        <translation>Assistant RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Manager</masterLabel>
+        <translation>Responsable RH</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head Teacher</masterLabel>
+        <translation>Directeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of 6th Form</masterLabel>
+        <translation>Directeur 6th Form</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Department</masterLabel>
+        <translation>Chef de service</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Faculty</masterLabel>
+        <translation>Directeur de faculté</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Year</masterLabel>
+        <translation>Responsable de classe</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head&apos;s PA</masterLabel>
+        <translation>Responsable de classe adjoint</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inclusion Manager</masterLabel>
+        <translation>Responsable de l&apos;intégration</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Instructor</masterLabel>
+        <translation>Professeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Intervention Teacher</masterLabel>
+        <translation>Enseignant d&apos;appui</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS1 Intervention Co-ordinator</masterLabel>
+        <translation>Coordonnateur d&apos;appui KS1</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS2 Intervention Co-ordinator</masterLabel>
+        <translation>Coordonnateur d&apos;appui KS2</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS3 Intervention Co-ordinator</masterLabel>
+        <translation>Coordonnateur d&apos;appui KS3</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS4 Intervention Co-ordinator</masterLabel>
+        <translation>Coordonnateur d&apos;appui KS4</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 1 Leader</masterLabel>
+        <translation>Responsable niveau éducatif 1</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 2 Leader</masterLabel>
+        <translation>Responsable niveau éducatif 2</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 3 Leader</masterLabel>
+        <translation>Responsable niveau éducatif 3</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Key Stage 4 Leader</masterLabel>
+        <translation>Responsable niveau éducatif 4</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LSA</masterLabel>
+        <translation>Assistant pédagogique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Cover Supervisor</masterLabel>
+        <translation>Superviseur principal suppléant</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lead Practitioner</masterLabel>
+        <translation>Praticien principal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Resources Centre Manager</masterLabel>
+        <translation>Responsable du centre des ressources pédagogiques</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Learning Support Co-ordinator</masterLabel>
+        <translation>Coordonnateur du soutien pédagogique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursery Nurse</masterLabel>
+        <translation>Puéricultrice</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PA to SLT</masterLabel>
+        <translation>Assistant personnel à l&apos;équipe de direction</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pastoral Support Worker/Mentor</masterLabel>
+        <translation>Accompagnateur/tuteur pastoral</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Play Therapist</masterLabel>
+        <translation>Thérapeute par le jeu</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Principal</masterLabel>
+        <translation>Proviseur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Principal&apos;s PA</masterLabel>
+        <translation>Assistant personnel du proviseur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Receptionist</masterLabel>
+        <translation>Réceptionniste</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEN TA</masterLabel>
+        <translation>Enseignant auxiliaire SEN</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEN Teacher</masterLabel>
+        <translation>Enseignant SEN</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SENco/ SENDco</masterLabel>
+        <translation>Coordonnateur/Coordonnateur adjoint SEN</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secretary</masterLabel>
+        <translation>Secrétaire</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Speech and Language Therapist</masterLabel>
+        <translation>Orthophoniste</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teacher</masterLabel>
+        <translation>Enseignant</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teaching &amp; Learning Coach</masterLabel>
+        <translation>Conseiller en enseignement et apprentissage</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teaching Assistant</masterLabel>
+        <translation>Enseignant auxiliaire</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technician</masterLabel>
+        <translation>Technicien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice Head Teacher</masterLabel>
+        <translation>Directeur adjoint</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vice Principal</masterLabel>
+        <translation>Proviseur adjoint</translation>
+    </picklistValues>
+</CustomFieldTranslation>

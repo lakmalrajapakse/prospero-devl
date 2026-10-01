@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn der Arbeitnehmer Ihnen ein P46-Formular zur Verfügung gestellt hat, verwenden Sie die in Abschnitt 1 des Formulars angegebenen Informationen, um die zutreffende Option auszuwählen. 
+
+Optionen:
+0 = nicht zutreffend
+1 = nur A
+2 = A und B
+3 = nur B
+4 = B und C
+5 = nur C
+6 = A und C
+7 = Keine</help>
+    <label><!-- P46 Statement --></label>
+    <name>sirenum__P46_Statement__c</name>
+</CustomFieldTranslation>

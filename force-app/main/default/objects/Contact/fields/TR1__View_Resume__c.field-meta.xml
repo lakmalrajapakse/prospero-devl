@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__View_Resume__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>HYPERLINK(&quot;/apex/TR1__ResumeViewer?id=&quot;+Id, IMAGE(&quot;/resource/TR1__ViewResume&quot;,$Label.TR1__View_Resume),&quot;_blank&quot;)</formula>
+    <label>View Resume</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

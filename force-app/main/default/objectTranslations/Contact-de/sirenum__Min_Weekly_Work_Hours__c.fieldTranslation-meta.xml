@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn für den Arbeitnehmer eine feste Zahl von Stunden festgelegt wurde, die er mindestens arbeiten muss, geben Sie diese hier ein. Diese wird bei der Kandidatensuche in der Planungs-App berücksichtigt.</help>
+    <label><!-- Min Weekly Work Hours --></label>
+    <name>sirenum__Min_Weekly_Work_Hours__c</name>
+</CustomFieldTranslation>

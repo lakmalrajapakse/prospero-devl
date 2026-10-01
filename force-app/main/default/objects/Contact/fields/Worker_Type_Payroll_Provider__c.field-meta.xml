@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Worker_Type_Payroll_Provider__c</fullName>
+    <label>Worker Type/ Payroll Provider</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Generate FS</fullName>
+                <default>false</default>
+                <label>Generate FS</label>
+            </value>
+            <value>
+                <fullName>Generate FS (PAYE) option only</fullName>
+                <default>false</default>
+                <label>Generate FS (PAYE) option only</label>
+            </value>
+            <value>
+                <fullName>Limited Company</fullName>
+                <default>false</default>
+                <label>Limited Company</label>
+            </value>
+            <value>
+                <fullName>Mainpay</fullName>
+                <default>false</default>
+                <label>Mainpay</label>
+            </value>
+            <value>
+                <fullName>Pay As You Earn</fullName>
+                <default>false</default>
+                <label>Pay As You Earn</label>
+            </value>
+            <value>
+                <fullName>Unregistered</fullName>
+                <default>false</default>
+                <label>Unregistered</label>
+            </value>
+            <value>
+                <fullName>Workwell (JSA)</fullName>
+                <default>false</default>
+                <label>Workwell (JSA)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

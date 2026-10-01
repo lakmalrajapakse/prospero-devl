@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand_Formula__c</fullName>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE( IF(INCLUDES(Brand__c, &quot;Health &amp; Social Care&quot;), &quot;Health &amp; Social Care; &quot;, &quot;&quot;) &amp; IF(INCLUDES(Brand__c, &quot;Teaching&quot;), &quot;Teaching; &quot;, &quot;&quot;) &amp; IF(INCLUDES(Brand__c, &quot;Integrated&quot;), &quot;Integrated; &quot;, &quot;&quot;) &amp; &quot;BLANK&quot;, &quot;; BLANK&quot;, &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Brand Formula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

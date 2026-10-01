@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sales Aggregate Type --></label>
+    <name>Sales_Aggregate_Type__c</name>
+    <picklistValues>
+        <masterLabel>Candandloc</masterLabel>
+        <translation><!-- Candandloc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Candidate</masterLabel>
+        <translation><!-- Candidate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Candidatepedate</masterLabel>
+        <translation><!-- Candidatepedate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consolidated</masterLabel>
+        <translation><!-- Consolidated --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contact</masterLabel>
+        <translation><!-- Contact --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Location</masterLabel>
+        <translation><!-- Location --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PO</masterLabel>
+        <translation><!-- PO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Placement</masterLabel>
+        <translation><!-- Placement --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Potocand</masterLabel>
+        <translation><!-- Potocand --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Timesheet</masterLabel>
+        <translation><!-- Timesheet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>invoicepercostcentre</masterLabel>
+        <translation><!-- invoicepercostcentre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>invoiceperweekendandconsolidate</masterLabel>
+        <translation><!-- invoiceperweekendandconsolidate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>invoiceperweekendandlocation</masterLabel>
+        <translation><!-- invoiceperweekendandlocation --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

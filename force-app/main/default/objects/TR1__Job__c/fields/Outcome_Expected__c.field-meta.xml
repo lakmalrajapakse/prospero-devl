@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outcome_Expected__c</fullName>
+    <label>Outcome Expected</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Boost academic grades</fullName>
+                <default>false</default>
+                <label>Boost academic grades</label>
+            </value>
+            <value>
+                <fullName>Closing fundamental gaps</fullName>
+                <default>false</default>
+                <label>Closing fundamental gaps</label>
+            </value>
+            <value>
+                <fullName>Enhanced progress</fullName>
+                <default>false</default>
+                <label>Enhanced progress</label>
+            </value>
+            <value>
+                <fullName>Improved attendance at AP</fullName>
+                <default>false</default>
+                <label>Improved attendance at AP</label>
+            </value>
+            <value>
+                <fullName>Improved behaviour</fullName>
+                <default>false</default>
+                <label>Improved behaviour</label>
+            </value>
+            <value>
+                <fullName>Increased confidence &amp; self‑efficacy</fullName>
+                <default>false</default>
+                <label>Increased confidence &amp; self‑efficacy</label>
+            </value>
+            <value>
+                <fullName>Increased independence</fullName>
+                <default>false</default>
+                <label>Increased independence</label>
+            </value>
+            <value>
+                <fullName>Re‑engagement in learning</fullName>
+                <default>false</default>
+                <label>Re‑engagement in learning</label>
+            </value>
+            <value>
+                <fullName>Re‑integration into education</fullName>
+                <default>false</default>
+                <label>Re‑integration into education</label>
+            </value>
+            <value>
+                <fullName>Re‑integration into post‑16 pathway</fullName>
+                <default>false</default>
+                <label>Re‑integration into post‑16 pathway</label>
+            </value>
+            <value>
+                <fullName>Stabilisation during crisis or transition</fullName>
+                <default>false</default>
+                <label>Stabilisation during crisis or transition</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

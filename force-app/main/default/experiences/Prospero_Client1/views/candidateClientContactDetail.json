@@ -1,0 +1,48 @@
+{
+  "appPageId" : "8c871e13-6d08-4440-b759-c322ea3acaef",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "b065ccc4-efce-4abb-b144-e1509c5feb27",
+  "label" : "Candidate  Client Contact Detail",
+  "regions" : [ {
+    "id" : "5272c0ba-d7fd-448b-aa24-d3c1976944fb",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "ca63ef99-000d-4848-8b70-b8530d1b4717",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "59c30cdb-f6ff-4da2-b22d-cd9100cf846b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b7c54330-4b96-4269-8b11-8c131b6fe597",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "845b4884-1a79-49a9-b73f-68fb333a2202",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "db9fbed0-e8ea-4326-ab4a-50ac7586f167",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-003"
+}

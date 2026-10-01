@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Address_Required</fullName>
+    <active>true</active>
+    <description>To ensure Billing Address is always populated</description>
+    <errorConditionFormula>AND(
+				NOT($Permission.Bypass_System_Automation), 
+				OR(ISBLANK(BillingStreet), ISBLANK(BillingCity), ISBLANK(BillingCountry), ISBLANK(BillingPostalCode)), 
+				(RecordType.DeveloperName &lt;&gt; &apos;Candidate_Pool&apos;))</errorConditionFormula>
+    <errorMessage>The Address Street, City, Postal Code and Country are required</errorMessage>
+</ValidationRule>

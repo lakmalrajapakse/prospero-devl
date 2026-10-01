@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Apply_To_Job_With_Stage</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Apply To Job With Stage</masterLabel>
+    <openType>sidebar</openType>
+    <page>TR1__ContactGenericApplyToJobRedirect</page>
+    <protected>false</protected>
+</WebLink>

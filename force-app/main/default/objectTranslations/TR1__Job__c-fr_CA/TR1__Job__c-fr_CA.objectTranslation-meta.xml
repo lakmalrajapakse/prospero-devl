@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Poste</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Postes</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du poste</nameFieldLabel>
+    <quickActions>
+        <label><!-- Find Candidates --></label>
+        <name>TKC_Find_Candidates_TextKernel</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Rank Applicants (Textkernel) --></label>
+        <name>TKC_Rank_Applicants_Textkernel</name>
+    </quickActions>
+    <recordTypes>
+        <description><!-- Job for one-off shifts only --></description>
+        <label><!-- Ad-Hoc --></label>
+        <name>Ad_Hoc</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Job for multiple Children/Young People --></description>
+        <label><!-- Multi-Child/Young Person --></label>
+        <name>Multi_Child_Young_Person_Contract</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Maximum Pay Rate should not be greater then Maximum Bill Rate or any one of the rate should not be blank --></errorMessage>
+        <name>Max_PayBill_Rate_Rule_Prospero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot set the Client of a Multi-Child/Young Person Job to any other Client than the nominated &apos;dummy&apos; Client record --></errorMessage>
+        <name>Multi_Client_Job_Client</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Reason for Referral is Section 19 you must add details in the Reason for Referral Description --></errorMessage>
+        <name>Section_19_Referral</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For a Tutor Role you must either add a Subject or Programme --></errorMessage>
+        <name>Tutor_Role</name>
+    </validationRules>
+</CustomObjectTranslation>

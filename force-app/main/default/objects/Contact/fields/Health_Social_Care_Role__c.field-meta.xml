@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Health_Social_Care_Role__c</fullName>
+    <label>Health &amp; Social Care Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Activity Coordinator</fullName>
+                <default>false</default>
+                <label>Activity Coordinator</label>
+            </value>
+            <value>
+                <fullName>Admin Manager</fullName>
+                <default>false</default>
+                <label>Admin Manager</label>
+            </value>
+            <value>
+                <fullName>CAMHS Worker</fullName>
+                <default>false</default>
+                <label>CAMHS Worker</label>
+            </value>
+            <value>
+                <fullName>Care Coordinator</fullName>
+                <default>false</default>
+                <label>Care Coordinator</label>
+            </value>
+            <value>
+                <fullName>Clinical Lead</fullName>
+                <default>false</default>
+                <label>Clinical Lead</label>
+            </value>
+            <value>
+                <fullName>Commissioner</fullName>
+                <default>false</default>
+                <label>Commissioner</label>
+            </value>
+            <value>
+                <fullName>Deputy Manager</fullName>
+                <default>false</default>
+                <label>Deputy Manager</label>
+            </value>
+            <value>
+                <fullName>Duty Officer</fullName>
+                <default>false</default>
+                <label>Duty Officer</label>
+            </value>
+            <value>
+                <fullName>Family Support Worker</fullName>
+                <default>false</default>
+                <label>Family Support Worker</label>
+            </value>
+            <value>
+                <fullName>Head of Service</fullName>
+                <default>false</default>
+                <label>Head of Service</label>
+            </value>
+            <value>
+                <fullName>Health Care Assistant</fullName>
+                <default>false</default>
+                <label>Health Care Assistant</label>
+            </value>
+            <value>
+                <fullName>HR Manager</fullName>
+                <default>false</default>
+                <label>HR Manager</label>
+            </value>
+            <value>
+                <fullName>LADO (Local Authority Designated Officer)</fullName>
+                <default>false</default>
+                <label>LADO (Local Authority Designated Officer)</label>
+            </value>
+            <value>
+                <fullName>Legal Aid/Solicitor</fullName>
+                <default>false</default>
+                <label>Legal Aid/Solicitor</label>
+            </value>
+            <value>
+                <fullName>Nurse Manager</fullName>
+                <default>false</default>
+                <label>Nurse Manager</label>
+            </value>
+            <value>
+                <fullName>Operations/Services Manager</fullName>
+                <default>false</default>
+                <label>Operations/Services Manager</label>
+            </value>
+            <value>
+                <fullName>Parent/Guardian</fullName>
+                <default>false</default>
+                <label>Parent/Guardian</label>
+            </value>
+            <value>
+                <fullName>Permanence Lead</fullName>
+                <default>false</default>
+                <label>Permanence Lead</label>
+            </value>
+            <value>
+                <fullName>Probation Officer</fullName>
+                <default>false</default>
+                <label>Probation Officer</label>
+            </value>
+            <value>
+                <fullName>Registered Manager</fullName>
+                <default>false</default>
+                <label>Registered Manager</label>
+            </value>
+            <value>
+                <fullName>Senior Nurse</fullName>
+                <default>false</default>
+                <label>Senior Nurse</label>
+            </value>
+            <value>
+                <fullName>Senior Practitioner</fullName>
+                <default>false</default>
+                <label>Senior Practitioner</label>
+            </value>
+            <value>
+                <fullName>Sister</fullName>
+                <default>false</default>
+                <label>Sister</label>
+            </value>
+            <value>
+                <fullName>Site Manager</fullName>
+                <default>false</default>
+                <label>Site Manager</label>
+            </value>
+            <value>
+                <fullName>Social Worker</fullName>
+                <default>false</default>
+                <label>Social Worker</label>
+            </value>
+            <value>
+                <fullName>Social Worker Manager</fullName>
+                <default>false</default>
+                <label>Social Worker Manager</label>
+            </value>
+            <value>
+                <fullName>Support Worker</fullName>
+                <default>false</default>
+                <label>Support Worker</label>
+            </value>
+            <value>
+                <fullName>Team Manager/Team Leader</fullName>
+                <default>false</default>
+                <label>Team Manager/Team Leader</label>
+            </value>
+            <value>
+                <fullName>Ward Manager</fullName>
+                <default>false</default>
+                <label>Ward Manager</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

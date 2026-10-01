@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__SubmittalsListPage__c</fullName>
+    <deprecated>false</deprecated>
+    <label>SubmittalsListPage</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>job</fullName>
+                <default>false</default>
+                <label>job</label>
+            </value>
+            <value>
+                <fullName>application</fullName>
+                <default>false</default>
+                <label>application</label>
+            </value>
+            <value>
+                <fullName>account</fullName>
+                <default>false</default>
+                <label>account</label>
+            </value>
+            <value>
+                <fullName>All</fullName>
+                <default>false</default>
+                <label>All</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

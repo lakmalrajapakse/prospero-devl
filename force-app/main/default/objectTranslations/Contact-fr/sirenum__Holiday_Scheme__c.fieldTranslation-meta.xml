@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>0 signifie qu&apos;il n&apos;y a pas de régime de congé et 11 qu&apos;il en y a un pour les personnes de DLR</help>
+    <label><!-- Holiday Scheme --></label>
+    <name>sirenum__Holiday_Scheme__c</name>
+    <picklistValues>
+        <masterLabel>0</masterLabel>
+        <translation><!-- 0 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11</masterLabel>
+        <translation><!-- 11 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

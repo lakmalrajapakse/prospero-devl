@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__PTS_Audit__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Logic to decide if a PTS is valid, produces text Valid / Invalid, No PTS</description>
+    <externalId>false</externalId>
+    <formula>IF(sirenum__PTS_AC_Expiry_Date__c  &gt;  TODAY()   &amp;&amp;   sirenum__PTS_DCCR_Expiry_Date__c  &gt;  TODAY(), &quot;PTS AC/DCCR Valid&quot;, IF(sirenum__PTS_AC_Expiry_Date__c  &gt;  TODAY(), &quot;PTS AC Valid&quot;, IF(sirenum__PTS_DCCR_Expiry_Date__c  &gt;  TODAY(), &quot;PTS DCCR Valid&quot;, IF(NOT(ISNULL(sirenum__PTS_AC_Expiry_Date__c)) || NOT(ISNULL(sirenum__PTS_DCCR_Expiry_Date__c)), &quot;Invalid&quot;, &quot;N/A&quot;))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If person has no card will show &quot;N/A&quot;. IF card expired will show &quot;Invalid&quot;. otherwise shows Says the name of the card and &quot;Valid&quot;</inlineHelpText>
+    <label>PTS Audit</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

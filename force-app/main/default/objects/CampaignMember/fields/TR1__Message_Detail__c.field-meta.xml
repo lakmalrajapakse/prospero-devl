@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Message_Detail__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <description>Lookup to the Message Detail object used for the SFMC/Digital Engagement integration.</description>
+    <inlineHelpText>Lookup to the Message Detail object used for the SFMC/Digital Engagement integration.</inlineHelpText>
+    <label>Message Detail</label>
+    <referenceTo>TR1__Message_Detail__c</referenceTo>
+    <relationshipLabel>Campaign Members</relationshipLabel>
+    <relationshipName>Campaign_Members</relationshipName>
+    <required>false</required>
+    <type>Lookup</type>
+</CustomField>

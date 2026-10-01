@@ -1,0 +1,12 @@
+Sie haben kürzlich versucht, eine Aktion in {!Community_Name} durchzuführen.
+Aktion: {!Action}
+
+Browser: {!Browser}
+Betriebssystem: {!Operating_System}
+Benutzername: {!Receiving_User.Username}
+
+Um die Sicherheit Ihres Kontos zu sichern, müssen wir Ihre Identität verifizieren. Geben Sie den folgenden Code ein, wenn Sie von {!Community_Name} dazu aufgefordert werden.
+
+Verifizierungscode: {!Verification_Code}
+
+Falls Sie nicht versucht haben, diese Aktion in {!Community_Name} durchzuführen, oder falls Sie diesen Browser oder dieses Betriebssystem nicht kennen, wenden Sie sich an Ihren {!Community_Name} Administrator.

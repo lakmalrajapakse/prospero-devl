@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Dit is een overzicht van gegevens die voor personeelseden ontbreken en moeten worden overgebracht naar Sage</help>
+    <label><!-- Sage Missing (Staff) --></label>
+    <name>sirenum__Sage_Missing_staff__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pupil_Profile__c</fullName>
+    <label>Pupil Profile</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Child In Need</fullName>
+                <default>false</default>
+                <label>Child In Need</label>
+            </value>
+            <value>
+                <fullName>Child Protection Plan</fullName>
+                <default>false</default>
+                <label>Child Protection Plan</label>
+            </value>
+            <value>
+                <fullName>Child Looked After</fullName>
+                <default>false</default>
+                <label>Child Looked After</label>
+            </value>
+            <value>
+                <fullName>EHCP (Educational Health Care Plan)</fullName>
+                <default>false</default>
+                <label>EHCP (Educational Health Care Plan)</label>
+            </value>
+            <value>
+                <fullName>EAL (English as an Additional Language)</fullName>
+                <default>false</default>
+                <label>EAL (English as an Additional Language)</label>
+            </value>
+            <value>
+                <fullName>NEET (Not In Education Employment or Training)</fullName>
+                <default>false</default>
+                <label>NEET (Not In Education Employment or Training)</label>
+            </value>
+            <value>
+                <fullName>SEN (no EHCP)</fullName>
+                <default>false</default>
+                <label>SEN (no EHCP)</label>
+            </value>
+            <value>
+                <fullName>Court Care Plan</fullName>
+                <default>false</default>
+                <label>Court Care Plan</label>
+            </value>
+            <value>
+                <fullName>DoLS</fullName>
+                <default>false</default>
+                <label>DoLS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

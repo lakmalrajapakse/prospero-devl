@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Formule om datum-/tijdwaarde te berekenen die wordt gebruikt om activiteiten te sorteren in de gecombineerde weergave voor de Power Note-lijstcomponent.</help>
+    <label><!-- Date To Sort By --></label>
+    <name>TR1__Date_To_Sort_By__c</name>
+</CustomFieldTranslation>

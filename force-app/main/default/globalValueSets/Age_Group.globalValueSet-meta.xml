@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Mother and Baby</fullName>
+        <default>false</default>
+        <label>Mother and Baby</label>
+    </customValue>
+    <customValue>
+        <fullName>0–3 (Nursery / Early Childhood)</fullName>
+        <default>false</default>
+        <label>0–3 (Nursery / Early Childhood)</label>
+    </customValue>
+    <customValue>
+        <fullName>3–4 (Preschool / Nursery Upper)</fullName>
+        <default>false</default>
+        <label>3–4 (Preschool / Nursery Upper)</label>
+    </customValue>
+    <customValue>
+        <fullName>4–8 (KS1 Primary age)</fullName>
+        <default>false</default>
+        <label>4–8 (KS1 Primary age)</label>
+    </customValue>
+    <customValue>
+        <fullName>8–11 (KS2 Primary age)</fullName>
+        <default>false</default>
+        <label>8–11 (KS2 Primary age)</label>
+    </customValue>
+    <customValue>
+        <fullName>11–14 (KS3 Secondary age)</fullName>
+        <default>false</default>
+        <label>11–14 (KS3 Secondary age)</label>
+    </customValue>
+    <customValue>
+        <fullName>14–16 (KS4 Secondary age)</fullName>
+        <default>false</default>
+        <label>14–16 (KS4 Secondary age)</label>
+    </customValue>
+    <customValue>
+        <fullName>16–18 (FE)</fullName>
+        <default>false</default>
+        <label>16–18 (FE)</label>
+    </customValue>
+    <customValue>
+        <fullName>18–25 (Young Adult/HE)</fullName>
+        <default>false</default>
+        <label>18–25 (Young Adult/HE)</label>
+    </customValue>
+    <customValue>
+        <fullName>25–64 (Adult)</fullName>
+        <default>false</default>
+        <label>25–64 (Adult)</label>
+    </customValue>
+    <customValue>
+        <fullName>65+ (Elderly)</fullName>
+        <default>false</default>
+        <label>65+ (Elderly)</label>
+    </customValue>
+    <masterLabel>Age Group</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

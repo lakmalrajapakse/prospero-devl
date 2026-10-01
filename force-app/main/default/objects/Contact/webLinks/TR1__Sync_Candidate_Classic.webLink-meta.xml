@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Sync_Candidate_Classic</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Sync with LinkedIn</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/29.0/apex.js&quot;)}
+
+var ns = &apos;&apos;;
+var result = sforce.connection.describeGlobal();
+var sobj = result.getArray(&quot;sobjects&quot;).find(sobj =&gt; sobj.name.indexOf(&apos;__BHLI_LinkedInSynchronization__c&apos;) &gt; 0);
+
+if (sobj) {
+  ns = sobj.name.substring(0, sobj.name.indexOf(&apos;__BHLI_LinkedInSynchronization__c&apos;)) + &apos;.&apos;;
+}
+
+sforce.apex.execute(ns + &quot;BHLI_CandidateSyncController&quot;, &quot;syncCandidate&quot;, {candidateId:&quot;{!Contact.Id}&quot;}, function(result) {
+alert(result.message);
+
+if (result.success === &apos;true&apos;) {
+  window.location.reload();
+}
+}, false);</url>
+</WebLink>

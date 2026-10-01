@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Distance (miles) the Candidate is willing to travel using Public Transport --></help>
+    <label><!-- Distance willing to travel --></label>
+    <name>TR1__Distance_willing_to_travel__c</name>
+</CustomFieldTranslation>

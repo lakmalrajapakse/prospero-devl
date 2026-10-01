@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Boolean formula indicating if the current user initiated the import. --></help>
+    <label><!-- Imported By You --></label>
+    <name>TR1__Imported_By_Current_User__c</name>
+</CustomFieldTranslation>

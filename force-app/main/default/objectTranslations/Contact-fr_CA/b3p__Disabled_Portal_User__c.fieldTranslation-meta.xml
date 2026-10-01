@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Check this and we will prevent portal logins for this user. --></help>
+    <label><!-- Disabled Portal User --></label>
+    <name>b3p__Disabled_Portal_User__c</name>
+</CustomFieldTranslation>

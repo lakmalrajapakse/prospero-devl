@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Provision Type --></label>
+    <name>Provision_Type__c</name>
+    <picklistValues>
+        <masterLabel>Alternative Provision</masterLabel>
+        <translation><!-- Alternative Provision --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Supplementary</masterLabel>
+        <translation><!-- Supplementary --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

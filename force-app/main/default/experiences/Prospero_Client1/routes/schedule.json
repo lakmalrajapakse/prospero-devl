@@ -1,0 +1,12 @@
+{
+  "activeViewId" : null,
+  "appPageId" : "8c871e13-6d08-4440-b759-c322ea3acaef",
+  "configurationTags" : [ ],
+  "devName" : "schedule__c",
+  "id" : "93e292e7-4afc-4def-adca-d932b1394113",
+  "label" : "Schedule",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-schedule",
+  "type" : "route",
+  "urlPrefix" : "schedule"
+}

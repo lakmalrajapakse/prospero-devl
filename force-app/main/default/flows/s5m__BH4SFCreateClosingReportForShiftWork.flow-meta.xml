@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>For closing reports with a record type of &quot;Shift Work&quot;, sets the account to that of the account on the job to which the closing report is assigned and ensures the job percentage is set to 100</description>
+    <environments>Default</environments>
+    <label>Set Required Fields for Shift Work Closing Report (BH4SF)</label>
+    <processType>AutoLaunchedFlow</processType>
+</Flow>

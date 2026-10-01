@@ -1,126 +1,34 @@
+/*
+@author: Rishikesh Kumar Suman
+@Date: 09-30-2026
+@Desc: 
+     * Main method called from BEFORE UPDATE triggers.
+     *
+     * The method dynamically reads the Evertime_Sync_Field
+     * Field Set from the object and checks whether any field
+     * in that Field Set has changed.
+     *
+     * If:
+     * 1. Last_Evertime_Sync__c is populated
+     * 2. Any field in Evertime_Sync_Field has changed
+     *
+     * Then:
+     * Evertime_Sync_Required__c is set to the current date/time.
+*/
 public without sharing class EvertimeSyncUtility {
 
+    private static final String FIELD_SET_NAME = 'Evertime_Sync_Field';
     private static final String SYNC_REQUIRED_FIELD = 'Evertime_Sync_Required__c';
     private static final String LAST_SYNC_FIELD = 'Last_Evertime_Sync__c';
-
-    /**
-     * Object → Evertime fields.
-     * Evertime Sync fields from the spreadsheet.
-     */
-    private static final Map<String, List<String>> EVERTIME_FIELDS = new Map<String, List<String>>{
-            'Account' => new List<String>{
-                'Email__c',
-                'Description',
-                'Diocese__c'
-            },
-
-            'Contact' => new List<String>{
-                'TR1__Batch_ID__c',
-                'Birthdate',
-                'Brand_Single_Pick__c'
-            },
-
-            'Commission_Split__c' => new List<String>{
-                'Placement__c',
-                'Closing_Report__c',
-                'Split_Percentage__c'
-            },
-
-            'sirenum__Placement__c' => new List<String>{
-                'sirenum__Dirty__c',
-                'sirenum__End_Date__c',
-                'sirenum__Charge_Rate__c'
-            },
-
-            'sirenum__ProActiveContract__c' => new List<String>{
-                'sirenum__PO_Number__c',
-                'sirenum__PO_Source__c',
-                'sirenum__PO_Expires__c'
-            },
-
-            'sirenum__Rate_Card__c' => new List<String>{
-                'sirenum__Sirenum_Contract__c',
-                'sirenum__Site__c',
-                'sirenum__Job_Type__c'
-            },
-
-            'sirenum__Rate_Card_Page__c' => new List<String>{
-                'sirenum__Valid_From_Date__c',
-                'sirenum__Valid_Until_Date__c',
-                'sirenum__Rate_Type__c'
-            },
-
-            'sirenum__Rate_Line__c' => new List<String>{
-                'sirenum__Day_Type__c',
-                'sirenum__End_Hour__c',
-                'Margin__c'
-            },
-
-            'sirenum__Rate_Modifier__c' => new List<String>{
-                'Margin__c',
-                'Margin_Type__c',
-                'sirenum__Pay_Rate__c'
-            },
-
-            'sirenum__Shift__c' => new List<String>{
-                'sirenum__Break_Length__c',
-                'sirenum__Break_Override__c',
-                'sirenum__BreakStartTime__c'
-            },
-
-            'sirenum__Site__c' => new List<String>{
-                'sirenum__City__c',
-                'sirenum__Country__c',
-                'sirenum__AWR_Group__c'
-            },
-
-            'Team_User__c' => new List<String>{
-                'User__c',
-                'Team__c'
-            },
-
-            'TR1__Closing_Report__c' => new List<String>{
-                'Academic_Year__c',
-                'TR1__Assignment_Ended__c',
-                'TR1__Contract_End_Date__c'
-            },
-
-            'TR1__Job__c' => new List<String>{
-                'TR1__Actual_Total__c',
-                'TR1__Actual_Bonus__c',
-                'TR1__Bonus__c'
-            },
-
-            'User' => new List<String>{
-                'CompanyName',
-                'Division',
-                'Department'
-            },
-
-            'sirenum__Expense__c' => new List<String>{
-                'sirenum__Charge_Code__c',
-                'sirenum__Comments__c',
-                'sirenum__Date_of_expense__c'
-            }
-        };
-
-
-    /**
-     * Main method called from the BEFORE UPDATE trigger.
-     */
+    
     public static void process(List<SObject> newRecords,Map<Id, SObject> oldMap) {
         if (newRecords == null ||newRecords.isEmpty() ||oldMap == null ||oldMap.isEmpty()) {
             return;
         }
+        Schema.SObjectType objectType = newRecords[0].getSObjectType();
+        List<String> fieldsToCheck = getEvertimeFields(objectType);
 
-        String objectName = newRecords[0]
-            .getSObjectType()
-            .getDescribe()
-            .getName();
-
-        List<String> fieldsToCheck = EVERTIME_FIELDS.get(objectName);
-
-        if (fieldsToCheck == null || fieldsToCheck.isEmpty()) {
+        if (fieldsToCheck.isEmpty()) {
             return;
         }
         Datetime currentDateTime = System.now();
@@ -131,46 +39,83 @@ public without sharing class EvertimeSyncUtility {
                 continue;
             }
             SObject oldRecord = oldMap.get(newRecord.Id);
+
             if (oldRecord == null) {
                 continue;
             }
-
-            /*
-             * Only process records that have already been
-             * synchronized with Evertime.
-             */
-            Datetime lastEvertimeSync =(Datetime) newRecord.get(LAST_SYNC_FIELD);
+            Datetime lastEvertimeSync = (Datetime)newRecord.get(LAST_SYNC_FIELD);
 
             if (lastEvertimeSync == null) {
                 continue;
             }
-            /*
-             * Check the 3 configured Evertime fields.
-             */
             if (hasFieldChanged(newRecord,oldRecord,fieldsToCheck)) {
                 newRecord.put(SYNC_REQUIRED_FIELD,currentDateTime);
             }
         }
     }
     /**
-     * Checks whether any configured Evertime field changed.
+     * Dynamically gets all field API names from the
+     * Evertime_Sync_Field Field Set for the current object.
+     *
+     * Example:
+     *
+     * Account
+     *   -> Evertime_Sync_Field
+     *      -> Email__c
+     *      -> Description
+     *      -> Phone
+     *      -> Industry
+     *
+     * The number of fields can be different for every object.
+     */
+    private static List<String> getEvertimeFields(Schema.SObjectType objectType) {
+        List<String> fieldNames = new List<String>();
+
+        if (objectType == null) {
+            return fieldNames;
+        }
+        Schema.DescribeSObjectResult objectDescribe = objectType.getDescribe();
+        Map<String, Schema.FieldSet> fieldSets = objectDescribe.fieldSets.getMap();
+
+        if (!fieldSets.containsKey(FIELD_SET_NAME)) {
+            return fieldNames;
+        }
+        Schema.FieldSet evertimeFieldSet = fieldSets.get(FIELD_SET_NAME);
+        for (Schema.FieldSetMember fieldMember :evertimeFieldSet.getFields()) {
+            fieldNames.add(fieldMember.getFieldPath());
+        }
+        return fieldNames;
+    }
+
+    /**
+     * Checks whether any field in the Evertime
+     * Field Set has changed.
+     *
+     * Handles:
+     *
+     * NULL -> NULL       = No change
+     * NULL -> Value      = Changed
+     * Value -> NULL      = Changed
+     * Same Value -> Same = No change
+     * Value -> Value     = Changed
      */
     private static Boolean hasFieldChanged(SObject newRecord,SObject oldRecord,List<String> fieldsToCheck) {
         for (String fieldName : fieldsToCheck) {
-            
+
             Object oldValue = oldRecord.get(fieldName);
-            Object newValue = newRecord.get(fieldName);            
+            Object newValue = newRecord.get(fieldName);
+            
             if (oldValue == null && newValue == null) {
                 continue;
-            }            
+            }
             if (oldValue == null || newValue == null) {
                 return true;
-            }          
+            }
             if (!oldValue.equals(newValue)) {
                 return true;
             }
         }
-        
+
         return false;
     }
 }

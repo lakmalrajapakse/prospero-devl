@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Last_Timesheet__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>The week ending date of this employee&apos;s most recent timesheet</inlineHelpText>
+    <label>Last Timesheet</label>
+    <summarizedField>sirenum__Timesheet__c.sirenum__Week_Ending__c</summarizedField>
+    <summaryForeignKey>sirenum__Timesheet__c.sirenum__Worker__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

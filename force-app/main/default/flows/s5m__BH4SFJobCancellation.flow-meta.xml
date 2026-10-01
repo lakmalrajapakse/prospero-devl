@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <description>Sets Cancelled and Cancellation Reason fields depending on the closed reason of a closed job</description>
+    <label>Job: Cancellation</label>
+    <processType>AutoLaunchedFlow</processType>
+</Flow>

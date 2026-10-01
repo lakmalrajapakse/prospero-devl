@@ -1,0 +1,3978 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Regional_Area__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Regional Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TR1__State_Area__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abilene Metro Area</fullName>
+                <default>false</default>
+                <label>Abilene Metro Area</label>
+            </value>
+            <value>
+                <fullName>Akron Metro Area</fullName>
+                <default>false</default>
+                <label>Akron Metro Area</label>
+            </value>
+            <value>
+                <fullName>Alabama All</fullName>
+                <default>false</default>
+                <label>Alabama All</label>
+            </value>
+            <value>
+                <fullName>Alaska All</fullName>
+                <default>false</default>
+                <label>Alaska All</label>
+            </value>
+            <value>
+                <fullName>Albany Metro Area</fullName>
+                <default>false</default>
+                <label>Albany Metro Area</label>
+            </value>
+            <value>
+                <fullName>Albany-Schenectady-Troy Metro Area</fullName>
+                <default>false</default>
+                <label>Albany-Schenectady-Troy Metro Area</label>
+            </value>
+            <value>
+                <fullName>Albuquerque Metro Area</fullName>
+                <default>false</default>
+                <label>Albuquerque Metro Area</label>
+            </value>
+            <value>
+                <fullName>Alexandria Metro Area</fullName>
+                <default>false</default>
+                <label>Alexandria Metro Area</label>
+            </value>
+            <value>
+                <fullName>Allentown-Bethlehem-Easton Metro Area</fullName>
+                <default>false</default>
+                <label>Allentown-Bethlehem-Easton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Altoona Metro Area</fullName>
+                <default>false</default>
+                <label>Altoona Metro Area</label>
+            </value>
+            <value>
+                <fullName>Amarillo Metro Area</fullName>
+                <default>false</default>
+                <label>Amarillo Metro Area</label>
+            </value>
+            <value>
+                <fullName>Ames Metro Area</fullName>
+                <default>false</default>
+                <label>Ames Metro Area</label>
+            </value>
+            <value>
+                <fullName>Anchorage Metro Area</fullName>
+                <default>false</default>
+                <label>Anchorage Metro Area</label>
+            </value>
+            <value>
+                <fullName>Anderson (IN) Metro Area</fullName>
+                <default>false</default>
+                <label>Anderson (IN) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Anderson (SC) Metro Area</fullName>
+                <default>false</default>
+                <label>Anderson (SC) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Ann Arbor Metro Area</fullName>
+                <default>false</default>
+                <label>Ann Arbor Metro Area</label>
+            </value>
+            <value>
+                <fullName>Anniston-Oxford Metro Area</fullName>
+                <default>false</default>
+                <label>Anniston-Oxford Metro Area</label>
+            </value>
+            <value>
+                <fullName>Appleton Metro Area</fullName>
+                <default>false</default>
+                <label>Appleton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Arizona All</fullName>
+                <default>false</default>
+                <label>Arizona All</label>
+            </value>
+            <value>
+                <fullName>Arkansas All</fullName>
+                <default>false</default>
+                <label>Arkansas All</label>
+            </value>
+            <value>
+                <fullName>Asheville Metro Area</fullName>
+                <default>false</default>
+                <label>Asheville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Athens-Clarke County Metro Area</fullName>
+                <default>false</default>
+                <label>Athens-Clarke County Metro Area</label>
+            </value>
+            <value>
+                <fullName>Atlanta Metro Area</fullName>
+                <default>false</default>
+                <label>Atlanta Metro Area</label>
+            </value>
+            <value>
+                <fullName>Atlantic City Metro Area</fullName>
+                <default>false</default>
+                <label>Atlantic City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Auburn-Opelika Metro Area</fullName>
+                <default>false</default>
+                <label>Auburn-Opelika Metro Area</label>
+            </value>
+            <value>
+                <fullName>Augusta-Richmond County Metro Area</fullName>
+                <default>false</default>
+                <label>Augusta-Richmond County Metro Area</label>
+            </value>
+            <value>
+                <fullName>Austin-Round Rock-San Marcos Metro Area</fullName>
+                <default>false</default>
+                <label>Austin-Round Rock-San Marcos Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bakersfield Metro Area</fullName>
+                <default>false</default>
+                <label>Bakersfield Metro Area</label>
+            </value>
+            <value>
+                <fullName>Baltimore Metro Area</fullName>
+                <default>false</default>
+                <label>Baltimore Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bangor Metro Area</fullName>
+                <default>false</default>
+                <label>Bangor Metro Area</label>
+            </value>
+            <value>
+                <fullName>Barnstable Town Metro Area</fullName>
+                <default>false</default>
+                <label>Barnstable Town Metro Area</label>
+            </value>
+            <value>
+                <fullName>Baton Rouge Metro Area</fullName>
+                <default>false</default>
+                <label>Baton Rouge Metro Area</label>
+            </value>
+            <value>
+                <fullName>Battle Creek Metro Area</fullName>
+                <default>false</default>
+                <label>Battle Creek Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bay City Metro Area</fullName>
+                <default>false</default>
+                <label>Bay City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Beaumont-Port Arthur Metro Area</fullName>
+                <default>false</default>
+                <label>Beaumont-Port Arthur Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bellingham Metro Area</fullName>
+                <default>false</default>
+                <label>Bellingham Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bend Metro Area</fullName>
+                <default>false</default>
+                <label>Bend Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bethesda Metro Area</fullName>
+                <default>false</default>
+                <label>Bethesda Metro Area</label>
+            </value>
+            <value>
+                <fullName>Billings Metro Area</fullName>
+                <default>false</default>
+                <label>Billings Metro Area</label>
+            </value>
+            <value>
+                <fullName>Binghamton Metro Area</fullName>
+                <default>false</default>
+                <label>Binghamton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Birmingham Metro Area</fullName>
+                <default>false</default>
+                <label>Birmingham Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bismarck Metro Area</fullName>
+                <default>false</default>
+                <label>Bismarck Metro Area</label>
+            </value>
+            <value>
+                <fullName>Blacksburg-Christiansburg-Radford Metro Area</fullName>
+                <default>false</default>
+                <label>Blacksburg-Christiansburg-Radford Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bloomington Metro Area</fullName>
+                <default>false</default>
+                <label>Bloomington Metro Area</label>
+            </value>
+            <value>
+                <fullName>Boise City Metro Area</fullName>
+                <default>false</default>
+                <label>Boise City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Boston Metro Area</fullName>
+                <default>false</default>
+                <label>Boston Metro Area</label>
+            </value>
+            <value>
+                <fullName>Boulder Metro Area</fullName>
+                <default>false</default>
+                <label>Boulder Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bowling Green Metro Area</fullName>
+                <default>false</default>
+                <label>Bowling Green Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bremerton-Silverdale Metro Area</fullName>
+                <default>false</default>
+                <label>Bremerton-Silverdale Metro Area</label>
+            </value>
+            <value>
+                <fullName>Bridgeport-Stamford-Norwalk Metro Area</fullName>
+                <default>false</default>
+                <label>Bridgeport-Stamford-Norwalk Metro Area</label>
+            </value>
+            <value>
+                <fullName>Brownsville-Harlingen Metro Area</fullName>
+                <default>false</default>
+                <label>Brownsville-Harlingen Metro Area</label>
+            </value>
+            <value>
+                <fullName>Brunswick Metro Area</fullName>
+                <default>false</default>
+                <label>Brunswick Metro Area</label>
+            </value>
+            <value>
+                <fullName>Buffalo-Niagra Falls Metro Area</fullName>
+                <default>false</default>
+                <label>Buffalo-Niagra Falls Metro Area</label>
+            </value>
+            <value>
+                <fullName>Burlington Metro Area</fullName>
+                <default>false</default>
+                <label>Burlington Metro Area</label>
+            </value>
+            <value>
+                <fullName>Burlington-South Burlington Metro Area</fullName>
+                <default>false</default>
+                <label>Burlington-South Burlington Metro Area</label>
+            </value>
+            <value>
+                <fullName>California All</fullName>
+                <default>false</default>
+                <label>California All</label>
+            </value>
+            <value>
+                <fullName>Cambridge Metro Area</fullName>
+                <default>false</default>
+                <label>Cambridge Metro Area</label>
+            </value>
+            <value>
+                <fullName>Camden Metro Area</fullName>
+                <default>false</default>
+                <label>Camden Metro Area</label>
+            </value>
+            <value>
+                <fullName>Canada All</fullName>
+                <default>false</default>
+                <label>Canada All</label>
+            </value>
+            <value>
+                <fullName>Canton-Massillon Metro Area</fullName>
+                <default>false</default>
+                <label>Canton-Massillon Metro Area</label>
+            </value>
+            <value>
+                <fullName>Cape Coral-Fort Myers Metro Area</fullName>
+                <default>false</default>
+                <label>Cape Coral-Fort Myers Metro Area</label>
+            </value>
+            <value>
+                <fullName>Cape Girardeau-Jackson Metro Area</fullName>
+                <default>false</default>
+                <label>Cape Girardeau-Jackson Metro Area</label>
+            </value>
+            <value>
+                <fullName>Carson City Metro Area</fullName>
+                <default>false</default>
+                <label>Carson City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Casper Metro Area</fullName>
+                <default>false</default>
+                <label>Casper Metro Area</label>
+            </value>
+            <value>
+                <fullName>Cedar Rapids Metro Area</fullName>
+                <default>false</default>
+                <label>Cedar Rapids Metro Area</label>
+            </value>
+            <value>
+                <fullName>Champaign-Urbana Metro Area</fullName>
+                <default>false</default>
+                <label>Champaign-Urbana Metro Area</label>
+            </value>
+            <value>
+                <fullName>Charleston Metro Area</fullName>
+                <default>false</default>
+                <label>Charleston Metro Area</label>
+            </value>
+            <value>
+                <fullName>Charleston-North Charleston-Summerville Metro Area</fullName>
+                <default>false</default>
+                <label>Charleston-North Charleston-Summerville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Charlotte-Gastonia-Rock Hill Metro Area</fullName>
+                <default>false</default>
+                <label>Charlotte-Gastonia-Rock Hill Metro Area</label>
+            </value>
+            <value>
+                <fullName>Charlottesville Metro Area</fullName>
+                <default>false</default>
+                <label>Charlottesville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Chattanooga Metro Area</fullName>
+                <default>false</default>
+                <label>Chattanooga Metro Area</label>
+            </value>
+            <value>
+                <fullName>Cheyenne Metro Area</fullName>
+                <default>false</default>
+                <label>Cheyenne Metro Area</label>
+            </value>
+            <value>
+                <fullName>Chicago Metro Area</fullName>
+                <default>false</default>
+                <label>Chicago Metro Area</label>
+            </value>
+            <value>
+                <fullName>Chico Metro Area</fullName>
+                <default>false</default>
+                <label>Chico Metro Area</label>
+            </value>
+            <value>
+                <fullName>Cincinnati Metro Area</fullName>
+                <default>false</default>
+                <label>Cincinnati Metro Area</label>
+            </value>
+            <value>
+                <fullName>Clarksville Metro Area</fullName>
+                <default>false</default>
+                <label>Clarksville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Cleveland-Elyria-Mentor Metro Area</fullName>
+                <default>false</default>
+                <label>Cleveland-Elyria-Mentor Metro Area</label>
+            </value>
+            <value>
+                <fullName>Cleveland Metro Area</fullName>
+                <default>false</default>
+                <label>Cleveland Metro Area</label>
+            </value>
+            <value>
+                <fullName>Coeur d&apos;Alene Metro Area</fullName>
+                <default>false</default>
+                <label>Coeur d&apos;Alene Metro Area</label>
+            </value>
+            <value>
+                <fullName>College Station Metro Area</fullName>
+                <default>false</default>
+                <label>College Station Metro Area</label>
+            </value>
+            <value>
+                <fullName>Colorado All</fullName>
+                <default>false</default>
+                <label>Colorado All</label>
+            </value>
+            <value>
+                <fullName>Colorado Springs Metro Area</fullName>
+                <default>false</default>
+                <label>Colorado Springs Metro Area</label>
+            </value>
+            <value>
+                <fullName>Columbia (MO) Metro Area</fullName>
+                <default>false</default>
+                <label>Columbia (MO) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Columbia (SC) Metro Area</fullName>
+                <default>false</default>
+                <label>Columbia (SC) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Columbus (GA/AL) Metro Area</fullName>
+                <default>false</default>
+                <label>Columbus (GA/AL) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Columbus (IN) Metro Area</fullName>
+                <default>false</default>
+                <label>Columbus (IN) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Columbus (OH) Metro Area</fullName>
+                <default>false</default>
+                <label>Columbus (OH) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Connecticut All</fullName>
+                <default>false</default>
+                <label>Connecticut All</label>
+            </value>
+            <value>
+                <fullName>Corpus Christi Metro Area</fullName>
+                <default>false</default>
+                <label>Corpus Christi Metro Area</label>
+            </value>
+            <value>
+                <fullName>Corvallis Metro Area</fullName>
+                <default>false</default>
+                <label>Corvallis Metro Area</label>
+            </value>
+            <value>
+                <fullName>Crestview-Fort Walton-Destin Metro Area</fullName>
+                <default>false</default>
+                <label>Crestview-Fort Walton-Destin Metro Area</label>
+            </value>
+            <value>
+                <fullName>Cumberland Metro Area</fullName>
+                <default>false</default>
+                <label>Cumberland Metro Area</label>
+            </value>
+            <value>
+                <fullName>Dallas Metro Area</fullName>
+                <default>false</default>
+                <label>Dallas Metro Area</label>
+            </value>
+            <value>
+                <fullName>Dalton Metro Area</fullName>
+                <default>false</default>
+                <label>Dalton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Danville (IL) Metro Area</fullName>
+                <default>false</default>
+                <label>Danville (IL) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Danville (VA) Metro Area</fullName>
+                <default>false</default>
+                <label>Danville (VA) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Davenport-Moline-Rock Island Metro Area</fullName>
+                <default>false</default>
+                <label>Davenport-Moline-Rock Island Metro Area</label>
+            </value>
+            <value>
+                <fullName>Dayton Metro Area</fullName>
+                <default>false</default>
+                <label>Dayton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Decatur (AL) Metro Area</fullName>
+                <default>false</default>
+                <label>Decatur (AL) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Decatur (IL) Metro Area</fullName>
+                <default>false</default>
+                <label>Decatur (IL) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Delaware All</fullName>
+                <default>false</default>
+                <label>Delaware All</label>
+            </value>
+            <value>
+                <fullName>Deltona-Daytona Beach-Ormond Beach Metro Area</fullName>
+                <default>false</default>
+                <label>Deltona-Daytona Beach-Ormond Beach Metro Area</label>
+            </value>
+            <value>
+                <fullName>Denver Metro Area</fullName>
+                <default>false</default>
+                <label>Denver Metro Area</label>
+            </value>
+            <value>
+                <fullName>Des Moines Metro Area</fullName>
+                <default>false</default>
+                <label>Des Moines Metro Area</label>
+            </value>
+            <value>
+                <fullName>Detroit Metro Area</fullName>
+                <default>false</default>
+                <label>Detroit Metro Area</label>
+            </value>
+            <value>
+                <fullName>District of Columbia All</fullName>
+                <default>false</default>
+                <label>District of Columbia All</label>
+            </value>
+            <value>
+                <fullName>Dothan Metro Area</fullName>
+                <default>false</default>
+                <label>Dothan Metro Area</label>
+            </value>
+            <value>
+                <fullName>Dover Metro Area</fullName>
+                <default>false</default>
+                <label>Dover Metro Area</label>
+            </value>
+            <value>
+                <fullName>Dubuque Metro Area</fullName>
+                <default>false</default>
+                <label>Dubuque Metro Area</label>
+            </value>
+            <value>
+                <fullName>Duluth Metro Area</fullName>
+                <default>false</default>
+                <label>Duluth Metro Area</label>
+            </value>
+            <value>
+                <fullName>Durham-Chapel Hill Metro Area</fullName>
+                <default>false</default>
+                <label>Durham-Chapel Hill Metro Area</label>
+            </value>
+            <value>
+                <fullName>Eau Claire Metro Area</fullName>
+                <default>false</default>
+                <label>Eau Claire Metro Area</label>
+            </value>
+            <value>
+                <fullName>Edison-New Brunswick Metro Area</fullName>
+                <default>false</default>
+                <label>Edison-New Brunswick Metro Area</label>
+            </value>
+            <value>
+                <fullName>El Centro Metro Area</fullName>
+                <default>false</default>
+                <label>El Centro Metro Area</label>
+            </value>
+            <value>
+                <fullName>Elizabethtown Metro Area</fullName>
+                <default>false</default>
+                <label>Elizabethtown Metro Area</label>
+            </value>
+            <value>
+                <fullName>Elkhart Metro Area</fullName>
+                <default>false</default>
+                <label>Elkhart Metro Area</label>
+            </value>
+            <value>
+                <fullName>Elmira Metro Area</fullName>
+                <default>false</default>
+                <label>Elmira Metro Area</label>
+            </value>
+            <value>
+                <fullName>El Paso Metro Area</fullName>
+                <default>false</default>
+                <label>El Paso Metro Area</label>
+            </value>
+            <value>
+                <fullName>Erie Metro Area</fullName>
+                <default>false</default>
+                <label>Erie Metro Area</label>
+            </value>
+            <value>
+                <fullName>Eugene Metro Area</fullName>
+                <default>false</default>
+                <label>Eugene Metro Area</label>
+            </value>
+            <value>
+                <fullName>Evansville Metro Area</fullName>
+                <default>false</default>
+                <label>Evansville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Fairbanks Metro Area</fullName>
+                <default>false</default>
+                <label>Fairbanks Metro Area</label>
+            </value>
+            <value>
+                <fullName>Fargo Metro Area</fullName>
+                <default>false</default>
+                <label>Fargo Metro Area</label>
+            </value>
+            <value>
+                <fullName>Farmington Metro Area</fullName>
+                <default>false</default>
+                <label>Farmington Metro Area</label>
+            </value>
+            <value>
+                <fullName>Fayetteville Metro Area</fullName>
+                <default>false</default>
+                <label>Fayetteville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Flagstaff Metro Area</fullName>
+                <default>false</default>
+                <label>Flagstaff Metro Area</label>
+            </value>
+            <value>
+                <fullName>Flint Metro Area</fullName>
+                <default>false</default>
+                <label>Flint Metro Area</label>
+            </value>
+            <value>
+                <fullName>Florence Metro Area</fullName>
+                <default>false</default>
+                <label>Florence Metro Area</label>
+            </value>
+            <value>
+                <fullName>Florence-Muscle Shoals Metro Area</fullName>
+                <default>false</default>
+                <label>Florence-Muscle Shoals Metro Area</label>
+            </value>
+            <value>
+                <fullName>Florida All</fullName>
+                <default>false</default>
+                <label>Florida All</label>
+            </value>
+            <value>
+                <fullName>Fond du Lac Metro Area</fullName>
+                <default>false</default>
+                <label>Fond du Lac Metro Area</label>
+            </value>
+            <value>
+                <fullName>Fort Collins Metro Area</fullName>
+                <default>false</default>
+                <label>Fort Collins Metro Area</label>
+            </value>
+            <value>
+                <fullName>Fort Lauderdale Metro Area</fullName>
+                <default>false</default>
+                <label>Fort Lauderdale Metro Area</label>
+            </value>
+            <value>
+                <fullName>Fort Smith Metro Area</fullName>
+                <default>false</default>
+                <label>Fort Smith Metro Area</label>
+            </value>
+            <value>
+                <fullName>Fort Wayne Metro Area</fullName>
+                <default>false</default>
+                <label>Fort Wayne Metro Area</label>
+            </value>
+            <value>
+                <fullName>Fort Worth Metro Area</fullName>
+                <default>false</default>
+                <label>Fort Worth Metro Area</label>
+            </value>
+            <value>
+                <fullName>Fresno Metro Area</fullName>
+                <default>false</default>
+                <label>Fresno Metro Area</label>
+            </value>
+            <value>
+                <fullName>Gadsden Metro Area</fullName>
+                <default>false</default>
+                <label>Gadsden Metro Area</label>
+            </value>
+            <value>
+                <fullName>Gainesville (FL) Metro Area</fullName>
+                <default>false</default>
+                <label>Gainesville (FL) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Gainesville (GA) Metro Area</fullName>
+                <default>false</default>
+                <label>Gainesville (GA) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Gary Metro Area</fullName>
+                <default>false</default>
+                <label>Gary Metro Area</label>
+            </value>
+            <value>
+                <fullName>Georgia All</fullName>
+                <default>false</default>
+                <label>Georgia All</label>
+            </value>
+            <value>
+                <fullName>Glens Falls Metro Area</fullName>
+                <default>false</default>
+                <label>Glens Falls Metro Area</label>
+            </value>
+            <value>
+                <fullName>Goldsboro Metro Area</fullName>
+                <default>false</default>
+                <label>Goldsboro Metro Area</label>
+            </value>
+            <value>
+                <fullName>Grand Forks Metro Area</fullName>
+                <default>false</default>
+                <label>Grand Forks Metro Area</label>
+            </value>
+            <value>
+                <fullName>Grand Junction Metro Area</fullName>
+                <default>false</default>
+                <label>Grand Junction Metro Area</label>
+            </value>
+            <value>
+                <fullName>Grand Rapids Metro Area</fullName>
+                <default>false</default>
+                <label>Grand Rapids Metro Area</label>
+            </value>
+            <value>
+                <fullName>Great Falls Metro Area</fullName>
+                <default>false</default>
+                <label>Great Falls Metro Area</label>
+            </value>
+            <value>
+                <fullName>Greeley Metro Area</fullName>
+                <default>false</default>
+                <label>Greeley Metro Area</label>
+            </value>
+            <value>
+                <fullName>Green Bay Metro Area</fullName>
+                <default>false</default>
+                <label>Green Bay Metro Area</label>
+            </value>
+            <value>
+                <fullName>Greensboro Metro Area</fullName>
+                <default>false</default>
+                <label>Greensboro Metro Area</label>
+            </value>
+            <value>
+                <fullName>Greenville-Mauldin-Easley Metro Area</fullName>
+                <default>false</default>
+                <label>Greenville-Mauldin-Easley Metro Area</label>
+            </value>
+            <value>
+                <fullName>Greenville Metro Area</fullName>
+                <default>false</default>
+                <label>Greenville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Gulfport-Biloxi Metro Area</fullName>
+                <default>false</default>
+                <label>Gulfport-Biloxi Metro Area</label>
+            </value>
+            <value>
+                <fullName>Hagerstown-Martinsburg Metro Area</fullName>
+                <default>false</default>
+                <label>Hagerstown-Martinsburg Metro Area</label>
+            </value>
+            <value>
+                <fullName>Hanford-Corcoran Metro Area</fullName>
+                <default>false</default>
+                <label>Hanford-Corcoran Metro Area</label>
+            </value>
+            <value>
+                <fullName>Harrisburg-Carlisle Metro Area</fullName>
+                <default>false</default>
+                <label>Harrisburg-Carlisle Metro Area</label>
+            </value>
+            <value>
+                <fullName>Hartford Metro Area</fullName>
+                <default>false</default>
+                <label>Hartford Metro Area</label>
+            </value>
+            <value>
+                <fullName>Hattiesburg Metro Area</fullName>
+                <default>false</default>
+                <label>Hattiesburg Metro Area</label>
+            </value>
+            <value>
+                <fullName>Hawaii All</fullName>
+                <default>false</default>
+                <label>Hawaii All</label>
+            </value>
+            <value>
+                <fullName>Hickory-Lenoir-Morganton Metro Area</fullName>
+                <default>false</default>
+                <label>Hickory-Lenoir-Morganton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Hinesville-Fort Stewart Metro Area</fullName>
+                <default>false</default>
+                <label>Hinesville-Fort Stewart Metro Area</label>
+            </value>
+            <value>
+                <fullName>Holland-Grand Haven Metro Area</fullName>
+                <default>false</default>
+                <label>Holland-Grand Haven Metro Area</label>
+            </value>
+            <value>
+                <fullName>Honolulu Metro Area</fullName>
+                <default>false</default>
+                <label>Honolulu Metro Area</label>
+            </value>
+            <value>
+                <fullName>Hot Springs Metro Area</fullName>
+                <default>false</default>
+                <label>Hot Springs Metro Area</label>
+            </value>
+            <value>
+                <fullName>Houma-Bayou Cane-Thibodaux Metro Area</fullName>
+                <default>false</default>
+                <label>Houma-Bayou Cane-Thibodaux Metro Area</label>
+            </value>
+            <value>
+                <fullName>Houston Metro Area</fullName>
+                <default>false</default>
+                <label>Houston Metro Area</label>
+            </value>
+            <value>
+                <fullName>Huntington Metro Area</fullName>
+                <default>false</default>
+                <label>Huntington Metro Area</label>
+            </value>
+            <value>
+                <fullName>Huntsville Metro Area</fullName>
+                <default>false</default>
+                <label>Huntsville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Idaho All</fullName>
+                <default>false</default>
+                <label>Idaho All</label>
+            </value>
+            <value>
+                <fullName>Idaho Falls Metro Area</fullName>
+                <default>false</default>
+                <label>Idaho Falls Metro Area</label>
+            </value>
+            <value>
+                <fullName>Illinois All</fullName>
+                <default>false</default>
+                <label>Illinois All</label>
+            </value>
+            <value>
+                <fullName>Indiana All</fullName>
+                <default>false</default>
+                <label>Indiana All</label>
+            </value>
+            <value>
+                <fullName>Indianapolis Metro Area</fullName>
+                <default>false</default>
+                <label>Indianapolis Metro Area</label>
+            </value>
+            <value>
+                <fullName>International All</fullName>
+                <default>false</default>
+                <label>International All</label>
+            </value>
+            <value>
+                <fullName>Iowa All</fullName>
+                <default>false</default>
+                <label>Iowa All</label>
+            </value>
+            <value>
+                <fullName>Iowa City Metro Area</fullName>
+                <default>false</default>
+                <label>Iowa City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Ithaca Metro Area</fullName>
+                <default>false</default>
+                <label>Ithaca Metro Area</label>
+            </value>
+            <value>
+                <fullName>Jackson (MI) Metro Area</fullName>
+                <default>false</default>
+                <label>Jackson (MI) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Jackson (MS) Metro Area</fullName>
+                <default>false</default>
+                <label>Jackson (MS) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Jackson (TN) Metro Area</fullName>
+                <default>false</default>
+                <label>Jackson (TN) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Jacksonville (FL) Metro Area</fullName>
+                <default>false</default>
+                <label>Jacksonville (FL) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Jacksonville (NC) Metro Area</fullName>
+                <default>false</default>
+                <label>Jacksonville (NC) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Janesville Metro Area</fullName>
+                <default>false</default>
+                <label>Janesville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Jefferson City Metro Area</fullName>
+                <default>false</default>
+                <label>Jefferson City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Johnson City Metro Area</fullName>
+                <default>false</default>
+                <label>Johnson City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Johnstown Metro Area</fullName>
+                <default>false</default>
+                <label>Johnstown Metro Area</label>
+            </value>
+            <value>
+                <fullName>Jonesboro Metro Area</fullName>
+                <default>false</default>
+                <label>Jonesboro Metro Area</label>
+            </value>
+            <value>
+                <fullName>Joplin Metro Area</fullName>
+                <default>false</default>
+                <label>Joplin Metro Area</label>
+            </value>
+            <value>
+                <fullName>Juneau Metro Area</fullName>
+                <default>false</default>
+                <label>Juneau Metro Area</label>
+            </value>
+            <value>
+                <fullName>Kalamazoo Metro Area</fullName>
+                <default>false</default>
+                <label>Kalamazoo Metro Area</label>
+            </value>
+            <value>
+                <fullName>Kankakee Metro Area</fullName>
+                <default>false</default>
+                <label>Kankakee Metro Area</label>
+            </value>
+            <value>
+                <fullName>Kansas All</fullName>
+                <default>false</default>
+                <label>Kansas All</label>
+            </value>
+            <value>
+                <fullName>Kansas City Metro Area</fullName>
+                <default>false</default>
+                <label>Kansas City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Kennewick-Pasco-Richland Metro Area</fullName>
+                <default>false</default>
+                <label>Kennewick-Pasco-Richland Metro Area</label>
+            </value>
+            <value>
+                <fullName>Kentucky All</fullName>
+                <default>false</default>
+                <label>Kentucky All</label>
+            </value>
+            <value>
+                <fullName>Killeen-Temple-Fort Hood Metro Area</fullName>
+                <default>false</default>
+                <label>Killeen-Temple-Fort Hood Metro Area</label>
+            </value>
+            <value>
+                <fullName>Kingsport-Bristol Metro Area</fullName>
+                <default>false</default>
+                <label>Kingsport-Bristol Metro Area</label>
+            </value>
+            <value>
+                <fullName>Kingston Metro Area</fullName>
+                <default>false</default>
+                <label>Kingston Metro Area</label>
+            </value>
+            <value>
+                <fullName>Knoxville Metro Area</fullName>
+                <default>false</default>
+                <label>Knoxville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Kokomo Metro Area</fullName>
+                <default>false</default>
+                <label>Kokomo Metro Area</label>
+            </value>
+            <value>
+                <fullName>La Crosse Metro Area</fullName>
+                <default>false</default>
+                <label>La Crosse Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lafayette (IN) Metro Area</fullName>
+                <default>false</default>
+                <label>Lafayette (IN) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lafayette (LA) Metro Area</fullName>
+                <default>false</default>
+                <label>Lafayette (LA) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lake Charles Metro Area</fullName>
+                <default>false</default>
+                <label>Lake Charles Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lake County-Kenosha County Metro Area</fullName>
+                <default>false</default>
+                <label>Lake County-Kenosha County Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lake Havasu City-Kingman Metro Area</fullName>
+                <default>false</default>
+                <label>Lake Havasu City-Kingman Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lakeland-Winter Haven Metro Area</fullName>
+                <default>false</default>
+                <label>Lakeland-Winter Haven Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lancaster Metro Area</fullName>
+                <default>false</default>
+                <label>Lancaster Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lansing Metro Area</fullName>
+                <default>false</default>
+                <label>Lansing Metro Area</label>
+            </value>
+            <value>
+                <fullName>Laredo Metro Area</fullName>
+                <default>false</default>
+                <label>Laredo Metro Area</label>
+            </value>
+            <value>
+                <fullName>Las Cruces Metro Area</fullName>
+                <default>false</default>
+                <label>Las Cruces Metro Area</label>
+            </value>
+            <value>
+                <fullName>Las Vegas Metro Area</fullName>
+                <default>false</default>
+                <label>Las Vegas Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lawrence Metro Area</fullName>
+                <default>false</default>
+                <label>Lawrence Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lawton Metro Area</fullName>
+                <default>false</default>
+                <label>Lawton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lebanon Metro Area</fullName>
+                <default>false</default>
+                <label>Lebanon Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lewiston Metro Area</fullName>
+                <default>false</default>
+                <label>Lewiston Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lexington Metro Area</fullName>
+                <default>false</default>
+                <label>Lexington Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lima Metro Area</fullName>
+                <default>false</default>
+                <label>Lima Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lincoln Metro Area</fullName>
+                <default>false</default>
+                <label>Lincoln Metro Area</label>
+            </value>
+            <value>
+                <fullName>Little Rock Metro Area</fullName>
+                <default>false</default>
+                <label>Little Rock Metro Area</label>
+            </value>
+            <value>
+                <fullName>Logan Metro Area</fullName>
+                <default>false</default>
+                <label>Logan Metro Area</label>
+            </value>
+            <value>
+                <fullName>Longview (TX) Metro Area</fullName>
+                <default>false</default>
+                <label>Longview (TX) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Longview (WA) Metro Area</fullName>
+                <default>false</default>
+                <label>Longview (WA) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Los Angeles Metro Area</fullName>
+                <default>false</default>
+                <label>Los Angeles Metro Area</label>
+            </value>
+            <value>
+                <fullName>Louisiana All</fullName>
+                <default>false</default>
+                <label>Louisiana All</label>
+            </value>
+            <value>
+                <fullName>Louisville Metro Area</fullName>
+                <default>false</default>
+                <label>Louisville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lubbock Metro Area</fullName>
+                <default>false</default>
+                <label>Lubbock Metro Area</label>
+            </value>
+            <value>
+                <fullName>Lynchburg Metro Area</fullName>
+                <default>false</default>
+                <label>Lynchburg Metro Area</label>
+            </value>
+            <value>
+                <fullName>Macon Metro Area</fullName>
+                <default>false</default>
+                <label>Macon Metro Area</label>
+            </value>
+            <value>
+                <fullName>Madera Metro Area</fullName>
+                <default>false</default>
+                <label>Madera Metro Area</label>
+            </value>
+            <value>
+                <fullName>Madison Metro Area</fullName>
+                <default>false</default>
+                <label>Madison Metro Area</label>
+            </value>
+            <value>
+                <fullName>Maine All</fullName>
+                <default>false</default>
+                <label>Maine All</label>
+            </value>
+            <value>
+                <fullName>Manchester-Nashua Metro Area</fullName>
+                <default>false</default>
+                <label>Manchester-Nashua Metro Area</label>
+            </value>
+            <value>
+                <fullName>Manhattan (KS) Metro Area</fullName>
+                <default>false</default>
+                <label>Manhattan (KS) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Mankato Metro Area</fullName>
+                <default>false</default>
+                <label>Mankato Metro Area</label>
+            </value>
+            <value>
+                <fullName>Mansfield Metro Area</fullName>
+                <default>false</default>
+                <label>Mansfield Metro Area</label>
+            </value>
+            <value>
+                <fullName>Marin Metro Area</fullName>
+                <default>false</default>
+                <label>Marin Metro Area</label>
+            </value>
+            <value>
+                <fullName>Maryland All</fullName>
+                <default>false</default>
+                <label>Maryland All</label>
+            </value>
+            <value>
+                <fullName>Massachusetts All</fullName>
+                <default>false</default>
+                <label>Massachusetts All</label>
+            </value>
+            <value>
+                <fullName>McAllen-Edingburg-Mission Metro Area</fullName>
+                <default>false</default>
+                <label>McAllen-Edingburg-Mission Metro Area</label>
+            </value>
+            <value>
+                <fullName>Medford Metro Area</fullName>
+                <default>false</default>
+                <label>Medford Metro Area</label>
+            </value>
+            <value>
+                <fullName>Memphis Metro Area</fullName>
+                <default>false</default>
+                <label>Memphis Metro Area</label>
+            </value>
+            <value>
+                <fullName>Merced Metro Area</fullName>
+                <default>false</default>
+                <label>Merced Metro Area</label>
+            </value>
+            <value>
+                <fullName>Miami Metro Area</fullName>
+                <default>false</default>
+                <label>Miami Metro Area</label>
+            </value>
+            <value>
+                <fullName>Michigan All</fullName>
+                <default>false</default>
+                <label>Michigan All</label>
+            </value>
+            <value>
+                <fullName>Michigan City Metro Area</fullName>
+                <default>false</default>
+                <label>Michigan City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Midland Metro Area</fullName>
+                <default>false</default>
+                <label>Midland Metro Area</label>
+            </value>
+            <value>
+                <fullName>Milwaukee Metro Area</fullName>
+                <default>false</default>
+                <label>Milwaukee Metro Area</label>
+            </value>
+            <value>
+                <fullName>Minneapolis Metro Area</fullName>
+                <default>false</default>
+                <label>Minneapolis Metro Area</label>
+            </value>
+            <value>
+                <fullName>Minnesota All</fullName>
+                <default>false</default>
+                <label>Minnesota All</label>
+            </value>
+            <value>
+                <fullName>Mississippi All</fullName>
+                <default>false</default>
+                <label>Mississippi All</label>
+            </value>
+            <value>
+                <fullName>Missoula Metro Area</fullName>
+                <default>false</default>
+                <label>Missoula Metro Area</label>
+            </value>
+            <value>
+                <fullName>Missouri All</fullName>
+                <default>false</default>
+                <label>Missouri All</label>
+            </value>
+            <value>
+                <fullName>Mobile Metro Area</fullName>
+                <default>false</default>
+                <label>Mobile Metro Area</label>
+            </value>
+            <value>
+                <fullName>Modesto Metro Area</fullName>
+                <default>false</default>
+                <label>Modesto Metro Area</label>
+            </value>
+            <value>
+                <fullName>Monroe (LA) Metro Area</fullName>
+                <default>false</default>
+                <label>Monroe (LA) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Monroe (MI) Metro Area</fullName>
+                <default>false</default>
+                <label>Monroe (MI) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Montana All</fullName>
+                <default>false</default>
+                <label>Montana All</label>
+            </value>
+            <value>
+                <fullName>Montgomery Metro Area</fullName>
+                <default>false</default>
+                <label>Montgomery Metro Area</label>
+            </value>
+            <value>
+                <fullName>Morgantown Metro Area</fullName>
+                <default>false</default>
+                <label>Morgantown Metro Area</label>
+            </value>
+            <value>
+                <fullName>Morristown Metro Area</fullName>
+                <default>false</default>
+                <label>Morristown Metro Area</label>
+            </value>
+            <value>
+                <fullName>Mount Vernon Metro Area</fullName>
+                <default>false</default>
+                <label>Mount Vernon Metro Area</label>
+            </value>
+            <value>
+                <fullName>Muncie Metro Area</fullName>
+                <default>false</default>
+                <label>Muncie Metro Area</label>
+            </value>
+            <value>
+                <fullName>Muskegon Metro Area</fullName>
+                <default>false</default>
+                <label>Muskegon Metro Area</label>
+            </value>
+            <value>
+                <fullName>Myrtle Beach Metro Area</fullName>
+                <default>false</default>
+                <label>Myrtle Beach Metro Area</label>
+            </value>
+            <value>
+                <fullName>Napa Metro Area</fullName>
+                <default>false</default>
+                <label>Napa Metro Area</label>
+            </value>
+            <value>
+                <fullName>Naples Metro Area</fullName>
+                <default>false</default>
+                <label>Naples Metro Area</label>
+            </value>
+            <value>
+                <fullName>Nashville Metro Area</fullName>
+                <default>false</default>
+                <label>Nashville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Nassau-Suffolk Metro Area</fullName>
+                <default>false</default>
+                <label>Nassau-Suffolk Metro Area</label>
+            </value>
+            <value>
+                <fullName>Nebraska All</fullName>
+                <default>false</default>
+                <label>Nebraska All</label>
+            </value>
+            <value>
+                <fullName>Nevada All</fullName>
+                <default>false</default>
+                <label>Nevada All</label>
+            </value>
+            <value>
+                <fullName>Newark Metro Area</fullName>
+                <default>false</default>
+                <label>Newark Metro Area</label>
+            </value>
+            <value>
+                <fullName>New Hampshire All</fullName>
+                <default>false</default>
+                <label>New Hampshire All</label>
+            </value>
+            <value>
+                <fullName>New Haven Metro Area</fullName>
+                <default>false</default>
+                <label>New Haven Metro Area</label>
+            </value>
+            <value>
+                <fullName>New Jersey All</fullName>
+                <default>false</default>
+                <label>New Jersey All</label>
+            </value>
+            <value>
+                <fullName>New Mexico All</fullName>
+                <default>false</default>
+                <label>New Mexico All</label>
+            </value>
+            <value>
+                <fullName>New Orleans Metro Area</fullName>
+                <default>false</default>
+                <label>New Orleans Metro Area</label>
+            </value>
+            <value>
+                <fullName>New York All</fullName>
+                <default>false</default>
+                <label>New York All</label>
+            </value>
+            <value>
+                <fullName>New York City Metro Area</fullName>
+                <default>false</default>
+                <label>New York City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Niles-Benton Metro Area</fullName>
+                <default>false</default>
+                <label>Niles-Benton Metro Area</label>
+            </value>
+            <value>
+                <fullName>North Carolina All</fullName>
+                <default>false</default>
+                <label>North Carolina All</label>
+            </value>
+            <value>
+                <fullName>North Dakota All</fullName>
+                <default>false</default>
+                <label>North Dakota All</label>
+            </value>
+            <value>
+                <fullName>Northern California</fullName>
+                <default>false</default>
+                <label>Northern California</label>
+            </value>
+            <value>
+                <fullName>Norwich-New London Metro Area</fullName>
+                <default>false</default>
+                <label>Norwich-New London Metro Area</label>
+            </value>
+            <value>
+                <fullName>Oakland-Fremont-Pleasanton Metro Area</fullName>
+                <default>false</default>
+                <label>Oakland-Fremont-Pleasanton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Ocala Metro Area</fullName>
+                <default>false</default>
+                <label>Ocala Metro Area</label>
+            </value>
+            <value>
+                <fullName>Ocean City Metro Area</fullName>
+                <default>false</default>
+                <label>Ocean City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Odessa Metro Area</fullName>
+                <default>false</default>
+                <label>Odessa Metro Area</label>
+            </value>
+            <value>
+                <fullName>Ogden Metro Area</fullName>
+                <default>false</default>
+                <label>Ogden Metro Area</label>
+            </value>
+            <value>
+                <fullName>Ohio All</fullName>
+                <default>false</default>
+                <label>Ohio All</label>
+            </value>
+            <value>
+                <fullName>Oklahoma All</fullName>
+                <default>false</default>
+                <label>Oklahoma All</label>
+            </value>
+            <value>
+                <fullName>Oklahoma City Metro Area</fullName>
+                <default>false</default>
+                <label>Oklahoma City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Olympia Metro Area</fullName>
+                <default>false</default>
+                <label>Olympia Metro Area</label>
+            </value>
+            <value>
+                <fullName>Omaha Metro Area</fullName>
+                <default>false</default>
+                <label>Omaha Metro Area</label>
+            </value>
+            <value>
+                <fullName>Orange County Metro Area</fullName>
+                <default>false</default>
+                <label>Orange County Metro Area</label>
+            </value>
+            <value>
+                <fullName>Oregon All</fullName>
+                <default>false</default>
+                <label>Oregon All</label>
+            </value>
+            <value>
+                <fullName>Orlando Metro Area</fullName>
+                <default>false</default>
+                <label>Orlando Metro Area</label>
+            </value>
+            <value>
+                <fullName>Oshkosh-Neenah Metro Area</fullName>
+                <default>false</default>
+                <label>Oshkosh-Neenah Metro Area</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Owensboro Metro Area</fullName>
+                <default>false</default>
+                <label>Owensboro Metro Area</label>
+            </value>
+            <value>
+                <fullName>Palm Bay Metro Area</fullName>
+                <default>false</default>
+                <label>Palm Bay Metro Area</label>
+            </value>
+            <value>
+                <fullName>Palm Coast Metro Area</fullName>
+                <default>false</default>
+                <label>Palm Coast Metro Area</label>
+            </value>
+            <value>
+                <fullName>Panama City Metro Area</fullName>
+                <default>false</default>
+                <label>Panama City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Parkersburg-Marietta Metro Area</fullName>
+                <default>false</default>
+                <label>Parkersburg-Marietta Metro Area</label>
+            </value>
+            <value>
+                <fullName>Pascagoula Metro Area</fullName>
+                <default>false</default>
+                <label>Pascagoula Metro Area</label>
+            </value>
+            <value>
+                <fullName>Peabody Metro Area</fullName>
+                <default>false</default>
+                <label>Peabody Metro Area</label>
+            </value>
+            <value>
+                <fullName>Pennsylvania All</fullName>
+                <default>false</default>
+                <label>Pennsylvania All</label>
+            </value>
+            <value>
+                <fullName>Pensacola Metro Area</fullName>
+                <default>false</default>
+                <label>Pensacola Metro Area</label>
+            </value>
+            <value>
+                <fullName>Peoria Metro Area</fullName>
+                <default>false</default>
+                <label>Peoria Metro Area</label>
+            </value>
+            <value>
+                <fullName>Philadelphia Metro Area</fullName>
+                <default>false</default>
+                <label>Philadelphia Metro Area</label>
+            </value>
+            <value>
+                <fullName>Phoenix Metro Area</fullName>
+                <default>false</default>
+                <label>Phoenix Metro Area</label>
+            </value>
+            <value>
+                <fullName>Pine Bluff Metro</fullName>
+                <default>false</default>
+                <label>Pine Bluff Metro</label>
+            </value>
+            <value>
+                <fullName>Pittsburgh Metro Area</fullName>
+                <default>false</default>
+                <label>Pittsburgh Metro Area</label>
+            </value>
+            <value>
+                <fullName>Pittsfield Metro Area</fullName>
+                <default>false</default>
+                <label>Pittsfield Metro Area</label>
+            </value>
+            <value>
+                <fullName>Pocatello Metro Area</fullName>
+                <default>false</default>
+                <label>Pocatello Metro Area</label>
+            </value>
+            <value>
+                <fullName>Portland-Biddeford Metro Area</fullName>
+                <default>false</default>
+                <label>Portland-Biddeford Metro Area</label>
+            </value>
+            <value>
+                <fullName>Portland Metro Area</fullName>
+                <default>false</default>
+                <label>Portland Metro Area</label>
+            </value>
+            <value>
+                <fullName>Port St. Luice Metro Area</fullName>
+                <default>false</default>
+                <label>Port St. Luice Metro Area</label>
+            </value>
+            <value>
+                <fullName>Poughkeepsie Metro Area</fullName>
+                <default>false</default>
+                <label>Poughkeepsie Metro Area</label>
+            </value>
+            <value>
+                <fullName>Prescott Metro Area</fullName>
+                <default>false</default>
+                <label>Prescott Metro Area</label>
+            </value>
+            <value>
+                <fullName>Providence Metro Area</fullName>
+                <default>false</default>
+                <label>Providence Metro Area</label>
+            </value>
+            <value>
+                <fullName>Provo Metro Area</fullName>
+                <default>false</default>
+                <label>Provo Metro Area</label>
+            </value>
+            <value>
+                <fullName>Pueblo Metro Area</fullName>
+                <default>false</default>
+                <label>Pueblo Metro Area</label>
+            </value>
+            <value>
+                <fullName>Punta Gorda Metro Area</fullName>
+                <default>false</default>
+                <label>Punta Gorda Metro Area</label>
+            </value>
+            <value>
+                <fullName>Racine Metro Area</fullName>
+                <default>false</default>
+                <label>Racine Metro Area</label>
+            </value>
+            <value>
+                <fullName>Raleigh Metro Area</fullName>
+                <default>false</default>
+                <label>Raleigh Metro Area</label>
+            </value>
+            <value>
+                <fullName>Rapid City Metro Area</fullName>
+                <default>false</default>
+                <label>Rapid City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Reading Metro Area</fullName>
+                <default>false</default>
+                <label>Reading Metro Area</label>
+            </value>
+            <value>
+                <fullName>Redding Metro Area</fullName>
+                <default>false</default>
+                <label>Redding Metro Area</label>
+            </value>
+            <value>
+                <fullName>Reno Metro Area</fullName>
+                <default>false</default>
+                <label>Reno Metro Area</label>
+            </value>
+            <value>
+                <fullName>Research Triangle Park Metro Area</fullName>
+                <default>false</default>
+                <label>Research Triangle Park Metro Area</label>
+            </value>
+            <value>
+                <fullName>Rhode Island All</fullName>
+                <default>false</default>
+                <label>Rhode Island All</label>
+            </value>
+            <value>
+                <fullName>Richmond Metro Area</fullName>
+                <default>false</default>
+                <label>Richmond Metro Area</label>
+            </value>
+            <value>
+                <fullName>Roanoke Metro Area</fullName>
+                <default>false</default>
+                <label>Roanoke Metro Area</label>
+            </value>
+            <value>
+                <fullName>Rochester Metro Area</fullName>
+                <default>false</default>
+                <label>Rochester Metro Area</label>
+            </value>
+            <value>
+                <fullName>Rockford Metro Area</fullName>
+                <default>false</default>
+                <label>Rockford Metro Area</label>
+            </value>
+            <value>
+                <fullName>Rockingham Metro Area</fullName>
+                <default>false</default>
+                <label>Rockingham Metro Area</label>
+            </value>
+            <value>
+                <fullName>Rocky Mount Metro Area</fullName>
+                <default>false</default>
+                <label>Rocky Mount Metro Area</label>
+            </value>
+            <value>
+                <fullName>Rome Metro Area</fullName>
+                <default>false</default>
+                <label>Rome Metro Area</label>
+            </value>
+            <value>
+                <fullName>Sacramento Metro Area</fullName>
+                <default>false</default>
+                <label>Sacramento Metro Area</label>
+            </value>
+            <value>
+                <fullName>Saginaw Metro Area</fullName>
+                <default>false</default>
+                <label>Saginaw Metro Area</label>
+            </value>
+            <value>
+                <fullName>Salem Metro Area</fullName>
+                <default>false</default>
+                <label>Salem Metro Area</label>
+            </value>
+            <value>
+                <fullName>Salinas Metro Area</fullName>
+                <default>false</default>
+                <label>Salinas Metro Area</label>
+            </value>
+            <value>
+                <fullName>Salisbury Metro Area</fullName>
+                <default>false</default>
+                <label>Salisbury Metro Area</label>
+            </value>
+            <value>
+                <fullName>Salt Lake City Metro Area</fullName>
+                <default>false</default>
+                <label>Salt Lake City Metro Area</label>
+            </value>
+            <value>
+                <fullName>San Angelo Merto Area</fullName>
+                <default>false</default>
+                <label>San Angelo Merto Area</label>
+            </value>
+            <value>
+                <fullName>San Antonio Metro Area</fullName>
+                <default>false</default>
+                <label>San Antonio Metro Area</label>
+            </value>
+            <value>
+                <fullName>San Bernardino Metro Area</fullName>
+                <default>false</default>
+                <label>San Bernardino Metro Area</label>
+            </value>
+            <value>
+                <fullName>San Diego Metro Area</fullName>
+                <default>false</default>
+                <label>San Diego Metro Area</label>
+            </value>
+            <value>
+                <fullName>Sandusky Metro Area</fullName>
+                <default>false</default>
+                <label>Sandusky Metro Area</label>
+            </value>
+            <value>
+                <fullName>San Francisco Metro Area</fullName>
+                <default>false</default>
+                <label>San Francisco Metro Area</label>
+            </value>
+            <value>
+                <fullName>San Jose Metro Area</fullName>
+                <default>false</default>
+                <label>San Jose Metro Area</label>
+            </value>
+            <value>
+                <fullName>San Luis Obispo Metro Area</fullName>
+                <default>false</default>
+                <label>San Luis Obispo Metro Area</label>
+            </value>
+            <value>
+                <fullName>San Mateo Metro Area</fullName>
+                <default>false</default>
+                <label>San Mateo Metro Area</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara Metro Area</fullName>
+                <default>false</default>
+                <label>Santa Barbara Metro Area</label>
+            </value>
+            <value>
+                <fullName>Santa Cruz Metro Area</fullName>
+                <default>false</default>
+                <label>Santa Cruz Metro Area</label>
+            </value>
+            <value>
+                <fullName>Santa Fe Metro Area</fullName>
+                <default>false</default>
+                <label>Santa Fe Metro Area</label>
+            </value>
+            <value>
+                <fullName>Santa Rosa-Petaluma Metro Area</fullName>
+                <default>false</default>
+                <label>Santa Rosa-Petaluma Metro Area</label>
+            </value>
+            <value>
+                <fullName>Sarasota Metro Area</fullName>
+                <default>false</default>
+                <label>Sarasota Metro Area</label>
+            </value>
+            <value>
+                <fullName>Savannah Metro Area</fullName>
+                <default>false</default>
+                <label>Savannah Metro Area</label>
+            </value>
+            <value>
+                <fullName>Scranton Metro Area</fullName>
+                <default>false</default>
+                <label>Scranton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Seattle-Bellevue Metro Area</fullName>
+                <default>false</default>
+                <label>Seattle-Bellevue Metro Area</label>
+            </value>
+            <value>
+                <fullName>Sebastian Metro Area</fullName>
+                <default>false</default>
+                <label>Sebastian Metro Area</label>
+            </value>
+            <value>
+                <fullName>Sheboygan Metro Area</fullName>
+                <default>false</default>
+                <label>Sheboygan Metro Area</label>
+            </value>
+            <value>
+                <fullName>Sherman-Denison Metro Area</fullName>
+                <default>false</default>
+                <label>Sherman-Denison Metro Area</label>
+            </value>
+            <value>
+                <fullName>Shreveport Metro Area</fullName>
+                <default>false</default>
+                <label>Shreveport Metro Area</label>
+            </value>
+            <value>
+                <fullName>Sioux City Metro Area</fullName>
+                <default>false</default>
+                <label>Sioux City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Sioux Falls Metro Area</fullName>
+                <default>false</default>
+                <label>Sioux Falls Metro Area</label>
+            </value>
+            <value>
+                <fullName>South Bend Metro Area</fullName>
+                <default>false</default>
+                <label>South Bend Metro Area</label>
+            </value>
+            <value>
+                <fullName>South Carolina All</fullName>
+                <default>false</default>
+                <label>South Carolina All</label>
+            </value>
+            <value>
+                <fullName>South Dakota All</fullName>
+                <default>false</default>
+                <label>South Dakota All</label>
+            </value>
+            <value>
+                <fullName>Southern California</fullName>
+                <default>false</default>
+                <label>Southern California</label>
+            </value>
+            <value>
+                <fullName>Spartanburg Metro Area</fullName>
+                <default>false</default>
+                <label>Spartanburg Metro Area</label>
+            </value>
+            <value>
+                <fullName>Spokane Metro Area</fullName>
+                <default>false</default>
+                <label>Spokane Metro Area</label>
+            </value>
+            <value>
+                <fullName>Springdale Metro Area</fullName>
+                <default>false</default>
+                <label>Springdale Metro Area</label>
+            </value>
+            <value>
+                <fullName>Springfield (IL) Metro Area</fullName>
+                <default>false</default>
+                <label>Springfield (IL) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Springfield (MA) Metro Area</fullName>
+                <default>false</default>
+                <label>Springfield (MA) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Springfield (MO) Metro Area</fullName>
+                <default>false</default>
+                <label>Springfield (MO) Metro Area</label>
+            </value>
+            <value>
+                <fullName>Springfield (OH) Metro Area</fullName>
+                <default>false</default>
+                <label>Springfield (OH) Metro Area</label>
+            </value>
+            <value>
+                <fullName>St. Cloud Metro Area</fullName>
+                <default>false</default>
+                <label>St. Cloud Metro Area</label>
+            </value>
+            <value>
+                <fullName>St. George Metro Area</fullName>
+                <default>false</default>
+                <label>St. George Metro Area</label>
+            </value>
+            <value>
+                <fullName>St. Joseph Metro Area</fullName>
+                <default>false</default>
+                <label>St. Joseph Metro Area</label>
+            </value>
+            <value>
+                <fullName>St. Louis Metro Area</fullName>
+                <default>false</default>
+                <label>St. Louis Metro Area</label>
+            </value>
+            <value>
+                <fullName>State College Metro Area</fullName>
+                <default>false</default>
+                <label>State College Metro Area</label>
+            </value>
+            <value>
+                <fullName>Steubenville Metro Area</fullName>
+                <default>false</default>
+                <label>Steubenville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Stockton Metro Area</fullName>
+                <default>false</default>
+                <label>Stockton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Sumter Metro Area</fullName>
+                <default>false</default>
+                <label>Sumter Metro Area</label>
+            </value>
+            <value>
+                <fullName>Syracuse Metro Area</fullName>
+                <default>false</default>
+                <label>Syracuse Metro Area</label>
+            </value>
+            <value>
+                <fullName>Tacoma Metro Area</fullName>
+                <default>false</default>
+                <label>Tacoma Metro Area</label>
+            </value>
+            <value>
+                <fullName>Tallahassee Metro Area</fullName>
+                <default>false</default>
+                <label>Tallahassee Metro Area</label>
+            </value>
+            <value>
+                <fullName>Tampa Metro Area</fullName>
+                <default>false</default>
+                <label>Tampa Metro Area</label>
+            </value>
+            <value>
+                <fullName>Tennessee All</fullName>
+                <default>false</default>
+                <label>Tennessee All</label>
+            </value>
+            <value>
+                <fullName>Terre Haute Metro Area</fullName>
+                <default>false</default>
+                <label>Terre Haute Metro Area</label>
+            </value>
+            <value>
+                <fullName>Texarkana Metro Area</fullName>
+                <default>false</default>
+                <label>Texarkana Metro Area</label>
+            </value>
+            <value>
+                <fullName>Texas All</fullName>
+                <default>false</default>
+                <label>Texas All</label>
+            </value>
+            <value>
+                <fullName>Thousand Oaks Metro Area</fullName>
+                <default>false</default>
+                <label>Thousand Oaks Metro Area</label>
+            </value>
+            <value>
+                <fullName>Toledo Metro Area</fullName>
+                <default>false</default>
+                <label>Toledo Metro Area</label>
+            </value>
+            <value>
+                <fullName>Topeka Metro Area</fullName>
+                <default>false</default>
+                <label>Topeka Metro Area</label>
+            </value>
+            <value>
+                <fullName>Trenton Metro Area</fullName>
+                <default>false</default>
+                <label>Trenton Metro Area</label>
+            </value>
+            <value>
+                <fullName>Troy Metro Area</fullName>
+                <default>false</default>
+                <label>Troy Metro Area</label>
+            </value>
+            <value>
+                <fullName>Tucson Metro Area</fullName>
+                <default>false</default>
+                <label>Tucson Metro Area</label>
+            </value>
+            <value>
+                <fullName>Tulsa Metro Area</fullName>
+                <default>false</default>
+                <label>Tulsa Metro Area</label>
+            </value>
+            <value>
+                <fullName>Tuscaloosa Metro Area</fullName>
+                <default>false</default>
+                <label>Tuscaloosa Metro Area</label>
+            </value>
+            <value>
+                <fullName>Tyler Metro Area</fullName>
+                <default>false</default>
+                <label>Tyler Metro Area</label>
+            </value>
+            <value>
+                <fullName>Utah All</fullName>
+                <default>false</default>
+                <label>Utah All</label>
+            </value>
+            <value>
+                <fullName>Utica Metro Area</fullName>
+                <default>false</default>
+                <label>Utica Metro Area</label>
+            </value>
+            <value>
+                <fullName>Valdosta Metro Area</fullName>
+                <default>false</default>
+                <label>Valdosta Metro Area</label>
+            </value>
+            <value>
+                <fullName>Vallejo-Fairfield Metro Area</fullName>
+                <default>false</default>
+                <label>Vallejo-Fairfield Metro Area</label>
+            </value>
+            <value>
+                <fullName>Vancouver Metro Area</fullName>
+                <default>false</default>
+                <label>Vancouver Metro Area</label>
+            </value>
+            <value>
+                <fullName>Vermont All</fullName>
+                <default>false</default>
+                <label>Vermont All</label>
+            </value>
+            <value>
+                <fullName>Victoria Metro Area</fullName>
+                <default>false</default>
+                <label>Victoria Metro Area</label>
+            </value>
+            <value>
+                <fullName>Vineland-Millville Metro Area</fullName>
+                <default>false</default>
+                <label>Vineland-Millville Metro Area</label>
+            </value>
+            <value>
+                <fullName>Virginia All</fullName>
+                <default>false</default>
+                <label>Virginia All</label>
+            </value>
+            <value>
+                <fullName>Virginia Beach Metro Area</fullName>
+                <default>false</default>
+                <label>Virginia Beach Metro Area</label>
+            </value>
+            <value>
+                <fullName>Visalia Metro Area</fullName>
+                <default>false</default>
+                <label>Visalia Metro Area</label>
+            </value>
+            <value>
+                <fullName>Waco Metro Area</fullName>
+                <default>false</default>
+                <label>Waco Metro Area</label>
+            </value>
+            <value>
+                <fullName>Warner Robins Metro Area</fullName>
+                <default>false</default>
+                <label>Warner Robins Metro Area</label>
+            </value>
+            <value>
+                <fullName>Washington All</fullName>
+                <default>false</default>
+                <label>Washington All</label>
+            </value>
+            <value>
+                <fullName>Washington-Arlington-Alexandria Metro Area</fullName>
+                <default>false</default>
+                <label>Washington-Arlington-Alexandria Metro Area</label>
+            </value>
+            <value>
+                <fullName>Waterloo-Cedar Falls Metro Area</fullName>
+                <default>false</default>
+                <label>Waterloo-Cedar Falls Metro Area</label>
+            </value>
+            <value>
+                <fullName>Wausau Metro Area</fullName>
+                <default>false</default>
+                <label>Wausau Metro Area</label>
+            </value>
+            <value>
+                <fullName>Wayne Metro Area</fullName>
+                <default>false</default>
+                <label>Wayne Metro Area</label>
+            </value>
+            <value>
+                <fullName>Wenatchee Metro Area</fullName>
+                <default>false</default>
+                <label>Wenatchee Metro Area</label>
+            </value>
+            <value>
+                <fullName>West Palm Beach Metro Area</fullName>
+                <default>false</default>
+                <label>West Palm Beach Metro Area</label>
+            </value>
+            <value>
+                <fullName>West Virginia All</fullName>
+                <default>false</default>
+                <label>West Virginia All</label>
+            </value>
+            <value>
+                <fullName>Wheeling Metro Area</fullName>
+                <default>false</default>
+                <label>Wheeling Metro Area</label>
+            </value>
+            <value>
+                <fullName>White Plains Metro Area</fullName>
+                <default>false</default>
+                <label>White Plains Metro Area</label>
+            </value>
+            <value>
+                <fullName>Wichita Falls Metro Area</fullName>
+                <default>false</default>
+                <label>Wichita Falls Metro Area</label>
+            </value>
+            <value>
+                <fullName>Wichita Metro Area</fullName>
+                <default>false</default>
+                <label>Wichita Metro Area</label>
+            </value>
+            <value>
+                <fullName>Williamsport Metro Area</fullName>
+                <default>false</default>
+                <label>Williamsport Metro Area</label>
+            </value>
+            <value>
+                <fullName>Wilmington Metro Area</fullName>
+                <default>false</default>
+                <label>Wilmington Metro Area</label>
+            </value>
+            <value>
+                <fullName>Winchester Metro Area</fullName>
+                <default>false</default>
+                <label>Winchester Metro Area</label>
+            </value>
+            <value>
+                <fullName>Winston-Salem Metro Area</fullName>
+                <default>false</default>
+                <label>Winston-Salem Metro Area</label>
+            </value>
+            <value>
+                <fullName>Wisconsin All</fullName>
+                <default>false</default>
+                <label>Wisconsin All</label>
+            </value>
+            <value>
+                <fullName>Worcester Metro Area</fullName>
+                <default>false</default>
+                <label>Worcester Metro Area</label>
+            </value>
+            <value>
+                <fullName>Wyoming All</fullName>
+                <default>false</default>
+                <label>Wyoming All</label>
+            </value>
+            <value>
+                <fullName>Yakima Metro Area</fullName>
+                <default>false</default>
+                <label>Yakima Metro Area</label>
+            </value>
+            <value>
+                <fullName>York Metro Area</fullName>
+                <default>false</default>
+                <label>York Metro Area</label>
+            </value>
+            <value>
+                <fullName>Youngstown Metro Area</fullName>
+                <default>false</default>
+                <label>Youngstown Metro Area</label>
+            </value>
+            <value>
+                <fullName>Yuba City Metro Area</fullName>
+                <default>false</default>
+                <label>Yuba City Metro Area</label>
+            </value>
+            <value>
+                <fullName>Yuma Metro Area</fullName>
+                <default>false</default>
+                <label>Yuma Metro Area</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>South Dakota</controllingFieldValue>
+            <valueName>Rapid City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Dakota</controllingFieldValue>
+            <valueName>Sioux Falls Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Dakota</controllingFieldValue>
+            <valueName>South Dakota All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tennessee</controllingFieldValue>
+            <valueName>Cleveland Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tennessee</controllingFieldValue>
+            <valueName>Jackson (TN) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tennessee</controllingFieldValue>
+            <valueName>Johnson City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tennessee</controllingFieldValue>
+            <valueName>Kingsport-Bristol Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tennessee</controllingFieldValue>
+            <valueName>Knoxville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tennessee</controllingFieldValue>
+            <valueName>Morristown Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tennessee</controllingFieldValue>
+            <valueName>Nashville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tennessee</controllingFieldValue>
+            <valueName>Tennessee All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Abilene Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Amarillo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Austin-Round Rock-San Marcos Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Beaumont-Port Arthur Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Brownsville-Harlingen Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>College Station Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Corpus Christi Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Dallas Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>El Paso Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Fort Worth Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Houston Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Killeen-Temple-Fort Hood Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Laredo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Longview (TX) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Lubbock Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>McAllen-Edingburg-Mission Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Midland Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Odessa Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>San Angelo Merto Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>San Antonio Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Sherman-Denison Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Texas All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Victoria Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Waco Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Texas</controllingFieldValue>
+            <valueName>Wichita Falls Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utah</controllingFieldValue>
+            <valueName>Ogden Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utah</controllingFieldValue>
+            <valueName>Provo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utah</controllingFieldValue>
+            <valueName>Salt Lake City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utah</controllingFieldValue>
+            <valueName>St. George Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Utah</controllingFieldValue>
+            <valueName>Utah All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vermont</controllingFieldValue>
+            <valueName>Burlington-South Burlington Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Vermont</controllingFieldValue>
+            <valueName>Vermont All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>Blacksburg-Christiansburg-Radford Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>Charlottesville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>Danville (VA) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>Lynchburg Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>Richmond Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>Roanoke Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>Virginia All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Virginia</controllingFieldValue>
+            <valueName>Winchester Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Bellingham Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Bremerton-Silverdale Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Kennewick-Pasco-Richland Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Longview (WA) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Mount Vernon Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Olympia Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Seattle-Bellevue Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Tacoma Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Vancouver Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Washington All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Wenatchee Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Washington</controllingFieldValue>
+            <valueName>Yakima Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Virginia</controllingFieldValue>
+            <valueName>Charleston Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Virginia</controllingFieldValue>
+            <valueName>Morgantown Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Virginia</controllingFieldValue>
+            <valueName>West Virginia All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Appleton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Eau Claire Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Fond du Lac Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Green Bay Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Janesville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Madison Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Milwaukee Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Oshkosh-Neenah Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Racine Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Sheboygan Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Wausau Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wisconsin</controllingFieldValue>
+            <valueName>Wisconsin All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wyoming</controllingFieldValue>
+            <valueName>Casper Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wyoming</controllingFieldValue>
+            <valueName>Cheyenne Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Wyoming</controllingFieldValue>
+            <valueName>Wyoming All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>District of Columbia</controllingFieldValue>
+            <valueName>District of Columbia All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>District of Columbia</controllingFieldValue>
+            <valueName>Washington-Arlington-Alexandria Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Cape Coral-Fort Myers Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Crestview-Fort Walton-Destin Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Deltona-Daytona Beach-Ormond Beach Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Florida All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Fort Lauderdale Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Gainesville (FL) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Jacksonville (FL) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Lakeland-Winter Haven Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Miami Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Naples Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Ocala Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Orlando Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Palm Bay Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Palm Coast Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Panama City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Pensacola Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Port St. Luice Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Punta Gorda Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Sarasota Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Sebastian Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Tallahassee Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>Tampa Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Florida</controllingFieldValue>
+            <valueName>West Palm Beach Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Albany Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Athens-Clarke County Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Atlanta Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Augusta-Richmond County Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Chattanooga Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Columbus (GA/AL) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Dalton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Gainesville (GA) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Georgia All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Hinesville-Fort Stewart Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Macon Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Rome Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Savannah Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Valdosta Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Georgia</controllingFieldValue>
+            <valueName>Warner Robins Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hawaii</controllingFieldValue>
+            <valueName>Hawaii All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Hawaii</controllingFieldValue>
+            <valueName>Honolulu Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Idaho</controllingFieldValue>
+            <valueName>Boise City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Idaho</controllingFieldValue>
+            <valueName>Coeur d&apos;Alene Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Idaho</controllingFieldValue>
+            <valueName>Idaho All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Idaho</controllingFieldValue>
+            <valueName>Idaho Falls Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Idaho</controllingFieldValue>
+            <valueName>Lewiston Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Idaho</controllingFieldValue>
+            <valueName>Logan Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Idaho</controllingFieldValue>
+            <valueName>Pocatello Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Cape Girardeau-Jackson Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Champaign-Urbana Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Chicago Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Danville (IL) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Decatur (IL) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Illinois All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Kankakee Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Lake County-Kenosha County Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Peoria Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Rockford Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>Springfield (IL) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Illinois</controllingFieldValue>
+            <valueName>St. Louis Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Anderson (IN) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Bloomington Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Columbus (IN) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Elkhart Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Evansville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Fort Wayne Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Gary Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Indiana All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Indianapolis Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Kokomo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Lafayette (IN) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <valueName>Louisville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Michigan City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Muncie Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>South Bend Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Indiana</controllingFieldValue>
+            <valueName>Terre Haute Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>International</controllingFieldValue>
+            <valueName>International All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Ames Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Cedar Rapids Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Davenport-Moline-Rock Island Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Des Moines Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Dubuque Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Iowa All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Iowa City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Omaha Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Sioux City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Iowa</controllingFieldValue>
+            <valueName>Waterloo-Cedar Falls Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kansas</controllingFieldValue>
+            <valueName>Kansas All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kansas</controllingFieldValue>
+            <valueName>Kansas City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kansas</controllingFieldValue>
+            <valueName>Lawrence Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kansas</controllingFieldValue>
+            <valueName>Manhattan (KS) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kansas</controllingFieldValue>
+            <valueName>St. Joseph Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kansas</controllingFieldValue>
+            <valueName>Topeka Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kansas</controllingFieldValue>
+            <valueName>Wichita Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Alabama All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Anniston-Oxford Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Auburn-Opelika Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Birmingham Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Decatur (AL) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Dothan Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Florence-Muscle Shoals Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Gadsden Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Huntsville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Mobile Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Montgomery Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alabama</controllingFieldValue>
+            <valueName>Tuscaloosa Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alaska</controllingFieldValue>
+            <valueName>Alaska All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alaska</controllingFieldValue>
+            <valueName>Anchorage Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alaska</controllingFieldValue>
+            <valueName>Fairbanks Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Alaska</controllingFieldValue>
+            <valueName>Juneau Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <valueName>Arizona All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <valueName>Fort Smith Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <valueName>Hot Springs Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <valueName>Jonesboro Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <valueName>Little Rock Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <valueName>Memphis Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <valueName>Pine Bluff Metro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <valueName>Springdale Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arizona</controllingFieldValue>
+            <valueName>Texarkana Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arkansas</controllingFieldValue>
+            <valueName>Arkansas All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arkansas</controllingFieldValue>
+            <valueName>Flagstaff Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arkansas</controllingFieldValue>
+            <valueName>Lake Havasu City-Kingman Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arkansas</controllingFieldValue>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <valueName>Owensboro Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arkansas</controllingFieldValue>
+            <valueName>Phoenix Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arkansas</controllingFieldValue>
+            <valueName>Prescott Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arkansas</controllingFieldValue>
+            <valueName>Tucson Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arkansas</controllingFieldValue>
+            <valueName>Yuma Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Bakersfield Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>California All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Chico Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>El Centro Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Fresno Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Hanford-Corcoran Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Los Angeles Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Madera Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Marin Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Merced Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Modesto Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Napa Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Northern California</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Oakland-Fremont-Pleasanton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Orange County Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Redding Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Sacramento Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Salinas Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>San Bernardino Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>San Diego Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>San Francisco Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>San Jose Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>San Luis Obispo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>San Mateo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Santa Barbara Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Santa Cruz Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Santa Rosa-Petaluma Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Southern California</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Stockton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Thousand Oaks Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Vallejo-Fairfield Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Visalia Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>California</controllingFieldValue>
+            <valueName>Yuba City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Canada</controllingFieldValue>
+            <valueName>Canada All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colorado</controllingFieldValue>
+            <valueName>Boulder Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colorado</controllingFieldValue>
+            <valueName>Colorado All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colorado</controllingFieldValue>
+            <valueName>Colorado Springs Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colorado</controllingFieldValue>
+            <valueName>Denver Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colorado</controllingFieldValue>
+            <valueName>Fort Collins Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colorado</controllingFieldValue>
+            <valueName>Grand Junction Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colorado</controllingFieldValue>
+            <valueName>Greeley Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Colorado</controllingFieldValue>
+            <valueName>Pueblo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>Bridgeport-Stamford-Norwalk Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>Connecticut All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>Hartford Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>New Haven Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Connecticut</controllingFieldValue>
+            <valueName>Norwich-New London Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delaware</controllingFieldValue>
+            <valueName>Delaware All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delaware</controllingFieldValue>
+            <valueName>Dover Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Delaware</controllingFieldValue>
+            <valueName>Wilmington Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <valueName>Bowling Green Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <valueName>Cincinnati Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <valueName>Clarksville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <valueName>Elizabethtown Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <valueName>Huntington Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <valueName>Kentucky All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kentucky</controllingFieldValue>
+            <valueName>Lexington Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Alexandria Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Baton Rouge Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Houma-Bayou Cane-Thibodaux Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Lafayette (LA) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Lake Charles Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Louisiana All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Monroe (LA) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>New Orleans Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Louisiana</controllingFieldValue>
+            <valueName>Shreveport Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maine</controllingFieldValue>
+            <valueName>Bangor Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maine</controllingFieldValue>
+            <valueName>Maine All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maine</controllingFieldValue>
+            <valueName>Portland-Biddeford Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <valueName>Baltimore Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <valueName>Bethesda Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <valueName>Cumberland Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <valueName>Hagerstown-Martinsburg Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <valueName>Maryland All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Maryland</controllingFieldValue>
+            <valueName>Salisbury Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Barnstable Town Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Boston Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Cambridge Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Massachusetts All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Peabody Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Pittsfield Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Providence Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Springfield (MA) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Massachusetts</controllingFieldValue>
+            <valueName>Worcester Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Ann Arbor Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Battle Creek Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Bay City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Detroit Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Flint Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Grand Rapids Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Holland-Grand Haven Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Jackson (MI) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Kalamazoo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Lansing Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Michigan All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Monroe (MI) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Muskegon Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Niles-Benton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Saginaw Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Michigan</controllingFieldValue>
+            <valueName>Troy Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <valueName>Duluth Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <valueName>Fargo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <valueName>Grand Forks Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <valueName>La Crosse Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <valueName>Mankato Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <valueName>Minneapolis Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <valueName>Minnesota All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Minnesota</controllingFieldValue>
+            <valueName>St. Cloud Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mississippi</controllingFieldValue>
+            <valueName>Gulfport-Biloxi Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mississippi</controllingFieldValue>
+            <valueName>Hattiesburg Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mississippi</controllingFieldValue>
+            <valueName>Jackson (MS) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mississippi</controllingFieldValue>
+            <valueName>Mississippi All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mississippi</controllingFieldValue>
+            <valueName>Pascagoula Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missouri</controllingFieldValue>
+            <valueName>Columbia (MO) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missouri</controllingFieldValue>
+            <valueName>Jefferson City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missouri</controllingFieldValue>
+            <valueName>Joplin Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missouri</controllingFieldValue>
+            <valueName>Missouri All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Missouri</controllingFieldValue>
+            <valueName>Springfield (MO) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montana</controllingFieldValue>
+            <valueName>Billings Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montana</controllingFieldValue>
+            <valueName>Great Falls Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montana</controllingFieldValue>
+            <valueName>Missoula Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Montana</controllingFieldValue>
+            <valueName>Montana All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nebraska</controllingFieldValue>
+            <valueName>Lincoln Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nebraska</controllingFieldValue>
+            <valueName>Nebraska All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>Carson City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>Las Vegas Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>Nevada All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Nevada</controllingFieldValue>
+            <valueName>Reno Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Hampshire</controllingFieldValue>
+            <valueName>Manchester-Nashua Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Hampshire</controllingFieldValue>
+            <valueName>New Hampshire All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Hampshire</controllingFieldValue>
+            <valueName>Rockingham Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Allentown-Bethlehem-Easton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Atlantic City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Camden Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Edison-New Brunswick Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Newark Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>New Jersey All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Ocean City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Trenton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Vineland-Millville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Jersey</controllingFieldValue>
+            <valueName>Wayne Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Mexico</controllingFieldValue>
+            <valueName>Albuquerque Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Mexico</controllingFieldValue>
+            <valueName>Farmington Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Mexico</controllingFieldValue>
+            <valueName>Las Cruces Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Mexico</controllingFieldValue>
+            <valueName>New Mexico All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New Mexico</controllingFieldValue>
+            <valueName>Santa Fe Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Albany-Schenectady-Troy Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Binghamton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Buffalo-Niagra Falls Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Elmira Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Glens Falls Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Ithaca Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Kingston Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Nassau-Suffolk Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>New York All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>New York City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Poughkeepsie Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Rochester Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Syracuse Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>Utica Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>New York</controllingFieldValue>
+            <valueName>White Plains Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Asheville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Burlington Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Charlotte-Gastonia-Rock Hill Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Durham-Chapel Hill Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Fayetteville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Goldsboro Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Greensboro Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Greenville-Mauldin-Easley Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Hickory-Lenoir-Morganton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Jacksonville (NC) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>North Carolina All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Raleigh Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Research Triangle Park Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Rocky Mount Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Virginia Beach Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Carolina</controllingFieldValue>
+            <valueName>Winston-Salem Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Dakota</controllingFieldValue>
+            <valueName>Bismarck Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>North Dakota</controllingFieldValue>
+            <valueName>North Dakota All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Akron Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Canton-Massillon Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Cleveland-Elyria-Mentor Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Columbus (OH) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Dayton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Lima Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Mansfield Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Ohio All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Parkersburg-Marietta Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Sandusky Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Springfield (OH) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Steubenville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Toledo Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Wheeling Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ohio</controllingFieldValue>
+            <valueName>Youngstown Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oklahoma</controllingFieldValue>
+            <valueName>Lawton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oklahoma</controllingFieldValue>
+            <valueName>Oklahoma All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oklahoma</controllingFieldValue>
+            <valueName>Oklahoma City Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oklahoma</controllingFieldValue>
+            <valueName>Tulsa Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oregon</controllingFieldValue>
+            <valueName>Bend Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oregon</controllingFieldValue>
+            <valueName>Corvallis Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oregon</controllingFieldValue>
+            <valueName>Eugene Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oregon</controllingFieldValue>
+            <valueName>Medford Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oregon</controllingFieldValue>
+            <valueName>Oregon All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oregon</controllingFieldValue>
+            <valueName>Portland Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Oregon</controllingFieldValue>
+            <valueName>Salem Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Altoona Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Erie Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Harrisburg-Carlisle Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Johnstown Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Lancaster Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Lebanon Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Pennsylvania All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Philadelphia Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Pittsburgh Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Reading Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Scranton Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>State College Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>Williamsport Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Pennsylvania</controllingFieldValue>
+            <valueName>York Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rhode Island</controllingFieldValue>
+            <valueName>Rhode Island All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Anderson (SC) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Charleston-North Charleston-Summerville Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Columbia (SC) Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Florence Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Myrtle Beach Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>South Carolina All</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Spartanburg Metro Area</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>South Carolina</controllingFieldValue>
+            <valueName>Sumter Metro Area</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

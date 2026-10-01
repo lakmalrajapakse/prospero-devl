@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Admin</fullName>
+        <default>false</default>
+        <label>Admin</label>
+    </customValue>
+    <customValue>
+        <fullName>Birmingham CES</fullName>
+        <default>false</default>
+        <label>Birmingham CES</label>
+    </customValue>
+    <customValue>
+        <fullName>Birmingham SEN</fullName>
+        <default>false</default>
+        <label>Birmingham SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Birmingham TEA</fullName>
+        <default>false</default>
+        <label>Birmingham TEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Bristol CES</fullName>
+        <default>false</default>
+        <label>Bristol CES</label>
+    </customValue>
+    <customValue>
+        <fullName>Bristol HSC</fullName>
+        <default>false</default>
+        <label>Bristol HSC</label>
+    </customValue>
+    <customValue>
+        <fullName>Bristol PMY</fullName>
+        <default>false</default>
+        <label>Bristol PMY</label>
+    </customValue>
+    <customValue>
+        <fullName>Bristol SEC</fullName>
+        <default>false</default>
+        <label>Bristol SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>Bristol SEN</fullName>
+        <default>false</default>
+        <label>Bristol SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Bristol TEA</fullName>
+        <default>false</default>
+        <label>Bristol TEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Canada TEA</fullName>
+        <default>false</default>
+        <label>Canada TEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardiff HSC 1</fullName>
+        <default>false</default>
+        <label>Cardiff HSC 1</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardiff HSC 2</fullName>
+        <default>false</default>
+        <label>Cardiff HSC 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardiff PMY</fullName>
+        <default>false</default>
+        <label>Cardiff PMY</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardiff PMY 2</fullName>
+        <default>false</default>
+        <label>Cardiff PMY 2</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardiff SEN</fullName>
+        <default>false</default>
+        <label>Cardiff SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Cardiff TEA</fullName>
+        <default>false</default>
+        <label>Cardiff TEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Chelmsford CES</fullName>
+        <default>false</default>
+        <label>Chelmsford CES</label>
+    </customValue>
+    <customValue>
+        <fullName>Chelmsford PMY</fullName>
+        <default>false</default>
+        <label>Chelmsford PMY</label>
+    </customValue>
+    <customValue>
+        <fullName>Chelmsford SEC</fullName>
+        <default>false</default>
+        <label>Chelmsford SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>Compliance</fullName>
+        <default>false</default>
+        <label>Compliance</label>
+    </customValue>
+    <customValue>
+        <fullName>Directors</fullName>
+        <default>false</default>
+        <label>Directors</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Integrated</fullName>
+        <default>false</default>
+        <label>Integrated</label>
+    </customValue>
+    <customValue>
+        <fullName>International</fullName>
+        <default>false</default>
+        <label>International</label>
+    </customValue>
+    <customValue>
+        <fullName>IT</fullName>
+        <default>false</default>
+        <label>IT</label>
+    </customValue>
+    <customValue>
+        <fullName>Leeds CES</fullName>
+        <default>false</default>
+        <label>Leeds CES</label>
+    </customValue>
+    <customValue>
+        <fullName>Leeds HSC</fullName>
+        <default>false</default>
+        <label>Leeds HSC</label>
+    </customValue>
+    <customValue>
+        <fullName>Leeds PMY</fullName>
+        <default>false</default>
+        <label>Leeds PMY</label>
+    </customValue>
+    <customValue>
+        <fullName>Leeds SEC</fullName>
+        <default>false</default>
+        <label>Leeds SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>Leeds SEN</fullName>
+        <default>false</default>
+        <label>Leeds SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Liverpool CES</fullName>
+        <default>false</default>
+        <label>Liverpool CES</label>
+    </customValue>
+    <customValue>
+        <fullName>Liverpool HSC</fullName>
+        <default>false</default>
+        <label>Liverpool HSC</label>
+    </customValue>
+    <customValue>
+        <fullName>Liverpool PMY</fullName>
+        <default>false</default>
+        <label>Liverpool PMY</label>
+    </customValue>
+    <customValue>
+        <fullName>Liverpool SEC</fullName>
+        <default>false</default>
+        <label>Liverpool SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>Liverpool SEN</fullName>
+        <default>false</default>
+        <label>Liverpool SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Liverpool TEA</fullName>
+        <default>false</default>
+        <label>Liverpool TEA</label>
+    </customValue>
+    <customValue>
+        <fullName>London CES</fullName>
+        <default>false</default>
+        <label>London CES</label>
+    </customValue>
+    <customValue>
+        <fullName>London HSC</fullName>
+        <default>false</default>
+        <label>London HSC</label>
+    </customValue>
+    <customValue>
+        <fullName>London PMY E</fullName>
+        <default>false</default>
+        <label>London PMY E</label>
+    </customValue>
+    <customValue>
+        <fullName>London PMY SW/SE 1</fullName>
+        <default>false</default>
+        <label>London PMY SW/SE 1</label>
+    </customValue>
+    <customValue>
+        <fullName>London PMY SW/SE 2</fullName>
+        <default>false</default>
+        <label>London PMY SW/SE 2</label>
+    </customValue>
+    <customValue>
+        <fullName>London PMY W/NW</fullName>
+        <default>false</default>
+        <label>London PMY W/NW</label>
+    </customValue>
+    <customValue>
+        <fullName>London SEC E/SE</fullName>
+        <default>false</default>
+        <label>London SEC E/SE</label>
+    </customValue>
+    <customValue>
+        <fullName>London SEC N/NW</fullName>
+        <default>false</default>
+        <label>London SEC N/NW</label>
+    </customValue>
+    <customValue>
+        <fullName>London SEC NW/SW</fullName>
+        <default>false</default>
+        <label>London SEC NW/SW</label>
+    </customValue>
+    <customValue>
+        <fullName>London SEN E</fullName>
+        <default>false</default>
+        <label>London SEN E</label>
+    </customValue>
+    <customValue>
+        <fullName>London SEN W</fullName>
+        <default>false</default>
+        <label>London SEN W</label>
+    </customValue>
+    <customValue>
+        <fullName>Manchester CES</fullName>
+        <default>false</default>
+        <label>Manchester CES</label>
+    </customValue>
+    <customValue>
+        <fullName>Manchester HSC</fullName>
+        <default>false</default>
+        <label>Manchester HSC</label>
+    </customValue>
+    <customValue>
+        <fullName>Manchester PMY</fullName>
+        <default>false</default>
+        <label>Manchester PMY</label>
+    </customValue>
+    <customValue>
+        <fullName>Manchester SEC</fullName>
+        <default>false</default>
+        <label>Manchester SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>Manchester SEN</fullName>
+        <default>false</default>
+        <label>Manchester SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <label>Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Newcastle CES</fullName>
+        <default>false</default>
+        <label>Newcastle CES</label>
+    </customValue>
+    <customValue>
+        <fullName>Newcastle HSC</fullName>
+        <default>false</default>
+        <label>Newcastle HSC</label>
+    </customValue>
+    <customValue>
+        <fullName>Newcastle SEC</fullName>
+        <default>false</default>
+        <label>Newcastle SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>Newcastle SEN</fullName>
+        <default>false</default>
+        <label>Newcastle SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Newcastle TEA</fullName>
+        <default>false</default>
+        <label>Newcastle TEA</label>
+    </customValue>
+    <customValue>
+        <fullName>Projects &amp; Bids</fullName>
+        <default>false</default>
+        <label>Projects &amp; Bids</label>
+    </customValue>
+    <customValue>
+        <fullName>Southampton CES</fullName>
+        <default>false</default>
+        <label>Southampton CES</label>
+    </customValue>
+    <customValue>
+        <fullName>Southampton PMY</fullName>
+        <default>false</default>
+        <label>Southampton PMY</label>
+    </customValue>
+    <customValue>
+        <fullName>Southampton SEC</fullName>
+        <default>false</default>
+        <label>Southampton SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>Southampton SEN</fullName>
+        <default>false</default>
+        <label>Southampton SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Swansea SEC</fullName>
+        <default>false</default>
+        <label>Swansea SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>Swansea SEN</fullName>
+        <default>false</default>
+        <label>Swansea SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>Training &amp; Development</fullName>
+        <default>false</default>
+        <label>Training &amp; Development</label>
+    </customValue>
+    <masterLabel>Team</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,39 @@
+{
+  "appPageId" : "21254a37-ad20-42cc-aa09-74b0a3a07763",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "4178dc94-cb57-491a-9e24-27416d5d7e07",
+  "label" : "Candidate  Client Contact Related List",
+  "regions" : [ {
+    "id" : "d92d4c5a-f333-4146-b1b9-086c7dd52125",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "df0cba43-7fb9-4fcb-a9ac-11a12f4095f8",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6bdec13c-0754-46cf-94ec-d6d4881cea3d",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "0c337cdb-cab8-4665-aedc-1926389eebe7",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-003"
+}

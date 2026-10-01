@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn diese Option aktiviert ist, erhält die Person wöchentliche Zahlungsmitteilungen, die sie über ihr Bruttogehalt informieren.</help>
+    <label><!-- Send Pay Advice --></label>
+    <name>sirenum__Send_Breakdown__c</name>
+</CustomFieldTranslation>

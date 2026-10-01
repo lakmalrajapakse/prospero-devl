@@ -5,7 +5,7 @@ import getMyCandidates from '@salesforce/apex/ClientPortalCandidateControllers.g
 
 const COLUMNS = [
     { label: 'First Name', fieldName: 'FirstName' },
-    { label: 'Gender', fieldName: 'sirenum__Gender__c' },
+    { label: 'Gender', fieldName: 'Gender__c' },
     {
         type: 'button',
         typeAttributes: {

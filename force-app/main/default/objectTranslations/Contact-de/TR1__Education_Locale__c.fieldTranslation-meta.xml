@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Das Land, dem das lokale Bildungsniveau entspricht</help>
+    <label><!-- Education Locale --></label>
+    <name>TR1__Education_Locale__c</name>
+    <picklistValues>
+        <masterLabel>Austria</masterLabel>
+        <translation>Österreich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Belgium</masterLabel>
+        <translation>Belgien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Brazil</masterLabel>
+        <translation>Brasilien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Canada</masterLabel>
+        <translation>Kanada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>China</masterLabel>
+        <translation><!-- China --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Croatia</masterLabel>
+        <translation>Kroatien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Czechia</masterLabel>
+        <translation><!-- Czechia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Denmark</masterLabel>
+        <translation>Dänemark</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finland</masterLabel>
+        <translation>Finnland</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>France</masterLabel>
+        <translation>Frankreich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Germany</masterLabel>
+        <translation>Deutschland</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hungary</masterLabel>
+        <translation>Ungarn</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Italy</masterLabel>
+        <translation>Italien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Japan</masterLabel>
+        <translation><!-- Japan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Netherlands</masterLabel>
+        <translation>Niederlande</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Norway</masterLabel>
+        <translation>Norwegen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Poland</masterLabel>
+        <translation>Polen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Portugal</masterLabel>
+        <translation><!-- Portugal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Romania</masterLabel>
+        <translation>Rumänien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Russian Federation</masterLabel>
+        <translation>Russische Föderation</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slovakia</masterLabel>
+        <translation>Slowakei</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slovenia</masterLabel>
+        <translation>Slowenien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spain</masterLabel>
+        <translation>Spanien</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sweden</masterLabel>
+        <translation>Schweden</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Switzerland</masterLabel>
+        <translation>Schweiz</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Turkiye</masterLabel>
+        <translation><!-- Turkiye --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United Kingdom</masterLabel>
+        <translation>Vereinigtes Königreich</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>United States</masterLabel>
+        <translation>USA</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Sector__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Sector</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Children&apos;s Centre</fullName>
+                <default>false</default>
+                <label>Children&apos;s Centre</label>
+            </value>
+            <value>
+                <fullName>College (6th)</fullName>
+                <default>false</default>
+                <label>College (6th)</label>
+            </value>
+            <value>
+                <fullName>Further Education</fullName>
+                <default>false</default>
+                <label>Further Education</label>
+            </value>
+            <value>
+                <fullName>HMP Prison</fullName>
+                <default>false</default>
+                <label>HMP Prison</label>
+            </value>
+            <value>
+                <fullName>Infant</fullName>
+                <default>false</default>
+                <label>Infant</label>
+            </value>
+            <value>
+                <fullName>Junior</fullName>
+                <default>false</default>
+                <label>Junior</label>
+            </value>
+            <value>
+                <fullName>Nursery</fullName>
+                <default>false</default>
+                <label>Nursery</label>
+            </value>
+            <value>
+                <fullName>Overseas Client</fullName>
+                <default>false</default>
+                <label>Overseas Client</label>
+            </value>
+            <value>
+                <fullName>Primary</fullName>
+                <default>false</default>
+                <label>Primary</label>
+            </value>
+            <value>
+                <fullName>Private Nursery</fullName>
+                <default>false</default>
+                <label>Private Nursery</label>
+            </value>
+            <value>
+                <fullName>Secondary</fullName>
+                <default>false</default>
+                <label>Secondary</label>
+            </value>
+            <value>
+                <fullName>Special Needs</fullName>
+                <default>false</default>
+                <label>Special Needs</label>
+            </value>
+            <value>
+                <fullName>Tech College</fullName>
+                <default>false</default>
+                <label>Tech College</label>
+            </value>
+            <value>
+                <fullName>Through School</fullName>
+                <default>false</default>
+                <label>Through School</label>
+            </value>
+            <value>
+                <fullName>Virtual School</fullName>
+                <default>false</default>
+                <label>Virtual School</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Ce champ est utilisé dans le jeu de champs TR1__Power_Notes_Tableview comme signal pour permettre au composant Vue de tableau PowerNotes d&apos;afficher les dossiers associés si le champ se trouve dans la section des champs affichés.</help>
+    <label><!-- Related To --></label>
+    <name>TR1__Related_Records__c</name>
+</CustomFieldTranslation>

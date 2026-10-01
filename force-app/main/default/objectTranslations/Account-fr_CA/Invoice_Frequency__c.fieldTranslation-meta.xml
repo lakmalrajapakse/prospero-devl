@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Invoice Frequency --></label>
+    <name>Invoice_Frequency__c</name>
+    <picklistValues>
+        <masterLabel>445 Monthly</masterLabel>
+        <translation><!-- 445 Monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Calendar Monthly</masterLabel>
+        <translation><!-- Calendar Monthly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Termly</masterLabel>
+        <translation><!-- Termly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Two-Weekly</masterLabel>
+        <translation><!-- Two-Weekly --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Weekly</masterLabel>
+        <translation><!-- Weekly --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- A highest degree type per country --></help>
+    <label><!-- Highest Local Education Level --></label>
+    <name>TR1__Highest_Local_Education_Level__c</name>
+    <picklistValues>
+        <masterLabel>AT AHS Oberstufe</masterLabel>
+        <translation><!-- AT AHS Oberstufe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT AHS Unterstufe</masterLabel>
+        <translation><!-- AT AHS Unterstufe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Akademie</masterLabel>
+        <translation><!-- AT Akademie --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT BHS</masterLabel>
+        <translation><!-- AT BHS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT BMS</masterLabel>
+        <translation><!-- AT BMS --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Dissertation</masterLabel>
+        <translation><!-- AT Dissertation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Fachhochschule</masterLabel>
+        <translation><!-- AT Fachhochschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Hauptschule</masterLabel>
+        <translation><!-- AT Hauptschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Kolleg</masterLabel>
+        <translation><!-- AT Kolleg --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Lehre</masterLabel>
+        <translation><!-- AT Lehre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Post-Akademische Ausbildung</masterLabel>
+        <translation><!-- AT Post-Akademische Ausbildung --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Unbekannt</masterLabel>
+        <translation><!-- AT Unbekannt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Universität</masterLabel>
+        <translation><!-- AT Universität --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Volksschule</masterLabel>
+        <translation><!-- AT Volksschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AT Werkmeister- und Meisterschule</masterLabel>
+        <translation><!-- AT Werkmeister- und Meisterschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Academische bachelor</masterLabel>
+        <translation><!-- BE Academische bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Academische/Professionele bachelor</masterLabel>
+        <translation><!-- BE Academische/Professionele bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Algemeen secundair onderwijs</masterLabel>
+        <translation><!-- BE Algemeen secundair onderwijs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Andere</masterLabel>
+        <translation><!-- BE Andere --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Bachelor/Master</masterLabel>
+        <translation><!-- BE Bachelor/Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Beroepssecundair onderwijs</masterLabel>
+        <translation><!-- BE Beroepssecundair onderwijs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Doctoraat</masterLabel>
+        <translation><!-- BE Doctoraat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Hoger beroepsonderwijs</masterLabel>
+        <translation><!-- BE Hoger beroepsonderwijs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Kunstsecundair onderwijs</masterLabel>
+        <translation><!-- BE Kunstsecundair onderwijs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Lager onderwijs</masterLabel>
+        <translation><!-- BE Lager onderwijs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Master</masterLabel>
+        <translation><!-- BE Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Onbekend</masterLabel>
+        <translation><!-- BE Onbekend --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Professionele bachelor</masterLabel>
+        <translation><!-- BE Professionele bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BE Technisch secundair onderwijs</masterLabel>
+        <translation><!-- BE Technisch secundair onderwijs --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BEP/CAP</masterLabel>
+        <translation><!-- BEP/CAP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BR Desconocido</masterLabel>
+        <translation><!-- BR Desconocido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BR Doutoramento</masterLabel>
+        <translation><!-- BR Doutoramento --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BR Ensino fundamentele</masterLabel>
+        <translation><!-- BR Ensino fundamentele --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BR Ensino secundário</masterLabel>
+        <translation><!-- BR Ensino secundário --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BR Licenciatura</masterLabel>
+        <translation><!-- BR Licenciatura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>BR Mestrado</masterLabel>
+        <translation><!-- BR Mestrado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac</masterLabel>
+        <translation><!-- Bac --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac Pro</masterLabel>
+        <translation><!-- Bac Pro --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+2</masterLabel>
+        <translation><!-- Bac+2 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+2/+3</masterLabel>
+        <translation><!-- Bac+2/+3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+2/+4</masterLabel>
+        <translation><!-- Bac+2/+4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+2/+5</masterLabel>
+        <translation><!-- Bac+2/+5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+3</masterLabel>
+        <translation><!-- Bac+3 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+3/+4</masterLabel>
+        <translation><!-- Bac+3/+4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+3/+5</masterLabel>
+        <translation><!-- Bac+3/+5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+4</masterLabel>
+        <translation><!-- Bac+4 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+4/+5</masterLabel>
+        <translation><!-- Bac+4/+5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+5</masterLabel>
+        <translation><!-- Bac+5 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bac+8</masterLabel>
+        <translation><!-- Bac+8 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA Bachelor&apos;s Degree</masterLabel>
+        <translation><!-- CA Bachelor&apos;s Degree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA High School</masterLabel>
+        <translation><!-- CA High School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA Master&apos;s Degree</masterLabel>
+        <translation><!-- CA Master&apos;s Degree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA Ph.D.</masterLabel>
+        <translation><!-- CA Ph.D. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA Unknown</masterLabel>
+        <translation><!-- CA Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CA Vocational Certificate</masterLabel>
+        <translation><!-- CA Vocational Certificate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Allgemeinbildende Schulen</masterLabel>
+        <translation><!-- CH Allgemeinbildende Schulen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Andere/Unbekannt</masterLabel>
+        <translation><!-- CH Andere/Unbekannt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Berufliche Grundbildung</masterLabel>
+        <translation><!-- CH Berufliche Grundbildung --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Doktorat</masterLabel>
+        <translation><!-- CH Doktorat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Hochschule</masterLabel>
+        <translation><!-- CH Hochschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Höhere Berufsbildung</masterLabel>
+        <translation><!-- CH Höhere Berufsbildung --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Masterstudium</masterLabel>
+        <translation><!-- CH Masterstudium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Nachdiplomausbildung</masterLabel>
+        <translation><!-- CH Nachdiplomausbildung --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Post-doc</masterLabel>
+        <translation><!-- CH Post-doc --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Primarschule</masterLabel>
+        <translation><!-- CH Primarschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CH Sekundarschule</masterLabel>
+        <translation><!-- CH Sekundarschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CN 大学</masterLabel>
+        <translation><!-- CN 大学 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZ Bakalář</masterLabel>
+        <translation><!-- CZ Bakalář --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZ DiS / Vos</masterLabel>
+        <translation><!-- CZ DiS / Vos --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZ Doctorat</masterLabel>
+        <translation><!-- CZ Doctorat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZ Gymnázium</masterLabel>
+        <translation><!-- CZ Gymnázium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZ Magistr</masterLabel>
+        <translation><!-- CZ Magistr --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZ SOU</masterLabel>
+        <translation><!-- CZ SOU --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZ Unknown</masterLabel>
+        <translation><!-- CZ Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CZ Základní škola</masterLabel>
+        <translation><!-- CZ Základní škola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Bachelor</masterLabel>
+        <translation><!-- DE Bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Dissertation</masterLabel>
+        <translation><!-- DE Dissertation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Fachschule/Berufsausbildung</masterLabel>
+        <translation><!-- DE Fachschule/Berufsausbildung --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Grundschule</masterLabel>
+        <translation><!-- DE Grundschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Gymnasium</masterLabel>
+        <translation><!-- DE Gymnasium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Hauptschule</masterLabel>
+        <translation><!-- DE Hauptschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Master</masterLabel>
+        <translation><!-- DE Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Meister</masterLabel>
+        <translation><!-- DE Meister --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Realschule</masterLabel>
+        <translation><!-- DE Realschule --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DE Unbekannt</masterLabel>
+        <translation><!-- DE Unbekannt --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DK Bachelor(DK)</masterLabel>
+        <translation><!-- DK Bachelor(DK) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DK Candidatus / Master</masterLabel>
+        <translation><!-- DK Candidatus / Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DK Folkeskole</masterLabel>
+        <translation><!-- DK Folkeskole --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DK Gymnasie</masterLabel>
+        <translation><!-- DK Gymnasie --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DK Ph.D.</masterLabel>
+        <translation><!-- DK Ph.D. --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DK Professional Higher</masterLabel>
+        <translation><!-- DK Professional Higher --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DK Universitet</masterLabel>
+        <translation><!-- DK Universitet --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DK Unknown</masterLabel>
+        <translation><!-- DK Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ES Bachillerato</masterLabel>
+        <translation><!-- ES Bachillerato --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ES Desconocido</masterLabel>
+        <translation><!-- ES Desconocido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ES Doctorado</masterLabel>
+        <translation><!-- ES Doctorado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ES Formación Profesional</masterLabel>
+        <translation><!-- ES Formación Profesional --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ES Grado</masterLabel>
+        <translation><!-- ES Grado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ES Licenciatura(ES)</masterLabel>
+        <translation><!-- ES Licenciatura(ES) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI Bachelor</masterLabel>
+        <translation><!-- FI Bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI Bachelor Polytechnic</masterLabel>
+        <translation><!-- FI Bachelor Polytechnic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI Basic Education</masterLabel>
+        <translation><!-- FI Basic Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI Engineer</masterLabel>
+        <translation><!-- FI Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI FI Upper Secondary School</masterLabel>
+        <translation><!-- FI FI Upper Secondary School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI Master</masterLabel>
+        <translation><!-- FI Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI No Degree</masterLabel>
+        <translation><!-- FI No Degree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI PhD</masterLabel>
+        <translation><!-- FI PhD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI Pre-doctoral Degree</masterLabel>
+        <translation><!-- FI Pre-doctoral Degree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI University Degree</masterLabel>
+        <translation><!-- FI University Degree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FI Vocational Upper Secondary</masterLabel>
+        <translation><!-- FI Vocational Upper Secondary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR Elementary</masterLabel>
+        <translation><!-- FR Elementary --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>FR Unknown</masterLabel>
+        <translation><!-- FR Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB &apos;A&apos; Level or equivalent</masterLabel>
+        <translation><!-- GB &apos;A&apos; Level or equivalent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB Bachelor&apos;s degree</masterLabel>
+        <translation><!-- GB Bachelor&apos;s degree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB GCSE or equivalent</masterLabel>
+        <translation><!-- GB GCSE or equivalent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB HND/HNC or equivalent</masterLabel>
+        <translation><!-- GB HND/HNC or equivalent --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB Master&apos;s degree</masterLabel>
+        <translation><!-- GB Master&apos;s degree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB Other</masterLabel>
+        <translation><!-- GB Other --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB Post-Graduate qualification</masterLabel>
+        <translation><!-- GB Post-Graduate qualification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB Professional qualification</masterLabel>
+        <translation><!-- GB Professional qualification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB Unknown</masterLabel>
+        <translation><!-- GB Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GB Vocational qualification (NVQ/VRQ/QCF)</masterLabel>
+        <translation><!-- GB Vocational qualification (NVQ/VRQ/QCF) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GR Bachelor</masterLabel>
+        <translation><!-- GR Bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GR Doctorate</masterLabel>
+        <translation><!-- GR Doctorate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GR Lower Secondary School</masterLabel>
+        <translation><!-- GR Lower Secondary School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GR Master</masterLabel>
+        <translation><!-- GR Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GR Primary School</masterLabel>
+        <translation><!-- GR Primary School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GR Unknown</masterLabel>
+        <translation><!-- GR Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GR Upper Secondary School</masterLabel>
+        <translation><!-- GR Upper Secondary School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Bez diplome</masterLabel>
+        <translation><!-- HR Bez diplome --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Doktor znanosti</masterLabel>
+        <translation><!-- HR Doktor znanosti --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Osnovna škola</masterLabel>
+        <translation><!-- HR Osnovna škola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Poslijediplomski znanstveni magistarski studiji</masterLabel>
+        <translation><!-- HR Poslijediplomski znanstveni magistarski studiji --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Srednja stručna sprema</masterLabel>
+        <translation><!-- HR Srednja stručna sprema --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Visoka stručna sprema</masterLabel>
+        <translation><!-- HR Visoka stručna sprema --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Viša stručna sprema</masterLabel>
+        <translation><!-- HR Viša stručna sprema --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HU Egyetem- BSc, BA</masterLabel>
+        <translation><!-- HU Egyetem- BSc, BA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HU Egyetem- MSc, MA, osztatlan</masterLabel>
+        <translation><!-- HU Egyetem- MSc, MA, osztatlan --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HU Főiskola</masterLabel>
+        <translation><!-- HU Főiskola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HU Gimnázium</masterLabel>
+        <translation><!-- HU Gimnázium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HU PhD</masterLabel>
+        <translation><!-- HU PhD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HU Posztgraduális képzés</masterLabel>
+        <translation><!-- HU Posztgraduális képzés --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HU Szakiskola</masterLabel>
+        <translation><!-- HU Szakiskola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HU Unknown</masterLabel>
+        <translation><!-- HU Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HU Általános Iskola</masterLabel>
+        <translation><!-- HU Általános Iskola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Corsi</masterLabel>
+        <translation><!-- IT Corsi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Dottorato di ricerca</masterLabel>
+        <translation><!-- IT Dottorato di ricerca --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Laurea specialistica</masterLabel>
+        <translation><!-- IT Laurea specialistica --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Laurea triennale</masterLabel>
+        <translation><!-- IT Laurea triennale --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Master I livello</masterLabel>
+        <translation><!-- IT Master I livello --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Master II livello</masterLabel>
+        <translation><!-- IT Master II livello --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Scuola della infanzia</masterLabel>
+        <translation><!-- IT Scuola della infanzia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Scuola elementare</masterLabel>
+        <translation><!-- IT Scuola elementare --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Scuola secondaria di primo grado</masterLabel>
+        <translation><!-- IT Scuola secondaria di primo grado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT Scuola secondaria di secondo grado</masterLabel>
+        <translation><!-- IT Scuola secondaria di secondo grado --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>JP 大学</masterLabel>
+        <translation><!-- JP 大学 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL Elementair</masterLabel>
+        <translation><!-- NL Elementair --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL HAVO</masterLabel>
+        <translation><!-- NL HAVO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL HAVO/VWO</masterLabel>
+        <translation><!-- NL HAVO/VWO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL HBO</masterLabel>
+        <translation><!-- NL HBO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL HBO/WO</masterLabel>
+        <translation><!-- NL HBO/WO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL MBO</masterLabel>
+        <translation><!-- NL MBO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL MBO/HBO</masterLabel>
+        <translation><!-- NL MBO/HBO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL Mavo/VMBO</masterLabel>
+        <translation><!-- NL Mavo/VMBO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL Onbekend</masterLabel>
+        <translation><!-- NL Onbekend --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL Post WO</masterLabel>
+        <translation><!-- NL Post WO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL VMBO</masterLabel>
+        <translation><!-- NL VMBO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL VMBO/Havo</masterLabel>
+        <translation><!-- NL VMBO/Havo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL VMBO/MBO</masterLabel>
+        <translation><!-- NL VMBO/MBO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL Vwo</masterLabel>
+        <translation><!-- NL Vwo --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NL WO</masterLabel>
+        <translation><!-- NL WO --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO Bachelor</masterLabel>
+        <translation><!-- NO Bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO Doctorate</masterLabel>
+        <translation><!-- NO Doctorate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO Lower Secondary School</masterLabel>
+        <translation><!-- NO Lower Secondary School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO Master</masterLabel>
+        <translation><!-- NO Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO Primary School</masterLabel>
+        <translation><!-- NO Primary School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO University</masterLabel>
+        <translation><!-- NO University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO Unknown</masterLabel>
+        <translation><!-- NO Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO Upper Secondary School</masterLabel>
+        <translation><!-- NO Upper Secondary School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NO Vocational Education</masterLabel>
+        <translation><!-- NO Vocational Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PL Bachelor</masterLabel>
+        <translation><!-- PL Bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PL Doktor</masterLabel>
+        <translation><!-- PL Doktor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PL Gimnazjum</masterLabel>
+        <translation><!-- PL Gimnazjum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PL Liceum</masterLabel>
+        <translation><!-- PL Liceum --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PL Magister</masterLabel>
+        <translation><!-- PL Magister --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PL Szkola Podstawowa</masterLabel>
+        <translation><!-- PL Szkola Podstawowa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PL Unknown</masterLabel>
+        <translation><!-- PL Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PT Desconocido</masterLabel>
+        <translation><!-- PT Desconocido --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PT Doutor</masterLabel>
+        <translation><!-- PT Doutor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PT Ensino fundamentele</masterLabel>
+        <translation><!-- PT Ensino fundamentele --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PT Ensino medio</masterLabel>
+        <translation><!-- PT Ensino medio --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PT Licenciatura</masterLabel>
+        <translation><!-- PT Licenciatura --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PT Mestre</masterLabel>
+        <translation><!-- PT Mestre --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO Diplomă de Licenţă</masterLabel>
+        <translation><!-- RO Diplomă de Licenţă --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO Gimnaziu</masterLabel>
+        <translation><!-- RO Gimnaziu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO Liceu</masterLabel>
+        <translation><!-- RO Liceu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO Master</masterLabel>
+        <translation><!-- RO Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO PhD</masterLabel>
+        <translation><!-- RO PhD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO Scoala Postliceala</masterLabel>
+        <translation><!-- RO Scoala Postliceala --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO Scoala Primara</masterLabel>
+        <translation><!-- RO Scoala Primara --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RO Unknown</masterLabel>
+        <translation><!-- RO Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RU Bachelor</masterLabel>
+        <translation><!-- RU Bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RU Master</masterLabel>
+        <translation><!-- RU Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RU PhD</masterLabel>
+        <translation><!-- RU PhD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RU Primary school</masterLabel>
+        <translation><!-- RU Primary school --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RU Prof. Qualification</masterLabel>
+        <translation><!-- RU Prof. Qualification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RU Secondary school</masterLabel>
+        <translation><!-- RU Secondary school --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RU Unknown11</masterLabel>
+        <translation><!-- RU Unknown11 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Grundskola</masterLabel>
+        <translation><!-- SE Grundskola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Gymnasieskola</masterLabel>
+        <translation><!-- SE Gymnasieskola --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Högskolexamen</masterLabel>
+        <translation><!-- SE Högskolexamen --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Kandidat</masterLabel>
+        <translation><!-- SE Kandidat --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Master</masterLabel>
+        <translation><!-- SE Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Universitet-Licenciat-PhD</masterLabel>
+        <translation><!-- SE Universitet-Licenciat-PhD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SE Unknown</masterLabel>
+        <translation><!-- SE Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SI Brez stopnje</masterLabel>
+        <translation><!-- SI Brez stopnje --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SI Dodiplomski študij</masterLabel>
+        <translation><!-- SI Dodiplomski študij --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SI Doktor znanosti</masterLabel>
+        <translation><!-- SI Doktor znanosti --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SI Magister</masterLabel>
+        <translation><!-- SI Magister --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SI Magisterij znanosti</masterLabel>
+        <translation><!-- SI Magisterij znanosti --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SI Osnovnošolska izobrazba</masterLabel>
+        <translation><!-- SI Osnovnošolska izobrazba --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SI Srednješolska izobrazba</masterLabel>
+        <translation><!-- SI Srednješolska izobrazba --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SK Postgraduálne Štúdium</masterLabel>
+        <translation><!-- SK Postgraduálne Štúdium --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SK Stredoškolské Vzdelanie Alebo Odborné Vyučenie</masterLabel>
+        <translation><!-- SK Stredoškolské Vzdelanie Alebo Odborné Vyučenie --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SK Unknown</masterLabel>
+        <translation><!-- SK Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SK Vysokoškolské/Univerzitné Vzdelanie</masterLabel>
+        <translation><!-- SK Vysokoškolské/Univerzitné Vzdelanie --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SK Základné Vzdelanie</masterLabel>
+        <translation><!-- SK Základné Vzdelanie --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR Diğer/Bilinmiyor</masterLabel>
+        <translation><!-- TR Diğer/Bilinmiyor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR Doktora</masterLabel>
+        <translation><!-- TR Doktora --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR Doktora sonrası</masterLabel>
+        <translation><!-- TR Doktora sonrası --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR Lisans</masterLabel>
+        <translation><!-- TR Lisans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR Lise</masterLabel>
+        <translation><!-- TR Lise --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR Yüksek Lisans</masterLabel>
+        <translation><!-- TR Yüksek Lisans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR Önlisans</masterLabel>
+        <translation><!-- TR Önlisans --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TR İlköğretim</masterLabel>
+        <translation><!-- TR İlköğretim --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Associate Degree</masterLabel>
+        <translation><!-- US Associate Degree --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Bachelor</masterLabel>
+        <translation><!-- US Bachelor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US College</masterLabel>
+        <translation><!-- US College --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US High School</masterLabel>
+        <translation><!-- US High School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Master</masterLabel>
+        <translation><!-- US Master --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US PhD</masterLabel>
+        <translation><!-- US PhD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Post-Doctorate Qualification</masterLabel>
+        <translation><!-- US Post-Doctorate Qualification --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Unknown</masterLabel>
+        <translation><!-- US Unknown --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>US Vocational Certificate</masterLabel>
+        <translation><!-- US Vocational Certificate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>マスター</masterLabel>
+        <translation><!-- マスター --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>リクエストなし</masterLabel>
+        <translation><!-- リクエストなし --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>中学</masterLabel>
+        <translation><!-- 中学 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>中等学校</masterLabel>
+        <translation><!-- 中等学校 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>博士</masterLabel>
+        <translation><!-- 博士 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>博士号</masterLabel>
+        <translation><!-- 博士号 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>小学</masterLabel>
+        <translation><!-- 小学 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>小学校</masterLabel>
+        <translation><!-- 小学校 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>无要求</masterLabel>
+        <translation><!-- 无要求 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>硕士</masterLabel>
+        <translation><!-- 硕士 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>职业教育</masterLabel>
+        <translation><!-- 职业教育 --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>職業教育</masterLabel>
+        <translation><!-- 職業教育 --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

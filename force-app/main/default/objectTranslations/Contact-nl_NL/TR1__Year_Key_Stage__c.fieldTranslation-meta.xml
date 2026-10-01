@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Year/Key Stage --></label>
+    <name>TR1__Year_Key_Stage__c</name>
+    <picklistValues>
+        <masterLabel>Foundation Stage 3-5yrs</masterLabel>
+        <translation>Basisfase 3-5 jaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS1</masterLabel>
+        <translation>5-7 jaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS2</masterLabel>
+        <translation>7-11 jaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS3-5</masterLabel>
+        <translation>11-18 jaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>KS3/4</masterLabel>
+        <translation>12-16 jaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursery 0-5yrs</masterLabel>
+        <translation>Kinderdagverblijf 0-5 jaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post-16</masterLabel>
+        <translation>Na 16e jaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y1(KS1)</masterLabel>
+        <translation>1e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y10(KS4)</masterLabel>
+        <translation>10e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y11(KS4)</masterLabel>
+        <translation>11e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y12(KS5)</masterLabel>
+        <translation>12e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y13(KS5)</masterLabel>
+        <translation>13e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y2(KS1)</masterLabel>
+        <translation>2e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y3(KS2)</masterLabel>
+        <translation>3e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y4(KS2)</masterLabel>
+        <translation>4e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y5(KS2)</masterLabel>
+        <translation>5e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y6(KS2)</masterLabel>
+        <translation>6e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y7(KS3)</masterLabel>
+        <translation>7e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y8(KS3)</masterLabel>
+        <translation>8e onderwijsjaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Y9(KS3)</masterLabel>
+        <translation>9e onderwijsjaar</translation>
+    </picklistValues>
+</CustomFieldTranslation>

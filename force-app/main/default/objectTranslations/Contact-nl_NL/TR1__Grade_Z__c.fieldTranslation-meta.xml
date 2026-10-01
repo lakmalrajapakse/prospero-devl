@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Grade 2 --></label>
+    <name>TR1__Grade_Z__c</name>
+    <picklistValues>
+        <masterLabel>Clinical Director</masterLabel>
+        <translation>Klinisch directeur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director of Medical Services</masterLabel>
+        <translation>Directeur medische diensten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Student</masterLabel>
+        <translation>Student geneeskunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registrar</masterLabel>
+        <translation>Registratieambtenaar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resident Medical Officer</masterLabel>
+        <translation>Inwonend arts</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SMO/MOSS</masterLabel>
+        <translation>Spoedeisende hulp</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Specialist Consultant</masterLabel>
+        <translation>Gespecialiseerde consultant</translation>
+    </picklistValues>
+</CustomFieldTranslation>

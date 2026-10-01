@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Extension de la politique de dépassement des limites</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Extensions de la politique de dépassement des limites</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom d&apos;extension de la politique de dépas</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

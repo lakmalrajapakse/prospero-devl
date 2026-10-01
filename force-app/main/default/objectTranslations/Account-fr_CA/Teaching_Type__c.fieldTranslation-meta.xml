@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Teaching Type --></label>
+    <name>Teaching_Type__c</name>
+    <picklistValues>
+        <masterLabel>Council</masterLabel>
+        <translation><!-- Council --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Department</masterLabel>
+        <translation><!-- Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local Authority</masterLabel>
+        <translation><!-- Local Authority --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parent Academy</masterLabel>
+        <translation><!-- Parent Academy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Client</masterLabel>
+        <translation><!-- Private Client --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>School</masterLabel>
+        <translation><!-- School --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

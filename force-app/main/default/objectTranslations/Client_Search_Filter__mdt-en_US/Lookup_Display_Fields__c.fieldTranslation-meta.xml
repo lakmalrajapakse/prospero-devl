@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Comma separated API name of the fields of that object that is being searched --></help>
+    <label><!-- Lookup Display Fields --></label>
+    <name>Lookup_Display_Fields__c</name>
+</CustomFieldTranslation>

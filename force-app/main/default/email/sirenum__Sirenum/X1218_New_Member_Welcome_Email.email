@@ -1,0 +1,14 @@
+<table border="0" cellpadding="5" width="600" cellspacing="5" height="400" >
+<tr valign="top" height="50" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[]]></td>
+</tr>
+<tr valign="top" height="300" >
+<td tEditID="c1r2" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r2" locked="0" >
+<![CDATA[<div><span style="background-color: rgb(255, 255, 255); font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">Hi {!Receiving_User.FirstName},</span></div><div><div style="font-size: 12pt;"><font face="Arial, Helvetica, sans-serif"><span style="background-color: rgb(255, 255, 255);"><br></span></font></div><div style="font-size: 12pt;"><font face="Arial, Helvetica, sans-serif"><span style="background-color: rgb(255, 255, 255);">Welcome to {!Community_Name}! To get started, go to </span><a href="{!Community_Url}">MyProspero</a></font></div><div style="font-size: 12pt;"><font face="Arial, Helvetica, sans-serif"><span style="background-color: rgb(255, 255, 255);"><br></span></font></div><div style="font-size: 12pt;"><font face="Arial, Helvetica, sans-serif"><span style="background-color: rgb(255, 255, 255);">Username: {!Receiving_User.Username}</span></font></div></div><div style="font-size: 12pt;"><font face="Arial, Helvetica, sans-serif"><span style="background-color: rgb(255, 255, 255);"><br></span></font></div><div style="font-size: 12pt;"><font face="Arial, Helvetica, sans-serif"><span style="background-color: rgb(255, 255, 255);">Thanks,</span></font></div><div style="font-size: 12pt;">Prospero</div>]]></td>
+</tr>
+<tr valign="top" height="50" >
+<td tEditID="c1r3" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r3" locked="0" >
+<![CDATA[]]></td>
+</tr>
+</table>

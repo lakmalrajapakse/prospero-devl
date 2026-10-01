@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Additional_Phone_Sanitised__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(SUBSTITUTE(sirenum__Additional_Phone__c, &apos; &apos;, &apos;&apos;), &apos;-&apos;, &apos;&apos;)</formula>
+    <label>Additional Phone Sanitised</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

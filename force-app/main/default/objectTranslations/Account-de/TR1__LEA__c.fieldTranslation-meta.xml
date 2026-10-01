@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Region --></label>
+    <name>TR1__LEA__c</name>
+    <picklistValues>
+        <masterLabel>East Midlands</masterLabel>
+        <translation><!-- East Midlands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Eastern England</masterLabel>
+        <translation><!-- Eastern England --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Greater London</masterLabel>
+        <translation><!-- Greater London --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North East</masterLabel>
+        <translation><!-- North East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North West</masterLabel>
+        <translation><!-- North West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South East England</masterLabel>
+        <translation><!-- South East England --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South West England</masterLabel>
+        <translation><!-- South West England --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Wales</masterLabel>
+        <translation><!-- Wales --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>West Midlands</masterLabel>
+        <translation><!-- West Midlands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yorkshire &amp; Humberside</masterLabel>
+        <translation><!-- Yorkshire &amp; Humberside --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

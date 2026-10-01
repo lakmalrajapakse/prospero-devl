@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Manual_NIC__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>False if the NI number is normal, True otherwise (maintained autmoatically using workflow rule)</description>
+    <inlineHelpText>If the National Insurance number isn&apos;t according to regulation (and you see an error), check this box.</inlineHelpText>
+    <label>Invalid NIC</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

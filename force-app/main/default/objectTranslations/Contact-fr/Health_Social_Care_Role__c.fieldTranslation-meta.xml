@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Health &amp; Social Care Role --></label>
+    <name>Health_Social_Care_Role__c</name>
+    <picklistValues>
+        <masterLabel>Activity Coordinator</masterLabel>
+        <translation><!-- Activity Coordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Admin Manager</masterLabel>
+        <translation><!-- Admin Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAMHS Worker</masterLabel>
+        <translation><!-- CAMHS Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Care Coordinator</masterLabel>
+        <translation><!-- Care Coordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clinical Lead</masterLabel>
+        <translation><!-- Clinical Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commissioner</masterLabel>
+        <translation><!-- Commissioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Deputy Manager</masterLabel>
+        <translation><!-- Deputy Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Duty Officer</masterLabel>
+        <translation><!-- Duty Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Family Support Worker</masterLabel>
+        <translation><!-- Family Support Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HR Manager</masterLabel>
+        <translation><!-- HR Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Service</masterLabel>
+        <translation><!-- Head of Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health Care Assistant</masterLabel>
+        <translation><!-- Health Care Assistant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LADO (Local Authority Designated Officer)</masterLabel>
+        <translation><!-- LADO (Local Authority Designated Officer) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Legal Aid/Solicitor</masterLabel>
+        <translation><!-- Legal Aid/Solicitor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nurse Manager</masterLabel>
+        <translation><!-- Nurse Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operations/Services Manager</masterLabel>
+        <translation><!-- Operations/Services Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parent/Guardian</masterLabel>
+        <translation><!-- Parent/Guardian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Permanence Lead</masterLabel>
+        <translation><!-- Permanence Lead --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Probation Officer</masterLabel>
+        <translation><!-- Probation Officer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Registered Manager</masterLabel>
+        <translation><!-- Registered Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Nurse</masterLabel>
+        <translation><!-- Senior Nurse --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Practitioner</masterLabel>
+        <translation><!-- Senior Practitioner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sister</masterLabel>
+        <translation><!-- Sister --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Site Manager</masterLabel>
+        <translation><!-- Site Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Worker</masterLabel>
+        <translation><!-- Social Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Worker Manager</masterLabel>
+        <translation><!-- Social Worker Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Support Worker</masterLabel>
+        <translation><!-- Support Worker --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Team Manager/Team Leader</masterLabel>
+        <translation><!-- Team Manager/Team Leader --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ward Manager</masterLabel>
+        <translation><!-- Ward Manager --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

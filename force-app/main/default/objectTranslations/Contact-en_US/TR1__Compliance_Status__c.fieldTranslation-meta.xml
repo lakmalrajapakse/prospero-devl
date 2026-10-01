@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Compliance Status --></label>
+    <name>TR1__Compliance_Status__c</name>
+    <picklistValues>
+        <masterLabel>Cleared</masterLabel>
+        <translation><!-- Cleared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleared Pending</masterLabel>
+        <translation><!-- Cleared Pending --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interview Complete</masterLabel>
+        <translation><!-- Interview Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Cleared</masterLabel>
+        <translation><!-- Not Cleared --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Compliant</masterLabel>
+        <translation><!-- Not Compliant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Registered</masterLabel>
+        <translation><!-- Not Registered --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm</masterLabel>
+        <translation><!-- Perm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vet Complete</masterLabel>
+        <translation><!-- Vet Complete --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vet FLTP</masterLabel>
+        <translation><!-- Vet FLTP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vet Perm</masterLabel>
+        <translation><!-- Vet Perm --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

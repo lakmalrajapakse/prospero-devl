@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Roles__c</fullName>
+    <label>Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>Brand__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Roles</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Activity Coordinator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Admin Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>CAMHS worker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Care Coordinator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Clinical Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Commissioner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Deputy Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Driver/Transport</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Duty Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Head of Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Health Care Assistant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>HR Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Legal Aid/Solicitor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Nurse Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Operations/Services Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Permanence Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Probation Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Registered Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Safeguarding Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Senior Nurse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Senior Practitioner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Sister</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Site Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Social Worker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Social Worker Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Support Worker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Team Manager/Team Leader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Ward Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>3D Animator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Administrator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Architect</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Audio Technician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>AV Event Technician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>AV Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>CAD/Auto CAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Camera Operator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>CCTV/Security Engineer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>CEO/Owner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Commissioning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Consultant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Co-Ordinator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Developer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Director</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Fibre/Data Engineers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Field Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Finance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Graphics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Head of Department</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Health and Safety/QSHE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Helpdesk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Hire Desk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Human resources</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Installation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>IT General</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Lighting Designer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Lighting Technician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Onsite Maintenance</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Onsite Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Operations / infrastructure</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Pre-Sales Engineer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Producer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Production Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Production Runner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Product Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Programmer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Project Engineer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Project Manager (AV)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Rack Builder</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Sales/Account Man./Business Development</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Scenic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Senior Management</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Service Desk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Sound Designer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Studio Manager/Director</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>System Designer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Technical Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Trainee/Entry Level</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Video Editor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Video Technician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>VNOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Integrated</controllingFieldValue>
+            <valueName>Warehouse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Academic Advisor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Admin/ Receptionist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Admissions Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Advisory Teacher (CES)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Alternative Provision Coordinator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>AP Case Worker (Alternative Provision)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Assistant Headteacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Assistant SENCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Attendance Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Behaviour/ Pastoral Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Behaviour/ Pastoral Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Business Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Caretaker/ Site Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Caretaker / Site Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Catering Assistant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Child Protection Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>CLA Lead (Children Looked After)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Cleaner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Compliance Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Cover Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Cover Supervisor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Data Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Data Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Deputy Headteacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>DSL (Designated Safeguarding Lead)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>EAL Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>EAL Teaching Assistant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Early Help Worker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Educational Psychologist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>EHCP Co-ordinator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>EHCP Writers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Exam Invigilator/ Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Exam Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Executive Headteacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>EYFS Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Family Support Worker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>FE Lecturer/Teacher (Further Education)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Finance Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Finance Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Governor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Graduate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Head of Key Stage</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Head of Subject/ Department</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Head of Year</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Head Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>HE Lecturer (Higher Education)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>HLTA (Higher Level Teaching Assistant)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>HR Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>ICT Technician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Inclusion Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Inclusion Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Intervention Assistant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Intervention Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Librarian</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Lunchtime Supervisor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Mentor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>NEET Coordinator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>NQT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Nursery Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Nursery Nurse</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Nursery Staff/Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Nursery Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Office Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Operations Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Overseas Primary Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Overseas Secondary Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>PA to Headteacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Payroll/Finance Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Primary Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Procurement Lead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Procurement Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Regional Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Reprographics Technician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Room Leader</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>SBM (School Business Manager)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>School Improvement Officer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Secondary Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>SEND Case Worker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>SENDCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>SEND Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>SEND TA/Support</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>SEND Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Speech &amp; Language Therapist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Student Services Manager</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Teaching Learning Assistant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Technician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Therapist</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Trainer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Trainer/Consultant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Trust Executive Leader / Director of Education</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Tutor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Unqualified Primary Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Unqualified Secondary Teacher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Virtual School Caseworker</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Virtual School Head</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

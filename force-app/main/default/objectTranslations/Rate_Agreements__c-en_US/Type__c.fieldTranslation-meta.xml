@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Type --></label>
+    <name>Type__c</name>
+    <picklistValues>
+        <masterLabel>Margin Calculator Template</masterLabel>
+        <translation><!-- Margin Calculator Template --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pay Based</masterLabel>
+        <translation><!-- Pay Based --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

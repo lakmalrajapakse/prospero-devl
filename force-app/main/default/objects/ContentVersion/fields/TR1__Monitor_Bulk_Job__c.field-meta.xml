@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Monitor_Bulk_Job__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <label>Monitor Bulk Job</label>
+    <referenceTo>TR1__Monitor_Bulk_Job__c</referenceTo>
+    <relationshipLabel>Content Versions</relationshipLabel>
+    <relationshipName>Content_Versions</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>De bron van de kandidaatgegevens. Voor een kandidaat die is geïmporteerd via TK Source! bevat dit veld bijvoorbeeld de TK Source!-sleutel van de externe zoeker.</help>
+    <label><!-- Imported From --></label>
+    <name>TR1__Imported_From__c</name>
+</CustomFieldTranslation>

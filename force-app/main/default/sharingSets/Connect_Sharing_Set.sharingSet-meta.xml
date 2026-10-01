@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessMappings>
+        <accessLevel>Read</accessLevel>
+        <object>Account</object>
+        <objectField>Id</objectField>
+        <userField>Account</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>Contact</object>
+        <objectField>Id</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <accessMappings>
+        <accessLevel>Edit</accessLevel>
+        <object>sirenum__Shift__c</object>
+        <objectField>sirenum__Contact__c</objectField>
+        <userField>Contact</userField>
+    </accessMappings>
+    <name>Connect Sharing Set</name>
+    <profiles>HSC Birmingham</profiles>
+    <profiles>HSC Bristol</profiles>
+    <profiles>HSC Cardiff</profiles>
+    <profiles>HSC Chelmsford</profiles>
+    <profiles>HSC Glasgow</profiles>
+    <profiles>HSC Leeds</profiles>
+    <profiles>HSC Liverpool</profiles>
+    <profiles>HSC London</profiles>
+    <profiles>HSC Manchester</profiles>
+    <profiles>HSC Newcastle</profiles>
+    <profiles>HSC Southampton</profiles>
+    <profiles>INT London</profiles>
+    <profiles>TEA Birmingham</profiles>
+    <profiles>TEA Bristol</profiles>
+    <profiles>TEA Cardiff</profiles>
+    <profiles>TEA Chelmsford</profiles>
+    <profiles>TEA Leeds</profiles>
+    <profiles>TEA Liverpool</profiles>
+    <profiles>TEA London</profiles>
+    <profiles>TEA Manchester</profiles>
+    <profiles>TEA Newcastle</profiles>
+    <profiles>TEA Southampton</profiles>
+    <profiles>TEA Swansea</profiles>
+</SharingSet>

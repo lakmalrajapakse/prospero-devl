@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Employee_Reference__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>The most recent open payroll record reference number for the employee.</inlineHelpText>
+    <label>Employee Reference</label>
+    <summarizedField>sirenum__Payroll_Record__c.sirenum__Employee_Reference__c</summarizedField>
+    <summaryFilterItems>
+        <field>sirenum__Payroll_Record__c.sirenum__Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </summaryFilterItems>
+    <summaryForeignKey>sirenum__Payroll_Record__c.sirenum__Employee__c</summaryForeignKey>
+    <summaryOperation>max</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

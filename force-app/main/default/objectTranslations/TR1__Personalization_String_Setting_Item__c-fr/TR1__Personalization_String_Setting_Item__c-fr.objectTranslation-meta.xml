@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Élément du paramètre de la chaîne de personnalisation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Éléments du paramètre de la chaîne de personnalisation</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom de l&apos;élément de la chaîne de personn</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

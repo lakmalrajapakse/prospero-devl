@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Requête de l’employé</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Requêtes de l’employé</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Connect Employee Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Nom de la requête de l’employé</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

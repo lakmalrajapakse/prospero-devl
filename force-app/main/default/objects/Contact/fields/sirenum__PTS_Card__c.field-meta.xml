@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__PTS_Card__c</fullName>
+    <deprecated>false</deprecated>
+    <inlineHelpText>The type of PTS training this person has</inlineHelpText>
+    <label>PTS Card</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No Card</fullName>
+                <default>true</default>
+                <label>No Card</label>
+            </value>
+            <value>
+                <fullName>PTS AC Only</fullName>
+                <default>false</default>
+                <label>PTS AC Only</label>
+            </value>
+            <value>
+                <fullName>PTS DC Only</fullName>
+                <default>false</default>
+                <label>PTS DC Only</label>
+            </value>
+            <value>
+                <fullName>PTS AC/DC</fullName>
+                <default>false</default>
+                <label>PTS AC/DC</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

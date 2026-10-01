@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Mobile_Phone_Sanitised__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Deprecated. Use the Mobile Phone field instead</description>
+    <externalId>false</externalId>
+    <formula>$Label.sirenum__StandardDeprecated</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Deprecated. Use the Mobile Phone field instead</inlineHelpText>
+    <label>Mobile Phone Sanitised (Deprecated)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

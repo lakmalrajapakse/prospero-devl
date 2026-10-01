@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SubmittalsListPage --></label>
+    <name>TR1__SubmittalsListPage__c</name>
+    <picklistValues>
+        <masterLabel>All</masterLabel>
+        <translation>Alles</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>account</masterLabel>
+        <translation><!-- account --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>application</masterLabel>
+        <translation>sollicitatie</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>job</masterLabel>
+        <translation>functie</translation>
+    </picklistValues>
+</CustomFieldTranslation>

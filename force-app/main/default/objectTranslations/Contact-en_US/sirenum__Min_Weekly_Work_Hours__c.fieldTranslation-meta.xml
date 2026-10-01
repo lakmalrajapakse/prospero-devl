@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If the employee has a set minimum hours they should be working, enter it here. It will be reflected when finding candidates in Scheduling. --></help>
+    <label><!-- Min Weekly Work Hours --></label>
+    <name>sirenum__Min_Weekly_Work_Hours__c</name>
+</CustomFieldTranslation>

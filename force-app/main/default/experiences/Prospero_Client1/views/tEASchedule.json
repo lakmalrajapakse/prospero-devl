@@ -1,0 +1,65 @@
+{
+  "appPageId" : "8c871e13-6d08-4440-b759-c322ea3acaef",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "a9f946c9-3956-49e3-ac0e-105d4cea245e",
+  "label" : "TEA Schedule",
+  "regions" : [ {
+    "id" : "bbd78306-01f7-4333-926f-e251205e9e71",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "bannerText" : "All your worker schedules in one place!",
+        "bannerTextWithKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineArticles\">articles</a> and <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "bannerTextWithoutKnowledge" : "Explore other <a href=\"javascript:void(0)\" class=\"headlineDiscussions\">discussions</a> on this topic.",
+        "pageType" : "",
+        "showSubTopics" : true,
+        "title" : "Schedule",
+        "uniqueNameOrId" : ""
+      },
+      "componentName" : "forceCommunity:headline",
+      "id" : "ff16e6b8-b2f8-45bf-9732-5f56e850a001",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "definitionName" : "BH4SFSchedule_TEAClient",
+        "minimumHeight" : "50em",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "sirenum:schedule",
+      "id" : "a1dce11e-6e31-40c7-8623-a69a9600c033",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d7ec21a1-aa2a-4424-b3e8-c3a943117829",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "d6da33a6-274b-49d9-9a14-ea1bfa97231d",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Schedule"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "5efabed5-97e7-4ed1-bb0a-3e9ce31b3648",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f6b0ccf1-4bc8-4212-94c9-f0fcec44a0c2",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-schedule"
+}

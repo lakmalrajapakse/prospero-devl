@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Date_To_Sort_By__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Formula to calculate Date/Time value used to sort Activities in the Combined View for Power Note List component.</description>
+    <formula>IF(
+NOT(ISNULL(ActivityDateTime)),
+ActivityDateTime,
+(IF(NOT(ISNULL(ActivityDate)), DATETIMEVALUE(ActivityDate), CreatedDate))
+)</formula>
+    <inlineHelpText>Formula to calculate Date/Time value used to sort Activities in the Combined View for Power Note List component.</inlineHelpText>
+    <label>Date To Sort By</label>
+    <required>false</required>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <quickActions>
+        <label><!-- Commission Splits --></label>
+        <name>Commission_Splits</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Margin Calculator --></label>
+        <name>Margin_Calculator</name>
+    </quickActions>
+</CustomObjectTranslation>

@@ -34,58 +34,82 @@
                                     <th scope="col"><div class="slds-truncate">Worker Type</div></th>
                                     <th scope="col"><div class="slds-truncate">Calc Type</div></th>
                                     <th scope="col"><div class="slds-truncate">Margin Value</div></th>
+                                    <th scope="col"><div class="slds-truncate">Min Scale</div></th>
+                                    <th scope="col"><div class="slds-truncate">Max Scale</div></th>
                                     <th style="width: 7rem;"></th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <template for:each={lines} for:item="line">
-                                    <tr key={line.Id} class="slds-hint-parent">
-                                        <td><div class="slds-truncate">{line.Name}</div></td>
-                                        <td>
-                                            <lightning-combobox
-                                                variant="label-hidden"
-                                                value={line.Worker_Type__c}
-                                                options={workerTypeOptions}
-                                                dropdown-alignment="auto"
-                                                data-id={line.Id}
-                                                data-field="Worker_Type__c"
-                                                onchange={handleLineCellChange}>
-                                            </lightning-combobox>
-                                        </td>
-                                        <td>
-                                            <lightning-combobox
-                                                variant="label-hidden"
-                                                value={line.Calc_Type__c}
-                                                options={calcTypeOptions}
-                                                dropdown-alignment="auto"
-                                                data-id={line.Id}
-                                                data-field="Calc_Type__c"
-                                                onchange={handleLineCellChange}>
-                                            </lightning-combobox>
-                                        </td>
-                                        <td class="value-cell">
-                                            <lightning-input
-                                                type="number"
-                                                step="0.01"
-                                                variant="label-hidden"
-                                                value={line.Margin_Value__c}
-                                                data-id={line.Id}
-                                                data-field="Margin_Value__c"
-                                                onchange={handleLineCellChange}>
-                                            </lightning-input>
-                                        </td>
-                                        <td>
-                                            <template lwc:if={line.isDirty}>
-                                                <lightning-button-icon icon-name="utility:save" title="Save" alternative-text="Save" data-id={line.Id} onclick={handleSaveLineRow}></lightning-button-icon>
-                                                <lightning-button-icon icon-name="utility:close" title="Cancel" alternative-text="Cancel" data-id={line.Id} onclick={handleCancelLineRow}></lightning-button-icon>
-                                            </template>
-                                            <template lwc:else>
-                                                <lightning-button-icon icon-name="utility:preview" title="View Employer On Cost" alternative-text="View Employer On Cost" data-id={line.Id} onclick={handleViewOnCostClick}></lightning-button-icon>
-                                                <lightning-button-icon icon-name="utility:delete" title="Delete Line" alternative-text="Delete Line" data-id={line.Id} onclick={handleDeleteLineClick}></lightning-button-icon>
-                                            </template>
-                                        </td>
-                                    </tr>
-                                </template>
+                            <tr key={line.Id} class="slds-hint-parent">
+                                <td><div class="slds-truncate">{line.Name}</div></td>
+                                <td>
+                                    <lightning-combobox
+                                        variant="label-hidden"
+                                        value={line.Worker_Type__c}
+                                        options={workerTypeOptions}
+                                        dropdown-alignment="auto"
+                                        data-id={line.Id}
+                                        data-field="Worker_Type__c"
+                                        onchange={handleLineCellChange}>
+                                    </lightning-combobox>
+                                </td>
+                                <td>
+                                    <lightning-combobox
+                                        variant="label-hidden"
+                                        value={line.Calc_Type__c}
+                                        options={calcTypeOptions}
+                                        dropdown-alignment="auto"
+                                        data-id={line.Id}
+                                        data-field="Calc_Type__c"
+                                        onchange={handleLineCellChange}>
+                                    </lightning-combobox>
+                                </td>
+                                <td class="value-cell">
+                                    <lightning-input
+                                        type="number"
+                                        step="0.01"
+                                        variant="label-hidden"
+                                        value={line.Margin_Value__c}
+                                        data-id={line.Id}
+                                        data-field="Margin_Value__c"
+                                        onchange={handleLineCellChange}>
+                                    </lightning-input>
+                                </td>
+                                <td>
+                                    <lightning-record-picker
+                                        variant="label-hidden"
+                                        object-api-name="Rate_Agreement_Scale__c"
+                                        value={line.Min_Scale__c}
+                                        filter={scaleFilter}
+                                        data-id={line.Id}
+                                        data-field="Min_Scale__c"
+                                        onchange={handleLineCellChange}>
+                                    </lightning-record-picker>
+                                </td>
+                                <td>
+                                    <lightning-record-picker
+                                        variant="label-hidden"
+                                        object-api-name="Rate_Agreement_Scale__c"
+                                        value={line.Max_Scale__c}
+                                        filter={scaleFilter}
+                                        data-id={line.Id}
+                                        data-field="Max_Scale__c"
+                                        onchange={handleLineCellChange}>
+                                    </lightning-record-picker>
+                                </td>
+                                <td>
+                                    <template lwc:if={line.isDirty}>
+                                        <lightning-button-icon icon-name="utility:save" title="Save" alternative-text="Save" data-id={line.Id} onclick={handleSaveLineRow}></lightning-button-icon>
+                                        <lightning-button-icon icon-name="utility:close" title="Cancel" alternative-text="Cancel" data-id={line.Id} onclick={handleCancelLineRow}></lightning-button-icon>
+                                    </template>
+                                    <template lwc:else>
+                                        <lightning-button-icon icon-name="utility:preview" title="View Employer On Cost" alternative-text="View Employer On Cost" data-id={line.Id} onclick={handleViewOnCostClick}></lightning-button-icon>
+                                        <lightning-button-icon icon-name="utility:delete" title="Delete Line" alternative-text="Delete Line" data-id={line.Id} onclick={handleDeleteLineClick}></lightning-button-icon>
+                                    </template>
+                                </td>
+                            </tr>
+                        </template>
                             </tbody>
                         </table>
                     </div>

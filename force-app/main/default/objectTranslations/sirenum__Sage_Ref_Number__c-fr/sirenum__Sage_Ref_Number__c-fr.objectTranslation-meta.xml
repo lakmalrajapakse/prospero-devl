@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Numéro de référence Sage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Numéros de référence Sage</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>N° de référence Sage</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

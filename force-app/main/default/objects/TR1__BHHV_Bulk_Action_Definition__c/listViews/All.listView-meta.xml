@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>TR1__Bulk_Threshold__c</columns>
+    <columns>TR1__Bulk_Action_Limit__c</columns>
+    <columns>TR1__Chunk_Size__c</columns>
+    <columns>TR1__Handler_Name__c</columns>
+    <columns>TR1__Target_Object__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

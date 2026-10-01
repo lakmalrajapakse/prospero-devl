@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn diese Option aktiviert ist, werden für neu erstellte Vermittlungen die Sätze auf Account-Ebene kopiert.</help>
+    <label><!-- Clone Rates on New Contracts --></label>
+    <name>sirenum__Clone_Rates_on_New_Placements__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Are there any Contact Restrictions/Risks that we should be aware of e.g. Parents, Siblings, dangerous individuals known to the Family or Child/Young Person --></help>
+    <label><!-- Contact Restrictions / Risks --></label>
+    <name>Contact_Restrictions_Risks__c</name>
+</CustomFieldTranslation>

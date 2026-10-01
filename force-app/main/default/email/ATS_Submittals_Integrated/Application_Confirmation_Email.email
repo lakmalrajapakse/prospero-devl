@@ -1,0 +1,14 @@
+Dear {!Contact.Salutation}{!TR1__Job_Board_Application__c.TR1__Applicant__c}
+
+We are very happy to have received your application!
+
+Please find the details of your application below:
+
+Application ID: {!TR1__Job_Board_Application__c.Name}
+Job Title: {!TR1__Job_Board_Application__c.TR1__Job__c}
+Job ID: {!TR1__Job_Board_Application__c.TR1__JobId__c}
+Application created on: {!TR1__Job_Board_Application__c.CreatedDate}
+
+Kindly note that the screening of your documents may take some time. We will get back to you as soon as possible.
+
+Kind regards

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Als een persoon geen kaart heeft, wordt N.v.t. weergegeven. Is de kaart verlopen, dan wordt Ongeldig weergegeven. In alle andere gevallen wordt de naam van de kaart weergegeven en wordt aangegeven dat de kaart geldig is</help>
+    <label><!-- PTS Audit --></label>
+    <name>sirenum__PTS_Audit__c</name>
+</CustomFieldTranslation>

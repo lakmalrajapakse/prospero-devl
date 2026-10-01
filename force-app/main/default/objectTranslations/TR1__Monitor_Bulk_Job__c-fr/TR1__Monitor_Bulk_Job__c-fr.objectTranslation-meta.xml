@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Surveiller le poste en bloc</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Surveiller les postes en bloc</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Surveiller le nom du poste en bloc</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,9 @@
+Beste {!User.FirstName},
+
+We hebben een verzoek ontvangen om het e-mailadres te wijzigen voor de gebruikersnaam {!User.Username}. Controleer of de volgende wijzigingen correct zijn:
+
+Vorig e-mailadres: {!ChgEmailVer.OldEmail}
+Nieuw e-mailadres: {!ChgEmailVer.NewEmail}
+
+Ga naar de volgende koppeling om uw e-mailadres te wijzigen. Deze koppeling vervalt over 72 uur.
+ {!ChgEmailVer.Url}

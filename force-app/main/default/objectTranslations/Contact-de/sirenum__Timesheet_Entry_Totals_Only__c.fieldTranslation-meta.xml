@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wenn diese Option aktiviert ist, gibt die betreffende Person nur die Gesamtstunden statt der täglichen Stunden ein.</help>
+    <label><!-- Timesheet Entry - Totals Only --></label>
+    <name>sirenum__Timesheet_Entry_Totals_Only__c</name>
+</CustomFieldTranslation>

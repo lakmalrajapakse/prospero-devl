@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Include in GP Reports --></label>
+    <name>TR1__Include_in_GP_Reports__c</name>
+    <picklistValues>
+        <masterLabel>No</masterLabel>
+        <translation>Nee</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes</masterLabel>
+        <translation>Ja</translation>
+    </picklistValues>
+</CustomFieldTranslation>

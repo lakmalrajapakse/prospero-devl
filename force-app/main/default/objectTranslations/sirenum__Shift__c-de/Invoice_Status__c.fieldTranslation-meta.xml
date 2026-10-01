@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Invoice Status --></label>
+    <name>Invoice_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved for Pay &amp; Bill</masterLabel>
+        <translation><!-- Approved for Pay &amp; Bill --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Billed but Not Paid</masterLabel>
+        <translation><!-- Billed but Not Paid --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Paid or Billed</masterLabel>
+        <translation><!-- Not Paid or Billed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid &amp; Billed</masterLabel>
+        <translation><!-- Paid &amp; Billed --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Paid but Not Billed</masterLabel>
+        <translation><!-- Paid but Not Billed --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

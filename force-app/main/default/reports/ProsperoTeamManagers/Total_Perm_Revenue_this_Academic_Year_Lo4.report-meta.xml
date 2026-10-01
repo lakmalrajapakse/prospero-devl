@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TR1__Job__c$Name</field>
+    </columns>
+    <columns>
+        <field>TR1__Job__c.TR1__Closes__r$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>TR1__Job__c.TR1__Closes__r$TR1__Fee_Amount__c</field>
+    </columns>
+    <columns>
+        <field>TR1__Job__c$Team__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>TR1__Job__c.TR1__Closes__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>TR1__Closing_Report__c.TR1__Permanent</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TR1__Job__c.TR1__Closes__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>8/16/2025 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TR1__Job__c.TR1__Closes__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>8/15/2026 12:00 AM</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>TR1__Job__c.TR1__Closes__r$TR1__Job__c.Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Total Perm Revenue this Academic Year</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Jobs_with_Placements_Closing_Reports__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>TR1__Job__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

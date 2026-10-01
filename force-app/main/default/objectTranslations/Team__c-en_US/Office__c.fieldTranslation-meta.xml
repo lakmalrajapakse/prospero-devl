@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Office --></label>
+    <name>Office__c</name>
+    <picklistValues>
+        <masterLabel>Birmingham</masterLabel>
+        <translation><!-- Birmingham --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Bristol</masterLabel>
+        <translation><!-- Bristol --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cardiff</masterLabel>
+        <translation><!-- Cardiff --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chelmsford</masterLabel>
+        <translation><!-- Chelmsford --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leeds</masterLabel>
+        <translation><!-- Leeds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Liverpool</masterLabel>
+        <translation><!-- Liverpool --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>London</masterLabel>
+        <translation><!-- London --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manchester</masterLabel>
+        <translation><!-- Manchester --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Newcastle</masterLabel>
+        <translation><!-- Newcastle --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Southampton</masterLabel>
+        <translation><!-- Southampton --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Swansea</masterLabel>
+        <translation><!-- Swansea --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Toronto</masterLabel>
+        <translation><!-- Toronto --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "15bdc081-7bb7-456d-befb-91f1c63890bf",
+  "appPageId" : "8c871e13-6d08-4440-b759-c322ea3acaef",
+  "configurationTags" : [ ],
+  "devName" : "My_CYP_Shifts__c",
+  "id" : "5c1434ff-5169-4c37-b209-08e4a0b8d2a0",
+  "label" : "My CYP Shifts",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-my-cyp-shifts",
+  "type" : "route",
+  "urlPrefix" : "my-cyp-shifts"
+}

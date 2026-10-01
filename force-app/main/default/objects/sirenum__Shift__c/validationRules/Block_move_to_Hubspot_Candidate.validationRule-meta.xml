@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_move_to_Hubspot_Candidate</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(sirenum__Contact__r.TR1__Candidate_Status__c , &quot;HubSpot Candidate&quot;)</errorConditionFormula>
+    <errorMessage>You cannot assign Candidates that have the ‘Hubspot Candidate’ status to Shifts</errorMessage>
+</ValidationRule>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Integrated_Role__c</fullName>
+    <label>Integrated Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>3D Animator</fullName>
+                <default>false</default>
+                <label>3D Animator</label>
+            </value>
+            <value>
+                <fullName>Administrator</fullName>
+                <default>false</default>
+                <label>Administrator</label>
+            </value>
+            <value>
+                <fullName>Architect</fullName>
+                <default>false</default>
+                <label>Architect</label>
+            </value>
+            <value>
+                <fullName>Audio Technician</fullName>
+                <default>false</default>
+                <label>Audio Technician</label>
+            </value>
+            <value>
+                <fullName>AV Event Technician</fullName>
+                <default>false</default>
+                <label>AV Event Technician</label>
+            </value>
+            <value>
+                <fullName>AV Manager</fullName>
+                <default>false</default>
+                <label>AV Manager</label>
+            </value>
+            <value>
+                <fullName>CAD/Auto CAD</fullName>
+                <default>false</default>
+                <label>CAD/Auto CAD</label>
+            </value>
+            <value>
+                <fullName>Camera Operator</fullName>
+                <default>false</default>
+                <label>Camera Operator</label>
+            </value>
+            <value>
+                <fullName>CCTV/Security Engineer</fullName>
+                <default>false</default>
+                <label>CCTV/Security Engineer</label>
+            </value>
+            <value>
+                <fullName>CEO/Owner</fullName>
+                <default>false</default>
+                <label>CEO/Owner</label>
+            </value>
+            <value>
+                <fullName>Commissioning</fullName>
+                <default>false</default>
+                <label>Commissioning</label>
+            </value>
+            <value>
+                <fullName>Consultant</fullName>
+                <default>false</default>
+                <label>Consultant</label>
+            </value>
+            <value>
+                <fullName>Co-Ordinator</fullName>
+                <default>false</default>
+                <label>Co-Ordinator</label>
+            </value>
+            <value>
+                <fullName>Developer</fullName>
+                <default>false</default>
+                <label>Developer</label>
+            </value>
+            <value>
+                <fullName>Director</fullName>
+                <default>false</default>
+                <label>Director</label>
+            </value>
+            <value>
+                <fullName>Fibre/Data Engineers</fullName>
+                <default>false</default>
+                <label>Fibre/Data Engineers</label>
+            </value>
+            <value>
+                <fullName>Field Service</fullName>
+                <default>false</default>
+                <label>Field Service</label>
+            </value>
+            <value>
+                <fullName>Finance</fullName>
+                <default>false</default>
+                <label>Finance</label>
+            </value>
+            <value>
+                <fullName>Graphics</fullName>
+                <default>false</default>
+                <label>Graphics</label>
+            </value>
+            <value>
+                <fullName>Head of Department</fullName>
+                <default>false</default>
+                <label>Head of Department</label>
+            </value>
+            <value>
+                <fullName>Health and Safety/QSHE</fullName>
+                <default>false</default>
+                <label>Health and Safety/QSHE</label>
+            </value>
+            <value>
+                <fullName>Helpdesk</fullName>
+                <default>false</default>
+                <label>Helpdesk</label>
+            </value>
+            <value>
+                <fullName>Hire Desk</fullName>
+                <default>false</default>
+                <label>Hire Desk</label>
+            </value>
+            <value>
+                <fullName>Human resources</fullName>
+                <default>false</default>
+                <label>Human resources</label>
+            </value>
+            <value>
+                <fullName>Installation</fullName>
+                <default>false</default>
+                <label>Installation</label>
+            </value>
+            <value>
+                <fullName>IT General</fullName>
+                <default>false</default>
+                <label>IT General</label>
+            </value>
+            <value>
+                <fullName>Lighting Designer</fullName>
+                <default>false</default>
+                <label>Lighting Designer</label>
+            </value>
+            <value>
+                <fullName>Lighting Technician</fullName>
+                <default>false</default>
+                <label>Lighting Technician</label>
+            </value>
+            <value>
+                <fullName>Network Manager</fullName>
+                <default>false</default>
+                <label>Network Manager</label>
+            </value>
+            <value>
+                <fullName>Onsite Maintenance</fullName>
+                <default>false</default>
+                <label>Onsite Maintenance</label>
+            </value>
+            <value>
+                <fullName>Onsite Support</fullName>
+                <default>false</default>
+                <label>Onsite Support</label>
+            </value>
+            <value>
+                <fullName>Operations / infrastructure</fullName>
+                <default>false</default>
+                <label>Operations / infrastructure</label>
+            </value>
+            <value>
+                <fullName>Pre-Sales Engineer</fullName>
+                <default>false</default>
+                <label>Pre-Sales Engineer</label>
+            </value>
+            <value>
+                <fullName>Producer</fullName>
+                <default>false</default>
+                <label>Producer</label>
+            </value>
+            <value>
+                <fullName>Production Manager</fullName>
+                <default>false</default>
+                <label>Production Manager</label>
+            </value>
+            <value>
+                <fullName>Production Runner</fullName>
+                <default>false</default>
+                <label>Production Runner</label>
+            </value>
+            <value>
+                <fullName>Product Manager</fullName>
+                <default>false</default>
+                <label>Product Manager</label>
+            </value>
+            <value>
+                <fullName>Programmer</fullName>
+                <default>false</default>
+                <label>Programmer</label>
+            </value>
+            <value>
+                <fullName>Project Engineer</fullName>
+                <default>false</default>
+                <label>Project Engineer</label>
+            </value>
+            <value>
+                <fullName>Project Manager (AV)</fullName>
+                <default>false</default>
+                <label>Project Manager (AV)</label>
+            </value>
+            <value>
+                <fullName>Rack Builder</fullName>
+                <default>false</default>
+                <label>Rack Builder</label>
+            </value>
+            <value>
+                <fullName>Sales/Account Man./Business Development</fullName>
+                <default>false</default>
+                <label>Sales/Account Man./Business Development</label>
+            </value>
+            <value>
+                <fullName>Scenic</fullName>
+                <default>false</default>
+                <label>Scenic</label>
+            </value>
+            <value>
+                <fullName>Senior Management</fullName>
+                <default>false</default>
+                <label>Senior Management</label>
+            </value>
+            <value>
+                <fullName>Service Desk</fullName>
+                <default>false</default>
+                <label>Service Desk</label>
+            </value>
+            <value>
+                <fullName>Sound Designer</fullName>
+                <default>false</default>
+                <label>Sound Designer</label>
+            </value>
+            <value>
+                <fullName>Studio Manager/Director</fullName>
+                <default>false</default>
+                <label>Studio Manager/Director</label>
+            </value>
+            <value>
+                <fullName>System Designer</fullName>
+                <default>false</default>
+                <label>System Designer</label>
+            </value>
+            <value>
+                <fullName>Technical Manager</fullName>
+                <default>false</default>
+                <label>Technical Manager</label>
+            </value>
+            <value>
+                <fullName>Trainee/Entry Level</fullName>
+                <default>false</default>
+                <label>Trainee/Entry Level</label>
+            </value>
+            <value>
+                <fullName>Trainer</fullName>
+                <default>false</default>
+                <label>Trainer</label>
+            </value>
+            <value>
+                <fullName>Video Editor</fullName>
+                <default>false</default>
+                <label>Video Editor</label>
+            </value>
+            <value>
+                <fullName>Video Technician</fullName>
+                <default>false</default>
+                <label>Video Technician</label>
+            </value>
+            <value>
+                <fullName>VNOC</fullName>
+                <default>false</default>
+                <label>VNOC</label>
+            </value>
+            <value>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+                <label>Warehouse</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

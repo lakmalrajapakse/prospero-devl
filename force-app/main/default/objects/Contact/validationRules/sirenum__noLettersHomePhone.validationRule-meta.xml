@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__noLettersHomePhone</fullName>
+    <active>true</active>
+    <description>Phone number cannot contain letters</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(HomePhone)), NOT(REGEX(HomePhone, &quot;^([0-9+()-])[0-9 ()+-]+$&quot;)))</errorConditionFormula>
+    <errorDisplayField>HomePhone</errorDisplayField>
+    <errorMessage>Home Phone number cannot contain letters</errorMessage>
+</ValidationRule>

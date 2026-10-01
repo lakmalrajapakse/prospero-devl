@@ -195,6 +195,16 @@ export default class MarginCalculatorComponent extends LightningElement {
     // line vs AWR) so editing both in quick succession doesn't cancel each other's pending call.
     lineRecalcTimer;
     awrRecalcTimer;
+    // Inline calculation/validation errors -- shown as a block above the Pay/Charge Rate group
+    // (and inside the AWR box) instead of toasts. Each pipeline run sets its own on failure and
+    // clears it on success (see setCalcError), so a fixed error disappears on the next run.
+    lineCalcError;
+    awrCalcError;
+    // Employer On Cost mode only -- set once Recalculate is clicked with a prerequisite missing;
+    // the message itself is derived live (see eocRecalcPrereqError).
+    eocRecalcAttempted = false;
+    // A failed save's DML error -- cleared on the next save attempt or when the modal reopens.
+    saveLineError;
 
     // "Clone" Page -- prompts for a name and an Effective Date, then copies every Rate Line (and
     // AWR modifier) from clonePageSourceId onto a brand new Page on the same Rate Card, and ends
@@ -777,6 +787,10 @@ export default class MarginCalculatorComponent extends LightningElement {
         this.rateAgreementContextPageId = undefined;
         this.rateAgreementLineContext = undefined;
         this.showViewEmployerOnCostModal = false;
+        this.lineCalcError = undefined;
+        this.awrCalcError = undefined;
+        this.eocRecalcAttempted = false;
+        this.saveLineError = undefined;
         clearTimeout(this.lineRecalcTimer);
         clearTimeout(this.awrRecalcTimer);
     }
@@ -1036,8 +1050,7 @@ export default class MarginCalculatorComponent extends LightningElement {
     async calculateAndValidateRateAgreementLine(isAwr) {
         const ctx = this.rateAgreementLineContext;
         if (!ctx || ctx.errorMessage) {
-            this.showToast('Error', ctx?.errorMessage || 'No applicable Rate Agreement Line was found.', 'error');
-            return false;
+            return this.setCalcError(isAwr, ctx?.errorMessage || 'No applicable Rate Agreement Line was found.');
         }
 
         const label = isAwr ? 'AWR ' : '';
@@ -1045,8 +1058,7 @@ export default class MarginCalculatorComponent extends LightningElement {
         const chargeField = isAwr ? 'awrChargeRate' : 'lineChargeRate';
         const payRate = parseFloat(isAwr ? this.awrPayRate : this.linePayRate);
         if (Number.isNaN(payRate)) {
-            this.showToast('Error', `Enter a ${label}Pay Rate before calculating.`, 'error');
-            return false;
+            return this.setCalcError(isAwr, `Enter a ${label}Pay Rate before calculating.`);
         }
 
         const isFixed = this.isFixedCalcType(ctx.calcType);
@@ -1061,8 +1073,7 @@ export default class MarginCalculatorComponent extends LightningElement {
         if (isFixed || lastEdited !== 'charge') {
             const margin = parseFloat(this[marginField]);
             if (Number.isNaN(margin)) {
-                this.showToast('Error', `Enter a ${label}Margin before calculating.`, 'error');
-                return false;
+                return this.setCalcError(isAwr, `Enter a ${label}Margin before calculating.`);
             }
             const totalCost = this.getTotalCostFor(payRate);
             chargeRate = Number((isPercent ? totalCost * (1 + margin / 100) : totalCost + margin).toFixed(2));
@@ -1070,8 +1081,7 @@ export default class MarginCalculatorComponent extends LightningElement {
         } else {
             chargeRate = parseFloat(this[chargeField]);
             if (Number.isNaN(chargeRate)) {
-                this.showToast('Error', `Enter a ${label}Charge Rate before calculating.`, 'error');
-                return false;
+                return this.setCalcError(isAwr, `Enter a ${label}Charge Rate before calculating.`);
             }
         }
 
@@ -1086,8 +1096,7 @@ export default class MarginCalculatorComponent extends LightningElement {
                 payScaleMax: ctx.payScaleMax
             });
             if (result.errorMessage) {
-                this.showToast('Error', result.errorMessage, 'error');
-                return false;
+                return this.setCalcError(isAwr, result.errorMessage);
             }
             if (!isFixed) {
                 // Max calc type -- reflect the server's own computed margin back so the (still
@@ -1099,13 +1108,20 @@ export default class MarginCalculatorComponent extends LightningElement {
                     this[marginField] = Number(computedMargin).toFixed(2);
                 }
             }
-            return true;
+            return this.setCalcError(isAwr, undefined);
         } catch (error) {
-            this.showError(error);
-            return false;
+            return this.setCalcError(isAwr, this.getErrorMessage(error));
         } finally {
             this.isCalculatingLine = false;
         }
+    }
+
+    // Records (or, with no message, clears) the inline error for the main Rate Line or its AWR
+    // modifier -- see lineErrors/awrErrorMessage. Returns true only when cleared, so the pipeline
+    // can `return this.setCalcError(...)` for both outcomes.
+    setCalcError(isAwr, message) {
+        this[isAwr ? 'awrCalcError' : 'lineCalcError'] = message;
+        return !message;
     }
 
     // Shared by the inline "Calculate" button and the footer "Recalculate" button in Rate
@@ -1233,27 +1249,55 @@ export default class MarginCalculatorComponent extends LightningElement {
         }
     }
 
-    // Manual "Recalculate" button -- reports exactly which prerequisite is missing instead of
-    // silently doing nothing, since recalculate() itself just returns early when it can't compute.
-    handleRecalculateClick() {
+    // Employer On Cost mode's Recalculate prerequisites -- derived live from the form, so once
+    // eocRecalcAttempted is set the inline error disappears the moment the missing value is filled.
+    get eocRecalcPrereqError() {
         if (!this.selectedRateAgreementId) {
-            this.showToast('Error', 'Select an Employer On Cost before recalculating.', 'error');
-            return;
+            return 'Select an Employer On Cost before recalculating.';
         }
         if (!this.lineMarginType) {
-            this.showToast('Error', 'Select a Margin Type before recalculating.', 'error');
-            return;
+            return 'Select a Margin Type before recalculating.';
         }
         if (Number.isNaN(parseFloat(this.linePayRate))) {
-            this.showToast('Error', 'Enter a Pay Rate before recalculating.', 'error');
-            return;
+            return 'Enter a Pay Rate before recalculating.';
         }
         const hasMargin = !Number.isNaN(parseFloat(this.lineMargin));
         const hasCharge = !Number.isNaN(parseFloat(this.lineChargeRate));
         if (!hasMargin && !hasCharge) {
-            this.showToast('Error', 'Enter a Margin or a Charge Rate before recalculating.', 'error');
+            return 'Enter a Margin or a Charge Rate before recalculating.';
+        }
+        return undefined;
+    }
+
+    // Every inline error for the main Rate Line, shown as one block above the Pay/Charge Rate
+    // group instead of toasts.
+    get lineErrors() {
+        const messages = [
+            this.saveLineError,
+            this.showEmployerOnCost && this.eocRecalcAttempted ? this.eocRecalcPrereqError : undefined,
+            this.lineCalcError
+        ].filter((message) => !!message);
+        return [...new Set(messages)];
+    }
+
+    get hasLineErrors() {
+        return this.lineErrors.length > 0;
+    }
+
+    // Shown inside the AWR box -- only while AWR still applies.
+    get awrErrorMessage() {
+        return this.awrApplies ? this.awrCalcError : undefined;
+    }
+
+    // Manual "Recalculate" button -- reports exactly which prerequisite is missing (inline, see
+    // lineErrors) instead of silently doing nothing, since recalculate() itself just returns early
+    // when it can't compute.
+    handleRecalculateClick() {
+        this.eocRecalcAttempted = true;
+        if (this.eocRecalcPrereqError) {
             return;
         }
+        this.eocRecalcAttempted = false;
         this.recalculate();
         this.recalculateAwr();
         this.showToast('Success', 'Recalculated.', 'success');
@@ -1310,6 +1354,7 @@ export default class MarginCalculatorComponent extends LightningElement {
     // default) is appended after this Page's existing lines on create, matching the same
     // convention used for Rate Card Page's own Sort Order in rateManager.
     async handleSaveLine() {
+        this.saveLineError = undefined;
         if (!this.validateRequiredFields()) {
             return;
         }
@@ -1375,7 +1420,8 @@ export default class MarginCalculatorComponent extends LightningElement {
             await refreshApex(this.wiredPagesResult);
         } catch (error) {
             this.isSavingLine = false;
-            this.showError(error);
+            // Inline (see lineErrors), e.g. the trigger's own margin validation.
+            this.saveLineError = this.getErrorMessage(error);
         }
     }
 

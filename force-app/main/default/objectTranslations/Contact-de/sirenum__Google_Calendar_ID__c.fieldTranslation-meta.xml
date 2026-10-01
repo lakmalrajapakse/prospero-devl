@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wird von der Google Kalender-Schnittstelle verwendet, um den Kalender, in dem die Schichten angezeigt werden, zu identifizieren.</help>
+    <label><!-- Google Calendar ID --></label>
+    <name>sirenum__Google_Calendar_ID__c</name>
+</CustomFieldTranslation>

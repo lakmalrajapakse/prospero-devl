@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- When checked, the record will be considered for indexation by Textkernel --></help>
+    <label><!-- Index to Textkernel --></label>
+    <name>TKC_Index_to_Textkernel__c</name>
+</CustomFieldTranslation>

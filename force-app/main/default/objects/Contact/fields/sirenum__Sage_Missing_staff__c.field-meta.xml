@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__Sage_Missing_staff__c</fullName>
+    <deprecated>false</deprecated>
+    <description>If any of these fields is empty, sage will not accept it&apos;s import</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(sirenum__Payment_method__c,&quot;Limited Company&quot;),&quot;&quot;,
+   IF(LEN( sirenum__NI_Category__c )=0, &quot;NI Category&quot; &amp; BR(),&quot;&quot;) &amp; 
+   IF(LEN(sirenum__Payment_Sort_Code__c ) &lt;&gt; 8 ||  MID(sirenum__Payment_Sort_Code__c, 3, 1) &lt;&gt; &quot;-&quot; ||  MID(sirenum__Payment_Sort_Code__c, 6, 1) &lt;&gt; &quot;-&quot;, &quot;Sort Code &quot; &amp; BR(),&quot;&quot;) &amp; 
+   IF(LEN(TEXT(Salutation))=0 , &quot;Salutation&quot; &amp; BR(),&quot;&quot;) &amp; 
+   IF(LEN( sirenum__Payment_Account_Name__c )=0 , &quot;Missing Bank Account Name&quot; &amp; BR(),&quot;&quot;) &amp; 
+   IF(ISNULL( sirenum__Work_Start_Date__c ), &quot;Work Start Date&quot; &amp; BR(),&quot;&quot;) &amp; 
+   IF(ISNULL( sirenum__Tax_Code__c ), &quot;Tax Code&quot; &amp; BR(),&quot;&quot;) &amp; 
+   IF(LEN(TEXT( sirenum__Marital_Status__c ))=0,&quot;Marital Status&quot; &amp; BR(),&quot;&quot;) &amp; 
+   IF(ISNULL( Birthdate), &quot;Birthdate Missing&quot;&amp; BR(),&quot;&quot;) &amp;  
+   IF(LEN(TEXT(  sirenum__Payment_method__c ))=0, &quot;Payment Method Missing&quot; &amp; BR(),&quot;&quot;)&amp;
+   IF(LEN(TEXT(   sirenum__Payment_Frequency__c ))=0, &quot;Payment Frequency Missing&quot; &amp; BR(),&quot;&quot;)&amp;
+   IF(ISBLANK(   sirenum__Employee_Reference__c), &quot;Payment Record missing&quot; &amp; BR(),&quot;&quot;)
+)</formula>
+    <inlineHelpText>this is a list of information missing for staff to be transfered to sage</inlineHelpText>
+    <label>Sage Missing (Staff)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

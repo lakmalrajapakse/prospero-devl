@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Purchase_Order_Number__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <label>Purchase Order Number</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <filterItems>
+            <field>TR1__Purchase_Order__c.Sensitive_Data_Record__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Sensitive_Data_Record__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>TR1__Purchase_Order__c.TR1__Account__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Client__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>TR1__Purchase_Order__c.TR1__Status__c</field>
+            <operation>equals</operation>
+            <value>Active</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>TR1__Purchase_Order__c</referenceTo>
+    <relationshipLabel>CYP to Shifts</relationshipLabel>
+    <relationshipName>CYP_to_Shifts</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

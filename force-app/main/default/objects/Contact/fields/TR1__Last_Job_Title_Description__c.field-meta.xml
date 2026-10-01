@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Last_Job_Title_Description__c</fullName>
+    <deprecated>false</deprecated>
+    <description>To store the name of the Most Recent Job Title skill.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Stores the name of the Most Recent Job Title skill (parsed from TK). Only English is supported by TK.</inlineHelpText>
+    <label>Last Job Title Description</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Als de inhoudversie is gekoppeld aan een &apos;Planning verzenden V2&apos;-record, wordt hiermee de waarde van &apos;Datum &amp; tijd gesprek&apos; van dat record opgeslagen. Dit veld kan worden toegepast in de logica van het verwijderen van ICS-bestanden.</help>
+    <label><!-- Interview Expiration Date --></label>
+    <name>TR1__Interview_Expiration_Date__c</name>
+</CustomFieldTranslation>

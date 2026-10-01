@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Détail du canal de communication</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Détails du canal de communication</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du détail du canal de communication</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

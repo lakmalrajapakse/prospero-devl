@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Sensitive Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Sensitive Data</value>
+    </caseValues>
+    <layouts>
+        <layout>Care Package - Adult Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Sensitive Data Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Care Package Details --></label>
+        <name>Care_Package_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child Care Package Details --></label>
+        <name>Child_Care_Package_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Child / Young Person Details --></label>
+        <name>Child_Young_Person_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Client Information --></label>
+        <name>Client_Information</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Closed Information --></label>
+        <name>Closed_Information</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Risk Assessment --></label>
+        <name>Risk_Assessment</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- School Details --></label>
+        <name>School_Details</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Share --></label>
+        <name>Share</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Social Worker Details --></label>
+        <name>Social_Worker_Details</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Adult --></label>
+        <name>Care_Package_Adult</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Child / Young Person --></label>
+        <name>Child_Young_Person</name>
+    </recordTypes>
+    <sharingReasons>
+        <label><!-- Persist Sharing after Owner change --></label>
+        <name>Persist_Sharing_after_Owner_change</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Sensitive Data Sharing --></label>
+        <name>Sensitive_Data_Sharing</name>
+    </sharingReasons>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must add a Closed Reason --></errorMessage>
+        <name>Closed_Reason_req_when_Closed_is_True</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must add the Name of School --></errorMessage>
+        <name>School_req_when_School_on_Role_is_True</name>
+    </validationRules>
+</CustomObjectTranslation>

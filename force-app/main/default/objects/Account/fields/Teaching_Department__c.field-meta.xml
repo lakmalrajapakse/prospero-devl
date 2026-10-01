@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Teaching_Department__c</fullName>
+    <inlineHelpText>Please select which Department within the Council</inlineHelpText>
+    <label>Teaching Department</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA</fullName>
+                <default>false</default>
+                <label>Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA</label>
+            </value>
+            <value>
+                <fullName>Leaving Care Department within LA</fullName>
+                <default>false</default>
+                <label>Leaving Care Department within LA</label>
+            </value>
+            <value>
+                <fullName>Section 19 Team Department within LA</fullName>
+                <default>false</default>
+                <label>Section 19 Team Department within LA</label>
+            </value>
+            <value>
+                <fullName>SEND Team (any Child with an EHCP) within LA</fullName>
+                <default>false</default>
+                <label>SEND Team (any Child with an EHCP) within LA</label>
+            </value>
+            <value>
+                <fullName>Social Care Department within LA</fullName>
+                <default>false</default>
+                <label>Social Care Department within LA</label>
+            </value>
+            <value>
+                <fullName>Virtual School within LA</fullName>
+                <default>false</default>
+                <label>Virtual School within LA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

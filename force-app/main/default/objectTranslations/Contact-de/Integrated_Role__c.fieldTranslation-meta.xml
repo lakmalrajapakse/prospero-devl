@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Integrated Role --></label>
+    <name>Integrated_Role__c</name>
+    <picklistValues>
+        <masterLabel>3D Animator</masterLabel>
+        <translation><!-- 3D Animator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV Event Technician</masterLabel>
+        <translation><!-- AV Event Technician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>AV Manager</masterLabel>
+        <translation><!-- AV Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Administrator</masterLabel>
+        <translation><!-- Administrator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Architect</masterLabel>
+        <translation><!-- Architect --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audio Technician</masterLabel>
+        <translation><!-- Audio Technician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CAD/Auto CAD</masterLabel>
+        <translation><!-- CAD/Auto CAD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CCTV/Security Engineer</masterLabel>
+        <translation><!-- CCTV/Security Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CEO/Owner</masterLabel>
+        <translation><!-- CEO/Owner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Camera Operator</masterLabel>
+        <translation><!-- Camera Operator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Co-Ordinator</masterLabel>
+        <translation><!-- Co-Ordinator --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Commissioning</masterLabel>
+        <translation><!-- Commissioning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Consultant</masterLabel>
+        <translation><!-- Consultant --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Developer</masterLabel>
+        <translation><!-- Developer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Director</masterLabel>
+        <translation><!-- Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fibre/Data Engineers</masterLabel>
+        <translation><!-- Fibre/Data Engineers --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Field Service</masterLabel>
+        <translation><!-- Field Service --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance</masterLabel>
+        <translation><!-- Finance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphics</masterLabel>
+        <translation><!-- Graphics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Head of Department</masterLabel>
+        <translation><!-- Head of Department --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health and Safety/QSHE</masterLabel>
+        <translation><!-- Health and Safety/QSHE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Helpdesk</masterLabel>
+        <translation><!-- Helpdesk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Hire Desk</masterLabel>
+        <translation><!-- Hire Desk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Human resources</masterLabel>
+        <translation><!-- Human resources --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT General</masterLabel>
+        <translation><!-- IT General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Installation</masterLabel>
+        <translation><!-- Installation --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lighting Designer</masterLabel>
+        <translation><!-- Lighting Designer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lighting Technician</masterLabel>
+        <translation><!-- Lighting Technician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Network Manager</masterLabel>
+        <translation><!-- Network Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Onsite Maintenance</masterLabel>
+        <translation><!-- Onsite Maintenance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Onsite Support</masterLabel>
+        <translation><!-- Onsite Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operations / infrastructure</masterLabel>
+        <translation><!-- Operations / infrastructure --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pre-Sales Engineer</masterLabel>
+        <translation><!-- Pre-Sales Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Producer</masterLabel>
+        <translation><!-- Producer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Product Manager</masterLabel>
+        <translation><!-- Product Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Manager</masterLabel>
+        <translation><!-- Production Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Production Runner</masterLabel>
+        <translation><!-- Production Runner --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Programmer</masterLabel>
+        <translation><!-- Programmer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Engineer</masterLabel>
+        <translation><!-- Project Engineer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Project Manager (AV)</masterLabel>
+        <translation><!-- Project Manager (AV) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rack Builder</masterLabel>
+        <translation><!-- Rack Builder --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sales/Account Man./Business Development</masterLabel>
+        <translation><!-- Sales/Account Man./Business Development --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scenic</masterLabel>
+        <translation><!-- Scenic --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Senior Management</masterLabel>
+        <translation><!-- Senior Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Service Desk</masterLabel>
+        <translation><!-- Service Desk --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sound Designer</masterLabel>
+        <translation><!-- Sound Designer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Studio Manager/Director</masterLabel>
+        <translation><!-- Studio Manager/Director --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System Designer</masterLabel>
+        <translation><!-- System Designer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical Manager</masterLabel>
+        <translation><!-- Technical Manager --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trainee/Entry Level</masterLabel>
+        <translation><!-- Trainee/Entry Level --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trainer</masterLabel>
+        <translation><!-- Trainer --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>VNOC</masterLabel>
+        <translation><!-- VNOC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video Editor</masterLabel>
+        <translation><!-- Video Editor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Video Technician</masterLabel>
+        <translation><!-- Video Technician --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Warehouse</masterLabel>
+        <translation><!-- Warehouse --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

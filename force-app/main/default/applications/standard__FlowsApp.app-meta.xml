@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
+    <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
+    <label>FlowsApp</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>standard-FlowRecord</tabs>
+    <tabs>standard-FlowOrchestration</tabs>
+    <tabs>standard-Monitor</tabs>
+    <tabs>standard-ActionHub</tabs>
+    <tabs>standard-FlowLogs</tabs>
+    <tabs>Team__c</tabs>
+    <tabs>Consultant__c</tabs>
+    <tabs>Team_User__c</tabs>
+    <tabs>standard-GlobalFlowResources</tabs>
+    <tabs>CYP_to_Job__c</tabs>
+    <tabs>CYP_to_Shift__c</tabs>
+    <tabs>sirenum__AWR__c</tabs>
+    <tabs>sirenum__AWR_Break__c</tabs>
+    <tabs>sirenum__AWR_Contributor__c</tabs>
+    <tabs>standard-Tags</tabs>
+    <tabs>Pre_Approval__c</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>FlowsApp_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ethnic_Origin__c</fullName>
+    <label>Ethnic Origin</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Any other Asian background</fullName>
+                <default>false</default>
+                <label>Any other Asian background</label>
+            </value>
+            <value>
+                <fullName>Any other Black / African / Caribbean background</fullName>
+                <default>false</default>
+                <label>Any other Black / African / Caribbean background</label>
+            </value>
+            <value>
+                <fullName>Any other Mixed / Multiple background</fullName>
+                <default>false</default>
+                <label>Any other Mixed / Multiple background</label>
+            </value>
+            <value>
+                <fullName>Any other White background</fullName>
+                <default>false</default>
+                <label>Any other White background</label>
+            </value>
+            <value>
+                <fullName>Arab</fullName>
+                <default>false</default>
+                <label>Arab</label>
+            </value>
+            <value>
+                <fullName>Asian or Asian British</fullName>
+                <default>false</default>
+                <label>Asian or Asian British</label>
+            </value>
+            <value>
+                <fullName>Asian or Asian British Bangladeshi</fullName>
+                <default>false</default>
+                <label>Asian or Asian British Bangladeshi</label>
+            </value>
+            <value>
+                <fullName>Asian or Asian British Indian</fullName>
+                <default>false</default>
+                <label>Asian or Asian British Indian</label>
+            </value>
+            <value>
+                <fullName>Asian or Asian British Pakistani</fullName>
+                <default>false</default>
+                <label>Asian or Asian British Pakistani</label>
+            </value>
+            <value>
+                <fullName>Black or Black British African</fullName>
+                <default>false</default>
+                <label>Black or Black British African</label>
+            </value>
+            <value>
+                <fullName>Black or Black British Caribbean</fullName>
+                <default>false</default>
+                <label>Black or Black British Caribbean</label>
+            </value>
+            <value>
+                <fullName>Chinese</fullName>
+                <default>false</default>
+                <label>Chinese</label>
+            </value>
+            <value>
+                <fullName>I do not wish to state</fullName>
+                <default>false</default>
+                <label>I do not wish to state</label>
+            </value>
+            <value>
+                <fullName>Other ethnic group</fullName>
+                <default>false</default>
+                <label>Other ethnic group</label>
+            </value>
+            <value>
+                <fullName>White and Asian</fullName>
+                <default>false</default>
+                <label>White and Asian</label>
+            </value>
+            <value>
+                <fullName>White and Black African</fullName>
+                <default>false</default>
+                <label>White and Black African</label>
+            </value>
+            <value>
+                <fullName>White and Black Caribbean</fullName>
+                <default>false</default>
+                <label>White and Black Caribbean</label>
+            </value>
+            <value>
+                <fullName>White British</fullName>
+                <default>false</default>
+                <label>White British</label>
+            </value>
+            <value>
+                <fullName>White Gypsy or Irish Traveller</fullName>
+                <default>false</default>
+                <label>White Gypsy or Irish Traveller</label>
+            </value>
+            <value>
+                <fullName>White Irish</fullName>
+                <default>false</default>
+                <label>White Irish</label>
+            </value>
+            <value>
+                <fullName>White Welsh</fullName>
+                <default>false</default>
+                <label>White Welsh</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

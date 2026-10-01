@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CLA - awaiting school place (Children Looked After)</fullName>
+        <default>false</default>
+        <label>CLA - awaiting school place (Children Looked After)</label>
+    </customValue>
+    <customValue>
+        <fullName>EOTAS (Education Otherwise Than At School)</fullName>
+        <default>false</default>
+        <label>EOTAS (Education Otherwise Than At School)</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Section 19- Emotional Based School Avoidance</fullName>
+        <default>false</default>
+        <label>Medical Section 19- Emotional Based School Avoidance</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Section 19- Mental Health</fullName>
+        <default>false</default>
+        <label>Medical Section 19- Mental Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Section 19- Physical Health</fullName>
+        <default>false</default>
+        <label>Medical Section 19- Physical Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Medical Section 19- Pregnancy</fullName>
+        <default>false</default>
+        <label>Medical Section 19- Pregnancy</label>
+    </customValue>
+    <customValue>
+        <fullName>New to Area/Country - awaiting school place</fullName>
+        <default>false</default>
+        <label>New to Area/Country - awaiting school place</label>
+    </customValue>
+    <customValue>
+        <fullName>PEX (Permanently Excluded)</fullName>
+        <default>false</default>
+        <label>PEX (Permanently Excluded)</label>
+    </customValue>
+    <customValue>
+        <fullName>Post-16 NEET (Not In Education Employment or Training)</fullName>
+        <default>false</default>
+        <label>Post-16 NEET (Not In Education Employment or Training)</label>
+    </customValue>
+    <customValue>
+        <fullName>Section 19 - Please Specify</fullName>
+        <default>false</default>
+        <label>Section 19 - Please Specify</label>
+    </customValue>
+    <customValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </customValue>
+    <masterLabel>Reason for Referral</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

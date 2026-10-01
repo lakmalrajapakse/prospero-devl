@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- OffersListPage --></label>
+    <name>TR1__OffersListPage__c</name>
+    <picklistValues>
+        <masterLabel>All</masterLabel>
+        <translation>Tous</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>account</masterLabel>
+        <translation>compte</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>application</masterLabel>
+        <translation>candidature</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>job</masterLabel>
+        <translation>poste</translation>
+    </picklistValues>
+</CustomFieldTranslation>

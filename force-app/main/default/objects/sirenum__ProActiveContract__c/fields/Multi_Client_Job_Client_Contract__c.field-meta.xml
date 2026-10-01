@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Multi_Client_Job_Client_Contract__c</fullName>
+    <defaultValue>false</defaultValue>
+    <inlineHelpText>To identify the Contract that will be set against the Job itself so that Job Types can be selected on the Job. Only one Contract can have this set to True and that Contract can only be assigned to the nominated Multi-Client Job Client</inlineHelpText>
+    <label>Multi-Client Job Client Contract</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

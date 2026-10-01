@@ -35,7 +35,6 @@ public with sharing class RateAgreementManagerController {
         @AuraEnabled public String workerType { get; set; }
         @AuraEnabled public String onCostType { get; set; }
         @AuraEnabled public String calcType { get; set; }
-        @AuraEnabled public String type { get; set; }
         @AuraEnabled public Decimal value { get; set; }
     }
 
@@ -48,6 +47,10 @@ public with sharing class RateAgreementManagerController {
         @AuraEnabled public Rate_Agreement_Scale_Definition__c definition;
         @AuraEnabled public Boolean isLocked;
     }
+
+    // Values for Employer_On_Cost__c.Type__c, set by the server rather than the client.
+    private static final String ON_COST_TYPE_AGREEMENT = 'Record Agreement';
+    private static final String ON_COST_TYPE_LINE = 'Record Agreement Line';
 
     // Returns a page of Pay Based Rate Agreements, most recently viewed first.
     @AuraEnabled
@@ -351,6 +354,7 @@ public with sharing class RateAgreementManagerController {
                 Worker_Type__c = oc.Worker_Type__c,
                 On_Cost_Type__c = oc.On_Cost_Type__c,
                 Calc_Type__c = oc.Calc_Type__c,
+                Type__c = newLineId != null ? ON_COST_TYPE_LINE : ON_COST_TYPE_AGREEMENT,
                 Value__c = oc.Value__c
             ));
         }
@@ -359,7 +363,8 @@ public with sharing class RateAgreementManagerController {
         return newVersion.Id;
     }
 
-    // Returns a version's Scales and Lines.
+    // Returns a version's Scales and Lines, including the Scale Definitions each Line's
+    // Min/Max Scale maps to.
     @AuraEnabled
     public static VersionWorkspaceResult getVersionWorkspace(Id versionId) {
         if (versionId == null) throw new AuraHandledException('A Rate Agreement Version is required.');
@@ -377,7 +382,11 @@ public with sharing class RateAgreementManagerController {
             ORDER BY Rate_Agreement_Scale_Definition__r.Ranking__c, Name
         ];
         result.lines = [
-            SELECT Id, Name, Worker_Type__c, Min_Scale__c, Max_Scale__c, Calc_Type__c, Margin_Value__c
+            SELECT Id, Name, Worker_Type__c, Calc_Type__c, Margin_Value__c,
+                   Min_Scale__c, Min_Scale__r.Min_Amount__c, Min_Scale__r.Max_Amount__c,
+                   Min_Scale__r.Rate_Agreement_Scale_Definition__r.Name,
+                   Max_Scale__c, Max_Scale__r.Min_Amount__c, Max_Scale__r.Max_Amount__c,
+                   Max_Scale__r.Rate_Agreement_Scale_Definition__r.Name
             FROM Rate_Agreement_Lines__c
             WHERE Rate_Agreement_Version__c = :versionId
             ORDER BY CreatedDate
@@ -389,14 +398,15 @@ public with sharing class RateAgreementManagerController {
     @AuraEnabled
     public static List<Employer_On_Cost__c> getOnCosts(Id versionId, Id lineId) {
         if (versionId == null) return new List<Employer_On_Cost__c>();
-        String query = 'SELECT Id, Name, Worker_Type__c, On_Cost_Type__c, Calc_Type__c, Type__c, Value__c ' +
+        String query = 'SELECT Id, Name, Worker_Type__c, On_Cost_Type__c, Calc_Type__c, Value__c ' +
             'FROM Employer_On_Cost__c WHERE Rate_Agreement_Version__c = :versionId';
         query += lineId != null ? ' AND Rate_Agreement_Lines__c = :lineId' : ' AND Rate_Agreement_Lines__c = NULL';
         query += ' ORDER BY CreatedDate';
         return Database.query(query);
     }
 
-        // Inserts or updates one Employer On Cost.
+    // Inserts or updates one Employer On Cost. Type__c is always set here, not by the client:
+    // "Record Agreement" when lineId is null, "Record Agreement Line" otherwise.
     @AuraEnabled
     public static Id upsertOnCost(Id versionId, Id lineId, OnCostInput input) {
         if (versionId == null) throw new AuraHandledException('A Version is required.');
@@ -411,7 +421,7 @@ public with sharing class RateAgreementManagerController {
         rec.Worker_Type__c = input.workerType;
         rec.On_Cost_Type__c = input.onCostType;
         rec.Calc_Type__c = input.calcType;
-        rec.Type__c = input.type;
+        rec.Type__c = lineId != null ? ON_COST_TYPE_LINE : ON_COST_TYPE_AGREEMENT;
         rec.Value__c = input.value;
         upsert rec;
         return rec.Id;
@@ -424,13 +434,13 @@ public with sharing class RateAgreementManagerController {
         delete new Employer_On_Cost__c(Id = onCostId);
     }
 
-    // Copies a version's default on-costs onto a Line.
+    // Copies a version's default on-costs onto a Line, retyping each as Line-level.
     @AuraEnabled
     public static void copyDefaultOnCostsToLine(Id versionId, Id lineId) {
         if (versionId == null || lineId == null) throw new AuraHandledException('A Version and Line are required.');
 
         List<Employer_On_Cost__c> defaults = [
-            SELECT Worker_Type__c, On_Cost_Type__c, Calc_Type__c, Value__c, Type__c
+            SELECT Worker_Type__c, On_Cost_Type__c, Calc_Type__c, Value__c
             FROM Employer_On_Cost__c
             WHERE Rate_Agreement_Version__c = :versionId AND Rate_Agreement_Lines__c = NULL
         ];
@@ -443,7 +453,7 @@ public with sharing class RateAgreementManagerController {
                 Worker_Type__c = d.Worker_Type__c,
                 On_Cost_Type__c = d.On_Cost_Type__c,
                 Calc_Type__c = d.Calc_Type__c,
-                Type__c = d.Type__c,
+                Type__c = ON_COST_TYPE_LINE,
                 Value__c = d.Value__c
             ));
         }

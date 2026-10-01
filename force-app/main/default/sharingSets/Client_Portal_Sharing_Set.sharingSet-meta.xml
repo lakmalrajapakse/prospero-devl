@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <name>Client Portal Sharing Set</name>
+    <profiles>Client Portal User</profiles>
+</SharingSet>

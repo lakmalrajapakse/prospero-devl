@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Health_Social_Care_Type__c</fullName>
+    <label>Health &amp; Social Care Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Case Management Company</fullName>
+                <default>false</default>
+                <label>Case Management Company</label>
+            </value>
+            <value>
+                <fullName>Council</fullName>
+                <default>false</default>
+                <label>Council</label>
+            </value>
+            <value>
+                <fullName>Department</fullName>
+                <default>false</default>
+                <label>Department</label>
+            </value>
+            <value>
+                <fullName>Health Board</fullName>
+                <default>false</default>
+                <label>Health Board</label>
+            </value>
+            <value>
+                <fullName>Local Authority</fullName>
+                <default>false</default>
+                <label>Local Authority</label>
+            </value>
+            <value>
+                <fullName>NHS Organisation</fullName>
+                <default>false</default>
+                <label>NHS Organisation</label>
+            </value>
+            <value>
+                <fullName>Private Care Organisation</fullName>
+                <default>false</default>
+                <label>Private Care Organisation</label>
+            </value>
+            <value>
+                <fullName>Private Client</fullName>
+                <default>false</default>
+                <label>Private Client</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

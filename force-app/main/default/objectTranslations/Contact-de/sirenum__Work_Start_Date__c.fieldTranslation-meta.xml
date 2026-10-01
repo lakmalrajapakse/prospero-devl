@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Geben Sie das Datum ein, an dem der Arbeitnehmer die Arbeit aufgenommen hat.</help>
+    <label><!-- Work Start Date --></label>
+    <name>sirenum__Work_Start_Date__c</name>
+</CustomFieldTranslation>

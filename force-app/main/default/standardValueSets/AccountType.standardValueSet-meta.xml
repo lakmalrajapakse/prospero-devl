@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>true</sorted>
+    <standardValue>
+        <fullName>AV Live Events</fullName>
+        <default>false</default>
+        <label>AV Live Events</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Broadcast</fullName>
+        <default>false</default>
+        <label>Broadcast</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Case Management Company (Third party insurance)</fullName>
+        <default>false</default>
+        <label>Case Management Company (Third party insurance)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Consultancy</fullName>
+        <default>false</default>
+        <label>Consultancy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Council</fullName>
+        <default>false</default>
+        <label>Council</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Department</fullName>
+        <default>false</default>
+        <label>Department</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Distributor</fullName>
+        <default>false</default>
+        <label>Distributor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Fire and Security</fullName>
+        <default>false</default>
+        <label>Fire and Security</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Health Board (Integrated Care Board ICB)</fullName>
+        <default>false</default>
+        <label>Health Board (Integrated Care Board ICB)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Home Automation</fullName>
+        <default>false</default>
+        <label>Home Automation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IT (Information Technology)</fullName>
+        <default>false</default>
+        <label>IT (Information Technology)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Local Authority</fullName>
+        <default>false</default>
+        <label>Local Authority</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </standardValue>
+    <standardValue>
+        <fullName>NHS Organisation</fullName>
+        <default>false</default>
+        <label>NHS Organisation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Parent Academy</fullName>
+        <default>false</default>
+        <label>Parent Academy</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Private Care Organisation</fullName>
+        <default>false</default>
+        <label>Private Care Organisation</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Private Client (Individual Adult, Directed Family)</fullName>
+        <default>false</default>
+        <label>Private Client (Individual Adult, Directed Family)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Production</fullName>
+        <default>false</default>
+        <label>Production</label>
+    </standardValue>
+    <standardValue>
+        <fullName>School</fullName>
+        <default>false</default>
+        <label>School</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Systems Integrator</fullName>
+        <default>false</default>
+        <label>Systems Integrator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Telecomms</fullName>
+        <default>false</default>
+        <label>Telecomms</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unified Comms</fullName>
+        <default>false</default>
+        <label>Unified Comms</label>
+    </standardValue>
+</StandardValueSet>

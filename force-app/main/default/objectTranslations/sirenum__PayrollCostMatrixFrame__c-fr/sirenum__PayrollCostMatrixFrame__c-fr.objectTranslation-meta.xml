@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cadre de la matrice des coûts de paie</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cadres de la matrice des coûts de paie</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Cadres de la matrice des coûts de paie</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

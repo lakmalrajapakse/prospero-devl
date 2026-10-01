@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- More than 7 days Missmatch --></label>
+    <name>More_than_7_days_Missmatch__c</name>
+</CustomFieldTranslation>

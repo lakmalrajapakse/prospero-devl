@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>De meest gebruikte reismethode voor deze contactpersoon.</help>
+    <label><!-- Travel Method --></label>
+    <name>sirenum__TravelMethod__c</name>
+    <picklistValues>
+        <masterLabel>Car</masterLabel>
+        <translation>Auto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cycling</masterLabel>
+        <translation>Fiets</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Public Transport</masterLabel>
+        <translation>Openbaar vervoer</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Walk</masterLabel>
+        <translation>Te voet</translation>
+    </picklistValues>
+</CustomFieldTranslation>

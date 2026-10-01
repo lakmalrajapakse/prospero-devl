@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Group of Learners – Mixed Needs</fullName>
+        <default>false</default>
+        <label>Group of Learners – Mixed Needs</label>
+    </customValue>
+    <customValue>
+        <fullName>Group of Learners – Same Needs</fullName>
+        <default>false</default>
+        <label>Group of Learners – Same Needs</label>
+    </customValue>
+    <customValue>
+        <fullName>Individual Learner</fullName>
+        <default>false</default>
+        <label>Individual Learner</label>
+    </customValue>
+    <customValue>
+        <fullName>Whole School</fullName>
+        <default>false</default>
+        <label>Whole School</label>
+    </customValue>
+    <customValue>
+        <fullName>Whole‑Class / General Support</fullName>
+        <default>false</default>
+        <label>Whole‑Class / General Support</label>
+    </customValue>
+    <masterLabel>Who Is The Support For?</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

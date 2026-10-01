@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Prospero - Marketing</label>
+    <permissionSets>BH4Force_Basic_Unpackaged</permissionSets>
+    <permissionSets>Prospero_Marketing_Permission</permissionSets>
+    <permissionSets>Prospero_Universal_Field_Access</permissionSets>
+    <permissionSets>Textkernel1__textkernelRecruiterAccess</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

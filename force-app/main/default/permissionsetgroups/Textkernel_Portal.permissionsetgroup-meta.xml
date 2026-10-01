@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Textkernel Portal</label>
+    <permissionSets>TR1__Textkernel_Iframe_Portal_User</permissionSets>
+    <permissionSets>Textkernel1__textkernelRecruiterAccess</permissionSets>
+    <permissionSets>Textkernel_BH4SF_access</permissionSets>
+    <permissionSets>Textkernel_Portal_access</permissionSets>
+    <permissionSets>textkernelUnlockedComponentsAccess</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

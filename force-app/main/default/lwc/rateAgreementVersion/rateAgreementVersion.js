@@ -69,6 +69,15 @@ export default class RateAgreementVersion extends LightningElement {
         return this.isCurrent ? 'table-wrapper theme-green' : 'table-wrapper theme-blue';
     }
 
+    // Restricts the Min/Max Scale pickers to Scales that belong to this Version.
+    get scaleFilter() {
+        return {
+            criteria: [
+                { fieldPath: 'Rate_Agreement_Version__c', operator: 'eq', value: this.versionId }
+            ]
+        };
+    }
+
     async load() {
         this.isLoading = true;
         try {
@@ -83,8 +92,8 @@ export default class RateAgreementVersion extends LightningElement {
                 defRanking: scale.Rate_Agreement_Scale_Definition__r?.Ranking__c
             }));
 
-            const lines = result.lines || [];
-            this.lines = lines.map(l => ({ ...l, isDirty: false }));
+            const lines = (result.lines || []).map(l => ({ ...l, isDirty: false }));
+            this.lines = lines;
             this.originalLineById = {};
             lines.forEach(l => { this.originalLineById[l.Id] = { ...l }; });
         } catch (error) {
@@ -106,15 +115,16 @@ export default class RateAgreementVersion extends LightningElement {
         }
     }
 
+    // lightning-combobox/lightning-input fire detail.value; lightning-record-picker fires
+    // detail.recordId instead -- read whichever the event actually carries.
     handleLineCellChange(event) {
         const id = event.currentTarget.dataset.id;
         const field = event.currentTarget.dataset.field;
-        const value = event.detail.value;
+        const rawValue = event.detail.recordId !== undefined ? event.detail.recordId : event.detail.value;
+        const value = field === 'Margin_Value__c' ? parseFloat(rawValue) : rawValue;
 
         this.lines = this.lines.map(line =>
-            line.Id === id
-                ? { ...line, [field]: field === 'Margin_Value__c' ? parseFloat(value) : value, isDirty: true }
-                : line
+            line.Id === id ? { ...line, [field]: value, isDirty: true } : line
         );
     }
 
@@ -129,7 +139,9 @@ export default class RateAgreementVersion extends LightningElement {
                     Id: line.Id,
                     Worker_Type__c: line.Worker_Type__c,
                     Calc_Type__c: line.Calc_Type__c,
-                    Margin_Value__c: line.Margin_Value__c
+                    Margin_Value__c: line.Margin_Value__c,
+                    Min_Scale__c: line.Min_Scale__c,
+                    Max_Scale__c: line.Max_Scale__c
                 }
             });
             this.showToast('Success', 'Changes saved.', 'success');

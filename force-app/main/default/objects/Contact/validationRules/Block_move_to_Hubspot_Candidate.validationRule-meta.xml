@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_move_to_Hubspot_Candidate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT(ISNEW()),
+    ISCHANGED(TR1__Candidate_Status__c),
+    ISPICKVAL(TR1__Candidate_Status__c, &quot;Hubspot Candidate&quot;)
+)</errorConditionFormula>
+    <errorMessage>You cannot move Candidates back to the Hubspot Candidate Status</errorMessage>
+</ValidationRule>

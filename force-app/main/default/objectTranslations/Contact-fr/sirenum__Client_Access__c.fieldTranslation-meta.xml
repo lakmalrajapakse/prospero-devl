@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Client Access --></label>
+    <name>sirenum__Client_Access__c</name>
+    <picklistValues>
+        <masterLabel>Access Matched Shifts</masterLabel>
+        <translation>Accéder aux missions correspondantes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assign Tags</masterLabel>
+        <translation>Attribuer des étiquettes</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create Shift</masterLabel>
+        <translation>Créer des missions</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edit Shift</masterLabel>
+        <translation>Modifier des missions</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager Mode</masterLabel>
+        <translation>Mode responsable</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scan Card</masterLabel>
+        <translation>Parcourir la fiche</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>See Logs</masterLabel>
+        <translation>Voir journaux</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>See Shifts</masterLabel>
+        <translation>Voir missions</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Shifts</masterLabel>
+        <translation>Missions de début</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Shifts</masterLabel>
+        <translation>Échanger des missions</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>View All Shifts</masterLabel>
+        <translation>Afficher toutes les missions</translation>
+    </picklistValues>
+</CustomFieldTranslation>

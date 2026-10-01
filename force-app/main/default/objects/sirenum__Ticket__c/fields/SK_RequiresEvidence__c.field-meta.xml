@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SK_RequiresEvidence__c</fullName>
+    <description>Ensures that the need for evidence is accessible in the list of tickets and on the ticket layout.</description>
+    <formula>sirenum__TicketType__r.sirenum__Requires_Proof__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>When this is ticked you need to provide evidence.</inlineHelpText>
+    <label>Requires Evidence</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

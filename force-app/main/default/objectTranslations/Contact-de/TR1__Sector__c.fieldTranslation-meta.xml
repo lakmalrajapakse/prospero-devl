@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sector --></label>
+    <name>TR1__Sector__c</name>
+    <picklistValues>
+        <masterLabel>Children&apos;s Centre</masterLabel>
+        <translation>Kinderzentrum</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>College (6th)</masterLabel>
+        <translation>Hochschule (6.)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further Education</masterLabel>
+        <translation>Weiterbildung</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HMP Prison</masterLabel>
+        <translation>Gefängnis</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infant</masterLabel>
+        <translation>Kind</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Junior</masterLabel>
+        <translation><!-- Junior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursery</masterLabel>
+        <translation>Kindergarten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overseas Client</masterLabel>
+        <translation>Internationaler Kunde</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary</masterLabel>
+        <translation>Level 1</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Nursery</masterLabel>
+        <translation>Privater Kindergarten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary</masterLabel>
+        <translation>Level 2</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Needs</masterLabel>
+        <translation>Sonderschule</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech College</masterLabel>
+        <translation>Tech. Hochschule</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Through School</masterLabel>
+        <translation>Through School (Grund- u. weiterführende Schule in einem)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual School</masterLabel>
+        <translation>Virtuelle Schule</translation>
+    </picklistValues>
+</CustomFieldTranslation>

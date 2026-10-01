@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Similar_Candidates</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Similar Candidates</masterLabel>
+    <openType>noSidebar</openType>
+    <page>TR1__SimilarCandidateRedirect</page>
+    <protected>false</protected>
+</WebLink>

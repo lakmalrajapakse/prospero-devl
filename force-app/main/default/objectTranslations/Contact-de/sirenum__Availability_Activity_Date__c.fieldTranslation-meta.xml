@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wann die Arbeitnehmeranfrage für den Kontakt erstellt oder in irgendeiner Form geändert wurde oder eine Verfügbarkeitsperiode für den Kontakt geändert wurde.</help>
+    <label><!-- Availability Activity Date --></label>
+    <name>sirenum__Availability_Activity_Date__c</name>
+</CustomFieldTranslation>

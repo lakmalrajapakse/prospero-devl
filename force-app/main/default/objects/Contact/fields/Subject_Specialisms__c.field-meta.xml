@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subject_Specialisms__c</fullName>
+    <inlineHelpText>You must add a Subject Specialism if Roles contains: Secondary Teacher, Overseas Secondary Teacher, Head of Subject/Department, HE/FE Lecturer, Head Teacher, Deputy Head Teacher, Assistant Head Teacher, or SENDCO (Special Educational Needs Coordinator).</inlineHelpText>
+    <label>Subject Specialism</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Subjects</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

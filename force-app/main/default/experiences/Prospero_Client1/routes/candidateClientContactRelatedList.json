@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "01195dc1-251f-4182-b59f-8e626e30e705",
+  "appPageId" : "8c871e13-6d08-4440-b759-c322ea3acaef",
+  "configurationTags" : [ ],
+  "devName" : "Candidate_Client_Contact_Related_List__c",
+  "id" : "2734b33f-2655-44e7-bc05-d0e4d0b33cc6",
+  "label" : "Candidate  Client Contact Related List",
+  "routeType" : "relatedlist-003",
+  "type" : "route",
+  "urlPrefix" : "contact"
+}

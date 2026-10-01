@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Teaching Age Group --></label>
+    <name>Teaching_Age_Group__c</name>
+    <picklistValues>
+        <masterLabel>0–3 (Nursery / Early Childhood)</masterLabel>
+        <translation><!-- 0–3 (Nursery / Early Childhood) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>11–14 (KS3 Secondary age)</masterLabel>
+        <translation><!-- 11–14 (KS3 Secondary age) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>14–16 (KS4 Secondary age)</masterLabel>
+        <translation><!-- 14–16 (KS4 Secondary age) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>16–18 (FE)</masterLabel>
+        <translation><!-- 16–18 (FE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>18–25 (Young Adult/HE)</masterLabel>
+        <translation><!-- 18–25 (Young Adult/HE) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>25–64 (Adult)</masterLabel>
+        <translation><!-- 25–64 (Adult) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>3–4 (Preschool / Nursery Upper)</masterLabel>
+        <translation><!-- 3–4 (Preschool / Nursery Upper) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>4–8 (KS1 Primary age)</masterLabel>
+        <translation><!-- 4–8 (KS1 Primary age) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>65+ (Elderly)</masterLabel>
+        <translation><!-- 65+ (Elderly) --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>8–11 (KS2 Primary age)</masterLabel>
+        <translation><!-- 8–11 (KS2 Primary age) --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

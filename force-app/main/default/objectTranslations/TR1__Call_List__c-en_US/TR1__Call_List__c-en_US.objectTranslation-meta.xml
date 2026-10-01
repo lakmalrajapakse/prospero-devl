@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <recordTypes>
+        <label><!-- Search Result --></label>
+        <name>Search_Result</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Talent Pool --></label>
+        <name>Talent_Pool</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Callist Name --></errorMessage>
+        <name>Error</name>
+    </validationRules>
+</CustomObjectTranslation>

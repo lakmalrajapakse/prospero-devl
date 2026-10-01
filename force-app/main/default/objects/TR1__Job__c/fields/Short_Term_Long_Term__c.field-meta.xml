@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Short_Term_Long_Term__c</fullName>
+    <label>Short Term / Long Term</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Long Term</fullName>
+                <default>false</default>
+                <label>Long Term</label>
+            </value>
+            <value>
+                <fullName>Short Term</fullName>
+                <default>false</default>
+                <label>Short Term</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

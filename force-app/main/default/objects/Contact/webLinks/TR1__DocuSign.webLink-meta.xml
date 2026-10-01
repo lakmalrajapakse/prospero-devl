@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__DocuSign</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>DocuSign</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/dsfs__DocuSign_CreateEnvelope?LA=0&amp;DSEID=0&amp;rc=&amp;SourceID={!Contact.Id}</url>
+</WebLink>

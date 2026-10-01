@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Accounts/Finance</fullName>
+        <default>false</default>
+        <label>Accounts/Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Administrative_and_Support_Services</fullName>
+        <default>false</default>
+        <label>Administrative and Support Services</label>
+    </customValue>
+    <customValue>
+        <fullName>AV Manager</fullName>
+        <default>false</default>
+        <label>AV Manager</label>
+    </customValue>
+    <customValue>
+        <fullName>CEO/Board Level</fullName>
+        <default>false</default>
+        <label>CEO/Board Level</label>
+    </customValue>
+    <customValue>
+        <fullName>Commissioning Department within LA</fullName>
+        <default>false</default>
+        <label>Commissioning Department within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>Design</fullName>
+        <default>false</default>
+        <label>Design</label>
+    </customValue>
+    <customValue>
+        <fullName>Disabilities Department within LA</fullName>
+        <default>false</default>
+        <label>Disabilities Department within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>Facilities and Operations</fullName>
+        <default>false</default>
+        <label>Facilities and Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>HR/Recruitment</fullName>
+        <default>false</default>
+        <label>HR/Recruitment</label>
+    </customValue>
+    <customValue>
+        <fullName>Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA</fullName>
+        <default>false</default>
+        <label>Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>IT and Technical Services</fullName>
+        <default>false</default>
+        <label>IT and Technical Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Leadership and Management</fullName>
+        <default>false</default>
+        <label>Leadership and Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Leaving Care Department within LA</fullName>
+        <default>false</default>
+        <label>Leaving Care Department within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>Nursery</fullName>
+        <default>false</default>
+        <label>Nursery</label>
+    </customValue>
+    <customValue>
+        <fullName>Operations</fullName>
+        <default>false</default>
+        <label>Operations</label>
+    </customValue>
+    <customValue>
+        <fullName>Pastoral and Student Support</fullName>
+        <default>false</default>
+        <label>Pastoral and Student Support</label>
+    </customValue>
+    <customValue>
+        <fullName>Permanence (Placements) Department within LA</fullName>
+        <default>false</default>
+        <label>Permanence (Placements) Department within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>Projects</fullName>
+        <default>false</default>
+        <label>Projects</label>
+    </customValue>
+    <customValue>
+        <fullName>Regional/Trust</fullName>
+        <default>false</default>
+        <label>Regional/Trust</label>
+    </customValue>
+    <customValue>
+        <fullName>Safeguarding Department within LA</fullName>
+        <default>false</default>
+        <label>Safeguarding Department within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales</fullName>
+        <default>false</default>
+        <label>Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Section 19 Team Department within LA</fullName>
+        <default>false</default>
+        <label>Section 19 Team Department within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>SEND Team (any Child with an EHCP) within LA</fullName>
+        <default>false</default>
+        <label>SEND Team (any Child with an EHCP) within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>Service</fullName>
+        <default>false</default>
+        <label>Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Social Care Department within LA</fullName>
+        <default>false</default>
+        <label>Social Care Department within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>Teaching and Learning</fullName>
+        <default>false</default>
+        <label>Teaching and Learning</label>
+    </customValue>
+    <customValue>
+        <fullName>UASC Unaccompanied Asylum Seeking Child</fullName>
+        <default>false</default>
+        <label>UASC Unaccompanied Asylum Seeking Child</label>
+    </customValue>
+    <customValue>
+        <fullName>Virtual School within LA</fullName>
+        <default>false</default>
+        <label>Virtual School within LA</label>
+    </customValue>
+    <customValue>
+        <fullName>Warehouse</fullName>
+        <default>false</default>
+        <label>Warehouse</label>
+    </customValue>
+    <masterLabel>Departments</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

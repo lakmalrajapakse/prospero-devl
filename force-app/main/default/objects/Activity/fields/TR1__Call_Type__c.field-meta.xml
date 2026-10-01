@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Call_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Call Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Recruiting Call</fullName>
+                <default>false</default>
+                <label>Recruiting Call</label>
+            </value>
+            <value>
+                <fullName>Business Development Call</fullName>
+                <default>false</default>
+                <label>Business Development Call</label>
+            </value>
+            <value>
+                <fullName>Other Call</fullName>
+                <default>false</default>
+                <label>Other Call</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

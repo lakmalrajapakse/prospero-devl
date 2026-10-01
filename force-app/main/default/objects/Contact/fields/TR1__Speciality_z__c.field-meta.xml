@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Speciality_z__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Speciality 2</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <controllingField>TR1__Grade_Z__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Addiction medicine</fullName>
+                <default>false</default>
+                <label>Addiction medicine</label>
+            </value>
+            <value>
+                <fullName>Anaesthetics</fullName>
+                <default>false</default>
+                <label>Anaesthetics</label>
+            </value>
+            <value>
+                <fullName>Cardiology</fullName>
+                <default>false</default>
+                <label>Cardiology</label>
+            </value>
+            <value>
+                <fullName>Clinical genetics</fullName>
+                <default>false</default>
+                <label>Clinical genetics</label>
+            </value>
+            <value>
+                <fullName>Clinical pharmacology</fullName>
+                <default>false</default>
+                <label>Clinical pharmacology</label>
+            </value>
+            <value>
+                <fullName>Dermatology</fullName>
+                <default>false</default>
+                <label>Dermatology</label>
+            </value>
+            <value>
+                <fullName>Emergency medicine</fullName>
+                <default>false</default>
+                <label>Emergency medicine</label>
+            </value>
+            <value>
+                <fullName>Endocrinology</fullName>
+                <default>false</default>
+                <label>Endocrinology</label>
+            </value>
+            <value>
+                <fullName>Gastroenterology and hepatology</fullName>
+                <default>false</default>
+                <label>Gastroenterology and hepatology</label>
+            </value>
+            <value>
+                <fullName>General medicine/physician</fullName>
+                <default>false</default>
+                <label>General medicine/physician</label>
+            </value>
+            <value>
+                <fullName>General practice</fullName>
+                <default>false</default>
+                <label>General practice</label>
+            </value>
+            <value>
+                <fullName>General practice - aged care</fullName>
+                <default>false</default>
+                <label>General practice - aged care</label>
+            </value>
+            <value>
+                <fullName>General practice - anaesthetics</fullName>
+                <default>false</default>
+                <label>General practice - anaesthetics</label>
+            </value>
+            <value>
+                <fullName>General practice - correctional / judicial health</fullName>
+                <default>false</default>
+                <label>General practice - correctional / judicial health</label>
+            </value>
+            <value>
+                <fullName>General practice - cosmetics</fullName>
+                <default>false</default>
+                <label>General practice - cosmetics</label>
+            </value>
+            <value>
+                <fullName>General practice - emergency medicine</fullName>
+                <default>false</default>
+                <label>General practice - emergency medicine</label>
+            </value>
+            <value>
+                <fullName>General practice - GP / family medicine</fullName>
+                <default>false</default>
+                <label>General practice - GP / family medicine</label>
+            </value>
+            <value>
+                <fullName>General practice - indigenous health</fullName>
+                <default>false</default>
+                <label>General practice - indigenous health</label>
+            </value>
+            <value>
+                <fullName>General practice - obstetrics and gynaecology</fullName>
+                <default>false</default>
+                <label>General practice - obstetrics and gynaecology</label>
+            </value>
+            <value>
+                <fullName>General practice - occupational medicine</fullName>
+                <default>false</default>
+                <label>General practice - occupational medicine</label>
+            </value>
+            <value>
+                <fullName>General practice - rural and remote</fullName>
+                <default>false</default>
+                <label>General practice - rural and remote</label>
+            </value>
+            <value>
+                <fullName>General practice - skin cancer medicine</fullName>
+                <default>false</default>
+                <label>General practice - skin cancer medicine</label>
+            </value>
+            <value>
+                <fullName>General practice - sports medicine / nutrition</fullName>
+                <default>false</default>
+                <label>General practice - sports medicine / nutrition</label>
+            </value>
+            <value>
+                <fullName>Geriatric medicine</fullName>
+                <default>false</default>
+                <label>Geriatric medicine</label>
+            </value>
+            <value>
+                <fullName>Haematology</fullName>
+                <default>false</default>
+                <label>Haematology</label>
+            </value>
+            <value>
+                <fullName>Immunology and allergy</fullName>
+                <default>false</default>
+                <label>Immunology and allergy</label>
+            </value>
+            <value>
+                <fullName>Infectious diseases</fullName>
+                <default>false</default>
+                <label>Infectious diseases</label>
+            </value>
+            <value>
+                <fullName>Intensive care medicine</fullName>
+                <default>false</default>
+                <label>Intensive care medicine</label>
+            </value>
+            <value>
+                <fullName>Internal medicine / Physician</fullName>
+                <default>false</default>
+                <label>Internal medicine / Physician</label>
+            </value>
+            <value>
+                <fullName>Medical administration</fullName>
+                <default>false</default>
+                <label>Medical administration</label>
+            </value>
+            <value>
+                <fullName>Medical oncology</fullName>
+                <default>false</default>
+                <label>Medical oncology</label>
+            </value>
+            <value>
+                <fullName>Nephrology</fullName>
+                <default>false</default>
+                <label>Nephrology</label>
+            </value>
+            <value>
+                <fullName>Neurology</fullName>
+                <default>false</default>
+                <label>Neurology</label>
+            </value>
+            <value>
+                <fullName>Nuclear medicine</fullName>
+                <default>false</default>
+                <label>Nuclear medicine</label>
+            </value>
+            <value>
+                <fullName>O &amp; G - Gynaecological oncology</fullName>
+                <default>false</default>
+                <label>O &amp; G - Gynaecological oncology</label>
+            </value>
+            <value>
+                <fullName>O &amp; G - Maternal–fetal medicine</fullName>
+                <default>false</default>
+                <label>O &amp; G - Maternal–fetal medicine</label>
+            </value>
+            <value>
+                <fullName>O &amp; G - Obstetrics and gynaecological ultrasound</fullName>
+                <default>false</default>
+                <label>O &amp; G - Obstetrics and gynaecological ultrasound</label>
+            </value>
+            <value>
+                <fullName>O &amp; G - Obstetrics and gynaecology</fullName>
+                <default>false</default>
+                <label>O &amp; G - Obstetrics and gynaecology</label>
+            </value>
+            <value>
+                <fullName>O &amp; G - Reproductive endocrinology and infertility</fullName>
+                <default>false</default>
+                <label>O &amp; G - Reproductive endocrinology and infertility</label>
+            </value>
+            <value>
+                <fullName>O &amp; G - Urogynaecology</fullName>
+                <default>false</default>
+                <label>O &amp; G - Urogynaecology</label>
+            </value>
+            <value>
+                <fullName>Obstetrics and gynaecology</fullName>
+                <default>false</default>
+                <label>Obstetrics and gynaecology</label>
+            </value>
+            <value>
+                <fullName>Occupational and environmental medicine</fullName>
+                <default>false</default>
+                <label>Occupational and environmental medicine</label>
+            </value>
+            <value>
+                <fullName>Ophthalmology</fullName>
+                <default>false</default>
+                <label>Ophthalmology</label>
+            </value>
+            <value>
+                <fullName>Paediatrics and child health</fullName>
+                <default>false</default>
+                <label>Paediatrics and child health</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - cardiology</fullName>
+                <default>false</default>
+                <label>Paediatrics - cardiology</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - clinical genetics</fullName>
+                <default>false</default>
+                <label>Paediatrics - clinical genetics</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - clinical pharmacology</fullName>
+                <default>false</default>
+                <label>Paediatrics - clinical pharmacology</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - community child health</fullName>
+                <default>false</default>
+                <label>Paediatrics - community child health</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - emergency medicine</fullName>
+                <default>false</default>
+                <label>Paediatrics - emergency medicine</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - endocrinology</fullName>
+                <default>false</default>
+                <label>Paediatrics - endocrinology</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - gastroenterology and hepatology</fullName>
+                <default>false</default>
+                <label>Paediatrics - gastroenterology and hepatology</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - general</fullName>
+                <default>false</default>
+                <label>Paediatrics - general</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - haematology</fullName>
+                <default>false</default>
+                <label>Paediatrics - haematology</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - immunology and allergy</fullName>
+                <default>false</default>
+                <label>Paediatrics - immunology and allergy</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - infectious diseases</fullName>
+                <default>false</default>
+                <label>Paediatrics - infectious diseases</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - intensive care medicine</fullName>
+                <default>false</default>
+                <label>Paediatrics - intensive care medicine</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - medical oncology</fullName>
+                <default>false</default>
+                <label>Paediatrics - medical oncology</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - neonatal and perinatal medicine</fullName>
+                <default>false</default>
+                <label>Paediatrics - neonatal and perinatal medicine</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - nephrology</fullName>
+                <default>false</default>
+                <label>Paediatrics - nephrology</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - neurology</fullName>
+                <default>false</default>
+                <label>Paediatrics - neurology</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - nuclear medicine</fullName>
+                <default>false</default>
+                <label>Paediatrics - nuclear medicine</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - palliative medicine</fullName>
+                <default>false</default>
+                <label>Paediatrics - palliative medicine</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - rehabilitation medicine</fullName>
+                <default>false</default>
+                <label>Paediatrics - rehabilitation medicine</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - respiratory and sleep medicine</fullName>
+                <default>false</default>
+                <label>Paediatrics - respiratory and sleep medicine</label>
+            </value>
+            <value>
+                <fullName>Paediatrics - rheumatology</fullName>
+                <default>false</default>
+                <label>Paediatrics - rheumatology</label>
+            </value>
+            <value>
+                <fullName>Pain medicine</fullName>
+                <default>false</default>
+                <label>Pain medicine</label>
+            </value>
+            <value>
+                <fullName>Palliative medicine</fullName>
+                <default>false</default>
+                <label>Palliative medicine</label>
+            </value>
+            <value>
+                <fullName>Pathology</fullName>
+                <default>false</default>
+                <label>Pathology</label>
+            </value>
+            <value>
+                <fullName>Pathology - anatomical (including cytopathology)</fullName>
+                <default>false</default>
+                <label>Pathology - anatomical (including cytopathology)</label>
+            </value>
+            <value>
+                <fullName>Pathology - chemical</fullName>
+                <default>false</default>
+                <label>Pathology - chemical</label>
+            </value>
+            <value>
+                <fullName>Pathology - forensic</fullName>
+                <default>false</default>
+                <label>Pathology - forensic</label>
+            </value>
+            <value>
+                <fullName>Pathology - general</fullName>
+                <default>false</default>
+                <label>Pathology - general</label>
+            </value>
+            <value>
+                <fullName>Pathology - haematology</fullName>
+                <default>false</default>
+                <label>Pathology - haematology</label>
+            </value>
+            <value>
+                <fullName>Pathology - immunology</fullName>
+                <default>false</default>
+                <label>Pathology - immunology</label>
+            </value>
+            <value>
+                <fullName>Pathology - microbiology</fullName>
+                <default>false</default>
+                <label>Pathology - microbiology</label>
+            </value>
+            <value>
+                <fullName>Psychiatry</fullName>
+                <default>false</default>
+                <label>Psychiatry</label>
+            </value>
+            <value>
+                <fullName>Public health medicine</fullName>
+                <default>false</default>
+                <label>Public health medicine</label>
+            </value>
+            <value>
+                <fullName>Radiation oncology</fullName>
+                <default>false</default>
+                <label>Radiation oncology</label>
+            </value>
+            <value>
+                <fullName>Radiology</fullName>
+                <default>false</default>
+                <label>Radiology</label>
+            </value>
+            <value>
+                <fullName>Radiology - diagnostic</fullName>
+                <default>false</default>
+                <label>Radiology - diagnostic</label>
+            </value>
+            <value>
+                <fullName>Radiology - diagnostic ultrasound</fullName>
+                <default>false</default>
+                <label>Radiology - diagnostic ultrasound</label>
+            </value>
+            <value>
+                <fullName>Rehabilitation medicine</fullName>
+                <default>false</default>
+                <label>Rehabilitation medicine</label>
+            </value>
+            <value>
+                <fullName>Respiratory and sleep medicine</fullName>
+                <default>false</default>
+                <label>Respiratory and sleep medicine</label>
+            </value>
+            <value>
+                <fullName>Rheumatology</fullName>
+                <default>false</default>
+                <label>Rheumatology</label>
+            </value>
+            <value>
+                <fullName>Sexual health medicine</fullName>
+                <default>false</default>
+                <label>Sexual health medicine</label>
+            </value>
+            <value>
+                <fullName>Sports and exercise medicine</fullName>
+                <default>false</default>
+                <label>Sports and exercise medicine</label>
+            </value>
+            <value>
+                <fullName>Surgery</fullName>
+                <default>false</default>
+                <label>Surgery</label>
+            </value>
+            <value>
+                <fullName>Surgery - cardiothoracic</fullName>
+                <default>false</default>
+                <label>Surgery - cardiothoracic</label>
+            </value>
+            <value>
+                <fullName>Surgery - general</fullName>
+                <default>false</default>
+                <label>Surgery - general</label>
+            </value>
+            <value>
+                <fullName>Surgery - neurosurgery</fullName>
+                <default>false</default>
+                <label>Surgery - neurosurgery</label>
+            </value>
+            <value>
+                <fullName>Surgery - oral and maxillofacial</fullName>
+                <default>false</default>
+                <label>Surgery - oral and maxillofacial</label>
+            </value>
+            <value>
+                <fullName>Surgery - orthopaedic</fullName>
+                <default>false</default>
+                <label>Surgery - orthopaedic</label>
+            </value>
+            <value>
+                <fullName>Surgery - otolaryngology</fullName>
+                <default>false</default>
+                <label>Surgery - otolaryngology</label>
+            </value>
+            <value>
+                <fullName>Surgery - paediatric</fullName>
+                <default>false</default>
+                <label>Surgery - paediatric</label>
+            </value>
+            <value>
+                <fullName>Surgery - plastic</fullName>
+                <default>false</default>
+                <label>Surgery - plastic</label>
+            </value>
+            <value>
+                <fullName>Surgery - urology</fullName>
+                <default>false</default>
+                <label>Surgery - urology</label>
+            </value>
+            <value>
+                <fullName>Surgery - vascular</fullName>
+                <default>false</default>
+                <label>Surgery - vascular</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Addiction medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Anaesthetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <valueName>Cardiology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Clinical genetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Clinical pharmacology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Dermatology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <valueName>Emergency medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <valueName>Endocrinology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <valueName>Gastroenterology and hepatology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>General medicine/physician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>General practice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>General practice - aged care</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>General practice - anaesthetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <valueName>General practice - correctional / judicial health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <valueName>General practice - cosmetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <valueName>General practice - emergency medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <valueName>General practice - GP / family medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <valueName>General practice - indigenous health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <valueName>General practice - obstetrics and gynaecology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Medical Student</controllingFieldValue>
+            <valueName>General practice - occupational medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>General practice - rural and remote</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>General practice - skin cancer medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>General practice - sports medicine / nutrition</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Geriatric medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Haematology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Immunology and allergy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Infectious diseases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Intensive care medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Internal medicine / Physician</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Medical administration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Medical oncology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Nephrology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Neurology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>Nuclear medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>O &amp; G - Gynaecological oncology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>O &amp; G - Maternal–fetal medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>O &amp; G - Obstetrics and gynaecological ultrasound</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>O &amp; G - Obstetrics and gynaecology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>O &amp; G - Reproductive endocrinology and infertility</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Resident Medical Officer</controllingFieldValue>
+            <valueName>O &amp; G - Urogynaecology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Obstetrics and gynaecology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Occupational and environmental medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Ophthalmology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics and child health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - cardiology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - clinical genetics</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - clinical pharmacology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - community child health</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - emergency medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - endocrinology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - gastroenterology and hepatology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - general</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - haematology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - immunology and allergy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - infectious diseases</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - intensive care medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - medical oncology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - neonatal and perinatal medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - nephrology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Registrar</controllingFieldValue>
+            <valueName>Paediatrics - neurology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Paediatrics - nuclear medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Paediatrics - palliative medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Paediatrics - rehabilitation medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Paediatrics - respiratory and sleep medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Paediatrics - rheumatology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Pain medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Palliative medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Pathology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Pathology - anatomical (including cytopathology)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Pathology - chemical</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Pathology - forensic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Pathology - general</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Pathology - haematology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Pathology - immunology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Pathology - microbiology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Psychiatry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Public health medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Radiation oncology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Radiology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SMO/MOSS</controllingFieldValue>
+            <controllingFieldValue>Director of Medical Services</controllingFieldValue>
+            <valueName>Radiology - diagnostic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Radiology - diagnostic ultrasound</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Rehabilitation medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Respiratory and sleep medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Rheumatology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Sexual health medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Sports and exercise medicine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - cardiothoracic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - general</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - neurosurgery</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - oral and maxillofacial</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - orthopaedic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - otolaryngology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - paediatric</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - plastic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - urology</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Specialist Consultant</controllingFieldValue>
+            <controllingFieldValue>Clinical Director</controllingFieldValue>
+            <valueName>Surgery - vascular</valueName>
+        </valueSettings>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

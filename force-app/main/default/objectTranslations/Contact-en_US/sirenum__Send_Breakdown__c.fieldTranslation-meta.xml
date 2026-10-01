@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- If checked, then the person will receive weekly pay advices informing them of their gross pay --></help>
+    <label><!-- Send Pay Advice --></label>
+    <name>sirenum__Send_Breakdown__c</name>
+</CustomFieldTranslation>

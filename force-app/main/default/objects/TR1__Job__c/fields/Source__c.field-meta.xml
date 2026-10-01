@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source__c</fullName>
+    <label>Source</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Brand__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>Job_Source</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Direct Sales</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Mailer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Marketing Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Tender</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Health &amp; Social Care</controllingFieldValue>
+            <valueName>Third Party Master Vendors</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Email</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Portal- CES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Portal- Comensurin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Portal- Harris Academy</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Portal- Matrix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Portal- Other</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Portal- Proactis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Portal- The Supply Register</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Teaching</controllingFieldValue>
+            <valueName>Telephone</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

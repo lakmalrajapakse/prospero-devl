@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Outcome Expected --></label>
+    <name>Outcome_Expected__c</name>
+    <picklistValues>
+        <masterLabel>Boost academic grades</masterLabel>
+        <translation><!-- Boost academic grades --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closing fundamental gaps</masterLabel>
+        <translation><!-- Closing fundamental gaps --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Enhanced progress</masterLabel>
+        <translation><!-- Enhanced progress --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Improved attendance at AP</masterLabel>
+        <translation><!-- Improved attendance at AP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Improved behaviour</masterLabel>
+        <translation><!-- Improved behaviour --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increased confidence &amp; self‑efficacy</masterLabel>
+        <translation><!-- Increased confidence &amp; self‑efficacy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Increased independence</masterLabel>
+        <translation><!-- Increased independence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re‑engagement in learning</masterLabel>
+        <translation><!-- Re‑engagement in learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re‑integration into education</masterLabel>
+        <translation><!-- Re‑integration into education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Re‑integration into post‑16 pathway</masterLabel>
+        <translation><!-- Re‑integration into post‑16 pathway --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Stabilisation during crisis or transition</masterLabel>
+        <translation><!-- Stabilisation during crisis or transition --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

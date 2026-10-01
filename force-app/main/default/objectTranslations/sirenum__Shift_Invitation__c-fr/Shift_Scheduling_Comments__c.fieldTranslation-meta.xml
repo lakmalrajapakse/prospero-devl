@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- The related Shift’s scheduling comments, if any. --></help>
+    <label><!-- Scheduling Comments --></label>
+    <name>Shift_Scheduling_Comments__c</name>
+</CustomFieldTranslation>

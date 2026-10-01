@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Push Notification sent on touch error</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Connect: Push Notify Touch Failure</name>
+    <style>none</style>
+    <subject>Your request to {!sirenum__TouchEntry__c.sirenum__Action__c} failed</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>SEN</fullName>
+        <default>false</default>
+        <label>SEN</label>
+    </customValue>
+    <customValue>
+        <fullName>CES</fullName>
+        <default>false</default>
+        <label>CES</label>
+    </customValue>
+    <customValue>
+        <fullName>PMY</fullName>
+        <default>false</default>
+        <label>PMY</label>
+    </customValue>
+    <customValue>
+        <fullName>SEC</fullName>
+        <default>false</default>
+        <label>SEC</label>
+    </customValue>
+    <customValue>
+        <fullName>TEA</fullName>
+        <default>false</default>
+        <label>TEA</label>
+    </customValue>
+    <masterLabel>Team Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

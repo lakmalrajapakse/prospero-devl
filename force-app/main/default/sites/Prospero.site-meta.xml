@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomSite xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowGuestPaymentsApi>false</allowGuestPaymentsApi>
+    <allowHomePage>false</allowHomePage>
+    <allowStandardAnswersPages>false</allowStandardAnswersPages>
+    <allowStandardIdeasPages>false</allowStandardIdeasPages>
+    <allowStandardLookups>false</allowStandardLookups>
+    <allowStandardPortalPages>true</allowStandardPortalPages>
+    <allowStandardSearch>false</allowStandardSearch>
+    <authorizationRequiredPage>SK_CommunitiesLogin</authorizationRequiredPage>
+    <bandwidthExceededPage>SK_BandwidthExceeded</bandwidthExceededPage>
+    <browserXssProtection>true</browserXssProtection>
+    <cachePublicVisualforcePagesInProxyServers>false</cachePublicVisualforcePagesInProxyServers>
+    <clickjackProtectionLevel>SameOriginOnly</clickjackProtectionLevel>
+    <contentSniffingProtection>true</contentSniffingProtection>
+    <enableAuraRequests>true</enableAuraRequests>
+    <fileNotFoundPage>SK_FileNotFound</fileNotFoundPage>
+    <genericErrorPage>SK_Exception</genericErrorPage>
+    <inMaintenancePage>SK_InMaintenance</inMaintenancePage>
+    <indexPage>SK_CommunitiesLanding</indexPage>
+    <masterLabel>Prospero</masterLabel>
+    <redirectToCustomDomain>false</redirectToCustomDomain>
+    <referrerPolicyOriginWhenCrossOrigin>true</referrerPolicyOriginWhenCrossOrigin>
+    <selfRegPage>SK_CommunitiesSelfReg</selfRegPage>
+    <serverIsDown>SNA_lbaXP_sf_default_cdn_Prospero_Connect1</serverIsDown>
+    <siteAdmin>1218-sfdc-support@1218global.com.prospero</siteAdmin>
+    <siteGuestRecordDefaultOwner>1218-sfdc-support@1218global.com.prospero</siteGuestRecordDefaultOwner>
+    <siteType>ChatterNetwork</siteType>
+    <urlPathPrefix>connect</urlPathPrefix>
+</CustomSite>

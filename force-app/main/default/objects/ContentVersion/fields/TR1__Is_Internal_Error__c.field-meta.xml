@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Is_Internal_Error__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <inlineHelpText>The field is used for mass processing flow and is checked when internal validation is failed(eg file size, file extension)</inlineHelpText>
+    <label>Is Internal Error</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

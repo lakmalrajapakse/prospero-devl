@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Shift --></label>
+    <name>TR1__Shift__c</name>
+    <picklistValues>
+        <masterLabel>AM</masterLabel>
+        <translation>uur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Full Day</masterLabel>
+        <translation>Hele dag</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PM</masterLabel>
+        <translation>uur</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rotating</masterLabel>
+        <translation>Roulerend</translation>
+    </picklistValues>
+</CustomFieldTranslation>

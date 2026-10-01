@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Formule permettant de calculer la valeur de Date/Heure utilisée pour trier les activités dans la vue combinée du composant de la liste Power Note.</help>
+    <label><!-- Date To Sort By --></label>
+    <name>TR1__Date_To_Sort_By__c</name>
+</CustomFieldTranslation>

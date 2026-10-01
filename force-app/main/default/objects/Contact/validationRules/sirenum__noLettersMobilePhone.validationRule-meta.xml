@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sirenum__noLettersMobilePhone</fullName>
+    <active>true</active>
+    <description>Phone number cannot contain letters</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(MobilePhone)), NOT(REGEX(MobilePhone, &quot;^([0-9+()-])[0-9 ()+-]+$&quot;)))</errorConditionFormula>
+    <errorDisplayField>MobilePhone</errorDisplayField>
+    <errorMessage>Mobile Phone number cannot contain letters</errorMessage>
+</ValidationRule>

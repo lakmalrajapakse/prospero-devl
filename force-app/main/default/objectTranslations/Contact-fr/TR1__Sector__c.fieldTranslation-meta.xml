@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sector --></label>
+    <name>TR1__Sector__c</name>
+    <picklistValues>
+        <masterLabel>Children&apos;s Centre</masterLabel>
+        <translation>Centre pour les enfants</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>College (6th)</masterLabel>
+        <translation>Université</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further Education</masterLabel>
+        <translation>Formation complémentaire</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HMP Prison</masterLabel>
+        <translation><!-- HMP Prison --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infant</masterLabel>
+        <translation>Infantile</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Junior</masterLabel>
+        <translation><!-- Junior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursery</masterLabel>
+        <translation>Crèche</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overseas Client</masterLabel>
+        <translation>Client à étranger</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary</masterLabel>
+        <translation>Principal</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Nursery</masterLabel>
+        <translation>Crèche privée</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary</masterLabel>
+        <translation>Secondaire</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Needs</masterLabel>
+        <translation>Besoins spéciaux</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech College</masterLabel>
+        <translation>Université technologique</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Through School</masterLabel>
+        <translation>Par l&apos;école</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual School</masterLabel>
+        <translation>École virtuelle</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- Please outline the support currently provided to the family and their views regarding the intervention --></help>
+    <label><!-- Family Support and Views --></label>
+    <name>Family_Support_and_Views__c</name>
+</CustomFieldTranslation>

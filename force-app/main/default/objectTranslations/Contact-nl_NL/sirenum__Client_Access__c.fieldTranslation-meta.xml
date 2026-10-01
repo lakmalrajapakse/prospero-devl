@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Client Access --></label>
+    <name>sirenum__Client_Access__c</name>
+    <picklistValues>
+        <masterLabel>Access Matched Shifts</masterLabel>
+        <translation>Afgestemde diensten openen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assign Tags</masterLabel>
+        <translation>Tags toewijzen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create Shift</masterLabel>
+        <translation>Dienst maken</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edit Shift</masterLabel>
+        <translation>Dienst bewerken</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager Mode</masterLabel>
+        <translation>Managermodus</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scan Card</masterLabel>
+        <translation>Kaart scannen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>See Logs</masterLabel>
+        <translation>Logbestanden bekijken</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>See Shifts</masterLabel>
+        <translation>Diensten bekijken</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Shifts</masterLabel>
+        <translation>Diensten starten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Shifts</masterLabel>
+        <translation>Diensten ruilen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>View All Shifts</masterLabel>
+        <translation>Alles diensten weergeven</translation>
+    </picklistValues>
+</CustomFieldTranslation>

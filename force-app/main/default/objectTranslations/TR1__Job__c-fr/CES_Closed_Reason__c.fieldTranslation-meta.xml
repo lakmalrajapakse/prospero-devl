@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- CES Closed Reason --></label>
+    <name>CES_Closed_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Commissioner Withdrawal</masterLabel>
+        <translation><!-- Commissioner Withdrawal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employment Secured</masterLabel>
+        <translation><!-- Employment Secured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Funding Ended</masterLabel>
+        <translation><!-- Funding Ended --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health‑Related End</masterLabel>
+        <translation><!-- Health‑Related End --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Non‑Engagement / Persistent Absence</masterLabel>
+        <translation><!-- Non‑Engagement / Persistent Absence --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other External Reason</masterLabel>
+        <translation><!-- Other External Reason --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Parent/Carer Withdrawal</masterLabel>
+        <translation><!-- Parent/Carer Withdrawal --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planned Tuition Completed Successfully</masterLabel>
+        <translation><!-- Planned Tuition Completed Successfully --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Post-16 Pathway Secured</masterLabel>
+        <translation><!-- Post-16 Pathway Secured --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Provision Unsuitable for Student</masterLabel>
+        <translation><!-- Provision Unsuitable for Student --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reintegration to School/College</masterLabel>
+        <translation><!-- Reintegration to School/College --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safeguarding End</masterLabel>
+        <translation><!-- Safeguarding End --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Student Moved Out of Area</masterLabel>
+        <translation><!-- Student Moved Out of Area --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tutor Ended &amp; No Replacement Available</masterLabel>
+        <translation><!-- Tutor Ended &amp; No Replacement Available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tutor Unsuitable</masterLabel>
+        <translation><!-- Tutor Unsuitable --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

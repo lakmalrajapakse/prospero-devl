@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Datensatz Kandidatenstatistik, der Kandidateninformationen enthält. Wenn die Funktion „Kandidatenstatistik“ aktiviert wurde, werden die Informationen automatisch aktualisiert.</help>
+    <label><!-- Candidate Statistics --></label>
+    <name>TR1__Candidate_Statistics__c</name>
+    <relationshipLabel><!-- Contacts --></relationshipLabel>
+</CustomFieldTranslation>

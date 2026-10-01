@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- School --></label>
+    <name>School__c</name>
+    <picklistValues>
+        <masterLabel>Academy</masterLabel>
+        <translation><!-- Academy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>College</masterLabel>
+        <translation><!-- College --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Free School</masterLabel>
+        <translation><!-- Free School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Independent School</masterLabel>
+        <translation><!-- Independent School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Local Authority Maintained School</masterLabel>
+        <translation><!-- Local Authority Maintained School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Online Provider</masterLabel>
+        <translation><!-- Online Provider --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other Type</masterLabel>
+        <translation><!-- Other Type --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special School</masterLabel>
+        <translation><!-- Special School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>University</masterLabel>
+        <translation><!-- University --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Welsh School</masterLabel>
+        <translation><!-- Welsh School --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

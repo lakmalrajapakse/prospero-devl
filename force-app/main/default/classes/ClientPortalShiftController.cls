@@ -1,22 +1,37 @@
-/**
- * Controller for the read-only "Shifts" related list on the Candidate detail page.
- * Only returns Shifts at a Site belonging to the current portal user's Account.
- */
 public without sharing class ClientPortalShiftController {
 
+    public class ShiftDTO {
+        @AuraEnabled public Id Id;
+        @AuraEnabled public Datetime scheduledStart;
+        @AuraEnabled public Datetime scheduledEnd;
+        @AuraEnabled public String siteName;
+    }
+
     @AuraEnabled(cacheable=true)
-    public static List<sirenum__Shift__c> getShiftsForCandidate(Id contactId) {
+    public static List<ShiftDTO> getShiftsForCandidate(Id contactId) {
         Id currentAccountId = ClientPortalCandidateControllers.getCurrentUserAccountId();
+        List<ShiftDTO> output = new List<ShiftDTO>();
+
         if (contactId == null || currentAccountId == null) {
-            return new List<sirenum__Shift__c>();
+            return output;
+        }
+
+        Map<Id, sirenum__Site__c> sitesById = new Map<Id, sirenum__Site__c>([
+            SELECT Id, Name
+            FROM sirenum__Site__c
+            WHERE sirenum__Operating_Company__c = :currentAccountId
+        ]);
+
+        if (sitesById.isEmpty()) {
+            return output;
         }
 
         List<sirenum__Shift__c> results = [
             SELECT Id, sirenum__Scheduled_Start_Time__c, sirenum__Scheduled_End_Time__c,
-                   sirenum__Site__r.Name
+                   sirenum__Site__c
             FROM sirenum__Shift__c
             WHERE sirenum__Contact__c = :contactId
-              AND sirenum__Site__r.sirenum__Operating_Company__c = :currentAccountId
+              AND sirenum__Site__c IN :sitesById.keySet()
             ORDER BY sirenum__Scheduled_Start_Time__c DESC
             LIMIT 200
         ];
@@ -24,6 +39,18 @@ public without sharing class ClientPortalShiftController {
         SObjectAccessDecision decision = Security.stripInaccessible(
             AccessType.READABLE, results
         );
-        return (List<sirenum__Shift__c>) decision.getRecords();
+        results = (List<sirenum__Shift__c>) decision.getRecords();
+
+        for (sirenum__Shift__c shift : results) {
+            ShiftDTO dto = new ShiftDTO();
+            dto.Id = shift.Id;
+            dto.scheduledStart = shift.sirenum__Scheduled_Start_Time__c;
+            dto.scheduledEnd = shift.sirenum__Scheduled_End_Time__c;
+            sirenum__Site__c site = sitesById.get(shift.sirenum__Site__c);
+            dto.siteName = site != null ? site.Name : '';
+            output.add(dto);
+        }
+
+        return output;
     }
 }

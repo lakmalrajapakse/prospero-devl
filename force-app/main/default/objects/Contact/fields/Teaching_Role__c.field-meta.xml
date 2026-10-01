@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Teaching_Role__c</fullName>
+    <label>Teaching Role</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Academic Advisor</fullName>
+                <default>false</default>
+                <label>Academic Advisor</label>
+            </value>
+            <value>
+                <fullName>Admin/ Receptionist</fullName>
+                <default>false</default>
+                <label>Admin/ Receptionist</label>
+            </value>
+            <value>
+                <fullName>Admin Assistant</fullName>
+                <default>false</default>
+                <label>Admin Assistant</label>
+            </value>
+            <value>
+                <fullName>Admissions Officer</fullName>
+                <default>false</default>
+                <label>Admissions Officer</label>
+            </value>
+            <value>
+                <fullName>Advisory Teacher (CES)</fullName>
+                <default>false</default>
+                <label>Advisory Teacher (CES)</label>
+            </value>
+            <value>
+                <fullName>Alternative Provision Coordinator</fullName>
+                <default>false</default>
+                <label>Alternative Provision Coordinator</label>
+            </value>
+            <value>
+                <fullName>AP Case Worker (Alternative Provision)</fullName>
+                <default>false</default>
+                <label>AP Case Worker (Alternative Provision)</label>
+            </value>
+            <value>
+                <fullName>Assistant Headteacher</fullName>
+                <default>false</default>
+                <label>Assistant Headteacher</label>
+            </value>
+            <value>
+                <fullName>Assistant SENCO</fullName>
+                <default>false</default>
+                <label>Assistant SENCO</label>
+            </value>
+            <value>
+                <fullName>Attendance Officer</fullName>
+                <default>false</default>
+                <label>Attendance Officer</label>
+            </value>
+            <value>
+                <fullName>Behaviour/ Pastoral Lead</fullName>
+                <default>false</default>
+                <label>Behaviour/ Pastoral Lead</label>
+            </value>
+            <value>
+                <fullName>Behaviour/ Pastoral Support</fullName>
+                <default>false</default>
+                <label>Behaviour/ Pastoral Support</label>
+            </value>
+            <value>
+                <fullName>Business Manager</fullName>
+                <default>false</default>
+                <label>Business Manager</label>
+            </value>
+            <value>
+                <fullName>CAMHS Worker</fullName>
+                <default>false</default>
+                <label>CAMHS Worker</label>
+            </value>
+            <value>
+                <fullName>Caretaker/ Site Manager</fullName>
+                <default>false</default>
+                <label>Caretaker/ Site Manager</label>
+            </value>
+            <value>
+                <fullName>Caretaker / Site Officer</fullName>
+                <default>false</default>
+                <label>Caretaker / Site Officer</label>
+            </value>
+            <value>
+                <fullName>Catering Assistant</fullName>
+                <default>false</default>
+                <label>Catering Assistant</label>
+            </value>
+            <value>
+                <fullName>CEO/Owner</fullName>
+                <default>false</default>
+                <label>CEO/Owner</label>
+            </value>
+            <value>
+                <fullName>Child Protection Officer</fullName>
+                <default>false</default>
+                <label>Child Protection Officer</label>
+            </value>
+            <value>
+                <fullName>CLA Lead (Children Looked After)</fullName>
+                <default>false</default>
+                <label>CLA Lead (Children Looked After)</label>
+            </value>
+            <value>
+                <fullName>Cleaner</fullName>
+                <default>false</default>
+                <label>Cleaner</label>
+            </value>
+            <value>
+                <fullName>Compliance Officer</fullName>
+                <default>false</default>
+                <label>Compliance Officer</label>
+            </value>
+            <value>
+                <fullName>Cover Manager</fullName>
+                <default>false</default>
+                <label>Cover Manager</label>
+            </value>
+            <value>
+                <fullName>Cover Supervisor</fullName>
+                <default>false</default>
+                <label>Cover Supervisor</label>
+            </value>
+            <value>
+                <fullName>Data Manager</fullName>
+                <default>false</default>
+                <label>Data Manager</label>
+            </value>
+            <value>
+                <fullName>Data Officer</fullName>
+                <default>false</default>
+                <label>Data Officer</label>
+            </value>
+            <value>
+                <fullName>Deputy Headteacher</fullName>
+                <default>false</default>
+                <label>Deputy Headteacher</label>
+            </value>
+            <value>
+                <fullName>Director</fullName>
+                <default>false</default>
+                <label>Director</label>
+            </value>
+            <value>
+                <fullName>Driver/Transport</fullName>
+                <default>false</default>
+                <label>Driver/Transport</label>
+            </value>
+            <value>
+                <fullName>DSL (Designated Safeguarding Lead)</fullName>
+                <default>false</default>
+                <label>DSL (Designated Safeguarding Lead)</label>
+            </value>
+            <value>
+                <fullName>EAL Teacher</fullName>
+                <default>false</default>
+                <label>EAL Teacher</label>
+            </value>
+            <value>
+                <fullName>EAL Teaching Assistant</fullName>
+                <default>false</default>
+                <label>EAL Teaching Assistant</label>
+            </value>
+            <value>
+                <fullName>Early Help Worker</fullName>
+                <default>false</default>
+                <label>Early Help Worker</label>
+            </value>
+            <value>
+                <fullName>Educational Psychologist</fullName>
+                <default>false</default>
+                <label>Educational Psychologist</label>
+            </value>
+            <value>
+                <fullName>EHCP Co-ordinator</fullName>
+                <default>false</default>
+                <label>EHCP Co-ordinator</label>
+            </value>
+            <value>
+                <fullName>EHCP Writers</fullName>
+                <default>false</default>
+                <label>EHCP Writers</label>
+            </value>
+            <value>
+                <fullName>Exam Invigilator/ Officer</fullName>
+                <default>false</default>
+                <label>Exam Invigilator/ Officer</label>
+            </value>
+            <value>
+                <fullName>Exam Manager</fullName>
+                <default>false</default>
+                <label>Exam Manager</label>
+            </value>
+            <value>
+                <fullName>Executive Headteacher</fullName>
+                <default>false</default>
+                <label>Executive Headteacher</label>
+            </value>
+            <value>
+                <fullName>EYFS Teacher</fullName>
+                <default>false</default>
+                <label>EYFS Teacher</label>
+            </value>
+            <value>
+                <fullName>Family Support Worker</fullName>
+                <default>false</default>
+                <label>Family Support Worker</label>
+            </value>
+            <value>
+                <fullName>FE Lecturer/Teacher (Further Education)</fullName>
+                <default>false</default>
+                <label>FE Lecturer/Teacher (Further Education)</label>
+            </value>
+            <value>
+                <fullName>Finance Manager</fullName>
+                <default>false</default>
+                <label>Finance Manager</label>
+            </value>
+            <value>
+                <fullName>Finance Officer</fullName>
+                <default>false</default>
+                <label>Finance Officer</label>
+            </value>
+            <value>
+                <fullName>Governor</fullName>
+                <default>false</default>
+                <label>Governor</label>
+            </value>
+            <value>
+                <fullName>Graduate</fullName>
+                <default>false</default>
+                <label>Graduate</label>
+            </value>
+            <value>
+                <fullName>Head of Key Stage</fullName>
+                <default>false</default>
+                <label>Head of Key Stage</label>
+            </value>
+            <value>
+                <fullName>Head of Subject/ Department</fullName>
+                <default>false</default>
+                <label>Head of Subject/ Department</label>
+            </value>
+            <value>
+                <fullName>Head of Year</fullName>
+                <default>false</default>
+                <label>Head of Year</label>
+            </value>
+            <value>
+                <fullName>Head Teacher</fullName>
+                <default>false</default>
+                <label>Head Teacher</label>
+            </value>
+            <value>
+                <fullName>HE Lecturer (Higher Education)</fullName>
+                <default>false</default>
+                <label>HE Lecturer (Higher Education)</label>
+            </value>
+            <value>
+                <fullName>HLTA (Higher Level Teaching Assistant)</fullName>
+                <default>false</default>
+                <label>HLTA (Higher Level Teaching Assistant)</label>
+            </value>
+            <value>
+                <fullName>HR Manager</fullName>
+                <default>false</default>
+                <label>HR Manager</label>
+            </value>
+            <value>
+                <fullName>HR Officer</fullName>
+                <default>false</default>
+                <label>HR Officer</label>
+            </value>
+            <value>
+                <fullName>ICT Technician</fullName>
+                <default>false</default>
+                <label>ICT Technician</label>
+            </value>
+            <value>
+                <fullName>Inclusion Manager</fullName>
+                <default>false</default>
+                <label>Inclusion Manager</label>
+            </value>
+            <value>
+                <fullName>Inclusion Support</fullName>
+                <default>false</default>
+                <label>Inclusion Support</label>
+            </value>
+            <value>
+                <fullName>Intervention Assistant</fullName>
+                <default>false</default>
+                <label>Intervention Assistant</label>
+            </value>
+            <value>
+                <fullName>Intervention Teacher</fullName>
+                <default>false</default>
+                <label>Intervention Teacher</label>
+            </value>
+            <value>
+                <fullName>LADO</fullName>
+                <default>false</default>
+                <label>LADO (Local Authority Designated Officer)</label>
+            </value>
+            <value>
+                <fullName>Librarian</fullName>
+                <default>false</default>
+                <label>Librarian</label>
+            </value>
+            <value>
+                <fullName>Lunchtime Supervisor</fullName>
+                <default>false</default>
+                <label>Lunchtime Supervisor</label>
+            </value>
+            <value>
+                <fullName>Mentor</fullName>
+                <default>false</default>
+                <label>Mentor</label>
+            </value>
+            <value>
+                <fullName>NEET Coordinator</fullName>
+                <default>false</default>
+                <label>NEET Coordinator</label>
+            </value>
+            <value>
+                <fullName>NQT</fullName>
+                <default>false</default>
+                <label>NQT</label>
+            </value>
+            <value>
+                <fullName>Nursery Manager</fullName>
+                <default>false</default>
+                <label>Nursery Manager</label>
+            </value>
+            <value>
+                <fullName>Nursery Nurse</fullName>
+                <default>false</default>
+                <label>Nursery Nurse</label>
+            </value>
+            <value>
+                <fullName>Nursery Staff/Support</fullName>
+                <default>false</default>
+                <label>Nursery Staff/Support</label>
+            </value>
+            <value>
+                <fullName>Nursery Teacher</fullName>
+                <default>false</default>
+                <label>Nursery Teacher</label>
+            </value>
+            <value>
+                <fullName>Office Manager</fullName>
+                <default>false</default>
+                <label>Office Manager</label>
+            </value>
+            <value>
+                <fullName>Operations Manager</fullName>
+                <default>false</default>
+                <label>Operations Manager</label>
+            </value>
+            <value>
+                <fullName>Overseas Primary Teacher</fullName>
+                <default>false</default>
+                <label>Overseas Primary Teacher</label>
+            </value>
+            <value>
+                <fullName>Overseas Secondary Teacher</fullName>
+                <default>false</default>
+                <label>Overseas Secondary Teacher</label>
+            </value>
+            <value>
+                <fullName>Parent/Guardian</fullName>
+                <default>false</default>
+                <label>Parent/Guardian</label>
+            </value>
+            <value>
+                <fullName>PA to Headteacher</fullName>
+                <default>false</default>
+                <label>PA to Headteacher</label>
+            </value>
+            <value>
+                <fullName>Payroll/Finance Officer</fullName>
+                <default>false</default>
+                <label>Payroll/Finance Officer</label>
+            </value>
+            <value>
+                <fullName>Primary Teacher</fullName>
+                <default>false</default>
+                <label>Primary Teacher</label>
+            </value>
+            <value>
+                <fullName>Procurement Lead</fullName>
+                <default>false</default>
+                <label>Procurement Lead</label>
+            </value>
+            <value>
+                <fullName>Procurement Officer</fullName>
+                <default>false</default>
+                <label>Procurement Officer</label>
+            </value>
+            <value>
+                <fullName>Regional Manager</fullName>
+                <default>false</default>
+                <label>Regional Manager</label>
+            </value>
+            <value>
+                <fullName>Reprographics Technician</fullName>
+                <default>false</default>
+                <label>Reprographics Technician</label>
+            </value>
+            <value>
+                <fullName>Room Leader</fullName>
+                <default>false</default>
+                <label>Room Leader</label>
+            </value>
+            <value>
+                <fullName>Safeguarding Officer</fullName>
+                <default>false</default>
+                <label>Safeguarding Officer</label>
+            </value>
+            <value>
+                <fullName>SBM (School Business Manager)</fullName>
+                <default>false</default>
+                <label>SBM (School Business Manager)</label>
+            </value>
+            <value>
+                <fullName>School Improvement Officer</fullName>
+                <default>false</default>
+                <label>School Improvement Officer</label>
+            </value>
+            <value>
+                <fullName>Secondary Teacher</fullName>
+                <default>false</default>
+                <label>Secondary Teacher</label>
+            </value>
+            <value>
+                <fullName>SEND Case Worker</fullName>
+                <default>false</default>
+                <label>SEND Case Worker</label>
+            </value>
+            <value>
+                <fullName>SENDCO</fullName>
+                <default>false</default>
+                <label>SENDCO</label>
+            </value>
+            <value>
+                <fullName>SEND Manager</fullName>
+                <default>false</default>
+                <label>SEND Manager</label>
+            </value>
+            <value>
+                <fullName>SEND TA/Support</fullName>
+                <default>false</default>
+                <label>SEND TA/Support</label>
+            </value>
+            <value>
+                <fullName>SEND Teacher</fullName>
+                <default>false</default>
+                <label>SEND Teacher</label>
+            </value>
+            <value>
+                <fullName>Social Worker</fullName>
+                <default>false</default>
+                <label>Social Worker</label>
+            </value>
+            <value>
+                <fullName>Speech &amp; Language Therapist</fullName>
+                <default>false</default>
+                <label>Speech &amp; Language Therapist</label>
+            </value>
+            <value>
+                <fullName>Student Services Manager</fullName>
+                <default>false</default>
+                <label>Student Services Manager</label>
+            </value>
+            <value>
+                <fullName>Teaching Learning Assistant</fullName>
+                <default>false</default>
+                <label>Teaching/Learning Assistant</label>
+            </value>
+            <value>
+                <fullName>Technician</fullName>
+                <default>false</default>
+                <label>Technician</label>
+            </value>
+            <value>
+                <fullName>Therapist</fullName>
+                <default>false</default>
+                <label>Therapist</label>
+            </value>
+            <value>
+                <fullName>Trainer/Consultant</fullName>
+                <default>false</default>
+                <label>Trainer/Consultant</label>
+            </value>
+            <value>
+                <fullName>Trust Executive Leader / Director of Education</fullName>
+                <default>false</default>
+                <label>Trust Executive Leader / Director of Education</label>
+            </value>
+            <value>
+                <fullName>Tutor</fullName>
+                <default>false</default>
+                <label>Tutor</label>
+            </value>
+            <value>
+                <fullName>Unqualified Primary Teacher</fullName>
+                <default>false</default>
+                <label>Unqualified Primary Teacher</label>
+            </value>
+            <value>
+                <fullName>Unqualified Secondary Teacher</fullName>
+                <default>false</default>
+                <label>Unqualified Secondary Teacher</label>
+            </value>
+            <value>
+                <fullName>Virtual School Caseworker</fullName>
+                <default>false</default>
+                <label>Virtual School Caseworker</label>
+            </value>
+            <value>
+                <fullName>Virtual School Head</fullName>
+                <default>false</default>
+                <label>Virtual School Head</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

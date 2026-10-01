@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Compliance Status --></label>
+    <name>TR1__Compliance_Status__c</name>
+    <picklistValues>
+        <masterLabel>Cleared</masterLabel>
+        <translation>Gewist</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleared Pending</masterLabel>
+        <translation>Gewist in behandeling</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interview Complete</masterLabel>
+        <translation>Gesprek voltooid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Cleared</masterLabel>
+        <translation>Niet gewist</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Compliant</masterLabel>
+        <translation>Niet conform</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Registered</masterLabel>
+        <translation>Niet geregistreerd</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm</masterLabel>
+        <translation><!-- Perm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vet Complete</masterLabel>
+        <translation>Verificatie voltooid</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vet FLTP</masterLabel>
+        <translation>FLTP verifiëren</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vet Perm</masterLabel>
+        <translation>Perm verifiëren</translation>
+    </picklistValues>
+</CustomFieldTranslation>

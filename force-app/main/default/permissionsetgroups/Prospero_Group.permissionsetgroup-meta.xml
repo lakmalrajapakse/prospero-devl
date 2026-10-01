@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Prospero Group</label>
+    <permissionSets>Brand_Banquo_Permission</permissionSets>
+    <permissionSets>Brand_Prospero_Health_Social_Care_Permission</permissionSets>
+    <permissionSets>Brand_Prospero_Integrated_Permission</permissionSets>
+    <permissionSets>Brand_Prospero_Teaching_Permission</permissionSets>
+    <permissionSets>Prospero_Group_Only_Permission</permissionSets>
+    <permissionSets>Prospero_Operations_Permission</permissionSets>
+    <permissionSets>Prospero_Teaching_CES_Permission</permissionSets>
+    <permissionSets>Prospero_Universal_Field_Access</permissionSets>
+    <permissionSets>TR1__BH4Force_Basic</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

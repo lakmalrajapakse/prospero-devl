@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Candidature</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Candidatures</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ApplicationRejectPopupFieldSet --></label>
+        <name>ApplicationRejectPopupFieldSet</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Numéro de la candidature</nameFieldLabel>
+    <recordTypes>
+        <label><!-- Contract --></label>
+        <name>Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Multi-Child/Young Person --></label>
+        <name>Multi_Child_Young_Person_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Shift Work --></label>
+        <name>Shift_Work</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You cannot submit Candidates that have the ‘Hubspot Candidate’ status --></errorMessage>
+        <name>Block_move_to_Hubspot_Candidate</name>
+    </validationRules>
+</CustomObjectTranslation>

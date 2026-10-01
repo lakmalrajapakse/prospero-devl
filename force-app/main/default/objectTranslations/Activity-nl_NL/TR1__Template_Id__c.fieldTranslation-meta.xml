@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Slaat de id van de Salesforce-e-mailsjabloon op.</help>
+    <label><!-- Template Id --></label>
+    <name>TR1__Template_Id__c</name>
+</CustomFieldTranslation>

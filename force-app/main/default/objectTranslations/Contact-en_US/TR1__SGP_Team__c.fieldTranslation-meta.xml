@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- SGP Team --></label>
+    <name>TR1__SGP_Team__c</name>
+    <picklistValues>
+        <masterLabel>Bedfordshire</masterLabel>
+        <translation><!-- Bedfordshire --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Anglia</masterLabel>
+        <translation><!-- East Anglia --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>East Midlands</masterLabel>
+        <translation><!-- East Midlands --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leeds</masterLabel>
+        <translation><!-- Leeds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North East</masterLabel>
+        <translation><!-- North East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>North West</masterLabel>
+        <translation><!-- North West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEN Leeds</masterLabel>
+        <translation><!-- SEN Leeds --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEN Watford</masterLabel>
+        <translation><!-- SEN Watford --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Slough</masterLabel>
+        <translation><!-- Slough --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South East</masterLabel>
+        <translation><!-- South East --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>South West</masterLabel>
+        <translation><!-- South West --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sue Baigent</masterLabel>
+        <translation><!-- Sue Baigent --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

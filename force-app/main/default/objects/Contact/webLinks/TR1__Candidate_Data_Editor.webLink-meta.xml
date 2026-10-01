@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Candidate_Data_Editor</fullName>
+    <availability>online</availability>
+    <description>Opens the Candidate Data Editor flow.</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Candidate Data Editor</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>/lightning/cmp/TR1__candidateDataEditorWrapper?TR1__recordId={!Contact.Id}&amp;TR1__returnUrl=/{!Contact.Id}</url>
+</WebLink>

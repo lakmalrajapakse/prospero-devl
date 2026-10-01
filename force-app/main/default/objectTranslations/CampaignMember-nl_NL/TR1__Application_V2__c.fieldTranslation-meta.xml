@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Zoekopdracht naar het object Application V2 dat wordt gebruikt voor de integratie van SFMC/Digital Engagement.</help>
+    <label><!-- Application V2 --></label>
+    <name>TR1__Application_V2__c</name>
+    <relationshipLabel><!-- Campaign Members --></relationshipLabel>
+</CustomFieldTranslation>

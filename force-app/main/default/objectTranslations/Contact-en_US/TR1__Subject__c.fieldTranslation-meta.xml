@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Subject --></label>
+    <name>TR1__Subject__c</name>
+    <picklistValues>
+        <masterLabel>Accountancy</masterLabel>
+        <translation><!-- Accountancy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Art</masterLabel>
+        <translation><!-- Art --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Art and Design</masterLabel>
+        <translation><!-- Art and Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Basic Skills Tutor</masterLabel>
+        <translation><!-- Basic Skills Tutor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Business Studies</masterLabel>
+        <translation><!-- Business Studies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CL - Greek</masterLabel>
+        <translation><!-- CL - Greek --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CL - Latin</masterLabel>
+        <translation><!-- CL - Latin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Careers Education</masterLabel>
+        <translation><!-- Careers Education --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Citizenship</masterLabel>
+        <translation><!-- Citizenship --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Classics</masterLabel>
+        <translation><!-- Classics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Communications Technology</masterLabel>
+        <translation><!-- Communications Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT - Electronics</masterLabel>
+        <translation><!-- DT - Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT - Graphics</masterLabel>
+        <translation><!-- DT - Graphics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT - Textiles</masterLabel>
+        <translation><!-- DT - Textiles --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT Non-resistant Material</masterLabel>
+        <translation><!-- DT Non-resistant Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>DT Resistant Material</masterLabel>
+        <translation><!-- DT Resistant Material --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Dance</masterLabel>
+        <translation><!-- Dance --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Drama</masterLabel>
+        <translation><!-- Drama --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>E2E Tutor</masterLabel>
+        <translation><!-- E2E Tutor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Economics</masterLabel>
+        <translation><!-- Economics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Electronics</masterLabel>
+        <translation><!-- Electronics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Employability Tutor</masterLabel>
+        <translation><!-- Employability Tutor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Engineering</masterLabel>
+        <translation><!-- Engineering --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English</masterLabel>
+        <translation><!-- English --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English - General</masterLabel>
+        <translation><!-- English - General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English - Language</masterLabel>
+        <translation><!-- English - Language --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>English - Literature</masterLabel>
+        <translation><!-- English - Literature --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Environmental Studies</masterLabel>
+        <translation><!-- Environmental Studies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fashion</masterLabel>
+        <translation><!-- Fashion --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Film</masterLabel>
+        <translation><!-- Film --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Food Technology</masterLabel>
+        <translation><!-- Food Technology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Cover</masterLabel>
+        <translation><!-- General Cover --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Studies</masterLabel>
+        <translation><!-- General Studies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geography</masterLabel>
+        <translation><!-- Geography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Geology</masterLabel>
+        <translation><!-- Geology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Graphic Design</masterLabel>
+        <translation><!-- Graphic Design --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Health and Social Care</masterLabel>
+        <translation><!-- Health and Social Care --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>History</masterLabel>
+        <translation><!-- History --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Humanities</masterLabel>
+        <translation><!-- Humanities --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ICT</masterLabel>
+        <translation><!-- ICT --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Job Search Tutor</masterLabel>
+        <translation><!-- Job Search Tutor --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Law</masterLabel>
+        <translation><!-- Law --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leisure and Tourism</masterLabel>
+        <translation><!-- Leisure and Tourism --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL</masterLabel>
+        <translation><!-- MFL --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - Danish</masterLabel>
+        <translation><!-- MFL - Danish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - Dutch</masterLabel>
+        <translation><!-- MFL - Dutch --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - French</masterLabel>
+        <translation><!-- MFL - French --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - German</masterLabel>
+        <translation><!-- MFL - German --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - Gujarati</masterLabel>
+        <translation><!-- MFL - Gujarati --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - Italian</masterLabel>
+        <translation><!-- MFL - Italian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - Punjabi</masterLabel>
+        <translation><!-- MFL - Punjabi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - Russian</masterLabel>
+        <translation><!-- MFL - Russian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - Spanish</masterLabel>
+        <translation><!-- MFL - Spanish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - Turkish</masterLabel>
+        <translation><!-- MFL - Turkish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL - Urdu</masterLabel>
+        <translation><!-- MFL - Urdu --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL- Japanese</masterLabel>
+        <translation><!-- MFL- Japanese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MFL-Mandarin</masterLabel>
+        <translation><!-- MFL-Mandarin --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Marketing</masterLabel>
+        <translation><!-- Marketing --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Maths</masterLabel>
+        <translation><!-- Maths --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Media Studies</masterLabel>
+        <translation><!-- Media Studies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Music</masterLabel>
+        <translation><!-- Music --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PE</masterLabel>
+        <translation><!-- PE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PHSE</masterLabel>
+        <translation><!-- PHSE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Performing Arts</masterLabel>
+        <translation><!-- Performing Arts --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Philosophy</masterLabel>
+        <translation><!-- Philosophy --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Photography</masterLabel>
+        <translation><!-- Photography --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Politics</masterLabel>
+        <translation><!-- Politics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Psychology</masterLabel>
+        <translation><!-- Psychology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>RE</masterLabel>
+        <translation><!-- RE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science - Biology</masterLabel>
+        <translation><!-- Science - Biology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science - Chemistry</masterLabel>
+        <translation><!-- Science - Chemistry --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science - General</masterLabel>
+        <translation><!-- Science - General --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Science - Physics</masterLabel>
+        <translation><!-- Science - Physics --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Studies</masterLabel>
+        <translation><!-- Social Studies --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sociology</masterLabel>
+        <translation><!-- Sociology --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports Science</masterLabel>
+        <translation><!-- Sports Science --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sports Studies</masterLabel>
+        <translation><!-- Sports Studies --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

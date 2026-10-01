@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Icône personnalisée qui remplace l&apos;icône de dépassement par défaut. Si ce champ est rempli, l&apos;icône personnalisée apparaîtra partout à condition que le contact dépasse les limites. La valeur acceptée est une URL relative vers une ressource d&apos;image Salesforce, de préférence un fichier SVG (par exemple, /resource/TR1__Lock_icon_svg)</help>
+    <label><!-- Off Limit Custom Icon --></label>
+    <name>TR1__Off_Limit_Custom_Icon__c</name>
+</CustomFieldTranslation>

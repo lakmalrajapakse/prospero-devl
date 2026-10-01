@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ticket</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tickets</value>
+    </caseValues>
+    <gender>Neuter</gender>
+    <layouts>
+        <layout>Connect Qualification Layout</layout>
+        <sections>
+            <label><!-- Validity --></label>
+            <section>Validity</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Naam ticket</nameFieldLabel>
+    <quickActions>
+        <label><!-- Add Evidence --></label>
+        <name>SK_AddDocument</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Submit --></label>
+        <name>SK_Submit</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- I don&apos;t have this (N/A) --></label>
+        <name>SK_TicketIsNA</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage><!-- This Qualification requires a &quot;Valid until&quot; date --></errorMessage>
+        <name>SK_Expiration_date_is_missing</name>
+    </validationRules>
+</CustomObjectTranslation>

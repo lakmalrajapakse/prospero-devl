@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_edit_an_Expense_Processed</fullName>
+    <active>true</active>
+    <errorConditionFormula>PRIORVALUE(Expense_Processed__c) = True</errorConditionFormula>
+    <errorMessage>This Expense has been processed, and it can&apos;t be edited.</errorMessage>
+</ValidationRule>

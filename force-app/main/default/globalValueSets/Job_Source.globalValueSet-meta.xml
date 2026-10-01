@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Direct Sales</fullName>
+        <default>false</default>
+        <label>Direct Sales</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Mailer</fullName>
+        <default>false</default>
+        <label>Mailer</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing Event</fullName>
+        <default>false</default>
+        <label>Marketing Event</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal- CES</fullName>
+        <default>false</default>
+        <label>Portal- CES</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal- Comensurin</fullName>
+        <default>false</default>
+        <label>Portal- Comensurin</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal- Harris Academy</fullName>
+        <default>false</default>
+        <label>Portal- Harris Academy</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal- Matrix</fullName>
+        <default>false</default>
+        <label>Portal- Matrix</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal- Other</fullName>
+        <default>false</default>
+        <label>Portal- Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal- Proactis</fullName>
+        <default>false</default>
+        <label>Portal- Proactis</label>
+    </customValue>
+    <customValue>
+        <fullName>Portal- The Supply Register</fullName>
+        <default>false</default>
+        <label>Portal- The Supply Register</label>
+    </customValue>
+    <customValue>
+        <fullName>Telephone</fullName>
+        <default>false</default>
+        <label>Telephone</label>
+    </customValue>
+    <customValue>
+        <fullName>Tender</fullName>
+        <default>false</default>
+        <label>Tender</label>
+    </customValue>
+    <customValue>
+        <fullName>Third Party Master Vendors</fullName>
+        <default>false</default>
+        <label>Third Party Master Vendors</label>
+    </customValue>
+    <masterLabel>Job Source</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

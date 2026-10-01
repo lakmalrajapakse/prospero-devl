@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Si cette case est cochée, ce contact peut voir les valeurs de prévision de paiement/frais lors de la saisie ou de l&apos;approbation des heures.</help>
+    <label><!-- Can See Pay/Charge Forecast --></label>
+    <name>sirenum__Can_See_Pay_Charge_Forecast__c</name>
+</CustomFieldTranslation>

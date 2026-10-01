@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Aangevinkt als een record een originele opmerking is</help>
+    <label><!-- Original Power Note --></label>
+    <name>TR1__Original_Power_Note__c</name>
+</CustomFieldTranslation>

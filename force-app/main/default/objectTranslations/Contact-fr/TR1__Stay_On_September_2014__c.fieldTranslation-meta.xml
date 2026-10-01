@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>LE CANDIDAT VA-T-IL POURSUIVRE SON CONTRAT EN SEPTEMBRE 2014 ?</help>
+    <label><!-- Stay On September 2014? --></label>
+    <name>TR1__Stay_On_September_2014__c</name>
+    <picklistValues>
+        <masterLabel>Maybe</masterLabel>
+        <translation>Peut-être</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Candidate</masterLabel>
+        <translation>Nouveau candidat</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - No Longer Interested in UK</masterLabel>
+        <translation>Non - Plus intéressé par le Royaume-Uni</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - No Longer in the UK</masterLabel>
+        <translation>Non - Plus au Royaume-Uni</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Not Eligible for Visa</masterLabel>
+        <translation>Non - Non éligible au visa</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Not as Expected by EP</masterLabel>
+        <translation>Non - Pas comme prévu par EP</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed by Another Agency Contract</masterLabel>
+        <translation>Non - Placé par une autre agence CDD</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed by Another Agency Perm</masterLabel>
+        <translation>Non - Placé par une autre agence CDI</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed in Home Country</masterLabel>
+        <translation>Non - Placé dans le pays d&apos;origine</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Retired</masterLabel>
+        <translation>Non - Retraité</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm - Engage Fee</masterLabel>
+        <translation>CDI - Commission d&apos;engagement</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm 0%</masterLabel>
+        <translation>CDI 0 %</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Available</masterLabel>
+        <translation>Oui - Disponible</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Placed - Current School</masterLabel>
+        <translation>Oui - Placé - École actuelle</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Placed - New School</masterLabel>
+        <translation>Oui - Placé - Nouvelle école</translation>
+    </picklistValues>
+</CustomFieldTranslation>

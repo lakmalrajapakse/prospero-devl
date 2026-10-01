@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Outcome Result --></label>
+    <name>Outcome_Result__c</name>
+    <picklistValues>
+        <masterLabel>Outcome Expected</masterLabel>
+        <translation><!-- Outcome Expected --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outcome Met</masterLabel>
+        <translation><!-- Outcome Met --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Outcome Not Met</masterLabel>
+        <translation><!-- Outcome Not Met --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>VERLÄNGERT DER KANDIDAT SEINEN VERTRAG IM SEPTEMBER 2014?</help>
+    <label><!-- Stay On September 2014? --></label>
+    <name>TR1__Stay_On_September_2014__c</name>
+    <picklistValues>
+        <masterLabel>Maybe</masterLabel>
+        <translation>Vielleicht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Candidate</masterLabel>
+        <translation>Neue/r Kandidat/in</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - No Longer Interested in UK</masterLabel>
+        <translation>Nein - Kein Interesse mehr an UK</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - No Longer in the UK</masterLabel>
+        <translation>Nein - Nicht mehr in UK</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Not Eligible for Visa</masterLabel>
+        <translation>Nein - Kommt nicht für Visum in Betracht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Not as Expected by EP</masterLabel>
+        <translation>Nein - Nicht wie von EP erwartet</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed by Another Agency Contract</masterLabel>
+        <translation>Nein - Von anderer Agentur unter Vertrag</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed by Another Agency Perm</masterLabel>
+        <translation>Nein - Von anderer Agentur unbefr. angestellt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed in Home Country</masterLabel>
+        <translation>Nein - In Heimatland vermittelt</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Retired</masterLabel>
+        <translation>Nein - Im Ruhestand</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm - Engage Fee</masterLabel>
+        <translation>Unbefr - Gebühr</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm 0%</masterLabel>
+        <translation>Unbefr 0 %</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Available</masterLabel>
+        <translation>Ja - Verfügbar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Placed - Current School</masterLabel>
+        <translation>Ja - Vermittelt - Aktuelle Schule</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Placed - New School</masterLabel>
+        <translation>Ja - Vermittelt - Neue Schule</translation>
+    </picklistValues>
+</CustomFieldTranslation>

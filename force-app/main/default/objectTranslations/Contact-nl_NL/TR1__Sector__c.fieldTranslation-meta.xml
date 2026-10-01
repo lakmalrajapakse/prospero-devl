@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Sector --></label>
+    <name>TR1__Sector__c</name>
+    <picklistValues>
+        <masterLabel>Children&apos;s Centre</masterLabel>
+        <translation>Kindercentrum</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>College (6th)</masterLabel>
+        <translation>Hoger onderwijs (6e)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Further Education</masterLabel>
+        <translation>Vervolgonderwijs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HMP Prison</masterLabel>
+        <translation>HMP-gevangenis</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infant</masterLabel>
+        <translation>Kind</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Junior</masterLabel>
+        <translation><!-- Junior --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursery</masterLabel>
+        <translation>Kinderdagverblijf</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Overseas Client</masterLabel>
+        <translation>Buitenlandse klant</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Primary</masterLabel>
+        <translation>Primair</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Private Nursery</masterLabel>
+        <translation>Particulier kinderdagverblijf</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Secondary</masterLabel>
+        <translation>Voortgezet onderwijs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Special Needs</masterLabel>
+        <translation>Speciaal onderwijs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tech College</masterLabel>
+        <translation>Hoger technisch onderwijs</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Through School</masterLabel>
+        <translation>Via school</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual School</masterLabel>
+        <translation>Virtuele school</translation>
+    </picklistValues>
+</CustomFieldTranslation>

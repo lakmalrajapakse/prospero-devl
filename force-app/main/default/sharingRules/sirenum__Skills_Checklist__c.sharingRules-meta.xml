@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Prospero_Health_Social_Care_and_subordinates</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Prospero Health &amp; Social Care and subordinates</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Prospero_Health_Social_Care</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Prospero_Health_Social_Care</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Prospero_Integrated_and_subordinates</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Prospero Integrated and subordinates</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Prospero_Integrated</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Prospero_Integrated</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Prospero_Teaching_and_subordinates</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Prospero Teaching and subordinates</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>Prospero_Teaching</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Prospero_Teaching</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Student_Loan__c</fullName>
+    <label>Student Loan</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Plan 1</fullName>
+                <default>false</default>
+                <label>Plan 1</label>
+            </value>
+            <value>
+                <fullName>Plan 2</fullName>
+                <default>false</default>
+                <label>Plan 2</label>
+            </value>
+            <value>
+                <fullName>Plan 4</fullName>
+                <default>false</default>
+                <label>Plan 4</label>
+            </value>
+            <value>
+                <fullName>Postgraduate Loan</fullName>
+                <default>false</default>
+                <label>Postgraduate Loan</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

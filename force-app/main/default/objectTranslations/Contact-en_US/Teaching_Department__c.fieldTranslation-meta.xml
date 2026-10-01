@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Teaching Department --></label>
+    <name>Teaching_Department__c</name>
+    <picklistValues>
+        <masterLabel>Administrative and Support Services</masterLabel>
+        <translation><!-- Administrative and Support Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Facilities and Operations</masterLabel>
+        <translation><!-- Facilities and Operations --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>IT and Technical Services</masterLabel>
+        <translation><!-- IT and Technical Services --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA</masterLabel>
+        <translation><!-- Inclusion Team (any child who isnt CLA and does not have an EHCP) within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leadership and Management</masterLabel>
+        <translation><!-- Leadership and Management --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Leaving Care Department within LA</masterLabel>
+        <translation><!-- Leaving Care Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Nursery</masterLabel>
+        <translation><!-- Nursery --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pastoral and Student Support</masterLabel>
+        <translation><!-- Pastoral and Student Support --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Regional/Trust</masterLabel>
+        <translation><!-- Regional/Trust --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SEND Team (any Child with an EHCP) within LA</masterLabel>
+        <translation><!-- SEND Team (any Child with an EHCP) within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Section 19 Team Department within LA</masterLabel>
+        <translation><!-- Section 19 Team Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Social Care Department within LA</masterLabel>
+        <translation><!-- Social Care Department within LA --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Teaching and Learning</masterLabel>
+        <translation><!-- Teaching and Learning --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UASC Unaccompanied Asylum Seeking Child</masterLabel>
+        <translation><!-- UASC Unaccompanied Asylum Seeking Child --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Virtual School within LA</masterLabel>
+        <translation><!-- Virtual School within LA --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

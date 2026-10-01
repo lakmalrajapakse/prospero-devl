@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help><!-- IS THE CANDIDATE CONTINUING THEIR CONTRACT IN SEPTEMBER 2014? --></help>
+    <label><!-- Stay On September 2014? --></label>
+    <name>TR1__Stay_On_September_2014__c</name>
+    <picklistValues>
+        <masterLabel>Maybe</masterLabel>
+        <translation><!-- Maybe --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Candidate</masterLabel>
+        <translation><!-- New Candidate --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - No Longer Interested in UK</masterLabel>
+        <translation><!-- No - No Longer Interested in UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - No Longer in the UK</masterLabel>
+        <translation><!-- No - No Longer in the UK --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Not Eligible for Visa</masterLabel>
+        <translation><!-- No - Not Eligible for Visa --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Not as Expected by EP</masterLabel>
+        <translation><!-- No - Not as Expected by EP --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed by Another Agency Contract</masterLabel>
+        <translation><!-- No - Placed by Another Agency Contract --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed by Another Agency Perm</masterLabel>
+        <translation><!-- No - Placed by Another Agency Perm --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Placed in Home Country</masterLabel>
+        <translation><!-- No - Placed in Home Country --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>No - Retired</masterLabel>
+        <translation><!-- No - Retired --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm - Engage Fee</masterLabel>
+        <translation><!-- Perm - Engage Fee --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm 0%</masterLabel>
+        <translation><!-- Perm 0% --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Available</masterLabel>
+        <translation><!-- Yes - Available --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Placed - Current School</masterLabel>
+        <translation><!-- Yes - Placed - Current School --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Yes - Placed - New School</masterLabel>
+        <translation><!-- Yes - Placed - New School --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

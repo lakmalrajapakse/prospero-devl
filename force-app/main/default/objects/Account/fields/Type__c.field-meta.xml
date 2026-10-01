@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>AV Live Events</fullName>
+                <default>false</default>
+                <label>AV Live Events</label>
+            </value>
+            <value>
+                <fullName>Broadcast</fullName>
+                <default>false</default>
+                <label>Broadcast</label>
+            </value>
+            <value>
+                <fullName>Case Management Company</fullName>
+                <default>false</default>
+                <label>Case Management Company</label>
+            </value>
+            <value>
+                <fullName>Consultancy</fullName>
+                <default>false</default>
+                <label>Consultancy</label>
+            </value>
+            <value>
+                <fullName>Council</fullName>
+                <default>false</default>
+                <label>Council</label>
+            </value>
+            <value>
+                <fullName>Department</fullName>
+                <default>false</default>
+                <label>Department</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Fire and Security</fullName>
+                <default>false</default>
+                <label>Fire and Security</label>
+            </value>
+            <value>
+                <fullName>Health Board</fullName>
+                <default>false</default>
+                <label>Health Board</label>
+            </value>
+            <value>
+                <fullName>Home Automation</fullName>
+                <default>false</default>
+                <label>Home Automation</label>
+            </value>
+            <value>
+                <fullName>IT (Information Technology)</fullName>
+                <default>false</default>
+                <label>IT (Information Technology)</label>
+            </value>
+            <value>
+                <fullName>Local Authority</fullName>
+                <default>false</default>
+                <label>Local Authority</label>
+            </value>
+            <value>
+                <fullName>Manufacturing</fullName>
+                <default>false</default>
+                <label>Manufacturing</label>
+            </value>
+            <value>
+                <fullName>NHS Organisation</fullName>
+                <default>false</default>
+                <label>NHS Organisation</label>
+            </value>
+            <value>
+                <fullName>Parent Academy</fullName>
+                <default>false</default>
+                <label>Parent Academy</label>
+            </value>
+            <value>
+                <fullName>Private Care Organisation</fullName>
+                <default>false</default>
+                <label>Private Care Organisation</label>
+            </value>
+            <value>
+                <fullName>Private Client</fullName>
+                <default>false</default>
+                <label>Private Client</label>
+            </value>
+            <value>
+                <fullName>Production</fullName>
+                <default>false</default>
+                <label>Production</label>
+            </value>
+            <value>
+                <fullName>School</fullName>
+                <default>false</default>
+                <label>School</label>
+            </value>
+            <value>
+                <fullName>Systems Integrator</fullName>
+                <default>false</default>
+                <label>Systems Integrator</label>
+            </value>
+            <value>
+                <fullName>Telecomms</fullName>
+                <default>false</default>
+                <label>Telecomms</label>
+            </value>
+            <value>
+                <fullName>Unified Comms</fullName>
+                <default>false</default>
+                <label>Unified Comms</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

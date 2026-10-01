@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Hiermee wordt de externe sleutelwaarde voor WhatsApp opgeslagen als &apos;Externe bron voor sjablonen gebruiken&apos; actief is.</help>
+    <label><!-- External Template for WhatsApp --></label>
+    <name>TR1__External_Template_for_WhatsApp__c</name>
+</CustomFieldTranslation>

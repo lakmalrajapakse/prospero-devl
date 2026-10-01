@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Employé par l&apos;interface de Google Calendar pour identifier le calendrier permettant d&apos;afficher les missions.</help>
+    <label><!-- Google Calendar ID --></label>
+    <name>sirenum__Google_Calendar_ID__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,81 @@
+{
+  "appPageId" : "21254a37-ad20-42cc-aa09-74b0a3a07763",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "3ae65d80-9973-46bd-a31e-d7e81c2a525f",
+  "label" : "Home",
+  "regions" : [ {
+    "id" : "891dea52-e1eb-4812-bfab-6f80bf3e87db",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "channelMenuConfigurationJSON" : "",
+        "codeSettingsName" : ""
+      },
+      "componentName" : "forceCommunity:embeddedServiceChannelMenu",
+      "id" : "c0650753-c2ad-4de0-8d47-33fa2b06e195",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "bannerBackgroundColor" : "rgb(37, 116, 169)",
+        "bannerPosition" : "top",
+        "bannerSizePercent" : 35,
+        "borderRadius" : 20,
+        "boxShadow" : false,
+        "haveBanner" : false,
+        "iconBackgroundColor" : "rgb(37, 116, 169)",
+        "iconSize" : "small",
+        "noImageColor" : "rgb(116,116,116)",
+        "overlay" : "rgba(0,0,0,0.01)",
+        "templateType" : "icon",
+        "tileMenuEditor" : "Default_Navigation1",
+        "titleColor" : "",
+        "titleFontSize" : "large",
+        "titleHorizontalAlign" : "center"
+      },
+      "componentName" : "community_navigation:tileMenu",
+      "id" : "ba3f9c01-fd01-4cfb-9f8f-1b47cb690460",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<div>     <p><span style='font-size: 48px;'>Let's get started!</span></p>     <ol>         <li><span style='font-size: 18px;'>Unfamiliar with Build Your Own? Click Take a Tour in the Help menu.</span></li>         <li><span style='font-size: 18px;'>Want to add more pages? Take a look at the Pages menu.</span></li>         <li><span style='font-size: 18px;'>Want more components on your page? Drag and drop components from the Components panel.</span></li>         <li><span style='font-size: 18px;'>Want your users to see your company logo? Head on over to the Theme panel.</span></li>         <li><span style='font-size: 18px;'>Refine the look of your site with a custom theme layout. See the Experience Cloud Developer Guide.</span></li>     </ol> </div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "0829da65-4c8e-4ee9-bae1-b975f0ed78fc",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b6edbeda-a1b5-4ace-a2bc-c025bed9d2bf",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "75efce3a-a283-4983-80b1-5cf90c0e58dc",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "7505cf2e-30c4-4d8e-90c4-0d48ce6d3863",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3334f728-b4da-4f9b-8e92-4c68550211bd",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TR1__Skills_Training_Experience__c</fullName>
+    <deprecated>false</deprecated>
+    <label>Skills Training Experience</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Careers Advisor</fullName>
+                <default>false</default>
+                <label>Careers Advisor</label>
+            </value>
+            <value>
+                <fullName>Musician</fullName>
+                <default>false</default>
+                <label>Musician</label>
+            </value>
+            <value>
+                <fullName>Sports Coach</fullName>
+                <default>false</default>
+                <label>Sports Coach</label>
+            </value>
+            <value>
+                <fullName>First Aid</fullName>
+                <default>false</default>
+                <label>First Aid</label>
+            </value>
+            <value>
+                <fullName>Smart/Whiteboard</fullName>
+                <default>false</default>
+                <label>Smart/Whiteboard</label>
+            </value>
+            <value>
+                <fullName>Phonics</fullName>
+                <default>false</default>
+                <label>Phonics</label>
+            </value>
+            <value>
+                <fullName>Welsh Medium</fullName>
+                <default>false</default>
+                <label>Welsh Medium</label>
+            </value>
+            <value>
+                <fullName>Reading Recovery</fullName>
+                <default>false</default>
+                <label>Reading Recovery</label>
+            </value>
+            <value>
+                <fullName>Numeracy specialist</fullName>
+                <default>false</default>
+                <label>Numeracy specialist</label>
+            </value>
+            <value>
+                <fullName>Literacy specialist</fullName>
+                <default>false</default>
+                <label>Literacy specialist</label>
+            </value>
+            <value>
+                <fullName>EAL specialist</fullName>
+                <default>false</default>
+                <label>EAL specialist</label>
+            </value>
+            <value>
+                <fullName>Invigilator</fullName>
+                <default>false</default>
+                <label>Invigilator</label>
+            </value>
+            <value>
+                <fullName>BSL</fullName>
+                <default>false</default>
+                <label>BSL</label>
+            </value>
+            <value>
+                <fullName>Makaton</fullName>
+                <default>false</default>
+                <label>Makaton</label>
+            </value>
+            <value>
+                <fullName>Moving and Handling</fullName>
+                <default>false</default>
+                <label>Moving and Handling</label>
+            </value>
+            <value>
+                <fullName>Team Teach</fullName>
+                <default>false</default>
+                <label>Team Teach</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

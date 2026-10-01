@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Stocke le nom du modèle d&apos;e-mail Salesforce (au format &lt;Folder Name&gt;: &lt;Email Template Name&gt;)</help>
+    <label><!-- Template Name --></label>
+    <name>TR1__Template_Name__c</name>
+</CustomFieldTranslation>

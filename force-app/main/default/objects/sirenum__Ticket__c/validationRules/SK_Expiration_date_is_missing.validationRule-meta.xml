@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SK_Expiration_date_is_missing</fullName>
+    <active>true</active>
+    <description>Non-revoked tickets need an expiration date if their competency is one that expires</description>
+    <errorConditionFormula>sirenum__Revoked__c != TRUE &amp;&amp; (ISNEW() || ISCHANGED(sirenum__Revoked__c) || ISCHANGED(sirenum__Valid_until__c)) &amp;&amp; sirenum__TicketType__r.sirenum__Expires__c &amp;&amp; ISBLANK(sirenum__Valid_until__c)</errorConditionFormula>
+    <errorDisplayField>sirenum__Valid_until__c</errorDisplayField>
+    <errorMessage>This Qualification requires a &quot;Valid until&quot; date</errorMessage>
+</ValidationRule>

@@ -1,0 +1,12 @@
+U probeerde onlangs een actie uit te voeren in {!Community_Name}.
+Actie: {!Action}
+
+Browser: {!Browser}
+Besturingssysteem: {!Operating_System}
+Gebruikersnaam: {!Receiving_User.Username}
+
+Om de veiligheid van uw account te waarborgen, moeten wij uw identiteit verifiëren. Vul de volgende code in wanneer daarom wordt gevraagd door {!Community_Name}.
+
+Verificatiecode: {!Verification_Code}
+
+Als u deze actie niet in {!Community_Name} hebt geprobeerd, of u herkent deze browser of dit besturingssysteem niet, neem dan contact op met uw {!Community_Name}-beheerder.

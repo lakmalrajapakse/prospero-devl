@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CES_Closed_Reason__c</fullName>
+    <label>CES Closed Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Funding Ended</fullName>
+                <default>false</default>
+                <label>Funding Ended</label>
+            </value>
+            <value>
+                <fullName>Post-16 Pathway Secured</fullName>
+                <default>false</default>
+                <label>Post-16 Pathway Secured</label>
+            </value>
+            <value>
+                <fullName>Reintegration to School/College</fullName>
+                <default>false</default>
+                <label>Reintegration to School/College</label>
+            </value>
+            <value>
+                <fullName>Student Moved Out of Area</fullName>
+                <default>false</default>
+                <label>Student Moved Out of Area</label>
+            </value>
+            <value>
+                <fullName>Employment Secured</fullName>
+                <default>false</default>
+                <label>Employment Secured</label>
+            </value>
+            <value>
+                <fullName>Planned Tuition Completed Successfully</fullName>
+                <default>false</default>
+                <label>Planned Tuition Completed Successfully</label>
+            </value>
+            <value>
+                <fullName>Tutor Unsuitable</fullName>
+                <default>false</default>
+                <label>Tutor Unsuitable</label>
+            </value>
+            <value>
+                <fullName>Provision Unsuitable for Student</fullName>
+                <default>false</default>
+                <label>Provision Unsuitable for Student</label>
+            </value>
+            <value>
+                <fullName>Tutor Ended &amp; No Replacement Available</fullName>
+                <default>false</default>
+                <label>Tutor Ended &amp; No Replacement Available</label>
+            </value>
+            <value>
+                <fullName>Non‑Engagement / Persistent Absence</fullName>
+                <default>false</default>
+                <label>Non‑Engagement / Persistent Absence</label>
+            </value>
+            <value>
+                <fullName>Parent/Carer Withdrawal</fullName>
+                <default>false</default>
+                <label>Parent/Carer Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Commissioner Withdrawal</fullName>
+                <default>false</default>
+                <label>Commissioner Withdrawal</label>
+            </value>
+            <value>
+                <fullName>Health‑Related End</fullName>
+                <default>false</default>
+                <label>Health‑Related End</label>
+            </value>
+            <value>
+                <fullName>Safeguarding End</fullName>
+                <default>false</default>
+                <label>Safeguarding End</label>
+            </value>
+            <value>
+                <fullName>Other External Reason</fullName>
+                <default>false</default>
+                <label>Other External Reason</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

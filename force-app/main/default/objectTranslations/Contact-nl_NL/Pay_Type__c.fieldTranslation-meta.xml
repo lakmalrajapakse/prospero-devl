@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Pay Type --></label>
+    <name>Pay_Type__c</name>
+    <picklistValues>
+        <masterLabel>LTD</masterLabel>
+        <translation><!-- LTD --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PAYE</masterLabel>
+        <translation><!-- PAYE --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UMB</masterLabel>
+        <translation><!-- UMB --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

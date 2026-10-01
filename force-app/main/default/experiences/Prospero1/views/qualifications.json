@@ -1,0 +1,177 @@
+{
+  "appPageId" : "d9ce9f69-0e14-4b11-9233-6c5ce091d546",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "d0b069c6-383a-4531-9081-f2077e7180f0",
+  "label" : "Qualifications",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "4a68b827-47ce-4c49-8a45-2ed2c92fbaa0",
+          "columns" : [ {
+            "UUID" : "0cebda10-566a-4f91-a30f-2347d0d7c210",
+            "columnKey" : "3ee90",
+            "columnName" : "Column 1",
+            "columnWidth" : "10",
+            "seedComponents" : [ ]
+          }, {
+            "UUID" : "8fece4d7-cb50-4cdf-ac64-480f1726c26c",
+            "columnKey" : "052bb",
+            "columnName" : "Column 2",
+            "columnWidth" : "2",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 100
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "4a68b827-47ce-4c49-8a45-2ed2c92fbaa0",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1>Qualifications</h1><p>This is where you can manage your qualifications. If there's nothing here, or you are interested in new types of job, scroll down to &quot;Choose your Job Types&quot; and tell us what you are looking for. Once done, we can show you the qualifications we think you need. You must confirm which qualifications you have, adding documentary evidence if requested, and tell us which qualifications you don't have. Each qualification needs to be submitted for review.</p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "a387cd24-18ff-455a-a6b9-998dbe198c5f",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0cebda10-566a-4f91-a30f-2347d0d7c210",
+        "regionLabel" : "Column 1",
+        "regionName" : "3ee90",
+        "renditionMap" : { },
+        "type" : "region"
+      }, {
+        "components" : [ {
+          "componentAttributes" : {
+            "richTextValue" : "<h1><br /></h1>\n<p><img class=\"sfdcCbImage\" src=\"{!contentAsset.sk_sirenum_by_bullhorn_logo.1}\" /></p>"
+          },
+          "componentName" : "forceCommunity:richTextInline",
+          "id" : "4daf768b-a5ec-49b3-9b81-65181c0b2918",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "8fece4d7-cb50-4cdf-ac64-480f1726c26c",
+        "regionLabel" : "Column 2",
+        "regionName" : "052bb",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "d659cc5e-b7ae-4f88-add6-bc2ca1731011",
+          "columns" : [ {
+            "UUID" : "3b71827e-bbec-4ece-a38b-827fdf3d8ca4",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "d659cc5e-b7ae-4f88-add6-bc2ca1731011",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "customTitle" : "",
+            "parentRecordId" : "{!id}",
+            "relatedListName" : "sirenum__Tickets__r",
+            "showBreadCrumbs" : false,
+            "showCustomTitle" : false,
+            "showManualRefreshButton" : true,
+            "showRowNumbers" : false
+          },
+          "componentName" : "forceCommunity:relatedList",
+          "id" : "548d42de-11a5-417a-b81c-2cc0d798fb8b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3b71827e-bbec-4ece-a38b-827fdf3d8ca4",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "79463525-b6b0-48d6-8f9e-f9d3e128631f",
+          "columns" : [ {
+            "UUID" : "fa9270e7-75c0-422c-8b63-0a9cef52ff65",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "79463525-b6b0-48d6-8f9e-f9d3e128631f",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "flowArguments" : "",
+            "flowName" : "SK_AddTicketsForJobType"
+          },
+          "componentName" : "forceCommunity:flowCommunity",
+          "id" : "02071197-9bc5-43e0-b1e5-a135753648c5",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "fa9270e7-75c0-422c-8b63-0a9cef52ff65",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "a7b71939-a322-4448-91d3-908870e60c27",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Qualifications"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "4d1ca4be-c549-40f1-97b8-5f623c38febe",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e034c836-929f-4926-96b0-400eb74c1624",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-qualifications"
+}

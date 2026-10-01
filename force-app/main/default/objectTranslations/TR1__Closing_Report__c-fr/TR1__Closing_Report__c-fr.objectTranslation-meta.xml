@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Délégation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Délégations</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Evertime Sync Field --></label>
+        <name>Evertime_Sync_Field</name>
+    </fieldSets>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>Contract</layout>
+        <sections>
+            <label>Informations sur la facturation/le recouvrement</label>
+            <section>Billing/Collection Information</section>
+        </sections>
+        <sections>
+            <label>Informations sur la facturation/le recouvrement 2</label>
+            <section>Billing/Collection Information 2</section>
+        </sections>
+        <sections>
+            <label>Fermer les informations</label>
+            <section>Close Information</section>
+        </sections>
+        <sections>
+            <label>Informations sur le partage des bénéfices</label>
+            <section>Profit Split Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Multi-Child/Young Person Contract</layout>
+        <sections>
+            <label>Fermer les détails</label>
+            <section>Close Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Numéro de délégation</nameFieldLabel>
+    <quickActions>
+        <label><!-- Commission Splits --></label>
+        <name>Commission_Splits</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Ad-Hoc --></label>
+        <name>Ad_Hoc</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Set Start and End Dates --></description>
+        <label><!-- Contract --></label>
+        <name>Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Multi-Child/Young Person --></label>
+        <name>Multi_Child_Young_Person_Contract</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,90 @@
+{
+  "appPageId" : "8c871e13-6d08-4440-b759-c322ea3acaef",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "1531b9a5-ab39-4786-905b-294bf103c94b",
+  "label" : "My Candidates",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:myCandidatesList",
+      "id" : "770fad2f-f7b8-49a3-82c2-ecf6e5552227",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:candidateRatingsRelatedList",
+      "id" : "6de6dbe9-8317-4da7-b825-cde5a86750e0",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : { },
+      "componentName" : "c:candidateShiftsRelatedList",
+      "id" : "6adc916f-4799-4475-92c6-4434c4859f4a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d3f5e074-246b-4c09-b747-fc72f6ca5349",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:candidateTicketsRelatedList",
+      "id" : "dda1431a-030a-464b-973c-8f3e9cd8c102",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "enableInlineEdit" : false,
+        "filterName" : "My_Candidates",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "Contact",
+        "showActionBar" : false,
+        "showChartsPanel" : false,
+        "showDisplay" : "showall",
+        "showFilterPanel" : false,
+        "showImageIcon" : false,
+        "showManualRefreshButton" : true,
+        "showObjectName" : false,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "6e8731a6-267a-4ca1-ad0f-f2d513e15432",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "71e8481f-1982-427a-9917-f6cd53bf5c71",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "bf1e663a-c108-42a6-9114-56c3c861adb9",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "My Candidates"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "9a69f58f-44d0-4964-bd33-234b9ff8a05e",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1cf42f28-c0a0-4ab3-8dbc-a691a39a57b3",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-my-candidates"
+}

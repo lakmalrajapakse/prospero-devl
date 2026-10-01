@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SamlSsoConfig xmlns="http://soap.sforce.com/2006/04/metadata">
+    <identityLocation>SubjectNameId</identityLocation>
+    <identityMapping>Username</identityMapping>
+    <issuer>exk1fv2bhm5CWhOtR0x8</issuer>
+    <loginUrl>https://talentrover.okta.com/app/salesforce/exknvl2e5q7ylXxku0x7/sso/saml</loginUrl>
+    <logoutUrl>https://talentrover.okta.com</logoutUrl>
+    <name>Talent Rover Administrator</name>
+    <oauthTokenEndpoint>https://prospero3--1218dev.sandbox.my.salesforce.com/services/oauth2/token</oauthTokenEndpoint>
+    <redirectBinding>false</redirectBinding>
+    <requestSignatureMethod>1</requestSignatureMethod>
+    <requestSigningCertId>0P1QH000000pQmr</requestSigningCertId>
+    <salesforceLoginUrl>https://prospero3--1218dev.sandbox.my.salesforce.com</salesforceLoginUrl>
+    <samlEntityId>https://prospero3.my.salesforce.com</samlEntityId>
+    <samlVersion>SAML2_0</samlVersion>
+    <useConfigRequestMethod>true</useConfigRequestMethod>
+    <useSameDigestAlgoForSigning>false</useSameDigestAlgoForSigning>
+    <userProvisioning>false</userProvisioning>
+    <validationCert>MIIDpjCCAo6gAwIBAgIGAZpOlva4MA0GCSqGSIb3DQEBCwUAMIGTMQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZyYW5jaXNjbzENMAsGA1UECgwET2t0YTEUMBIGA1UECwwLU1NPUHJvdmlkZXIxFDASBgNVBAMMC3RhbGVudHJvdmVyMRwwGgYJKoZIhvcNAQkBFg1pbmZvQG9rdGEuY29tMB4XDTI1MTEwNDExMTcyN1oXDTM1MTEwNDExMTgyN1owgZMxCzAJBgNVBAYTAlVTMRMwEQYDVQQIDApDYWxpZm9ybmlhMRYwFAYDVQQHDA1TYW4gRnJhbmNpc2NvMQ0wCwYDVQQKDARPa3RhMRQwEgYDVQQLDAtTU09Qcm92aWRlcjEUMBIGA1UEAwwLdGFsZW50cm92ZXIxHDAaBgkqhkiG9w0BCQEWDWluZm9Ab2t0YS5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDfzhDSDh9IV3CdLDpGBUPkdtnskdA0qfwbjprSQ+jg5JrGqKJEsrmoh5/v/1JQNn/q6bi/MvvgxLM1gK0rI/lj5RZ1tL952bwHy+1wrTR2NbQc7WrLyLsPyI9QTtrhZN7dAeIN1XvNIVewPbQfcGD7PCKZocCF8JEZS1/E1Az1lZkvWRlTw0Y0OwGZkfrGGy6a2iZQtVcmovRygxvzmuTe559SmVdQMfRIPtloAYiqgo/a+RwH7tqt1Sxm96syl+li9g+3xjUsJh5dKNHichuhYIDp46gaewwldlMqVabP13rrA0qom14i9Vk1bWzRQplacbrYoHX58wXx4wydFIMXAgMBAAEwDQYJKoZIhvcNAQELBQADggEBACSX+Wu4Bi1+joe6AY8aRmWas3D5rk9aRXzAzbDXTndq+VrauETa9wFSk/HT+ux8uvSh/ZEuNLpeghWT4bAuVL6Z+8ec9g6uj8Y6AGE/oXJmedYtAu86pEU3ON/i2yqeDEzc/h8wfSEc4ph+Aq6rxTkxaVCzT935vDMt+mjcSVinz39Q/NCwT7l6D13OtgQx1jTqPb3+jx0trlpPHlA+QY2cAWXClHVPAiUCLZSb7poXe9sVFfIy/X+pMyABp3XzKY9DjXER9CmFQNxCTy43X3BPAtRH8FVPpdQXg+X4E0XGloyJFkcr+w6+RRn/tlRQ6ejOMvV5uwG0dcbPHz6HSSg=</validationCert>
+</SamlSsoConfig>

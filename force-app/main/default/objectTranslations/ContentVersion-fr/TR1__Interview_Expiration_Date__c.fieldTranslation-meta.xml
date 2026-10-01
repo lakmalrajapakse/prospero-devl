@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Si la version du contenu est liée à un élément « Détails du rendez-vous V2 », elle conserve la valeur « Date et heure de l&apos;entretien » de cet élément. Ce champ peut être utilisé dans la logique de suppression des fichiers ICS.</help>
+    <label><!-- Interview Expiration Date --></label>
+    <name>TR1__Interview_Expiration_Date__c</name>
+</CustomFieldTranslation>

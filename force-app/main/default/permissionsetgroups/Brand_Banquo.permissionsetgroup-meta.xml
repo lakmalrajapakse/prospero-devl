@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Brand - Banquo</label>
+    <permissionSets>Brand_Banquo_Permission</permissionSets>
+    <permissionSets>Prospero_Universal_Field_Access</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CYP_to_Job_Block_CYP_Being_Changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT(ISNEW()), ISCHANGED(Child_Young_Person__c) )</errorConditionFormula>
+    <errorMessage>You cannot change the Child / Young Person once it has been set.</errorMessage>
+</ValidationRule>

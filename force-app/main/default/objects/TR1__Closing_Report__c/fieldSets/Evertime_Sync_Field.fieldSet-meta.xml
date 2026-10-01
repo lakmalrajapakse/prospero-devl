@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Evertime_Sync_Field</fullName>
+    <description>Field set for Evertime sync integration.</description>
+    <label>Evertime Sync Field</label>
+</FieldSet>

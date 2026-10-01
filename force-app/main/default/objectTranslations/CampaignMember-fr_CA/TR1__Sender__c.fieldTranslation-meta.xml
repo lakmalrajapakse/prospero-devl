@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Recherche du dossier de l’utilisateur utilisé pour l’intégration SFMC/Digital Engagement afin de fournir des informations sur l’expéditeur du message (par exemple, nom, adresse courriel)</help>
+    <label><!-- Sender --></label>
+    <name>TR1__Sender__c</name>
+    <relationshipLabel><!-- Campaign Members --></relationshipLabel>
+</CustomFieldTranslation>

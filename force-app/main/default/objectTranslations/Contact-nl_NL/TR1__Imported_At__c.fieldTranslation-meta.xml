@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Wanneer de kandidaat werd geïmporteerd.</help>
+    <label><!-- Imported At --></label>
+    <name>TR1__Imported_At__c</name>
+</CustomFieldTranslation>

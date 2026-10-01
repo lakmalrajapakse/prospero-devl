@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- LinkedIn Prospect Notes Last Sync --></label>
+    <name>bh4forceli__BHLI_LinkedInProspectNotesLastSync__c</name>
+</CustomFieldTranslation>

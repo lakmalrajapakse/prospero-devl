@@ -12,8 +12,9 @@ trigger ShiftTrigger on sirenum__Shift__c (before insert, before update, after i
                 Trigger.isUpdate ? Trigger.oldMap : null
             );
             
-            EvertimeSyncUtility.process(Trigger.new,Trigger.isUpdate ? Trigger.oldMap : null);
         }
+        if(Trigger.isUpdate)
+                EvertimeSyncUtility.process(Trigger.new,Trigger.oldMap);
     }
 
     // --- Logic for Tutexa export date to null when specif shift fields of any shift field defined on CMDT is updated

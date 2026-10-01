@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Compliance Status --></label>
+    <name>TR1__Compliance_Status__c</name>
+    <picklistValues>
+        <masterLabel>Cleared</masterLabel>
+        <translation>Gelöscht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cleared Pending</masterLabel>
+        <translation>Löschen anstehend</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Interview Complete</masterLabel>
+        <translation>Vorstellungsgespräch abgeschlossen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Cleared</masterLabel>
+        <translation>Nicht gelöscht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Compliant</masterLabel>
+        <translation>Passt nicht</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Registered</masterLabel>
+        <translation>Nicht registriert</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Perm</masterLabel>
+        <translation>Unbefr</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vet Complete</masterLabel>
+        <translation>Berufsausbildung beendet</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vet FLTP</masterLabel>
+        <translation>Berufsausbildung FLTP</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Vet Perm</masterLabel>
+        <translation>Berufsausbildung Unbefr.</translation>
+    </picklistValues>
+</CustomFieldTranslation>

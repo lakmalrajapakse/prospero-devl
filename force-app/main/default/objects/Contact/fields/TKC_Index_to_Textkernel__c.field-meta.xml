@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TKC_Index_to_Textkernel__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>When checked, the record will be considered for indexation by Textkernel</description>
+    <inlineHelpText>When checked, the record will be considered for indexation by Textkernel</inlineHelpText>
+    <label>Index to Textkernel</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

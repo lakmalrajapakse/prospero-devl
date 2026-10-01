@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Ethnic Origin --></label>
+    <name>Ethnic_Origin__c</name>
+    <picklistValues>
+        <masterLabel>Any other Asian background</masterLabel>
+        <translation><!-- Any other Asian background --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any other Black / African / Caribbean background</masterLabel>
+        <translation><!-- Any other Black / African / Caribbean background --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any other Mixed / Multiple background</masterLabel>
+        <translation><!-- Any other Mixed / Multiple background --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Any other White background</masterLabel>
+        <translation><!-- Any other White background --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Arab</masterLabel>
+        <translation><!-- Arab --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asian or Asian British</masterLabel>
+        <translation><!-- Asian or Asian British --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asian or Asian British Bangladeshi</masterLabel>
+        <translation><!-- Asian or Asian British Bangladeshi --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asian or Asian British Indian</masterLabel>
+        <translation><!-- Asian or Asian British Indian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Asian or Asian British Pakistani</masterLabel>
+        <translation><!-- Asian or Asian British Pakistani --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black or Black British African</masterLabel>
+        <translation><!-- Black or Black British African --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Black or Black British Caribbean</masterLabel>
+        <translation><!-- Black or Black British Caribbean --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Chinese</masterLabel>
+        <translation><!-- Chinese --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>I do not wish to state</masterLabel>
+        <translation><!-- I do not wish to state --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other ethnic group</masterLabel>
+        <translation><!-- Other ethnic group --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White British</masterLabel>
+        <translation><!-- White British --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White Gypsy or Irish Traveller</masterLabel>
+        <translation><!-- White Gypsy or Irish Traveller --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White Irish</masterLabel>
+        <translation><!-- White Irish --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White Welsh</masterLabel>
+        <translation><!-- White Welsh --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White and Asian</masterLabel>
+        <translation><!-- White and Asian --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White and Black African</masterLabel>
+        <translation><!-- White and Black African --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>White and Black Caribbean</masterLabel>
+        <translation><!-- White and Black Caribbean --></translation>
+    </picklistValues>
+</CustomFieldTranslation>

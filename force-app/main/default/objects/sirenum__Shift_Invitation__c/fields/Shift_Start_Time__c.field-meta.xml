@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shift_Start_Time__c</fullName>
+    <description>The related Shift’s scheduled start time.</description>
+    <formula>sirenum__Shift__r.sirenum__Scheduled_Start_Time__c</formula>
+    <inlineHelpText>The related Shift’s scheduled start time.</inlineHelpText>
+    <label>Shift Start Time</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

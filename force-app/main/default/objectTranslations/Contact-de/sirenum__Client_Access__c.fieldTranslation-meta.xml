@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label><!-- Client Access --></label>
+    <name>sirenum__Client_Access__c</name>
+    <picklistValues>
+        <masterLabel>Access Matched Shifts</masterLabel>
+        <translation>Auf übereinstimmende Schichten zugreifen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Assign Tags</masterLabel>
+        <translation>Tags zuweisen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Create Shift</masterLabel>
+        <translation>Schicht erstellen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Edit Shift</masterLabel>
+        <translation>Schicht bearbeiten</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Manager Mode</masterLabel>
+        <translation>Managermodus</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Scan Card</masterLabel>
+        <translation>Karte scannen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>See Logs</masterLabel>
+        <translation>Protokolle anzeigen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>See Shifts</masterLabel>
+        <translation>Schichten anzeigen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Start Shifts</masterLabel>
+        <translation>Schichten beginnen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Trade Shifts</masterLabel>
+        <translation>Schichten tauschen</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>View All Shifts</masterLabel>
+        <translation>Alle Schichten anzeigen</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Cette information est requise la paie Sage</help>
+    <label><!-- Marital Status --></label>
+    <name>sirenum__Marital_Status__c</name>
+    <picklistValues>
+        <masterLabel>Civil Partnership</masterLabel>
+        <translation>Partenariat civil</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Divorced</masterLabel>
+        <translation>Divorcé(e)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Married</masterLabel>
+        <translation>Marié(e)</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Autre</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Single</masterLabel>
+        <translation>Célibataire</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Widowed</masterLabel>
+        <translation>Veuf(ve)</translation>
+    </picklistValues>
+</CustomFieldTranslation>

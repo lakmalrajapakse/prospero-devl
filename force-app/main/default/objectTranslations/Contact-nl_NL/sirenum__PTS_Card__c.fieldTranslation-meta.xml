@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Het type PTS-training dat deze persoon heeft gevolgd</help>
+    <label><!-- PTS Card --></label>
+    <name>sirenum__PTS_Card__c</name>
+    <picklistValues>
+        <masterLabel>No Card</masterLabel>
+        <translation>Geen kaart</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTS AC Only</masterLabel>
+        <translation>Alleen PTS AC</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTS AC/DC</masterLabel>
+        <translation><!-- PTS AC/DC --></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PTS DC Only</masterLabel>
+        <translation>Alleen PTS DC</translation>
+    </picklistValues>
+</CustomFieldTranslation>
